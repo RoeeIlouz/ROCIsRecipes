@@ -11,6 +11,7 @@ import urllib.request
 from dataclasses import dataclass
 
 from price_items import PriceItem, parse_price_full
+from retry import with_retries
 from stores import Store, normalize_store_id, parse_stores
 
 BASE_URL = "https://prices.shufersal.co.il"
@@ -40,10 +41,13 @@ def parse_listing(html_text: str) -> list[FileLink]:
     return links
 
 
-def _get(url: str, timeout: int = 60) -> bytes:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        return response.read()
+def _get(url: str, timeout: int = 90) -> bytes:
+    def once() -> bytes:
+        request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            return response.read()
+
+    return with_retries(once)
 
 
 def list_files(cat_id: int, page: int, store_id: int = 0) -> list[FileLink]:
