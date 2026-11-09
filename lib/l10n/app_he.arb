@@ -1,0 +1,14 @@
+{
+  "@@locale": "he",
+  "appName": "ROCIs Recipes",
+  "settings": "הגדרות",
+  "theme": "ערכת נושא",
+  "lightTheme": "בהיר",
+  "darkTheme": "כהה (Slate)",
+  "amoledTheme": "AMOLED (שחור מוחלט)",
+  "glassmorphism": "אפקט זכוכית (Glassmorphism)",
+  "save": "שמור",
+  "cancel": "ביטול",
+  "delete": "מחק",
+  "offlineMode": "מצב לא מקוון פעיל"
+}

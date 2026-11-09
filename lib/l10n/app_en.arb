@@ -1,0 +1,14 @@
+{
+  "@@locale": "en",
+  "appName": "ROCIs Recipes",
+  "settings": "Settings",
+  "theme": "Theme",
+  "lightTheme": "Light",
+  "darkTheme": "Dark (Slate)",
+  "amoledTheme": "AMOLED (Pure Black)",
+  "glassmorphism": "Glassmorphism",
+  "save": "Save",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "offlineMode": "Offline Mode Active"
+}
