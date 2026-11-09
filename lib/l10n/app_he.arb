@@ -27,5 +27,21 @@
   "applianceBlender": "בלנדר",
   "applianceKettle": "קומקום",
   "applianceToaster": "טוסטר",
-  "applianceRiceCooker": "סיר אורז"
+  "applianceRiceCooker": "סיר אורז",
+  "tabCookNow": "לבשל עכשיו",
+  "tabAlmostThere": "כמעט שם",
+  "missingCount": "חסרים {count}",
+  "noMatches": "אין עדיין מנות מתאימות. הוסיפו מצרכים, מכשירים או יותר זמן.",
+  "ingredientsTitle": "מצרכים",
+  "stepsTitle": "שלבים",
+  "missingBadge": "חסר",
+  "addMissingToList": "הוסיפו את החסר לרשימת הקניות",
+  "addedToList": "נוספו לרשימת הקניות",
+  "startCooking": "התחילו לבשל",
+  "stepOfTotal": "שלב {current} מתוך {total}",
+  "nextStep": "הבא",
+  "previousStep": "הקודם",
+  "finishCooking": "סיימתי",
+  "startTimer": "הפעל טיימר",
+  "pauseTimer": "השהה"
 }

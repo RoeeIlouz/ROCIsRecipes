@@ -93,4 +93,57 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get applianceRiceCooker => 'Rice cooker';
+
+  @override
+  String get tabCookNow => 'Cook now';
+
+  @override
+  String get tabAlmostThere => 'Almost there';
+
+  @override
+  String missingCount(int count) {
+    return 'Missing $count';
+  }
+
+  @override
+  String get noMatches =>
+      'No dishes match yet. Add ingredients, appliances or more time.';
+
+  @override
+  String get ingredientsTitle => 'Ingredients';
+
+  @override
+  String get stepsTitle => 'Steps';
+
+  @override
+  String get missingBadge => 'Missing';
+
+  @override
+  String get addMissingToList => 'Add missing to shopping list';
+
+  @override
+  String get addedToList => 'Added to shopping list';
+
+  @override
+  String get startCooking => 'Start cooking';
+
+  @override
+  String stepOfTotal(int current, int total) {
+    return 'Step $current of $total';
+  }
+
+  @override
+  String get nextStep => 'Next';
+
+  @override
+  String get previousStep => 'Back';
+
+  @override
+  String get finishCooking => 'Done';
+
+  @override
+  String get startTimer => 'Start timer';
+
+  @override
+  String get pauseTimer => 'Pause';
 }

@@ -93,4 +93,57 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get applianceRiceCooker => 'סיר אורז';
+
+  @override
+  String get tabCookNow => 'לבשל עכשיו';
+
+  @override
+  String get tabAlmostThere => 'כמעט שם';
+
+  @override
+  String missingCount(int count) {
+    return 'חסרים $count';
+  }
+
+  @override
+  String get noMatches =>
+      'אין עדיין מנות מתאימות. הוסיפו מצרכים, מכשירים או יותר זמן.';
+
+  @override
+  String get ingredientsTitle => 'מצרכים';
+
+  @override
+  String get stepsTitle => 'שלבים';
+
+  @override
+  String get missingBadge => 'חסר';
+
+  @override
+  String get addMissingToList => 'הוסיפו את החסר לרשימת הקניות';
+
+  @override
+  String get addedToList => 'נוספו לרשימת הקניות';
+
+  @override
+  String get startCooking => 'התחילו לבשל';
+
+  @override
+  String stepOfTotal(int current, int total) {
+    return 'שלב $current מתוך $total';
+  }
+
+  @override
+  String get nextStep => 'הבא';
+
+  @override
+  String get previousStep => 'הקודם';
+
+  @override
+  String get finishCooking => 'סיימתי';
+
+  @override
+  String get startTimer => 'הפעל טיימר';
+
+  @override
+  String get pauseTimer => 'השהה';
 }

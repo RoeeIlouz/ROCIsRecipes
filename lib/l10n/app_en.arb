@@ -34,5 +34,38 @@
   "applianceBlender": "Blender",
   "applianceKettle": "Kettle",
   "applianceToaster": "Toaster",
-  "applianceRiceCooker": "Rice cooker"
+  "applianceRiceCooker": "Rice cooker",
+  "tabCookNow": "Cook now",
+  "tabAlmostThere": "Almost there",
+  "missingCount": "Missing {count}",
+  "@missingCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noMatches": "No dishes match yet. Add ingredients, appliances or more time.",
+  "ingredientsTitle": "Ingredients",
+  "stepsTitle": "Steps",
+  "missingBadge": "Missing",
+  "addMissingToList": "Add missing to shopping list",
+  "addedToList": "Added to shopping list",
+  "startCooking": "Start cooking",
+  "stepOfTotal": "Step {current} of {total}",
+  "@stepOfTotal": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "nextStep": "Next",
+  "previousStep": "Back",
+  "finishCooking": "Done",
+  "startTimer": "Start timer",
+  "pauseTimer": "Pause"
 }

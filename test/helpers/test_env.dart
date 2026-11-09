@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hive_ce/hive.dart';
 import 'package:provider/provider.dart';
+import 'package:rocis_recipes/core/config/router.dart';
 import 'package:rocis_recipes/features/catalog/ingredient.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
@@ -67,6 +68,28 @@ class TestEnv {
             GlobalCupertinoLocalizations.delegate,
           ],
           home: child,
+        ),
+      );
+
+  /// Pumps the real app router at [location] (for navigation tests).
+  Widget wrapApp(String location, {Locale locale = const Locale('he')}) => MultiProvider(
+        providers: [
+          Provider<IngredientCatalog>.value(value: catalog),
+          ChangeNotifierProvider<PantryRepository>.value(value: pantry),
+          ChangeNotifierProvider<SettingsRepository>.value(value: settings),
+          ChangeNotifierProvider<RecipeRepository>.value(value: recipes),
+          ChangeNotifierProvider<ShoppingRepository>.value(value: shopping),
+        ],
+        child: MaterialApp.router(
+          locale: locale,
+          supportedLocales: AppLocalizations.supportedLocales,
+          localizationsDelegates: const [
+            AppLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          routerConfig: buildRouter(initialLocation: location),
         ),
       );
 }

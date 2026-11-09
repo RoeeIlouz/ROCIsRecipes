@@ -265,6 +265,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Rice cooker'**
   String get applianceRiceCooker;
+
+  /// No description provided for @tabCookNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Cook now'**
+  String get tabCookNow;
+
+  /// No description provided for @tabAlmostThere.
+  ///
+  /// In en, this message translates to:
+  /// **'Almost there'**
+  String get tabAlmostThere;
+
+  /// No description provided for @missingCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing {count}'**
+  String missingCount(int count);
+
+  /// No description provided for @noMatches.
+  ///
+  /// In en, this message translates to:
+  /// **'No dishes match yet. Add ingredients, appliances or more time.'**
+  String get noMatches;
+
+  /// No description provided for @ingredientsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Ingredients'**
+  String get ingredientsTitle;
+
+  /// No description provided for @stepsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Steps'**
+  String get stepsTitle;
+
+  /// No description provided for @missingBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing'**
+  String get missingBadge;
+
+  /// No description provided for @addMissingToList.
+  ///
+  /// In en, this message translates to:
+  /// **'Add missing to shopping list'**
+  String get addMissingToList;
+
+  /// No description provided for @addedToList.
+  ///
+  /// In en, this message translates to:
+  /// **'Added to shopping list'**
+  String get addedToList;
+
+  /// No description provided for @startCooking.
+  ///
+  /// In en, this message translates to:
+  /// **'Start cooking'**
+  String get startCooking;
+
+  /// No description provided for @stepOfTotal.
+  ///
+  /// In en, this message translates to:
+  /// **'Step {current} of {total}'**
+  String stepOfTotal(int current, int total);
+
+  /// No description provided for @nextStep.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get nextStep;
+
+  /// No description provided for @previousStep.
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get previousStep;
+
+  /// No description provided for @finishCooking.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get finishCooking;
+
+  /// No description provided for @startTimer.
+  ///
+  /// In en, this message translates to:
+  /// **'Start timer'**
+  String get startTimer;
+
+  /// No description provided for @pauseTimer.
+  ///
+  /// In en, this message translates to:
+  /// **'Pause'**
+  String get pauseTimer;
 }
 
 class _AppLocalizationsDelegate
