@@ -415,6 +415,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Time\'s up!'**
   String get timerDone;
+
+  /// No description provided for @pricesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated prices'**
+  String get pricesTitle;
+
+  /// No description provided for @useMyLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Use my location to find the nearest branch'**
+  String get useMyLocation;
+
+  /// No description provided for @pickBranch.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a branch'**
+  String get pickBranch;
+
+  /// No description provided for @estimateLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'estimate'**
+  String get estimateLabel;
+
+  /// No description provided for @partialTotal.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} items have no price'**
+  String partialTotal(int count);
+
+  /// No description provided for @noPriceData.
+  ///
+  /// In en, this message translates to:
+  /// **'No price data for your list'**
+  String get noPriceData;
+
+  /// No description provided for @tooFar.
+  ///
+  /// In en, this message translates to:
+  /// **'No branch within {km} km'**
+  String tooFar(int km);
+
+  /// No description provided for @distanceKm.
+  ///
+  /// In en, this message translates to:
+  /// **'{km} km away'**
+  String distanceKm(String km);
+
+  /// No description provided for @navigate.
+  ///
+  /// In en, this message translates to:
+  /// **'Navigate'**
+  String get navigate;
+
+  /// No description provided for @staleWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Prices may be out of date (last updated {date})'**
+  String staleWarning(String date);
+
+  /// No description provided for @osmAttribution.
+  ///
+  /// In en, this message translates to:
+  /// **'Map data from OpenStreetMap contributors'**
+  String get osmAttribution;
+
+  /// No description provided for @locationUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Location is not available, choose a branch yourself'**
+  String get locationUnavailable;
+
+  /// No description provided for @itemEstimate.
+  ///
+  /// In en, this message translates to:
+  /// **'about {price}'**
+  String itemEstimate(String price);
 }
 
 class _AppLocalizationsDelegate

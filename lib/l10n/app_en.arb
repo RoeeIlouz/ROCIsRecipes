@@ -76,5 +76,53 @@
   "doneSection": "In the cart",
   "clearChecked": "Clear checked",
   "shoppingEmpty": "Your list is empty.",
-  "timerDone": "Time's up!"
+  "timerDone": "Time's up!",
+  "pricesTitle": "Estimated prices",
+  "useMyLocation": "Use my location to find the nearest branch",
+  "pickBranch": "Choose a branch",
+  "estimateLabel": "estimate",
+  "partialTotal": "{count} items have no price",
+  "@partialTotal": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noPriceData": "No price data for your list",
+  "tooFar": "No branch within {km} km",
+  "@tooFar": {
+    "placeholders": {
+      "km": {
+        "type": "int"
+      }
+    }
+  },
+  "distanceKm": "{km} km away",
+  "@distanceKm": {
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
+  },
+  "navigate": "Navigate",
+  "staleWarning": "Prices may be out of date (last updated {date})",
+  "@staleWarning": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "osmAttribution": "Map data from OpenStreetMap contributors",
+  "locationUnavailable": "Location is not available, choose a branch yourself",
+  "itemEstimate": "about {price}",
+  "@itemEstimate": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  }
 }

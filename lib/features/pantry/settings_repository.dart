@@ -35,6 +35,16 @@ class SettingsRepository extends ChangeNotifier {
     await setStapleIds(defaults);
   }
 
+  /// Branch the user chose by hand per chain (chain id to branch id).
+  Map<String, String> get manualStoreIds => {
+        for (final e in ((_box.get('manualStores') as Map?) ?? const {}).entries) e.key as String: e.value as String,
+      };
+
+  Future<void> setManualStore(String chainId, String storeId) async {
+    await _box.put('manualStores', {...manualStoreIds, chainId: storeId});
+    notifyListeners();
+  }
+
   /// Version of the starter recipe pack last synced into the recipes box.
   int get starterVersion => (_box.get('starterVersion') as int?) ?? 0;
 

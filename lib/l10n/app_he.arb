@@ -52,5 +52,18 @@
   "doneSection": "בעגלה",
   "clearChecked": "נקה מסומנים",
   "shoppingEmpty": "הרשימה ריקה.",
-  "timerDone": "הזמן נגמר!"
+  "timerDone": "הזמן נגמר!",
+  "pricesTitle": "מחירים משוערים",
+  "useMyLocation": "השתמשו במיקום שלי כדי למצוא את הסניף הקרוב",
+  "pickBranch": "בחרו סניף",
+  "estimateLabel": "הערכה",
+  "partialTotal": "ל-{count} פריטים אין מחיר",
+  "noPriceData": "אין נתוני מחיר לרשימה",
+  "tooFar": "אין סניף ברדיוס {km} ק\"מ",
+  "distanceKm": "במרחק {km} ק\"מ",
+  "navigate": "ניווט",
+  "staleWarning": "ייתכן שהמחירים לא עדכניים (עודכנו לאחרונה {date})",
+  "osmAttribution": "נתוני מפה מתורמי OpenStreetMap",
+  "locationUnavailable": "המיקום לא זמין, בחרו סניף בעצמכם",
+  "itemEstimate": "כ-{price}"
 }
