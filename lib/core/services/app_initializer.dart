@@ -7,6 +7,7 @@ import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
+import 'package:rocis_recipes/features/recipes/starter_recipe_loader.dart';
 import 'package:rocis_recipes/features/shopping/shopping_repository.dart';
 import 'package:rocis_recipes/shared/ui/theme/theme_service.dart';
 
@@ -35,6 +36,9 @@ class AppInitializer {
     final shopping = ShoppingRepository(await Hive.openBox<Map>('shopping'));
     final settings = SettingsRepository(await Hive.openBox('app_settings'));
     await settings.seedStaplesIfUnset(catalog.defaultStapleIds);
+    await recipes.seedIfEmpty(
+      StarterRecipeLoader.parse(await rootBundle.loadString('assets/recipes/starter_he.json')),
+    );
 
     return [
       ChangeNotifierProvider<ThemeService>.value(value: themeService),
