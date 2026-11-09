@@ -29,7 +29,7 @@ related: [2026-11-09-rocis-recipes-design]
 - Platform: Android only, Flutter, org `com.rocisapps`, project name `rocis_recipes`.
 - Offline-first: every user write goes to a local Hive box first. No login, no Firebase in this plan.
 - Zero hardcoded UI strings. All strings in `lib/l10n/app_he.arb` and `lib/l10n/app_en.arb`. Default locale is Hebrew (RTL); English (LTR) must also work.
-- Theme: Light, Slate Dark, AMOLED (`#000000` background, `Colors.white12` borders), glass cards via `GlassContainer`, font Outfit via `google_fonts`. Reuse the templates in `the rocis-app-builder skill templates folder` (`AppConfig`, `AppInitializer`, `AppTheme`, `ThemeService`, `GlassContainer`, `l10n.yaml`, ARB files).
+- Theme: Light, Slate Dark, AMOLED (`#000000` background, `Colors.white12` borders), glass cards via `GlassContainer`, font Outfit via `google_fonts`. Reuse the templates in the rocis-app-builder skill's `templates/` folder (`AppConfig`, `AppInitializer`, `AppTheme`, `ThemeService`, `GlassContainer`, `l10n.yaml`, ARB files).
 - Staples assumed available by default: salt, pepper, oil, water (user-editable list).
 - Starter collection: 50 to 100 recipes, mainly Hebrew, each tagged with appliances and total minutes.
 - Pantry items are present or absent with optional quantity.
