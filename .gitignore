@@ -6,3 +6,5 @@ build/
 .flutter-plugins*
 .packages
 pubspec.lock.bak
+.base-ast/
+.base-ast-cache/

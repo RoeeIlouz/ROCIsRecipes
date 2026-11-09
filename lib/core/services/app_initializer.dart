@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:hive_ce_flutter/hive_ce_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
-import 'package:rocis_recipes/core/config/app_config.dart';
 import 'package:rocis_recipes/shared/ui/theme/theme_service.dart';
 
 class AppInitializer {
