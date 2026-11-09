@@ -22,6 +22,20 @@ class RecipeRepository extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Adds or updates built-in recipes by id. User-created recipes, including
+  /// one that shares an id with a starter recipe, are never overwritten.
+  Future<void> syncStarter(List<Recipe> starter) async {
+    final updates = <String, Map<String, dynamic>>{};
+    for (final r in starter) {
+      final existing = byId(r.id);
+      if (existing != null && existing.isUserCreated) continue;
+      updates[r.id] = r.toJson();
+    }
+    if (updates.isEmpty) return;
+    await _box.putAll(updates);
+    notifyListeners();
+  }
+
   Future<void> upsert(Recipe recipe) async {
     await _box.put(recipe.id, recipe.toJson());
     notifyListeners();

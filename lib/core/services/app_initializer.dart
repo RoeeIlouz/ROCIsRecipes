@@ -36,9 +36,12 @@ class AppInitializer {
     final shopping = ShoppingRepository(await Hive.openBox<Map>('shopping'));
     final settings = SettingsRepository(await Hive.openBox('app_settings'));
     await settings.seedStaplesIfUnset(catalog.defaultStapleIds);
-    await recipes.seedIfEmpty(
-      StarterRecipeLoader.parse(await rootBundle.loadString('assets/recipes/starter_he.json')),
-    );
+    if (settings.starterVersion < kStarterVersion) {
+      await recipes.syncStarter(
+        StarterRecipeLoader.parse(await rootBundle.loadString('assets/recipes/starter_he.json')),
+      );
+      await settings.setStarterVersion(kStarterVersion);
+    }
 
     return [
       ChangeNotifierProvider<ThemeService>.value(value: themeService),

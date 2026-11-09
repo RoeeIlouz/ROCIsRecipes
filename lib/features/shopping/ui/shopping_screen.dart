@@ -28,7 +28,7 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
     final catalog = context.read<IngredientCatalog>();
     final repo = context.read<ShoppingRepository>();
     final known = catalog.resolve(text);
-    await repo.add(ShoppingItem(
+    await repo.addIfNew(ShoppingItem(
       id: 'man_${DateTime.now().microsecondsSinceEpoch}',
       ingredientId: known?.id,
       label: known == null ? text : ingredientLabel(context, catalog, known.id),
