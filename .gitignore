@@ -1,1 +1,10 @@
 .superpowers/
+.dart_tool/
+build/
+.idea/
+*.iml
+.flutter-plugins*
+.packages
+pubspec.lock.bak
+.base-ast/
+.base-ast-cache/

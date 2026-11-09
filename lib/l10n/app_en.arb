@@ -1,0 +1,80 @@
+{
+  "@@locale": "en",
+  "appName": "ROCIs Recipes",
+  "settings": "Settings",
+  "theme": "Theme",
+  "lightTheme": "Light",
+  "darkTheme": "Dark (Slate)",
+  "amoledTheme": "AMOLED (Pure Black)",
+  "glassmorphism": "Glassmorphism",
+  "save": "Save",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "offlineMode": "Offline Mode Active",
+  "pantryTitle": "My kitchen",
+  "pantryInputHint": "Type an ingredient",
+  "addIngredient": "Add",
+  "pickFromList": "Pick from list",
+  "pantryEmpty": "Nothing here yet. Add what you have at home.",
+  "myIngredients": "What I have",
+  "appliancesTitle": "My appliances",
+  "cookingTimeTitle": "Time I have",
+  "minutesShort": "{count} min",
+  "@minutesShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "applianceStovetop": "Stovetop",
+  "applianceOven": "Oven",
+  "applianceMicrowave": "Microwave",
+  "applianceAirFryer": "Air fryer",
+  "applianceBlender": "Blender",
+  "applianceKettle": "Kettle",
+  "applianceToaster": "Toaster",
+  "applianceRiceCooker": "Rice cooker",
+  "tabCookNow": "Cook now",
+  "tabAlmostThere": "Almost there",
+  "missingCount": "Missing {count}",
+  "@missingCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noMatches": "No dishes match yet. Add ingredients, appliances or more time.",
+  "ingredientsTitle": "Ingredients",
+  "stepsTitle": "Steps",
+  "missingBadge": "Missing",
+  "addMissingToList": "Add missing to shopping list",
+  "addedToList": "Added to shopping list",
+  "startCooking": "Start cooking",
+  "stepOfTotal": "Step {current} of {total}",
+  "@stepOfTotal": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "nextStep": "Next",
+  "previousStep": "Back",
+  "finishCooking": "Done",
+  "startTimer": "Start timer",
+  "pauseTimer": "Pause",
+  "navPantry": "Kitchen",
+  "navSuggestions": "Dishes",
+  "navShopping": "Shopping",
+  "shoppingTitle": "Shopping list",
+  "shoppingInputHint": "Add an item",
+  "doneSection": "In the cart",
+  "clearChecked": "Clear checked",
+  "shoppingEmpty": "Your list is empty.",
+  "timerDone": "Time's up!"
+}
