@@ -51,5 +51,6 @@
   "shoppingInputHint": "הוסיפו פריט",
   "doneSection": "בעגלה",
   "clearChecked": "נקה מסומנים",
-  "shoppingEmpty": "הרשימה ריקה."
+  "shoppingEmpty": "הרשימה ריקה.",
+  "timerDone": "הזמן נגמר!"
 }

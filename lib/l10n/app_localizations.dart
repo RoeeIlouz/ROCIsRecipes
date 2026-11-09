@@ -409,6 +409,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your list is empty.'**
   String get shoppingEmpty;
+
+  /// No description provided for @timerDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Time\'s up!'**
+  String get timerDone;
 }
 
 class _AppLocalizationsDelegate

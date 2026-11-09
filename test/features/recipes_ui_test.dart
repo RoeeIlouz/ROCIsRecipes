@@ -124,4 +124,47 @@ void main() {
     await tester.pumpAndSettle();
     expect(tester.takeException(), isNull);
   });
+
+  testWidgets('timer counts down from the first step when Start is pressed', (tester) async {
+    final env = await setUpEnv();
+    await tester.pumpWidget(env.wrapApp('/cook/cookable'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('timer_toggle')));
+    await tester.pump();
+    for (var i = 0; i < 3; i++) {
+      await tester.pump(const Duration(seconds: 1));
+    }
+    expect(find.text('00:57'), findsOneWidget);
+
+    await tester.tap(find.byKey(const Key('timer_toggle')));
+    await tester.pump(const Duration(seconds: 2));
+    expect(find.text('00:57'), findsOneWidget);
+  });
+
+  testWidgets('finished timer shows a done state instead of resetting', (tester) async {
+    final env = await TestEnv.create(recipes: const [
+      Recipe(
+        id: 'quick',
+        titleHe: 'מהיר',
+        ingredients: [RecipeIngredient(ingredientId: 'egg')],
+        steps: [RecipeStep(textHe: 'ממתינים', timerSeconds: 2)],
+        totalMinutes: 5,
+      ),
+    ]);
+    await tester.pumpWidget(env.wrapApp('/cook/quick'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('timer_toggle')));
+    await tester.pump();
+    for (var i = 0; i < 4; i++) {
+      await tester.pump(const Duration(seconds: 1));
+    }
+    expect(find.text('00:00'), findsOneWidget);
+    expect(find.byKey(const Key('timer_done')), findsOneWidget);
+
+    await tester.tap(find.byKey(const Key('timer_toggle')));
+    await tester.pump();
+    await tester.pump(const Duration(seconds: 1));
+    expect(find.text('00:01'), findsOneWidget);
+    expect(find.byKey(const Key('timer_done')), findsNothing);
+  });
 }

@@ -75,5 +75,6 @@
   "shoppingInputHint": "Add an item",
   "doneSection": "In the cart",
   "clearChecked": "Clear checked",
-  "shoppingEmpty": "Your list is empty."
+  "shoppingEmpty": "Your list is empty.",
+  "timerDone": "Time's up!"
 }

@@ -170,4 +170,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get shoppingEmpty => 'Your list is empty.';
+
+  @override
+  String get timerDone => 'Time\'s up!';
 }

@@ -170,4 +170,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get shoppingEmpty => 'הרשימה ריקה.';
+
+  @override
+  String get timerDone => 'הזמן נגמר!';
 }
