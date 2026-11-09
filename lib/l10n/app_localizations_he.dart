@@ -40,4 +40,57 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get offlineMode => 'מצב לא מקוון פעיל';
+
+  @override
+  String get pantryTitle => 'המטבח שלי';
+
+  @override
+  String get pantryInputHint => 'הקלידו מצרך';
+
+  @override
+  String get addIngredient => 'הוסף';
+
+  @override
+  String get pickFromList => 'בחירה מרשימה';
+
+  @override
+  String get pantryEmpty => 'עדיין ריק. הוסיפו מה שיש לכם בבית.';
+
+  @override
+  String get myIngredients => 'מה יש לי';
+
+  @override
+  String get appliancesTitle => 'המכשירים שלי';
+
+  @override
+  String get cookingTimeTitle => 'כמה זמן יש לי';
+
+  @override
+  String minutesShort(int count) {
+    return '$count דק\'';
+  }
+
+  @override
+  String get applianceStovetop => 'כיריים';
+
+  @override
+  String get applianceOven => 'תנור';
+
+  @override
+  String get applianceMicrowave => 'מיקרוגל';
+
+  @override
+  String get applianceAirFryer => 'איר פרייר';
+
+  @override
+  String get applianceBlender => 'בלנדר';
+
+  @override
+  String get applianceKettle => 'קומקום';
+
+  @override
+  String get applianceToaster => 'טוסטר';
+
+  @override
+  String get applianceRiceCooker => 'סיר אורז';
 }

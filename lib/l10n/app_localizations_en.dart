@@ -40,4 +40,57 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get offlineMode => 'Offline Mode Active';
+
+  @override
+  String get pantryTitle => 'My kitchen';
+
+  @override
+  String get pantryInputHint => 'Type an ingredient';
+
+  @override
+  String get addIngredient => 'Add';
+
+  @override
+  String get pickFromList => 'Pick from list';
+
+  @override
+  String get pantryEmpty => 'Nothing here yet. Add what you have at home.';
+
+  @override
+  String get myIngredients => 'What I have';
+
+  @override
+  String get appliancesTitle => 'My appliances';
+
+  @override
+  String get cookingTimeTitle => 'Time I have';
+
+  @override
+  String minutesShort(int count) {
+    return '$count min';
+  }
+
+  @override
+  String get applianceStovetop => 'Stovetop';
+
+  @override
+  String get applianceOven => 'Oven';
+
+  @override
+  String get applianceMicrowave => 'Microwave';
+
+  @override
+  String get applianceAirFryer => 'Air fryer';
+
+  @override
+  String get applianceBlender => 'Blender';
+
+  @override
+  String get applianceKettle => 'Kettle';
+
+  @override
+  String get applianceToaster => 'Toaster';
+
+  @override
+  String get applianceRiceCooker => 'Rice cooker';
 }

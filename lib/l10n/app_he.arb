@@ -10,5 +10,22 @@
   "save": "שמור",
   "cancel": "ביטול",
   "delete": "מחק",
-  "offlineMode": "מצב לא מקוון פעיל"
+  "offlineMode": "מצב לא מקוון פעיל",
+  "pantryTitle": "המטבח שלי",
+  "pantryInputHint": "הקלידו מצרך",
+  "addIngredient": "הוסף",
+  "pickFromList": "בחירה מרשימה",
+  "pantryEmpty": "עדיין ריק. הוסיפו מה שיש לכם בבית.",
+  "myIngredients": "מה יש לי",
+  "appliancesTitle": "המכשירים שלי",
+  "cookingTimeTitle": "כמה זמן יש לי",
+  "minutesShort": "{count} דק'",
+  "applianceStovetop": "כיריים",
+  "applianceOven": "תנור",
+  "applianceMicrowave": "מיקרוגל",
+  "applianceAirFryer": "איר פרייר",
+  "applianceBlender": "בלנדר",
+  "applianceKettle": "קומקום",
+  "applianceToaster": "טוסטר",
+  "applianceRiceCooker": "סיר אורז"
 }

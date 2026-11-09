@@ -10,5 +10,29 @@
   "save": "Save",
   "cancel": "Cancel",
   "delete": "Delete",
-  "offlineMode": "Offline Mode Active"
+  "offlineMode": "Offline Mode Active",
+  "pantryTitle": "My kitchen",
+  "pantryInputHint": "Type an ingredient",
+  "addIngredient": "Add",
+  "pickFromList": "Pick from list",
+  "pantryEmpty": "Nothing here yet. Add what you have at home.",
+  "myIngredients": "What I have",
+  "appliancesTitle": "My appliances",
+  "cookingTimeTitle": "Time I have",
+  "minutesShort": "{count} min",
+  "@minutesShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "applianceStovetop": "Stovetop",
+  "applianceOven": "Oven",
+  "applianceMicrowave": "Microwave",
+  "applianceAirFryer": "Air fryer",
+  "applianceBlender": "Blender",
+  "applianceKettle": "Kettle",
+  "applianceToaster": "Toaster",
+  "applianceRiceCooker": "Rice cooker"
 }

@@ -67,8 +67,8 @@ abstract class AppLocalizations {
 
   final String localeName;
 
-  static AppLocalizations? of(BuildContext context) {
-    return Localizations.of<AppLocalizations>(context, AppLocalizations);
+  static AppLocalizations of(BuildContext context) {
+    return Localizations.of<AppLocalizations>(context, AppLocalizations)!;
   }
 
   static const LocalizationsDelegate<AppLocalizations> delegate =
@@ -163,6 +163,108 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Offline Mode Active'**
   String get offlineMode;
+
+  /// No description provided for @pantryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'My kitchen'**
+  String get pantryTitle;
+
+  /// No description provided for @pantryInputHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Type an ingredient'**
+  String get pantryInputHint;
+
+  /// No description provided for @addIngredient.
+  ///
+  /// In en, this message translates to:
+  /// **'Add'**
+  String get addIngredient;
+
+  /// No description provided for @pickFromList.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick from list'**
+  String get pickFromList;
+
+  /// No description provided for @pantryEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing here yet. Add what you have at home.'**
+  String get pantryEmpty;
+
+  /// No description provided for @myIngredients.
+  ///
+  /// In en, this message translates to:
+  /// **'What I have'**
+  String get myIngredients;
+
+  /// No description provided for @appliancesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'My appliances'**
+  String get appliancesTitle;
+
+  /// No description provided for @cookingTimeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Time I have'**
+  String get cookingTimeTitle;
+
+  /// No description provided for @minutesShort.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} min'**
+  String minutesShort(int count);
+
+  /// No description provided for @applianceStovetop.
+  ///
+  /// In en, this message translates to:
+  /// **'Stovetop'**
+  String get applianceStovetop;
+
+  /// No description provided for @applianceOven.
+  ///
+  /// In en, this message translates to:
+  /// **'Oven'**
+  String get applianceOven;
+
+  /// No description provided for @applianceMicrowave.
+  ///
+  /// In en, this message translates to:
+  /// **'Microwave'**
+  String get applianceMicrowave;
+
+  /// No description provided for @applianceAirFryer.
+  ///
+  /// In en, this message translates to:
+  /// **'Air fryer'**
+  String get applianceAirFryer;
+
+  /// No description provided for @applianceBlender.
+  ///
+  /// In en, this message translates to:
+  /// **'Blender'**
+  String get applianceBlender;
+
+  /// No description provided for @applianceKettle.
+  ///
+  /// In en, this message translates to:
+  /// **'Kettle'**
+  String get applianceKettle;
+
+  /// No description provided for @applianceToaster.
+  ///
+  /// In en, this message translates to:
+  /// **'Toaster'**
+  String get applianceToaster;
+
+  /// No description provided for @applianceRiceCooker.
+  ///
+  /// In en, this message translates to:
+  /// **'Rice cooker'**
+  String get applianceRiceCooker;
 }
 
 class _AppLocalizationsDelegate
