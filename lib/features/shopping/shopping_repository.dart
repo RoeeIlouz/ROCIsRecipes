@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:hive_ce/hive.dart';
+import 'package:rocis_recipes/core/text/hebrew_normalizer.dart';
 import 'package:rocis_recipes/features/shopping/shopping_item.dart';
 
 class ShoppingRepository extends ChangeNotifier {
@@ -28,6 +29,18 @@ class ShoppingRepository extends ChangeNotifier {
     if (toAdd.isEmpty) return;
     await _box.putAll(toAdd);
     notifyListeners();
+  }
+
+  /// Adds [item] unless an unchecked item already covers it (same ingredient
+  /// id, or same normalized label). Returns whether it was added.
+  Future<bool> addIfNew(ShoppingItem item) async {
+    final label = normalizeText(item.label);
+    final duplicate = items.any((e) =>
+        !e.checked &&
+        ((item.ingredientId != null && e.ingredientId == item.ingredientId) || normalizeText(e.label) == label));
+    if (duplicate) return false;
+    await add(item);
+    return true;
   }
 
   Future<void> toggle(String id) async {

@@ -65,23 +65,21 @@ class RecipeDetailScreen extends StatelessWidget {
               isMissing: !ing.optional && !have.contains(ing.ingredientId),
             ),
           const SizedBox(height: 16),
-          Row(
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
             children: [
               FilledButton(
                 key: const Key('start_cooking_button'),
                 onPressed: () => context.push('/cook/${recipe.id}'),
                 child: Text(l10n.startCooking),
               ),
-              if (missing.isNotEmpty) ...[
-                const SizedBox(width: 8),
-                Flexible(
-                  child: OutlinedButton(
-                    key: const Key('add_missing_button'),
-                    onPressed: addMissing,
-                    child: Text(l10n.addMissingToList),
-                  ),
+              if (missing.isNotEmpty)
+                OutlinedButton(
+                  key: const Key('add_missing_button'),
+                  onPressed: addMissing,
+                  child: Text(l10n.addMissingToList),
                 ),
-              ],
             ],
           ),
           const SizedBox(height: 16),

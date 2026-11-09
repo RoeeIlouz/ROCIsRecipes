@@ -1,9 +1,28 @@
 import 'dart:convert';
 
 import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
+import 'package:rocis_recipes/features/recipes/appliance.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
 
+/// Bump when assets/recipes/starter_he.json changes so existing installs sync.
+const int kStarterVersion = 1;
+
 class StarterRecipeLoader {
+  /// Checks the raw JSON for appliance names that [Recipe.fromJson] would
+  /// silently drop (typos), which would make a recipe look appliance-free.
+  static List<String> validateJson(String json) {
+    final problems = <String>[];
+    for (final e in jsonDecode(json) as List<dynamic>) {
+      final m = Map<String, dynamic>.from(e as Map);
+      for (final name in (m['appliances'] as List<dynamic>? ?? const [])) {
+        if (applianceFromName(name as String) == null) {
+          problems.add('${m['id']}: unknown appliance $name');
+        }
+      }
+    }
+    return problems;
+  }
+
   static List<Recipe> parse(String json) => (jsonDecode(json) as List<dynamic>)
       .map((e) => Recipe.fromJson(Map<String, dynamic>.from(e as Map)))
       .toList();

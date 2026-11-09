@@ -35,6 +35,11 @@ class SettingsRepository extends ChangeNotifier {
     await setStapleIds(defaults);
   }
 
+  /// Version of the starter recipe pack last synced into the recipes box.
+  int get starterVersion => (_box.get('starterVersion') as int?) ?? 0;
+
+  Future<void> setStarterVersion(int value) => _box.put('starterVersion', value);
+
   int get maxMinutes => (_box.get(_maxMinutesKey) as int?) ?? defaultMaxMinutes;
 
   Future<void> setMaxMinutes(int value) async {

@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:clock/clock.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
@@ -13,6 +14,12 @@ String formatTimer(int seconds) {
   final m = (seconds ~/ 60).toString().padLeft(2, '0');
   final s = (seconds % 60).toString().padLeft(2, '0');
   return '$m:$s';
+}
+
+/// Whole seconds from [now] until [endsAt], rounded up, never negative.
+int secondsLeft(DateTime endsAt, DateTime now) {
+  final ms = endsAt.difference(now).inMilliseconds;
+  return ms <= 0 ? 0 : (ms + 999) ~/ 1000;
 }
 
 class CookingModeScreen extends StatefulWidget {
@@ -73,8 +80,11 @@ class _CookingModeScreenState extends State<CookingModeScreen> {
       _remaining = stepSeconds;
       _finished = false;
     }
+    // Derive the remaining time from a deadline so it stays correct if ticks
+    // are delayed (for example while the app is in the background).
+    final endsAt = clock.now().add(Duration(seconds: _remaining!));
     _timer = Timer.periodic(const Duration(seconds: 1), (t) {
-      final left = (_remaining ?? 0) - 1;
+      final left = secondsLeft(endsAt, clock.now());
       if (left <= 0) {
         t.cancel();
         HapticFeedback.heavyImpact();
