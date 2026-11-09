@@ -146,4 +146,28 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get pauseTimer => 'השהה';
+
+  @override
+  String get navPantry => 'מטבח';
+
+  @override
+  String get navSuggestions => 'מנות';
+
+  @override
+  String get navShopping => 'קניות';
+
+  @override
+  String get shoppingTitle => 'רשימת קניות';
+
+  @override
+  String get shoppingInputHint => 'הוסיפו פריט';
+
+  @override
+  String get doneSection => 'בעגלה';
+
+  @override
+  String get clearChecked => 'נקה מסומנים';
+
+  @override
+  String get shoppingEmpty => 'הרשימה ריקה.';
 }

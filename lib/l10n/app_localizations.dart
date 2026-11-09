@@ -361,6 +361,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Pause'**
   String get pauseTimer;
+
+  /// No description provided for @navPantry.
+  ///
+  /// In en, this message translates to:
+  /// **'Kitchen'**
+  String get navPantry;
+
+  /// No description provided for @navSuggestions.
+  ///
+  /// In en, this message translates to:
+  /// **'Dishes'**
+  String get navSuggestions;
+
+  /// No description provided for @navShopping.
+  ///
+  /// In en, this message translates to:
+  /// **'Shopping'**
+  String get navShopping;
+
+  /// No description provided for @shoppingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Shopping list'**
+  String get shoppingTitle;
+
+  /// No description provided for @shoppingInputHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Add an item'**
+  String get shoppingInputHint;
+
+  /// No description provided for @doneSection.
+  ///
+  /// In en, this message translates to:
+  /// **'In the cart'**
+  String get doneSection;
+
+  /// No description provided for @clearChecked.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear checked'**
+  String get clearChecked;
+
+  /// No description provided for @shoppingEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Your list is empty.'**
+  String get shoppingEmpty;
 }
 
 class _AppLocalizationsDelegate

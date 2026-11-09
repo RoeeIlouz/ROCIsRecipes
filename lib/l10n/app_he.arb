@@ -43,5 +43,13 @@
   "previousStep": "הקודם",
   "finishCooking": "סיימתי",
   "startTimer": "הפעל טיימר",
-  "pauseTimer": "השהה"
+  "pauseTimer": "השהה",
+  "navPantry": "מטבח",
+  "navSuggestions": "מנות",
+  "navShopping": "קניות",
+  "shoppingTitle": "רשימת קניות",
+  "shoppingInputHint": "הוסיפו פריט",
+  "doneSection": "בעגלה",
+  "clearChecked": "נקה מסומנים",
+  "shoppingEmpty": "הרשימה ריקה."
 }

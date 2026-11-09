@@ -146,4 +146,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get pauseTimer => 'Pause';
+
+  @override
+  String get navPantry => 'Kitchen';
+
+  @override
+  String get navSuggestions => 'Dishes';
+
+  @override
+  String get navShopping => 'Shopping';
+
+  @override
+  String get shoppingTitle => 'Shopping list';
+
+  @override
+  String get shoppingInputHint => 'Add an item';
+
+  @override
+  String get doneSection => 'In the cart';
+
+  @override
+  String get clearChecked => 'Clear checked';
+
+  @override
+  String get shoppingEmpty => 'Your list is empty.';
 }

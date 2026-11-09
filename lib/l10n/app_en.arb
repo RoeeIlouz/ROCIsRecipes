@@ -67,5 +67,13 @@
   "previousStep": "Back",
   "finishCooking": "Done",
   "startTimer": "Start timer",
-  "pauseTimer": "Pause"
+  "pauseTimer": "Pause",
+  "navPantry": "Kitchen",
+  "navSuggestions": "Dishes",
+  "navShopping": "Shopping",
+  "shoppingTitle": "Shopping list",
+  "shoppingInputHint": "Add an item",
+  "doneSection": "In the cart",
+  "clearChecked": "Clear checked",
+  "shoppingEmpty": "Your list is empty."
 }
