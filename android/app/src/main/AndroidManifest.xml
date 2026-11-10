@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Weekly price snapshot download. -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <!-- Coarse location only, used on-device to find the nearest branch. -->
+    <!-- Precise location, used only on the device to find the nearest branch (never sent anywhere). -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <application
         android:label="ROCIs Recipes"

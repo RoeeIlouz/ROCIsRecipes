@@ -48,8 +48,8 @@ class GeolocatorLocationProvider implements LocationProvider {
     try {
       final position = await Geolocator.getCurrentPosition(
         locationSettings: const LocationSettings(
-          accuracy: LocationAccuracy.low,
-          timeLimit: Duration(seconds: 10),
+          accuracy: LocationAccuracy.high,
+          timeLimit: Duration(seconds: 20),
         ),
       );
       return UserLocation(lat: position.latitude, lng: position.longitude);

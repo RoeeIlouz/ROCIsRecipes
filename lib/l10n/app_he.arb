@@ -65,5 +65,18 @@
   "staleWarning": "ייתכן שהמחירים לא עדכניים (עודכנו לאחרונה {date})",
   "osmAttribution": "נתוני מפה מתורמי OpenStreetMap",
   "locationUnavailable": "המיקום לא זמין, בחרו סניף בעצמכם",
-  "itemEstimate": "כ-{price}"
+  "itemEstimate": "כ-{price}",
+  "pickerTitle": "בחרו מצרכים",
+  "pickerSearchHint": "חיפוש מצרכים",
+  "pickerDone": "סיום",
+  "pickerEmpty": "לא נמצאו מצרכים",
+  "closeLabel": "סגירה",
+  "categoryAll": "הכול",
+  "catProduce": "ירקות ופירות",
+  "catDairy": "חלב וביצים",
+  "catMeat": "בשר ודגים",
+  "catGrains": "דגנים וקטניות",
+  "catPantry": "מזווה",
+  "catSpices": "תבלינים",
+  "catSnacks": "אגוזים ושתייה"
 }

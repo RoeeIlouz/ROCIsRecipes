@@ -8,6 +8,7 @@ class Ingredient {
     required this.nameEn,
     this.synonyms = const [],
     this.isStaple = false,
+    this.category,
   });
 
   final String id;
@@ -16,12 +17,16 @@ class Ingredient {
   final List<String> synonyms;
   final bool isStaple;
 
+  /// One of kIngredientCategories (see ingredient_icons.dart); null for custom items.
+  final String? category;
+
   factory Ingredient.fromJson(Map<String, dynamic> json) => Ingredient(
         id: json['id'] as String,
         nameHe: json['nameHe'] as String,
         nameEn: json['nameEn'] as String? ?? '',
         synonyms: ((json['synonyms'] as List<dynamic>?) ?? const []).cast<String>(),
         isStaple: json['isStaple'] as bool? ?? false,
+        category: json['category'] as String?,
       );
 
   Map<String, dynamic> toJson() => {
@@ -30,6 +35,7 @@ class Ingredient {
         'nameEn': nameEn,
         'synonyms': synonyms,
         'isStaple': isStaple,
+        if (category != null) 'category': category,
       };
 
   @override
@@ -39,7 +45,8 @@ class Ingredient {
       other.nameHe == nameHe &&
       other.nameEn == nameEn &&
       listEquals(other.synonyms, synonyms) &&
-      other.isStaple == isStaple;
+      other.isStaple == isStaple &&
+      other.category == category;
 
   @override
   int get hashCode => Object.hash(id, nameHe, nameEn, isStaple);

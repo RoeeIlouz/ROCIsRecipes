@@ -53,7 +53,7 @@ void main() {
     final env = await pump(tester);
     await tester.tap(find.byKey(const Key('pick_from_list_button')));
     await tester.pumpAndSettle();
-    await tester.tap(find.byKey(const Key('pick_milk')));
+    await tester.tap(find.byKey(const Key('picker_tile_milk')));
     await tester.pumpAndSettle();
     expect(env.pantry.ids, {'milk'});
   });

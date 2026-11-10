@@ -7,6 +7,7 @@ import 'package:rocis_recipes/features/pantry/pantry_item.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/pantry/ui/appliance_picker.dart';
+import 'package:rocis_recipes/features/pantry/ui/ingredient_picker_sheet.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
 import 'package:rocis_recipes/shared/ui/widgets/glass_container.dart';
 
@@ -42,41 +43,6 @@ class _PantryScreenState extends State<PantryScreen> {
   Future<void> _addTyped() async {
     final catalog = context.read<IngredientCatalog>();
     await _addIngredient(catalog.resolveOrCustom(_controller.text));
-  }
-
-  Future<void> _pickFromList() async {
-    final catalog = context.read<IngredientCatalog>();
-    final isHebrew = Localizations.localeOf(context).languageCode == 'he';
-    final sorted = [...catalog.all]..sort((a, b) {
-        String name(Ingredient i) => (isHebrew || i.nameEn.isEmpty) ? i.nameHe : i.nameEn;
-        return name(a).compareTo(name(b));
-      });
-    final picked = await showModalBottomSheet<Ingredient>(
-      context: context,
-      isScrollControlled: true,
-      builder: (sheetContext) {
-        String? lastLetter;
-        final children = <Widget>[];
-        for (final ing in sorted) {
-          final label = ingredientLabel(sheetContext, catalog, ing.id);
-          final letter = label.isEmpty ? '' : label.substring(0, 1).toUpperCase();
-          if (letter != lastLetter) {
-            lastLetter = letter;
-            children.add(Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
-              child: Text(letter, style: Theme.of(sheetContext).textTheme.titleSmall),
-            ));
-          }
-          children.add(ListTile(
-            key: Key('pick_${ing.id}'),
-            title: Text(label),
-            onTap: () => Navigator.of(sheetContext).pop(ing),
-          ));
-        }
-        return SafeArea(child: ListView(children: children));
-      },
-    );
-    if (picked != null) await _addIngredient(picked);
   }
 
   @override
@@ -118,7 +84,7 @@ class _PantryScreenState extends State<PantryScreen> {
               const SizedBox(width: 8),
               OutlinedButton(
                 key: const Key('pick_from_list_button'),
-                onPressed: _pickFromList,
+                onPressed: () => showIngredientPicker(context),
                 child: Text(l10n.pickFromList),
               ),
             ],
