@@ -164,4 +164,31 @@ void main() {
     await _env(tester);
     expect(find.text('נתוני מפה מתורמי OpenStreetMap'), findsOneWidget);
   });
+
+  group('manual area', () {
+    testWidgets('picking an area from the search uses it as the location', (tester) async {
+      final env = await _env(tester, status: LocationStatus.denied, at: null);
+      await tester.tap(find.byKey(const Key('choose_area_button')));
+      await tester.pumpAndSettle();
+      await tester.enterText(find.byKey(const Key('area_search')), 'רחוק');
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('area_tile_shufersal:near')), findsNothing);
+      await tester.tap(find.byKey(const Key('area_tile_shufersal:far')));
+      await tester.pumpAndSettle();
+      expect(env.nearby.location, isNotNull);
+      expect(env.nearby.location!.lat, 31.2);
+      expect(env.nearby.status, LocationStatus.granted);
+      final far = tester.widget<Text>(find.byKey(const Key('price_total_shufersal')));
+      expect(far.data, contains('16.00'));
+    });
+
+    testWidgets('a search without matches says so', (tester) async {
+      await _env(tester);
+      await tester.tap(find.byKey(const Key('choose_area_button')));
+      await tester.pumpAndSettle();
+      await tester.enterText(find.byKey(const Key('area_search')), 'zzzz');
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('area_empty')), findsOneWidget);
+    });
+  });
 }

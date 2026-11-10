@@ -107,5 +107,9 @@
   "unitSlice": "{count, plural, =1{פרוסה} other{פרוסות}}",
   "unitPinch": "קורט",
   "recipeMissingTitle": "חסר",
-  "optionalLabel": "אופציונלי"
+  "optionalLabel": "אופציונלי",
+  "chooseArea": "או בחרו אזור לפי עיר או רחוב",
+  "areaSearchHint": "עיר, רחוב או שם סניף",
+  "areaNoResults": "לא נמצא סניף שם",
+  "usingArea": "אזור: {label}"
 }

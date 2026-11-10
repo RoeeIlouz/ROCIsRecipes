@@ -424,4 +424,18 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get optionalLabel => 'optional';
+
+  @override
+  String get chooseArea => 'Or choose an area by city or street';
+
+  @override
+  String get areaSearchHint => 'City, street or branch name';
+
+  @override
+  String get areaNoResults => 'No branch found there';
+
+  @override
+  String usingArea(String label) {
+    return 'Area: $label';
+  }
 }

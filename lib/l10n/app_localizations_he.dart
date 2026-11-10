@@ -423,4 +423,18 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get optionalLabel => 'אופציונלי';
+
+  @override
+  String get chooseArea => 'או בחרו אזור לפי עיר או רחוב';
+
+  @override
+  String get areaSearchHint => 'עיר, רחוב או שם סניף';
+
+  @override
+  String get areaNoResults => 'לא נמצא סניף שם';
+
+  @override
+  String usingArea(String label) {
+    return 'אזור: $label';
+  }
 }

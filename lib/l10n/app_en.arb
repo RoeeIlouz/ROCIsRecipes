@@ -239,5 +239,16 @@
         "type": "num"
       }
     }
+  },
+  "chooseArea": "Or choose an area by city or street",
+  "areaSearchHint": "City, street or branch name",
+  "areaNoResults": "No branch found there",
+  "usingArea": "Area: {label}",
+  "@usingArea": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
   }
 }

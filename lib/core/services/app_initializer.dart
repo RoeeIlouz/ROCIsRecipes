@@ -65,6 +65,7 @@ class AppInitializer {
     final shopping = ShoppingRepository(await Hive.openBox<Map>('shopping'));
     final settings = SettingsRepository(await Hive.openBox('app_settings'));
     await settings.seedStaplesIfUnset(catalog.defaultStapleIds);
+    await settings.seedAppliancesIfUnset();
     if (settings.starterVersion < kStarterVersion) {
       final starter = StarterRecipeLoader.parse(
         await rootBundle.loadString('assets/recipes/starter_he.json'),
