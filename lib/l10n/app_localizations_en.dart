@@ -223,4 +223,43 @@ class AppLocalizationsEn extends AppLocalizations {
   String itemEstimate(String price) {
     return 'about $price';
   }
+
+  @override
+  String get pickerTitle => 'Choose ingredients';
+
+  @override
+  String get pickerSearchHint => 'Search ingredients';
+
+  @override
+  String get pickerDone => 'Done';
+
+  @override
+  String get pickerEmpty => 'No ingredients found';
+
+  @override
+  String get closeLabel => 'Close';
+
+  @override
+  String get categoryAll => 'All';
+
+  @override
+  String get catProduce => 'Fruit & veg';
+
+  @override
+  String get catDairy => 'Dairy & eggs';
+
+  @override
+  String get catMeat => 'Meat & fish';
+
+  @override
+  String get catGrains => 'Grains & legumes';
+
+  @override
+  String get catPantry => 'Pantry';
+
+  @override
+  String get catSpices => 'Spices';
+
+  @override
+  String get catSnacks => 'Nuts & drinks';
 }

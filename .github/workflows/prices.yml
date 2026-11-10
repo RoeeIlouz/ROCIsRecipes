@@ -34,7 +34,7 @@ jobs:
       - name: Build snapshot
         run: |
           mkdir -p out
-          python tools/price_pipeline/build_snapshot.py --chains shufersal,carrefour --out out/snapshot.json.gz
+          python tools/price_pipeline/build_snapshot.py --chains shufersal --out out/snapshot.json.gz
           python tools/price_pipeline/make_manifest.py out/snapshot.json.gz out/manifest.json
           cat out/manifest.json
 

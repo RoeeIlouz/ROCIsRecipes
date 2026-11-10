@@ -493,6 +493,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'about {price}'**
   String itemEstimate(String price);
+
+  /// No description provided for @pickerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose ingredients'**
+  String get pickerTitle;
+
+  /// No description provided for @pickerSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search ingredients'**
+  String get pickerSearchHint;
+
+  /// No description provided for @pickerDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get pickerDone;
+
+  /// No description provided for @pickerEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No ingredients found'**
+  String get pickerEmpty;
+
+  /// No description provided for @closeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get closeLabel;
+
+  /// No description provided for @categoryAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get categoryAll;
+
+  /// No description provided for @catProduce.
+  ///
+  /// In en, this message translates to:
+  /// **'Fruit & veg'**
+  String get catProduce;
+
+  /// No description provided for @catDairy.
+  ///
+  /// In en, this message translates to:
+  /// **'Dairy & eggs'**
+  String get catDairy;
+
+  /// No description provided for @catMeat.
+  ///
+  /// In en, this message translates to:
+  /// **'Meat & fish'**
+  String get catMeat;
+
+  /// No description provided for @catGrains.
+  ///
+  /// In en, this message translates to:
+  /// **'Grains & legumes'**
+  String get catGrains;
+
+  /// No description provided for @catPantry.
+  ///
+  /// In en, this message translates to:
+  /// **'Pantry'**
+  String get catPantry;
+
+  /// No description provided for @catSpices.
+  ///
+  /// In en, this message translates to:
+  /// **'Spices'**
+  String get catSpices;
+
+  /// No description provided for @catSnacks.
+  ///
+  /// In en, this message translates to:
+  /// **'Nuts & drinks'**
+  String get catSnacks;
 }
 
 class _AppLocalizationsDelegate

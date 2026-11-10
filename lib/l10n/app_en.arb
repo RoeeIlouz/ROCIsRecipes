@@ -124,5 +124,18 @@
         "type": "String"
       }
     }
-  }
+  },
+  "pickerTitle": "Choose ingredients",
+  "pickerSearchHint": "Search ingredients",
+  "pickerDone": "Done",
+  "pickerEmpty": "No ingredients found",
+  "closeLabel": "Close",
+  "categoryAll": "All",
+  "catProduce": "Fruit & veg",
+  "catDairy": "Dairy & eggs",
+  "catMeat": "Meat & fish",
+  "catGrains": "Grains & legumes",
+  "catPantry": "Pantry",
+  "catSpices": "Spices",
+  "catSnacks": "Nuts & drinks"
 }

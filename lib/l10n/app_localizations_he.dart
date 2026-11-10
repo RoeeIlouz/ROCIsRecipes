@@ -222,4 +222,43 @@ class AppLocalizationsHe extends AppLocalizations {
   String itemEstimate(String price) {
     return 'כ-$price';
   }
+
+  @override
+  String get pickerTitle => 'בחרו מצרכים';
+
+  @override
+  String get pickerSearchHint => 'חיפוש מצרכים';
+
+  @override
+  String get pickerDone => 'סיום';
+
+  @override
+  String get pickerEmpty => 'לא נמצאו מצרכים';
+
+  @override
+  String get closeLabel => 'סגירה';
+
+  @override
+  String get categoryAll => 'הכול';
+
+  @override
+  String get catProduce => 'ירקות ופירות';
+
+  @override
+  String get catDairy => 'חלב וביצים';
+
+  @override
+  String get catMeat => 'בשר ודגים';
+
+  @override
+  String get catGrains => 'דגנים וקטניות';
+
+  @override
+  String get catPantry => 'מזווה';
+
+  @override
+  String get catSpices => 'תבלינים';
+
+  @override
+  String get catSnacks => 'אגוזים ושתייה';
 }

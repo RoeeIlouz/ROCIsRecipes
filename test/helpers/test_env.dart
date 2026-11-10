@@ -23,11 +23,11 @@ import 'package:rocis_recipes/features/shopping/shopping_repository.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
 
 const testIngredients = [
-  Ingredient(id: 'tomato', nameHe: 'עגבנייה', nameEn: 'Tomato', synonyms: ['עגבניות']),
-  Ingredient(id: 'cucumber', nameHe: 'מלפפון', nameEn: 'Cucumber', synonyms: ['מלפפונים']),
-  Ingredient(id: 'egg', nameHe: 'ביצה', nameEn: 'Egg', synonyms: ['ביצים']),
-  Ingredient(id: 'milk', nameHe: 'חלב', nameEn: 'Milk'),
-  Ingredient(id: 'salt', nameHe: 'מלח', nameEn: 'Salt', isStaple: true),
+  Ingredient(id: 'tomato', nameHe: 'עגבנייה', nameEn: 'Tomato', synonyms: ['עגבניות'], category: 'produce'),
+  Ingredient(id: 'cucumber', nameHe: 'מלפפון', nameEn: 'Cucumber', synonyms: ['מלפפונים'], category: 'produce'),
+  Ingredient(id: 'egg', nameHe: 'ביצה', nameEn: 'Egg', synonyms: ['ביצים'], category: 'dairy'),
+  Ingredient(id: 'milk', nameHe: 'חלב', nameEn: 'Milk', category: 'dairy'),
+  Ingredient(id: 'salt', nameHe: 'מלח', nameEn: 'Salt', isStaple: true, category: 'pantry'),
 ];
 
 int _counter = 0;
