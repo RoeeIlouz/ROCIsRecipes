@@ -571,6 +571,180 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Nuts & drinks'**
   String get catSnacks;
+
+  /// No description provided for @mealAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All meals'**
+  String get mealAll;
+
+  /// No description provided for @mealBreakfast.
+  ///
+  /// In en, this message translates to:
+  /// **'Breakfast'**
+  String get mealBreakfast;
+
+  /// No description provided for @mealLunch.
+  ///
+  /// In en, this message translates to:
+  /// **'Lunch'**
+  String get mealLunch;
+
+  /// No description provided for @mealDinner.
+  ///
+  /// In en, this message translates to:
+  /// **'Dinner'**
+  String get mealDinner;
+
+  /// No description provided for @mealSnack.
+  ///
+  /// In en, this message translates to:
+  /// **'Snack'**
+  String get mealSnack;
+
+  /// No description provided for @mealDessert.
+  ///
+  /// In en, this message translates to:
+  /// **'Dessert'**
+  String get mealDessert;
+
+  /// No description provided for @diffEasy.
+  ///
+  /// In en, this message translates to:
+  /// **'Easy'**
+  String get diffEasy;
+
+  /// No description provided for @diffMedium.
+  ///
+  /// In en, this message translates to:
+  /// **'Medium'**
+  String get diffMedium;
+
+  /// No description provided for @servingsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 serving} other{{count} servings}}'**
+  String servingsCount(num count);
+
+  /// No description provided for @photoCredit.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo: {author}, {license}'**
+  String photoCredit(String author, String license);
+
+  /// No description provided for @creditsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo credits'**
+  String get creditsTitle;
+
+  /// No description provided for @creditsIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Recipe photos come from Wikimedia Commons under free licenses. Tap a photo to open its page.'**
+  String get creditsIntro;
+
+  /// No description provided for @creditsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No photo credits yet.'**
+  String get creditsEmpty;
+
+  /// No description provided for @unitUnit.
+  ///
+  /// In en, this message translates to:
+  /// **'pcs'**
+  String get unitUnit;
+
+  /// No description provided for @unitG.
+  ///
+  /// In en, this message translates to:
+  /// **'g'**
+  String get unitG;
+
+  /// No description provided for @unitKg.
+  ///
+  /// In en, this message translates to:
+  /// **'kg'**
+  String get unitKg;
+
+  /// No description provided for @unitMl.
+  ///
+  /// In en, this message translates to:
+  /// **'ml'**
+  String get unitMl;
+
+  /// No description provided for @unitL.
+  ///
+  /// In en, this message translates to:
+  /// **'l'**
+  String get unitL;
+
+  /// No description provided for @unitTbsp.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{tbsp} other{tbsp}}'**
+  String unitTbsp(num count);
+
+  /// No description provided for @unitTsp.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{tsp} other{tsp}}'**
+  String unitTsp(num count);
+
+  /// No description provided for @unitCup.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{cup} other{cups}}'**
+  String unitCup(num count);
+
+  /// No description provided for @unitClove.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{clove} other{cloves}}'**
+  String unitClove(num count);
+
+  /// No description provided for @unitBunch.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{bunch} other{bunches}}'**
+  String unitBunch(num count);
+
+  /// No description provided for @unitCan.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{can} other{cans}}'**
+  String unitCan(num count);
+
+  /// No description provided for @unitPack.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{pack} other{packs}}'**
+  String unitPack(num count);
+
+  /// No description provided for @unitSlice.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{slice} other{slices}}'**
+  String unitSlice(num count);
+
+  /// No description provided for @unitPinch.
+  ///
+  /// In en, this message translates to:
+  /// **'pinch'**
+  String get unitPinch;
+
+  /// No description provided for @recipeMissingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing'**
+  String get recipeMissingTitle;
+
+  /// No description provided for @optionalLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'optional'**
+  String get optionalLabel;
 }
 
 class _AppLocalizationsDelegate

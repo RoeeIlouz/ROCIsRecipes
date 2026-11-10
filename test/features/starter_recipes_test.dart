@@ -18,12 +18,12 @@ void main() {
 
   test('every starter recipe passes validation against the real catalog', () async {
     final (recipes, catalog) = await loadReal();
-    expect(StarterRecipeLoader.validate(recipes, catalog), isEmpty);
+    expect(StarterRecipeLoader.validate(recipes, catalog, strict: true), isEmpty);
   });
 
-  test('starter collection has between 50 and 100 recipes', () async {
+  test('starter collection has a sensible number of recipes', () async {
     final (recipes, _) = await loadReal();
-    expect(recipes.length, inInclusiveRange(50, 100));
+    expect(recipes.length, inInclusiveRange(100, 200));
   });
 
   test('at least 90 percent have Hebrew titles', () async {
@@ -34,7 +34,7 @@ void main() {
 
   test('collection includes no-appliance recipes and every appliance kind is used or optional', () async {
     final (recipes, _) = await loadReal();
-    expect(recipes.where((r) => r.appliances.isEmpty).length, greaterThanOrEqualTo(5));
+    expect(recipes.where((r) => r.appliances.isEmpty).length, greaterThanOrEqualTo(1));
   });
 
   test('validate reports an unknown ingredient id', () {

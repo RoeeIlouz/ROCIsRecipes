@@ -29,7 +29,9 @@ class HttpSnapshotSource implements SnapshotSource {
   @override
   Future<List<int>?> fetch() async {
     try {
-      final response = await client.get(url).timeout(const Duration(seconds: 10));
+      final response = await client
+          .get(url)
+          .timeout(const Duration(seconds: 10));
       return response.statusCode == 200 ? response.bodyBytes : null;
     } catch (_) {
       return null;
@@ -38,8 +40,11 @@ class HttpSnapshotSource implements SnapshotSource {
 }
 
 class PriceRepository extends ChangeNotifier {
-  PriceRepository({required PriceSnapshot bundled, required this.source, required this.cacheDir})
-      : _snapshot = bundled;
+  PriceRepository({
+    required PriceSnapshot bundled,
+    required this.source,
+    required this.cacheDir,
+  }) : _snapshot = bundled;
 
   final SnapshotSource source;
   final Directory cacheDir;
@@ -55,8 +60,11 @@ class PriceRepository extends ChangeNotifier {
   Future<void> init() async {
     try {
       if (await _cacheFile.exists()) {
-        final cached = PriceSnapshot.fromGzipBytes(await _cacheFile.readAsBytes());
-        if (cached.generatedAt.isAfter(_snapshot.generatedAt)) _snapshot = cached;
+        final cached = PriceSnapshot.fromGzipBytes(
+          await _cacheFile.readAsBytes(),
+        );
+        if (cached.generatedAt.isAfter(_snapshot.generatedAt))
+          _snapshot = cached;
       }
     } catch (_) {
       // A damaged cache file is ignored; the bundled snapshot stays in use.

@@ -54,7 +54,10 @@ class _ThemedApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.createDarkTheme(null, isAmoled: themeService?.isAmoled ?? false),
+      darkTheme: AppTheme.createDarkTheme(
+        null,
+        isAmoled: themeService?.isAmoled ?? false,
+      ),
       themeMode: themeService?.materialThemeMode ?? ThemeMode.dark,
     );
   }

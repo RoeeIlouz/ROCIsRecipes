@@ -28,7 +28,9 @@ import 'package:rocis_recipes/shared/ui/theme/theme_service.dart';
 /// strict 2 second timeout; on failure a temp folder is used (the cache is optional).
 Future<Directory> _priceCacheDir() async {
   try {
-    final base = await getApplicationSupportDirectory().timeout(const Duration(seconds: 2));
+    final base = await getApplicationSupportDirectory().timeout(
+      const Duration(seconds: 2),
+    );
     return Directory('${base.path}/prices');
   } catch (_) {
     return Directory('${Directory.systemTemp.path}/rocis_prices');
@@ -64,14 +66,19 @@ class AppInitializer {
     final settings = SettingsRepository(await Hive.openBox('app_settings'));
     await settings.seedStaplesIfUnset(catalog.defaultStapleIds);
     if (settings.starterVersion < kStarterVersion) {
-      await recipes.syncStarter(
-        StarterRecipeLoader.parse(await rootBundle.loadString('assets/recipes/starter_he.json')),
+      final starter = StarterRecipeLoader.parse(
+        await rootBundle.loadString('assets/recipes/starter_he.json'),
       );
+      await recipes.syncStarter(starter);
+      // Recipes from an earlier pack that are no longer shipped go away; the user's own stay.
+      await recipes.retireStarter({for (final r in starter) r.id});
       await settings.setStarterVersion(kStarterVersion);
     }
 
     final bundled = PriceSnapshot.fromGzipBytes(
-      (await rootBundle.load('assets/prices/snapshot.json.gz')).buffer.asUint8List(),
+      (await rootBundle.load(
+        'assets/prices/snapshot.json.gz',
+      )).buffer.asUint8List(),
     );
     final prices = PriceRepository(
       bundled: bundled,
@@ -84,7 +91,9 @@ class AppInitializer {
 
     return [
       ChangeNotifierProvider<PriceRepository>.value(value: prices),
-      ChangeNotifierProvider<NearbyController>.value(value: NearbyController(GeolocatorLocationProvider())),
+      ChangeNotifierProvider<NearbyController>.value(
+        value: NearbyController(GeolocatorLocationProvider()),
+      ),
       Provider<PriceService>.value(value: const PriceService()),
       Provider<LaunchUrl>.value(
         value: (uri) => launchUrl(uri, mode: LaunchMode.externalApplication),

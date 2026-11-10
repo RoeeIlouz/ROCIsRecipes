@@ -19,7 +19,10 @@ class ShoppingRepository extends ChangeNotifier {
 
   /// Adds items, skipping any whose ingredient is already unchecked on the list.
   Future<void> addMissing(Iterable<ShoppingItem> incoming) async {
-    final pending = items.where((e) => !e.checked && e.ingredientId != null).map((e) => e.ingredientId!).toSet();
+    final pending = items
+        .where((e) => !e.checked && e.ingredientId != null)
+        .map((e) => e.ingredientId!)
+        .toSet();
     final toAdd = <String, Map<String, dynamic>>{};
     for (final item in incoming) {
       final ingredientId = item.ingredientId;
@@ -35,9 +38,12 @@ class ShoppingRepository extends ChangeNotifier {
   /// id, or same normalized label). Returns whether it was added.
   Future<bool> addIfNew(ShoppingItem item) async {
     final label = normalizeText(item.label);
-    final duplicate = items.any((e) =>
-        !e.checked &&
-        ((item.ingredientId != null && e.ingredientId == item.ingredientId) || normalizeText(e.label) == label));
+    final duplicate = items.any(
+      (e) =>
+          !e.checked &&
+          ((item.ingredientId != null && e.ingredientId == item.ingredientId) ||
+              normalizeText(e.label) == label),
+    );
     if (duplicate) return false;
     await add(item);
     return true;

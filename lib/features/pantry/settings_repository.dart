@@ -12,17 +12,19 @@ class SettingsRepository extends ChangeNotifier {
 
   final Box _box;
 
-  Set<Appliance> get appliances => ((_box.get(_appliancesKey) as List?) ?? const [])
-      .map((e) => applianceFromName(e as String))
-      .whereType<Appliance>()
-      .toSet();
+  Set<Appliance> get appliances =>
+      ((_box.get(_appliancesKey) as List?) ?? const [])
+          .map((e) => applianceFromName(e as String))
+          .whereType<Appliance>()
+          .toSet();
 
   Future<void> setAppliances(Set<Appliance> value) async {
     await _box.put(_appliancesKey, value.map((e) => e.name).toList());
     notifyListeners();
   }
 
-  Set<String> get stapleIds => ((_box.get(_staplesKey) as List?) ?? const []).cast<String>().toSet();
+  Set<String> get stapleIds =>
+      ((_box.get(_staplesKey) as List?) ?? const []).cast<String>().toSet();
 
   Future<void> setStapleIds(Set<String> value) async {
     await _box.put(_staplesKey, value.toList());
@@ -37,8 +39,9 @@ class SettingsRepository extends ChangeNotifier {
 
   /// Branch the user chose by hand per chain (chain id to branch id).
   Map<String, String> get manualStoreIds => {
-        for (final e in ((_box.get('manualStores') as Map?) ?? const {}).entries) e.key as String: e.value as String,
-      };
+    for (final e in ((_box.get('manualStores') as Map?) ?? const {}).entries)
+      e.key as String: e.value as String,
+  };
 
   Future<void> setManualStore(String chainId, String storeId) async {
     await _box.put('manualStores', {...manualStoreIds, chainId: storeId});
@@ -48,7 +51,8 @@ class SettingsRepository extends ChangeNotifier {
   /// Version of the starter recipe pack last synced into the recipes box.
   int get starterVersion => (_box.get('starterVersion') as int?) ?? 0;
 
-  Future<void> setStarterVersion(int value) => _box.put('starterVersion', value);
+  Future<void> setStarterVersion(int value) =>
+      _box.put('starterVersion', value);
 
   int get maxMinutes => (_box.get(_maxMinutesKey) as int?) ?? defaultMaxMinutes;
 

@@ -104,18 +104,27 @@ class _CookingModeScreenState extends State<CookingModeScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final recipe = context.watch<RecipeRepository>().byId(widget.recipeId);
-    if (recipe == null || recipe.steps.isEmpty) return Scaffold(appBar: AppBar());
+    if (recipe == null || recipe.steps.isEmpty)
+      return Scaffold(appBar: AppBar());
 
     final step = recipe.steps[_index];
     final isHebrew = Localizations.localeOf(context).languageCode == 'he';
-    final stepText = (isHebrew || step.textEn == null || step.textEn!.isEmpty) ? step.textHe : step.textEn!;
+    final stepText = (isHebrew || step.textEn == null || step.textEn!.isEmpty)
+        ? step.textHe
+        : step.textEn!;
     final isFirst = _index == 0;
     final isLast = _index == recipe.steps.length - 1;
     final timerSeconds = step.timerSeconds;
     final shownSeconds = _remaining ?? timerSeconds ?? 0;
 
     return Scaffold(
-      appBar: AppBar(title: Text(recipeTitle(context, recipe), maxLines: 1, overflow: TextOverflow.ellipsis)),
+      appBar: AppBar(
+        title: Text(
+          recipeTitle(context, recipe),
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(24),
         child: Column(
@@ -128,7 +137,10 @@ class _CookingModeScreenState extends State<CookingModeScreen> {
             const SizedBox(height: 16),
             Expanded(
               child: SingleChildScrollView(
-                child: Text(stepText, style: Theme.of(context).textTheme.headlineSmall),
+                child: Text(
+                  stepText,
+                  style: Theme.of(context).textTheme.headlineSmall,
+                ),
               ),
             ),
             if (timerSeconds != null)
@@ -139,17 +151,24 @@ class _CookingModeScreenState extends State<CookingModeScreen> {
                     Text(
                       l10n.timerDone,
                       key: const Key('timer_done'),
-                      style: TextStyle(color: Theme.of(context).colorScheme.error),
+                      style: TextStyle(
+                        color: Theme.of(context).colorScheme.error,
+                      ),
                     ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(formatTimer(shownSeconds), style: Theme.of(context).textTheme.displaySmall),
+                      Text(
+                        formatTimer(shownSeconds),
+                        style: Theme.of(context).textTheme.displaySmall,
+                      ),
                       const SizedBox(width: 16),
                       OutlinedButton(
                         key: const Key('timer_toggle'),
                         onPressed: () => _toggleTimer(timerSeconds),
-                        child: Text(_timer == null ? l10n.startTimer : l10n.pauseTimer),
+                        child: Text(
+                          _timer == null ? l10n.startTimer : l10n.pauseTimer,
+                        ),
                       ),
                     ],
                   ),
@@ -167,7 +186,9 @@ class _CookingModeScreenState extends State<CookingModeScreen> {
                 const Spacer(),
                 FilledButton(
                   key: const Key('next_step_button'),
-                  onPressed: isLast ? () => context.pop() : () => _goTo(_index + 1),
+                  onPressed: isLast
+                      ? () => context.pop()
+                      : () => _goTo(_index + 1),
                   child: Text(isLast ? l10n.finishCooking : l10n.nextStep),
                 ),
               ],

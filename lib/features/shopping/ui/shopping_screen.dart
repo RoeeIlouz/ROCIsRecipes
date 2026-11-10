@@ -29,11 +29,15 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
     final catalog = context.read<IngredientCatalog>();
     final repo = context.read<ShoppingRepository>();
     final known = catalog.resolve(text);
-    await repo.addIfNew(ShoppingItem(
-      id: 'man_${DateTime.now().microsecondsSinceEpoch}',
-      ingredientId: known?.id,
-      label: known == null ? text : ingredientLabel(context, catalog, known.id),
-    ));
+    await repo.addIfNew(
+      ShoppingItem(
+        id: 'man_${DateTime.now().microsecondsSinceEpoch}',
+        ingredientId: known?.id,
+        label: known == null
+            ? text
+            : ingredientLabel(context, catalog, known.id),
+      ),
+    );
     if (!mounted) return;
     _controller.clear();
   }
@@ -78,15 +82,20 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
           const SizedBox(height: 16),
           const PriceSummary(),
           if (items.isEmpty) Text(l10n.shoppingEmpty),
-          for (final item in open) ShoppingItemTile(item: item, priceLabel: labelFor(item)),
+          for (final item in open)
+            ShoppingItemTile(item: item, priceLabel: labelFor(item)),
           if (done.isNotEmpty)
             Column(
               key: const Key('done_section'),
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(height: 16),
-                Text(l10n.doneSection, style: Theme.of(context).textTheme.titleMedium),
-                for (final item in done) ShoppingItemTile(item: item, priceLabel: labelFor(item)),
+                Text(
+                  l10n.doneSection,
+                  style: Theme.of(context).textTheme.titleMedium,
+                ),
+                for (final item in done)
+                  ShoppingItemTile(item: item, priceLabel: labelFor(item)),
                 Align(
                   alignment: AlignmentDirectional.centerStart,
                   child: OutlinedButton(
@@ -106,7 +115,8 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
 /// One shopping list row. [priceLabel] is shown only when a price is known
 /// (prices arrive in a later plan).
 class ShoppingItemTile extends StatelessWidget {
-  ShoppingItemTile({super.key, required this.item, this.priceLabel}) : _tileKey = Key('shopping_item_${item.id}');
+  ShoppingItemTile({super.key, required this.item, this.priceLabel})
+    : _tileKey = Key('shopping_item_${item.id}');
 
   final ShoppingItem item;
   final String? priceLabel;
@@ -121,9 +131,13 @@ class ShoppingItemTile extends StatelessWidget {
       onChanged: (_) => context.read<ShoppingRepository>().toggle(item.id),
       title: Text(
         item.label,
-        style: item.checked ? const TextStyle(decoration: TextDecoration.lineThrough) : null,
+        style: item.checked
+            ? const TextStyle(decoration: TextDecoration.lineThrough)
+            : null,
       ),
-      subtitle: priceLabel == null ? null : Text(priceLabel!, key: Key('price_line_${item.id}')),
+      subtitle: priceLabel == null
+          ? null
+          : Text(priceLabel!, key: Key('price_line_${item.id}')),
     );
   }
 }

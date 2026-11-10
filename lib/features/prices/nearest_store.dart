@@ -9,8 +9,11 @@ double haversineKm(double lat1, double lng1, double lat2, double lng2) {
   double rad(double deg) => deg * math.pi / 180;
   final dLat = rad(lat2 - lat1);
   final dLng = rad(lng2 - lng1);
-  final a = math.pow(math.sin(dLat / 2), 2) +
-      math.cos(rad(lat1)) * math.cos(rad(lat2)) * math.pow(math.sin(dLng / 2), 2);
+  final a =
+      math.pow(math.sin(dLat / 2), 2) +
+      math.cos(rad(lat1)) *
+          math.cos(rad(lat2)) *
+          math.pow(math.sin(dLng / 2), 2);
   return 2 * _earthRadiusKm * math.asin(math.sqrt(a));
 }
 
@@ -36,7 +39,8 @@ NearestResult? nearestStore(
     if (store.chainId != chainId) continue;
     final d = haversineKm(lat, lng, store.lat, store.lng);
     if (d > maxKm) continue;
-    if (best == null || d < best.distanceKm) best = NearestResult(store: store, distanceKm: d);
+    if (best == null || d < best.distanceKm)
+      best = NearestResult(store: store, distanceKm: d);
   }
   return best;
 }

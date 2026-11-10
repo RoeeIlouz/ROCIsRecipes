@@ -20,10 +20,10 @@ class IngredientCatalog {
   }
 
   factory IngredientCatalog.fromJson(String json) => IngredientCatalog(
-        (jsonDecode(json) as List<dynamic>)
-            .map((e) => Ingredient.fromJson(Map<String, dynamic>.from(e as Map)))
-            .toList(),
-      );
+    (jsonDecode(json) as List<dynamic>)
+        .map((e) => Ingredient.fromJson(Map<String, dynamic>.from(e as Map)))
+        .toList(),
+  );
 
   final List<Ingredient> all;
   final Map<String, Ingredient> _byId = {};
@@ -55,7 +55,7 @@ class IngredientCatalog {
   }
 
   Set<String> get defaultStapleIds => {
-        for (final i in all)
-          if (i.isStaple) i.id,
-      };
+    for (final i in all)
+      if (i.isStaple) i.id,
+  };
 }

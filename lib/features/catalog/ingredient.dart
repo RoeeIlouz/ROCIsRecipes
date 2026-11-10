@@ -21,22 +21,22 @@ class Ingredient {
   final String? category;
 
   factory Ingredient.fromJson(Map<String, dynamic> json) => Ingredient(
-        id: json['id'] as String,
-        nameHe: json['nameHe'] as String,
-        nameEn: json['nameEn'] as String? ?? '',
-        synonyms: ((json['synonyms'] as List<dynamic>?) ?? const []).cast<String>(),
-        isStaple: json['isStaple'] as bool? ?? false,
-        category: json['category'] as String?,
-      );
+    id: json['id'] as String,
+    nameHe: json['nameHe'] as String,
+    nameEn: json['nameEn'] as String? ?? '',
+    synonyms: ((json['synonyms'] as List<dynamic>?) ?? const []).cast<String>(),
+    isStaple: json['isStaple'] as bool? ?? false,
+    category: json['category'] as String?,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'nameHe': nameHe,
-        'nameEn': nameEn,
-        'synonyms': synonyms,
-        'isStaple': isStaple,
-        if (category != null) 'category': category,
-      };
+    'id': id,
+    'nameHe': nameHe,
+    'nameEn': nameEn,
+    'synonyms': synonyms,
+    'isStaple': isStaple,
+    if (category != null) 'category': category,
+  };
 
   @override
   bool operator ==(Object other) =>

@@ -261,4 +261,166 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get catSnacks => 'אגוזים ושתייה';
+
+  @override
+  String get mealAll => 'כל הארוחות';
+
+  @override
+  String get mealBreakfast => 'ארוחת בוקר';
+
+  @override
+  String get mealLunch => 'צהריים';
+
+  @override
+  String get mealDinner => 'ערב';
+
+  @override
+  String get mealSnack => 'נשנוש';
+
+  @override
+  String get mealDessert => 'קינוח';
+
+  @override
+  String get diffEasy => 'קל';
+
+  @override
+  String get diffMedium => 'בינוני';
+
+  @override
+  String servingsCount(num count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count מנות',
+      one: 'מנה אחת',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String photoCredit(String author, String license) {
+    return 'צילום: $author, $license';
+  }
+
+  @override
+  String get creditsTitle => 'קרדיטים לתמונות';
+
+  @override
+  String get creditsIntro =>
+      'תמונות המתכונים מגיעות מ-Wikimedia Commons ברישיונות חופשיים. לחיצה על תמונה פותחת את עמוד המקור.';
+
+  @override
+  String get creditsEmpty => 'עדיין אין קרדיטים לתמונות.';
+
+  @override
+  String get unitUnit => 'יח\'';
+
+  @override
+  String get unitG => 'גרם';
+
+  @override
+  String get unitKg => 'ק\"ג';
+
+  @override
+  String get unitMl => 'מ\"ל';
+
+  @override
+  String get unitL => 'ליטר';
+
+  @override
+  String unitTbsp(num count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'כפות',
+      one: 'כף',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String unitTsp(num count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'כפיות',
+      one: 'כפית',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String unitCup(num count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'כוסות',
+      one: 'כוס',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String unitClove(num count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'שיניים',
+      one: 'שן',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String unitBunch(num count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'צרורות',
+      one: 'צרור',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String unitCan(num count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'קופסאות',
+      one: 'קופסה',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String unitPack(num count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'חבילות',
+      one: 'חבילה',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String unitSlice(num count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'פרוסות',
+      one: 'פרוסה',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get unitPinch => 'קורט';
+
+  @override
+  String get recipeMissingTitle => 'חסר';
+
+  @override
+  String get optionalLabel => 'אופציונלי';
 }

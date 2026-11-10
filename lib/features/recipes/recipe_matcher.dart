@@ -42,12 +42,16 @@ class RecipeMatcher {
 
       final keep = switch (mode) {
         MatchMode.cookNow => missing.isEmpty,
-        MatchMode.almostThere => missing.isNotEmpty && missing.length <= maxMissing,
+        MatchMode.almostThere =>
+          missing.isNotEmpty && missing.length <= maxMissing,
       };
-      if (keep) results.add(RecipeMatch(recipe: recipe, missingIngredientIds: missing));
+      if (keep)
+        results.add(RecipeMatch(recipe: recipe, missingIngredientIds: missing));
     }
     results.sort((a, b) {
-      final byMissing = a.missingIngredientIds.length.compareTo(b.missingIngredientIds.length);
+      final byMissing = a.missingIngredientIds.length.compareTo(
+        b.missingIngredientIds.length,
+      );
       if (byMissing != 0) return byMissing;
       return a.recipe.totalMinutes.compareTo(b.recipe.totalMinutes);
     });
