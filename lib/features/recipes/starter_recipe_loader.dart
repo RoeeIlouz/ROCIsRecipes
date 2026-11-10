@@ -49,9 +49,11 @@ class StarterRecipeLoader {
     final seen = <String>{};
     for (final r in recipes) {
       if (!seen.add(r.id)) problems.add('${r.id}: duplicate recipe id');
-      if (r.totalMinutes <= 0) problems.add('${r.id}: totalMinutes must be > 0');
+      if (r.totalMinutes <= 0)
+        problems.add('${r.id}: totalMinutes must be > 0');
       if (r.steps.isEmpty) problems.add('${r.id}: recipe has no steps');
-      if (r.ingredients.isEmpty) problems.add('${r.id}: recipe has no ingredients');
+      if (r.ingredients.isEmpty)
+        problems.add('${r.id}: recipe has no ingredients');
       for (final ing in r.ingredients) {
         final known = catalog.byId(ing.ingredientId);
         if (known == null) {
@@ -60,12 +62,16 @@ class StarterRecipeLoader {
             !ing.optional &&
             !known.isStaple &&
             (ing.quantity == null || ing.unit == null || ing.unit!.isEmpty)) {
-          problems.add('${r.id}: ingredient ${ing.ingredientId} needs a quantity and unit');
+          problems.add(
+            '${r.id}: ingredient ${ing.ingredientId} needs a quantity and unit',
+          );
         }
       }
       if (strict) {
         if (r.steps.isNotEmpty && r.steps.length < kMinSteps) {
-          problems.add('${r.id}: recipe has only ${r.steps.length} steps (need at least $kMinSteps)');
+          problems.add(
+            '${r.id}: recipe has only ${r.steps.length} steps (need at least $kMinSteps)',
+          );
         }
         if (r.servings < 1 || r.servings > 8) {
           problems.add('${r.id}: servings must be 1 to 8, got ${r.servings}');
@@ -74,7 +80,8 @@ class StarterRecipeLoader {
       if (requirePhoto) {
         final photo = r.photo;
         if (photo == null) {
-          if (!noPhotoAllowed.contains(r.id)) problems.add('${r.id}: recipe has no photo');
+          if (!noPhotoAllowed.contains(r.id))
+            problems.add('${r.id}: recipe has no photo');
         } else if (assetExists != null && !assetExists(photo.asset)) {
           problems.add('${r.id}: photo asset missing: ${photo.asset}');
         }

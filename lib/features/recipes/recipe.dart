@@ -15,7 +15,8 @@ class RecipeIngredient {
   final String? unit;
   final bool optional;
 
-  factory RecipeIngredient.fromJson(Map<String, dynamic> json) => RecipeIngredient(
+  factory RecipeIngredient.fromJson(Map<String, dynamic> json) =>
+      RecipeIngredient(
         ingredientId: json['ingredientId'] as String,
         quantity: (json['quantity'] as num?)?.toDouble(),
         unit: json['unit'] as String?,
@@ -23,11 +24,11 @@ class RecipeIngredient {
       );
 
   Map<String, dynamic> toJson() => {
-        'ingredientId': ingredientId,
-        if (quantity != null) 'quantity': quantity,
-        if (unit != null) 'unit': unit,
-        'optional': optional,
-      };
+    'ingredientId': ingredientId,
+    if (quantity != null) 'quantity': quantity,
+    if (unit != null) 'unit': unit,
+    'optional': optional,
+  };
 
   @override
   bool operator ==(Object other) =>
@@ -50,16 +51,16 @@ class RecipeStep {
   final int? timerSeconds;
 
   factory RecipeStep.fromJson(Map<String, dynamic> json) => RecipeStep(
-        textHe: json['textHe'] as String,
-        textEn: json['textEn'] as String?,
-        timerSeconds: (json['timerSeconds'] as num?)?.toInt(),
-      );
+    textHe: json['textHe'] as String,
+    textEn: json['textEn'] as String?,
+    timerSeconds: (json['timerSeconds'] as num?)?.toInt(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'textHe': textHe,
-        if (textEn != null) 'textEn': textEn,
-        if (timerSeconds != null) 'timerSeconds': timerSeconds,
-      };
+    'textHe': textHe,
+    if (textEn != null) 'textEn': textEn,
+    if (timerSeconds != null) 'timerSeconds': timerSeconds,
+  };
 
   @override
   bool operator ==(Object other) =>
@@ -73,7 +74,13 @@ class RecipeStep {
 }
 
 const List<String> kDifficulties = ['easy', 'medium'];
-const List<String> kMealTypes = ['breakfast', 'lunch', 'dinner', 'snack', 'dessert'];
+const List<String> kMealTypes = [
+  'breakfast',
+  'lunch',
+  'dinner',
+  'snack',
+  'dessert',
+];
 
 /// A bundled recipe photo with the credit its license requires.
 @immutable
@@ -91,18 +98,18 @@ class RecipePhoto {
   final String sourceUrl;
 
   factory RecipePhoto.fromJson(Map<String, dynamic> json) => RecipePhoto(
-        asset: json['asset'] as String,
-        author: json['author'] as String,
-        license: json['license'] as String,
-        sourceUrl: json['sourceUrl'] as String,
-      );
+    asset: json['asset'] as String,
+    author: json['author'] as String,
+    license: json['license'] as String,
+    sourceUrl: json['sourceUrl'] as String,
+  );
 
   Map<String, dynamic> toJson() => {
-        'asset': asset,
-        'author': author,
-        'license': license,
-        'sourceUrl': sourceUrl,
-      };
+    'asset': asset,
+    'author': author,
+    'license': license,
+    'sourceUrl': sourceUrl,
+  };
 
   @override
   bool operator ==(Object other) =>
@@ -149,43 +156,51 @@ class Recipe {
   final RecipePhoto? photo;
 
   factory Recipe.fromJson(Map<String, dynamic> json) => Recipe(
-        id: json['id'] as String,
-        titleHe: json['titleHe'] as String,
-        titleEn: json['titleEn'] as String?,
-        ingredients: (json['ingredients'] as List<dynamic>)
-            .map((e) => RecipeIngredient.fromJson(Map<String, dynamic>.from(e as Map)))
-            .toList(),
-        steps: (json['steps'] as List<dynamic>)
-            .map((e) => RecipeStep.fromJson(Map<String, dynamic>.from(e as Map)))
-            .toList(),
-        appliances: ((json['appliances'] as List<dynamic>?) ?? const [])
-            .map((e) => applianceFromName(e as String))
-            .whereType<Appliance>()
-            .toSet(),
-        totalMinutes: (json['totalMinutes'] as num).toInt(),
-        isUserCreated: json['isUserCreated'] as bool? ?? false,
-        imagePath: json['imagePath'] as String?,
-        servings: (json['servings'] as num?)?.toInt() ?? 2,
-        difficulty: kDifficulties.contains(json['difficulty']) ? json['difficulty'] as String : 'easy',
-        mealType: kMealTypes.contains(json['mealType']) ? json['mealType'] as String : 'dinner',
-        photo: json['photo'] == null ? null : RecipePhoto.fromJson(Map<String, dynamic>.from(json['photo'] as Map)),
-      );
+    id: json['id'] as String,
+    titleHe: json['titleHe'] as String,
+    titleEn: json['titleEn'] as String?,
+    ingredients: (json['ingredients'] as List<dynamic>)
+        .map(
+          (e) => RecipeIngredient.fromJson(Map<String, dynamic>.from(e as Map)),
+        )
+        .toList(),
+    steps: (json['steps'] as List<dynamic>)
+        .map((e) => RecipeStep.fromJson(Map<String, dynamic>.from(e as Map)))
+        .toList(),
+    appliances: ((json['appliances'] as List<dynamic>?) ?? const [])
+        .map((e) => applianceFromName(e as String))
+        .whereType<Appliance>()
+        .toSet(),
+    totalMinutes: (json['totalMinutes'] as num).toInt(),
+    isUserCreated: json['isUserCreated'] as bool? ?? false,
+    imagePath: json['imagePath'] as String?,
+    servings: (json['servings'] as num?)?.toInt() ?? 2,
+    difficulty: kDifficulties.contains(json['difficulty'])
+        ? json['difficulty'] as String
+        : 'easy',
+    mealType: kMealTypes.contains(json['mealType'])
+        ? json['mealType'] as String
+        : 'dinner',
+    photo: json['photo'] == null
+        ? null
+        : RecipePhoto.fromJson(Map<String, dynamic>.from(json['photo'] as Map)),
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'titleHe': titleHe,
-        if (titleEn != null) 'titleEn': titleEn,
-        'ingredients': ingredients.map((e) => e.toJson()).toList(),
-        'steps': steps.map((e) => e.toJson()).toList(),
-        'appliances': appliances.map((e) => e.name).toList(),
-        'totalMinutes': totalMinutes,
-        'isUserCreated': isUserCreated,
-        if (imagePath != null) 'imagePath': imagePath,
-        'servings': servings,
-        'difficulty': difficulty,
-        'mealType': mealType,
-        if (photo != null) 'photo': photo!.toJson(),
-      };
+    'id': id,
+    'titleHe': titleHe,
+    if (titleEn != null) 'titleEn': titleEn,
+    'ingredients': ingredients.map((e) => e.toJson()).toList(),
+    'steps': steps.map((e) => e.toJson()).toList(),
+    'appliances': appliances.map((e) => e.name).toList(),
+    'totalMinutes': totalMinutes,
+    'isUserCreated': isUserCreated,
+    if (imagePath != null) 'imagePath': imagePath,
+    'servings': servings,
+    'difficulty': difficulty,
+    'mealType': mealType,
+    if (photo != null) 'photo': photo!.toJson(),
+  };
 
   @override
   bool operator ==(Object other) =>
@@ -205,5 +220,14 @@ class Recipe {
       other.photo == photo;
 
   @override
-  int get hashCode => Object.hash(id, titleHe, titleEn, ingredients.length, steps.length, totalMinutes, servings, mealType);
+  int get hashCode => Object.hash(
+    id,
+    titleHe,
+    titleEn,
+    ingredients.length,
+    steps.length,
+    totalMinutes,
+    servings,
+    mealType,
+  );
 }

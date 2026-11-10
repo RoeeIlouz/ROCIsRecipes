@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
+import 'package:rocis_recipes/features/recipes/ui/recipe_photo.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
 import 'package:rocis_recipes/shared/ui/widgets/glass_container.dart';
 
@@ -11,7 +12,12 @@ String recipeTitle(BuildContext context, Recipe recipe) {
 }
 
 class RecipeCard extends StatelessWidget {
-  const RecipeCard({super.key, required this.recipe, required this.missingCount, this.onTap});
+  const RecipeCard({
+    super.key,
+    required this.recipe,
+    required this.missingCount,
+    this.onTap,
+  });
 
   final Recipe recipe;
   final int missingCount;
@@ -33,6 +39,8 @@ class RecipeCard extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             child: Row(
               children: [
+                RecipePhotoView(photo: recipe.photo, width: 84, height: 84),
+                const SizedBox(width: 14),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

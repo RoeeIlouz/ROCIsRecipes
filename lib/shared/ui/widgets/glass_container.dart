@@ -49,13 +49,14 @@ class GlassContainer extends StatelessWidget {
 
     // Subtle border tinted with primary or category color
     final borderTint = color ?? theme.colorScheme.primary;
-    final glassBorder = border ??
+    final glassBorder =
+        border ??
         Border.all(
           color: isSelected
               ? (selectedBorderColor ?? theme.colorScheme.primary)
               : (isDark
-                  ? borderTint.withValues(alpha: 0.15)
-                  : borderTint.withValues(alpha: 0.10)),
+                    ? borderTint.withValues(alpha: 0.15)
+                    : borderTint.withValues(alpha: 0.10)),
           width: isSelected ? 2.0 : 1.0,
         );
 
@@ -74,14 +75,19 @@ class GlassContainer extends StatelessWidget {
     final innerContainer = Container(
       decoration: BoxDecoration(
         color: useGlass
-            ? glassColor.withValues(alpha: isSelected ? opacity + 0.10 : opacity)
+            ? glassColor.withValues(
+                alpha: isSelected ? opacity + 0.10 : opacity,
+              )
             : (isSelected
-                ? (color?.withValues(alpha: 0.20) ?? theme.colorScheme.primaryContainer)
-                : (color ?? theme.colorScheme.surfaceContainerLow)),
+                  ? (color?.withValues(alpha: 0.20) ??
+                        theme.colorScheme.primaryContainer)
+                  : (color ?? theme.colorScheme.surfaceContainerLow)),
         borderRadius: radius,
         border: useGlass
             ? glassBorder
-            : (isSelected ? glassBorder : Border.all(color: Colors.transparent)),
+            : (isSelected
+                  ? glassBorder
+                  : Border.all(color: Colors.transparent)),
         boxShadow: shadow,
       ),
       child: Material(
@@ -91,15 +97,14 @@ class GlassContainer extends StatelessWidget {
         // Padding goes inside the Material so its rounded clip covers the whole card.
         // (Clipping the padded content box cut the first letter of Hebrew titles and
         // notched chip borders at the inner edge.)
-        child: padding == null ? child : Padding(padding: padding!, child: child),
+        child: padding == null
+            ? child
+            : Padding(padding: padding!, child: child),
       ),
     );
 
     if (!useGlass) {
-      return Container(
-        margin: margin,
-        child: innerContainer,
-      );
+      return Container(margin: margin, child: innerContainer);
     }
 
     return Container(

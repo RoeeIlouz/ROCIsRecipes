@@ -16,12 +16,15 @@ Future<void> showIngredientPicker(BuildContext context) {
     isScrollControlled: true,
     useSafeArea: true,
     showDragHandle: true,
-    constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.9),
+    constraints: BoxConstraints(
+      maxHeight: MediaQuery.sizeOf(context).height * 0.9,
+    ),
     builder: (_) => const IngredientPickerSheet(),
   );
 }
 
-String categoryLabel(AppLocalizations l10n, String category) => switch (category) {
+String categoryLabel(AppLocalizations l10n, String category) =>
+    switch (category) {
       'produce' => l10n.catProduce,
       'dairy' => l10n.catDairy,
       'meat' => l10n.catMeat,
@@ -51,10 +54,14 @@ class _IngredientPickerSheetState extends State<IngredientPickerSheet> {
 
   List<Ingredient> _visible(IngredientCatalog catalog, BuildContext context) {
     final query = _search.text;
-    var items = query.trim().isEmpty ? [...catalog.all] : catalog.search(query, limit: 1000);
-    if (_category != null) items = items.where((i) => i.category == _category).toList();
+    var items = query.trim().isEmpty
+        ? [...catalog.all]
+        : catalog.search(query, limit: 1000);
+    if (_category != null)
+      items = items.where((i) => i.category == _category).toList();
     final isHebrew = Localizations.localeOf(context).languageCode == 'he';
-    String name(Ingredient i) => (isHebrew || i.nameEn.isEmpty) ? i.nameHe : i.nameEn;
+    String name(Ingredient i) =>
+        (isHebrew || i.nameEn.isEmpty) ? i.nameHe : i.nameEn;
     items.sort((a, b) => name(a).compareTo(name(b)));
     return items;
   }
@@ -76,7 +83,12 @@ class _IngredientPickerSheetState extends State<IngredientPickerSheet> {
             padding: const EdgeInsetsDirectional.fromSTEB(20, 0, 8, 0),
             child: Row(
               children: [
-                Expanded(child: Text(l10n.pickerTitle, style: theme.textTheme.titleLarge)),
+                Expanded(
+                  child: Text(
+                    l10n.pickerTitle,
+                    style: theme.textTheme.titleLarge,
+                  ),
+                ),
                 IconButton(
                   key: const Key('picker_close'),
                   tooltip: l10n.closeLabel,
@@ -96,7 +108,10 @@ class _IngredientPickerSheetState extends State<IngredientPickerSheet> {
                 hintText: l10n.pickerSearchHint,
                 prefixIcon: const Icon(Icons.search_rounded),
                 filled: true,
-                border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  borderSide: BorderSide.none,
+                ),
               ),
             ),
           ),
@@ -125,15 +140,21 @@ class _IngredientPickerSheetState extends State<IngredientPickerSheet> {
           const SizedBox(height: 8),
           Expanded(
             child: items.isEmpty
-                ? Center(child: Text(l10n.pickerEmpty, key: const Key('picker_empty')))
+                ? Center(
+                    child: Text(
+                      l10n.pickerEmpty,
+                      key: const Key('picker_empty'),
+                    ),
+                  )
                 : GridView.builder(
                     padding: const EdgeInsets.fromLTRB(16, 4, 16, 16),
-                    gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                      maxCrossAxisExtent: 104,
-                      mainAxisSpacing: 10,
-                      crossAxisSpacing: 10,
-                      childAspectRatio: 0.86,
-                    ),
+                    gridDelegate:
+                        const SliverGridDelegateWithMaxCrossAxisExtent(
+                          maxCrossAxisExtent: 104,
+                          mainAxisSpacing: 10,
+                          crossAxisSpacing: 10,
+                          childAspectRatio: 0.86,
+                        ),
                     itemCount: items.length,
                     itemBuilder: (context, i) {
                       final ing = items[i];
@@ -158,7 +179,11 @@ class _IngredientPickerSheetState extends State<IngredientPickerSheet> {
                 child: FilledButton(
                   key: const Key('picker_done'),
                   onPressed: () => Navigator.of(context).pop(),
-                  child: Text(selected.isEmpty ? l10n.pickerDone : '${l10n.pickerDone} (${selected.length})'),
+                  child: Text(
+                    selected.isEmpty
+                        ? l10n.pickerDone
+                        : '${l10n.pickerDone} (${selected.length})',
+                  ),
                 ),
               ),
             ),
@@ -170,7 +195,12 @@ class _IngredientPickerSheetState extends State<IngredientPickerSheet> {
 }
 
 class _CategoryChip extends StatelessWidget {
-  const _CategoryChip({super.key, required this.label, required this.selected, required this.onTap});
+  const _CategoryChip({
+    super.key,
+    required this.label,
+    required this.selected,
+    required this.onTap,
+  });
 
   final String label;
   final bool selected;
@@ -180,7 +210,11 @@ class _CategoryChip extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsetsDirectional.only(end: 8),
-      child: ChoiceChip(label: Text(label), selected: selected, onSelected: (_) => onTap()),
+      child: ChoiceChip(
+        label: Text(label),
+        selected: selected,
+        onSelected: (_) => onTap(),
+      ),
     );
   }
 }
@@ -203,7 +237,9 @@ class _IngredientTile extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     return Material(
       key: Key('picker_tile_${ingredient.id}'),
-      color: selected ? scheme.primaryContainer : scheme.surfaceContainerHighest.withValues(alpha: 0.5),
+      color: selected
+          ? scheme.primaryContainer
+          : scheme.surfaceContainerHighest.withValues(alpha: 0.5),
       borderRadius: BorderRadius.circular(18),
       child: InkWell(
         borderRadius: BorderRadius.circular(18),
@@ -215,7 +251,10 @@ class _IngredientTile extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(ingredientEmoji(ingredient.id, ingredient.category), style: const TextStyle(fontSize: 34)),
+                  Text(
+                    ingredientEmoji(ingredient.id, ingredient.category),
+                    style: const TextStyle(fontSize: 34),
+                  ),
                   const SizedBox(height: 6),
                   Text(
                     label,

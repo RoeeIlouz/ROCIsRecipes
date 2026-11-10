@@ -6,7 +6,12 @@ import 'package:rocis_recipes/features/prices/price_snapshot.dart';
 enum StoreSource { gps, manual, tooFar, none }
 
 class ResolvedStore {
-  const ResolvedStore({required this.chainId, required this.store, required this.distanceKm, required this.source});
+  const ResolvedStore({
+    required this.chainId,
+    required this.store,
+    required this.distanceKm,
+    required this.source,
+  });
 
   final String chainId;
   final PriceStore? store;
@@ -25,7 +30,12 @@ List<ResolvedStore> resolveStores({
     for (final chain in snapshot.chains)
       () {
         if (location != null) {
-          final nearest = nearestStore(snapshot.stores, chain.id, location.lat, location.lng);
+          final nearest = nearestStore(
+            snapshot.stores,
+            chain.id,
+            location.lat,
+            location.lng,
+          );
           if (nearest != null) {
             return ResolvedStore(
               chainId: chain.id,
@@ -38,9 +48,16 @@ List<ResolvedStore> resolveStores({
         final chosen = manual[chain.id];
         final store = chosen == null
             ? null
-            : snapshot.stores.where((s) => s.id == chosen && s.chainId == chain.id).firstOrNull;
+            : snapshot.stores
+                  .where((s) => s.id == chosen && s.chainId == chain.id)
+                  .firstOrNull;
         if (store != null) {
-          return ResolvedStore(chainId: chain.id, store: store, distanceKm: null, source: StoreSource.manual);
+          return ResolvedStore(
+            chainId: chain.id,
+            store: store,
+            distanceKm: null,
+            source: StoreSource.manual,
+          );
         }
         return ResolvedStore(
           chainId: chain.id,

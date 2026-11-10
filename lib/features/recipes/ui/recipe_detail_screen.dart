@@ -7,6 +7,8 @@ import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_card.dart';
+import 'package:rocis_recipes/features/recipes/ui/recipe_format.dart';
+import 'package:rocis_recipes/features/recipes/ui/recipe_photo.dart';
 import 'package:rocis_recipes/features/shopping/shopping_item.dart';
 import 'package:rocis_recipes/features/shopping/shopping_repository.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
@@ -45,24 +47,64 @@ class RecipeDetailScreen extends StatelessWidget {
           ),
       ]);
       if (context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l10n.addedToList)));
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text(l10n.addedToList)));
       }
     }
 
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(title: Text(recipeTitle(context, recipe), maxLines: 2, overflow: TextOverflow.ellipsis)),
+      appBar: AppBar(
+        title: Text(
+          recipeTitle(context, recipe),
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
+        ),
+      ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          Text(l10n.minutesShort(recipe.totalMinutes), style: theme.textTheme.titleMedium),
+          RecipePhotoView(
+            photo: recipe.photo,
+            height: 220,
+            borderRadius: BorderRadius.circular(24),
+          ),
+          if (recipe.photo != null) PhotoCredit(photo: recipe.photo!),
+          const SizedBox(height: 12),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              Chip(
+                avatar: const Icon(Icons.schedule_rounded, size: 18),
+                label: Text(l10n.minutesShort(recipe.totalMinutes)),
+              ),
+              Chip(
+                avatar: const Icon(Icons.people_rounded, size: 18),
+                label: Text(l10n.servingsCount(recipe.servings)),
+              ),
+              Chip(
+                avatar: const Icon(Icons.signal_cellular_alt_rounded, size: 18),
+                label: Text(difficultyLabel(l10n, recipe.difficulty)),
+              ),
+              Chip(
+                avatar: const Icon(Icons.restaurant_menu_rounded, size: 18),
+                label: Text(mealTypeLabel(l10n, recipe.mealType)),
+              ),
+            ],
+          ),
           const SizedBox(height: 16),
           Text(l10n.ingredientsTitle, style: theme.textTheme.titleLarge),
           for (final ing in recipe.ingredients)
             _IngredientTile(
-              key: Key('${have.contains(ing.ingredientId) || ing.optional ? 'have' : 'missing'}_${ing.ingredientId}'),
+              key: Key(
+                '${have.contains(ing.ingredientId) || ing.optional ? 'have' : 'missing'}_${ing.ingredientId}',
+              ),
               label: ingredientLabel(context, catalog, ing.ingredientId),
               isMissing: !ing.optional && !have.contains(ing.ingredientId),
+              amount: formatIngredientAmount(l10n, ing),
+              optional: ing.optional,
             ),
           const SizedBox(height: 16),
           Wrap(
@@ -87,7 +129,13 @@ class RecipeDetailScreen extends StatelessWidget {
           for (var i = 0; i < recipe.steps.length; i++)
             ListTile(
               leading: CircleAvatar(radius: 14, child: Text('${i + 1}')),
-              title: Text(_stepText(context, recipe.steps[i].textHe, recipe.steps[i].textEn)),
+              title: Text(
+                _stepText(
+                  context,
+                  recipe.steps[i].textHe,
+                  recipe.steps[i].textEn,
+                ),
+              ),
             ),
         ],
       ),
@@ -101,10 +149,18 @@ String _stepText(BuildContext context, String he, String? en) {
 }
 
 class _IngredientTile extends StatelessWidget {
-  const _IngredientTile({super.key, required this.label, required this.isMissing});
+  const _IngredientTile({
+    super.key,
+    required this.label,
+    required this.isMissing,
+    required this.amount,
+    required this.optional,
+  });
 
   final String label;
   final bool isMissing;
+  final String amount;
+  final bool optional;
 
   @override
   Widget build(BuildContext context) {
@@ -113,11 +169,22 @@ class _IngredientTile extends StatelessWidget {
     return ListTile(
       dense: true,
       leading: Icon(
-        isMissing ? Icons.add_shopping_cart_rounded : Icons.check_circle_rounded,
+        isMissing
+            ? Icons.add_shopping_cart_rounded
+            : Icons.check_circle_rounded,
         color: isMissing ? scheme.error : scheme.primary,
       ),
-      title: Text(label),
-      trailing: isMissing ? Text(l10n.missingBadge, style: TextStyle(color: scheme.error)) : null,
+      title: Text(optional ? '$label (${l10n.optionalLabel})' : label),
+      trailing: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (amount.isNotEmpty) Text(amount),
+          if (isMissing) ...[
+            const SizedBox(width: 8),
+            Text(l10n.missingBadge, style: TextStyle(color: scheme.error)),
+          ],
+        ],
+      ),
     );
   }
 }

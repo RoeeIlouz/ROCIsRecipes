@@ -2,7 +2,12 @@ import 'package:flutter/foundation.dart';
 
 @immutable
 class PantryItem {
-  const PantryItem({required this.ingredientId, this.quantity, this.unit, this.label});
+  const PantryItem({
+    required this.ingredientId,
+    this.quantity,
+    this.unit,
+    this.label,
+  });
 
   final String ingredientId;
   final double? quantity;
@@ -13,18 +18,18 @@ class PantryItem {
   final String? label;
 
   factory PantryItem.fromJson(Map<String, dynamic> json) => PantryItem(
-        ingredientId: json['ingredientId'] as String,
-        quantity: (json['quantity'] as num?)?.toDouble(),
-        unit: json['unit'] as String?,
-        label: json['label'] as String?,
-      );
+    ingredientId: json['ingredientId'] as String,
+    quantity: (json['quantity'] as num?)?.toDouble(),
+    unit: json['unit'] as String?,
+    label: json['label'] as String?,
+  );
 
   Map<String, dynamic> toJson() => {
-        'ingredientId': ingredientId,
-        if (quantity != null) 'quantity': quantity,
-        if (unit != null) 'unit': unit,
-        if (label != null) 'label': label,
-      };
+    'ingredientId': ingredientId,
+    if (quantity != null) 'quantity': quantity,
+    if (unit != null) 'unit': unit,
+    if (label != null) 'label': label,
+  };
 
   @override
   bool operator ==(Object other) =>

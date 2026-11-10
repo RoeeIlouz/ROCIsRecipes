@@ -33,8 +33,8 @@ class _PantryScreenState extends State<PantryScreen> {
     final isCustom = ing.id.startsWith('custom:');
     if (ing.id == 'custom:') return;
     await context.read<PantryRepository>().upsert(
-          PantryItem(ingredientId: ing.id, label: isCustom ? ing.nameHe : null),
-        );
+      PantryItem(ingredientId: ing.id, label: isCustom ? ing.nameHe : null),
+    );
     if (!mounted) return;
     _controller.clear();
     setState(() {});
@@ -101,7 +101,14 @@ class _PantryScreenState extends State<PantryScreen> {
                       for (final item in items)
                         InputChip(
                           key: Key('pantry_chip_${item.ingredientId}'),
-                          label: Text(ingredientLabel(context, catalog, item.ingredientId, fallback: item.label)),
+                          label: Text(
+                            ingredientLabel(
+                              context,
+                              catalog,
+                              item.ingredientId,
+                              fallback: item.label,
+                            ),
+                          ),
                           onDeleted: () => pantry.remove(item.ingredientId),
                         ),
                     ],

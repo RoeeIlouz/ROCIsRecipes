@@ -76,6 +76,7 @@ flutter:
   assets:
     - assets/data/
     - assets/recipes/
+    - assets/recipes/photos/
     - assets/prices/
     - google_fonts/
 

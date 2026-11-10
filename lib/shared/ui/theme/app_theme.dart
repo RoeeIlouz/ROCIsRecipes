@@ -21,7 +21,8 @@ class AppTheme {
   static ThemeData get darkTheme => createDarkTheme(null, isAmoled: false);
 
   static ThemeData createLightTheme(ColorScheme? dynamicColorScheme) {
-    final ColorScheme scheme = dynamicColorScheme ??
+    final ColorScheme scheme =
+        dynamicColorScheme ??
         ColorScheme.fromSeed(
           seedColor: primaryColor,
           brightness: Brightness.light,
@@ -64,7 +65,8 @@ class AppTheme {
     ColorScheme? dynamicColorScheme, {
     bool isAmoled = false,
   }) {
-    final ColorScheme scheme = dynamicColorScheme ??
+    final ColorScheme scheme =
+        dynamicColorScheme ??
         ColorScheme.fromSeed(
           seedColor: primaryColor,
           brightness: Brightness.dark,

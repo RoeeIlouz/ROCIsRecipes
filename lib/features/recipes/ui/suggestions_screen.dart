@@ -3,51 +3,106 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
+import 'package:rocis_recipes/features/recipes/recipe.dart';
 import 'package:rocis_recipes/features/recipes/recipe_matcher.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_card.dart';
+import 'package:rocis_recipes/features/recipes/ui/recipe_format.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
 
-class SuggestionsScreen extends StatelessWidget {
+class SuggestionsScreen extends StatefulWidget {
   const SuggestionsScreen({super.key});
+
+  @override
+  State<SuggestionsScreen> createState() => _SuggestionsScreenState();
+}
+
+class _SuggestionsScreenState extends State<SuggestionsScreen> {
+  String? _meal; // null = all meals
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final recipes = context.watch<RecipeRepository>().all;
+    final recipes = context
+        .watch<RecipeRepository>()
+        .all
+        .where((r) => _meal == null || r.mealType == _meal)
+        .toList();
     final pantry = context.watch<PantryRepository>().ids;
     final settings = context.watch<SettingsRepository>();
 
     List<RecipeMatch> compute(MatchMode mode) => RecipeMatcher.match(
-          recipes: recipes,
-          pantryIds: pantry,
-          stapleIds: settings.stapleIds,
-          appliances: settings.appliances,
-          maxMinutes: settings.maxMinutes,
-          mode: mode,
-        );
+      recipes: recipes,
+      pantryIds: pantry,
+      stapleIds: settings.stapleIds,
+      appliances: settings.appliances,
+      maxMinutes: settings.maxMinutes,
+      mode: mode,
+    );
 
     return DefaultTabController(
       length: 2,
       child: Scaffold(
         appBar: AppBar(
           title: Text(l10n.appName),
+          actions: [
+            IconButton(
+              key: const Key('credits_button'),
+              tooltip: l10n.creditsTitle,
+              icon: const Icon(Icons.photo_library_outlined),
+              onPressed: () => context.push('/credits'),
+            ),
+          ],
           bottom: TabBar(
             tabs: [
               Tab(key: const Key('tab_cook_now'), text: l10n.tabCookNow),
-              Tab(key: const Key('tab_almost_there'), text: l10n.tabAlmostThere),
+              Tab(
+                key: const Key('tab_almost_there'),
+                text: l10n.tabAlmostThere,
+              ),
             ],
           ),
         ),
-        body: TabBarView(
+        body: Column(
           children: [
-            _MatchList(matches: compute(MatchMode.cookNow)),
-            _MatchList(matches: compute(MatchMode.almostThere)),
+            SizedBox(
+              height: 52,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 8,
+                ),
+                children: [
+                  _chip(const Key('meal_chip_all'), l10n.mealAll, null),
+                  for (final t in kMealTypes)
+                    _chip(Key('meal_chip_$t'), mealTypeLabel(l10n, t), t),
+                ],
+              ),
+            ),
+            Expanded(
+              child: TabBarView(
+                children: [
+                  _MatchList(matches: compute(MatchMode.cookNow)),
+                  _MatchList(matches: compute(MatchMode.almostThere)),
+                ],
+              ),
+            ),
           ],
         ),
       ),
     );
   }
+
+  Widget _chip(Key key, String label, String? meal) => Padding(
+    padding: const EdgeInsetsDirectional.only(end: 8),
+    child: ChoiceChip(
+      key: key,
+      label: Text(label),
+      selected: _meal == meal,
+      onSelected: (_) => setState(() => _meal = meal),
+    ),
+  );
 }
 
 class _MatchList extends StatelessWidget {
@@ -61,7 +116,10 @@ class _MatchList extends StatelessWidget {
       return Center(
         child: Padding(
           padding: const EdgeInsets.all(24),
-          child: Text(AppLocalizations.of(context).noMatches, textAlign: TextAlign.center),
+          child: Text(
+            AppLocalizations.of(context).noMatches,
+            textAlign: TextAlign.center,
+          ),
         ),
       );
     }

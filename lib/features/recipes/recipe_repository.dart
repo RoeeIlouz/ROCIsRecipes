@@ -39,7 +39,10 @@ class RecipeRepository extends ChangeNotifier {
   /// Removes built-in recipes that are no longer part of the shipped pack.
   /// User-created recipes are never removed.
   Future<void> retireStarter(Set<String> keepIds) async {
-    final stale = all.where((r) => !r.isUserCreated && !keepIds.contains(r.id)).map((r) => r.id).toList();
+    final stale = all
+        .where((r) => !r.isUserCreated && !keepIds.contains(r.id))
+        .map((r) => r.id)
+        .toList();
     if (stale.isEmpty) return;
     await _box.deleteAll(stale);
     notifyListeners();

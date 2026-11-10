@@ -18,10 +18,14 @@ abstract class LocationProvider {
   Future<UserLocation?> currentLocation();
 }
 
-LocationStatus statusFromPermission(LocationPermission permission, {required bool serviceEnabled}) {
+LocationStatus statusFromPermission(
+  LocationPermission permission, {
+  required bool serviceEnabled,
+}) {
   if (!serviceEnabled) return LocationStatus.serviceOff;
   return switch (permission) {
-    LocationPermission.whileInUse || LocationPermission.always => LocationStatus.granted,
+    LocationPermission.whileInUse ||
+    LocationPermission.always => LocationStatus.granted,
     LocationPermission.denied => LocationStatus.denied,
     LocationPermission.deniedForever => LocationStatus.deniedForever,
     LocationPermission.unableToDetermine => LocationStatus.unavailable,

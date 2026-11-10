@@ -137,5 +137,107 @@
   "catGrains": "Grains & legumes",
   "catPantry": "Pantry",
   "catSpices": "Spices",
-  "catSnacks": "Nuts & drinks"
+  "catSnacks": "Nuts & drinks",
+  "mealAll": "All meals",
+  "mealBreakfast": "Breakfast",
+  "mealLunch": "Lunch",
+  "mealDinner": "Dinner",
+  "mealSnack": "Snack",
+  "mealDessert": "Dessert",
+  "diffEasy": "Easy",
+  "diffMedium": "Medium",
+  "servingsCount": "{count, plural, =1{1 serving} other{{count} servings}}",
+  "@servingsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "photoCredit": "Photo: {author}, {license}",
+  "@photoCredit": {
+    "placeholders": {
+      "author": {
+        "type": "String"
+      },
+      "license": {
+        "type": "String"
+      }
+    }
+  },
+  "creditsTitle": "Photo credits",
+  "creditsIntro": "Recipe photos come from Wikimedia Commons under free licenses. Tap a photo to open its page.",
+  "creditsEmpty": "No photo credits yet.",
+  "unitUnit": "pcs",
+  "unitG": "g",
+  "unitKg": "kg",
+  "unitMl": "ml",
+  "unitL": "l",
+  "unitTbsp": "{count, plural, =1{tbsp} other{tbsp}}",
+  "unitTsp": "{count, plural, =1{tsp} other{tsp}}",
+  "unitCup": "{count, plural, =1{cup} other{cups}}",
+  "@unitCup": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "unitClove": "{count, plural, =1{clove} other{cloves}}",
+  "@unitClove": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "unitBunch": "{count, plural, =1{bunch} other{bunches}}",
+  "@unitBunch": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "unitCan": "{count, plural, =1{can} other{cans}}",
+  "@unitCan": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "unitPack": "{count, plural, =1{pack} other{packs}}",
+  "@unitPack": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "unitSlice": "{count, plural, =1{slice} other{slices}}",
+  "@unitSlice": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "unitPinch": "pinch",
+  "recipeMissingTitle": "Missing",
+  "optionalLabel": "optional",
+  "@unitTbsp": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "@unitTsp": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  }
 }
