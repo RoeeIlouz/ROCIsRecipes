@@ -56,5 +56,9 @@ stop updating, open the repository's Actions tab and re-enable the workflow, or 
   nearest-branch search. Misses are mostly addresses with missing spaces, malls and junctions.
 - Broccoli and chili flakes currently match no products; celery, green beans, frozen vegetables,
   garlic powder and onion powder are priced at only a few branches.
+- Chains: Shufersal and Carrefour. Carrefour's portal (https://prices.carrefour.co.il/) is public;
+  its page embeds the day's file list as JavaScript and the files sit in a per-day folder, so
+  `carrefour.py` reads that list instead of scraping links. Its item names are truncated to about
+  20 characters, so matching quality there may be lower than for Shufersal.
 - Other chains: `url.publishedprices.co.il` (Rami Levy, Yochananof and others) needs an account and
-  is not used. Carrefour's portal has not been tested yet.
+  is not used.

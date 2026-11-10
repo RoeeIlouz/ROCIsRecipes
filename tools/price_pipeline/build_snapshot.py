@@ -22,6 +22,7 @@ HERE = Path(__file__).resolve().parent
 
 CHAIN_NAMES = {
     "shufersal": {"id": "shufersal", "nameHe": "שופרסל", "nameEn": "Shufersal"},
+    "carrefour": {"id": "carrefour", "nameHe": "קרפור", "nameEn": "Carrefour"},
 }
 
 
@@ -94,6 +95,10 @@ def _chain_module(chain: str):
         import shufersal
 
         return shufersal
+    if chain == "carrefour":
+        import carrefour
+
+        return carrefour
     raise SystemExit(f"unsupported chain: {chain}")
 
 

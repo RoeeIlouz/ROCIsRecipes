@@ -50,6 +50,17 @@ class BuildSnapshotTest(unittest.TestCase):
               "lat": 32.0853, "lng": 34.7818, "prices": {"egg": 12.9}}],
         )
 
+    def test_carrefour_is_a_declared_chain(self):
+        snap = build_snapshot([_entry("1", chain="shufersal"), _entry("2", chain="carrefour")], "2026-11-10")
+        self.assertEqual(
+            snap["chains"],
+            [
+                {"id": "carrefour", "nameHe": "קרפור", "nameEn": "Carrefour"},
+                {"id": "shufersal", "nameHe": "שופרסל", "nameEn": "Shufersal"},
+            ],
+        )
+        self.assertEqual([s["id"] for s in snap["stores"]], ["carrefour:2", "shufersal:1"])
+
     def test_stores_without_coordinates_are_omitted(self):
         snap = build_snapshot([_entry("1", point=None), _entry("2")], "2026-11-09")
         self.assertEqual([s["id"] for s in snap["stores"]], ["shufersal:2"])

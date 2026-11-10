@@ -4,7 +4,7 @@
     <!-- Coarse location only, used on-device to find the nearest branch. -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <application
-        android:label="rocis_recipes"
+        android:label="ROCIs Recipes"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
