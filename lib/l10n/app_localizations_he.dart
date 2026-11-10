@@ -567,4 +567,37 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get aiScanButton => 'סריקת תמונה';
+
+  @override
+  String get proteinAll => 'כל סוג';
+
+  @override
+  String get proteinChicken => 'עוף';
+
+  @override
+  String get proteinBeef => 'בקר ובשר';
+
+  @override
+  String get proteinFish => 'דגים';
+
+  @override
+  String get proteinVegetarian => 'ללא בשר';
+
+  @override
+  String get mealPrepChip => 'הכנה מראש';
+
+  @override
+  String get mealPrepLabel => 'הכנה מראש';
+
+  @override
+  String get aiInventTooltip => 'המצאת מנה ממה שיש לי';
+
+  @override
+  String get aiNeedIngredients => 'הוסיפו קודם מצרכים למטבח';
+
+  @override
+  String get aiInventing => 'ממציא מנה...';
+
+  @override
+  String get aiDraftNote => 'טיוטה מה-AI: בדקו לפני הבישול';
 }

@@ -1021,6 +1021,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Scan a photo'**
   String get aiScanButton;
+
+  /// No description provided for @proteinAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Any protein'**
+  String get proteinAll;
+
+  /// No description provided for @proteinChicken.
+  ///
+  /// In en, this message translates to:
+  /// **'Chicken'**
+  String get proteinChicken;
+
+  /// No description provided for @proteinBeef.
+  ///
+  /// In en, this message translates to:
+  /// **'Beef and meat'**
+  String get proteinBeef;
+
+  /// No description provided for @proteinFish.
+  ///
+  /// In en, this message translates to:
+  /// **'Fish'**
+  String get proteinFish;
+
+  /// No description provided for @proteinVegetarian.
+  ///
+  /// In en, this message translates to:
+  /// **'No meat'**
+  String get proteinVegetarian;
+
+  /// No description provided for @mealPrepChip.
+  ///
+  /// In en, this message translates to:
+  /// **'Meal prep'**
+  String get mealPrepChip;
+
+  /// No description provided for @mealPrepLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Meal prep'**
+  String get mealPrepLabel;
+
+  /// No description provided for @aiInventTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Invent a dish from what I have'**
+  String get aiInventTooltip;
+
+  /// No description provided for @aiNeedIngredients.
+  ///
+  /// In en, this message translates to:
+  /// **'Add some ingredients to your kitchen first'**
+  String get aiNeedIngredients;
+
+  /// No description provided for @aiInventing.
+  ///
+  /// In en, this message translates to:
+  /// **'Thinking up a dish...'**
+  String get aiInventing;
+
+  /// No description provided for @aiDraftNote.
+  ///
+  /// In en, this message translates to:
+  /// **'AI draft: check it before cooking'**
+  String get aiDraftNote;
 }
 
 class _AppLocalizationsDelegate

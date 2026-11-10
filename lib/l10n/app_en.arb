@@ -299,5 +299,16 @@
   "aiFoundAdd": "Add to my kitchen",
   "aiNothingFound": "No ingredients recognised in that photo",
   "aiImportButton": "Import with AI",
-  "aiScanButton": "Scan a photo"
+  "aiScanButton": "Scan a photo",
+  "proteinAll": "Any protein",
+  "proteinChicken": "Chicken",
+  "proteinBeef": "Beef and meat",
+  "proteinFish": "Fish",
+  "proteinVegetarian": "No meat",
+  "mealPrepChip": "Meal prep",
+  "mealPrepLabel": "Meal prep",
+  "aiInventTooltip": "Invent a dish from what I have",
+  "aiNeedIngredients": "Add some ingredients to your kitchen first",
+  "aiInventing": "Thinking up a dish...",
+  "aiDraftNote": "AI draft: check it before cooking"
 }

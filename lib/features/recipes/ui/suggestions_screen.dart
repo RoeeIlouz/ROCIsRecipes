@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
+import 'package:rocis_recipes/features/ai/ai_ui.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
+import 'package:rocis_recipes/features/recipes/recipe_filters.dart';
 import 'package:rocis_recipes/features/recipes/recipe_matcher.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_card.dart';
@@ -19,6 +21,8 @@ class SuggestionsScreen extends StatefulWidget {
 
 class _SuggestionsScreenState extends State<SuggestionsScreen> {
   String? _meal; // null = all meals
+  String? _protein; // null = any protein
+  bool _mealPrep = false;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +30,14 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
     final recipes = context
         .watch<RecipeRepository>()
         .all
-        .where((r) => _meal == null || r.mealType == _meal)
+        .where(
+          (r) => matchesFilters(
+            r,
+            meal: _meal,
+            protein: _protein,
+            mealPrepOnly: _mealPrep,
+          ),
+        )
         .toList();
     final pantry = context.watch<PantryRepository>().ids;
     final settings = context.watch<SettingsRepository>();
@@ -52,6 +63,12 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
         appBar: AppBar(
           title: Text(l10n.appName),
           actions: [
+            IconButton(
+              key: const Key('ai_invent_button'),
+              tooltip: l10n.aiInventTooltip,
+              icon: const Icon(Icons.auto_awesome),
+              onPressed: () => inventFromPantry(context),
+            ),
             IconButton(
               key: const Key('credits_button'),
               tooltip: l10n.creditsTitle,
@@ -86,6 +103,39 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
                 ],
               ),
             ),
+            SizedBox(
+              height: 52,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 8,
+                ),
+                children: [
+                  _proteinChip(
+                    const Key('protein_chip_all'),
+                    l10n.proteinAll,
+                    null,
+                  ),
+                  for (final k in kProteinKinds)
+                    _proteinChip(
+                      Key('protein_chip_$k'),
+                      proteinLabel(l10n, k),
+                      k,
+                    ),
+                  Padding(
+                    padding: const EdgeInsetsDirectional.only(end: 8),
+                    child: FilterChip(
+                      key: const Key('meal_prep_chip'),
+                      avatar: const Icon(Icons.kitchen_outlined, size: 18),
+                      label: Text(l10n.mealPrepChip),
+                      selected: _mealPrep,
+                      onSelected: (v) => setState(() => _mealPrep = v),
+                    ),
+                  ),
+                ],
+              ),
+            ),
             Expanded(
               child: TabBarView(
                 children: [
@@ -99,6 +149,16 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
       ),
     );
   }
+
+  Widget _proteinChip(Key key, String label, String? protein) => Padding(
+    padding: const EdgeInsetsDirectional.only(end: 8),
+    child: ChoiceChip(
+      key: key,
+      label: Text(label),
+      selected: _protein == protein,
+      onSelected: (_) => setState(() => _protein = protein),
+    ),
+  );
 
   Widget _chip(Key key, String label, String? meal) => Padding(
     padding: const EdgeInsetsDirectional.only(end: 8),

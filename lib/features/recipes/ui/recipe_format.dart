@@ -67,6 +67,14 @@ String mealTypeLabel(AppLocalizations l10n, String mealType) =>
       _ => mealType,
     };
 
+String proteinLabel(AppLocalizations l10n, String kind) => switch (kind) {
+  'chicken' => l10n.proteinChicken,
+  'beef' => l10n.proteinBeef,
+  'fish' => l10n.proteinFish,
+  'vegetarian' => l10n.proteinVegetarian,
+  _ => kind,
+};
+
 String difficultyLabel(AppLocalizations l10n, String difficulty) =>
     switch (difficulty) {
       'easy' => l10n.diffEasy,

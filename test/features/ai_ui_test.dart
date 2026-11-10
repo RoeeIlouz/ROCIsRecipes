@@ -3,6 +3,8 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:rocis_recipes/features/pantry/pantry_item.dart';
+
 import '../helpers/test_env.dart';
 
 Future<TestEnv> _open(
@@ -157,4 +159,63 @@ void main() {
       expect(env.pantry.ids, {'egg'});
     },
   );
+
+  group('invent a dish from the pantry', () {
+    testWidgets('opens the AI dish in the editor with the pantry as input', (
+      tester,
+    ) async {
+      final env = await _open(
+        tester,
+        '/suggestions',
+        setup: (e) => e.ai.recipeJson = _eggRecipe,
+      );
+      await env.pantry.upsert(const PantryItem(ingredientId: 'egg'));
+      await env.pantry.upsert(const PantryItem(ingredientId: 'tomato'));
+      await tester.tap(find.byKey(const Key('ai_invent_button')));
+      await tester.pumpAndSettle();
+      expect(env.ai.lastInventIngredients, containsAll(['ביצה', 'עגבנייה']));
+      expect(
+        tester
+            .widget<TextField>(find.byKey(const Key('editor_title')))
+            .controller!
+            .text,
+        'חביתה מהסריקה',
+      );
+      expect(
+        env.recipes.all,
+        isEmpty,
+        reason: 'only saved when the user saves',
+      );
+    });
+
+    testWidgets('asks for ingredients first when the kitchen is empty', (
+      tester,
+    ) async {
+      final env = await _open(
+        tester,
+        '/suggestions',
+        setup: (e) => e.ai.recipeJson = _eggRecipe,
+      );
+      await tester.tap(find.byKey(const Key('ai_invent_button')));
+      await tester.pumpAndSettle();
+      expect(env.ai.lastInventIngredients, isNull);
+      expect(find.text('הוסיפו קודם מצרכים למטבח'), findsOneWidget);
+    });
+
+    testWidgets(
+      'a failed attempt says so and stays on the suggestions screen',
+      (tester) async {
+        final env = await _open(
+          tester,
+          '/suggestions',
+          setup: (e) => e.ai.recipeJson = null,
+        );
+        await env.pantry.upsert(const PantryItem(ingredientId: 'egg'));
+        await tester.tap(find.byKey(const Key('ai_invent_button')));
+        await tester.pumpAndSettle();
+        expect(find.byKey(const Key('editor_title')), findsNothing);
+        expect(find.byKey(const Key('ai_invent_button')), findsOneWidget);
+      },
+    );
+  });
 }

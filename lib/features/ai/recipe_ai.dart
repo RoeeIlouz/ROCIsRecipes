@@ -23,6 +23,13 @@ abstract class RecipeAi {
   /// Reads a recipe from pasted text and/or a photo of a recipe. Null when nothing usable came back.
   Future<Map<String, dynamic>?> readRecipe({String? text, Uint8List? image});
 
+  /// Thinks up one new dish from [ingredients] that can be cooked within [maxMinutes].
+  Future<Map<String, dynamic>?> inventRecipe({
+    required List<String> ingredients,
+    required int maxMinutes,
+    String? mealType,
+  });
+
   /// Names of the food items visible in a photo.
   Future<List<String>> identifyIngredients(Uint8List image);
 }
@@ -120,6 +127,21 @@ class EdgeRecipeAi implements RecipeAi {
       image: image,
     );
     return extractJsonObject(reply);
+  }
+
+  @override
+  Future<Map<String, dynamic>?> inventRecipe({
+    required List<String> ingredients,
+    required int maxMinutes,
+    String? mealType,
+  }) async {
+    final meal = mealType == null ? '' : ' It should be a $mealType dish.';
+    final prompt =
+        'Invent one simple, realistic dish for a student cooking alone, using mainly these ingredients: '
+        '${ingredients.join(', ')}. Salt, pepper and oil are always available. Use at most 2 extra common ingredients '
+        'and only if really needed. Total time at most $maxMinutes minutes.$meal Give the title, steps and ingredient '
+        'names in Hebrew, with realistic quantities, as JSON.';
+    return extractJsonObject(await _ask(prompt, kRecipeSchema));
   }
 
   @override

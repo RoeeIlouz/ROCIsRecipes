@@ -135,6 +135,11 @@ class RecipeDetailScreen extends StatelessWidget {
                 avatar: const Icon(Icons.restaurant_menu_rounded, size: 18),
                 label: Text(mealTypeLabel(l10n, recipe.mealType)),
               ),
+              if (recipe.mealPrep)
+                Chip(
+                  avatar: const Icon(Icons.kitchen_outlined, size: 18),
+                  label: Text(l10n.mealPrepLabel),
+                ),
             ],
           ),
           const SizedBox(height: 16),
