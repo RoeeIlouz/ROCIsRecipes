@@ -515,4 +515,56 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get tasksNotInstalled => 'ROCIs Tasks לא מותקן';
+
+  @override
+  String get aiImportTitle => 'ייבוא מתכון עם AI';
+
+  @override
+  String get aiImportHint => 'הדביקו כאן מתכון, או הוסיפו תמונה של מתכון';
+
+  @override
+  String get aiAnalyze => 'קראו את המתכון';
+
+  @override
+  String get aiPhotoAttached => 'תמונה נוספה';
+
+  @override
+  String get aiOnDeviceNote =>
+      'ה-AI רץ בטלפון שלכם. הטקסט והתמונות לא יוצאים ממנו.';
+
+  @override
+  String get aiDownloadTitle => 'להוריד את מודל ה-AI?';
+
+  @override
+  String aiDownloadBody(String size) {
+    return 'מודל ה-AI רץ בטלפון ודורש הורדה חד פעמית של כ-$size ג\'יגה. מומלץ ב-Wi-Fi.';
+  }
+
+  @override
+  String get aiDownload => 'הורדה';
+
+  @override
+  String get aiDownloading => 'מוריד את מודל ה-AI';
+
+  @override
+  String get aiFailed =>
+      'לא הצלחתי לקרוא את זה. נסו טקסט ברור יותר או תמונה חדה.';
+
+  @override
+  String get aiScanTitle => 'זיהוי מצרכים מתמונה';
+
+  @override
+  String get aiFoundTitle => 'זיהיתי את אלה. בטלו סימון למה שלא נכון.';
+
+  @override
+  String get aiFoundAdd => 'הוספה למטבח שלי';
+
+  @override
+  String get aiNothingFound => 'לא זוהו מצרכים בתמונה הזו';
+
+  @override
+  String get aiImportButton => 'ייבוא עם AI';
+
+  @override
+  String get aiScanButton => 'סריקת תמונה';
 }

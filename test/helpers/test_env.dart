@@ -12,6 +12,7 @@ import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/prices/location_provider.dart';
+import 'package:rocis_recipes/features/ai/recipe_ai.dart';
 import 'package:rocis_recipes/features/recipes/photo_source.dart';
 import 'package:rocis_recipes/features/prices/nearby_controller.dart';
 import 'package:rocis_recipes/features/prices/price_repository.dart';
@@ -81,7 +82,58 @@ class FakeLocationProvider implements LocationProvider {
 }
 
 /// In-memory Hive boxes and repositories for widget tests (no disk IO).
+class FakeRecipeAi implements RecipeAi {
+  bool installed = true;
+  bool supported = true;
+  Map<String, dynamic>? recipeJson;
+  List<String> names = const [];
+  Object? error;
+  int installs = 0;
+  String? lastText;
+
+  @override
+  Future<bool> isSupported() async => supported;
+
+  @override
+  Future<bool> isInstalled() async => installed;
+
+  @override
+  int get downloadBytes => 2 * 1024 * 1024 * 1024;
+
+  @override
+  Stream<double> install() async* {
+    installs++;
+    yield 50;
+    installed = true;
+    yield 100;
+  }
+
+  @override
+  Future<Map<String, dynamic>?> readRecipe({
+    String? text,
+    Uint8List? image,
+  }) async {
+    if (error != null) throw error!;
+    lastText = text;
+    return recipeJson;
+  }
+
+  @override
+  Future<List<String>> identifyIngredients(Uint8List image) async {
+    if (error != null) throw error!;
+    return names;
+  }
+}
+
 class FakePhotoSource implements PhotoSource {
+  Uint8List? nextBytes;
+
+  @override
+  Future<Uint8List?> pickBytes({required bool camera}) async {
+    lastCamera = camera;
+    return nextBytes;
+  }
+
   String? next;
   bool? lastCamera;
 
@@ -114,6 +166,7 @@ class TestEnv {
   /// Urls the app asked to open (for example Google Maps).
   final List<Uri> launched = [];
   final FakePhotoSource photos = FakePhotoSource();
+  final FakeRecipeAi ai = FakeRecipeAi();
 
   static Future<TestEnv> create({
     List<Recipe> recipes = const [],
@@ -161,6 +214,7 @@ class TestEnv {
     ChangeNotifierProvider<NearbyController>.value(value: nearby),
     Provider<PriceService>.value(value: const PriceService()),
     Provider<PhotoSource>.value(value: photos),
+    Provider<RecipeAi>.value(value: ai),
     Provider<LaunchUrl>.value(
       value: (uri) async {
         launched.add(uri);

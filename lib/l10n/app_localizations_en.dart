@@ -516,4 +516,56 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tasksNotInstalled => 'ROCIs Tasks is not installed';
+
+  @override
+  String get aiImportTitle => 'Import a recipe with AI';
+
+  @override
+  String get aiImportHint => 'Paste a recipe here, or add a photo of one';
+
+  @override
+  String get aiAnalyze => 'Read the recipe';
+
+  @override
+  String get aiPhotoAttached => 'Photo added';
+
+  @override
+  String get aiOnDeviceNote =>
+      'The AI runs on your phone. Your text and photos never leave it.';
+
+  @override
+  String get aiDownloadTitle => 'Download the AI model?';
+
+  @override
+  String aiDownloadBody(String size) {
+    return 'The AI model runs on your phone and needs a one-time download of about $size GB. Wi-Fi is recommended.';
+  }
+
+  @override
+  String get aiDownload => 'Download';
+
+  @override
+  String get aiDownloading => 'Downloading the AI model';
+
+  @override
+  String get aiFailed =>
+      'Could not read that. Try clearer text or a sharper photo.';
+
+  @override
+  String get aiScanTitle => 'Find ingredients in a photo';
+
+  @override
+  String get aiFoundTitle => 'Found these. Untick anything wrong.';
+
+  @override
+  String get aiFoundAdd => 'Add to my kitchen';
+
+  @override
+  String get aiNothingFound => 'No ingredients recognised in that photo';
+
+  @override
+  String get aiImportButton => 'Import with AI';
+
+  @override
+  String get aiScanButton => 'Scan a photo';
 }
