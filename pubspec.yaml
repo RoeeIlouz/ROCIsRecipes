@@ -44,6 +44,10 @@ dependencies:
     sdk: flutter
   wakelock_plus: ^1.8.2
   clock: ^1.1.2
+  http: ^1.6.0
+  path_provider: ^2.1.6
+  geolocator: ^14.0.1
+  url_launcher: ^6.3.3
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +75,7 @@ flutter:
   assets:
     - assets/data/
     - assets/recipes/
+    - assets/prices/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

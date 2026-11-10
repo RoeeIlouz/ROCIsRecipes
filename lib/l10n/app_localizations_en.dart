@@ -173,4 +173,54 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get timerDone => 'Time\'s up!';
+
+  @override
+  String get pricesTitle => 'Estimated prices';
+
+  @override
+  String get useMyLocation => 'Use my location to find the nearest branch';
+
+  @override
+  String get pickBranch => 'Choose a branch';
+
+  @override
+  String get estimateLabel => 'estimate';
+
+  @override
+  String partialTotal(int count) {
+    return '$count items have no price';
+  }
+
+  @override
+  String get noPriceData => 'No price data for your list';
+
+  @override
+  String tooFar(int km) {
+    return 'No branch within $km km';
+  }
+
+  @override
+  String distanceKm(String km) {
+    return '$km km away';
+  }
+
+  @override
+  String get navigate => 'Navigate';
+
+  @override
+  String staleWarning(String date) {
+    return 'Prices may be out of date (last updated $date)';
+  }
+
+  @override
+  String get osmAttribution => 'Map data from OpenStreetMap contributors';
+
+  @override
+  String get locationUnavailable =>
+      'Location is not available, choose a branch yourself';
+
+  @override
+  String itemEstimate(String price) {
+    return 'about $price';
+  }
 }

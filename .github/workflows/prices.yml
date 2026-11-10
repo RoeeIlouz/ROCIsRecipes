@@ -1,0 +1,79 @@
+name: Price snapshot
+
+# Rebuilds the grocery price snapshot twice a week so the app never has to show
+# prices older than 7 days even if one run fails. Uses only the built-in
+# GITHUB_TOKEN; no secrets are needed.
+on:
+  schedule:
+    - cron: "0 3 * * 0,3"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: price-snapshot
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pipeline unit tests
+        run: python -m unittest discover -s tools/price_pipeline/tests
+
+      - name: Build snapshot
+        run: |
+          mkdir -p out
+          python tools/price_pipeline/build_snapshot.py --chains shufersal --out out/snapshot.json.gz
+          python tools/price_pipeline/make_manifest.py out/snapshot.json.gz out/manifest.json
+          cat out/manifest.json
+
+      - name: Publish to the data branch
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          remote="https://x-access-token:${TOKEN}@github.com/${REPO}.git"
+          rm -rf data-branch
+          if git ls-remote --exit-code --heads "$remote" data >/dev/null 2>&1; then
+            git clone --depth 1 --branch data "$remote" data-branch
+          else
+            mkdir data-branch
+            git -C data-branch init -b data
+            git -C data-branch remote add origin "$remote"
+          fi
+          cp out/snapshot.json.gz out/manifest.json data-branch/
+          cd data-branch
+          git add snapshot.json.gz manifest.json
+          if git diff --cached --quiet; then
+            echo "Snapshot unchanged, nothing to publish."
+          else
+            git commit -m "Price snapshot $(date -u +%Y-%m-%d)"
+            git push origin data
+          fi
+
+      - name: Save new geocoding results on main
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- tools/price_pipeline/geocode_cache.json; then
+            echo "Geocode cache unchanged."
+          else
+            git add tools/price_pipeline/geocode_cache.json
+            git commit -m "Update geocode cache"
+            git push origin HEAD:${{ github.event.repository.default_branch }}
+          fi

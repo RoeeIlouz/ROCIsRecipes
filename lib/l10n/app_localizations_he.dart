@@ -173,4 +173,53 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get timerDone => 'הזמן נגמר!';
+
+  @override
+  String get pricesTitle => 'מחירים משוערים';
+
+  @override
+  String get useMyLocation => 'השתמשו במיקום שלי כדי למצוא את הסניף הקרוב';
+
+  @override
+  String get pickBranch => 'בחרו סניף';
+
+  @override
+  String get estimateLabel => 'הערכה';
+
+  @override
+  String partialTotal(int count) {
+    return 'ל-$count פריטים אין מחיר';
+  }
+
+  @override
+  String get noPriceData => 'אין נתוני מחיר לרשימה';
+
+  @override
+  String tooFar(int km) {
+    return 'אין סניף ברדיוס $km ק\"מ';
+  }
+
+  @override
+  String distanceKm(String km) {
+    return 'במרחק $km ק\"מ';
+  }
+
+  @override
+  String get navigate => 'ניווט';
+
+  @override
+  String staleWarning(String date) {
+    return 'ייתכן שהמחירים לא עדכניים (עודכנו לאחרונה $date)';
+  }
+
+  @override
+  String get osmAttribution => 'נתוני מפה מתורמי OpenStreetMap';
+
+  @override
+  String get locationUnavailable => 'המיקום לא זמין, בחרו סניף בעצמכם';
+
+  @override
+  String itemEstimate(String price) {
+    return 'כ-$price';
+  }
 }

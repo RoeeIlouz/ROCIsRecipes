@@ -8,3 +8,5 @@ build/
 pubspec.lock.bak
 .base-ast/
 .base-ast-cache/
+__pycache__/
+*.pyc

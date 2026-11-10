@@ -11,6 +11,12 @@ import 'package:rocis_recipes/features/catalog/ingredient.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
+import 'package:rocis_recipes/features/prices/location_provider.dart';
+import 'package:rocis_recipes/features/prices/nearby_controller.dart';
+import 'package:rocis_recipes/features/prices/price_repository.dart';
+import 'package:rocis_recipes/features/prices/price_service.dart';
+import 'package:rocis_recipes/features/prices/price_snapshot.dart';
+import 'package:rocis_recipes/features/prices/ui/price_summary.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
 import 'package:rocis_recipes/features/shopping/shopping_repository.dart';
@@ -26,17 +32,57 @@ const testIngredients = [
 
 int _counter = 0;
 
+class _NoSnapshotSource implements SnapshotSource {
+  @override
+  Future<List<int>?> fetch() async => null;
+}
+
+/// Location provider with a fixed answer, for tests.
+class FakeLocationProvider implements LocationProvider {
+  FakeLocationProvider({this.status = LocationStatus.granted, this.location});
+
+  final LocationStatus status;
+  final UserLocation? location;
+  int requests = 0;
+
+  @override
+  Future<LocationStatus> requestPermission() async {
+    requests++;
+    return status;
+  }
+
+  @override
+  Future<UserLocation?> currentLocation() async => location;
+}
+
 /// In-memory Hive boxes and repositories for widget tests (no disk IO).
 class TestEnv {
-  TestEnv._(this.catalog, this.pantry, this.settings, this.recipes, this.shopping);
+  TestEnv._(
+    this.catalog,
+    this.pantry,
+    this.settings,
+    this.recipes,
+    this.shopping,
+    this.prices,
+    this.nearby,
+  );
 
   final IngredientCatalog catalog;
   final PantryRepository pantry;
   final SettingsRepository settings;
   final RecipeRepository recipes;
   final ShoppingRepository shopping;
+  final PriceRepository prices;
+  final NearbyController nearby;
 
-  static Future<TestEnv> create({List<Recipe> recipes = const []}) async {
+  /// Urls the app asked to open (for example Google Maps).
+  final List<Uri> launched = [];
+
+  static Future<TestEnv> create({
+    List<Recipe> recipes = const [],
+    PriceSnapshot? snapshot,
+    LocationProvider? location,
+  }) async {
     Hive.init(Directory.systemTemp.path);
     final n = _counter++;
     Future<Box<Map>> mapBox(String name) => Hive.openBox<Map>('${name}_$n', bytes: Uint8List(0));
@@ -46,6 +92,12 @@ class TestEnv {
       SettingsRepository(await Hive.openBox('settings_$n', bytes: Uint8List(0))),
       RecipeRepository(await mapBox('recipes')),
       ShoppingRepository(await mapBox('shopping')),
+      PriceRepository(
+        bundled: snapshot ?? PriceSnapshot(generatedAt: DateTime.now(), chains: const [], stores: const []),
+        source: _NoSnapshotSource(),
+        cacheDir: Directory.systemTemp.createTempSync('rocis_test_prices_'),
+      ),
+      NearbyController(location ?? FakeLocationProvider(status: LocationStatus.denied)),
     );
     await env.recipes.seedIfEmpty(recipes);
     return env;
@@ -57,6 +109,15 @@ class TestEnv {
         ChangeNotifierProvider<SettingsRepository>.value(value: settings),
         ChangeNotifierProvider<RecipeRepository>.value(value: recipes),
         ChangeNotifierProvider<ShoppingRepository>.value(value: shopping),
+        ChangeNotifierProvider<PriceRepository>.value(value: prices),
+        ChangeNotifierProvider<NearbyController>.value(value: nearby),
+        Provider<PriceService>.value(value: const PriceService()),
+        Provider<LaunchUrl>.value(
+          value: (uri) async {
+            launched.add(uri);
+            return true;
+          },
+        ),
       ];
 
   static const _delegates = <LocalizationsDelegate<dynamic>>[

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_label.dart';
+import 'package:rocis_recipes/features/prices/ui/price_summary.dart';
 import 'package:rocis_recipes/features/shopping/shopping_item.dart';
 import 'package:rocis_recipes/features/shopping/shopping_repository.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
@@ -44,6 +45,12 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
     final items = repo.items;
     final open = items.where((e) => !e.checked).toList();
     final done = items.where((e) => e.checked).toList();
+    final prices = PriceViewData.of(context);
+    final money = currencyFormat(context);
+    String? labelFor(ShoppingItem item) {
+      final price = prices.priceOf(item);
+      return price == null ? null : l10n.itemEstimate(money.format(price));
+    }
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.shoppingTitle)),
@@ -69,8 +76,9 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
             ],
           ),
           const SizedBox(height: 16),
+          const PriceSummary(),
           if (items.isEmpty) Text(l10n.shoppingEmpty),
-          for (final item in open) ShoppingItemTile(item: item),
+          for (final item in open) ShoppingItemTile(item: item, priceLabel: labelFor(item)),
           if (done.isNotEmpty)
             Column(
               key: const Key('done_section'),
@@ -78,7 +86,7 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
               children: [
                 const SizedBox(height: 16),
                 Text(l10n.doneSection, style: Theme.of(context).textTheme.titleMedium),
-                for (final item in done) ShoppingItemTile(item: item),
+                for (final item in done) ShoppingItemTile(item: item, priceLabel: labelFor(item)),
                 Align(
                   alignment: AlignmentDirectional.centerStart,
                   child: OutlinedButton(
@@ -115,7 +123,7 @@ class ShoppingItemTile extends StatelessWidget {
         item.label,
         style: item.checked ? const TextStyle(decoration: TextDecoration.lineThrough) : null,
       ),
-      subtitle: priceLabel == null ? null : Text(priceLabel!),
+      subtitle: priceLabel == null ? null : Text(priceLabel!, key: Key('price_line_${item.id}')),
     );
   }
 }
