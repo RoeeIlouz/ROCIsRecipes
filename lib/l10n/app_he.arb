@@ -153,5 +153,12 @@
   "aiFoundAdd": "הוספה למטבח שלי",
   "aiNothingFound": "לא זוהו מצרכים בתמונה הזו",
   "aiImportButton": "ייבוא עם AI",
-  "aiScanButton": "סריקת תמונה"
+  "aiScanButton": "סריקת תמונה",
+  "proteinAll": "כל סוג",
+  "proteinChicken": "עוף",
+  "proteinBeef": "בקר ובשר",
+  "proteinFish": "דגים",
+  "proteinVegetarian": "ללא בשר",
+  "mealPrepChip": "הכנה מראש",
+  "mealPrepLabel": "הכנה מראש"
 }

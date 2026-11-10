@@ -568,4 +568,25 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aiScanButton => 'Scan a photo';
+
+  @override
+  String get proteinAll => 'Any protein';
+
+  @override
+  String get proteinChicken => 'Chicken';
+
+  @override
+  String get proteinBeef => 'Beef and meat';
+
+  @override
+  String get proteinFish => 'Fish';
+
+  @override
+  String get proteinVegetarian => 'No meat';
+
+  @override
+  String get mealPrepChip => 'Meal prep';
+
+  @override
+  String get mealPrepLabel => 'Meal prep';
 }

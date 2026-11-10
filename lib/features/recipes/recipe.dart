@@ -139,6 +139,7 @@ class Recipe {
     this.difficulty = 'easy',
     this.mealType = 'dinner',
     this.photo,
+    this.mealPrep = false,
   });
 
   final String id;
@@ -154,6 +155,9 @@ class Recipe {
   final String difficulty;
   final String mealType;
   final RecipePhoto? photo;
+
+  /// Cooks in a big batch and keeps well (fridge or freezer) for the week.
+  final bool mealPrep;
 
   factory Recipe.fromJson(Map<String, dynamic> json) => Recipe(
     id: json['id'] as String,
@@ -184,6 +188,7 @@ class Recipe {
     photo: json['photo'] == null
         ? null
         : RecipePhoto.fromJson(Map<String, dynamic>.from(json['photo'] as Map)),
+    mealPrep: json['mealPrep'] as bool? ?? false,
   );
 
   Map<String, dynamic> toJson() => {
@@ -200,6 +205,7 @@ class Recipe {
     'difficulty': difficulty,
     'mealType': mealType,
     if (photo != null) 'photo': photo!.toJson(),
+    if (mealPrep) 'mealPrep': true,
   };
 
   @override
@@ -217,6 +223,7 @@ class Recipe {
       other.servings == servings &&
       other.difficulty == difficulty &&
       other.mealType == mealType &&
+      other.mealPrep == mealPrep &&
       other.photo == photo;
 
   @override
