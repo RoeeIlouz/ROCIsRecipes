@@ -72,6 +72,16 @@ class BuildQueryTest(unittest.TestCase):
         self.assertEqual(display_address(_store(address="רח' הרצל 5"), names), "הרצל 5, תל אביב-יפו")
         self.assertEqual(display_address(_store(city="9999"), names), "הרצל 5")
 
+    def test_leading_house_number_moves_to_the_end(self):
+        names = {"5000": "אשדוד"}
+        cases = {
+            "1 רח' הרצל": "הרצל 1, אשדוד, ישראל",
+            "14 רחוב הבנים": "הבנים 14, אשדוד, ישראל",
+            "רחוב הרצל 5": "הרצל 5, אשדוד, ישראל",
+        }
+        for raw, expected in cases.items():
+            self.assertEqual(build_query(_store(address=raw, city="5000"), names), expected, raw)
+
     def test_missing_space_before_house_number_is_inserted(self):
         names = {"5000": "חיפה"}
         self.assertEqual(build_query(_store(address="אבן גבירול157", city="5000"), names), "אבן גבירול 157, חיפה, ישראל")

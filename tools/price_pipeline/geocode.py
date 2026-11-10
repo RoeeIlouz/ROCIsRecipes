@@ -55,7 +55,8 @@ def fetch_city_names(fetch: Callable[[str], str] = _http_get) -> dict[str, str]:
 
 
 _CORNER_TAIL = re.compile(r"\s*פינת\s.*$")
-_STREET_PREFIX = re.compile(r"^רח['׳.]\s*|^רח\s+")
+_STREET_PREFIX = re.compile(r"^רח['׳.]\s*|^רח\s+|^רחוב\s+")
+_LEADING_NUMBER = re.compile(r"^(\d+)\s+(\D.*)$")
 _AVENUE_PREFIX = re.compile(r"^שד['׳.]\s*|^שד\s+")
 _GLUED_NUMBER = re.compile(r"(?<=[֐-׿])(?=\d)")
 CACHE_VERSION = 2  # bump when the query strategy changes so earlier misses are retried
@@ -65,6 +66,9 @@ def clean_address(address: str) -> str:
     """Expand or drop the abbreviations the chains use, which Nominatim does not parse."""
     s = address.replace('"', "").replace("״", "")
     s = _CORNER_TAIL.sub("", s.strip())
+    leading = _LEADING_NUMBER.match(s)
+    if leading:  # "14 רחוב הבנים" -> "רחוב הבנים 14"
+        s = f"{leading.group(2)} {leading.group(1)}"
     s = _STREET_PREFIX.sub("", s)
     s = _AVENUE_PREFIX.sub("שדרות ", s)
     s = _GLUED_NUMBER.sub(" ", s)  # "ורדיה10" -> "ורדיה 10"
