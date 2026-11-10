@@ -11,15 +11,25 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   Future<(List<Recipe>, IngredientCatalog)> loadReal() async {
-    final catalog = IngredientCatalog.fromJson(await rootBundle.loadString('assets/data/ingredients.json'));
-    final recipes = StarterRecipeLoader.parse(await rootBundle.loadString('assets/recipes/starter_he.json'));
+    final catalog = IngredientCatalog.fromJson(
+      await rootBundle.loadString('assets/data/ingredients.json'),
+    );
+    final recipes = StarterRecipeLoader.parse(
+      await rootBundle.loadString('assets/recipes/starter_he.json'),
+    );
     return (recipes, catalog);
   }
 
-  test('every starter recipe passes validation against the real catalog', () async {
-    final (recipes, catalog) = await loadReal();
-    expect(StarterRecipeLoader.validate(recipes, catalog, strict: true), isEmpty);
-  });
+  test(
+    'every starter recipe passes validation against the real catalog',
+    () async {
+      final (recipes, catalog) = await loadReal();
+      expect(
+        StarterRecipeLoader.validate(recipes, catalog, strict: true),
+        isEmpty,
+      );
+    },
+  );
 
   test('starter collection has a sensible number of recipes', () async {
     final (recipes, _) = await loadReal();
@@ -32,13 +42,21 @@ void main() {
     expect(hebrew / recipes.length, greaterThanOrEqualTo(0.9));
   });
 
-  test('collection includes no-appliance recipes and every appliance kind is used or optional', () async {
-    final (recipes, _) = await loadReal();
-    expect(recipes.where((r) => r.appliances.isEmpty).length, greaterThanOrEqualTo(1));
-  });
+  test(
+    'collection includes no-appliance recipes and every appliance kind is used or optional',
+    () async {
+      final (recipes, _) = await loadReal();
+      expect(
+        recipes.where((r) => r.appliances.isEmpty).length,
+        greaterThanOrEqualTo(1),
+      );
+    },
+  );
 
   test('validate reports an unknown ingredient id', () {
-    final catalog = IngredientCatalog(const [Ingredient(id: 'egg', nameHe: 'ביצה', nameEn: 'Egg')]);
+    final catalog = IngredientCatalog(const [
+      Ingredient(id: 'egg', nameHe: 'ביצה', nameEn: 'Egg'),
+    ]);
     const bad = Recipe(
       id: 'bad1',
       titleHe: 'x',
@@ -52,7 +70,9 @@ void main() {
   });
 
   test('validate rejects totalMinutes <= 0, no steps and duplicate ids', () {
-    final catalog = IngredientCatalog(const [Ingredient(id: 'egg', nameHe: 'ביצה', nameEn: 'Egg')]);
+    final catalog = IngredientCatalog(const [
+      Ingredient(id: 'egg', nameHe: 'ביצה', nameEn: 'Egg'),
+    ]);
     const zero = Recipe(
       id: 'z',
       titleHe: 'x',
@@ -67,9 +87,19 @@ void main() {
       steps: [],
       totalMinutes: 5,
     );
-    final problems = StarterRecipeLoader.validate([zero, noSteps, noSteps], catalog);
-    expect(problems.where((p) => p.contains('z')).length, greaterThanOrEqualTo(1));
-    expect(problems.where((p) => p.contains('steps')).length, greaterThanOrEqualTo(1));
+    final problems = StarterRecipeLoader.validate([
+      zero,
+      noSteps,
+      noSteps,
+    ], catalog);
+    expect(
+      problems.where((p) => p.contains('z')).length,
+      greaterThanOrEqualTo(1),
+    );
+    expect(
+      problems.where((p) => p.contains('steps')).length,
+      greaterThanOrEqualTo(1),
+    );
     expect(problems.where((p) => p.contains('duplicate')).length, 1);
   });
 }

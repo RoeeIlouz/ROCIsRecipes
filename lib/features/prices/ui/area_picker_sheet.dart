@@ -22,9 +22,14 @@ class _AreaPickerSheetState extends State<AreaPickerSheet> {
     final q = _query.trim();
     final matches = q.isEmpty
         ? const <PriceStore>[]
-        : widget.stores.where((s) => s.name.contains(q) || s.address.contains(q)).take(40).toList();
+        : widget.stores
+              .where((s) => s.name.contains(q) || s.address.contains(q))
+              .take(40)
+              .toList();
     return Padding(
-      padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
+      padding: EdgeInsets.only(
+        bottom: MediaQuery.of(context).viewInsets.bottom,
+      ),
       child: SizedBox(
         height: MediaQuery.of(context).size.height * 0.7,
         child: Column(
@@ -43,7 +48,10 @@ class _AreaPickerSheetState extends State<AreaPickerSheet> {
             ),
             Expanded(
               child: q.isNotEmpty && matches.isEmpty
-                  ? Center(key: const Key('area_empty'), child: Text(l10n.areaNoResults))
+                  ? Center(
+                      key: const Key('area_empty'),
+                      child: Text(l10n.areaNoResults),
+                    )
                   : ListView(
                       children: [
                         for (final s in matches)

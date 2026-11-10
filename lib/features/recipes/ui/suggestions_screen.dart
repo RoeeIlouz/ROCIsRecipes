@@ -43,6 +43,12 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          key: const Key('add_recipe_fab'),
+          tooltip: l10n.edNew,
+          onPressed: () => context.push('/recipe-edit'),
+          child: const Icon(Icons.add),
+        ),
         appBar: AppBar(
           title: Text(l10n.appName),
           actions: [

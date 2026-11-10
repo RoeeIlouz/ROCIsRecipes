@@ -18,6 +18,32 @@ class RecipeDetailScreen extends StatelessWidget {
 
   final String recipeId;
 
+  Future<void> _confirmDelete(BuildContext context, String id) async {
+    final l10n = AppLocalizations.of(context);
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        content: Text(l10n.edDeleteConfirm),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: Text(l10n.cancel),
+          ),
+          TextButton(
+            key: const Key('confirm_delete_recipe'),
+            onPressed: () => Navigator.pop(ctx, true),
+            child: Text(l10n.delete),
+          ),
+        ],
+      ),
+    );
+    if (ok == true && context.mounted) {
+      await context.read<RecipeRepository>().delete(id);
+      if (context.mounted)
+        context.canPop() ? context.pop() : context.go('/suggestions');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
@@ -61,12 +87,29 @@ class RecipeDetailScreen extends StatelessWidget {
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
         ),
+        actions: [
+          if (recipe.isUserCreated) ...[
+            IconButton(
+              key: const Key('edit_recipe_button'),
+              tooltip: l10n.edEdit,
+              icon: const Icon(Icons.edit_outlined),
+              onPressed: () => context.push('/recipe-edit?id=${recipe.id}'),
+            ),
+            IconButton(
+              key: const Key('delete_recipe_button'),
+              tooltip: l10n.edDelete,
+              icon: const Icon(Icons.delete_outline),
+              onPressed: () => _confirmDelete(context, recipe.id),
+            ),
+          ],
+        ],
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
           RecipePhotoView(
             photo: recipe.photo,
+            filePath: recipe.imagePath,
             height: 220,
             borderRadius: BorderRadius.circular(24),
           ),

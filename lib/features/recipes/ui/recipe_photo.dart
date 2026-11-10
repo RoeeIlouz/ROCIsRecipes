@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:rocis_recipes/features/prices/ui/price_summary.dart'
@@ -11,12 +13,16 @@ class RecipePhotoView extends StatelessWidget {
   const RecipePhotoView({
     super.key,
     required this.photo,
+    this.filePath,
     this.width,
     this.height,
     this.borderRadius = const BorderRadius.all(Radius.circular(18)),
   });
 
   final RecipePhoto? photo;
+
+  /// A photo the user took or picked (stored on the device), used when there is no credited [photo].
+  final String? filePath;
   final double? width;
   final double? height;
   final BorderRadius borderRadius;
@@ -25,24 +31,35 @@ class RecipePhotoView extends StatelessWidget {
   Widget build(BuildContext context) {
     final placeholder = _Placeholder(width: width, height: height);
     final p = photo;
+    final f = filePath;
     return ClipRRect(
       borderRadius: borderRadius,
       child: SizedBox(
         width: width,
         height: height,
-        child: p == null
+        child: (p == null && f == null)
             ? placeholder
-            : Image.asset(
-                p.asset,
-                key: const Key('recipe_photo_image'),
-                fit: BoxFit.cover,
-                width: width,
-                height: height,
-                // Decode near display size so a list of photos stays light on memory.
-                cacheWidth: 720,
-                gaplessPlayback: true,
-                errorBuilder: (_, __, ___) => placeholder,
-              ),
+            : (p == null
+                  ? Image.file(
+                      File(f!),
+                      key: const Key('recipe_photo_image'),
+                      fit: BoxFit.cover,
+                      width: width,
+                      height: height,
+                      cacheWidth: 720,
+                      errorBuilder: (_, __, ___) => placeholder,
+                    )
+                  : Image.asset(
+                      p.asset,
+                      key: const Key('recipe_photo_image'),
+                      fit: BoxFit.cover,
+                      width: width,
+                      height: height,
+                      // Decode near display size so a list of photos stays light on memory.
+                      cacheWidth: 720,
+                      gaplessPlayback: true,
+                      errorBuilder: (_, __, ___) => placeholder,
+                    )),
       ),
     );
   }

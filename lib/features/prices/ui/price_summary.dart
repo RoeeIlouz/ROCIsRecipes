@@ -120,7 +120,10 @@ class PriceSummary extends StatelessWidget {
             if (nearby.manualLabel != null)
               Padding(
                 padding: const EdgeInsets.only(top: 4),
-                child: Text(l10n.usingArea(nearby.manualLabel!), key: const Key('using_area')),
+                child: Text(
+                  l10n.usingArea(nearby.manualLabel!),
+                  key: const Key('using_area'),
+                ),
               ),
             TextButton.icon(
               key: const Key('choose_area_button'),
@@ -132,7 +135,10 @@ class PriceSummary extends StatelessWidget {
                   builder: (_) => AreaPickerSheet(stores: view.snapshot.stores),
                 );
                 if (picked != null) {
-                  nearby.setManual(UserLocation(lat: picked.lat, lng: picked.lng), picked.address);
+                  nearby.setManual(
+                    UserLocation(lat: picked.lat, lng: picked.lng),
+                    picked.address,
+                  );
                 }
               },
               icon: const Icon(Icons.edit_location_alt_outlined),

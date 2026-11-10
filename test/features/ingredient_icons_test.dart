@@ -9,7 +9,9 @@ void main() {
   late IngredientCatalog catalog;
 
   setUpAll(() async {
-    catalog = IngredientCatalog.fromJson(await rootBundle.loadString('assets/data/ingredients.json'));
+    catalog = IngredientCatalog.fromJson(
+      await rootBundle.loadString('assets/data/ingredients.json'),
+    );
   });
 
   test('every catalog ingredient has a known category', () {
@@ -20,7 +22,11 @@ void main() {
 
   test('every category is used by at least five ingredients', () {
     for (final c in kIngredientCategories) {
-      expect(catalog.all.where((i) => i.category == c).length, greaterThanOrEqualTo(5), reason: c);
+      expect(
+        catalog.all.where((i) => i.category == c).length,
+        greaterThanOrEqualTo(5),
+        reason: c,
+      );
     }
   });
 
@@ -30,15 +36,21 @@ void main() {
     }
   });
 
-  test('common ingredients have their own icon rather than the category fallback', () {
-    expect(ingredientEmoji('tomato', 'produce'), '🍅');
-    expect(ingredientEmoji('egg', 'dairy'), '🥚');
-    expect(ingredientEmoji('milk', 'dairy'), '🥛');
-  });
+  test(
+    'common ingredients have their own icon rather than the category fallback',
+    () {
+      expect(ingredientEmoji('tomato', 'produce'), '🍅');
+      expect(ingredientEmoji('egg', 'dairy'), '🥚');
+      expect(ingredientEmoji('milk', 'dairy'), '🥛');
+    },
+  );
 
-  test('an ingredient without its own icon falls back to its category icon', () {
-    expect(ingredientEmoji('mystery', 'spices'), kCategoryEmoji['spices']);
-  });
+  test(
+    'an ingredient without its own icon falls back to its category icon',
+    () {
+      expect(ingredientEmoji('mystery', 'spices'), kCategoryEmoji['spices']);
+    },
+  );
 
   test('custom ingredients and unknown categories get a generic icon', () {
     expect(ingredientEmoji('custom:xyz', null), '🍽️');

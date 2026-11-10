@@ -438,4 +438,82 @@ class AppLocalizationsEn extends AppLocalizations {
   String usingArea(String label) {
     return 'Area: $label';
   }
+
+  @override
+  String get edNew => 'New recipe';
+
+  @override
+  String get edEdit => 'Edit recipe';
+
+  @override
+  String get edName => 'Recipe name';
+
+  @override
+  String get edMinutes => 'Minutes';
+
+  @override
+  String get edServings => 'Servings';
+
+  @override
+  String get edIngredients => 'Ingredients';
+
+  @override
+  String get edAddIngredient => 'Search and add an ingredient';
+
+  @override
+  String get edQuantity => 'Qty';
+
+  @override
+  String get edUnit => 'Unit';
+
+  @override
+  String get edNoUnit => 'No unit';
+
+  @override
+  String get edSteps => 'Steps';
+
+  @override
+  String get edAddStep => 'Add a step';
+
+  @override
+  String get edStepHint => 'Describe the step';
+
+  @override
+  String get edPhotoGallery => 'From gallery';
+
+  @override
+  String get edPhotoCamera => 'Take a photo';
+
+  @override
+  String get edPhotoRemove => 'Remove photo';
+
+  @override
+  String get edSave => 'Save recipe';
+
+  @override
+  String get edNeedTitle => 'Give the recipe a name';
+
+  @override
+  String get edNeedIngredient => 'Add at least one ingredient';
+
+  @override
+  String get edNeedStep => 'Add at least one step';
+
+  @override
+  String get edDelete => 'Delete recipe';
+
+  @override
+  String get edDeleteConfirm => 'Delete this recipe for good?';
+
+  @override
+  String get myRecipe => 'My recipe';
+
+  @override
+  String get edSaved => 'Recipe saved';
+
+  @override
+  String get sendToTasks => 'Send to ROCIs Tasks';
+
+  @override
+  String get tasksNotInstalled => 'ROCIs Tasks is not installed';
 }

@@ -3,16 +3,16 @@ import 'package:rocis_recipes/features/recipes/appliance.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
 
 Map<String, dynamic> _base() => {
-      'id': 'rv2_x',
-      'titleHe': 'שקשוקה',
-      'ingredients': [
-        {'ingredientId': 'egg', 'quantity': 4, 'unit': 'unit'},
-      ],
-      'steps': [
-        {'textHe': 'מחממים'},
-      ],
-      'totalMinutes': 25,
-    };
+  'id': 'rv2_x',
+  'titleHe': 'שקשוקה',
+  'ingredients': [
+    {'ingredientId': 'egg', 'quantity': 4, 'unit': 'unit'},
+  ],
+  'steps': [
+    {'textHe': 'מחממים'},
+  ],
+  'totalMinutes': 25,
+};
 
 void main() {
   test('Recipe v2 round-trips through JSON with a photo', () {
@@ -20,7 +20,9 @@ void main() {
       id: 'rv2_x',
       titleHe: 'שקשוקה',
       titleEn: 'Shakshuka',
-      ingredients: [RecipeIngredient(ingredientId: 'egg', quantity: 4, unit: 'unit')],
+      ingredients: [
+        RecipeIngredient(ingredientId: 'egg', quantity: 4, unit: 'unit'),
+      ],
       steps: [RecipeStep(textHe: 'מחממים')],
       appliances: {Appliance.stovetop},
       totalMinutes: 25,
@@ -51,7 +53,11 @@ void main() {
   });
 
   test('unknown difficulty or meal type falls back to the defaults', () {
-    final r = Recipe.fromJson({..._base(), 'difficulty': 'impossible', 'mealType': 'elevenses'});
+    final r = Recipe.fromJson({
+      ..._base(),
+      'difficulty': 'impossible',
+      'mealType': 'elevenses',
+    });
     expect(r.difficulty, 'easy');
     expect(r.mealType, 'dinner');
   });
@@ -66,9 +72,23 @@ void main() {
   });
 
   test('RecipePhoto equality and JSON round trip', () {
-    const a = RecipePhoto(asset: 'a.jpg', author: 'x', license: 'CC0', sourceUrl: 'https://example.org');
+    const a = RecipePhoto(
+      asset: 'a.jpg',
+      author: 'x',
+      license: 'CC0',
+      sourceUrl: 'https://example.org',
+    );
     expect(RecipePhoto.fromJson(a.toJson()), a);
-    expect(a == const RecipePhoto(asset: 'b.jpg', author: 'x', license: 'CC0', sourceUrl: 'https://example.org'), isFalse);
+    expect(
+      a ==
+          const RecipePhoto(
+            asset: 'b.jpg',
+            author: 'x',
+            license: 'CC0',
+            sourceUrl: 'https://example.org',
+          ),
+      isFalse,
+    );
   });
 
   test('recipes with different servings are not equal', () {

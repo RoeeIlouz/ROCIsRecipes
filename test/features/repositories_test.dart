@@ -12,12 +12,12 @@ import 'package:rocis_recipes/features/shopping/shopping_item.dart';
 import 'package:rocis_recipes/features/shopping/shopping_repository.dart';
 
 Recipe _recipe(String id) => Recipe(
-      id: id,
-      titleHe: 'מתכון $id',
-      ingredients: const [RecipeIngredient(ingredientId: 'egg')],
-      steps: const [RecipeStep(textHe: 'לבשל')],
-      totalMinutes: 10,
-    );
+  id: id,
+  titleHe: 'מתכון $id',
+  ingredients: const [RecipeIngredient(ingredientId: 'egg')],
+  steps: const [RecipeStep(textHe: 'לבשל')],
+  totalMinutes: 10,
+);
 
 void main() {
   late Directory dir;
@@ -32,41 +32,51 @@ void main() {
     dir.deleteSync(recursive: true);
   });
 
-  test('pantry upsert replaces same ingredient and persists across reopen', () async {
-    var box = await Hive.openBox<Map>('pantry');
-    var repo = PantryRepository(box);
-    await repo.upsert(const PantryItem(ingredientId: 'egg', quantity: 2));
-    await repo.upsert(const PantryItem(ingredientId: 'egg', quantity: 5));
-    expect(repo.items.length, 1);
-    expect(repo.items.single.quantity, 5);
-    expect(repo.ids, {'egg'});
+  test(
+    'pantry upsert replaces same ingredient and persists across reopen',
+    () async {
+      var box = await Hive.openBox<Map>('pantry');
+      var repo = PantryRepository(box);
+      await repo.upsert(const PantryItem(ingredientId: 'egg', quantity: 2));
+      await repo.upsert(const PantryItem(ingredientId: 'egg', quantity: 5));
+      expect(repo.items.length, 1);
+      expect(repo.items.single.quantity, 5);
+      expect(repo.ids, {'egg'});
 
-    await box.close();
-    box = await Hive.openBox<Map>('pantry');
-    repo = PantryRepository(box);
-    expect(repo.items.single.quantity, 5);
+      await box.close();
+      box = await Hive.openBox<Map>('pantry');
+      repo = PantryRepository(box);
+      expect(repo.items.single.quantity, 5);
 
-    await repo.remove('egg');
-    expect(repo.items, isEmpty);
-  });
+      await repo.remove('egg');
+      expect(repo.items, isEmpty);
+    },
+  );
 
-  test('shopping addMissing does not duplicate an unchecked ingredient', () async {
-    final repo = ShoppingRepository(await Hive.openBox<Map>('shopping'));
-    await repo.add(const ShoppingItem(id: 'a', ingredientId: 'milk', label: 'חלב'));
-    await repo.addMissing(const [
-      ShoppingItem(id: 'b', ingredientId: 'milk', label: 'חלב'),
-      ShoppingItem(id: 'c', ingredientId: 'egg', label: 'ביצים'),
-      ShoppingItem(id: 'd', ingredientId: 'egg', label: 'ביצים'),
-    ]);
-    expect(repo.items.map((e) => e.id), ['a', 'c']);
+  test(
+    'shopping addMissing does not duplicate an unchecked ingredient',
+    () async {
+      final repo = ShoppingRepository(await Hive.openBox<Map>('shopping'));
+      await repo.add(
+        const ShoppingItem(id: 'a', ingredientId: 'milk', label: 'חלב'),
+      );
+      await repo.addMissing(const [
+        ShoppingItem(id: 'b', ingredientId: 'milk', label: 'חלב'),
+        ShoppingItem(id: 'c', ingredientId: 'egg', label: 'ביצים'),
+        ShoppingItem(id: 'd', ingredientId: 'egg', label: 'ביצים'),
+      ]);
+      expect(repo.items.map((e) => e.id), ['a', 'c']);
 
-    await repo.toggle('a');
-    await repo.addMissing(const [ShoppingItem(id: 'e', ingredientId: 'milk', label: 'חלב')]);
-    expect(repo.items.map((e) => e.id), containsAll(['a', 'e']));
+      await repo.toggle('a');
+      await repo.addMissing(const [
+        ShoppingItem(id: 'e', ingredientId: 'milk', label: 'חלב'),
+      ]);
+      expect(repo.items.map((e) => e.id), containsAll(['a', 'e']));
 
-    await repo.clearChecked();
-    expect(repo.items.map((e) => e.id), ['c', 'e']);
-  });
+      await repo.clearChecked();
+      expect(repo.items.map((e) => e.id), ['c', 'e']);
+    },
+  );
 
   test('settings default maxMinutes is 45 and staples seed once', () async {
     final repo = SettingsRepository(await Hive.openBox('settings'));
@@ -86,17 +96,24 @@ void main() {
     expect(repo.maxMinutes, 30);
   });
 
-  test('appliances default to stove, oven and microwave once, and respect a later choice', () async {
-    final repo = SettingsRepository(await Hive.openBox('settings'));
-    await repo.seedAppliancesIfUnset();
-    expect(repo.appliances, {Appliance.stovetop, Appliance.oven, Appliance.microwave});
-    await repo.setAppliances({Appliance.airFryer});
-    await repo.seedAppliancesIfUnset();
-    expect(repo.appliances, {Appliance.airFryer});
-    await repo.setAppliances({});
-    await repo.seedAppliancesIfUnset();
-    expect(repo.appliances, isEmpty);
-  });
+  test(
+    'appliances default to stove, oven and microwave once, and respect a later choice',
+    () async {
+      final repo = SettingsRepository(await Hive.openBox('settings'));
+      await repo.seedAppliancesIfUnset();
+      expect(repo.appliances, {
+        Appliance.stovetop,
+        Appliance.oven,
+        Appliance.microwave,
+      });
+      await repo.setAppliances({Appliance.airFryer});
+      await repo.seedAppliancesIfUnset();
+      expect(repo.appliances, {Appliance.airFryer});
+      await repo.setAppliances({});
+      await repo.seedAppliancesIfUnset();
+      expect(repo.appliances, isEmpty);
+    },
+  );
 
   test('recipe seedIfEmpty is a no-op when recipes exist', () async {
     final repo = RecipeRepository(await Hive.openBox<Map>('recipes'));

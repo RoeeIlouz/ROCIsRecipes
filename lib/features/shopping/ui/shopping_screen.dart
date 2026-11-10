@@ -4,6 +4,8 @@ import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_label.dart';
 import 'package:rocis_recipes/features/prices/ui/price_summary.dart';
 import 'package:rocis_recipes/features/shopping/shopping_item.dart';
+import 'package:rocis_recipes/features/shopping/shopping_screen_tasks.dart';
+import 'package:rocis_recipes/features/recipes/ui/recipe_format.dart';
 import 'package:rocis_recipes/features/shopping/shopping_repository.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
 
@@ -57,7 +59,33 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(l10n.shoppingTitle)),
+      appBar: AppBar(
+        title: Text(l10n.shoppingTitle),
+        actions: [
+          if (open.isNotEmpty)
+            IconButton(
+              key: const Key('send_to_tasks_button'),
+              tooltip: l10n.sendToTasks,
+              icon: const Icon(Icons.add_task_rounded),
+              onPressed: () async {
+                final lines = [
+                  for (final i in open)
+                    i.quantity == null
+                        ? i.label
+                        : '${i.label} ${formatAmount(i.quantity!)}${i.unit == null ? '' : ' ${unitLabel(l10n, i.unit!, i.quantity!)}'}',
+                ];
+                final ok = await context.read<LaunchUrl>()(
+                  buildTasksUri(l10n.shoppingTitle, lines),
+                );
+                if (!ok && context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text(l10n.tasksNotInstalled)),
+                  );
+                }
+              },
+            ),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [

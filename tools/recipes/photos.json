@@ -1,9 +1,21 @@
 {
+ "rv2_apple_cinnamon_oven": {
+  "asset": "assets/recipes/photos/rv2_apple_cinnamon_oven.jpg",
+  "author": "Andrey Korzun",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baked_apple_02.JPG"
+ },
  "rv2_avocado_egg_toast": {
   "asset": "assets/recipes/photos/rv2_avocado_egg_toast.jpg",
   "author": "Sarah Stierch",
   "license": "CC BY 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Avocado_toast_at_the_girl_&_the_fig_-_Sarah_Stierch.jpg"
+ },
+ "rv2_baked_potato_cheese_tuna": {
+  "asset": "assets/recipes/photos/rv2_baked_potato_cheese_tuna.jpg",
+  "author": "Daderot",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Small_potatoes,_baked,_with_tuna_fish,_cheddar_cheese,_and_black_pepper_-_Massachusetts.jpg"
  },
  "rv2_barley_mushroom_soup": {
   "asset": "assets/recipes/photos/rv2_barley_mushroom_soup.jpg",
@@ -58,6 +70,12 @@
   "author": "Missvain",
   "license": "CC BY 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steak_burrito_bowl_at_La_Casa_Restaurant_in_Sonoma,_California_-_Sarah_Stierch_03.jpg"
+ },
+ "rv2_cheese_quesadilla": {
+  "asset": "assets/recipes/photos/rv2_cheese_quesadilla.jpg",
+  "author": "Photograph by Mike Peel (www.mikepeel.net).",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:At_Long_Island_2023_267.jpg"
  },
  "rv2_chicken_fajita": {
   "asset": "assets/recipes/photos/rv2_chicken_fajita.jpg",
@@ -149,6 +167,12 @@
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Algerian_Couscous_with_Vegetables.jpg"
  },
+ "rv2_egg_salad_pita": {
+  "asset": "assets/recipes/photos/rv2_egg_salad_pita.jpg",
+  "author": "Gilabrand",
+  "license": "CC BY-SA 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sabich.jpg"
+ },
  "rv2_eggplant_tahini_salad": {
   "asset": "assets/recipes/photos/rv2_eggplant_tahini_salad.jpg",
   "author": "Andy Li",
@@ -181,6 +205,12 @@
  },
  "rv2_fried_rice_egg": {
   "asset": "assets/recipes/photos/rv2_fried_rice_egg.jpg",
+  "author": "daSupremo",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fried_rice_with_chicken_and_egg.jpg"
+ },
+ "rv2_fried_rice_vegetables": {
+  "asset": "assets/recipes/photos/rv2_fried_rice_vegetables.jpg",
   "author": "daSupremo",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fried_rice_with_chicken_and_egg.jpg"
@@ -221,8 +251,20 @@
   "license": "CC BY 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meaty_Lasagna_8of8_(8736299782).jpg"
  },
+ "rv2_lemon_chicken_orzo_ptitim": {
+  "asset": "assets/recipes/photos/rv2_lemon_chicken_orzo_ptitim.jpg",
+  "author": "HaJunkiyada",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Grilled_chicken_thighs_with_ptitim_and_Israeli_salad.jpg"
+ },
  "rv2_lentil_soup": {
   "asset": "assets/recipes/photos/rv2_lentil_soup.jpg",
+  "author": "Whoisjohngalt",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bowl_of_lentil_soup_with_green_and_red_lentils.jpg"
+ },
+ "rv2_lentil_soup_red": {
+  "asset": "assets/recipes/photos/rv2_lentil_soup_red.jpg",
   "author": "Whoisjohngalt",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bowl_of_lentil_soup_with_green_and_red_lentils.jpg"
@@ -257,6 +299,90 @@
   "license": "CC0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fried_sticky_rice_with_black_beans,_peas,_and_Salchichón_sausage,_plus_soy_sauce_and_black_pepper_-_Massachusetts.jpg"
  },
+ "rv2_mp_beef_pasta_bake_trays": {
+  "asset": "assets/recipes/photos/rv2_mp_beef_pasta_bake_trays.jpg",
+  "author": "Daderot",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ground_beef,_baked_tomatoes,_and_tomato_sauce_on_Taiwan_noodles_-_Massachusetts.jpg"
+ },
+ "rv2_mp_burrito_freezer": {
+  "asset": "assets/recipes/photos/rv2_mp_burrito_freezer.jpg",
+  "author": "Levi bernardo",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Burrito_chihuahuense_de_chile_verde.jpg"
+ },
+ "rv2_mp_chicken_soup_batch": {
+  "asset": "assets/recipes/photos/rv2_mp_chicken_soup_batch.jpg",
+  "author": "stu_spivack",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_soup_with_kreplach.jpg"
+ },
+ "rv2_mp_lentil_rice_bowls": {
+  "asset": "assets/recipes/photos/rv2_mp_lentil_rice_bowls.jpg",
+  "author": "Lopanayak",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:VegetableKhichdi_Rayagada_Odisha_0002.jpg"
+ },
+ "rv2_mp_meatballs_freezer": {
+  "asset": "assets/recipes/photos/rv2_mp_meatballs_freezer.jpg",
+  "author": "jeffreyw",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spaghetti_and_meatballs_1.jpg"
+ },
+ "rv2_mp_pancake_batch_freezer": {
+  "asset": "assets/recipes/photos/rv2_mp_pancake_batch_freezer.jpg",
+  "author": "Mae Mu",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Foodiesfeed.com_pouring-honey-on-pancakes-with-walnuts.jpg"
+ },
+ "rv2_mp_pasta_salad_week": {
+  "asset": "assets/recipes/photos/rv2_mp_pasta_salad_week.jpg",
+  "author": "Brynn",
+  "license": "CC BY-SA 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pasta_salad_closeup.JPG"
+ },
+ "rv2_mp_shakshuka_base_batch": {
+  "asset": "assets/recipes/photos/rv2_mp_shakshuka_base_batch.jpg",
+  "author": "Calliopejen1",
+  "license": "CC BY-SA 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shakshuka_by_Calliopejen1.jpg"
+ },
+ "rv2_mp_shnitzel_trays": {
+  "asset": "assets/recipes/photos/rv2_mp_shnitzel_trays.jpg",
+  "author": "Kritzolina",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Allgäuer_Schnitzel_mit_Kräuterrösti.jpg"
+ },
+ "rv2_mp_sweet_potato_chickpea_trays": {
+  "asset": "assets/recipes/photos/rv2_mp_sweet_potato_chickpea_trays.jpg",
+  "author": "spurekar",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sweet_potatoes_and_za'atar_chickpeas_with_herby_yogurt_(49803694683).jpg"
+ },
+ "rv2_mp_teriyaki_chicken_boxes": {
+  "asset": "assets/recipes/photos/rv2_mp_teriyaki_chicken_boxes.jpg",
+  "author": "TechnoKittyCat",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donburi_Rice_bowl_of_Chicken_Teriyaki_with_Tomato.jpg"
+ },
+ "rv2_mp_tuna_pasta_boxes": {
+  "asset": "assets/recipes/photos/rv2_mp_tuna_pasta_boxes.jpg",
+  "author": "FotoosVanRobin from Netherlands",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuna_pasta_salad.jpg"
+ },
+ "rv2_mp_veg_pasta_sauce_batch": {
+  "asset": "assets/recipes/photos/rv2_mp_veg_pasta_sauce_batch.jpg",
+  "author": "Shixart1985",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Large_pot_of_simmering_tomato_sauce_with_wooden_spoon.jpg"
+ },
+ "rv2_mp_zucchini_fritters_trays": {
+  "asset": "assets/recipes/photos/rv2_mp_zucchini_fritters_trays.jpg",
+  "author": "Nicole Bratt from Seattle, WA, USA",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zucchini_&_feta_fritters_(7804257920).jpg"
+ },
  "rv2_mujaddara": {
   "asset": "assets/recipes/photos/rv2_mujaddara.jpg",
   "author": "Bazel",
@@ -268,6 +394,12 @@
   "author": "Andy Li",
   "license": "CC0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mushroom_Omelette_-_Breakfast_At_Tiffany's_Brighton.jpg"
+ },
+ "rv2_mushroom_rice_pilaf": {
+  "asset": "assets/recipes/photos/rv2_mushroom_rice_pilaf.jpg",
+  "author": "Alpha from Melbourne, Australia",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mum's_Oily_Rice_-_Glutinous_Rice_Rice_with_mushroom,_Chinese_Sausage_(2770474966).jpg"
  },
  "rv2_mushroom_risotto": {
   "asset": "assets/recipes/photos/rv2_mushroom_risotto.jpg",
@@ -298,6 +430,12 @@
   "author": "Dllu",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_fettuccine_alfredo.JPG"
+ },
+ "rv2_pasta_garlic_zucchini": {
+  "asset": "assets/recipes/photos/rv2_pasta_garlic_zucchini.jpg",
+  "author": "chomjong",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zucchini_oil_pasta.jpg"
  },
  "rv2_pasta_pesto_cherry": {
   "asset": "assets/recipes/photos/rv2_pasta_pesto_cherry.jpg",
@@ -353,6 +491,12 @@
   "license": "CC BY 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pita_pizza_(1).jpg"
  },
+ "rv2_potato_wedges_air_fryer": {
+  "asset": "assets/recipes/photos/rv2_potato_wedges_air_fryer.jpg",
+  "author": "Moheen Reeyad",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Potato_wedges_(164510).jpg"
+ },
  "rv2_ptitim_chicken": {
   "asset": "assets/recipes/photos/rv2_ptitim_chicken.jpg",
   "author": "HaJunkiyada",
@@ -406,6 +550,12 @@
   "author": "Calliopejen1",
   "license": "CC BY-SA 3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shakshuka_by_Calliopejen1.jpg"
+ },
+ "rv2_shakshuka_feta": {
+  "asset": "assets/recipes/photos/rv2_shakshuka_feta.jpg",
+  "author": "Andy Li",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:SHAKSHUKA_&_FETA_-_The_Meeting_Place_2025-06-28.jpg"
  },
  "rv2_shakshuka_green": {
   "asset": "assets/recipes/photos/rv2_shakshuka_green.jpg",
@@ -461,11 +611,29 @@
   "license": "CC BY-SA 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flickr_-_cyclonebill_-_Tabbouleh.jpg"
  },
+ "rv2_tahini_cookies": {
+  "asset": "assets/recipes/photos/rv2_tahini_cookies.jpg",
+  "author": "Ofer Deshe",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tahini_cookies.jpg"
+ },
  "rv2_tofu_vegetable_curry": {
   "asset": "assets/recipes/photos/rv2_tofu_vegetable_curry.jpg",
   "author": "Andy Li",
   "license": "CC0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_curry_with_tofu,_egg_fried_rice_-_Little_Thai_2024-07-21.jpg"
+ },
+ "rv2_tomato_egg_stirfry": {
+  "asset": "assets/recipes/photos/rv2_tomato_egg_stirfry.jpg",
+  "author": "Huangdan2060",
+  "license": "CC BY 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hunan_cuisine,_stir-fried_tomato_with_eggs.jpg"
+ },
+ "rv2_tuna_melt_sandwich": {
+  "asset": "assets/recipes/photos/rv2_tuna_melt_sandwich.jpg",
+  "author": "kweez mcG from London, UK",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuna_melt_sandwich_with_fries.jpg"
  },
  "rv2_tuna_sandwich_pita": {
   "asset": "assets/recipes/photos/rv2_tuna_sandwich_pita.jpg",

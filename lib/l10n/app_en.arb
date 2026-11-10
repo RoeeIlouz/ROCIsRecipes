@@ -250,5 +250,31 @@
         "type": "String"
       }
     }
-  }
+  },
+  "edNew": "New recipe",
+  "edEdit": "Edit recipe",
+  "edName": "Recipe name",
+  "edMinutes": "Minutes",
+  "edServings": "Servings",
+  "edIngredients": "Ingredients",
+  "edAddIngredient": "Search and add an ingredient",
+  "edQuantity": "Qty",
+  "edUnit": "Unit",
+  "edNoUnit": "No unit",
+  "edSteps": "Steps",
+  "edAddStep": "Add a step",
+  "edStepHint": "Describe the step",
+  "edPhotoGallery": "From gallery",
+  "edPhotoCamera": "Take a photo",
+  "edPhotoRemove": "Remove photo",
+  "edSave": "Save recipe",
+  "edNeedTitle": "Give the recipe a name",
+  "edNeedIngredient": "Add at least one ingredient",
+  "edNeedStep": "Add at least one step",
+  "edDelete": "Delete recipe",
+  "edDeleteConfirm": "Delete this recipe for good?",
+  "myRecipe": "My recipe",
+  "edSaved": "Recipe saved",
+  "sendToTasks": "Send to ROCIs Tasks",
+  "tasksNotInstalled": "ROCIs Tasks is not installed"
 }

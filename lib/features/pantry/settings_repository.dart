@@ -26,7 +26,11 @@ class SettingsRepository extends ChangeNotifier {
   /// Every kitchen has these; written only if the user never chose appliances.
   Future<void> seedAppliancesIfUnset() async {
     if (_box.containsKey(_appliancesKey)) return;
-    await setAppliances({Appliance.stovetop, Appliance.oven, Appliance.microwave});
+    await setAppliances({
+      Appliance.stovetop,
+      Appliance.oven,
+      Appliance.microwave,
+    });
   }
 
   Set<String> get stapleIds =>
