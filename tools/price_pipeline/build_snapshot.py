@@ -9,8 +9,9 @@ from __future__ import annotations
 import argparse
 import gzip
 import json
+import statistics
 import sys
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import date
 from pathlib import Path
 
@@ -32,6 +33,26 @@ class StoreEntry:
     address: str
     point: GeoPoint | None
     prices: dict[str, float]
+
+
+def drop_price_outliers(stores: list[StoreEntry], factor: float = 4.0, min_branches: int = 5) -> list[StoreEntry]:
+    """Remove a branch's price for an ingredient when it is more than `factor` times
+    above or below the median across branches (a stray wrong product match).
+    Ingredients seen at fewer than `min_branches` branches are left alone."""
+    by_ingredient: dict[str, list[float]] = {}
+    for store in stores:
+        for ingredient_id, price in store.prices.items():
+            by_ingredient.setdefault(ingredient_id, []).append(price)
+    medians = {k: statistics.median(v) for k, v in by_ingredient.items() if len(v) >= min_branches}
+    cleaned: list[StoreEntry] = []
+    for store in stores:
+        prices = {
+            k: v
+            for k, v in store.prices.items()
+            if k not in medians or medians[k] / factor <= v <= medians[k] * factor
+        }
+        cleaned.append(replace(store, prices=prices))
+    return cleaned
 
 
 def build_snapshot(stores: list[StoreEntry], generated_at: str) -> dict:
@@ -107,7 +128,7 @@ def main(argv: list[str] | None = None) -> int:
                            points[f"{store.chain}:{store.store_id}"], aggregate_store(items, mapping))
             )
 
-    snapshot = build_snapshot(entries, date.today().isoformat())
+    snapshot = build_snapshot(drop_price_outliers(entries), date.today().isoformat())
     write_snapshot(snapshot, args.out)
     priced = {k for s in snapshot["stores"] for k in s["prices"]}
     print(

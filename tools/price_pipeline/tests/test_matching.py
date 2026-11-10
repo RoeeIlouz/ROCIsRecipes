@@ -83,6 +83,19 @@ class LoadMappingTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 load_mapping(str(path))
 
+    def test_real_mapping_prices_eggs_and_milk_from_typical_shufersal_names(self):
+        mapping = load_mapping(str(ROOT / "tools" / "price_pipeline" / "ingredient_products.json"))
+        items = [
+            _item("ביצים L 12 יחידות", 14.9),
+            _item("ביצים M 18 יחידות", 21.9),
+            _item("ביצי שוקולד קינדר", 9.9),
+            _item("חלב טרי 3% 1 ליטר", 7.5),
+            _item("חלב שוקולד", 5.0),
+        ]
+        prices = aggregate_store(items, mapping)
+        self.assertEqual(prices["egg"], 18.4)
+        self.assertEqual(prices["milk"], 7.5)
+
     def test_real_mapping_only_uses_catalog_ingredient_ids(self):
         catalog = json.loads((ROOT / "assets" / "data" / "ingredients.json").read_text(encoding="utf-8"))
         catalog_ids = {i["id"] for i in catalog}

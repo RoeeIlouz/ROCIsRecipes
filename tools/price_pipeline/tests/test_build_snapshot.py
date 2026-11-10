@@ -7,13 +7,34 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from build_snapshot import StoreEntry, build_snapshot, write_snapshot  # noqa: E402
+from build_snapshot import StoreEntry, build_snapshot, drop_price_outliers, write_snapshot  # noqa: E402
 from geocode import GeoPoint  # noqa: E402
 
 
 def _entry(store_id="1", point=GeoPoint(32.0853, 34.7818), prices=None, chain="shufersal") -> StoreEntry:
     return StoreEntry(chain=chain, store_id=store_id, name="שלי " + store_id, address="הרצל 5, תל אביב",
                       point=point, prices={"egg": 12.9} if prices is None else prices)
+
+
+class DropOutliersTest(unittest.TestCase):
+    def _entries(self, egg_prices):
+        return [_entry(str(i), prices={"egg": p}) for i, p in enumerate(egg_prices)]
+
+    def test_drops_prices_far_from_the_cross_branch_median(self):
+        entries = self._entries([10, 11, 10, 12, 11, 100, 1])
+        cleaned = drop_price_outliers(entries)
+        self.assertEqual([e.prices.get("egg") for e in cleaned], [10, 11, 10, 12, 11, None, None])
+
+    def test_keeps_everything_when_there_are_too_few_branches_to_judge(self):
+        entries = self._entries([10, 100])
+        self.assertEqual([e.prices for e in drop_price_outliers(entries)], [{"egg": 10}, {"egg": 100}])
+
+    def test_other_ingredients_are_untouched(self):
+        entries = [_entry(str(i), prices={"egg": 10, "milk": 7}) for i in range(5)]
+        entries.append(_entry("9", prices={"egg": 500, "milk": 7}))
+        cleaned = drop_price_outliers(entries)
+        self.assertEqual(cleaned[-1].prices, {"milk": 7})
+        self.assertEqual(cleaned[0].prices, {"egg": 10, "milk": 7})
 
 
 class BuildSnapshotTest(unittest.TestCase):
