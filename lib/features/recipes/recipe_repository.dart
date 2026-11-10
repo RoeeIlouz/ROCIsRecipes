@@ -48,6 +48,11 @@ class RecipeRepository extends ChangeNotifier {
     notifyListeners();
   }
 
+  Future<void> delete(String id) async {
+    await _box.delete(id);
+    notifyListeners();
+  }
+
   Future<void> upsert(Recipe recipe) async {
     await _box.put(recipe.id, recipe.toJson());
     notifyListeners();

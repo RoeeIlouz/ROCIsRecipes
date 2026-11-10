@@ -39,7 +39,12 @@ class RecipeCard extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             child: Row(
               children: [
-                RecipePhotoView(photo: recipe.photo, width: 84, height: 84),
+                RecipePhotoView(
+                  photo: recipe.photo,
+                  filePath: recipe.imagePath,
+                  width: 84,
+                  height: 84,
+                ),
                 const SizedBox(width: 14),
                 Expanded(
                   child: Column(

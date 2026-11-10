@@ -19,7 +19,9 @@ void main() {
     return env;
   }
 
-  testWidgets('opens a sheet with a tile and icon for every ingredient', (tester) async {
+  testWidgets('opens a sheet with a tile and icon for every ingredient', (
+    tester,
+  ) async {
     await openPicker(tester);
     expect(find.byType(IngredientPickerSheet), findsOneWidget);
     for (final id in ['tomato', 'cucumber', 'egg', 'milk', 'salt']) {
@@ -29,20 +31,25 @@ void main() {
     expect(find.text('🥛'), findsOneWidget);
   });
 
-  testWidgets('tapping a tile adds the ingredient and tapping again removes it', (tester) async {
-    final env = await openPicker(tester);
-    await tester.tap(find.byKey(const Key('picker_tile_milk')));
-    await tester.pumpAndSettle();
-    expect(env.pantry.ids, {'milk'});
-    expect(find.byKey(const Key('picker_selected_milk')), findsOneWidget);
+  testWidgets(
+    'tapping a tile adds the ingredient and tapping again removes it',
+    (tester) async {
+      final env = await openPicker(tester);
+      await tester.tap(find.byKey(const Key('picker_tile_milk')));
+      await tester.pumpAndSettle();
+      expect(env.pantry.ids, {'milk'});
+      expect(find.byKey(const Key('picker_selected_milk')), findsOneWidget);
 
-    await tester.tap(find.byKey(const Key('picker_tile_milk')));
-    await tester.pumpAndSettle();
-    expect(env.pantry.ids, isEmpty);
-    expect(find.byKey(const Key('picker_selected_milk')), findsNothing);
-  });
+      await tester.tap(find.byKey(const Key('picker_tile_milk')));
+      await tester.pumpAndSettle();
+      expect(env.pantry.ids, isEmpty);
+      expect(find.byKey(const Key('picker_selected_milk')), findsNothing);
+    },
+  );
 
-  testWidgets('the sheet stays open so several ingredients can be picked', (tester) async {
+  testWidgets('the sheet stays open so several ingredients can be picked', (
+    tester,
+  ) async {
     final env = await openPicker(tester);
     await tester.tap(find.byKey(const Key('picker_tile_egg')));
     await tester.pumpAndSettle();
@@ -52,7 +59,9 @@ void main() {
     expect(find.byType(IngredientPickerSheet), findsOneWidget);
   });
 
-  testWidgets('ingredients already in the pantry show as selected', (tester) async {
+  testWidgets('ingredients already in the pantry show as selected', (
+    tester,
+  ) async {
     final env = await TestEnv.create();
     await env.pantry.upsert(const PantryItem(ingredientId: 'egg'));
     tester.view.physicalSize = const Size(800, 1600);
@@ -90,12 +99,17 @@ void main() {
 
   testWidgets('search understands plural synonyms and niqqud', (tester) async {
     await openPicker(tester);
-    await tester.enterText(find.byKey(const Key('picker_search')), 'עַגְבָנִיּוֹת');
+    await tester.enterText(
+      find.byKey(const Key('picker_search')),
+      'עַגְבָנִיּוֹת',
+    );
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('picker_tile_tomato')), findsOneWidget);
   });
 
-  testWidgets('a category chip filters the grid and All restores it', (tester) async {
+  testWidgets('a category chip filters the grid and All restores it', (
+    tester,
+  ) async {
     await openPicker(tester);
     await tester.tap(find.byKey(const Key('picker_cat_dairy')));
     await tester.pumpAndSettle();

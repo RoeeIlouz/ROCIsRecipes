@@ -20,7 +20,9 @@ void main() {
 
   testWidgets('switches to English LTR', (tester) async {
     final env = await TestEnv.create();
-    await tester.pumpWidget(RecipesApp(providers: env.providers, locale: const Locale('en')));
+    await tester.pumpWidget(
+      RecipesApp(providers: env.providers, locale: const Locale('en')),
+    );
     await tester.pumpAndSettle();
     final ctx = tester.element(find.byType(Scaffold).first);
     expect(Directionality.of(ctx), TextDirection.ltr);
@@ -36,10 +38,14 @@ void main() {
       await themeService.init();
       await themeService.setThemeMode(AppThemeMode.amoled);
     });
-    await tester.pumpWidget(RecipesApp(providers: [
-      ...env.providers,
-      ChangeNotifierProvider<ThemeService>.value(value: themeService),
-    ]));
+    await tester.pumpWidget(
+      RecipesApp(
+        providers: [
+          ...env.providers,
+          ChangeNotifierProvider<ThemeService>.value(value: themeService),
+        ],
+      ),
+    );
     await tester.pumpAndSettle();
     final ctx = tester.element(find.byType(Scaffold).first);
     expect(Theme.of(ctx).scaffoldBackgroundColor, Colors.black);

@@ -2,6 +2,7 @@ import 'package:go_router/go_router.dart';
 import 'package:rocis_recipes/features/pantry/ui/pantry_screen.dart';
 import 'package:rocis_recipes/features/recipes/ui/cooking_mode_screen.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_detail_screen.dart';
+import 'package:rocis_recipes/features/recipes/ui/recipe_editor_screen.dart';
 import 'package:rocis_recipes/features/recipes/ui/suggestions_screen.dart';
 import 'package:rocis_recipes/features/settings/ui/credits_screen.dart';
 import 'package:rocis_recipes/features/shopping/ui/shopping_screen.dart';
@@ -40,6 +41,11 @@ GoRouter buildRouter({String initialLocation = '/'}) => GoRouter(
           ],
         ),
       ],
+    ),
+    GoRoute(
+      path: '/recipe-edit',
+      builder: (context, state) =>
+          RecipeEditorScreen(recipeId: state.uri.queryParameters['id']),
     ),
     GoRoute(
       path: '/credits',

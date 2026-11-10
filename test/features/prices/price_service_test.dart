@@ -3,7 +3,8 @@ import 'package:rocis_recipes/features/prices/price_service.dart';
 import 'package:rocis_recipes/features/prices/price_snapshot.dart';
 import 'package:rocis_recipes/features/shopping/shopping_item.dart';
 
-PriceStore _store(Map<String, double> prices, {String chain = 'shufersal'}) => PriceStore(
+PriceStore _store(Map<String, double> prices, {String chain = 'shufersal'}) =>
+    PriceStore(
       id: '$chain:1',
       chainId: chain,
       name: 'branch',
@@ -14,7 +15,12 @@ PriceStore _store(Map<String, double> prices, {String chain = 'shufersal'}) => P
     );
 
 ShoppingItem _item(String id, {String? ingredientId, bool checked = false}) =>
-    ShoppingItem(id: id, ingredientId: ingredientId, label: id, checked: checked);
+    ShoppingItem(
+      id: id,
+      ingredientId: ingredientId,
+      label: id,
+      checked: checked,
+    );
 
 void main() {
   const service = PriceService();
@@ -34,7 +40,10 @@ void main() {
 
   test('checked items are ignored', () {
     final total = service.totalFor(
-      [_item('a', ingredientId: 'egg'), _item('b', ingredientId: 'milk', checked: true)],
+      [
+        _item('a', ingredientId: 'egg'),
+        _item('b', ingredientId: 'milk', checked: true),
+      ],
       'shufersal',
       _store({'egg': 10, 'milk': 7.5}),
     );
@@ -56,7 +65,11 @@ void main() {
   });
 
   test('no priced items means no data', () {
-    final total = service.totalFor([_item('a', ingredientId: 'bread')], 'shufersal', _store({'egg': 10}));
+    final total = service.totalFor(
+      [_item('a', ingredientId: 'bread')],
+      'shufersal',
+      _store({'egg': 10}),
+    );
     expect(total.hasData, isFalse);
     expect(total.total, 0);
     expect(total.unpricedCount, 1);
@@ -73,7 +86,11 @@ void main() {
   });
 
   test('no branch means no data and every unchecked item unpriced', () {
-    final total = service.totalFor([_item('a', ingredientId: 'egg'), _item('b', checked: true)], 'shufersal', null);
+    final total = service.totalFor(
+      [_item('a', ingredientId: 'egg'), _item('b', checked: true)],
+      'shufersal',
+      null,
+    );
     expect(total.hasData, isFalse);
     expect(total.store, isNull);
     expect(total.unpricedCount, 1);
@@ -87,7 +104,8 @@ void main() {
   });
 
   group('cheapestChain', () {
-    ChainTotal t(String chain, double total, int priced, int unpriced) => ChainTotal(
+    ChainTotal t(String chain, double total, int priced, int unpriced) =>
+        ChainTotal(
           chainId: chain,
           store: null,
           distanceKm: null,
@@ -97,13 +115,20 @@ void main() {
         );
 
     test('prefers fewer unpriced items, then lower total', () {
-      final result = cheapestChain([t('a', 5, 1, 2), t('b', 20, 3, 0), t('c', 18, 3, 0)]);
+      final result = cheapestChain([
+        t('a', 5, 1, 2),
+        t('b', 20, 3, 0),
+        t('c', 18, 3, 0),
+      ]);
       expect(result?.chainId, 'c');
     });
 
-    test('ignores chains without data and returns null when none have data', () {
-      expect(cheapestChain([t('a', 0, 0, 3)]), isNull);
-      expect(cheapestChain(const []), isNull);
-    });
+    test(
+      'ignores chains without data and returns null when none have data',
+      () {
+        expect(cheapestChain([t('a', 0, 0, 3)]), isNull);
+        expect(cheapestChain(const []), isNull);
+      },
+    );
   });
 }

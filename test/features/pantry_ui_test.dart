@@ -13,17 +13,24 @@ void main() {
     return env;
   }
 
-  testWidgets('typing a Hebrew ingredient with niqqud and tapping add stores the catalog ingredient',
-      (tester) async {
-    final env = await pump(tester);
-    await tester.enterText(find.byKey(const Key('pantry_input')), 'עַגְבָנִיּוֹת');
-    await tester.tap(find.byKey(const Key('pantry_add_button')));
-    await tester.pumpAndSettle();
-    expect(env.pantry.ids, {'tomato'});
-    expect(find.text('עגבנייה'), findsOneWidget);
-  });
+  testWidgets(
+    'typing a Hebrew ingredient with niqqud and tapping add stores the catalog ingredient',
+    (tester) async {
+      final env = await pump(tester);
+      await tester.enterText(
+        find.byKey(const Key('pantry_input')),
+        'עַגְבָנִיּוֹת',
+      );
+      await tester.tap(find.byKey(const Key('pantry_add_button')));
+      await tester.pumpAndSettle();
+      expect(env.pantry.ids, {'tomato'});
+      expect(find.text('עגבנייה'), findsOneWidget);
+    },
+  );
 
-  testWidgets('typing unknown text adds a custom ingredient and shows it', (tester) async {
+  testWidgets('typing unknown text adds a custom ingredient and shows it', (
+    tester,
+  ) async {
     final env = await pump(tester);
     await tester.enterText(find.byKey(const Key('pantry_input')), 'פיצוחים');
     await tester.tap(find.byKey(const Key('pantry_add_button')));
@@ -58,7 +65,9 @@ void main() {
     expect(env.pantry.ids, {'milk'});
   });
 
-  testWidgets('selecting appliances persists to SettingsRepository', (tester) async {
+  testWidgets('selecting appliances persists to SettingsRepository', (
+    tester,
+  ) async {
     final env = await pump(tester);
     await tester.tap(find.byKey(const Key('appliance_oven')));
     await tester.pumpAndSettle();

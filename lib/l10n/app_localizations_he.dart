@@ -437,4 +437,82 @@ class AppLocalizationsHe extends AppLocalizations {
   String usingArea(String label) {
     return 'אזור: $label';
   }
+
+  @override
+  String get edNew => 'מתכון חדש';
+
+  @override
+  String get edEdit => 'עריכת מתכון';
+
+  @override
+  String get edName => 'שם המתכון';
+
+  @override
+  String get edMinutes => 'דקות';
+
+  @override
+  String get edServings => 'מנות';
+
+  @override
+  String get edIngredients => 'מצרכים';
+
+  @override
+  String get edAddIngredient => 'חפשו והוסיפו מצרך';
+
+  @override
+  String get edQuantity => 'כמות';
+
+  @override
+  String get edUnit => 'יחידה';
+
+  @override
+  String get edNoUnit => 'ללא יחידה';
+
+  @override
+  String get edSteps => 'שלבים';
+
+  @override
+  String get edAddStep => 'הוסיפו שלב';
+
+  @override
+  String get edStepHint => 'תארו את השלב';
+
+  @override
+  String get edPhotoGallery => 'מהגלריה';
+
+  @override
+  String get edPhotoCamera => 'צלמו תמונה';
+
+  @override
+  String get edPhotoRemove => 'הסירו תמונה';
+
+  @override
+  String get edSave => 'שמירת המתכון';
+
+  @override
+  String get edNeedTitle => 'תנו שם למתכון';
+
+  @override
+  String get edNeedIngredient => 'הוסיפו לפחות מצרך אחד';
+
+  @override
+  String get edNeedStep => 'הוסיפו לפחות שלב אחד';
+
+  @override
+  String get edDelete => 'מחיקת מתכון';
+
+  @override
+  String get edDeleteConfirm => 'למחוק את המתכון לצמיתות?';
+
+  @override
+  String get myRecipe => 'המתכון שלי';
+
+  @override
+  String get edSaved => 'המתכון נשמר';
+
+  @override
+  String get sendToTasks => 'שליחה ל-ROCIs Tasks';
+
+  @override
+  String get tasksNotInstalled => 'ROCIs Tasks לא מותקן';
 }

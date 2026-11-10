@@ -9,7 +9,9 @@ void main() {
   late IngredientCatalog catalog;
 
   setUpAll(() async {
-    catalog = IngredientCatalog.fromJson(await rootBundle.loadString('assets/data/ingredients.json'));
+    catalog = IngredientCatalog.fromJson(
+      await rootBundle.loadString('assets/data/ingredients.json'),
+    );
   });
 
   test('the catalog has at least 160 ingredients', () {
@@ -18,11 +20,37 @@ void main() {
 
   test('ingredients needed for real meals exist', () {
     const needed = [
-      'leek', 'radish', 'arugula', 'cherry_tomato', 'ground_turkey', 'turkey_breast', 'white_fish',
-      'sardines', 'halloumi', 'ricotta', 'lasagna_sheets', 'barley', 'freekeh', 'puff_pastry',
-      'pizza_dough', 'tomato_sauce', 'silan', 'cornstarch', 'yeast', 'powdered_sugar', 'harissa',
-      'hummus', 'baharat', 'pine_nuts', 'pistachios', 'cashews', 'dates', 'coconut_flakes',
-      'pomegranate_molasses', 'matbucha', 'ptitim',
+      'leek',
+      'radish',
+      'arugula',
+      'cherry_tomato',
+      'ground_turkey',
+      'turkey_breast',
+      'white_fish',
+      'sardines',
+      'halloumi',
+      'ricotta',
+      'lasagna_sheets',
+      'barley',
+      'freekeh',
+      'puff_pastry',
+      'pizza_dough',
+      'tomato_sauce',
+      'silan',
+      'cornstarch',
+      'yeast',
+      'powdered_sugar',
+      'harissa',
+      'hummus',
+      'baharat',
+      'pine_nuts',
+      'pistachios',
+      'cashews',
+      'dates',
+      'coconut_flakes',
+      'pomegranate_molasses',
+      'matbucha',
+      'ptitim',
     ];
     for (final id in needed) {
       expect(catalog.byId(id), isNotNull, reason: id);
@@ -38,9 +66,19 @@ void main() {
   });
 
   test('every new ingredient has its own icon, not the category fallback', () {
-    for (final id in ['leek', 'pizza_dough', 'puff_pastry', 'pine_nuts', 'white_fish']) {
+    for (final id in [
+      'leek',
+      'pizza_dough',
+      'puff_pastry',
+      'pine_nuts',
+      'white_fish',
+    ]) {
       final category = catalog.byId(id)!.category;
-      expect(ingredientEmoji(id, category), isNot(kCategoryEmoji[category]), reason: id);
+      expect(
+        ingredientEmoji(id, category),
+        isNot(kCategoryEmoji[category]),
+        reason: id,
+      );
     }
   });
 }

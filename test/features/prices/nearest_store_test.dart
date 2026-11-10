@@ -4,7 +4,8 @@ import 'package:rocis_recipes/features/prices/location_provider.dart';
 import 'package:rocis_recipes/features/prices/nearest_store.dart';
 import 'package:rocis_recipes/features/prices/price_snapshot.dart';
 
-PriceStore _store(String id, String chain, double lat, double lng) => PriceStore(
+PriceStore _store(String id, String chain, double lat, double lng) =>
+    PriceStore(
       id: id,
       chainId: chain,
       name: id,
@@ -50,7 +51,10 @@ void main() {
 
   test('maxKm can be widened', () {
     final stores = [_store('shufersal:eilat', 'shufersal', 29.5577, 34.9519)];
-    expect(nearestStore(stores, 'shufersal', lat, lng, maxKm: 400)?.store.id, 'shufersal:eilat');
+    expect(
+      nearestStore(stores, 'shufersal', lat, lng, maxKm: 400)?.store.id,
+      'shufersal:eilat',
+    );
   });
 
   test('empty store list gives null', () {
@@ -59,15 +63,45 @@ void main() {
 
   group('statusFromPermission', () {
     test('service off wins over any permission', () {
-      expect(statusFromPermission(LocationPermission.whileInUse, serviceEnabled: false), LocationStatus.serviceOff);
+      expect(
+        statusFromPermission(
+          LocationPermission.whileInUse,
+          serviceEnabled: false,
+        ),
+        LocationStatus.serviceOff,
+      );
     });
 
     test('maps permissions to statuses', () {
-      expect(statusFromPermission(LocationPermission.whileInUse, serviceEnabled: true), LocationStatus.granted);
-      expect(statusFromPermission(LocationPermission.always, serviceEnabled: true), LocationStatus.granted);
-      expect(statusFromPermission(LocationPermission.denied, serviceEnabled: true), LocationStatus.denied);
-      expect(statusFromPermission(LocationPermission.deniedForever, serviceEnabled: true), LocationStatus.deniedForever);
-      expect(statusFromPermission(LocationPermission.unableToDetermine, serviceEnabled: true), LocationStatus.unavailable);
+      expect(
+        statusFromPermission(
+          LocationPermission.whileInUse,
+          serviceEnabled: true,
+        ),
+        LocationStatus.granted,
+      );
+      expect(
+        statusFromPermission(LocationPermission.always, serviceEnabled: true),
+        LocationStatus.granted,
+      );
+      expect(
+        statusFromPermission(LocationPermission.denied, serviceEnabled: true),
+        LocationStatus.denied,
+      );
+      expect(
+        statusFromPermission(
+          LocationPermission.deniedForever,
+          serviceEnabled: true,
+        ),
+        LocationStatus.deniedForever,
+      );
+      expect(
+        statusFromPermission(
+          LocationPermission.unableToDetermine,
+          serviceEnabled: true,
+        ),
+        LocationStatus.unavailable,
+      );
     });
   });
 }

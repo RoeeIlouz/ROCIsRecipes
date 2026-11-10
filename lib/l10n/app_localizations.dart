@@ -769,6 +769,162 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Area: {label}'**
   String usingArea(String label);
+
+  /// No description provided for @edNew.
+  ///
+  /// In en, this message translates to:
+  /// **'New recipe'**
+  String get edNew;
+
+  /// No description provided for @edEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit recipe'**
+  String get edEdit;
+
+  /// No description provided for @edName.
+  ///
+  /// In en, this message translates to:
+  /// **'Recipe name'**
+  String get edName;
+
+  /// No description provided for @edMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'Minutes'**
+  String get edMinutes;
+
+  /// No description provided for @edServings.
+  ///
+  /// In en, this message translates to:
+  /// **'Servings'**
+  String get edServings;
+
+  /// No description provided for @edIngredients.
+  ///
+  /// In en, this message translates to:
+  /// **'Ingredients'**
+  String get edIngredients;
+
+  /// No description provided for @edAddIngredient.
+  ///
+  /// In en, this message translates to:
+  /// **'Search and add an ingredient'**
+  String get edAddIngredient;
+
+  /// No description provided for @edQuantity.
+  ///
+  /// In en, this message translates to:
+  /// **'Qty'**
+  String get edQuantity;
+
+  /// No description provided for @edUnit.
+  ///
+  /// In en, this message translates to:
+  /// **'Unit'**
+  String get edUnit;
+
+  /// No description provided for @edNoUnit.
+  ///
+  /// In en, this message translates to:
+  /// **'No unit'**
+  String get edNoUnit;
+
+  /// No description provided for @edSteps.
+  ///
+  /// In en, this message translates to:
+  /// **'Steps'**
+  String get edSteps;
+
+  /// No description provided for @edAddStep.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a step'**
+  String get edAddStep;
+
+  /// No description provided for @edStepHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Describe the step'**
+  String get edStepHint;
+
+  /// No description provided for @edPhotoGallery.
+  ///
+  /// In en, this message translates to:
+  /// **'From gallery'**
+  String get edPhotoGallery;
+
+  /// No description provided for @edPhotoCamera.
+  ///
+  /// In en, this message translates to:
+  /// **'Take a photo'**
+  String get edPhotoCamera;
+
+  /// No description provided for @edPhotoRemove.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove photo'**
+  String get edPhotoRemove;
+
+  /// No description provided for @edSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Save recipe'**
+  String get edSave;
+
+  /// No description provided for @edNeedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Give the recipe a name'**
+  String get edNeedTitle;
+
+  /// No description provided for @edNeedIngredient.
+  ///
+  /// In en, this message translates to:
+  /// **'Add at least one ingredient'**
+  String get edNeedIngredient;
+
+  /// No description provided for @edNeedStep.
+  ///
+  /// In en, this message translates to:
+  /// **'Add at least one step'**
+  String get edNeedStep;
+
+  /// No description provided for @edDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete recipe'**
+  String get edDelete;
+
+  /// No description provided for @edDeleteConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this recipe for good?'**
+  String get edDeleteConfirm;
+
+  /// No description provided for @myRecipe.
+  ///
+  /// In en, this message translates to:
+  /// **'My recipe'**
+  String get myRecipe;
+
+  /// No description provided for @edSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Recipe saved'**
+  String get edSaved;
+
+  /// No description provided for @sendToTasks.
+  ///
+  /// In en, this message translates to:
+  /// **'Send to ROCIs Tasks'**
+  String get sendToTasks;
+
+  /// No description provided for @tasksNotInstalled.
+  ///
+  /// In en, this message translates to:
+  /// **'ROCIs Tasks is not installed'**
+  String get tasksNotInstalled;
 }
 
 class _AppLocalizationsDelegate

@@ -12,6 +12,7 @@ import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/prices/location_provider.dart';
+import 'package:rocis_recipes/features/recipes/photo_source.dart';
 import 'package:rocis_recipes/features/prices/nearby_controller.dart';
 import 'package:rocis_recipes/features/prices/price_repository.dart';
 import 'package:rocis_recipes/features/prices/price_service.dart';
@@ -23,11 +24,35 @@ import 'package:rocis_recipes/features/shopping/shopping_repository.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
 
 const testIngredients = [
-  Ingredient(id: 'tomato', nameHe: 'עגבנייה', nameEn: 'Tomato', synonyms: ['עגבניות'], category: 'produce'),
-  Ingredient(id: 'cucumber', nameHe: 'מלפפון', nameEn: 'Cucumber', synonyms: ['מלפפונים'], category: 'produce'),
-  Ingredient(id: 'egg', nameHe: 'ביצה', nameEn: 'Egg', synonyms: ['ביצים'], category: 'dairy'),
+  Ingredient(
+    id: 'tomato',
+    nameHe: 'עגבנייה',
+    nameEn: 'Tomato',
+    synonyms: ['עגבניות'],
+    category: 'produce',
+  ),
+  Ingredient(
+    id: 'cucumber',
+    nameHe: 'מלפפון',
+    nameEn: 'Cucumber',
+    synonyms: ['מלפפונים'],
+    category: 'produce',
+  ),
+  Ingredient(
+    id: 'egg',
+    nameHe: 'ביצה',
+    nameEn: 'Egg',
+    synonyms: ['ביצים'],
+    category: 'dairy',
+  ),
   Ingredient(id: 'milk', nameHe: 'חלב', nameEn: 'Milk', category: 'dairy'),
-  Ingredient(id: 'salt', nameHe: 'מלח', nameEn: 'Salt', isStaple: true, category: 'pantry'),
+  Ingredient(
+    id: 'salt',
+    nameHe: 'מלח',
+    nameEn: 'Salt',
+    isStaple: true,
+    category: 'pantry',
+  ),
 ];
 
 int _counter = 0;
@@ -56,6 +81,17 @@ class FakeLocationProvider implements LocationProvider {
 }
 
 /// In-memory Hive boxes and repositories for widget tests (no disk IO).
+class FakePhotoSource implements PhotoSource {
+  String? next;
+  bool? lastCamera;
+
+  @override
+  Future<String?> pick({required bool camera}) async {
+    lastCamera = camera;
+    return next;
+  }
+}
+
 class TestEnv {
   TestEnv._(
     this.catalog,
@@ -77,6 +113,7 @@ class TestEnv {
 
   /// Urls the app asked to open (for example Google Maps).
   final List<Uri> launched = [];
+  final FakePhotoSource photos = FakePhotoSource();
 
   static Future<TestEnv> create({
     List<Recipe> recipes = const [],
@@ -85,40 +122,52 @@ class TestEnv {
   }) async {
     Hive.init(Directory.systemTemp.path);
     final n = _counter++;
-    Future<Box<Map>> mapBox(String name) => Hive.openBox<Map>('${name}_$n', bytes: Uint8List(0));
+    Future<Box<Map>> mapBox(String name) =>
+        Hive.openBox<Map>('${name}_$n', bytes: Uint8List(0));
     final env = TestEnv._(
       IngredientCatalog(testIngredients),
       PantryRepository(await mapBox('pantry')),
-      SettingsRepository(await Hive.openBox('settings_$n', bytes: Uint8List(0))),
+      SettingsRepository(
+        await Hive.openBox('settings_$n', bytes: Uint8List(0)),
+      ),
       RecipeRepository(await mapBox('recipes')),
       ShoppingRepository(await mapBox('shopping')),
       PriceRepository(
-        bundled: snapshot ?? PriceSnapshot(generatedAt: DateTime.now(), chains: const [], stores: const []),
+        bundled:
+            snapshot ??
+            PriceSnapshot(
+              generatedAt: DateTime.now(),
+              chains: const [],
+              stores: const [],
+            ),
         source: _NoSnapshotSource(),
         cacheDir: Directory.systemTemp.createTempSync('rocis_test_prices_'),
       ),
-      NearbyController(location ?? FakeLocationProvider(status: LocationStatus.denied)),
+      NearbyController(
+        location ?? FakeLocationProvider(status: LocationStatus.denied),
+      ),
     );
     await env.recipes.seedIfEmpty(recipes);
     return env;
   }
 
   List<SingleChildWidget> get providers => [
-        Provider<IngredientCatalog>.value(value: catalog),
-        ChangeNotifierProvider<PantryRepository>.value(value: pantry),
-        ChangeNotifierProvider<SettingsRepository>.value(value: settings),
-        ChangeNotifierProvider<RecipeRepository>.value(value: recipes),
-        ChangeNotifierProvider<ShoppingRepository>.value(value: shopping),
-        ChangeNotifierProvider<PriceRepository>.value(value: prices),
-        ChangeNotifierProvider<NearbyController>.value(value: nearby),
-        Provider<PriceService>.value(value: const PriceService()),
-        Provider<LaunchUrl>.value(
-          value: (uri) async {
-            launched.add(uri);
-            return true;
-          },
-        ),
-      ];
+    Provider<IngredientCatalog>.value(value: catalog),
+    ChangeNotifierProvider<PantryRepository>.value(value: pantry),
+    ChangeNotifierProvider<SettingsRepository>.value(value: settings),
+    ChangeNotifierProvider<RecipeRepository>.value(value: recipes),
+    ChangeNotifierProvider<ShoppingRepository>.value(value: shopping),
+    ChangeNotifierProvider<PriceRepository>.value(value: prices),
+    ChangeNotifierProvider<NearbyController>.value(value: nearby),
+    Provider<PriceService>.value(value: const PriceService()),
+    Provider<PhotoSource>.value(value: photos),
+    Provider<LaunchUrl>.value(
+      value: (uri) async {
+        launched.add(uri);
+        return true;
+      },
+    ),
+  ];
 
   static const _delegates = <LocalizationsDelegate<dynamic>>[
     AppLocalizations.delegate,
@@ -127,7 +176,8 @@ class TestEnv {
     GlobalCupertinoLocalizations.delegate,
   ];
 
-  Widget wrap(Widget child, {Locale locale = const Locale('he')}) => MultiProvider(
+  Widget wrap(Widget child, {Locale locale = const Locale('he')}) =>
+      MultiProvider(
         providers: providers,
         child: MaterialApp(
           locale: locale,
@@ -138,7 +188,8 @@ class TestEnv {
       );
 
   /// Pumps the real app router at [location] (for navigation tests).
-  Widget wrapApp(String location, {Locale locale = const Locale('he')}) => MultiProvider(
+  Widget wrapApp(String location, {Locale locale = const Locale('he')}) =>
+      MultiProvider(
         providers: providers,
         child: MaterialApp.router(
           locale: locale,

@@ -7,6 +7,9 @@ void main() {
     final back = PantryItem.fromJson(item.toJson());
     expect(back, item);
     expect(back.label, 'פיצוחים');
-    expect(const PantryItem(ingredientId: 'egg').toJson().containsKey('label'), isFalse);
+    expect(
+      const PantryItem(ingredientId: 'egg').toJson().containsKey('label'),
+      isFalse,
+    );
   });
 }

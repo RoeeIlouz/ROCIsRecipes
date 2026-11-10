@@ -34,7 +34,7 @@ void main() {
       'titleHe': 'x',
       'ingredients': <dynamic>[],
       'steps': [
-        {'textHe': 'a'}
+        {'textHe': 'a'},
       ],
       'appliances': ['oven', 'spaceship'],
       'totalMinutes': 5,
