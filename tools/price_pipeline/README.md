@@ -60,7 +60,10 @@ stop updating, open the repository's Actions tab and re-enable the workflow, or 
   its page embeds the day's file list as JavaScript and the files sit in a per-day folder, so
   `carrefour.py` reads that list instead of scraping links. Its item names are truncated to about
   20 characters, so matching quality there may be lower than for Shufersal.
-- Carrefour works from an Israeli connection (`--chains shufersal,carrefour`) but its portal timed
-  out from GitHub's servers on 2026-11-10, so the weekly job builds Shufersal only for now.
+- Carrefour works from an Israeli connection (`--chains shufersal,carrefour`) but its server drops
+  connections from GitHub's runners (a probe on 2026-11-10: DNS resolves, the TCP connection never
+  completes within 134 s, while Shufersal connects in 0.13 s). A longer timeout does not help, so the
+  weekly job builds Shufersal only. Carrefour data in the bundled snapshot is from 2026-11-10 and
+  can only be refreshed by running the pipeline from an Israeli connection.
 - Other chains: `url.publishedprices.co.il` (Rami Levy, Yochananof and others) needs an account and
   is not used.
