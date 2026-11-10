@@ -46,9 +46,12 @@ class _IngredientRow {
 
 /// Create or edit a recipe of your own, optionally with a photo from the camera or gallery.
 class RecipeEditorScreen extends StatefulWidget {
-  const RecipeEditorScreen({super.key, this.recipeId});
+  const RecipeEditorScreen({super.key, this.recipeId, this.draft});
 
   final String? recipeId;
+
+  /// A recipe to start from (for example one the AI made); it is only saved when the user saves.
+  final Recipe? draft;
 
   @override
   State<RecipeEditorScreen> createState() => _RecipeEditorScreenState();
@@ -95,6 +98,24 @@ class _RecipeEditorScreenState extends State<RecipeEditorScreen> {
         ..clear()
         ..addAll(r.steps.map((s) => TextEditingController(text: s.textHe)));
       if (_steps.isEmpty) _steps.add(TextEditingController());
+    } else if (widget.draft != null) {
+      final d = widget.draft!;
+      _title.text = d.titleHe;
+      _minutes.text = '${d.totalMinutes}';
+      _servings = d.servings;
+      _mealType = d.mealType;
+      for (final i in d.ingredients) {
+        _ingredients.add(
+          _IngredientRow(
+            i.ingredientId,
+            quantity: i.quantity == null ? '' : formatAmount(i.quantity!),
+            unit: i.unit,
+          ),
+        );
+      }
+      _steps
+        ..clear()
+        ..addAll(d.steps.map((s) => TextEditingController(text: s.textHe)));
     }
   }
 

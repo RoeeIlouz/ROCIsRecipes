@@ -306,5 +306,9 @@
   "proteinFish": "Fish",
   "proteinVegetarian": "No meat",
   "mealPrepChip": "Meal prep",
-  "mealPrepLabel": "Meal prep"
+  "mealPrepLabel": "Meal prep",
+  "aiInventTooltip": "Invent a dish from what I have",
+  "aiNeedIngredients": "Add some ingredients to your kitchen first",
+  "aiInventing": "Thinking up a dish...",
+  "aiDraftNote": "AI draft: check it before cooking"
 }

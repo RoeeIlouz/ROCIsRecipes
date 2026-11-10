@@ -118,6 +118,19 @@ class FakeRecipeAi implements RecipeAi {
     return recipeJson;
   }
 
+  List<String>? lastInventIngredients;
+
+  @override
+  Future<Map<String, dynamic>?> inventRecipe({
+    required List<String> ingredients,
+    required int maxMinutes,
+    String? mealType,
+  }) async {
+    if (error != null) throw error!;
+    lastInventIngredients = ingredients;
+    return recipeJson;
+  }
+
   @override
   Future<List<String>> identifyIngredients(Uint8List image) async {
     if (error != null) throw error!;

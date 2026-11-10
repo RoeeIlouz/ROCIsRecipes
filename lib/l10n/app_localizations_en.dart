@@ -589,4 +589,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get mealPrepLabel => 'Meal prep';
+
+  @override
+  String get aiInventTooltip => 'Invent a dish from what I have';
+
+  @override
+  String get aiNeedIngredients => 'Add some ingredients to your kitchen first';
+
+  @override
+  String get aiInventing => 'Thinking up a dish...';
+
+  @override
+  String get aiDraftNote => 'AI draft: check it before cooking';
 }

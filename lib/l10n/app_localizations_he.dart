@@ -588,4 +588,16 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get mealPrepLabel => 'הכנה מראש';
+
+  @override
+  String get aiInventTooltip => 'המצאת מנה ממה שיש לי';
+
+  @override
+  String get aiNeedIngredients => 'הוסיפו קודם מצרכים למטבח';
+
+  @override
+  String get aiInventing => 'ממציא מנה...';
+
+  @override
+  String get aiDraftNote => 'טיוטה מה-AI: בדקו לפני הבישול';
 }

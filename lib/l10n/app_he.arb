@@ -160,5 +160,9 @@
   "proteinFish": "דגים",
   "proteinVegetarian": "ללא בשר",
   "mealPrepChip": "הכנה מראש",
-  "mealPrepLabel": "הכנה מראש"
+  "mealPrepLabel": "הכנה מראש",
+  "aiInventTooltip": "המצאת מנה ממה שיש לי",
+  "aiNeedIngredients": "הוסיפו קודם מצרכים למטבח",
+  "aiInventing": "ממציא מנה...",
+  "aiDraftNote": "טיוטה מה-AI: בדקו לפני הבישול"
 }

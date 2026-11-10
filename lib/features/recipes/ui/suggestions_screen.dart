@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
+import 'package:rocis_recipes/features/ai/ai_ui.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
@@ -62,6 +63,12 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
         appBar: AppBar(
           title: Text(l10n.appName),
           actions: [
+            IconButton(
+              key: const Key('ai_invent_button'),
+              tooltip: l10n.aiInventTooltip,
+              icon: const Icon(Icons.auto_awesome),
+              onPressed: () => inventFromPantry(context),
+            ),
             IconButton(
               key: const Key('credits_button'),
               tooltip: l10n.creditsTitle,

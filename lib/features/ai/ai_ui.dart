@@ -1,7 +1,9 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
+import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/ai/recipe_ai.dart';
 import 'package:rocis_recipes/features/ai/recipe_draft.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
@@ -284,6 +286,61 @@ Future<void> scanPantryPhoto(
   for (final id in chosen) {
     await pantry.upsert(PantryItem(ingredientId: id));
   }
+}
+
+/// Asks the model for a new dish from what is in the pantry and opens it in the editor for review.
+Future<void> inventFromPantry(BuildContext context) async {
+  final l10n = AppLocalizations.of(context);
+  final messenger = ScaffoldMessenger.of(context);
+  final router = GoRouter.of(context);
+  final ai = context.read<RecipeAi>();
+  final catalog = context.read<IngredientCatalog>();
+  final pantry = context.read<PantryRepository>();
+  final minutes = context.read<SettingsRepository>().maxMinutes;
+  final names = [
+    for (final item in pantry.items)
+      item.label ?? ingredientLabel(context, catalog, item.ingredientId),
+  ];
+  if (names.isEmpty) {
+    messenger.showSnackBar(SnackBar(content: Text(l10n.aiNeedIngredients)));
+    return;
+  }
+  if (!await ensureAiModel(context) || !context.mounted) return;
+
+  showDialog<void>(
+    context: context,
+    barrierDismissible: false,
+    builder: (_) => PopScope(
+      canPop: false,
+      child: AlertDialog(
+        content: Row(
+          children: [
+            const SizedBox(
+              height: 24,
+              width: 24,
+              child: CircularProgressIndicator(strokeWidth: 2),
+            ),
+            const SizedBox(width: 16),
+            Expanded(child: Text(l10n.aiInventing)),
+          ],
+        ),
+      ),
+    ),
+  );
+  Recipe? draft;
+  try {
+    final json = await ai.inventRecipe(ingredients: names, maxMinutes: minutes);
+    draft = json == null ? null : recipeFromAiJson(json, catalog);
+  } catch (_) {
+    draft = null;
+  }
+  if (context.mounted) Navigator.of(context, rootNavigator: true).pop();
+  if (draft == null) {
+    messenger.showSnackBar(SnackBar(content: Text(l10n.aiFailed)));
+    return;
+  }
+  messenger.showSnackBar(SnackBar(content: Text(l10n.aiDraftNote)));
+  router.push('/recipe-edit', extra: draft);
 }
 
 /// Entry sheet for the pantry screen: take or choose a photo to scan.
