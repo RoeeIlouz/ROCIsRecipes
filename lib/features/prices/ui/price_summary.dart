@@ -8,6 +8,7 @@ import 'package:rocis_recipes/features/prices/price_repository.dart';
 import 'package:rocis_recipes/features/prices/price_service.dart';
 import 'package:rocis_recipes/features/prices/price_snapshot.dart';
 import 'package:rocis_recipes/features/prices/store_resolver.dart';
+import 'package:rocis_recipes/features/prices/ui/area_picker_sheet.dart';
 import 'package:rocis_recipes/features/shopping/shopping_item.dart';
 import 'package:rocis_recipes/features/shopping/shopping_repository.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
@@ -116,6 +117,27 @@ class PriceSummary extends StatelessWidget {
                 l10n.locationUnavailable,
                 key: const Key('location_unavailable'),
               ),
+            if (nearby.manualLabel != null)
+              Padding(
+                padding: const EdgeInsets.only(top: 4),
+                child: Text(l10n.usingArea(nearby.manualLabel!), key: const Key('using_area')),
+              ),
+            TextButton.icon(
+              key: const Key('choose_area_button'),
+              onPressed: () async {
+                final picked = await showModalBottomSheet<PriceStore>(
+                  context: context,
+                  isScrollControlled: true,
+                  showDragHandle: true,
+                  builder: (_) => AreaPickerSheet(stores: view.snapshot.stores),
+                );
+                if (picked != null) {
+                  nearby.setManual(UserLocation(lat: picked.lat, lng: picked.lng), picked.address);
+                }
+              },
+              icon: const Icon(Icons.edit_location_alt_outlined),
+              label: Text(l10n.chooseArea),
+            ),
             for (var i = 0; i < view.resolved.length; i++)
               _ChainRow(
                 chain: view.snapshot.chains.firstWhere(

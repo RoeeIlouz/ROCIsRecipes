@@ -86,6 +86,18 @@ void main() {
     expect(repo.maxMinutes, 30);
   });
 
+  test('appliances default to stove, oven and microwave once, and respect a later choice', () async {
+    final repo = SettingsRepository(await Hive.openBox('settings'));
+    await repo.seedAppliancesIfUnset();
+    expect(repo.appliances, {Appliance.stovetop, Appliance.oven, Appliance.microwave});
+    await repo.setAppliances({Appliance.airFryer});
+    await repo.seedAppliancesIfUnset();
+    expect(repo.appliances, {Appliance.airFryer});
+    await repo.setAppliances({});
+    await repo.seedAppliancesIfUnset();
+    expect(repo.appliances, isEmpty);
+  });
+
   test('recipe seedIfEmpty is a no-op when recipes exist', () async {
     final repo = RecipeRepository(await Hive.openBox<Map>('recipes'));
     await repo.seedIfEmpty([_recipe('r1'), _recipe('r2')]);

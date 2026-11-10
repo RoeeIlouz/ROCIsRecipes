@@ -745,6 +745,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'optional'**
   String get optionalLabel;
+
+  /// No description provided for @chooseArea.
+  ///
+  /// In en, this message translates to:
+  /// **'Or choose an area by city or street'**
+  String get chooseArea;
+
+  /// No description provided for @areaSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'City, street or branch name'**
+  String get areaSearchHint;
+
+  /// No description provided for @areaNoResults.
+  ///
+  /// In en, this message translates to:
+  /// **'No branch found there'**
+  String get areaNoResults;
+
+  /// No description provided for @usingArea.
+  ///
+  /// In en, this message translates to:
+  /// **'Area: {label}'**
+  String usingArea(String label);
 }
 
 class _AppLocalizationsDelegate

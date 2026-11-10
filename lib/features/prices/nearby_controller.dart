@@ -12,6 +12,17 @@ class NearbyController extends ChangeNotifier {
   UserLocation? location;
   bool loading = false;
 
+  /// Name of the area picked by hand, when the user did not share the device location.
+  String? manualLabel;
+
+  /// Uses a point chosen by hand (the position never leaves the device).
+  void setManual(UserLocation point, String label) {
+    location = point;
+    status = LocationStatus.granted;
+    manualLabel = label;
+    notifyListeners();
+  }
+
   Future<void> locate() async {
     if (loading) return;
     loading = true;
@@ -24,6 +35,7 @@ class NearbyController extends ChangeNotifier {
     }
     status = result;
     location = position;
+    manualLabel = null;
     loading = false;
     notifyListeners();
   }
