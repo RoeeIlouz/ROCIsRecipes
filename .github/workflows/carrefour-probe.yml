@@ -1,0 +1,25 @@
+name: Carrefour probe
+
+# One-off diagnostic: is prices.carrefour.co.il slow or unreachable from GitHub's runners?
+# Shufersal is requested the same way as a control. Delete this file once answered.
+on: workflow_dispatch
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Probe both portals
+        run: |
+          for host in prices.shufersal.co.il prices.carrefour.co.il; do
+            echo "== $host"
+            getent hosts "$host" || echo "dns lookup failed"
+            for i in 1 2; do
+              curl -sS -m 150 -o /dev/null \
+                -w "attempt $i: http=%{http_code} connect=%{time_connect}s first_byte=%{time_starttransfer}s total=%{time_total}s\n" \
+                "https://$host/" || echo "attempt $i failed with curl exit code $?"
+            done
+          done
