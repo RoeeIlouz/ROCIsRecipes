@@ -48,6 +48,14 @@ const Map<String, String> _emoji = {
   // nuts, drinks and more
   'almonds': '🌰', 'walnuts': '🌰', 'peanuts': '🥜', 'sesame': '🌱', 'sunflower_seeds': '🌻',
   'raisins': '🍇', 'olives': '🟢', 'pickles': '🥒', 'coffee': '☕', 'tea': '🍵',
+  // added for the meal recipes
+  'leek': '🌱', 'radish': '🌱', 'kohlrabi': '🥬', 'arugula': '🥬', 'pomegranate': '🍎', 'cherry_tomato': '🍅',
+  'ground_turkey': '🥩', 'turkey_breast': '🍗', 'white_fish': '🐟', 'sardines': '🐟',
+  'halloumi': '🧀', 'ricotta': '🧀',
+  'lasagna_sheets': '🍝', 'barley': '🌾', 'freekeh': '🌾', 'puff_pastry': '🥐', 'pizza_dough': '🍕',
+  'tomato_sauce': '🥫', 'silan': '🍯', 'cornstarch': '🌽', 'yeast': '🧁', 'powdered_sugar': '🍬',
+  'harissa': '🌶️', 'hummus': '🥣', 'pomegranate_molasses': '🍶', 'matbucha': '🥫', 'baharat': '🌶️',
+  'pine_nuts': '🌰', 'pistachios': '🌰', 'cashews': '🥜', 'dates': '🟤', 'coconut_flakes': '🥥',
 };
 
 /// Icon for an ingredient: its own, else its category's, else a generic plate.
