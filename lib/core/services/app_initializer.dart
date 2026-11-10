@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 import 'package:rocis_recipes/features/prices/location_provider.dart';
@@ -38,6 +39,9 @@ class AppInitializer {
   /// Initializes core engine, local database, and returns root providers.
   static Future<List<SingleChildWidget>> initialize() async {
     WidgetsFlutterBinding.ensureInitialized();
+
+    // Fonts ship inside the app (google_fonts/); never fetch them over the network.
+    GoogleFonts.config.allowRuntimeFetching = false;
 
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
