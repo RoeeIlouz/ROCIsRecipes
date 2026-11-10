@@ -1,0 +1,1691 @@
+[
+ {
+  "id": "rv2_honey_mustard_chicken_tray",
+  "titleHe": "עוף בדבש וחרדל עם תפוחי אדמה",
+  "titleEn": "Honey mustard chicken tray",
+  "photoQuery": "honey mustard chicken",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 55,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 900,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "מערבבים דבש, חרדל, שום כתוש, שמן זית, מלח ופלפל."
+   },
+   {
+    "textHe": "מצפים את נתחי העוף ברוטב ומשאירים 10 דקות.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "חותכים תפוחי אדמה לפלחים ופורסים בתבנית עם מעט שמן ומלח."
+   },
+   {
+    "textHe": "מניחים את העוף מעל התפוחים ואופים 40 דקות.",
+    "timerSeconds": 2400
+   },
+   {
+    "textHe": "אם העור לא זהוב מספיק מעלים לגריל 3 דקות ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv2_paprika_chicken_rice_pan",
+  "titleHe": "עוף ואורז פפריקה במחבת אחת",
+  "titleEn": "One pan paprika chicken and rice",
+  "photoQuery": "paprika chicken rice",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים עוף לקוביות ומתבלים בפפריקה, מלח ופלפל."
+   },
+   {
+    "textHe": "מטגנים בשמן במחבת רחבה 5 דקות ומוציאים.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מטגנים בצל ופלפל קצוצים 4 דקות.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מוסיפים אורז ומערבבים דקה."
+   },
+   {
+    "textHe": "יוצקים 3 כוסות מים עם אבקת מרק, מחזירים עוף, מכסים ומבשלים 18 דקות על אש נמוכה.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "משאירים מכוסה 5 דקות ומפרקים במזלג."
+   }
+  ]
+ },
+ {
+  "id": "rv2_chicken_potato_curry",
+  "titleHe": "קארי עוף ותפוחי אדמה",
+  "titleEn": "Chicken and potato curry",
+  "photoQuery": "chicken potato curry",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 50,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 700,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "curry",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup",
+    "optional": true
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצל קצוץ בשמן 6 דקות עד זהוב.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים שום וקארי ומערבבים חצי דקה."
+   },
+   {
+    "textHe": "מוסיפים את העוף ומטגנים 5 דקות עד שמשנה צבע.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים עגבניות, תפוחי אדמה בקוביות, מלח וחצי כוס מים."
+   },
+   {
+    "textHe": "מבשלים מכוסה על אש נמוכה 30 דקות.",
+    "timerSeconds": 1800
+   },
+   {
+    "textHe": "מגישים עם אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv2_chicken_caesar_wrap",
+  "titleHe": "טורטייה עוף קיסר",
+  "titleEn": "Chicken Caesar wrap",
+  "photoQuery": "chicken caesar wrap",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "tortilla",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lettuce",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "parmesan",
+    "quantity": 30,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "mayonnaise",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 1,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מתבלים את החזה במלח ופלפל וצולים במחבת עם שמן 5 דקות מכל צד.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מנוחה 3 דקות ופורסים לרצועות."
+   },
+   {
+    "textHe": "מערבבים מיונז, מיץ לימון, שום כתוש ופרמזן מגורר לרוטב."
+   },
+   {
+    "textHe": "קורעים את החסה לחתיכות ומערבבים עם חצי מהרוטב."
+   },
+   {
+    "textHe": "מניחים על כל טורטייה חסה ועוף ומוסיפים רוטב."
+   },
+   {
+    "textHe": "מגלגלים חזק וחותכים באלכסון."
+   }
+  ]
+ },
+ {
+  "id": "rv2_stuffed_chicken_spinach_feta",
+  "titleHe": "חזה עוף ממולא תרד ופטה",
+  "titleEn": "Spinach feta stuffed chicken",
+  "photoQuery": "stuffed chicken breast",
+  "servings": 2,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 45,
+  "appliances": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "spinach",
+    "quantity": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "feta",
+    "quantity": 80,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-190 מעלות."
+   },
+   {
+    "textHe": "מטגנים שום ותרד בשמן זית עד שהתרד נבול, כדקה וחצי.",
+    "timerSeconds": 90
+   },
+   {
+    "textHe": "מערבבים עם פטה מפוררת ומצננים מעט."
+   },
+   {
+    "textHe": "חותכים כיס בצד של כל חזה עוף, מתבלים במלח ופלפל וממלאים."
+   },
+   {
+    "textHe": "סוגרים בקיסמים וצורבים במחבת 3 דקות מכל צד.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מעבירים לתבנית ואופים 18 דקות. מנוחה 5 דקות ופורסים.",
+    "timerSeconds": 1080
+   }
+  ]
+ },
+ {
+  "id": "rv2_chicken_soy_ginger_noodles",
+  "titleHe": "אטריות עוף בסויה וג'ינג'ר",
+  "titleEn": "Chicken soy ginger noodles",
+  "photoQuery": "chicken noodles stir fry",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "noodles",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים אטריות לפי ההוראות ומסננים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "חותכים עוף לרצועות דקות וגזר למקלות."
+   },
+   {
+    "textHe": "מטגנים עוף בשמן על אש גבוהה 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים גזר, שום וג'ינג'ר ומטגנים 3 דקות."
+   },
+   {
+    "textHe": "מוסיפים סויה ואטריות ומערבבים 2 דקות."
+   },
+   {
+    "textHe": "מפזרים בצל ירוק ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv2_chicken_pesto_pasta",
+  "titleHe": "פסטה עוף פסטו ועגבניות שרי",
+  "titleEn": "Chicken pesto pasta",
+  "photoQuery": "chicken pesto pasta",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "pasta",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 350,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "pesto",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cherry_tomato",
+    "quantity": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "parmesan",
+    "quantity": 30,
+    "unit": "g",
+    "optional": true
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים פסטה לפי ההוראות ושומרים חצי כוס ממי הבישול.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "חותכים עוף לקוביות ומתבלים במלח ופלפל."
+   },
+   {
+    "textHe": "מטגנים בשמן זית 6 דקות עד זהוב.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים עגבניות שרי חצויות ומטגנים 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מערבבים עם הפסטה, הפסטו וקצת ממי הבישול."
+   },
+   {
+    "textHe": "מגישים עם פרמזן."
+   }
+  ]
+ },
+ {
+  "id": "rv2_airfryer_chicken_nuggets",
+  "titleHe": "נאגטס עוף באייר פרייר",
+  "titleEn": "Air fryer chicken nuggets",
+  "photoQuery": "chicken nuggets",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "airFryer"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "garlic_powder",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים את החזה לקוביות גדולות."
+   },
+   {
+    "textHe": "מכינים קערות: קמח עם מלח, ביצים טרופות, פירורי לחם עם פפריקה ואבקת שום."
+   },
+   {
+    "textHe": "מצפים כל נתח בקמח, בביצה ובפירורים."
+   },
+   {
+    "textHe": "מחממים את האייר פרייר ל-200 מעלות ומרססים מעט שמן."
+   },
+   {
+    "textHe": "מטגנים 10 עד 12 דקות, הופכים באמצע.",
+    "timerSeconds": 660
+   },
+   {
+    "textHe": "מגישים עם קטשופ או חרדל ודבש."
+   }
+  ]
+ },
+ {
+  "id": "rv2_lemon_herb_chicken_skewers",
+  "titleHe": "שיפודי עוף לימון ועשבי תיבול",
+  "titleEn": "Lemon herb chicken skewers",
+  "photoQuery": "chicken skewers",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oregano",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים את העוף לקוביות. מערבבים שמן זית, מיץ לימון, שום, אורגנו, מלח ופלפל ומשרים את העוף 20 דקות.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "חותכים פלפל ובצל לחתיכות גדולות."
+   },
+   {
+    "textHe": "משחילים לסירוגין עוף וירקות על שיפודים."
+   },
+   {
+    "textHe": "מחממים תנור ל-230 מעלות עם גריל."
+   },
+   {
+    "textHe": "צולים 12 עד 15 דקות ומהפכים באמצע.",
+    "timerSeconds": 780
+   },
+   {
+    "textHe": "מגישים עם אורז או פיתה."
+   }
+  ]
+ },
+ {
+  "id": "rv2_beef_broccoli_stirfry",
+  "titleHe": "בקר ברוקולי מוקפץ",
+  "titleEn": "Beef and broccoli stir fry",
+  "photoQuery": "beef broccoli stir fry",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "broccoli",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tbsp",
+    "optional": true
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים אורז לפי ההוראות."
+   },
+   {
+    "textHe": "פורסים את הבקר דק נגד הסיבים ומערבבים עם כף סויה וקורנפלור."
+   },
+   {
+    "textHe": "מפרקים ברוקולי לפרחים קטנים."
+   },
+   {
+    "textHe": "מטגנים בקר בשמן על אש גבוהה מאוד 2 עד 3 דקות ומוציאים.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מטגנים ברוקולי, שום וג'ינג'ר 3 דקות, מוסיפים 3 כפות סויה ו-3 כפות מים.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מחזירים בקר, מערבבים דקה ומגישים על אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv2_beef_tacos_home",
+  "titleHe": "טאקו בקר",
+  "titleEn": "Beef tacos",
+  "photoQuery": "beef tacos",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "tortilla",
+    "quantity": 6,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lettuce",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "yellow_cheese",
+    "quantity": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצל קצוץ בשמן 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים בשר טחון ומפוררים עד שמשנה צבע, כ-6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מתבלים בכמון, פפריקה ומלח ומבשלים עוד 3 דקות."
+   },
+   {
+    "textHe": "חותכים עגבנייה לקוביות, קורעים חסה ומגררים גבינה."
+   },
+   {
+    "textHe": "מחממים טורטיות במחבת יבשה חצי דקה מכל צד."
+   },
+   {
+    "textHe": "ממלאים בבשר, ירקות וגבינה."
+   }
+  ]
+ },
+ {
+  "id": "rv2_one_pot_beef_pasta",
+  "titleHe": "פסטה בשר בסיר אחד",
+  "titleEn": "One pot beef pasta",
+  "photoQuery": "one pot beef pasta",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "pasta",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "oregano",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצל ושום קצוצים בשמן 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים בשר ומפוררים עד שמשנה צבע.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים עגבניות מרוסקות, אורגנו, מלח ופלפל."
+   },
+   {
+    "textHe": "יוצקים 2.5 כוסות מים ומביאים לרתיחה."
+   },
+   {
+    "textHe": "מוסיפים פסטה ומבשלים מכוסה 12 דקות תוך ערבוב מדי פעם.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מגישים כשהרוטב סמיך ונצמד לפסטה."
+   }
+  ]
+ },
+ {
+  "id": "rv2_oven_beef_patties_potatoes",
+  "titleHe": "קציצות בקר ותפוחי אדמה בתנור",
+  "titleEn": "Oven beef patties with potatoes",
+  "photoQuery": "beef patties potatoes",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 55,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "חותכים תפוחי אדמה לפלחים ומערבבים עם שמן, פפריקה ומלח. פורסים בתבנית."
+   },
+   {
+    "textHe": "מערבבים בשר, ביצה, פירורי לחם, בצל מגורד, מלח ופלפל."
+   },
+   {
+    "textHe": "יוצרים קציצות שטוחות ומניחים בין תפוחי האדמה."
+   },
+   {
+    "textHe": "אופים 35 עד 40 דקות ומהפכים באמצע.",
+    "timerSeconds": 2280
+   },
+   {
+    "textHe": "מגישים עם סלט."
+   }
+  ]
+ },
+ {
+  "id": "rv2_beef_goulash_potato",
+  "titleHe": "גולאש בקר ופפריקה",
+  "titleEn": "Beef goulash",
+  "photoQuery": "beef goulash",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 100,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "water",
+    "quantity": 1,
+    "unit": "l"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים את הבקר לקוביות גדולות ומטגנים בשמן עד שחום מכל צד.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים בצל קצוץ ומטגנים 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים פפריקה ורסק עגבניות ומערבבים חצי דקה."
+   },
+   {
+    "textHe": "יוצקים מים, מתבלים ומבשלים על אש נמוכה שעה.",
+    "timerSeconds": 3600
+   },
+   {
+    "textHe": "מוסיפים גזר ותפוחי אדמה בקוביות ומבשלים עוד 25 דקות.",
+    "timerSeconds": 1500
+   },
+   {
+    "textHe": "מגישים חם עם לחם."
+   }
+  ]
+ },
+ {
+  "id": "rv2_beef_rice_skillet",
+  "titleHe": "אורז ובשר טחון במחבת",
+  "titleEn": "Beef and rice skillet",
+  "photoQuery": "ground beef rice skillet",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "peas",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצל קצוץ בשמן 4 דקות.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מוסיפים בשר טחון ומפוררים עד שמשנה צבע."
+   },
+   {
+    "textHe": "מוסיפים רסק, כמון, מלח ופלפל ומערבבים דקה."
+   },
+   {
+    "textHe": "מוסיפים אורז ו-3 כוסות מים ומביאים לרתיחה."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 15 דקות, מוסיפים אפונה ל-3 הדקות האחרונות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "משאירים מכוסה 5 דקות ומפרקים."
+   }
+  ]
+ },
+ {
+  "id": "rv2_burger_rice_bowl",
+  "titleHe": "קערת המבורגר ואורז",
+  "titleEn": "Burger rice bowl",
+  "photoQuery": "burger bowl",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "lettuce",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "pickles",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "ketchup",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "mayonnaise",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים אורז לפי ההוראות."
+   },
+   {
+    "textHe": "יוצרים קציצות שטוחות מהבשר עם מלח ופלפל."
+   },
+   {
+    "textHe": "צולים במחבת עם שמן 3 עד 4 דקות מכל צד.",
+    "timerSeconds": 420
+   },
+   {
+    "textHe": "חותכים חסה, עגבנייה ומלפפון חמוץ."
+   },
+   {
+    "textHe": "מערבבים קטשופ ומיונז לרוטב."
+   },
+   {
+    "textHe": "מרכיבים קערה: אורז, ירקות, קציצה חתוכה ורוטב."
+   }
+  ]
+ },
+ {
+  "id": "rv2_salmon_teriyaki_foil",
+  "titleHe": "סלמון טריאקי בנייר כסף",
+  "titleEn": "Salmon teriyaki foil packets",
+  "photoQuery": "teriyaki salmon",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "salmon",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tsp",
+    "optional": true
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 1,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "broccoli",
+    "quantity": 0.5,
+    "unit": "unit"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "מערבבים סויה, דבש, ג'ינג'ר ושום."
+   },
+   {
+    "textHe": "מניחים כל נתח סלמון על ריבוע נייר כסף עם פרחי ברוקולי."
+   },
+   {
+    "textHe": "יוצקים רוטב ומקפלים לחבילה סגורה."
+   },
+   {
+    "textHe": "אופים 15 עד 18 דקות.",
+    "timerSeconds": 1000
+   },
+   {
+    "textHe": "פותחים בזהירות, קיטור חם, ומגישים עם אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv2_white_fish_lemon_butter",
+  "titleHe": "דג לבן בחמאה ולימון",
+  "titleEn": "Lemon butter white fish",
+  "photoQuery": "baked white fish lemon",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "white_fish",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.25,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות. חותכים תפוחי אדמה לעיגולים דקים ואופים 12 דקות מראש.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "ממיסים חמאה עם שום כתוש ומיץ חצי לימון."
+   },
+   {
+    "textHe": "מתבלים את הדג במלח ופלפל ומניחים על התפוחים."
+   },
+   {
+    "textHe": "יוצקים את החמאה על הדג ומניחים פרוסות לימון."
+   },
+   {
+    "textHe": "אופים 12 עד 15 דקות עד שהדג מתפרק בקלות.",
+    "timerSeconds": 800
+   },
+   {
+    "textHe": "מפזרים פטרוזיליה קצוצה."
+   }
+  ]
+ },
+ {
+  "id": "rv2_tuna_egg_salad_bowl",
+  "titleHe": "קערת סלט טונה וביצה",
+  "titleEn": "Tuna egg salad bowl",
+  "photoQuery": "tuna salad bowl",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 15,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "tuna",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lettuce",
+    "quantity": 6,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cucumber",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים ביצים קשות 9 דקות ומצננים.",
+    "timerSeconds": 540
+   },
+   {
+    "textHe": "קורעים חסה וחותכים מלפפון ועגבנייה."
+   },
+   {
+    "textHe": "מסננים את הטונה."
+   },
+   {
+    "textHe": "מערבבים שמן זית, לימון, מלח ופלפל."
+   },
+   {
+    "textHe": "מסדרים בקערה את הירקות, הטונה וביצים חצויות."
+   },
+   {
+    "textHe": "יוצקים את הרוטב ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv2_baked_fish_fingers",
+  "titleHe": "אצבעות דג בציפוי פירורים",
+  "titleEn": "Crispy fish fingers",
+  "photoQuery": "fish fingers",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "white_fish",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit",
+    "optional": true
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-220 מעלות ומשמנים תבנית."
+   },
+   {
+    "textHe": "חותכים את הדג לרצועות עבות."
+   },
+   {
+    "textHe": "מתבלים קמח במלח ופלפל ומכינים קערות: קמח, ביצה טרופה, פירורים."
+   },
+   {
+    "textHe": "מצפים כל רצועה בשלושת השלבים."
+   },
+   {
+    "textHe": "מניחים בתבנית ואופים 12 דקות, הופכים ואופים 5 דקות נוספות.",
+    "timerSeconds": 1020
+   },
+   {
+    "textHe": "מגישים עם לימון ותוספת."
+   }
+  ]
+ },
+ {
+  "id": "rv2_sardine_tomato_toast",
+  "titleHe": "טוסט סרדינים ועגבנייה",
+  "titleEn": "Sardine tomato toast",
+  "photoQuery": "sardines on toast",
+  "servings": 1,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 8,
+  "appliances": [
+   "toaster"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "sardines",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "bread",
+    "quantity": 2,
+    "unit": "slice"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit",
+    "optional": true
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 1,
+    "unit": "tsp",
+    "optional": true
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "קולים את הלחם בטוסטר."
+   },
+   {
+    "textHe": "פורסים עגבנייה."
+   },
+   {
+    "textHe": "מסננים את הסרדינים ומועכים קלות במזלג."
+   },
+   {
+    "textHe": "מניחים עגבנייה על הלחם ומעליה סרדינים."
+   },
+   {
+    "textHe": "מסיימים בפלפל, לימון ושמן זית."
+   },
+   {
+    "textHe": "מגישים מיד."
+   }
+  ]
+ },
+ {
+  "id": "rv2_creamy_salmon_pasta",
+  "titleHe": "פסטה סלמון ושמנת",
+  "titleEn": "Creamy salmon pasta",
+  "photoQuery": "salmon pasta cream",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "pasta",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "salmon",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cream",
+    "quantity": 0.75,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "spinach",
+    "quantity": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit",
+    "optional": true
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים פסטה לפי ההוראות ומסננים.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מתבלים את הסלמון ומטגנים בשמן זית 4 דקות מכל צד, ואז מפרקים לחתיכות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "באותה מחבת מטגנים שום חצי דקה."
+   },
+   {
+    "textHe": "מוסיפים שמנת ומבשלים 3 דקות עד שמסמיכה.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים תרד, פסטה וסלמון ומערבבים עדין עד שהתרד נבול."
+   },
+   {
+    "textHe": "מתבלים במלח, פלפל ולימון."
+   }
+  ]
+ }
+]

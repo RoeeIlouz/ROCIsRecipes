@@ -1,4 +1,10 @@
 {
+ "rv2_airfryer_chicken_nuggets": {
+  "asset": "assets/recipes/photos/rv2_airfryer_chicken_nuggets.jpg",
+  "author": "Mx. Granger",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Impossible_chicken_nuggets_2.jpg"
+ },
  "rv2_apple_cinnamon_oven": {
   "asset": "assets/recipes/photos/rv2_apple_cinnamon_oven.jpg",
   "author": "Andrey Korzun",
@@ -10,6 +16,12 @@
   "author": "Sarah Stierch",
   "license": "CC BY 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Avocado_toast_at_the_girl_&_the_fig_-_Sarah_Stierch.jpg"
+ },
+ "rv2_baked_fish_fingers": {
+  "asset": "assets/recipes/photos/rv2_baked_fish_fingers.jpg",
+  "author": "Superbass",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fishfinger_classic_frozen_1.jpg"
  },
  "rv2_baked_potato_cheese_tuna": {
   "asset": "assets/recipes/photos/rv2_baked_potato_cheese_tuna.jpg",
@@ -29,11 +41,29 @@
   "license": "CC BY-SA 2.5",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bowl_of_chili.jpg"
  },
+ "rv2_beef_broccoli_stirfry": {
+  "asset": "assets/recipes/photos/rv2_beef_broccoli_stirfry.jpg",
+  "author": "Joy",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_and_broccoli_stir_fry.jpg"
+ },
+ "rv2_beef_goulash_potato": {
+  "asset": "assets/recipes/photos/rv2_beef_goulash_potato.jpg",
+  "author": "Andy Li",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_Goulash_and_Roasted_Sweet_Potatoes_-_Foodilic_2025-10-13.jpg"
+ },
  "rv2_beef_stew_potato": {
   "asset": "assets/recipes/photos/rv2_beef_stew_potato.jpg",
   "author": "3steph14",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_stew_2.jpg"
+ },
+ "rv2_beef_tacos_home": {
+  "asset": "assets/recipes/photos/rv2_beef_tacos_home.jpg",
+  "author": "Larry Miller",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg"
  },
  "rv2_black_bean_patties": {
   "asset": "assets/recipes/photos/rv2_black_bean_patties.jpg",
@@ -71,11 +101,23 @@
   "license": "CC BY 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steak_burrito_bowl_at_La_Casa_Restaurant_in_Sonoma,_California_-_Sarah_Stierch_03.jpg"
  },
+ "rv2_cauliflower_potato_curry": {
+  "asset": "assets/recipes/photos/rv2_cauliflower_potato_curry.jpg",
+  "author": "Unknown",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aloo_gobi.jpg"
+ },
  "rv2_cheese_quesadilla": {
   "asset": "assets/recipes/photos/rv2_cheese_quesadilla.jpg",
   "author": "Photograph by Mike Peel (www.mikepeel.net).",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:At_Long_Island_2023_267.jpg"
+ },
+ "rv2_chicken_caesar_wrap": {
+  "asset": "assets/recipes/photos/rv2_chicken_caesar_wrap.jpg",
+  "author": "Dough4872",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wegmans_Chicken_Caesar_Wheat_Wrap.jpeg"
  },
  "rv2_chicken_fajita": {
   "asset": "assets/recipes/photos/rv2_chicken_fajita.jpg",
@@ -94,6 +136,18 @@
   "author": "Chad",
   "license": "CC BY-SA 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken-a-la-King.jpg"
+ },
+ "rv2_chicken_pesto_pasta": {
+  "asset": "assets/recipes/photos/rv2_chicken_pesto_pasta.jpg",
+  "author": "Kunokuno",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Pesto_Pasta.jpg"
+ },
+ "rv2_chicken_potato_curry": {
+  "asset": "assets/recipes/photos/rv2_chicken_potato_curry.jpg",
+  "author": "pelican from Tokyo, Japan",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spicy_chicken_and_potato_curry_(10771218216).jpg"
  },
  "rv2_chicken_potatoes_oven": {
   "asset": "assets/recipes/photos/rv2_chicken_potatoes_oven.jpg",
@@ -172,6 +226,12 @@
   "author": "Gilabrand",
   "license": "CC BY-SA 3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sabich.jpg"
+ },
+ "rv2_eggplant_parmesan_light": {
+  "asset": "assets/recipes/photos/rv2_eggplant_parmesan_light.jpg",
+  "author": "Flickr.com user \"Blue Lotus\"",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Melanzane_alla_Parmigiana.jpg"
  },
  "rv2_eggplant_tahini_salad": {
   "asset": "assets/recipes/photos/rv2_eggplant_tahini_salad.jpg",
@@ -257,6 +317,12 @@
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Grilled_chicken_thighs_with_ptitim_and_Israeli_salad.jpg"
  },
+ "rv2_lemon_herb_chicken_skewers": {
+  "asset": "assets/recipes/photos/rv2_lemon_herb_chicken_skewers.jpg",
+  "author": "Charles Haynes",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dak-kkochi_3.jpg"
+ },
  "rv2_lentil_soup": {
   "asset": "assets/recipes/photos/rv2_lentil_soup.jpg",
   "author": "Whoisjohngalt",
@@ -299,11 +365,23 @@
   "license": "CC0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fried_sticky_rice_with_black_beans,_peas,_and_Salchichón_sausage,_plus_soy_sauce_and_black_pepper_-_Massachusetts.jpg"
  },
+ "rv2_mp_beef_burrito_bowls": {
+  "asset": "assets/recipes/photos/rv2_mp_beef_burrito_bowls.jpg",
+  "author": "Missvain",
+  "license": "CC BY 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cascabel_-_October_2022_-_Sarah_Stierch_05.jpg"
+ },
  "rv2_mp_beef_pasta_bake_trays": {
   "asset": "assets/recipes/photos/rv2_mp_beef_pasta_bake_trays.jpg",
   "author": "Daderot",
   "license": "CC0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ground_beef,_baked_tomatoes,_and_tomato_sauce_on_Taiwan_noodles_-_Massachusetts.jpg"
+ },
+ "rv2_mp_bolognese_freezer": {
+  "asset": "assets/recipes/photos/rv2_mp_bolognese_freezer.jpg",
+  "author": "Erikatrioschi",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ragu.jpg"
  },
  "rv2_mp_burrito_freezer": {
   "asset": "assets/recipes/photos/rv2_mp_burrito_freezer.jpg",
@@ -317,6 +395,12 @@
   "license": "CC BY-SA 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_soup_with_kreplach.jpg"
  },
+ "rv2_mp_chickpea_salad_jars": {
+  "asset": "assets/recipes/photos/rv2_mp_chickpea_salad_jars.jpg",
+  "author": "Canbel",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hummus_salad.jpg"
+ },
  "rv2_mp_lentil_rice_bowls": {
   "asset": "assets/recipes/photos/rv2_mp_lentil_rice_bowls.jpg",
   "author": "Lopanayak",
@@ -328,6 +412,12 @@
   "author": "jeffreyw",
   "license": "CC BY 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spaghetti_and_meatballs_1.jpg"
+ },
+ "rv2_mp_minestrone_batch": {
+  "asset": "assets/recipes/photos/rv2_mp_minestrone_batch.jpg",
+  "author": "Katrin Morenz from Aachen, Deutschland",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minestrone_soup.jpg"
  },
  "rv2_mp_pancake_batch_freezer": {
   "asset": "assets/recipes/photos/rv2_mp_pancake_batch_freezer.jpg",
@@ -371,6 +461,18 @@
   "license": "CC BY-SA 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuna_pasta_salad.jpg"
  },
+ "rv2_mp_turkey_pasta_sauce_boxes": {
+  "asset": "assets/recipes/photos/rv2_mp_turkey_pasta_sauce_boxes.jpg",
+  "author": "E4024",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pasta_dishes_of_Turkey.jpg"
+ },
+ "rv2_mp_veg_egg_fried_rice_boxes": {
+  "asset": "assets/recipes/photos/rv2_mp_veg_egg_fried_rice_boxes.jpg",
+  "author": "daSupremo",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fried_rice_with_chicken_and_egg.jpg"
+ },
  "rv2_mp_veg_pasta_sauce_batch": {
   "asset": "assets/recipes/photos/rv2_mp_veg_pasta_sauce_batch.jpg",
   "author": "Shixart1985",
@@ -388,6 +490,12 @@
   "author": "Bazel",
   "license": "CC BY-SA 3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mujaddara.jpg"
+ },
+ "rv2_mushroom_noodles_sour_cream": {
+  "asset": "assets/recipes/photos/rv2_mushroom_noodles_sour_cream.jpg",
+  "author": "Kolforn (Kolforn) I'd appreciate if you could mail me (Kolforn@gmail.com) if you",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:-2020-09-14_Beef_stroganoff,_Trimingham.JPG"
  },
  "rv2_mushroom_omelet": {
   "asset": "assets/recipes/photos/rv2_mushroom_omelet.jpg",
@@ -413,6 +521,12 @@
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vegetable_Chow_Mein_in_Shillong.jpg"
  },
+ "rv2_oven_beef_patties_potatoes": {
+  "asset": "assets/recipes/photos/rv2_oven_beef_patties_potatoes.jpg",
+  "author": "Famartin",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022-03-12_19_16_00_A_heated_Hungry-Man_Grilled_Beef_Patty_meal_(beef_patties,_beer_gravy,_mashed_potatoes_and_mixed_vegetables)_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg"
+ },
  "rv2_overnight_oats": {
   "asset": "assets/recipes/photos/rv2_overnight_oats.jpg",
   "author": "Original description was: I, VirtualSteve took this photograph on February 19, 2",
@@ -425,11 +539,23 @@
   "license": "CC0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crème_Brulee_Pancakes_-_Fluffy_Fluffy_Dessert_Cafe_2025-06-10.jpg"
  },
+ "rv2_paprika_chicken_rice_pan": {
+  "asset": "assets/recipes/photos/rv2_paprika_chicken_rice_pan.jpg",
+  "author": "Kolforn (Kolforn) I'd appreciate if you could mail me (Kolforn@gmail.com) if you",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020-01-26_Sautéed_chicken,_red_and_Green_pepper_with_paprika_and_soured_cream_served_on_rice,_Trimingham.JPG"
+ },
  "rv2_pasta_alfredo_chicken": {
   "asset": "assets/recipes/photos/rv2_pasta_alfredo_chicken.jpg",
   "author": "Dllu",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_fettuccine_alfredo.JPG"
+ },
+ "rv2_pasta_arrabbiata": {
+  "asset": "assets/recipes/photos/rv2_pasta_arrabbiata.jpg",
+  "author": "Petar Milošević",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Penne_Arrabbiata.jpg"
  },
  "rv2_pasta_garlic_zucchini": {
   "asset": "assets/recipes/photos/rv2_pasta_garlic_zucchini.jpg",
@@ -515,6 +641,12 @@
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pumpkin_soup_with_seeds_and_croutons_in_Bosnia_and_Herzegovina-bs.jpg"
  },
+ "rv2_pumpkin_risotto_simple": {
+  "asset": "assets/recipes/photos/rv2_pumpkin_risotto_simple.jpg",
+  "author": "Alpha from Melbourne, Australia",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_and_Pumpkin_Risotto-_Air,_David_Jones,_Chadstone_(1238453950).jpg"
+ },
  "rv2_quinoa_chicken_bowl": {
   "asset": "assets/recipes/photos/rv2_quinoa_chicken_bowl.jpg",
   "author": "Sharon Chen from Austin, United States",
@@ -532,6 +664,12 @@
   "author": "MOs810",
   "license": "CC BY-SA 3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baked_salmon_with_dill_and_lemon.jpg"
+ },
+ "rv2_salmon_teriyaki_foil": {
+  "asset": "assets/recipes/photos/rv2_salmon_teriyaki_foil.jpg",
+  "author": "Andy Li",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:TERIYAKI_SALMON_SALAD_-_Jonny's_2025-05-27.jpg"
  },
  "rv2_sausage_potato_pan": {
   "asset": "assets/recipes/photos/rv2_sausage_potato_pan.jpg",
@@ -587,6 +725,18 @@
   "license": "CC BY 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spaghetti_squash_lasagna_casserole_ricotta_and_spinach_(14980800283).jpg"
  },
+ "rv2_spinach_omelet_roll": {
+  "asset": "assets/recipes/photos/rv2_spinach_omelet_roll.jpg",
+  "author": "Reza babaeian",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nargesi_omelette.jpg"
+ },
+ "rv2_stuffed_chicken_spinach_feta": {
+  "asset": "assets/recipes/photos/rv2_stuffed_chicken_spinach_feta.jpg",
+  "author": "Cikumugambi",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumptuous_stuffed_chicken_breast.JPG"
+ },
  "rv2_stuffed_peppers_rice": {
   "asset": "assets/recipes/photos/rv2_stuffed_peppers_rice.jpg",
   "author": "Vyacheslav Argenberg",
@@ -617,6 +767,12 @@
   "license": "CC BY 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tahini_cookies.jpg"
  },
+ "rv2_tofu_scramble_peppers": {
+  "asset": "assets/recipes/photos/rv2_tofu_scramble_peppers.jpg",
+  "author": "Bart Everson",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tofu_Scramble_in_New_Orleans.jpg"
+ },
  "rv2_tofu_vegetable_curry": {
   "asset": "assets/recipes/photos/rv2_tofu_vegetable_curry.jpg",
   "author": "Andy Li",
@@ -628,6 +784,12 @@
   "author": "Huangdan2060",
   "license": "CC BY 3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hunan_cuisine,_stir-fried_tomato_with_eggs.jpg"
+ },
+ "rv2_tuna_egg_salad_bowl": {
+  "asset": "assets/recipes/photos/rv2_tuna_egg_salad_bowl.jpg",
+  "author": "Adesolive",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuna_Salad_with_sweet_corn.jpg"
  },
  "rv2_tuna_melt_sandwich": {
   "asset": "assets/recipes/photos/rv2_tuna_melt_sandwich.jpg",
@@ -664,5 +826,11 @@
   "author": "Gillgaramond",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bean_soup_with_tomatoes_and_red_peppers.jpeg"
+ },
+ "rv2_yogurt_apple_honey_bowl": {
+  "asset": "assets/recipes/photos/rv2_yogurt_apple_honey_bowl.jpg",
+  "author": "JopkeB",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yoghurt_met_appelmoes_en_walnoten_2025.jpg"
  }
 }

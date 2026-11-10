@@ -5,7 +5,7 @@ import 'package:rocis_recipes/features/recipes/appliance.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
 
 /// Bump when assets/recipes/starter_he.json changes so existing installs sync.
-const int kStarterVersion = 3;
+const int kStarterVersion = 4;
 
 /// Minimum number of steps a real meal recipe must have (strict validation).
 const int kMinSteps = 6;
