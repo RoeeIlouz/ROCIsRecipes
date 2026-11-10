@@ -160,5 +160,6 @@
 {"id": "pistachios", "nameHe": "פיסטוקים", "nameEn": "Pistachios", "synonyms": ["פיסטוק"], "isStaple": false, "category": "snacks"},
 {"id": "cashews", "nameHe": "קשיו", "nameEn": "Cashews", "synonyms": ["אגוזי קשיו"], "isStaple": false, "category": "snacks"},
 {"id": "dates", "nameHe": "תמרים", "nameEn": "Dates", "synonyms": ["תמר", "תמרי מג'הול"], "isStaple": false, "category": "snacks"},
-{"id": "coconut_flakes", "nameHe": "קוקוס", "nameEn": "Coconut flakes", "synonyms": ["קוקוס טחון", "פתיתי קוקוס"], "isStaple": false, "category": "snacks"}
+{"id": "coconut_flakes", "nameHe": "קוקוס", "nameEn": "Coconut flakes", "synonyms": ["קוקוס טחון", "פתיתי קוקוס"], "isStaple": false, "category": "snacks"},
+{"id": "ptitim", "nameHe": "פתיתים", "nameEn": "Ptitim (Israeli couscous)", "synonyms": ["פתיתי אפרופו", "פתיתי אורז", "קוסקוס פתיתים"], "isStaple": false, "category": "grains"}
 ]

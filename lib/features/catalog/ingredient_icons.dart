@@ -55,7 +55,7 @@ const Map<String, String> _emoji = {
   'lasagna_sheets': '🍝', 'barley': '🌾', 'freekeh': '🌾', 'puff_pastry': '🥐', 'pizza_dough': '🍕',
   'tomato_sauce': '🥫', 'silan': '🍯', 'cornstarch': '🌽', 'yeast': '🧁', 'powdered_sugar': '🍬',
   'harissa': '🌶️', 'hummus': '🥣', 'pomegranate_molasses': '🍶', 'matbucha': '🥫', 'baharat': '🌶️',
-  'pine_nuts': '🌰', 'pistachios': '🌰', 'cashews': '🥜', 'dates': '🟤', 'coconut_flakes': '🥥',
+  'ptitim': '🍚', 'pine_nuts': '🌰', 'pistachios': '🌰', 'cashews': '🥜', 'dates': '🟤', 'coconut_flakes': '🥥',
 };
 
 /// Icon for an ingredient: its own, else its category's, else a generic plate.

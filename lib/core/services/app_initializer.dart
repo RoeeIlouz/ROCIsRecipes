@@ -64,9 +64,10 @@ class AppInitializer {
     final settings = SettingsRepository(await Hive.openBox('app_settings'));
     await settings.seedStaplesIfUnset(catalog.defaultStapleIds);
     if (settings.starterVersion < kStarterVersion) {
-      await recipes.syncStarter(
-        StarterRecipeLoader.parse(await rootBundle.loadString('assets/recipes/starter_he.json')),
-      );
+      final starter = StarterRecipeLoader.parse(await rootBundle.loadString('assets/recipes/starter_he.json'));
+      await recipes.syncStarter(starter);
+      // Recipes from an earlier pack that are no longer shipped go away; the user's own stay.
+      await recipes.retireStarter({for (final r in starter) r.id});
       await settings.setStarterVersion(kStarterVersion);
     }
 

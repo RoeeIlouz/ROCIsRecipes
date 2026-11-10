@@ -22,7 +22,7 @@ void main() {
       'sardines', 'halloumi', 'ricotta', 'lasagna_sheets', 'barley', 'freekeh', 'puff_pastry',
       'pizza_dough', 'tomato_sauce', 'silan', 'cornstarch', 'yeast', 'powdered_sugar', 'harissa',
       'hummus', 'baharat', 'pine_nuts', 'pistachios', 'cashews', 'dates', 'coconut_flakes',
-      'pomegranate_molasses', 'matbucha',
+      'pomegranate_molasses', 'matbucha', 'ptitim',
     ];
     for (final id in needed) {
       expect(catalog.byId(id), isNotNull, reason: id);
