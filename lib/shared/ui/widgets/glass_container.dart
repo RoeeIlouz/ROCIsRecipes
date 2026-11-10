@@ -72,7 +72,6 @@ class GlassContainer extends StatelessWidget {
         : null;
 
     final innerContainer = Container(
-      padding: padding,
       decoration: BoxDecoration(
         color: useGlass
             ? glassColor.withValues(alpha: isSelected ? opacity + 0.10 : opacity)
@@ -89,7 +88,10 @@ class GlassContainer extends StatelessWidget {
         type: MaterialType.transparency,
         borderRadius: radius,
         clipBehavior: Clip.antiAlias,
-        child: child,
+        // Padding goes inside the Material so its rounded clip covers the whole card.
+        // (Clipping the padded content box cut the first letter of Hebrew titles and
+        // notched chip borders at the inner edge.)
+        child: padding == null ? child : Padding(padding: padding!, child: child),
       ),
     );
 

@@ -23,7 +23,9 @@ class RecipeCard extends StatelessWidget {
     final theme = Theme.of(context);
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
+      // No backdrop blur here: a blur per list item is the most expensive thing to draw.
       child: GlassContainer(
+        enableGlass: false,
         child: InkWell(
           borderRadius: BorderRadius.circular(24),
           onTap: onTap,
