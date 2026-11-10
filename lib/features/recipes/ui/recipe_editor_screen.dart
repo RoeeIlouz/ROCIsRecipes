@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
+import 'package:rocis_recipes/features/ai/ai_ui.dart';
 import 'package:rocis_recipes/features/catalog/ingredient.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_icons.dart';
@@ -111,6 +112,42 @@ class _RecipeEditorScreenState extends State<RecipeEditorScreen> {
     super.dispose();
   }
 
+  Future<void> _importWithAi() async {
+    final draft = await showModalBottomSheet<Recipe>(
+      context: context,
+      isScrollControlled: true,
+      showDragHandle: true,
+      builder: (_) => const AiImportSheet(),
+    );
+    if (draft == null || !mounted) return;
+    setState(() {
+      _title.text = draft.titleHe;
+      _minutes.text = '${draft.totalMinutes}';
+      _servings = draft.servings;
+      for (final i in _ingredients) {
+        i.quantity.dispose();
+      }
+      _ingredients
+        ..clear()
+        ..addAll(
+          draft.ingredients.map(
+            (i) => _IngredientRow(
+              i.ingredientId,
+              quantity: i.quantity == null ? '' : formatAmount(i.quantity!),
+              unit: i.unit,
+            ),
+          ),
+        );
+      for (final s in _steps) {
+        s.dispose();
+      }
+      _steps
+        ..clear()
+        ..addAll(draft.steps.map((s) => TextEditingController(text: s.textHe)));
+      _error = null;
+    });
+  }
+
   Future<void> _pickPhoto(bool camera) async {
     final path = await context.read<PhotoSource>().pick(camera: camera);
     if (path != null && mounted) setState(() => _imagePath = path);
@@ -179,6 +216,16 @@ class _RecipeEditorScreenState extends State<RecipeEditorScreen> {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
         children: [
+          if (_existing == null)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 12),
+              child: FilledButton.tonalIcon(
+                key: const Key('editor_ai_import'),
+                onPressed: _importWithAi,
+                icon: const Icon(Icons.auto_awesome),
+                label: Text(l10n.aiImportButton),
+              ),
+            ),
           RecipePhotoView(
             photo: null,
             filePath: _imagePath,

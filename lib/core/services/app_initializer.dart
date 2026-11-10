@@ -20,6 +20,7 @@ import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
+import 'package:rocis_recipes/features/ai/recipe_ai.dart';
 import 'package:rocis_recipes/features/recipes/photo_source.dart';
 import 'package:rocis_recipes/features/recipes/starter_recipe_loader.dart';
 import 'package:rocis_recipes/features/shopping/shopping_repository.dart';
@@ -91,6 +92,13 @@ class AppInitializer {
     // Refresh in the background; the app starts with the cached or bundled copy.
     unawaited(prices.refreshIfNeeded(DateTime.now()));
 
+    // The on-device AI is optional: if its engine cannot start (for example on an x86 emulator) the
+    // rest of the app is unaffected and AI actions report that they are unavailable.
+    try {
+      await EdgeRecipeAi.initialize();
+    } catch (_) {}
+    final recipeAi = EdgeRecipeAi();
+
     return [
       ChangeNotifierProvider<PriceRepository>.value(value: prices),
       ChangeNotifierProvider<NearbyController>.value(
@@ -98,6 +106,7 @@ class AppInitializer {
       ),
       Provider<PriceService>.value(value: const PriceService()),
       Provider<PhotoSource>.value(value: ImagePickerPhotoSource()),
+      Provider<RecipeAi>.value(value: recipeAi),
       Provider<LaunchUrl>.value(
         value: (uri) => launchUrl(uri, mode: LaunchMode.externalApplication),
       ),

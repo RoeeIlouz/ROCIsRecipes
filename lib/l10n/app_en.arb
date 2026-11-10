@@ -276,5 +276,28 @@
   "myRecipe": "My recipe",
   "edSaved": "Recipe saved",
   "sendToTasks": "Send to ROCIs Tasks",
-  "tasksNotInstalled": "ROCIs Tasks is not installed"
+  "tasksNotInstalled": "ROCIs Tasks is not installed",
+  "aiImportTitle": "Import a recipe with AI",
+  "aiImportHint": "Paste a recipe here, or add a photo of one",
+  "aiAnalyze": "Read the recipe",
+  "aiPhotoAttached": "Photo added",
+  "aiOnDeviceNote": "The AI runs on your phone. Your text and photos never leave it.",
+  "aiDownloadTitle": "Download the AI model?",
+  "aiDownloadBody": "The AI model runs on your phone and needs a one-time download of about {size} GB. Wi-Fi is recommended.",
+  "@aiDownloadBody": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "aiDownload": "Download",
+  "aiDownloading": "Downloading the AI model",
+  "aiFailed": "Could not read that. Try clearer text or a sharper photo.",
+  "aiScanTitle": "Find ingredients in a photo",
+  "aiFoundTitle": "Found these. Untick anything wrong.",
+  "aiFoundAdd": "Add to my kitchen",
+  "aiNothingFound": "No ingredients recognised in that photo",
+  "aiImportButton": "Import with AI",
+  "aiScanButton": "Scan a photo"
 }

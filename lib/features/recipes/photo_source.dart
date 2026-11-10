@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:image_picker/image_picker.dart';
 import 'package:path/path.dart' as p;
@@ -9,10 +10,23 @@ abstract class PhotoSource {
   /// Lets the user take or choose a photo and returns the path of a copy that lives in the
   /// app's own storage, or null if they cancelled.
   Future<String?> pick({required bool camera});
+
+  /// Like [pick] but returns the image bytes and keeps nothing on disk (for one-off scans).
+  Future<Uint8List?> pickBytes({required bool camera});
 }
 
 class ImagePickerPhotoSource implements PhotoSource {
   final ImagePicker _picker = ImagePicker();
+
+  @override
+  Future<Uint8List?> pickBytes({required bool camera}) async {
+    final file = await _picker.pickImage(
+      source: camera ? ImageSource.camera : ImageSource.gallery,
+      maxWidth: 1024,
+      imageQuality: 80,
+    );
+    return file?.readAsBytes();
+  }
 
   @override
   Future<String?> pick({required bool camera}) async {

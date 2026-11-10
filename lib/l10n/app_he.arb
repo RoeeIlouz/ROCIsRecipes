@@ -137,5 +137,21 @@
   "myRecipe": "המתכון שלי",
   "edSaved": "המתכון נשמר",
   "sendToTasks": "שליחה ל-ROCIs Tasks",
-  "tasksNotInstalled": "ROCIs Tasks לא מותקן"
+  "tasksNotInstalled": "ROCIs Tasks לא מותקן",
+  "aiImportTitle": "ייבוא מתכון עם AI",
+  "aiImportHint": "הדביקו כאן מתכון, או הוסיפו תמונה של מתכון",
+  "aiAnalyze": "קראו את המתכון",
+  "aiPhotoAttached": "תמונה נוספה",
+  "aiOnDeviceNote": "ה-AI רץ בטלפון שלכם. הטקסט והתמונות לא יוצאים ממנו.",
+  "aiDownloadTitle": "להוריד את מודל ה-AI?",
+  "aiDownloadBody": "מודל ה-AI רץ בטלפון ודורש הורדה חד פעמית של כ-{size} ג'יגה. מומלץ ב-Wi-Fi.",
+  "aiDownload": "הורדה",
+  "aiDownloading": "מוריד את מודל ה-AI",
+  "aiFailed": "לא הצלחתי לקרוא את זה. נסו טקסט ברור יותר או תמונה חדה.",
+  "aiScanTitle": "זיהוי מצרכים מתמונה",
+  "aiFoundTitle": "זיהיתי את אלה. בטלו סימון למה שלא נכון.",
+  "aiFoundAdd": "הוספה למטבח שלי",
+  "aiNothingFound": "לא זוהו מצרכים בתמונה הזו",
+  "aiImportButton": "ייבוא עם AI",
+  "aiScanButton": "סריקת תמונה"
 }

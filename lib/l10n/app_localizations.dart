@@ -925,6 +925,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'ROCIs Tasks is not installed'**
   String get tasksNotInstalled;
+
+  /// No description provided for @aiImportTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Import a recipe with AI'**
+  String get aiImportTitle;
+
+  /// No description provided for @aiImportHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste a recipe here, or add a photo of one'**
+  String get aiImportHint;
+
+  /// No description provided for @aiAnalyze.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the recipe'**
+  String get aiAnalyze;
+
+  /// No description provided for @aiPhotoAttached.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo added'**
+  String get aiPhotoAttached;
+
+  /// No description provided for @aiOnDeviceNote.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI runs on your phone. Your text and photos never leave it.'**
+  String get aiOnDeviceNote;
+
+  /// No description provided for @aiDownloadTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Download the AI model?'**
+  String get aiDownloadTitle;
+
+  /// No description provided for @aiDownloadBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI model runs on your phone and needs a one-time download of about {size} GB. Wi-Fi is recommended.'**
+  String aiDownloadBody(String size);
+
+  /// No description provided for @aiDownload.
+  ///
+  /// In en, this message translates to:
+  /// **'Download'**
+  String get aiDownload;
+
+  /// No description provided for @aiDownloading.
+  ///
+  /// In en, this message translates to:
+  /// **'Downloading the AI model'**
+  String get aiDownloading;
+
+  /// No description provided for @aiFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not read that. Try clearer text or a sharper photo.'**
+  String get aiFailed;
+
+  /// No description provided for @aiScanTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Find ingredients in a photo'**
+  String get aiScanTitle;
+
+  /// No description provided for @aiFoundTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Found these. Untick anything wrong.'**
+  String get aiFoundTitle;
+
+  /// No description provided for @aiFoundAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to my kitchen'**
+  String get aiFoundAdd;
+
+  /// No description provided for @aiNothingFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No ingredients recognised in that photo'**
+  String get aiNothingFound;
+
+  /// No description provided for @aiImportButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Import with AI'**
+  String get aiImportButton;
+
+  /// No description provided for @aiScanButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan a photo'**
+  String get aiScanButton;
 }
 
 class _AppLocalizationsDelegate

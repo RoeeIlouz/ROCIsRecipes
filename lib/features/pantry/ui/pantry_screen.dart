@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:rocis_recipes/features/ai/ai_ui.dart';
 import 'package:rocis_recipes/features/catalog/ingredient.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_label.dart';
@@ -86,6 +87,13 @@ class _PantryScreenState extends State<PantryScreen> {
                 key: const Key('pick_from_list_button'),
                 onPressed: () => showIngredientPicker(context),
                 child: Text(l10n.pickFromList),
+              ),
+              const SizedBox(width: 8),
+              IconButton.outlined(
+                key: const Key('pantry_ai_scan'),
+                tooltip: l10n.aiScanButton,
+                onPressed: () => showPantryScanSheet(context),
+                icon: const Icon(Icons.document_scanner_outlined),
               ),
             ],
           ),
