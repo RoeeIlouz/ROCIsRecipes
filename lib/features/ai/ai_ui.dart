@@ -232,7 +232,7 @@ class _AiImportSheetState extends State<AiImportSheet> {
             if (_busy)
               Padding(
                 padding: const EdgeInsets.only(top: 8),
-                child: Text(
+                child: _ElapsedText(
                   l10n.aiLoadingModel,
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
@@ -361,7 +361,9 @@ Future<void> inventFromPantry(BuildContext context) async {
               child: CircularProgressIndicator(strokeWidth: 2),
             ),
             const SizedBox(width: 16),
-            Expanded(child: Text('${l10n.aiInventing} ${l10n.aiLoadingModel}')),
+            Expanded(
+              child: _ElapsedText('${l10n.aiInventing} ${l10n.aiLoadingModel}'),
+            ),
           ],
         ),
       ),
@@ -431,5 +433,41 @@ Future<void> showPantryScanSheet(BuildContext context) {
         ),
       ),
     ),
+  );
+}
+
+/// A message with a live seconds counter, so a slow first load does not look like a freeze.
+class _ElapsedText extends StatefulWidget {
+  const _ElapsedText(this.message, {this.style});
+
+  final String message;
+  final TextStyle? style;
+
+  @override
+  State<_ElapsedText> createState() => _ElapsedTextState();
+}
+
+class _ElapsedTextState extends State<_ElapsedText> {
+  final _watch = Stopwatch()..start();
+  Timer? _timer;
+
+  @override
+  void initState() {
+    super.initState();
+    _timer = Timer.periodic(const Duration(seconds: 1), (_) {
+      if (mounted) setState(() {});
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) => Text(
+    '${widget.message} (${_watch.elapsed.inSeconds}s)',
+    style: widget.style,
   );
 }
