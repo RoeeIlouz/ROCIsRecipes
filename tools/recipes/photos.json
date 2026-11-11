@@ -1216,5 +1216,83 @@
   "author": "Alpha from Melbourne, Australia",
   "license": "CC BY-SA 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lemon_and_saffron_roasted_chicken_on_pilaf_rice_with_sesame_yoghurt_and_peach_relish_-_Cafe_Mint_AUD24.90_main_(3697197879).jpg"
+ },
+ "rv3_beef_burrito": {
+  "asset": "assets/recipes/photos/rv3_beef_burrito.jpg",
+  "author": "Ser Amantio di Nicolao",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_birria_burrito_with_sauces_to_taste.jpg"
+ },
+ "rv3_beef_meat_sauce_potatoes": {
+  "asset": "assets/recipes/photos/rv3_beef_meat_sauce_potatoes.jpg",
+  "author": "Horacio Cambeiro",
+  "license": "CC BY-SA 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Argentine-Style_Mashed_Potatoes_with_Meat_Sauce.jpg"
+ },
+ "rv3_beef_stroganoff": {
+  "asset": "assets/recipes/photos/rv3_beef_stroganoff.jpg",
+  "author": "benketaro",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_stroganoff_with_pasta.jpg"
+ },
+ "rv3_beef_stuffed_cabbage_rolls": {
+  "asset": "assets/recipes/photos/rv3_beef_stuffed_cabbage_rolls.jpg",
+  "author": "Petar Milošević",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Postna_sarma_(vegetarian_sarma,_Cuisine_of_Serbia).jpg"
+ },
+ "rv3_beef_teriyaki_bowl": {
+  "asset": "assets/recipes/photos/rv3_beef_teriyaki_bowl.jpg",
+  "author": "CNEcija12345",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bowl_of_Teriyaki_chicken_and_beef_YakinikuCNE.jpg"
+ },
+ "rv3_chicken_baked_meatballs": {
+  "asset": "assets/recipes/photos/rv3_chicken_baked_meatballs.jpg",
+  "author": "Bssasidhar",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ikea_chicken_meatballs_(Hyderabad).jpg"
+ },
+ "rv3_chicken_mushroom_rice": {
+  "asset": "assets/recipes/photos/rv3_chicken_mushroom_rice.jpg",
+  "author": "Manfilliomia",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:HK_Kwun_Tong_Lunch_Box_dim_sum_mushroom_chicken_rice_Nov_2018_01.jpg"
+ },
+ "rv3_chicken_orange_glaze": {
+  "asset": "assets/recipes/photos/rv3_chicken_orange_glaze.jpg",
+  "author": "jeffreyw",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orange_chicken_(4363046795).jpg"
+ },
+ "rv3_chicken_peanut_skewers": {
+  "asset": "assets/recipes/photos/rv3_chicken_peanut_skewers.jpg",
+  "author": "Meandkancil2020",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sate_Ayam_Panggang.jpg"
+ },
+ "rv3_chicken_shnitzel_rolls": {
+  "asset": "assets/recipes/photos/rv3_chicken_shnitzel_rolls.jpg",
+  "author": "Benreis",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plněný_řízek_Štekrův_Mlýn.jpg"
+ },
+ "rv3_chicken_tikka": {
+  "asset": "assets/recipes/photos/rv3_chicken_tikka.jpg",
+  "author": "Missvain",
+  "license": "CC BY 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_tikka_masala_at_Yeti_in_Glen_Ellen_2015_-_Sarah_Stierch.jpg"
+ },
+ "rv3_turkey_burger_plates": {
+  "asset": "assets/recipes/photos/rv3_turkey_burger_plates.jpg",
+  "author": "Miriam Kato",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mar-a-Lago_Turkey_Burger_(4330642195).jpg"
+ },
+ "rv3_turkey_shawarma_wraps": {
+  "asset": "assets/recipes/photos/rv3_turkey_shawarma_wraps.jpg",
+  "author": "Sezenkerem",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Shawarma_in_Istanbul,_Türkiye.jpg"
  }
 }

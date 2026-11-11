@@ -49,7 +49,7 @@ const _photoPrompt =
     '{"ingredients": [names in Hebrew]}. Only items you are sure about, single words or short names, no duplicates.';
 
 /// Longest a single request may take before the app gives up and says so.
-const _requestTimeout = Duration(minutes: 4);
+const _requestTimeout = Duration(minutes: 6);
 
 /// How long a loaded model stays in memory after its last use (it is large).
 const _idleUnload = Duration(minutes: 3);
@@ -121,7 +121,7 @@ class EdgeRecipeAi implements RecipeAi {
     }
     final model = await FlutterEdgeAi.getActiveModel(
       defaults: _variant.runtimeDefaults,
-      maxTokens: 2048,
+      maxTokens: 4096,
       supportImage: image,
       supportAudio: false,
     );
@@ -169,33 +169,61 @@ class EdgeRecipeAi implements RecipeAi {
   }) {
     return _serial(() async {
       final model = await _acquire(image: image != null);
-      InferenceChat? chat;
       try {
-        chat = await model.openChat(
-          responseFormat: ResponseFormat.jsonSchema(schema),
-          maxOutputTokens: maxOutputTokens,
-        );
-        await chat.addQueryChunk(
-          image == null
-              ? Message.text(text: prompt, isUser: true)
-              : Message.withImage(
-                  text: prompt,
-                  imageBytes: image,
-                  isUser: true,
-                ),
-        );
-        final reply = StringBuffer();
-        await for (final r in chat.generateChatResponseAsync()) {
-          if (r is TextResponse) reply.write(r.token);
+        final format = ResponseFormat.jsonSchema(schema);
+        // Constrained decoding keeps the reply valid, but it throws when the reply is cut off by the
+        // output cap or the engine refuses the schema. Then try once more without the constraint:
+        // the reply is parsed leniently afterwards anyway.
+        if (model.refusalFor(format) == null) {
+          try {
+            return await _chat(model, prompt, image, format, maxOutputTokens);
+          } on TimeoutException {
+            rethrow;
+          } catch (_) {
+            // fall through to the unconstrained attempt
+          }
         }
-        return reply.toString();
+        return await _chat(
+          model,
+          '$prompt\n\nAnswer with the JSON object only, no other text.',
+          image,
+          null,
+          maxOutputTokens,
+        );
       } finally {
-        try {
-          await chat?.close();
-        } catch (_) {}
         _scheduleUnload();
       }
     }).timeout(_requestTimeout);
+  }
+
+  Future<String> _chat(
+    InferenceModel model,
+    String prompt,
+    Uint8List? image,
+    ResponseFormat? format,
+    int maxOutputTokens,
+  ) async {
+    InferenceChat? chat;
+    try {
+      chat = await model.openChat(
+        responseFormat: format,
+        maxOutputTokens: maxOutputTokens,
+      );
+      await chat.addQueryChunk(
+        image == null
+            ? Message.text(text: prompt, isUser: true)
+            : Message.withImage(text: prompt, imageBytes: image, isUser: true),
+      );
+      final reply = StringBuffer();
+      await for (final r in chat.generateChatResponseAsync()) {
+        if (r is TextResponse) reply.write(r.token);
+      }
+      return reply.toString();
+    } finally {
+      try {
+        await chat?.close();
+      } catch (_) {}
+    }
   }
 
   @override
@@ -210,7 +238,7 @@ class EdgeRecipeAi implements RecipeAi {
       '$_recipePrompt$source',
       kRecipeSchema,
       image: image,
-      maxOutputTokens: 1200,
+      maxOutputTokens: 2400,
     );
     return extractJsonObject(reply);
   }
@@ -226,9 +254,10 @@ class EdgeRecipeAi implements RecipeAi {
         'Invent one simple, realistic dish for a student cooking alone, using mainly these ingredients: '
         '${ingredients.join(', ')}. Salt, pepper and oil are always available. Use at most 2 extra common ingredients '
         'and only if really needed. Total time at most $maxMinutes minutes.$meal Give the title, steps and ingredient '
-        'names in Hebrew, with realistic quantities, as JSON.';
+        'names in Hebrew, with realistic quantities, as JSON. Keep it short: at most 7 steps, each one short sentence, '
+        'and at most 9 ingredients.';
     return extractJsonObject(
-      await _ask(prompt, kRecipeSchema, maxOutputTokens: 1000),
+      await _ask(prompt, kRecipeSchema, maxOutputTokens: 2000),
     );
   }
 
