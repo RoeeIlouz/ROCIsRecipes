@@ -310,5 +310,15 @@
   "aiInventTooltip": "Invent a dish from what I have",
   "aiNeedIngredients": "Add some ingredients to your kitchen first",
   "aiInventing": "Thinking up a dish...",
-  "aiDraftNote": "AI draft: check it before cooking"
+  "aiDraftNote": "AI draft: check it before cooking",
+  "aiErrorDetail": "Details: {detail}",
+  "@aiErrorDetail": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "aiLoadingModel": "Loading the AI. The first time can take about a minute.",
+  "aiTimedOut": "The AI took too long. Close other apps and try again."
 }

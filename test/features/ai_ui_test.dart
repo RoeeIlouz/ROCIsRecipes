@@ -218,4 +218,26 @@ void main() {
       },
     );
   });
+
+  testWidgets(
+    'opening the import sheet starts loading the model in the background',
+    (tester) async {
+      final env = await _open(tester, '/recipe-edit');
+      expect(env.ai.warmUps, 0);
+      await tester.tap(find.byKey(const Key('editor_ai_import')));
+      await tester.pumpAndSettle();
+      expect(env.ai.warmUps, 1);
+    },
+  );
+
+  testWidgets('a failure shows why, so it can be reported', (tester) async {
+    await _open(
+      tester,
+      '/recipe-edit',
+      setup: (e) => e.ai.error = StateError('gpu init failed'),
+    );
+    await _importFromText(tester);
+    expect(find.byKey(const Key('ai_error_detail')), findsOneWidget);
+    expect(find.textContaining('gpu init failed'), findsOneWidget);
+  });
 }

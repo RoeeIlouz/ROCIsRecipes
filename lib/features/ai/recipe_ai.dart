@@ -20,6 +20,10 @@ abstract class RecipeAi {
   /// Downloads the model, reporting progress from 0 to 100.
   Stream<double> install();
 
+  /// Starts loading the model into memory in the background so the first request is not slow.
+  /// Safe to call often; does nothing when the model is missing or already loaded.
+  Future<void> warmUp({bool image = false});
+
   /// Reads a recipe from pasted text and/or a photo of a recipe. Null when nothing usable came back.
   Future<Map<String, dynamic>?> readRecipe({String? text, Uint8List? image});
 
@@ -44,11 +48,26 @@ const _photoPrompt =
     'List the food items and ingredients you can clearly see in this photo, as JSON '
     '{"ingredients": [names in Hebrew]}. Only items you are sure about, single words or short names, no duplicates.';
 
+/// Longest a single request may take before the app gives up and says so.
+const _requestTimeout = Duration(minutes: 4);
+
+/// How long a loaded model stays in memory after its last use (it is large).
+const _idleUnload = Duration(minutes: 3);
+
 /// Gemma 4 E2B (Apache 2.0, not gated) through flutter_edge_ai and LiteRT-LM.
+///
+/// Loading the model is the slow part, so one instance is kept and reused. The catalog's runtime
+/// defaults also switch on the audio encoder, which this app never needs, so it is turned off, and
+/// image support is only loaded when a photo is part of the request.
 class EdgeRecipeAi implements RecipeAi {
   EdgeRecipeAi() : _variant = LiteRtLmModels.gemma4E2bIt.generic;
 
   final LiteRtLmVariant _variant;
+
+  InferenceModel? _model;
+  bool _modelHasImage = false;
+  Timer? _idle;
+  Future<void> _queue = Future.value();
 
   static Future<void> initialize() =>
       FlutterEdgeAi.initialize(inferenceEngines: const [LiteRtLmEngine()]);
@@ -73,9 +92,15 @@ class EdgeRecipeAi implements RecipeAi {
   @override
   Stream<double> install() {
     final controller = StreamController<double>();
-    FlutterEdgeAi.installModelFromCatalog(_variant)
-        .withProgress((p) => controller.add(p.toDouble()))
-        .install()
+    Future<void> run(bool? foreground) => FlutterEdgeAi.installModelFromCatalog(
+      _variant,
+      foreground: foreground,
+    ).withProgress((p) => controller.add(p.toDouble())).install();
+
+    // A foreground service keeps a 2.6 GB download alive when the user leaves the app; if the
+    // phone refuses it, fall back to a plain download.
+    run(true)
+        .catchError((Object _) => run(null))
         .then(
           (_) => controller.close(),
           onError: (Object e, StackTrace s) {
@@ -86,31 +111,91 @@ class EdgeRecipeAi implements RecipeAi {
     return controller.stream;
   }
 
+  Future<InferenceModel> _acquire({required bool image}) async {
+    _idle?.cancel();
+    final current = _model;
+    if (current != null && (_modelHasImage || !image)) return current;
+    if (current != null) {
+      _model = null;
+      await current.close();
+    }
+    final model = await FlutterEdgeAi.getActiveModel(
+      defaults: _variant.runtimeDefaults,
+      maxTokens: 2048,
+      supportImage: image,
+      supportAudio: false,
+    );
+    _model = model;
+    _modelHasImage = image;
+    return model;
+  }
+
+  void _scheduleUnload() {
+    _idle?.cancel();
+    _idle = Timer(_idleUnload, () async {
+      final m = _model;
+      _model = null;
+      try {
+        await m?.close();
+      } catch (_) {}
+    });
+  }
+
+  /// Runs [job] after any earlier request, so two taps never load the model twice at once.
+  Future<T> _serial<T>(Future<T> Function() job) {
+    final result = _queue.then((_) => job());
+    _queue = result.then((_) {}, onError: (Object _) {});
+    return result;
+  }
+
+  @override
+  Future<void> warmUp({bool image = false}) async {
+    try {
+      if (!await isInstalled()) return;
+      await _serial(() async {
+        await _acquire(image: image);
+        _scheduleUnload();
+      });
+    } catch (_) {
+      // Warming up is only an optimisation; a real request reports the real error.
+    }
+  }
+
   Future<String> _ask(
     String prompt,
     Map<String, Object?> schema, {
     Uint8List? image,
-  }) async {
-    final model = await FlutterEdgeAi.getActiveModel(
-      defaults: _variant.runtimeDefaults,
-    );
-    try {
-      final chat = await model.openChat(
-        responseFormat: ResponseFormat.jsonSchema(schema),
-      );
-      await chat.addQueryChunk(
-        image == null
-            ? Message.text(text: prompt, isUser: true)
-            : Message.withImage(text: prompt, imageBytes: image, isUser: true),
-      );
-      final reply = StringBuffer();
-      await for (final r in chat.generateChatResponseAsync()) {
-        if (r is TextResponse) reply.write(r.token);
+    required int maxOutputTokens,
+  }) {
+    return _serial(() async {
+      final model = await _acquire(image: image != null);
+      InferenceChat? chat;
+      try {
+        chat = await model.openChat(
+          responseFormat: ResponseFormat.jsonSchema(schema),
+          maxOutputTokens: maxOutputTokens,
+        );
+        await chat.addQueryChunk(
+          image == null
+              ? Message.text(text: prompt, isUser: true)
+              : Message.withImage(
+                  text: prompt,
+                  imageBytes: image,
+                  isUser: true,
+                ),
+        );
+        final reply = StringBuffer();
+        await for (final r in chat.generateChatResponseAsync()) {
+          if (r is TextResponse) reply.write(r.token);
+        }
+        return reply.toString();
+      } finally {
+        try {
+          await chat?.close();
+        } catch (_) {}
+        _scheduleUnload();
       }
-      return reply.toString();
-    } finally {
-      await model.close();
-    }
+    }).timeout(_requestTimeout);
   }
 
   @override
@@ -125,6 +210,7 @@ class EdgeRecipeAi implements RecipeAi {
       '$_recipePrompt$source',
       kRecipeSchema,
       image: image,
+      maxOutputTokens: 1200,
     );
     return extractJsonObject(reply);
   }
@@ -141,12 +227,19 @@ class EdgeRecipeAi implements RecipeAi {
         '${ingredients.join(', ')}. Salt, pepper and oil are always available. Use at most 2 extra common ingredients '
         'and only if really needed. Total time at most $maxMinutes minutes.$meal Give the title, steps and ingredient '
         'names in Hebrew, with realistic quantities, as JSON.';
-    return extractJsonObject(await _ask(prompt, kRecipeSchema));
+    return extractJsonObject(
+      await _ask(prompt, kRecipeSchema, maxOutputTokens: 1000),
+    );
   }
 
   @override
   Future<List<String>> identifyIngredients(Uint8List image) async {
-    final reply = await _ask(_photoPrompt, kIngredientListSchema, image: image);
+    final reply = await _ask(
+      _photoPrompt,
+      kIngredientListSchema,
+      image: image,
+      maxOutputTokens: 300,
+    );
     final json = extractJsonObject(reply);
     return [
       for (final v in (json?['ingredients'] as List?) ?? const [])

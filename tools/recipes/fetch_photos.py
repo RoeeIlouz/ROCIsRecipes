@@ -58,11 +58,14 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--refresh", action="store_true")
     parser.add_argument("--only")
+    parser.add_argument("--retry-nomatch", action="store_true", help="search again for recipes that found nothing before")
     args = parser.parse_args(argv)
 
     recipes = merge_batches(str(HERE / "content"))
     overrides = _load(HERE / "photo_overrides.json")
     rejected = set(_load(HERE / "photo_rejected.json").get("rejected", []))  # reviewed by eye: wrong picture
+    nomatch_path = HERE / "photo_nomatch.json"
+    nomatch = set(_load(nomatch_path).get("nomatch", []))  # searched before, nothing acceptable on Commons
     photos_path = HERE / "photos.json"
     photos = _load(photos_path)
     PHOTO_DIR.mkdir(parents=True, exist_ok=True)
@@ -72,7 +75,7 @@ def main(argv: list[str] | None = None) -> int:
         rid = recipe["id"]
         if args.only and rid != args.only:
             continue
-        if rid in rejected and rid not in overrides:
+        if (rid in rejected or (rid in nomatch and not args.retry_nomatch)) and rid not in overrides:
             missing.append(rid)
             continue
         dest = PHOTO_DIR / f"{rid}.jpg"
@@ -89,6 +92,8 @@ def main(argv: list[str] | None = None) -> int:
             if chosen is None:
                 print(f"no acceptable photo for {rid} ({query})", file=sys.stderr)
                 missing.append(rid)
+                nomatch.add(rid)
+                nomatch_path.write_text(json.dumps({"nomatch": sorted(nomatch)}, indent=1) + chr(10), encoding="utf-8")
                 continue
             recompress(commons.download(chosen.thumb_url), dest)
             time.sleep(PAUSE_SECONDS)

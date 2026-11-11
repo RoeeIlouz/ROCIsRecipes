@@ -164,5 +164,8 @@
   "aiInventTooltip": "המצאת מנה ממה שיש לי",
   "aiNeedIngredients": "הוסיפו קודם מצרכים למטבח",
   "aiInventing": "ממציא מנה...",
-  "aiDraftNote": "טיוטה מה-AI: בדקו לפני הבישול"
+  "aiDraftNote": "טיוטה מה-AI: בדקו לפני הבישול",
+  "aiErrorDetail": "פרטים: {detail}",
+  "aiLoadingModel": "טוען את ה-AI. בפעם הראשונה זה יכול לקחת כדקה.",
+  "aiTimedOut": "ה-AI לקח יותר מדי זמן. סגרו אפליקציות אחרות ונסו שוב."
 }

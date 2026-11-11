@@ -600,4 +600,16 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get aiDraftNote => 'טיוטה מה-AI: בדקו לפני הבישול';
+
+  @override
+  String aiErrorDetail(String detail) {
+    return 'פרטים: $detail';
+  }
+
+  @override
+  String get aiLoadingModel => 'טוען את ה-AI. בפעם הראשונה זה יכול לקחת כדקה.';
+
+  @override
+  String get aiTimedOut =>
+      'ה-AI לקח יותר מדי זמן. סגרו אפליקציות אחרות ונסו שוב.';
 }

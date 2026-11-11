@@ -601,4 +601,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aiDraftNote => 'AI draft: check it before cooking';
+
+  @override
+  String aiErrorDetail(String detail) {
+    return 'Details: $detail';
+  }
+
+  @override
+  String get aiLoadingModel =>
+      'Loading the AI. The first time can take about a minute.';
+
+  @override
+  String get aiTimedOut =>
+      'The AI took too long. Close other apps and try again.';
 }
