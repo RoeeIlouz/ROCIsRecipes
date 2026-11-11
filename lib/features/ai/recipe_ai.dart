@@ -48,6 +48,20 @@ const _photoPrompt =
     'List the food items and ingredients you can clearly see in this photo, as JSON '
     '{"ingredients": [names in Hebrew]}. Only items you are sure about, single words or short names, no duplicates.';
 
+/// The model answered, but not with a recipe the app can read. Carries what it said so the cause is visible.
+class AiReplyException implements Exception {
+  AiReplyException(this.message);
+  final String message;
+
+  @override
+  String toString() => message;
+}
+
+String _clip(String s, int n) {
+  final t = s.replaceAll(RegExp(r'\s+'), ' ').trim();
+  return t.length > n ? '${t.substring(0, n)}...' : t;
+}
+
 /// Longest a single request may take before the app gives up and says so.
 const _requestTimeout = Duration(minutes: 6);
 
@@ -161,6 +175,18 @@ class EdgeRecipeAi implements RecipeAi {
     }
   }
 
+  /// Why the constrained attempt of the last request failed, shown when the retry also fails.
+  String? _note;
+
+  Map<String, dynamic> _json(String reply) {
+    final json = extractJsonObject(reply);
+    if (json != null) return json;
+    final seen = reply.trim().isEmpty
+        ? 'empty reply'
+        : 'reply: "${_clip(reply, 110)}"';
+    throw AiReplyException([seen, ?_note].join(' | '));
+  }
+
   Future<String> _ask(
     String prompt,
     Map<String, Object?> schema, {
@@ -168,6 +194,7 @@ class EdgeRecipeAi implements RecipeAi {
     required int maxOutputTokens,
   }) {
     return _serial(() async {
+      _note = null;
       final model = await _acquire(image: image != null);
       try {
         final format = ResponseFormat.jsonSchema(schema);
@@ -179,9 +206,11 @@ class EdgeRecipeAi implements RecipeAi {
             return await _chat(model, prompt, image, format, maxOutputTokens);
           } on TimeoutException {
             rethrow;
-          } catch (_) {
-            // fall through to the unconstrained attempt
+          } catch (e) {
+            _note = 'structured: ${_clip('${e.runtimeType}: $e', 90)}';
           }
+        } else {
+          _note = 'structured output refused by the engine';
         }
         return await _chat(
           model,
@@ -240,7 +269,7 @@ class EdgeRecipeAi implements RecipeAi {
       image: image,
       maxOutputTokens: 2400,
     );
-    return extractJsonObject(reply);
+    return _json(reply);
   }
 
   @override
@@ -256,9 +285,7 @@ class EdgeRecipeAi implements RecipeAi {
         'and only if really needed. Total time at most $maxMinutes minutes.$meal Give the title, steps and ingredient '
         'names in Hebrew, with realistic quantities, as JSON. Keep it short: at most 7 steps, each one short sentence, '
         'and at most 9 ingredients.';
-    return extractJsonObject(
-      await _ask(prompt, kRecipeSchema, maxOutputTokens: 2000),
-    );
+    return _json(await _ask(prompt, kRecipeSchema, maxOutputTokens: 2000));
   }
 
   @override

@@ -23,7 +23,7 @@ String aiErrorText(AppLocalizations l10n, Object e) {
   if (e is TimeoutException) return l10n.aiTimedOut;
   final text = e.toString().replaceAll(RegExp(r'\s+'), ' ').trim();
   return l10n.aiErrorDetail(
-    text.length > 140 ? '${text.substring(0, 140)}...' : text,
+    text.length > 300 ? '${text.substring(0, 300)}...' : text,
   );
 }
 
@@ -386,6 +386,9 @@ Future<void> inventFromPantry(BuildContext context) async {
   try {
     final json = await ai.inventRecipe(ingredients: names, maxMinutes: minutes);
     draft = json == null ? null : recipeFromAiJson(json, catalog);
+    if (draft == null) {
+      reason = 'no title, ingredients or steps in: ${json?.keys.join(', ')}';
+    }
   } catch (e) {
     draft = null;
     reason = aiErrorText(l10n, e);
