@@ -150,20 +150,115 @@ List<String> ingredientIdsFromNames(
   return ids;
 }
 
+/// Field names for a model that cannot follow [kRecipeSchema] (no constrained decoding), so it still
+/// answers with the keys the app reads.
+const String kRecipeJsonHint =
+    'Use exactly this JSON shape: {"title": "...", "servings": 2, "minutes": 30, '
+    '"ingredients": [{"name": "...", "quantity": 1, "unit": "unit"}], "steps": ["...", "..."]}';
+
+String? _firstString(Map json, List<String> keys) {
+  for (final k in keys) {
+    final v = json[k];
+    if (v is String && v.trim().isNotEmpty) return v.trim();
+  }
+  return null;
+}
+
+List _firstList(Map json, List<String> keys) {
+  for (final k in keys) {
+    final v = json[k];
+    if (v is List) return v;
+  }
+  return const [];
+}
+
+/// Models sometimes wrap the recipe ({"recipe": {...}}); returns the inner object in that case.
+Map _unwrapRecipe(Map json) {
+  if (json['title'] != null || json['ingredients'] != null) return json;
+  for (final k in const ['recipe', 'dish', 'data', 'result']) {
+    final v = json[k];
+    if (v is Map) return v;
+  }
+  return json;
+}
+
+/// "2 ביצים" or "כוס אורז" written as one line: quantity and unit are split off the name.
+RecipeIngredient _ingredientFromText(String text, IngredientCatalog catalog) {
+  final m = RegExp(
+    r'^\s*(\d+(?:[./]\d+)?)?\s*(.*)$',
+  ).matchAsPrefix(text.trim());
+  var rest = (m?.group(2) ?? text).trim();
+  double? quantity;
+  final num = m?.group(1);
+  if (num != null) {
+    final parts = num.split('/');
+    quantity = parts.length == 2
+        ? (double.tryParse(parts[0]) ?? 0) / (double.tryParse(parts[1]) ?? 1)
+        : double.tryParse(num);
+  }
+  String? unit;
+  final words = rest.split(RegExp(r'\s+'));
+  if (words.length > 1) {
+    final u = normalizeUnit(words.first);
+    if (u != null) {
+      unit = u;
+      rest = words.skip(1).join(' ');
+      if (rest.startsWith('של ')) rest = rest.substring(3);
+    }
+  }
+  if (quantity != null && quantity <= 0) quantity = null;
+  return RecipeIngredient(
+    ingredientId: matchIngredientId(rest, catalog),
+    quantity: quantity,
+    unit: unit,
+  );
+}
+
 /// A recipe draft from the model's JSON, or null when it has no title, ingredient or step.
-Recipe? recipeFromAiJson(Map<String, dynamic> json, IngredientCatalog catalog) {
-  final title = (json['title'] as String?)?.trim() ?? '';
-  final rawIngredients = (json['ingredients'] as List?) ?? const [];
-  final steps = [
-    for (final s in (json['steps'] as List?) ?? const [])
-      if (s is String && s.trim().isNotEmpty) s.trim(),
-  ];
+/// Tolerates the common alternative key names and ingredients/steps written as plain strings.
+Recipe? recipeFromAiJson(
+  Map<String, dynamic> input,
+  IngredientCatalog catalog,
+) {
+  final json = _unwrapRecipe(input);
+  final title =
+      _firstString(json, const [
+        'title',
+        'name',
+        'recipe_name',
+        'dish_name',
+        'dish',
+        'recipe',
+      ]) ??
+      '';
+  final steps = <String>[];
+  for (final s in _firstList(json, const [
+    'steps',
+    'instructions',
+    'directions',
+    'method',
+  ])) {
+    final text = s is String
+        ? s
+        : s is Map
+        ? _firstString(s, const ['text', 'step', 'instruction', 'description'])
+        : null;
+    if (text != null && text.trim().isNotEmpty) steps.add(text.trim());
+  }
   final ingredients = <RecipeIngredient>[];
-  for (final item in rawIngredients) {
+  for (final item in _firstList(json, const [
+    'ingredients',
+    'ingredient_list',
+  ])) {
+    if (item is String) {
+      if (item.trim().isNotEmpty)
+        ingredients.add(_ingredientFromText(item, catalog));
+      continue;
+    }
     if (item is! Map) continue;
-    final name = (item['name'] as String?)?.trim() ?? '';
+    final name = _firstString(item, const ['name', 'ingredient', 'item']) ?? '';
     if (name.isEmpty) continue;
-    final q = item['quantity'];
+    final q = item['quantity'] ?? item['amount'];
     ingredients.add(
       RecipeIngredient(
         ingredientId: matchIngredientId(name, catalog),
@@ -173,12 +268,13 @@ Recipe? recipeFromAiJson(Map<String, dynamic> json, IngredientCatalog catalog) {
     );
   }
   if (title.isEmpty || ingredients.isEmpty || steps.isEmpty) return null;
+  final minutes = json['minutes'] ?? json['total_minutes'] ?? json['time'];
   return Recipe(
     id: 'user_${DateTime.now().microsecondsSinceEpoch}',
     titleHe: title,
     ingredients: ingredients,
     steps: [for (final s in steps) RecipeStep(textHe: s)],
-    totalMinutes: ((json['minutes'] as num?)?.toInt() ?? 30).clamp(1, 600),
+    totalMinutes: ((minutes as num?)?.toInt() ?? 30).clamp(1, 600),
     servings: ((json['servings'] as num?)?.toInt() ?? 2).clamp(1, 8),
     isUserCreated: true,
   );

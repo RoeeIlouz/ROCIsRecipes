@@ -214,7 +214,7 @@ class EdgeRecipeAi implements RecipeAi {
         }
         return await _chat(
           model,
-          '$prompt\n\nAnswer with the JSON object only, no other text.',
+          '$prompt\n\n$kRecipeJsonHint\nAnswer with the JSON object only, no other text.',
           image,
           null,
           maxOutputTokens,

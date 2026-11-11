@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:rocis_recipes/features/ai/ai_ui.dart';
+import 'package:rocis_recipes/features/ai/recipe_draft.dart';
 import 'package:rocis_recipes/features/catalog/ingredient.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_icons.dart';
@@ -9,6 +10,7 @@ import 'package:rocis_recipes/features/catalog/ingredient_label.dart';
 import 'package:rocis_recipes/features/recipes/photo_source.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
+import 'package:rocis_recipes/features/recipes/recipe_web.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_format.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_photo.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
@@ -141,6 +143,19 @@ class _RecipeEditorScreenState extends State<RecipeEditorScreen> {
       builder: (_) => const AiImportSheet(),
     );
     if (draft == null || !mounted) return;
+    _applyDraft(draft);
+  }
+
+  Future<void> _importFromLink() async {
+    final draft = await showDialog<Recipe>(
+      context: context,
+      builder: (_) => const _LinkImportDialog(),
+    );
+    if (draft == null || !mounted) return;
+    _applyDraft(draft);
+  }
+
+  void _applyDraft(Recipe draft) {
     setState(() {
       _title.text = draft.titleHe;
       _minutes.text = '${draft.totalMinutes}';
@@ -240,11 +255,23 @@ class _RecipeEditorScreenState extends State<RecipeEditorScreen> {
           if (_existing == null)
             Padding(
               padding: const EdgeInsets.only(bottom: 12),
-              child: FilledButton.tonalIcon(
-                key: const Key('editor_ai_import'),
-                onPressed: _importWithAi,
-                icon: const Icon(Icons.auto_awesome),
-                label: Text(l10n.aiImportButton),
+              child: Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  FilledButton.tonalIcon(
+                    key: const Key('editor_ai_import'),
+                    onPressed: _importWithAi,
+                    icon: const Icon(Icons.auto_awesome),
+                    label: Text(l10n.aiImportButton),
+                  ),
+                  FilledButton.tonalIcon(
+                    key: const Key('editor_link_import'),
+                    onPressed: _importFromLink,
+                    icon: const Icon(Icons.link_rounded),
+                    label: Text(l10n.linkImportButton),
+                  ),
+                ],
               ),
             ),
           RecipePhotoView(
@@ -462,6 +489,108 @@ class _RecipeEditorScreenState extends State<RecipeEditorScreen> {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// Asks for a recipe link, loads the page and returns the recipe found on it. Problems are shown inside
+/// the dialog so the link can be corrected without starting over.
+class _LinkImportDialog extends StatefulWidget {
+  const _LinkImportDialog();
+
+  @override
+  State<_LinkImportDialog> createState() => _LinkImportDialogState();
+}
+
+class _LinkImportDialogState extends State<_LinkImportDialog> {
+  final _link = TextEditingController();
+  bool _busy = false;
+  String? _error;
+
+  @override
+  void dispose() {
+    _link.dispose();
+    super.dispose();
+  }
+
+  Future<void> _import() async {
+    final l10n = AppLocalizations.of(context);
+    final web = context.read<WebPageSource>();
+    final catalog = context.read<IngredientCatalog>();
+    final uri = parseRecipeLink(_link.text);
+    if (uri == null) {
+      setState(() => _error = l10n.linkImportFailed);
+      return;
+    }
+    setState(() {
+      _busy = true;
+      _error = null;
+    });
+    final html = await web.fetch(uri);
+    if (!mounted) return;
+    if (html == null) {
+      setState(() {
+        _busy = false;
+        _error = l10n.linkImportFailed;
+      });
+      return;
+    }
+    final json = recipeJsonFromHtml(html);
+    final draft = json == null ? null : recipeFromAiJson(json, catalog);
+    if (draft == null) {
+      setState(() {
+        _busy = false;
+        _error = l10n.linkImportNoRecipe;
+      });
+      return;
+    }
+    Navigator.of(context).pop(draft);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    return AlertDialog(
+      title: Text(l10n.linkImportTitle),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          TextField(
+            key: const Key('link_field'),
+            controller: _link,
+            keyboardType: TextInputType.url,
+            textDirection: TextDirection.ltr,
+            autofocus: true,
+            decoration: const InputDecoration(hintText: 'https://...'),
+            onSubmitted: (_) => _busy ? null : _import(),
+          ),
+          if (_busy)
+            const Padding(
+              padding: EdgeInsets.only(top: 16),
+              child: LinearProgressIndicator(),
+            ),
+          if (_error != null)
+            Padding(
+              padding: const EdgeInsets.only(top: 12),
+              child: Text(
+                _error!,
+                key: const Key('link_import_error'),
+                style: TextStyle(color: Theme.of(context).colorScheme.error),
+              ),
+            ),
+        ],
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(),
+          child: Text(l10n.cancel),
+        ),
+        FilledButton(
+          key: const Key('link_import_confirm'),
+          onPressed: _busy ? null : _import,
+          child: Text(l10n.linkImportAction),
+        ),
+      ],
     );
   }
 }

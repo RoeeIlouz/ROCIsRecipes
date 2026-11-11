@@ -23,24 +23,28 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
   String? _meal; // null = all meals
   String? _protein; // null = any protein
   bool _mealPrep = false;
+  bool _favoritesOnly = false;
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
+    final settings = context.watch<SettingsRepository>();
+    final favorites = settings.favoriteIds;
     final recipes = context
         .watch<RecipeRepository>()
         .all
         .where(
-          (r) => matchesFilters(
-            r,
-            meal: _meal,
-            protein: _protein,
-            mealPrepOnly: _mealPrep,
-          ),
+          (r) =>
+              matchesFilters(
+                r,
+                meal: _meal,
+                protein: _protein,
+                mealPrepOnly: _mealPrep,
+              ) &&
+              (!_favoritesOnly || favorites.contains(r.id)),
         )
         .toList();
     final pantry = context.watch<PantryRepository>().ids;
-    final settings = context.watch<SettingsRepository>();
 
     List<RecipeMatch> compute(MatchMode mode) => RecipeMatcher.match(
       recipes: recipes,
@@ -63,6 +67,14 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
         appBar: AppBar(
           title: Text(l10n.appName),
           actions: [
+            IconButton(
+              key: const Key('favorites_chip'),
+              tooltip: l10n.favoritesChip,
+              isSelected: _favoritesOnly,
+              icon: const Icon(Icons.favorite_border),
+              selectedIcon: const Icon(Icons.favorite),
+              onPressed: () => setState(() => _favoritesOnly = !_favoritesOnly),
+            ),
             IconButton(
               key: const Key('ai_invent_button'),
               tooltip: l10n.aiInventTooltip,

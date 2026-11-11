@@ -58,6 +58,19 @@ class SettingsRepository extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Ids of the dishes the user marked with a heart.
+  Set<String> get favoriteIds =>
+      ((_box.get('favorites') as List?) ?? const []).cast<String>().toSet();
+
+  bool isFavorite(String recipeId) => favoriteIds.contains(recipeId);
+
+  Future<void> toggleFavorite(String recipeId) async {
+    final ids = favoriteIds;
+    ids.contains(recipeId) ? ids.remove(recipeId) : ids.add(recipeId);
+    await _box.put('favorites', ids.toList());
+    notifyListeners();
+  }
+
   /// Version of the starter recipe pack last synced into the recipes box.
   int get starterVersion => (_box.get('starterVersion') as int?) ?? 0;
 

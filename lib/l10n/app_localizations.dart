@@ -1064,6 +1064,66 @@ abstract class AppLocalizations {
   /// **'Meal prep'**
   String get mealPrepLabel;
 
+  /// No description provided for @favoritesChip.
+  ///
+  /// In en, this message translates to:
+  /// **'Favorites'**
+  String get favoritesChip;
+
+  /// No description provided for @linkImportButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Import from a link'**
+  String get linkImportButton;
+
+  /// No description provided for @linkImportTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste a recipe link'**
+  String get linkImportTitle;
+
+  /// No description provided for @linkImportAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Import'**
+  String get linkImportAction;
+
+  /// No description provided for @linkImportNoRecipe.
+  ///
+  /// In en, this message translates to:
+  /// **'No recipe found on that page. Try another link.'**
+  String get linkImportNoRecipe;
+
+  /// No description provided for @linkImportFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open that page. Check the link and your connection.'**
+  String get linkImportFailed;
+
+  /// No description provided for @favoriteAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to favorites'**
+  String get favoriteAdd;
+
+  /// No description provided for @favoriteRemove.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from favorites'**
+  String get favoriteRemove;
+
+  /// No description provided for @servingsLess.
+  ///
+  /// In en, this message translates to:
+  /// **'Fewer servings'**
+  String get servingsLess;
+
+  /// No description provided for @servingsMore.
+  ///
+  /// In en, this message translates to:
+  /// **'More servings'**
+  String get servingsMore;
+
   /// No description provided for @aiInventTooltip.
   ///
   /// In en, this message translates to:

@@ -591,6 +591,38 @@ class AppLocalizationsEn extends AppLocalizations {
   String get mealPrepLabel => 'Meal prep';
 
   @override
+  String get favoritesChip => 'Favorites';
+
+  @override
+  String get linkImportButton => 'Import from a link';
+
+  @override
+  String get linkImportTitle => 'Paste a recipe link';
+
+  @override
+  String get linkImportAction => 'Import';
+
+  @override
+  String get linkImportNoRecipe =>
+      'No recipe found on that page. Try another link.';
+
+  @override
+  String get linkImportFailed =>
+      'Could not open that page. Check the link and your connection.';
+
+  @override
+  String get favoriteAdd => 'Add to favorites';
+
+  @override
+  String get favoriteRemove => 'Remove from favorites';
+
+  @override
+  String get servingsLess => 'Fewer servings';
+
+  @override
+  String get servingsMore => 'More servings';
+
+  @override
   String get aiInventTooltip => 'Invent a dish from what I have';
 
   @override

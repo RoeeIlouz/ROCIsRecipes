@@ -5,6 +5,7 @@ import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_label.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
+import 'package:rocis_recipes/features/recipes/recipe.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_card.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_format.dart';
@@ -13,10 +14,20 @@ import 'package:rocis_recipes/features/shopping/shopping_item.dart';
 import 'package:rocis_recipes/features/shopping/shopping_repository.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
 
-class RecipeDetailScreen extends StatelessWidget {
+class RecipeDetailScreen extends StatefulWidget {
   const RecipeDetailScreen({super.key, required this.recipeId});
 
   final String recipeId;
+
+  @override
+  State<RecipeDetailScreen> createState() => _RecipeDetailScreenState();
+}
+
+class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
+  /// Servings the user scaled to; null until they use the stepper.
+  int? _servings;
+
+  String get recipeId => widget.recipeId;
 
   Future<void> _confirmDelete(BuildContext context, String id) async {
     final l10n = AppLocalizations.of(context);
@@ -55,6 +66,17 @@ class RecipeDetailScreen extends StatelessWidget {
       ...context.watch<PantryRepository>().ids,
       ...context.watch<SettingsRepository>().stapleIds,
     };
+    final servings = (_servings ?? recipe.servings).clamp(1, 24);
+    final factor = servings / recipe.servings;
+    RecipeIngredient scaled(RecipeIngredient i) => RecipeIngredient(
+      ingredientId: i.ingredientId,
+      quantity: i.quantity == null ? null : i.quantity! * factor,
+      unit: i.unit,
+      optional: i.optional,
+    );
+    final isFavorite = context.watch<SettingsRepository>().isFavorite(
+      recipe.id,
+    );
     final missing = [
       for (final ing in recipe.ingredients)
         if (!ing.optional && !have.contains(ing.ingredientId)) ing,
@@ -68,7 +90,7 @@ class RecipeDetailScreen extends StatelessWidget {
             id: 'rec_${ing.ingredientId}_$stamp',
             ingredientId: ing.ingredientId,
             label: ingredientLabel(context, catalog, ing.ingredientId),
-            quantity: ing.quantity,
+            quantity: scaled(ing).quantity,
             unit: ing.unit,
           ),
       ]);
@@ -88,6 +110,13 @@ class RecipeDetailScreen extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
         ),
         actions: [
+          IconButton(
+            key: const Key('favorite_button'),
+            tooltip: isFavorite ? l10n.favoriteRemove : l10n.favoriteAdd,
+            icon: Icon(isFavorite ? Icons.favorite : Icons.favorite_border),
+            onPressed: () =>
+                context.read<SettingsRepository>().toggleFavorite(recipe.id),
+          ),
           if (recipe.isUserCreated) ...[
             IconButton(
               key: const Key('edit_recipe_button'),
@@ -123,9 +152,14 @@ class RecipeDetailScreen extends StatelessWidget {
                 avatar: const Icon(Icons.schedule_rounded, size: 18),
                 label: Text(l10n.minutesShort(recipe.totalMinutes)),
               ),
-              Chip(
-                avatar: const Icon(Icons.people_rounded, size: 18),
-                label: Text(l10n.servingsCount(recipe.servings)),
+              _ServingsStepper(
+                servings: servings,
+                onChange: (d) => setState(
+                  () => _servings = ((_servings ?? recipe.servings) + d).clamp(
+                    1,
+                    24,
+                  ),
+                ),
               ),
               Chip(
                 avatar: const Icon(Icons.signal_cellular_alt_rounded, size: 18),
@@ -151,7 +185,8 @@ class RecipeDetailScreen extends StatelessWidget {
               ),
               label: ingredientLabel(context, catalog, ing.ingredientId),
               isMissing: !ing.optional && !have.contains(ing.ingredientId),
-              amount: formatIngredientAmount(l10n, ing),
+              ingredientId: ing.ingredientId,
+              amount: formatIngredientAmount(l10n, scaled(ing)),
               optional: ing.optional,
             ),
           const SizedBox(height: 16),
@@ -201,10 +236,12 @@ class _IngredientTile extends StatelessWidget {
     super.key,
     required this.label,
     required this.isMissing,
+    required this.ingredientId,
     required this.amount,
     required this.optional,
   });
 
+  final String ingredientId;
   final String label;
   final bool isMissing;
   final String amount;
@@ -226,11 +263,65 @@ class _IngredientTile extends StatelessWidget {
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (amount.isNotEmpty) Text(amount),
+          if (amount.isNotEmpty) Text(amount, key: Key('amount_$ingredientId')),
           if (isMissing) ...[
             const SizedBox(width: 8),
             Text(l10n.missingBadge, style: TextStyle(color: scheme.error)),
           ],
+        ],
+      ),
+    );
+  }
+}
+
+/// "- 4 servings +": changes how many people the ingredient amounts are for.
+class _ServingsStepper extends StatelessWidget {
+  const _ServingsStepper({required this.servings, required this.onChange});
+
+  final int servings;
+
+  /// Called with +1 or -1; the owner applies it to its current value.
+  final ValueChanged<int> onChange;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    return Container(
+      decoration: ShapeDecoration(
+        shape: StadiumBorder(
+          side: BorderSide(color: Theme.of(context).colorScheme.outlineVariant),
+        ),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          IconButton(
+            key: const Key('servings_minus'),
+            tooltip: l10n.servingsLess,
+            visualDensity: VisualDensity.compact,
+            padding: EdgeInsets.zero,
+            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+            icon: const Icon(Icons.remove_rounded, size: 18),
+            onPressed: () => onChange(-1),
+          ),
+          Flexible(
+            child: Text(
+              l10n.servingsCount(servings),
+              key: const Key('servings_value'),
+              style: Theme.of(context).textTheme.labelLarge,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+          IconButton(
+            key: const Key('servings_plus'),
+            tooltip: l10n.servingsMore,
+            visualDensity: VisualDensity.compact,
+            padding: EdgeInsets.zero,
+            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+            icon: const Icon(Icons.add_rounded, size: 18),
+            onPressed: () => onChange(1),
+          ),
         ],
       ),
     );

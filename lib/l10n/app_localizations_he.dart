@@ -590,6 +590,37 @@ class AppLocalizationsHe extends AppLocalizations {
   String get mealPrepLabel => 'הכנה מראש';
 
   @override
+  String get favoritesChip => 'מועדפים';
+
+  @override
+  String get linkImportButton => 'ייבוא מקישור';
+
+  @override
+  String get linkImportTitle => 'הדביקו קישור למתכון';
+
+  @override
+  String get linkImportAction => 'ייבוא';
+
+  @override
+  String get linkImportNoRecipe => 'לא נמצא מתכון בעמוד הזה. נסו קישור אחר.';
+
+  @override
+  String get linkImportFailed =>
+      'לא הצלחתי לפתוח את העמוד. בדקו את הקישור ואת החיבור.';
+
+  @override
+  String get favoriteAdd => 'הוספה למועדפים';
+
+  @override
+  String get favoriteRemove => 'הסרה מהמועדפים';
+
+  @override
+  String get servingsLess => 'פחות מנות';
+
+  @override
+  String get servingsMore => 'יותר מנות';
+
+  @override
   String get aiInventTooltip => 'המצאת מנה ממה שיש לי';
 
   @override

@@ -22,6 +22,7 @@ import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
 import 'package:rocis_recipes/features/ai/recipe_ai.dart';
 import 'package:rocis_recipes/features/recipes/photo_source.dart';
+import 'package:rocis_recipes/features/recipes/recipe_web.dart';
 import 'package:rocis_recipes/features/recipes/starter_recipe_loader.dart';
 import 'package:rocis_recipes/features/shopping/shopping_repository.dart';
 import 'package:rocis_recipes/shared/ui/theme/theme_service.dart';
@@ -107,6 +108,7 @@ class AppInitializer {
       Provider<PriceService>.value(value: const PriceService()),
       Provider<PhotoSource>.value(value: ImagePickerPhotoSource()),
       Provider<RecipeAi>.value(value: recipeAi),
+      Provider<WebPageSource>.value(value: HttpWebPageSource()),
       Provider<LaunchUrl>.value(
         value: (uri) => launchUrl(uri, mode: LaunchMode.externalApplication),
       ),

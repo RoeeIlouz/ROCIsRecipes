@@ -76,6 +76,43 @@ void main() {
     expect(recipeFromAiJson({'nonsense': true}, catalog), isNull);
   });
 
+  test('replies that use other common key names are still understood', () {
+    final r = recipeFromAiJson({
+      'recipe_name': 'אורז עם ביצה',
+      'ingredients': ['2 ביצים', 'מלח', 'חלב'],
+      'instructions': [
+        {'text': 'מבשלים אורז'},
+        'מוסיפים ביצה',
+      ],
+    }, catalog)!;
+    expect(r.titleHe, 'אורז עם ביצה');
+    expect(r.ingredients.map((i) => i.ingredientId), ['egg', 'salt', 'milk']);
+    expect(r.ingredients.first.quantity, 2);
+    expect(r.steps.map((s) => s.textHe), ['מבשלים אורז', 'מוסיפים ביצה']);
+    final nested = recipeFromAiJson({
+      'recipe': {
+        'name': 'חביתה',
+        'ingredients': [
+          {'name': 'ביצים'},
+        ],
+        'steps': ['טורפים'],
+      },
+    }, catalog)!;
+    expect(nested.titleHe, 'חביתה');
+  });
+
+  test('the hint for a model that cannot use the schema names every field', () {
+    for (final key in [
+      'title',
+      'servings',
+      'minutes',
+      'ingredients',
+      'steps',
+    ]) {
+      expect(kRecipeJsonHint, contains('"$key"'));
+    }
+  });
+
   test('replies wrapped in prose or code fences are still parsed', () {
     expect(extractJsonObject('Here you go:\n```json\n{"a": 1}\n```'), {'a': 1});
     expect(extractJsonObject('no json here'), isNull);
