@@ -80,15 +80,27 @@ Future<bool> ensureAiModel(BuildContext context) async {
     ),
   );
   var ok = true;
+  String? failure;
+  final messenger = ScaffoldMessenger.of(context);
   try {
     await for (final p in ai.install()) {
       progress.value = p;
     }
-  } catch (_) {
+  } catch (e) {
     ok = false;
+    failure = aiErrorText(l10n, e);
   }
   if (context.mounted) Navigator.of(context, rootNavigator: true).pop();
-  return ok && await ai.isInstalled();
+  final installed = ok && await ai.isInstalled();
+  if (!installed && context.mounted) {
+    messenger.showSnackBar(
+      SnackBar(
+        content: Text(failure ?? l10n.aiFailed),
+        duration: const Duration(seconds: 12),
+      ),
+    );
+  }
+  return installed;
 }
 
 Future<Uint8List?> _pickBytes(BuildContext context, bool camera) =>
