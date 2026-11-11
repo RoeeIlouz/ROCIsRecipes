@@ -42,7 +42,7 @@ def adaptive_background():
 
 def adaptive_foreground():
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108">'
-            f'<g transform="translate(18 18) scale(0.6)">{toque()}</g></svg>')
+            f'<g transform="translate(7.2 7.2) scale(0.78)">{toque()}</g></svg>')
 
 
 def adaptive_monochrome():
@@ -50,7 +50,7 @@ def adaptive_monochrome():
     shape = toque(hat='white', band='white', fold='black')
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108"><defs>'
             f'<mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="108" height="108">'
-            f'<g transform="translate(18 18) scale(0.6)">{shape}</g></mask></defs>'
+            f'<g transform="translate(7.2 7.2) scale(0.78)">{shape}</g></mask></defs>'
             f'<rect width="108" height="108" fill="{WHITE}" mask="url(#m)"/></svg>')
 
 
