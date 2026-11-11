@@ -91,6 +91,11 @@ class FakeRecipeAi implements RecipeAi {
   int installs = 0;
   String? lastText;
 
+  int warmUps = 0;
+
+  @override
+  Future<void> warmUp({bool image = false}) async => warmUps++;
+
   @override
   Future<bool> isSupported() async => supported;
 

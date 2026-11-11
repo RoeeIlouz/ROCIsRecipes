@@ -1087,6 +1087,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'AI draft: check it before cooking'**
   String get aiDraftNote;
+
+  /// No description provided for @aiErrorDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Details: {detail}'**
+  String aiErrorDetail(String detail);
+
+  /// No description provided for @aiLoadingModel.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading the AI. The first time can take about a minute.'**
+  String get aiLoadingModel;
+
+  /// No description provided for @aiTimedOut.
+  ///
+  /// In en, this message translates to:
+  /// **'The AI took too long. Close other apps and try again.'**
+  String get aiTimedOut;
 }
 
 class _AppLocalizationsDelegate

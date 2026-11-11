@@ -1,5 +1,7 @@
 import 'dart:typed_data';
 
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
@@ -16,6 +18,15 @@ import 'package:rocis_recipes/l10n/app_localizations.dart';
 
 /// Makes sure the on-device model is on the phone, asking before the one-time download.
 /// Returns false when the user declines or the download fails.
+/// A short, readable reason for an AI failure, so the user (and I) can tell what went wrong.
+String aiErrorText(AppLocalizations l10n, Object e) {
+  if (e is TimeoutException) return l10n.aiTimedOut;
+  final text = e.toString().replaceAll(RegExp(r'\s+'), ' ').trim();
+  return l10n.aiErrorDetail(
+    text.length > 140 ? '${text.substring(0, 140)}...' : text,
+  );
+}
+
 Future<bool> ensureAiModel(BuildContext context) async {
   final ai = context.read<RecipeAi>();
   final l10n = AppLocalizations.of(context);
@@ -96,6 +107,14 @@ class _AiImportSheetState extends State<AiImportSheet> {
   Uint8List? _image;
   bool _busy = false;
   bool _failed = false;
+  String? _detail;
+
+  @override
+  void initState() {
+    super.initState();
+    // Start loading the model while the user types or picks a photo.
+    context.read<RecipeAi>().warmUp();
+  }
 
   @override
   void dispose() {
@@ -116,13 +135,15 @@ class _AiImportSheetState extends State<AiImportSheet> {
     setState(() {
       _busy = true;
       _failed = false;
+      _detail = null;
     });
     Recipe? draft;
     try {
       final json = await ai.readRecipe(text: _text.text, image: _image);
       draft = json == null ? null : recipeFromAiJson(json, catalog);
-    } catch (_) {
+    } catch (e) {
       draft = null;
+      _detail = aiErrorText(AppLocalizations.of(context), e);
     }
     if (!mounted) return;
     if (draft == null) {
@@ -199,6 +220,23 @@ class _AiImportSheetState extends State<AiImportSheet> {
                   style: TextStyle(color: Theme.of(context).colorScheme.error),
                 ),
               ),
+            if (_failed && _detail != null)
+              Padding(
+                padding: const EdgeInsets.only(top: 4),
+                child: Text(
+                  _detail!,
+                  key: const Key('ai_error_detail'),
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+              ),
+            if (_busy)
+              Padding(
+                padding: const EdgeInsets.only(top: 8),
+                child: Text(
+                  l10n.aiLoadingModel,
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+              ),
             const SizedBox(height: 12),
             FilledButton(
               key: const Key('ai_analyze'),
@@ -235,8 +273,10 @@ Future<void> scanPantryPhoto(
   List<String> ids;
   try {
     ids = ingredientIdsFromNames(await ai.identifyIngredients(bytes), catalog);
-  } catch (_) {
-    messenger.showSnackBar(SnackBar(content: Text(l10n.aiFailed)));
+  } catch (e) {
+    messenger.showSnackBar(
+      SnackBar(content: Text('${l10n.aiFailed} ${aiErrorText(l10n, e)}')),
+    );
     return;
   }
   if (ids.isEmpty) {
@@ -321,22 +361,30 @@ Future<void> inventFromPantry(BuildContext context) async {
               child: CircularProgressIndicator(strokeWidth: 2),
             ),
             const SizedBox(width: 16),
-            Expanded(child: Text(l10n.aiInventing)),
+            Expanded(child: Text('${l10n.aiInventing} ${l10n.aiLoadingModel}')),
           ],
         ),
       ),
     ),
   );
   Recipe? draft;
+  String? reason;
   try {
     final json = await ai.inventRecipe(ingredients: names, maxMinutes: minutes);
     draft = json == null ? null : recipeFromAiJson(json, catalog);
-  } catch (_) {
+  } catch (e) {
     draft = null;
+    reason = aiErrorText(l10n, e);
   }
   if (context.mounted) Navigator.of(context, rootNavigator: true).pop();
   if (draft == null) {
-    messenger.showSnackBar(SnackBar(content: Text(l10n.aiFailed)));
+    messenger.showSnackBar(
+      SnackBar(
+        content: Text(
+          reason == null ? l10n.aiFailed : '${l10n.aiFailed} $reason',
+        ),
+      ),
+    );
     return;
   }
   messenger.showSnackBar(SnackBar(content: Text(l10n.aiDraftNote)));
@@ -346,6 +394,7 @@ Future<void> inventFromPantry(BuildContext context) async {
 /// Entry sheet for the pantry screen: take or choose a photo to scan.
 Future<void> showPantryScanSheet(BuildContext context) {
   final l10n = AppLocalizations.of(context);
+  context.read<RecipeAi>().warmUp(image: true);
   return showModalBottomSheet<void>(
     context: context,
     builder: (ctx) => SafeArea(
