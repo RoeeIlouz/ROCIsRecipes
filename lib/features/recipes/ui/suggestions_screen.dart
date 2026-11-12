@@ -4,6 +4,8 @@ import 'package:provider/provider.dart';
 import 'package:rocis_recipes/features/ai/ai_ui.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
+import 'package:rocis_recipes/features/prices/recipe_cost.dart';
+import 'package:rocis_recipes/features/prices/ui/price_summary.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
 import 'package:rocis_recipes/features/recipes/recipe_filters.dart';
 import 'package:rocis_recipes/features/recipes/recipe_matcher.dart';
@@ -24,6 +26,7 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
   String? _protein; // null = any protein
   bool _mealPrep = false;
   bool _favoritesOnly = false;
+  bool _inBudget = false;
 
   @override
   Widget build(BuildContext context) {
@@ -46,14 +49,38 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
         .toList();
     final pantry = context.watch<PantryRepository>().ids;
 
-    List<RecipeMatch> compute(MatchMode mode) => RecipeMatcher.match(
-      recipes: recipes,
-      pantryIds: pantry,
-      stapleIds: settings.stapleIds,
-      appliances: settings.appliances,
-      maxMinutes: settings.maxMinutes,
-      mode: mode,
-    );
+    final prices = PriceViewData.of(context);
+    final money = currencyFormat(context);
+    final budget = settings.weeklyBudget;
+    // What is left of the weekly budget after the shopping list at the cheapest chain.
+    final left = budget == null
+        ? null
+        : budget - (prices.cheapest?.total ?? 0.0);
+
+    BuyCost? costOf(RecipeMatch m) =>
+        estimateBuyCost(m.missingIngredientIds, prices.resolved);
+
+    List<RecipeMatch> compute(MatchMode mode) {
+      final matches = RecipeMatcher.match(
+        recipes: recipes,
+        pantryIds: pantry,
+        stapleIds: settings.stapleIds,
+        appliances: settings.appliances,
+        maxMinutes: settings.maxMinutes,
+        mode: mode,
+      );
+      if (!_inBudget || left == null) return matches;
+      return [
+        for (final m in matches)
+          if ((costOf(m)?.total ?? 0) <= left) m,
+      ];
+    }
+
+    String? labelOf(RecipeMatch m) {
+      if (m.missingIngredientIds.isEmpty) return null;
+      final cost = costOf(m);
+      return cost == null ? null : l10n.buyCost(money.format(cost.total));
+    }
 
     return DefaultTabController(
       length: 2,
@@ -145,14 +172,31 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
                       onSelected: (v) => setState(() => _mealPrep = v),
                     ),
                   ),
+                  if (budget != null)
+                    Padding(
+                      padding: const EdgeInsetsDirectional.only(end: 8),
+                      child: FilterChip(
+                        key: const Key('budget_chip'),
+                        avatar: const Icon(Icons.savings_outlined, size: 18),
+                        label: Text(l10n.budgetChip),
+                        selected: _inBudget,
+                        onSelected: (v) => setState(() => _inBudget = v),
+                      ),
+                    ),
                 ],
               ),
             ),
             Expanded(
               child: TabBarView(
                 children: [
-                  _MatchList(matches: compute(MatchMode.cookNow)),
-                  _MatchList(matches: compute(MatchMode.almostThere)),
+                  _MatchList(
+                    matches: compute(MatchMode.cookNow),
+                    labelOf: labelOf,
+                  ),
+                  _MatchList(
+                    matches: compute(MatchMode.almostThere),
+                    labelOf: labelOf,
+                  ),
                 ],
               ),
             ),
@@ -184,9 +228,10 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
 }
 
 class _MatchList extends StatelessWidget {
-  const _MatchList({required this.matches});
+  const _MatchList({required this.matches, required this.labelOf});
 
   final List<RecipeMatch> matches;
+  final String? Function(RecipeMatch) labelOf;
 
   @override
   Widget build(BuildContext context) {
@@ -210,6 +255,7 @@ class _MatchList extends StatelessWidget {
           key: Key('recipe_card_${m.recipe.id}'),
           recipe: m.recipe,
           missingCount: m.missingIngredientIds.length,
+          buyCostLabel: labelOf(m),
           onTap: () => context.push('/recipe/${m.recipe.id}'),
         );
       },

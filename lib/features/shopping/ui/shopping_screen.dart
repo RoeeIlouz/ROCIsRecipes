@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_label.dart';
+import 'package:rocis_recipes/features/prices/ui/budget_card.dart';
 import 'package:rocis_recipes/features/prices/ui/price_summary.dart';
 import 'package:rocis_recipes/features/shopping/shopping_item.dart';
 import 'package:rocis_recipes/features/shopping/shopping_screen_tasks.dart';
@@ -62,6 +64,12 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
       appBar: AppBar(
         title: Text(l10n.shoppingTitle),
         actions: [
+          IconButton(
+            key: const Key('stores_button'),
+            tooltip: l10n.storesTooltip,
+            icon: const Icon(Icons.storefront_outlined),
+            onPressed: () => context.push('/stores'),
+          ),
           if (open.isNotEmpty)
             IconButton(
               key: const Key('send_to_tasks_button'),
@@ -108,6 +116,7 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
             ],
           ),
           const SizedBox(height: 16),
+          const BudgetCard(),
           const PriceSummary(),
           if (items.isEmpty) Text(l10n.shoppingEmpty),
           for (final item in open)

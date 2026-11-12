@@ -594,6 +594,63 @@ class AppLocalizationsEn extends AppLocalizations {
   String get favoritesChip => 'Favorites';
 
   @override
+  String get budgetTitle => 'Weekly budget';
+
+  @override
+  String get budgetSet => 'Set a weekly budget';
+
+  @override
+  String get budgetEdit => 'Change budget';
+
+  @override
+  String get budgetFieldLabel => 'Weekly food budget (NIS)';
+
+  @override
+  String get budgetSave => 'Save';
+
+  @override
+  String get budgetClear => 'No budget';
+
+  @override
+  String budgetUsed(String spent, String budget) {
+    return '$spent of $budget';
+  }
+
+  @override
+  String budgetLeft(String amount) {
+    return '$amount left';
+  }
+
+  @override
+  String budgetOver(String amount) {
+    return '$amount over budget';
+  }
+
+  @override
+  String get budgetChip => 'Within budget';
+
+  @override
+  String buyCost(String amount) {
+    return 'about $amount to buy';
+  }
+
+  @override
+  String get storesTitle => 'Stores near me';
+
+  @override
+  String get storesTooltip => 'Find stores';
+
+  @override
+  String get storesCheapest => 'Cheapest for your list';
+
+  @override
+  String get storesNoBranch => 'No branch found nearby';
+
+  @override
+  String get storesNeedLocation =>
+      'Share your location or choose an area to see the nearest stores';
+
+  @override
   String get linkImportButton => 'Import from a link';
 
   @override

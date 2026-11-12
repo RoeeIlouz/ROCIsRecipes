@@ -58,6 +58,18 @@ class SettingsRepository extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Weekly food budget in NIS, or null when the user has not set one.
+  int? get weeklyBudget => _box.get('weeklyBudget') as int?;
+
+  Future<void> setWeeklyBudget(int? value) async {
+    if (value == null) {
+      await _box.delete('weeklyBudget');
+    } else {
+      await _box.put('weeklyBudget', value);
+    }
+    notifyListeners();
+  }
+
   /// Ids of the dishes the user marked with a heart.
   Set<String> get favoriteIds =>
       ((_box.get('favorites') as List?) ?? const []).cast<String>().toSet();

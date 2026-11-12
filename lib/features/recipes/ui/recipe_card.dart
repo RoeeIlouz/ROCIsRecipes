@@ -16,11 +16,15 @@ class RecipeCard extends StatelessWidget {
     super.key,
     required this.recipe,
     required this.missingCount,
+    this.buyCostLabel,
     this.onTap,
   });
 
   final Recipe recipe;
   final int missingCount;
+
+  /// Estimated price of what is still to buy ("about 14 to buy"), when known.
+  final String? buyCostLabel;
   final VoidCallback? onTap;
 
   @override
@@ -65,6 +69,15 @@ class RecipeCard extends StatelessWidget {
                             Text(
                               l10n.missingCount(missingCount),
                               style: TextStyle(color: theme.colorScheme.error),
+                            ),
+                          if (buyCostLabel != null)
+                            Text(
+                              buyCostLabel!,
+                              key: Key('buy_cost_${recipe.id}'),
+                              style: theme.textTheme.bodyMedium?.copyWith(
+                                color: theme.colorScheme.primary,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                         ],
                       ),

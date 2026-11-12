@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
 import 'package:rocis_recipes/features/pantry/ui/pantry_screen.dart';
+import 'package:rocis_recipes/features/prices/ui/stores_screen.dart';
 import 'package:rocis_recipes/features/recipes/ui/cooking_mode_screen.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_detail_screen.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_editor_screen.dart';
@@ -50,6 +51,7 @@ GoRouter buildRouter({String initialLocation = '/'}) => GoRouter(
         draft: state.extra is Recipe ? state.extra as Recipe : null,
       ),
     ),
+    GoRoute(path: '/stores', builder: (context, state) => const StoresScreen()),
     GoRoute(
       path: '/credits',
       builder: (context, state) => const CreditsScreen(),

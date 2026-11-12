@@ -1070,6 +1070,102 @@ abstract class AppLocalizations {
   /// **'Favorites'**
   String get favoritesChip;
 
+  /// No description provided for @budgetTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly budget'**
+  String get budgetTitle;
+
+  /// No description provided for @budgetSet.
+  ///
+  /// In en, this message translates to:
+  /// **'Set a weekly budget'**
+  String get budgetSet;
+
+  /// No description provided for @budgetEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Change budget'**
+  String get budgetEdit;
+
+  /// No description provided for @budgetFieldLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly food budget (NIS)'**
+  String get budgetFieldLabel;
+
+  /// No description provided for @budgetSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get budgetSave;
+
+  /// No description provided for @budgetClear.
+  ///
+  /// In en, this message translates to:
+  /// **'No budget'**
+  String get budgetClear;
+
+  /// No description provided for @budgetUsed.
+  ///
+  /// In en, this message translates to:
+  /// **'{spent} of {budget}'**
+  String budgetUsed(String spent, String budget);
+
+  /// No description provided for @budgetLeft.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} left'**
+  String budgetLeft(String amount);
+
+  /// No description provided for @budgetOver.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} over budget'**
+  String budgetOver(String amount);
+
+  /// No description provided for @budgetChip.
+  ///
+  /// In en, this message translates to:
+  /// **'Within budget'**
+  String get budgetChip;
+
+  /// No description provided for @buyCost.
+  ///
+  /// In en, this message translates to:
+  /// **'about {amount} to buy'**
+  String buyCost(String amount);
+
+  /// No description provided for @storesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Stores near me'**
+  String get storesTitle;
+
+  /// No description provided for @storesTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Find stores'**
+  String get storesTooltip;
+
+  /// No description provided for @storesCheapest.
+  ///
+  /// In en, this message translates to:
+  /// **'Cheapest for your list'**
+  String get storesCheapest;
+
+  /// No description provided for @storesNoBranch.
+  ///
+  /// In en, this message translates to:
+  /// **'No branch found nearby'**
+  String get storesNoBranch;
+
+  /// No description provided for @storesNeedLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your location or choose an area to see the nearest stores'**
+  String get storesNeedLocation;
+
   /// No description provided for @linkImportButton.
   ///
   /// In en, this message translates to:

@@ -593,6 +593,63 @@ class AppLocalizationsHe extends AppLocalizations {
   String get favoritesChip => 'מועדפים';
 
   @override
+  String get budgetTitle => 'תקציב שבועי';
+
+  @override
+  String get budgetSet => 'קבעו תקציב שבועי';
+
+  @override
+  String get budgetEdit => 'שינוי תקציב';
+
+  @override
+  String get budgetFieldLabel => 'תקציב שבועי לאוכל (בש״ח)';
+
+  @override
+  String get budgetSave => 'שמירה';
+
+  @override
+  String get budgetClear => 'ללא תקציב';
+
+  @override
+  String budgetUsed(String spent, String budget) {
+    return '$spent מתוך $budget';
+  }
+
+  @override
+  String budgetLeft(String amount) {
+    return 'נשארו $amount';
+  }
+
+  @override
+  String budgetOver(String amount) {
+    return 'חריגה של $amount';
+  }
+
+  @override
+  String get budgetChip => 'בתוך התקציב';
+
+  @override
+  String buyCost(String amount) {
+    return 'כ-$amount לקנייה';
+  }
+
+  @override
+  String get storesTitle => 'חנויות לידי';
+
+  @override
+  String get storesTooltip => 'מציאת חנויות';
+
+  @override
+  String get storesCheapest => 'הזול ביותר לרשימה';
+
+  @override
+  String get storesNoBranch => 'לא נמצא סניף בסביבה';
+
+  @override
+  String get storesNeedLocation =>
+      'שתפו מיקום או בחרו אזור כדי לראות את החנויות הקרובות';
+
+  @override
   String get linkImportButton => 'ייבוא מקישור';
 
   @override
