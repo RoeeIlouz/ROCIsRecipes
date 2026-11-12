@@ -1,0 +1,2616 @@
+[
+ {
+  "id": "rv3_x4_no_bake_cheesecake_jars",
+  "titleHe": "כוסות גבינה ללא אפייה",
+  "titleEn": "No bake cheesecake cups",
+  "photoQuery": "cheesecake cups",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dessert",
+  "totalMinutes": 25,
+  "appliances": [
+   "blender"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "cream_cheese",
+    "quantity": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cream",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "powdered_sugar",
+    "quantity": 0.25,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "vanilla",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oats",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "jam",
+    "quantity": 4,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מרסקים שיבולת שועל מעט וממיסים חמאה."
+   },
+   {
+    "textHe": "מערבבים ומהדקים בתחתית כוסות."
+   },
+   {
+    "textHe": "מקציפים שמנת עד קצף."
+   },
+   {
+    "textHe": "מערבבים גבינת שמנת עם סוכר ווניל."
+   },
+   {
+    "textHe": "מקפלים שמנת מקוצפת."
+   },
+   {
+    "textHe": "ממלאים כוסות ומוסיפים ריבה."
+   },
+   {
+    "textHe": "מקררים 3 שעות.",
+    "timerSeconds": 10800
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_malabi_rose",
+  "titleHe": "מלבי ביתי",
+  "titleEn": "Homemade malabi",
+  "photoQuery": "malabi",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dessert",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "milk",
+    "quantity": 3,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 5,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "vanilla",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "pistachios",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "coconut_flakes",
+    "quantity": 2,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "ממסים עמילן בחצי כוס חלב קר."
+   },
+   {
+    "textHe": "מחממים את שאר החלב עם סוכר ווניל."
+   },
+   {
+    "textHe": "יוצקים את תערובת העמילן ומערבבים כל הזמן 5 דקות עד התעבות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "יוצקים לכוסות."
+   },
+   {
+    "textHe": "מקררים 3 שעות.",
+    "timerSeconds": 10800
+   },
+   {
+    "textHe": "מפזרים פיסטוקים וקוקוס."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_halva_cookies",
+  "titleHe": "עוגיות חלווה וטחינה",
+  "titleEn": "Tahini halva cookies",
+  "photoQuery": "tahini cookies",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "dessert",
+  "totalMinutes": 30,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "tahini",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "baking_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "sesame",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "vanilla",
+    "quantity": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-170 מעלות."
+   },
+   {
+    "textHe": "מערבבים טחינה, סוכר וביצה."
+   },
+   {
+    "textHe": "מוסיפים וניל, קמח ואפיה."
+   },
+   {
+    "textHe": "יוצרים כדורים וגוללים בשומשום."
+   },
+   {
+    "textHe": "מסדרים על נייר אפייה ומשטחים קלות."
+   },
+   {
+    "textHe": "אופים 12 דקות.",
+    "timerSeconds": 720
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_chocolate_cake_oil",
+  "titleHe": "עוגת שוקולד בשמן",
+  "titleEn": "Oil chocolate cake",
+  "photoQuery": "chocolate cake",
+  "servings": 8,
+  "difficulty": "easy",
+  "mealType": "dessert",
+  "totalMinutes": 55,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "flour",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "cocoa",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "milk",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "baking_powder",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "vanilla",
+    "quantity": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-180 מעלות."
+   },
+   {
+    "textHe": "מערבבים קמח, סוכר, קקאו ואפיה."
+   },
+   {
+    "textHe": "מערבבים ביצים, שמן, חלב ווניל."
+   },
+   {
+    "textHe": "מאחדים את שתי התערובות."
+   },
+   {
+    "textHe": "יוצקים לתבנית משומנת."
+   },
+   {
+    "textHe": "אופים 35 דקות.",
+    "timerSeconds": 2100
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_orange_cake",
+  "titleHe": "עוגת תפוזים",
+  "titleEn": "Orange cake",
+  "photoQuery": "orange cake",
+  "servings": 8,
+  "difficulty": "easy",
+  "mealType": "dessert",
+  "totalMinutes": 60,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "orange",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 0.75,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "baking_powder",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "vanilla",
+    "quantity": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-180 מעלות."
+   },
+   {
+    "textHe": "מקציפים ביצים וסוכר."
+   },
+   {
+    "textHe": "מוסיפים שמן, גרידת תפוז ומיץ של שני תפוזים."
+   },
+   {
+    "textHe": "מוסיפים קמח ואפיה."
+   },
+   {
+    "textHe": "יוצקים לתבנית משומנת."
+   },
+   {
+    "textHe": "אופים 40 דקות.",
+    "timerSeconds": 2400
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_peanut_butter_banana_muffins",
+  "titleHe": "מאפינס חמאת בוטנים ובננה",
+  "titleEn": "Peanut butter banana muffins",
+  "photoQuery": "peanut butter muffins",
+  "servings": 8,
+  "difficulty": "easy",
+  "mealType": "dessert",
+  "totalMinutes": 35,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "banana",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "peanut_butter",
+    "quantity": 0.25,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "baking_powder",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "milk",
+    "quantity": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-180 מעלות."
+   },
+   {
+    "textHe": "מועכים בננות."
+   },
+   {
+    "textHe": "מערבבים עם חמאת בוטנים, סוכר, ביצה וחלב."
+   },
+   {
+    "textHe": "מוסיפים קמח ואפיה."
+   },
+   {
+    "textHe": "ממלאים תבניות."
+   },
+   {
+    "textHe": "אופים 20 דקות.",
+    "timerSeconds": 1200
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_date_walnut_loaf",
+  "titleHe": "עוגת תמרים ואגוזים",
+  "titleEn": "Date walnut loaf",
+  "photoQuery": "date walnut cake",
+  "servings": 8,
+  "difficulty": "medium",
+  "mealType": "dessert",
+  "totalMinutes": 65,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "dates",
+    "quantity": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "walnuts",
+    "quantity": 80,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 0.25,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "baking_soda",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-170 מעלות."
+   },
+   {
+    "textHe": "משרים תמרים קצוצים במים רותחים 10 דקות.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מערבבים ביצים, סוכר ושמן."
+   },
+   {
+    "textHe": "מוסיפים תמרים עם הנוזל."
+   },
+   {
+    "textHe": "מוסיפים קמח, סודה, קינמון ואגוזים."
+   },
+   {
+    "textHe": "אופים 40 דקות.",
+    "timerSeconds": 2400
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_cocoa_cookies_soft",
+  "titleHe": "עוגיות קקאו רכות",
+  "titleEn": "Soft cocoa cookies",
+  "photoQuery": "chocolate cookies",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "dessert",
+  "totalMinutes": 25,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "flour",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "cocoa",
+    "quantity": 0.25,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "brown_sugar",
+    "quantity": 0.25,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "baking_soda",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "chocolate",
+    "quantity": 80,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-180 מעלות."
+   },
+   {
+    "textHe": "מקציפים חמאה וסוכרים."
+   },
+   {
+    "textHe": "מוסיפים ביצה."
+   },
+   {
+    "textHe": "מערבבים קמח, קקאו וסודה ומוסיפים."
+   },
+   {
+    "textHe": "מקפלים שוקולד קצוץ."
+   },
+   {
+    "textHe": "יוצרים כדורים ואופים 10 דקות.",
+    "timerSeconds": 600
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_apple_pie_pita",
+  "titleHe": "שטרודל תפוחים מפיתה",
+  "titleEn": "Quick apple pastry",
+  "photoQuery": "apple pastry",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dessert",
+  "totalMinutes": 35,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "puff_pastry",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "apple",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "raisins",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "מקלפים ומגרדים תפוחים."
+   },
+   {
+    "textHe": "מערבבים עם סוכר, קינמון וצימוקים."
+   },
+   {
+    "textHe": "מניחים על בצק ומגלגלים."
+   },
+   {
+    "textHe": "מורחים ביצה."
+   },
+   {
+    "textHe": "אופים 25 דקות.",
+    "timerSeconds": 1500
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_semolina_cake_syrup",
+  "titleHe": "עוגת סולת בסירופ",
+  "titleEn": "Semolina syrup cake",
+  "photoQuery": "semolina cake",
+  "servings": 8,
+  "difficulty": "medium",
+  "mealType": "dessert",
+  "totalMinutes": 60,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "semolina",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "yogurt",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "baking_powder",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-180 מעלות."
+   },
+   {
+    "textHe": "מערבבים סולת, קמח, סוכר ואפיה."
+   },
+   {
+    "textHe": "מוסיפים יוגורט ושמן."
+   },
+   {
+    "textHe": "יוצקים לתבנית ואופים 30 דקות.",
+    "timerSeconds": 1800
+   },
+   {
+    "textHe": "מרתיחים דבש, מים ולימון לסירופ."
+   },
+   {
+    "textHe": "יוצקים על העוגה החמה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_chocolate_banana_bites",
+  "titleHe": "קוביות בננה בשוקולד",
+  "titleEn": "Chocolate banana bites",
+  "photoQuery": "chocolate banana",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dessert",
+  "totalMinutes": 20,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "banana",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "chocolate",
+    "quantity": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "peanuts",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "coconut_flakes",
+    "quantity": 2,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים בננות לעיגולים."
+   },
+   {
+    "textHe": "ממיסים שוקולד בבן מארי."
+   },
+   {
+    "textHe": "טובלים כל עיגול בשוקולד."
+   },
+   {
+    "textHe": "מניחים על נייר אפייה."
+   },
+   {
+    "textHe": "מפזרים בוטנים קצוצים וקוקוס."
+   },
+   {
+    "textHe": "מקפיאים 1 שעה.",
+    "timerSeconds": 3600
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_hot_chocolate_real",
+  "titleHe": "שוקולד חם אמיתי",
+  "titleEn": "Real hot chocolate",
+  "photoQuery": "hot chocolate",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "dessert",
+  "totalMinutes": 10,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "milk",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "chocolate",
+    "quantity": 80,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "vanilla",
+    "quantity": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים חלב עד קצת לפני רתיחה."
+   },
+   {
+    "textHe": "קוצצים שוקולד."
+   },
+   {
+    "textHe": "מוסיפים לחלב ומערבבים עד שנמס."
+   },
+   {
+    "textHe": "מוסיפים סוכר וניל וקינמון."
+   },
+   {
+    "textHe": "מערבבים היטב."
+   },
+   {
+    "textHe": "מגישים בכוסות חמות."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_oat_banana_smoothie",
+  "titleHe": "שייק בננה ושיבולת שועל",
+  "titleEn": "Banana oat smoothie",
+  "photoQuery": "banana smoothie",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "breakfast",
+  "totalMinutes": 5,
+  "appliances": [
+   "blender"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "banana",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oats",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "milk",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "peanut_butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מקלפים בננות."
+   },
+   {
+    "textHe": "מניחים בבלנדר עם חלב."
+   },
+   {
+    "textHe": "מוסיפים שיבולת, דבש וחמאת בוטנים."
+   },
+   {
+    "textHe": "מוסיפים קינמון."
+   },
+   {
+    "textHe": "טוחנים דקה עד חלק.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוזגים ומגישים מיד."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_berry_yogurt_smoothie",
+  "titleHe": "שייק יוגורט ותפוח",
+  "titleEn": "Apple yogurt smoothie",
+  "photoQuery": "yogurt smoothie",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "breakfast",
+  "totalMinutes": 5,
+  "appliances": [
+   "blender"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "yogurt",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "apple",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "banana",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "milk",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "שוטפים תפוח וחותכים."
+   },
+   {
+    "textHe": "מקלפים בננה."
+   },
+   {
+    "textHe": "מניחים הכל בבלנדר."
+   },
+   {
+    "textHe": "מוסיפים דבש וקינמון."
+   },
+   {
+    "textHe": "טוחנים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוזגים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_lemonade_mint",
+  "titleHe": "לימונדה ונענע",
+  "titleEn": "Mint lemonade",
+  "photoQuery": "lemonade mint",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 10,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "lemon",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "mint",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "water",
+    "quantity": 5,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "סוחטים לימונים."
+   },
+   {
+    "textHe": "ממיסים סוכר בכוס מים חמים."
+   },
+   {
+    "textHe": "מוסיפים מיץ לימון ושאר המים."
+   },
+   {
+    "textHe": "מועכים נענע קלות."
+   },
+   {
+    "textHe": "מוסיפים לקנקן."
+   },
+   {
+    "textHe": "מקררים ומגישים עם קרח."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_iced_coffee_milk",
+  "titleHe": "קפה קר בחלב",
+  "titleEn": "Iced milk coffee",
+  "photoQuery": "iced coffee",
+  "servings": 1,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 5,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "coffee",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "milk",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "vanilla",
+    "quantity": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מוסיפים קפה וסוכר לכוס עם מעט מים חמים."
+   },
+   {
+    "textHe": "ממיסים."
+   },
+   {
+    "textHe": "מוסיפים חלב קר."
+   },
+   {
+    "textHe": "מוסיפים וניל."
+   },
+   {
+    "textHe": "מוסיפים קרח."
+   },
+   {
+    "textHe": "מערבבים ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_granola_bars",
+  "titleHe": "חטיפי גרנולה ביתיים",
+  "titleEn": "Homemade granola bars",
+  "photoQuery": "granola bars",
+  "servings": 8,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 40,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "oats",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 0.33,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "peanut_butter",
+    "quantity": 0.25,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "raisins",
+    "quantity": 0.25,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "sunflower_seeds",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt",
+    "quantity": 1,
+    "unit": "pinch"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-170 מעלות."
+   },
+   {
+    "textHe": "מחממים דבש וחמאת בוטנים עד נוזלי."
+   },
+   {
+    "textHe": "מערבבים עם שיבולת, צימוקים, גרעינים וקינמון."
+   },
+   {
+    "textHe": "מהדקים בתבנית מרופדת."
+   },
+   {
+    "textHe": "אופים 18 דקות.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מצננים וחותכים לחטיפים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_popcorn_stovetop",
+  "titleHe": "פופקורן במחבת",
+  "titleEn": "Stovetop popcorn",
+  "photoQuery": "popcorn",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 10,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "corn",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים שמן בסיר עם 3 גרגרים."
+   },
+   {
+    "textHe": "כשהגרגרים קופצים מוסיפים את שאר התירס."
+   },
+   {
+    "textHe": "מכסים ומנערים על האש עד שהקפיצות נפסקות.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מעבירים לקערה."
+   },
+   {
+    "textHe": "מוסיפים חמאה מומסת."
+   },
+   {
+    "textHe": "מפזרים מלח."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_cheese_crackers_homemade",
+  "titleHe": "קרקרים גבינה",
+  "titleEn": "Cheese crackers",
+  "photoQuery": "cheese crackers",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 35,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "flour",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "yellow_cheese",
+    "quantity": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 60,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "salt",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "water",
+    "quantity": 2,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-180 מעלות."
+   },
+   {
+    "textHe": "מפוררים חמאה קרה עם קמח."
+   },
+   {
+    "textHe": "מוסיפים גבינה מגוררת, מלח ופפריקה."
+   },
+   {
+    "textHe": "מוסיפים מים ולשים."
+   },
+   {
+    "textHe": "מרדדים דק וחותכים לריבועים."
+   },
+   {
+    "textHe": "אופים 12 דקות.",
+    "timerSeconds": 720
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_roasted_nuts_spiced",
+  "titleHe": "אגוזים קלויים בתבלינים",
+  "titleEn": "Spiced roasted nuts",
+  "photoQuery": "roasted nuts",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 20,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "almonds",
+    "quantity": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cashews",
+    "quantity": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "peanuts",
+    "quantity": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-170 מעלות."
+   },
+   {
+    "textHe": "מערבבים אגוזים עם שמן ודבש."
+   },
+   {
+    "textHe": "מוסיפים פפריקה ומלח."
+   },
+   {
+    "textHe": "פורסים בתבנית."
+   },
+   {
+    "textHe": "אופים 12 דקות ומערבבים באמצע.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מצננים לפני אכילה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_cucumber_sticks_dip",
+  "titleHe": "מקלות ירקות עם טחינה",
+  "titleEn": "Vegetable sticks with tahini",
+  "photoQuery": "vegetable sticks dip",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 10,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "cucumber",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tahini",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 1,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים את הירקות למקלות."
+   },
+   {
+    "textHe": "מערבבים טחינה ומיץ לימון."
+   },
+   {
+    "textHe": "מוסיפים שום כתוש ומלח."
+   },
+   {
+    "textHe": "מוסיפים מים עד רוטב חלק."
+   },
+   {
+    "textHe": "מסדרים ירקות בצלחת."
+   },
+   {
+    "textHe": "מגישים עם הטחינה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_apple_cheese_plate",
+  "titleHe": "צלחת תפוח וגבינה",
+  "titleEn": "Apple and cheese plate",
+  "photoQuery": "apple cheese plate",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 5,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "apple",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "yellow_cheese",
+    "quantity": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "walnuts",
+    "quantity": 30,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "שוטפים תפוחים ופורסים."
+   },
+   {
+    "textHe": "פורסים גבינה."
+   },
+   {
+    "textHe": "מסדרים בצלחת."
+   },
+   {
+    "textHe": "מוסיפים אגוזי מלך."
+   },
+   {
+    "textHe": "מטפטפים דבש."
+   },
+   {
+    "textHe": "מפזרים קינמון."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_tuna_cucumber_boats",
+  "titleHe": "סירות מלפפון עם טונה",
+  "titleEn": "Tuna cucumber boats",
+  "photoQuery": "cucumber tuna",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 10,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "cucumber",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tuna",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "mayonnaise",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.25,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים מלפפונים לאורך."
+   },
+   {
+    "textHe": "מרוקנים עם כפית."
+   },
+   {
+    "textHe": "מסננים טונה."
+   },
+   {
+    "textHe": "מערבבים עם מיונז, בצל ירוק ולימון."
+   },
+   {
+    "textHe": "ממלאים את המלפפונים."
+   },
+   {
+    "textHe": "מפזרים פלפל."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_corn_cheese_cups",
+  "titleHe": "כוסות תירס וגבינה",
+  "titleEn": "Corn cheese cups",
+  "photoQuery": "corn cheese",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 25,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "canned_corn",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "yellow_cheese",
+    "quantity": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-190 מעלות."
+   },
+   {
+    "textHe": "מסננים תירס."
+   },
+   {
+    "textHe": "מערבבים עם ביצים, קמח, גבינה ובצל ירוק."
+   },
+   {
+    "textHe": "מתבלים."
+   },
+   {
+    "textHe": "ממלאים תבנית מאפינס משומנת."
+   },
+   {
+    "textHe": "אופים 18 דקות.",
+    "timerSeconds": 1080
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_pancakes_cottage_berry",
+  "titleHe": "פנקייק קוטג' ותפוח",
+  "titleEn": "Cottage apple pancakes",
+  "photoQuery": "apple pancakes",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "breakfast",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "cottage",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "apple",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מגרדים תפוח."
+   },
+   {
+    "textHe": "מערבבים קוטג' עם ביצים, קמח וקינמון."
+   },
+   {
+    "textHe": "מוסיפים את התפוח."
+   },
+   {
+    "textHe": "ממיסים חמאה במחבת."
+   },
+   {
+    "textHe": "מטגנים כפות בלילה 3 דקות מכל צד.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מגישים עם דבש."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_oats_pancake_single",
+  "titleHe": "פנקייק יחיד משיבולת",
+  "titleEn": "Single serve oat pancake",
+  "photoQuery": "oat pancake",
+  "servings": 1,
+  "difficulty": "easy",
+  "mealType": "breakfast",
+  "totalMinutes": 10,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "oats",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "banana",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "milk",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "טוחנים שיבולת בבלנדר או מועכים."
+   },
+   {
+    "textHe": "מועכים בננה."
+   },
+   {
+    "textHe": "מערבבים עם ביצה, חלב וקינמון."
+   },
+   {
+    "textHe": "מחממים שמן במחבת."
+   },
+   {
+    "textHe": "מטגנים 2 דקות מכל צד.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_toast_nutella_style_banana",
+  "titleHe": "טוסט שוקולד ובננה",
+  "titleEn": "Chocolate banana toast",
+  "photoQuery": "banana toast",
+  "servings": 1,
+  "difficulty": "easy",
+  "mealType": "breakfast",
+  "totalMinutes": 6,
+  "appliances": [
+   "toaster"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "bread",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "chocolate",
+    "quantity": 30,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "banana",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "peanut_butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מקלים לחם."
+   },
+   {
+    "textHe": "ממיסים שוקולד בכוס במיקרוגל 30 שניות.",
+    "timerSeconds": 30
+   },
+   {
+    "textHe": "מורחים חמאת בוטנים."
+   },
+   {
+    "textHe": "מניחים בננה פרוסה."
+   },
+   {
+    "textHe": "מטפטפים שוקולד."
+   },
+   {
+    "textHe": "מפזרים קינמון."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x4_mp_chicken_pesto_rice",
+  "titleHe": "קופסאות עוף פסטו ואורז",
+  "titleEn": "Chicken pesto rice boxes",
+  "photoQuery": "chicken pesto rice",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "pesto",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "broccoli",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cherry_tomato",
+    "quantity": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "מתבלים עוף ומורחים פסטו."
+   },
+   {
+    "textHe": "אופים 22 דקות.",
+    "timerSeconds": 1320
+   },
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מאדים ברוקולי 4 דקות.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מחלקים לקופסאות עם עגבניות שרי."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x4_mp_turkey_chili_rice",
+  "titleHe": "קופסאות צ'ילי הודו ואורז",
+  "titleEn": "Turkey chili rice boxes",
+  "photoQuery": "turkey chili",
+  "servings": 5,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 50,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_turkey",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "black_beans",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצל ופלפל בשמן 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים הודו ומטגנים 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים תבלינים, עגבניות ושעועית."
+   },
+   {
+    "textHe": "מבשלים 25 דקות.",
+    "timerSeconds": 1500
+   },
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מחלקים לקופסאות. שומרים 4 ימים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x4_mp_veggie_lasagna_rolls",
+  "titleHe": "לזניה ירקות בתבנית לשבוע",
+  "titleEn": "Veggie lasagna meal prep",
+  "photoQuery": "vegetable lasagna",
+  "servings": 6,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 75,
+  "appliances": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "lasagna_sheets",
+    "quantity": 9,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato_sauce",
+    "quantity": 3,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "ricotta",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "spinach",
+    "quantity": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "zucchini",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mozzarella",
+    "quantity": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-190 מעלות."
+   },
+   {
+    "textHe": "מטגנים שום, קישואים ותרד בשמן זית 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מערבבים עם ריקוטה ומלח."
+   },
+   {
+    "textHe": "מסדרים בתבנית שכבות של רוטב, דפים, מילוי."
+   },
+   {
+    "textHe": "מסיימים ברוטב ומוצרלה."
+   },
+   {
+    "textHe": "אופים 40 דקות ומחלקים למנות.",
+    "timerSeconds": 2400
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x4_mp_shakshuka_rice_boxes",
+  "titleHe": "קופסאות אורז ושקשוקה",
+  "titleEn": "Shakshuka rice boxes",
+  "photoQuery": "shakshuka rice",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "egg",
+    "quantity": 8,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 2,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מטגנים בצל, פלפל ושום בשמן 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים פפריקה ועגבניות ומבשלים 12 דקות.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מבשלים ביצים קשות בנפרד ומקלפים.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מחלקים אורז ורוטב לקופסאות."
+   },
+   {
+    "textHe": "מוסיפים ביצים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x4_mp_tuna_chickpea_salad",
+  "titleHe": "סלט טונה וחומוס לשבוע",
+  "titleEn": "Tuna chickpea salad prep",
+  "photoQuery": "tuna chickpea salad",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 15,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "tuna",
+    "quantity": 2,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "chickpeas",
+    "quantity": 2,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "cucumber",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 1,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מסננים טונה וחומוס."
+   },
+   {
+    "textHe": "חותכים מלפפונים ועגבניות לקוביות."
+   },
+   {
+    "textHe": "קוצצים פטרוזיליה."
+   },
+   {
+    "textHe": "מערבבים הכל."
+   },
+   {
+    "textHe": "מתבלים בלימון, שמן ומלח."
+   },
+   {
+    "textHe": "מחלקים לצנצנות ושומרים 3 ימים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x4_mp_beef_stirfry_noodles",
+  "titleHe": "קופסאות מוקפץ בקר ואטריות",
+  "titleEn": "Beef noodle stir fry boxes",
+  "photoQuery": "beef noodle stir fry",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "noodles",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 3,
+    "unit": "unit"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים אטריות ומסננים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "פורסים בקר וירקות."
+   },
+   {
+    "textHe": "מטגנים בקר בשמן 4 דקות ומוציאים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מטגנים ירקות ושום 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מחזירים בקר ומוסיפים סויה ואטריות."
+   },
+   {
+    "textHe": "מחלקים ושומרים 3 ימים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x4_mp_potato_chicken_tray",
+  "titleHe": "תבנית עוף ותפוחי אדמה לשבוע",
+  "titleEn": "Chicken potato tray prep",
+  "photoQuery": "chicken potato tray",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 60,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "חותכים ירקות לחתיכות."
+   },
+   {
+    "textHe": "מערבבים עם שמן, שום ותבלינים."
+   },
+   {
+    "textHe": "מסדרים עם העוף בתבנית גדולה."
+   },
+   {
+    "textHe": "אופים שעה ומהפכים באמצע.",
+    "timerSeconds": 3600
+   },
+   {
+    "textHe": "מחלקים לקופסאות."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x4_mp_egg_burrito_bake",
+  "titleHe": "תבנית בוריטו ביצים",
+  "titleEn": "Egg burrito bake",
+  "photoQuery": "breakfast burrito bake",
+  "servings": 6,
+  "difficulty": "medium",
+  "mealType": "breakfast",
+  "totalMinutes": 50,
+  "appliances": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "tortilla",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 8,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "black_beans",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "yellow_cheese",
+    "quantity": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-180 מעלות."
+   },
+   {
+    "textHe": "מטגנים בצל ופלפל 4 דקות.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "טורפים ביצים עם מלח ופלפל."
+   },
+   {
+    "textHe": "מסדרים טורטיות בתבנית עם שעועית וירקות."
+   },
+   {
+    "textHe": "יוצקים ביצים ומפזרים גבינה."
+   },
+   {
+    "textHe": "אופים 30 דקות וחותכים למנות.",
+    "timerSeconds": 1800
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x4_mp_lentil_soup_batch",
+  "titleHe": "מרק עדשים גדול לשבוע",
+  "titleEn": "Big lentil soup batch",
+  "photoQuery": "lentil soup",
+  "servings": 8,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 55,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "lentils",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "celery",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצל, גזר וסלרי בשמן 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים שום וכמון."
+   },
+   {
+    "textHe": "מוסיפים עדשים ו-10 כוסות מים עם אבקת מרק."
+   },
+   {
+    "textHe": "מבשלים 35 דקות.",
+    "timerSeconds": 2100
+   },
+   {
+    "textHe": "טוחנים חלקית."
+   },
+   {
+    "textHe": "מחלקים ומקפיאים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x4_mp_pasta_veggie_sauce_boxes",
+  "titleHe": "קופסאות פסטה ברוטב ירקות",
+  "titleEn": "Veggie sauce pasta boxes",
+  "photoQuery": "pasta vegetables sauce",
+  "servings": 5,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "pasta",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "zucchini",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "basil",
+    "quantity": 0.25,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים פסטה.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מטגנים בצל ושום בשמן זית."
+   },
+   {
+    "textHe": "מוסיפים קישואים וגזר מגורדים ומטגנים 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים עגבניות ומבשלים 15 דקות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מערבבים עם הפסטה ובזיליקום."
+   },
+   {
+    "textHe": "מחלקים לקופסאות."
+   }
+  ],
+  "mealPrep": true
+ }
+]

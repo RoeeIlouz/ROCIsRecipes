@@ -1,0 +1,2739 @@
+[
+ {
+  "id": "rv3_x1_homemade_pita",
+  "titleHe": "פיתות ביתיות",
+  "titleEn": "Homemade pita bread",
+  "photoQuery": "pita bread",
+  "servings": 6,
+  "difficulty": "medium",
+  "mealType": "snack",
+  "totalMinutes": 120,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "flour",
+    "quantity": 3,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "yeast",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "water",
+    "quantity": 1.25,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "ממיסים שמרים וסוכר במים פושרים ומחכים 10 דקות.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מערבבים קמח, מלח ושמן ומוסיפים את תערובת השמרים."
+   },
+   {
+    "textHe": "לשים 8 דקות עד בצק חלק.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מכסים ומתפיחים שעה.",
+    "timerSeconds": 3600
+   },
+   {
+    "textHe": "מחלקים ל-6 כדורים ומרדדים לעיגולים."
+   },
+   {
+    "textHe": "אופים ב-250 מעלות 4 דקות עד שהפיתות תופחות.",
+    "timerSeconds": 240
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_focaccia_olive",
+  "titleHe": "פוקאצ'ה זיתים ורוזמרין",
+  "titleEn": "Olive focaccia",
+  "photoQuery": "focaccia",
+  "servings": 6,
+  "difficulty": "medium",
+  "mealType": "snack",
+  "totalMinutes": 120,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "flour",
+    "quantity": 3,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "yeast",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 5,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "olives",
+    "quantity": 60,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "salt",
+    "quantity": 1.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oregano",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "water",
+    "quantity": 1.25,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מערבבים קמח, שמרים ומלח עם מים."
+   },
+   {
+    "textHe": "מוסיפים 2 כפות שמן ולשים 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מתפיחים שעה עד כפל נפח.",
+    "timerSeconds": 3600
+   },
+   {
+    "textHe": "פורשים בתבנית משומנת בשמן ויוצרים גומות באצבעות."
+   },
+   {
+    "textHe": "מפזרים זיתים, אורגנו ושמן."
+   },
+   {
+    "textHe": "אופים ב-220 מעלות 22 דקות.",
+    "timerSeconds": 1320
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_challah_simple",
+  "titleHe": "חלה ביתית פשוטה",
+  "titleEn": "Simple challah",
+  "photoQuery": "challah",
+  "servings": 8,
+  "difficulty": "hard",
+  "mealType": "snack",
+  "totalMinutes": 180,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "flour",
+    "quantity": 4,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "yeast",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 0.25,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 0.25,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "water",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "sesame",
+    "quantity": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "ממיסים שמרים וסוכר במים ומחכים 10 דקות.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מערבבים קמח, מלח, שמן וביצה אחת ומוסיפים את השמרים."
+   },
+   {
+    "textHe": "לשים 10 דקות עד בצק אלסטי.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מתפיחים שעה וחצי.",
+    "timerSeconds": 5400
+   },
+   {
+    "textHe": "קולעים לצמה ומתפיחים 30 דקות.",
+    "timerSeconds": 1800
+   },
+   {
+    "textHe": "מורחים ביצה, מפזרים שומשום ואופים ב-180 מעלות 35 דקות.",
+    "timerSeconds": 2100
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_naan_pan",
+  "titleHe": "נאן במחבת",
+  "titleEn": "Pan naan",
+  "photoQuery": "naan bread",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "snack",
+  "totalMinutes": 50,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "flour",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "yogurt",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "baking_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 1,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מערבבים קמח, אפיה ומלח."
+   },
+   {
+    "textHe": "מוסיפים יוגורט ושמן ולשים לבצק רך."
+   },
+   {
+    "textHe": "מנחים 20 דקות.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מחלקים ל-4 ומרדדים."
+   },
+   {
+    "textHe": "צולים במחבת חמה 2 דקות מכל צד.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מורחים חמאה עם שום כתוש."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_breadsticks_garlic",
+  "titleHe": "מקלות לחם בשום",
+  "titleEn": "Garlic breadsticks",
+  "photoQuery": "garlic breadsticks",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 40,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "pizza_dough",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "parmesan",
+    "quantity": 30,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.25,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 2,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "מרדדים בצק על קמח לריבוע."
+   },
+   {
+    "textHe": "חותכים לרצועות."
+   },
+   {
+    "textHe": "ממיסים חמאה עם שום כתוש."
+   },
+   {
+    "textHe": "מורחים על הרצועות ומפזרים פרמזן."
+   },
+   {
+    "textHe": "אופים 15 דקות ומפזרים פטרוזיליה.",
+    "timerSeconds": 900
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_tortilla_homemade",
+  "titleHe": "טורטיות ביתיות",
+  "titleEn": "Homemade tortillas",
+  "photoQuery": "flour tortillas",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "flour",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "baking_powder",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "water",
+    "quantity": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מערבבים קמח, מלח ואפיה."
+   },
+   {
+    "textHe": "מוסיפים שמן ומים."
+   },
+   {
+    "textHe": "לשים 3 דקות לבצק חלק.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מחלקים ל-6 כדורים ומנחים 15 דקות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מרדדים דק."
+   },
+   {
+    "textHe": "צולים במחבת יבשה חמה דקה מכל צד.",
+    "timerSeconds": 120
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_hamin_style",
+  "titleHe": "חמין ביתי בסיר",
+  "titleEn": "Home style cholent",
+  "photoQuery": "cholent hamin",
+  "servings": 6,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 240,
+  "appliances": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "white_beans",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "barley",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "משרים שעועית ושעורה במים 4 שעות או לילה."
+   },
+   {
+    "textHe": "מטגנים בצל ושום בשמן בסיר."
+   },
+   {
+    "textHe": "מוסיפים בשר, תפוחי אדמה ופפריקה."
+   },
+   {
+    "textHe": "מוסיפים שעועית ושעורה ומים לכיסוי."
+   },
+   {
+    "textHe": "מביאים לרתיחה ומעבירים לתנור ב-120 מעלות."
+   },
+   {
+    "textHe": "מבשלים 3 שעות ומתבלים.",
+    "timerSeconds": 10800
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_white_bean_stew",
+  "titleHe": "תבשיל שעועית לבנה",
+  "titleEn": "White bean stew",
+  "photoQuery": "white bean stew",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 60,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "white_beans",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "משרים שעועית לילה ומבשלים 40 דקות עד רכה.",
+    "timerSeconds": 2400
+   },
+   {
+    "textHe": "מטגנים בצל ושום בשמן."
+   },
+   {
+    "textHe": "מוסיפים פפריקה ועגבניות."
+   },
+   {
+    "textHe": "מוסיפים את השעועית וכוס מי בישול."
+   },
+   {
+    "textHe": "מבשלים 15 דקות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מפזרים פטרוזיליה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_chickpea_stew_tomato",
+  "titleHe": "תבשיל חומוס בעגבניות",
+  "titleEn": "Chickpea tomato stew",
+  "photoQuery": "chickpea stew",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chickpeas",
+    "quantity": 2,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "spinach",
+    "quantity": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצל ושום בשמן 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים כמון."
+   },
+   {
+    "textHe": "מוסיפים עגבניות וחומוס מסונן."
+   },
+   {
+    "textHe": "מבשלים 15 דקות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מוסיפים תרד עד שנבול."
+   },
+   {
+    "textHe": "מתבלים ומגישים עם אורז או לחם."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_lentil_soup_lemon",
+  "titleHe": "מרק עדשים ולימון",
+  "titleEn": "Lemony lentil soup",
+  "photoQuery": "lemon lentil soup",
+  "servings": 5,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "lentils",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצל, גזר מגורר ושום בשמן 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים כמון ועדשים."
+   },
+   {
+    "textHe": "מוסיפים 6 כוסות מים."
+   },
+   {
+    "textHe": "מבשלים 25 דקות עד שהעדשים רכות.",
+    "timerSeconds": 1500
+   },
+   {
+    "textHe": "טוחנים בחלקו."
+   },
+   {
+    "textHe": "מוסיפים מיץ לימון ומלח."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_black_bean_stew_rice",
+  "titleHe": "תבשיל שעועית שחורה ואורז",
+  "titleEn": "Black bean stew with rice",
+  "photoQuery": "black bean stew",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "black_beans",
+    "quantity": 2,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lime",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים אורז."
+   },
+   {
+    "textHe": "מטגנים בצל ושום בשמן 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים כמון ופפריקה."
+   },
+   {
+    "textHe": "מוסיפים שעועית עם מעט נוזל ומבשלים 15 דקות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מועכים חלק מהשעועית."
+   },
+   {
+    "textHe": "מגישים על אורז עם ליים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_fava_style_breakfast",
+  "titleHe": "פול מדמס בסגנון ביתי",
+  "titleEn": "Fava style beans",
+  "photoQuery": "ful medames",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "breakfast",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "white_beans",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.25,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים שעועית בסיר עם מעט מים."
+   },
+   {
+    "textHe": "מועכים חלקית."
+   },
+   {
+    "textHe": "מוסיפים שום כתוש וכמון."
+   },
+   {
+    "textHe": "מוסיפים לימון, מלח ושמן זית."
+   },
+   {
+    "textHe": "קוצצים עגבנייה ופטרוזיליה."
+   },
+   {
+    "textHe": "מגישים עם הירקות מעל ופיתה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_split_pea_dal",
+  "titleHe": "דאל עדשים כתומות",
+  "titleEn": "Red lentil dal",
+  "photoQuery": "red lentil dal",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "lentils",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "curry",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "coconut_milk",
+    "quantity": 0.5,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצל, שום וג'ינג'ר בשמן 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים קארי וכורכום."
+   },
+   {
+    "textHe": "מוסיפים עדשים ו-4 כוסות מים."
+   },
+   {
+    "textHe": "מבשלים 20 דקות עד רך.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מוסיפים חלב קוקוס ומלח."
+   },
+   {
+    "textHe": "מגישים עם אורז או נאן."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_hummus_masabacha_bowl",
+  "titleHe": "קערת מסבחה עם בצל ופפריקה",
+  "titleEn": "Masabacha with onion",
+  "photoQuery": "masabacha",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 20,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chickpeas",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "tahini",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 1,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "pita",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים חומוס שלם במעט נוזל."
+   },
+   {
+    "textHe": "מועכים חלקית."
+   },
+   {
+    "textHe": "מערבבים טחינה, לימון, שום ומלח."
+   },
+   {
+    "textHe": "מערבבים עם החומוס החם."
+   },
+   {
+    "textHe": "מחלקים לקערות."
+   },
+   {
+    "textHe": "מוסיפים בצל קצוץ, פפריקה ושמן זית."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_jachnun_style_egg",
+  "titleHe": "ביצה קשה וטחינה בפיתה",
+  "titleEn": "Egg and tahini pita",
+  "photoQuery": "egg tahini pita",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "breakfast",
+  "totalMinutes": 20,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "egg",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "pita",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tahini",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cucumber",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "zaatar",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים ביצים קשות 10 דקות.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מקלפים וחותכים לפרוסות."
+   },
+   {
+    "textHe": "חותכים עגבנייה ומלפפון."
+   },
+   {
+    "textHe": "מערבבים טחינה עם מים ומלח."
+   },
+   {
+    "textHe": "ממלאים פיתה בביצה, ירקות וטחינה."
+   },
+   {
+    "textHe": "מפזרים זעתר."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_israeli_salad_chopped",
+  "titleHe": "סלט ירקות קצוץ ישראלי",
+  "titleEn": "Chopped Israeli salad",
+  "photoQuery": "israeli salad",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 10,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "cucumber",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים מלפפונים ועגבניות לקוביות קטנות."
+   },
+   {
+    "textHe": "קוצצים בצל ופטרוזיליה."
+   },
+   {
+    "textHe": "מערבבים הכל בקערה."
+   },
+   {
+    "textHe": "מוסיפים מיץ לימון."
+   },
+   {
+    "textHe": "מוסיפים שמן זית ומלח."
+   },
+   {
+    "textHe": "מגישים מיד."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_shakshuka_labneh_toast",
+  "titleHe": "טוסט לאבנה וביצה",
+  "titleEn": "Labneh egg toast",
+  "photoQuery": "labneh toast egg",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "breakfast",
+  "totalMinutes": 10,
+  "appliances": [
+   "stovetop",
+   "toaster"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "bread",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "labneh",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "zaatar",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מקלים לחם."
+   },
+   {
+    "textHe": "מורחים לאבנה."
+   },
+   {
+    "textHe": "מטגנים ביצים בשמן זית."
+   },
+   {
+    "textHe": "פורסים עגבנייה."
+   },
+   {
+    "textHe": "מניחים עגבנייה וביצה על הלחם."
+   },
+   {
+    "textHe": "מפזרים זעתר."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_kubeh_style_soup_semolina",
+  "titleHe": "מרק כדורי סולת ועוף",
+  "titleEn": "Chicken semolina dumpling soup",
+  "photoQuery": "dumpling soup",
+  "servings": 4,
+  "difficulty": "hard",
+  "mealType": "dinner",
+  "totalMinutes": 75,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "semolina",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "celery",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים עוף עם ירקות במים 40 דקות לציר.",
+    "timerSeconds": 2400
+   },
+   {
+    "textHe": "מערבבים סולת, ביצה ומלח לבצק."
+   },
+   {
+    "textHe": "משרים 15 דקות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "יוצרים כדורים קטנים."
+   },
+   {
+    "textHe": "מוסיפים לציר רותח ומבשלים 15 דקות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מפזרים פטרוזיליה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_pita_chicken_hummus_wrap",
+  "titleHe": "פיתה עוף וחומוס",
+  "titleEn": "Chicken hummus pita",
+  "photoQuery": "chicken hummus pita",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 20,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "pita",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "hummus",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cucumber",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים חזה עוף ומתבלים בפפריקה ומלח."
+   },
+   {
+    "textHe": "מטגנים בשמן 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מחממים פיתות."
+   },
+   {
+    "textHe": "מורחים חומוס."
+   },
+   {
+    "textHe": "מוסיפים עוף ופרוסות ירקות."
+   },
+   {
+    "textHe": "מגלגלים ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_orange_carrot_salad",
+  "titleHe": "סלט גזר ותפוז",
+  "titleEn": "Carrot orange salad",
+  "photoQuery": "carrot orange salad",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 10,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "carrot",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "orange",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.25,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מגרדים גזר."
+   },
+   {
+    "textHe": "מקלפים תפוז וחותכים לקוביות."
+   },
+   {
+    "textHe": "מערבבים שמן, לימון, דבש וכמון."
+   },
+   {
+    "textHe": "מערבבים הכל."
+   },
+   {
+    "textHe": "מוסיפים פטרוזיליה קצוצה."
+   },
+   {
+    "textHe": "מקררים 10 דקות ומגישים.",
+    "timerSeconds": 600
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_roasted_beet_labneh",
+  "titleHe": "סלק קלוי עם לאבנה",
+  "titleEn": "Roasted beets with labneh",
+  "photoQuery": "roasted beets labneh",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 60,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beet",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "labneh",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "walnuts",
+    "quantity": 30,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mint",
+    "quantity": 0.25,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "עוטפים סלקים בנייר כסף."
+   },
+   {
+    "textHe": "אופים 45 דקות עד רכים.",
+    "timerSeconds": 2700
+   },
+   {
+    "textHe": "מקלפים וחותכים."
+   },
+   {
+    "textHe": "מורחים לאבנה בצלחת."
+   },
+   {
+    "textHe": "מניחים סלק, אגוזים, שמן, לימון ונענע."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_stuffed_eggplant_rice",
+  "titleHe": "חצילים ממולאים באורז",
+  "titleEn": "Rice stuffed eggplant",
+  "photoQuery": "stuffed eggplant",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 70,
+  "appliances": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "eggplant",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים חצילים לאורך וחורצים."
+   },
+   {
+    "textHe": "מטגנים בשמן עד שמשחימים קלות."
+   },
+   {
+    "textHe": "מערבבים בשר, אורז, בצל מגורר ופטרוזיליה."
+   },
+   {
+    "textHe": "ממלאים את החצילים."
+   },
+   {
+    "textHe": "מסדרים בסיר ויוצקים מים עם רסק."
+   },
+   {
+    "textHe": "מבשלים מכוסה 40 דקות.",
+    "timerSeconds": 2400
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_zucchini_stuffed_meat",
+  "titleHe": "קישואים ממולאים",
+  "titleEn": "Stuffed zucchini with meat",
+  "photoQuery": "stuffed zucchini",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 70,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "zucchini",
+    "quantity": 6,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato_sauce",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים קישואים לחצאים ומרוקנים."
+   },
+   {
+    "textHe": "מערבבים בשר, אורז, בצל ופטרוזיליה."
+   },
+   {
+    "textHe": "ממלאים את הקישואים."
+   },
+   {
+    "textHe": "מסדרים בסיר רחב."
+   },
+   {
+    "textHe": "יוצקים רוטב ומים לכיסוי חלקי."
+   },
+   {
+    "textHe": "מבשלים 40 דקות על אש נמוכה.",
+    "timerSeconds": 2400
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_roasted_veg_tray",
+  "titleHe": "ירקות צלויים בתבנית",
+  "titleEn": "Roasted vegetable tray",
+  "photoQuery": "roasted vegetables",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "potato",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "zucchini",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-220 מעלות."
+   },
+   {
+    "textHe": "חותכים את הירקות לקוביות גדולות."
+   },
+   {
+    "textHe": "מערבבים עם שמן ותבלינים."
+   },
+   {
+    "textHe": "פורסים בתבנית אחת."
+   },
+   {
+    "textHe": "אופים 30 דקות ומהפכים באמצע.",
+    "timerSeconds": 1800
+   },
+   {
+    "textHe": "מגישים חם."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_garlic_green_beans",
+  "titleHe": "שעועית ירוקה בשום",
+  "titleEn": "Garlic green beans",
+  "photoQuery": "garlic green beans",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 15,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "green_beans",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "almonds",
+    "quantity": 20,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מנקים קצוות מהשעועית."
+   },
+   {
+    "textHe": "מבשלים במים רותחים 4 דקות.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מסננים."
+   },
+   {
+    "textHe": "מטגנים שום בשמן חצי דקה."
+   },
+   {
+    "textHe": "מוסיפים שעועית ומטגנים 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים לימון, שקדים, מלח ופלפל."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_mashed_sweet_potato",
+  "titleHe": "פירה בטטה",
+  "titleEn": "Mashed sweet potato",
+  "photoQuery": "mashed sweet potato",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "sweet_potato",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "milk",
+    "quantity": 0.25,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מקלפים בטטות וחותכים."
+   },
+   {
+    "textHe": "מבשלים 18 דקות עד רכות.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מסננים."
+   },
+   {
+    "textHe": "מועכים עם חמאה וחלב."
+   },
+   {
+    "textHe": "מוסיפים קינמון, מלח ופלפל."
+   },
+   {
+    "textHe": "מגישים חם."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_rice_pilaf_vermicelli",
+  "titleHe": "אורז עם שערות",
+  "titleEn": "Rice with vermicelli",
+  "photoQuery": "rice pilaf",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "noodles",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "שוברים אטריות דקות לחתיכות קטנות."
+   },
+   {
+    "textHe": "מטגנים בשמן עד שמזהיבות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים אורז ומערבבים דקה."
+   },
+   {
+    "textHe": "מוסיפים 3 כוסות מים, אבקת מרק ומלח."
+   },
+   {
+    "textHe": "מכסים ומבשלים 15 דקות על אש נמוכה.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "משהים 5 דקות ומפרקים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_cauliflower_fried",
+  "titleHe": "כרובית מטוגנת פריכה",
+  "titleEn": "Crispy fried cauliflower",
+  "photoQuery": "fried cauliflower",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "cauliflower",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "tahini",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מפרקים כרובית לפרחים ומבשלים 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מסננים ומייבשים."
+   },
+   {
+    "textHe": "מגלגלים בקמח, ביצה ופירורי לחם."
+   },
+   {
+    "textHe": "מטגנים בשמן 3 דקות מכל צד.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מערבבים טחינה, לימון ומים."
+   },
+   {
+    "textHe": "מגישים עם הטחינה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_potato_latkes",
+  "titleHe": "לביבות תפוחי אדמה",
+  "titleEn": "Potato latkes",
+  "photoQuery": "potato latkes",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 5,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מגרדים תפוחי אדמה ובצל ומסחטים נוזלים."
+   },
+   {
+    "textHe": "מערבבים עם ביצים וקמח."
+   },
+   {
+    "textHe": "מתבלים במלח ופלפל."
+   },
+   {
+    "textHe": "מחממים שמן במחבת."
+   },
+   {
+    "textHe": "מטגנים כפות בלילה 4 דקות מכל צד.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מנקזים על נייר ומגישים עם שמנת חמוצה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_coleslaw_simple",
+  "titleHe": "סלט כרוב ביתי",
+  "titleEn": "Simple coleslaw",
+  "photoQuery": "coleslaw",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 15,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "cabbage",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mayonnaise",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "yogurt",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "קוצצים כרוב דק מאוד."
+   },
+   {
+    "textHe": "מגרדים גזר."
+   },
+   {
+    "textHe": "מערבבים מיונז, יוגורט, לימון וסוכר."
+   },
+   {
+    "textHe": "מערבבים עם הירקות."
+   },
+   {
+    "textHe": "מתבלים."
+   },
+   {
+    "textHe": "מקררים 20 דקות.",
+    "timerSeconds": 1200
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_tomato_cucumber_yogurt",
+  "titleHe": "יוגורט עם ירקות וזעתר",
+  "titleEn": "Yogurt with vegetables and zaatar",
+  "photoQuery": "yogurt cucumber",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "breakfast",
+  "totalMinutes": 8,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "yogurt",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "cucumber",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "zaatar",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "pita",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים מלפפון ועגבנייה לקוביות."
+   },
+   {
+    "textHe": "מניחים יוגורט בקערה."
+   },
+   {
+    "textHe": "מוסיפים ירקות."
+   },
+   {
+    "textHe": "מפזרים זעתר ומלח."
+   },
+   {
+    "textHe": "מטפטפים שמן זית."
+   },
+   {
+    "textHe": "מגישים עם פיתה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_club_sandwich_chicken",
+  "titleHe": "כריך עוף צלוי",
+  "titleEn": "Grilled chicken sandwich",
+  "photoQuery": "chicken sandwich",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 20,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bread",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lettuce",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mayonnaise",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים את החזה לשניים ומתבלים."
+   },
+   {
+    "textHe": "צולים בשמן 4 דקות מכל צד.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מקלים לחם."
+   },
+   {
+    "textHe": "מורחים מיונז וחרדל."
+   },
+   {
+    "textHe": "מניחים חסה, עגבנייה ועוף."
+   },
+   {
+    "textHe": "סוגרים וחותכים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_tuna_cucumber_sandwich",
+  "titleHe": "כריך טונה ומלפפון",
+  "titleEn": "Tuna cucumber sandwich",
+  "photoQuery": "tuna sandwich",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 10,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "bread",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tuna",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "cucumber",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mayonnaise",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.25,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מסננים טונה."
+   },
+   {
+    "textHe": "מערבבים עם מיונז, לימון ופלפל."
+   },
+   {
+    "textHe": "פורסים מלפפון."
+   },
+   {
+    "textHe": "מורחים טונה על לחם."
+   },
+   {
+    "textHe": "מניחים מלפפון."
+   },
+   {
+    "textHe": "סוגרים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_veggie_hummus_sandwich",
+  "titleHe": "כריך חומוס וירקות",
+  "titleEn": "Hummus veggie sandwich",
+  "photoQuery": "hummus sandwich",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 10,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "bread",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "hummus",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cucumber",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lettuce",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "pickles",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מורחים חומוס על כל הפרוסות."
+   },
+   {
+    "textHe": "פורסים מלפפון ועגבנייה."
+   },
+   {
+    "textHe": "מוסיפים חסה ומלפפון חמוץ."
+   },
+   {
+    "textHe": "מתבלים במעט מלח."
+   },
+   {
+    "textHe": "סוגרים."
+   },
+   {
+    "textHe": "חותכים לשניים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_cheese_omelet_sandwich",
+  "titleHe": "כריך חביתה וגבינה",
+  "titleEn": "Omelet cheese sandwich",
+  "photoQuery": "omelet sandwich",
+  "servings": 1,
+  "difficulty": "easy",
+  "mealType": "breakfast",
+  "totalMinutes": 10,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "bread",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "yellow_cheese",
+    "quantity": 30,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "טורפים ביצים עם מלח ופלפל."
+   },
+   {
+    "textHe": "מטגנים בחמאה חצי דקה על כל צד.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מקלים לחם."
+   },
+   {
+    "textHe": "מניחים חביתה וגבינה."
+   },
+   {
+    "textHe": "מוסיפים עגבנייה."
+   },
+   {
+    "textHe": "סוגרים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_sausage_pita",
+  "titleHe": "נקניקיות בפיתה",
+  "titleEn": "Sausage pita",
+  "photoQuery": "sausage pita",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 15,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "sausage",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "pita",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "pickles",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים בצל וחותכים עגבנייה."
+   },
+   {
+    "textHe": "מטגנים נקניקיות בשמן 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מחממים פיתות."
+   },
+   {
+    "textHe": "מורחים חרדל."
+   },
+   {
+    "textHe": "מניחים נקניקיות, עגבנייה, בצל וחמוצים."
+   },
+   {
+    "textHe": "מגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_grilled_veg_sandwich",
+  "titleHe": "כריך ירקות צלויים ומוצרלה",
+  "titleEn": "Roasted vegetable mozzarella sandwich",
+  "photoQuery": "grilled vegetable sandwich",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "bread",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "zucchini",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "eggplant",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mozzarella",
+    "quantity": 80,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "pesto",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים ירקות."
+   },
+   {
+    "textHe": "צולים במחבת עם שמן 3 דקות מכל צד.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מורחים פסטו על לחם."
+   },
+   {
+    "textHe": "מניחים ירקות ומוצרלה."
+   },
+   {
+    "textHe": "סוגרים."
+   },
+   {
+    "textHe": "מחממים במחבת עד שהגבינה נמסה.",
+    "timerSeconds": 180
+   }
+  ]
+ },
+ {
+  "id": "rv3_x1_egg_salad_toast",
+  "titleHe": "טוסט סלט ביצים",
+  "titleEn": "Egg salad toast",
+  "photoQuery": "egg salad toast",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "breakfast",
+  "totalMinutes": 20,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "egg",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mayonnaise",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bread",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים ביצים קשות 10 דקות.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מצננים ומקלפים."
+   },
+   {
+    "textHe": "קוצצים."
+   },
+   {
+    "textHe": "מערבבים עם מיונז, חרדל ובצל ירוק."
+   },
+   {
+    "textHe": "מתבלים."
+   },
+   {
+    "textHe": "מורחים על לחם קלוי."
+   }
+  ]
+ }
+]
