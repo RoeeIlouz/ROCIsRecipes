@@ -22,6 +22,7 @@ import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
 import 'package:rocis_recipes/features/ai/recipe_ai.dart';
 import 'package:rocis_recipes/features/recipes/photo_source.dart';
+import 'package:rocis_recipes/features/recipes/recipe_updater.dart';
 import 'package:rocis_recipes/features/recipes/recipe_web.dart';
 import 'package:rocis_recipes/features/recipes/starter_recipe_loader.dart';
 import 'package:rocis_recipes/features/shopping/shopping_repository.dart';
@@ -79,6 +80,15 @@ class AppInitializer {
       await settings.setStarterVersion(kStarterVersion);
     }
 
+    final recipeUpdater = RecipeUpdater(
+      source: HttpRecipePackSource(http.Client()),
+      recipes: recipes,
+      settings: settings,
+      catalog: catalog,
+    );
+    // New recipes arrive in the background; the app starts with what is already on the phone.
+    unawaited(recipeUpdater.checkInBackground(DateTime.now()));
+
     final bundled = PriceSnapshot.fromGzipBytes(
       (await rootBundle.load(
         'assets/prices/snapshot.json.gz',
@@ -114,6 +124,7 @@ class AppInitializer {
       Provider<PhotoSource>.value(value: ImagePickerPhotoSource()),
       Provider<RecipeAi>.value(value: recipeAi),
       Provider<WebPageSource>.value(value: HttpWebPageSource()),
+      Provider<RecipeUpdater>.value(value: recipeUpdater),
       Provider<LaunchUrl>.value(
         value: (uri) => launchUrl(uri, mode: LaunchMode.externalApplication),
       ),

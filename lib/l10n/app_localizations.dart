@@ -1220,6 +1220,36 @@ abstract class AppLocalizations {
   /// **'Favorites'**
   String get favoritesChip;
 
+  /// No description provided for @menuTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'More'**
+  String get menuTooltip;
+
+  /// No description provided for @menuUpdateRecipes.
+  ///
+  /// In en, this message translates to:
+  /// **'Check for new recipes'**
+  String get menuUpdateRecipes;
+
+  /// No description provided for @updateRecipesUpdated.
+  ///
+  /// In en, this message translates to:
+  /// **'Recipes updated to the newest list'**
+  String get updateRecipesUpdated;
+
+  /// No description provided for @updateRecipesUpToDate.
+  ///
+  /// In en, this message translates to:
+  /// **'You already have the newest recipes'**
+  String get updateRecipesUpToDate;
+
+  /// No description provided for @updateRecipesFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not update the recipes. Check your connection and try again.'**
+  String get updateRecipesFailed;
+
   /// No description provided for @budgetTitle.
   ///
   /// In en, this message translates to:

@@ -6,6 +6,7 @@ import 'package:rocis_recipes/features/catalog/ingredient_label.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
+import 'package:rocis_recipes/features/recipes/recipe_filters.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_card.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_format.dart';
@@ -104,11 +105,6 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
     final theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          recipeTitle(context, recipe),
-          maxLines: 2,
-          overflow: TextOverflow.ellipsis,
-        ),
         actions: [
           IconButton(
             key: const Key('favorite_button'),
@@ -136,13 +132,68 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          RecipePhotoView(
-            photo: recipe.photo,
-            filePath: recipe.imagePath,
-            height: 220,
-            borderRadius: BorderRadius.circular(24),
+          Stack(
+            key: const Key('recipe_hero'),
+            children: [
+              RecipePhotoView(
+                photo: recipe.photo,
+                filePath: recipe.imagePath,
+                kind: recipeKind(recipe),
+                width: double.infinity,
+                height: 260,
+                borderRadius: BorderRadius.circular(24),
+              ),
+              Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(24),
+                    gradient: const LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      stops: [0.45, 1.0],
+                      colors: [Colors.transparent, Color(0xE6000000)],
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 16,
+                right: 16,
+                bottom: 14,
+                child: Text(
+                  recipeTitle(context, recipe),
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
+                  style: theme.textTheme.headlineSmall?.copyWith(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+            ],
           ),
           if (recipe.photo != null) PhotoCredit(photo: recipe.photo!),
+          const SizedBox(height: 12),
+          FilledButton.icon(
+            key: const Key('start_cooking_button'),
+            style: FilledButton.styleFrom(
+              minimumSize: const Size.fromHeight(54),
+            ),
+            onPressed: () => context.push('/cook/${recipe.id}'),
+            icon: const Icon(Icons.play_arrow_rounded),
+            label: Text(l10n.startCooking),
+          ),
+          if (missing.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            OutlinedButton(
+              key: const Key('add_missing_button'),
+              style: OutlinedButton.styleFrom(
+                minimumSize: const Size.fromHeight(48),
+              ),
+              onPressed: addMissing,
+              child: Text(l10n.addMissingToList),
+            ),
+          ],
           const SizedBox(height: 12),
           Wrap(
             spacing: 8,
@@ -190,23 +241,6 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
               optional: ing.optional,
             ),
           const SizedBox(height: 16),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: [
-              FilledButton(
-                key: const Key('start_cooking_button'),
-                onPressed: () => context.push('/cook/${recipe.id}'),
-                child: Text(l10n.startCooking),
-              ),
-              if (missing.isNotEmpty)
-                OutlinedButton(
-                  key: const Key('add_missing_button'),
-                  onPressed: addMissing,
-                  child: Text(l10n.addMissingToList),
-                ),
-            ],
-          ),
           const SizedBox(height: 16),
           Text(l10n.stepsTitle, style: theme.textTheme.titleLarge),
           for (var i = 0; i < recipe.steps.length; i++)

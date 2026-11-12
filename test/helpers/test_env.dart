@@ -14,6 +14,7 @@ import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/prices/location_provider.dart';
 import 'package:rocis_recipes/features/ai/recipe_ai.dart';
 import 'package:rocis_recipes/features/recipes/photo_source.dart';
+import 'package:rocis_recipes/features/recipes/recipe_updater.dart';
 import 'package:rocis_recipes/features/recipes/recipe_web.dart';
 import 'package:rocis_recipes/features/prices/nearby_controller.dart';
 import 'package:rocis_recipes/features/prices/price_repository.dart';
@@ -144,6 +145,22 @@ class FakeRecipeAi implements RecipeAi {
   }
 }
 
+/// Recipe pack source with a fixed answer, for tests.
+class FakeRecipePackSource implements RecipePackSource {
+  String? manifest;
+  List<int>? bytes;
+  int packFetches = 0;
+
+  @override
+  Future<String?> fetchManifest() async => manifest;
+
+  @override
+  Future<List<int>?> fetchPack() async {
+    packFetches++;
+    return bytes;
+  }
+}
+
 /// Web page source with a fixed answer, for tests.
 class FakeWebPageSource implements WebPageSource {
   String? html;
@@ -199,6 +216,13 @@ class TestEnv {
   final FakePhotoSource photos = FakePhotoSource();
   final FakeRecipeAi ai = FakeRecipeAi();
   final FakeWebPageSource web = FakeWebPageSource();
+  final FakeRecipePackSource packs = FakeRecipePackSource();
+  late final RecipeUpdater recipeUpdater = RecipeUpdater(
+    source: packs,
+    recipes: recipes,
+    settings: settings,
+    catalog: catalog,
+  );
 
   static Future<TestEnv> create({
     List<Recipe> recipes = const [],
@@ -248,6 +272,7 @@ class TestEnv {
     Provider<PhotoSource>.value(value: photos),
     Provider<RecipeAi>.value(value: ai),
     Provider<WebPageSource>.value(value: web),
+    Provider<RecipeUpdater>.value(value: recipeUpdater),
     Provider<LaunchUrl>.value(
       value: (uri) async {
         launched.add(uri);

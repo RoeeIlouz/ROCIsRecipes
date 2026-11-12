@@ -29,6 +29,13 @@ const _almost = Recipe(
   totalMinutes: 15,
 );
 
+/// A tall screen so the whole dish page is built (the list builds only what is on screen).
+void _tall(WidgetTester tester) {
+  tester.view.physicalSize = const Size(900, 3000);
+  tester.view.devicePixelRatio = 1.0;
+  addTearDown(tester.view.reset);
+}
+
 void main() {
   Future<TestEnv> setUpEnv() async {
     final env = await TestEnv.create(recipes: [_cookable, _almost]);
@@ -39,6 +46,7 @@ void main() {
   testWidgets(
     'suggestions shows cook now and almost there tabs from pantry state',
     (tester) async {
+      _tall(tester);
       final env = await setUpEnv();
       await tester.pumpWidget(env.wrapApp('/suggestions'));
       await tester.pumpAndSettle();
@@ -55,6 +63,7 @@ void main() {
   testWidgets(
     'almost there card shows missing count and detail lists missing ingredients',
     (tester) async {
+      _tall(tester);
       final env = await setUpEnv();
       await tester.pumpWidget(env.wrapApp('/suggestions'));
       await tester.pumpAndSettle();
@@ -73,6 +82,7 @@ void main() {
   testWidgets(
     'add missing to shopping list button adds items and skips duplicates',
     (tester) async {
+      _tall(tester);
       final env = await setUpEnv();
       await tester.pumpWidget(env.wrapApp('/recipe/almost'));
       await tester.pumpAndSettle();
@@ -94,6 +104,7 @@ void main() {
   testWidgets(
     'cooking mode steps forward and back and shows a step timer when timerSeconds is set',
     (tester) async {
+      _tall(tester);
       final env = await setUpEnv();
       await tester.pumpWidget(env.wrapApp('/cook/cookable'));
       await tester.pumpAndSettle();
@@ -115,6 +126,7 @@ void main() {
   testWidgets(
     'RecipeCard with a 120 character Hebrew title at 320 dp width does not overflow',
     (tester) async {
+      _tall(tester);
       final env = await TestEnv.create();
       final longTitle = List.filled(24, 'מתכון').join(' ');
       expect(longTitle.length, greaterThanOrEqualTo(120));
@@ -148,6 +160,7 @@ void main() {
   testWidgets('timer counts down from the first step when Start is pressed', (
     tester,
   ) async {
+    _tall(tester);
     final env = await setUpEnv();
     await tester.pumpWidget(env.wrapApp('/cook/cookable'));
     await tester.pumpAndSettle();
@@ -166,6 +179,7 @@ void main() {
   testWidgets('finished timer shows a done state instead of resetting', (
     tester,
   ) async {
+    _tall(tester);
     final env = await TestEnv.create(
       recipes: const [
         Recipe(

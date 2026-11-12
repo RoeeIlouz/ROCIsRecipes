@@ -673,6 +673,22 @@ class AppLocalizationsHe extends AppLocalizations {
   String get favoritesChip => 'מועדפים';
 
   @override
+  String get menuTooltip => 'עוד';
+
+  @override
+  String get menuUpdateRecipes => 'בדיקת מתכונים חדשים';
+
+  @override
+  String get updateRecipesUpdated => 'המתכונים עודכנו לרשימה החדשה';
+
+  @override
+  String get updateRecipesUpToDate => 'יש לכם כבר את המתכונים העדכניים';
+
+  @override
+  String get updateRecipesFailed =>
+      'לא הצלחתי לעדכן את המתכונים. בדקו את החיבור ונסו שוב.';
+
+  @override
   String get budgetTitle => 'תקציב שבועי';
 
   @override

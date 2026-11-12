@@ -13,6 +13,7 @@ import 'package:rocis_recipes/features/prices/price_snapshot.dart';
 import 'package:rocis_recipes/features/prices/ui/budget_card.dart';
 import 'package:rocis_recipes/features/prices/ui/price_summary.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
+import 'package:rocis_recipes/features/recipes/recipe_filters.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_card.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_photo.dart';
@@ -457,6 +458,7 @@ class _DayCard extends StatelessWidget {
                       RecipePhotoView(
                         photo: r.photo,
                         filePath: r.imagePath,
+                        kind: recipeKind(r),
                         width: double.infinity,
                         height: 180,
                         borderRadius: BorderRadius.circular(20),
@@ -487,6 +489,7 @@ class _DayCard extends StatelessWidget {
                       RecipePhotoView(
                         photo: r.photo,
                         filePath: r.imagePath,
+                        kind: recipeKind(r),
                         width: 72,
                         height: 72,
                       ),

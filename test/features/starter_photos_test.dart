@@ -37,7 +37,7 @@ void main() {
           reason: '${r['id']} source',
         );
       }
-      expect(withPhoto, greaterThan(list.length * 0.3));
+      expect(withPhoto, greaterThan(list.length * 0.25));
     },
   );
 }

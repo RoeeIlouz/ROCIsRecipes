@@ -674,6 +674,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get favoritesChip => 'Favorites';
 
   @override
+  String get menuTooltip => 'More';
+
+  @override
+  String get menuUpdateRecipes => 'Check for new recipes';
+
+  @override
+  String get updateRecipesUpdated => 'Recipes updated to the newest list';
+
+  @override
+  String get updateRecipesUpToDate => 'You already have the newest recipes';
+
+  @override
+  String get updateRecipesFailed =>
+      'Could not update the recipes. Check your connection and try again.';
+
+  @override
   String get budgetTitle => 'Weekly budget';
 
   @override

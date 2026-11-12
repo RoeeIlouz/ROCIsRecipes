@@ -28,10 +28,18 @@ const _other = Recipe(
 String _amount(WidgetTester tester, String id) =>
     tester.widget<Text>(find.byKey(Key('amount_$id'))).data!;
 
+/// A tall screen so the whole dish page is built (the list builds only what is on screen).
+void _tall(WidgetTester tester) {
+  tester.view.physicalSize = const Size(900, 3000);
+  tester.view.devicePixelRatio = 1.0;
+  addTearDown(tester.view.reset);
+}
+
 void main() {
   testWidgets('the servings stepper rescales every ingredient amount', (
     tester,
   ) async {
+    _tall(tester);
     final env = await TestEnv.create(recipes: [_omelette]);
     await tester.pumpWidget(env.wrapApp('/recipe/omelette'));
     await tester.pumpAndSettle();
@@ -50,6 +58,7 @@ void main() {
   });
 
   testWidgets('the servings stepper stays between 1 and 24', (tester) async {
+    _tall(tester);
     final env = await TestEnv.create(recipes: [_omelette]);
     await tester.pumpWidget(env.wrapApp('/recipe/omelette'));
     await tester.pumpAndSettle();
@@ -60,6 +69,7 @@ void main() {
   });
 
   testWidgets('the shopping list gets the scaled amounts', (tester) async {
+    _tall(tester);
     final env = await TestEnv.create(recipes: [_omelette]);
     await tester.pumpWidget(env.wrapApp('/recipe/omelette'));
     await tester.pumpAndSettle();
@@ -86,6 +96,7 @@ void main() {
   testWidgets('the heart on a recipe toggles its favorite state', (
     tester,
   ) async {
+    _tall(tester);
     final env = await TestEnv.create(recipes: [_omelette]);
     await tester.pumpWidget(env.wrapApp('/recipe/omelette'));
     await tester.pumpAndSettle();
@@ -98,6 +109,7 @@ void main() {
   });
 
   testWidgets('the favorites chip shows only favorite dishes', (tester) async {
+    _tall(tester);
     final env = await TestEnv.create(recipes: [_omelette, _other]);
     await env.pantry.upsert(const PantryItem(ingredientId: 'egg'));
     await env.pantry.upsert(const PantryItem(ingredientId: 'tomato'));

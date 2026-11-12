@@ -1,0 +1,78 @@
+name: Recipe pack
+
+# Publishes the recipe list to the `data` branch whenever it changes on main, so installed apps can
+# download new recipes without an app update. Uses only the built-in GITHUB_TOKEN; no secrets.
+# The app applies a pack only when its version (kStarterVersion) is newer than the one it has.
+on:
+  push:
+    branches: [main]
+    paths:
+      - assets/recipes/starter_he.json
+      - lib/features/recipes/starter_recipe_loader.dart
+      - tools/recipes/make_pack.py
+      - .github/workflows/recipes.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Shares a group with the price workflow: both push to the same branch.
+concurrency:
+  group: data-branch
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Recipe tool tests
+        run: python -m unittest discover -s tools/recipes/tests
+
+      - name: Build the pack
+        run: |
+          mkdir -p out
+          python tools/recipes/make_pack.py out
+          ls -l out
+
+      - name: Publish to the data branch
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          remote="https://x-access-token:${TOKEN}@github.com/${REPO}.git"
+          rm -rf data-branch
+          if git ls-remote --exit-code --heads "$remote" data >/dev/null 2>&1; then
+            git clone --depth 1 --branch data "$remote" data-branch
+          else
+            mkdir data-branch
+            git -C data-branch init -b data
+            git -C data-branch remote add origin "$remote"
+          fi
+          cp out/recipes.json.gz data-branch/
+          # Keep the old manifest's date when the pack bytes did not change.
+          if [ -f data-branch/recipes_manifest.json ] && \
+             python -c "import json,sys; a=json.load(open('data-branch/recipes_manifest.json')); b=json.load(open('out/recipes_manifest.json')); sys.exit(0 if (a['sha256'],a['version'])==(b['sha256'],b['version']) else 1)"; then
+            echo "Recipe pack unchanged."
+          else
+            cp out/recipes_manifest.json data-branch/
+          fi
+          cd data-branch
+          git add recipes.json.gz recipes_manifest.json
+          if git diff --cached --quiet; then
+            echo "Nothing to publish."
+          else
+            git commit -m "Recipe pack v$(python -c "import json; print(json.load(open('recipes_manifest.json'))['version'])")"
+            git push origin data
+          fi

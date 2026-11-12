@@ -16,6 +16,7 @@ class RecipePhotoView extends StatelessWidget {
     this.filePath,
     this.width,
     this.height,
+    this.kind,
     this.borderRadius = const BorderRadius.all(Radius.circular(18)),
   });
 
@@ -25,11 +26,14 @@ class RecipePhotoView extends StatelessWidget {
   final String? filePath;
   final double? width;
   final double? height;
+
+  /// The dish's [recipeKind]; tints and labels the placeholder shown when there is no photo.
+  final String? kind;
   final BorderRadius borderRadius;
 
   @override
   Widget build(BuildContext context) {
-    final placeholder = _Placeholder(width: width, height: height);
+    final placeholder = _Placeholder(width: width, height: height, kind: kind);
     final p = photo;
     final f = filePath;
     return ClipRRect(
@@ -65,15 +69,43 @@ class RecipePhotoView extends StatelessWidget {
   }
 }
 
+class _KindStyle {
+  const _KindStyle(this.icon, this.color);
+  final IconData icon;
+  final Color color;
+}
+
+const _kindStyles = <String, _KindStyle>{
+  'chicken': _KindStyle(Icons.dinner_dining, Color(0xFFF5A524)),
+  'beef': _KindStyle(Icons.kebab_dining, Color(0xFFD0605A)),
+  'fish': _KindStyle(Icons.set_meal, Color(0xFF3FA7C4)),
+  'vegetarian': _KindStyle(Icons.eco, Color(0xFF4CAF7A)),
+  'dessert': _KindStyle(Icons.bakery_dining, Color(0xFFD981A8)),
+  'breakfast': _KindStyle(Icons.free_breakfast, Color(0xFFE8C44A)),
+};
+
 class _Placeholder extends StatelessWidget {
-  const _Placeholder({this.width, this.height});
+  const _Placeholder({this.width, this.height, this.kind});
 
   final double? width;
   final double? height;
+  final String? kind;
 
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
+    final style = kind == null ? null : _kindStyles[kind];
+    final base = scheme.surfaceContainerHigh;
+    final colors = style == null
+        ? [scheme.primaryContainer, scheme.secondaryContainer]
+        : [
+            Color.alphaBlend(style.color.withValues(alpha: 0.42), base),
+            Color.alphaBlend(style.color.withValues(alpha: 0.14), base),
+          ];
+    final side = [width, height]
+        .whereType<double>()
+        .where((v) => v.isFinite)
+        .fold<double?>(null, (m, v) => m == null || v < m ? v : m);
     return Container(
       key: const Key('photo_placeholder'),
       width: width,
@@ -82,12 +114,17 @@ class _Placeholder extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [scheme.primaryContainer, scheme.secondaryContainer],
+          colors: colors,
         ),
       ),
-      child: Icon(
-        Icons.restaurant_rounded,
-        color: scheme.onPrimaryContainer.withValues(alpha: 0.6),
+      child: Center(
+        child: Icon(
+          style?.icon ?? Icons.restaurant_rounded,
+          size: side == null ? null : (side * 0.42).clamp(24, 72).toDouble(),
+          color: style == null
+              ? scheme.onPrimaryContainer.withValues(alpha: 0.6)
+              : Color.lerp(style.color, Colors.white, 0.4),
+        ),
       ),
     );
   }

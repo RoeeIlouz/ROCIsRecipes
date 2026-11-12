@@ -93,6 +93,15 @@ class SettingsRepository extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// When the app last looked for a newer recipe pack.
+  DateTime? get lastRecipeCheck {
+    final ms = _box.get('lastRecipeCheck') as int?;
+    return ms == null ? null : DateTime.fromMillisecondsSinceEpoch(ms);
+  }
+
+  Future<void> setLastRecipeCheck(DateTime when) =>
+      _box.put('lastRecipeCheck', when.millisecondsSinceEpoch);
+
   /// The last position used to find stores, kept only on this device (and its area name, if picked).
   ({UserLocation location, String? label})? get savedLocation {
     final raw = _box.get('lastLocation');

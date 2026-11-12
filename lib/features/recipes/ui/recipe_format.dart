@@ -75,6 +75,13 @@ String proteinLabel(AppLocalizations l10n, String kind) => switch (kind) {
   _ => kind,
 };
 
+/// Name of a [recipeKind] in the current language.
+String kindLabel(AppLocalizations l10n, String kind) => switch (kind) {
+  'dessert' => l10n.mealDessert,
+  'breakfast' => l10n.mealBreakfast,
+  _ => proteinLabel(l10n, kind),
+};
+
 String difficultyLabel(AppLocalizations l10n, String difficulty) =>
     switch (difficulty) {
       'easy' => l10n.diffEasy,

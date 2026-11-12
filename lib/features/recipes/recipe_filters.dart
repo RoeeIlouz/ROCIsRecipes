@@ -38,3 +38,15 @@ bool matchesFilters(
   if (mealPrepOnly && !recipe.mealPrep) return false;
   return true;
 }
+
+/// The one label a dish is shown with (placeholder picture, tag): `dessert` and `breakfast` come first,
+/// then its main protein (chicken before beef before fish), else `vegetarian`.
+String recipeKind(Recipe recipe) {
+  if (recipe.mealType == 'dessert') return 'dessert';
+  if (recipe.mealType == 'breakfast') return 'breakfast';
+  final kinds = proteinKinds(recipe);
+  for (final k in const ['chicken', 'beef', 'fish']) {
+    if (kinds.contains(k)) return k;
+  }
+  return 'vegetarian';
+}

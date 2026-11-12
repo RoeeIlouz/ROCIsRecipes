@@ -10,6 +10,7 @@ import 'package:rocis_recipes/features/recipes/recipe.dart';
 import 'package:rocis_recipes/features/recipes/recipe_filters.dart';
 import 'package:rocis_recipes/features/recipes/recipe_matcher.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
+import 'package:rocis_recipes/features/recipes/recipe_updater.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_card.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_format.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
@@ -108,11 +109,42 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
               icon: const Icon(Icons.auto_awesome),
               onPressed: () => inventFromPantry(context),
             ),
-            IconButton(
-              key: const Key('credits_button'),
-              tooltip: l10n.creditsTitle,
-              icon: const Icon(Icons.photo_library_outlined),
-              onPressed: () => context.push('/credits'),
+            PopupMenuButton<String>(
+              key: const Key('menu_button'),
+              tooltip: l10n.menuTooltip,
+              onSelected: (value) async {
+                if (value == 'credits') {
+                  context.push('/credits');
+                  return;
+                }
+                final messenger = ScaffoldMessenger.of(context);
+                final result = await context.read<RecipeUpdater>().update();
+                final text = switch (result.status) {
+                  RecipeUpdateStatus.updated => l10n.updateRecipesUpdated,
+                  RecipeUpdateStatus.upToDate => l10n.updateRecipesUpToDate,
+                  RecipeUpdateStatus.failed => l10n.updateRecipesFailed,
+                };
+                messenger.showSnackBar(
+                  SnackBar(
+                    content: Text(
+                      text,
+                      key: const Key('recipes_update_result'),
+                    ),
+                  ),
+                );
+              },
+              itemBuilder: (_) => [
+                PopupMenuItem(
+                  key: const Key('menu_update_recipes'),
+                  value: 'update',
+                  child: Text(l10n.menuUpdateRecipes),
+                ),
+                PopupMenuItem(
+                  key: const Key('menu_credits'),
+                  value: 'credits',
+                  child: Text(l10n.creditsTitle),
+                ),
+              ],
             ),
           ],
           bottom: TabBar(
