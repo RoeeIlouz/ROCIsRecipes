@@ -157,6 +157,61 @@ class AppLocalizationsEn extends AppLocalizations {
   String get navShopping => 'Shopping';
 
   @override
+  String get navPlan => 'Menu';
+
+  @override
+  String get planTitle => 'Weekly menu';
+
+  @override
+  String get planIntro =>
+      'Pick a supermarket, set a budget, and we build a week of meals that fits it.';
+
+  @override
+  String get planBuild => 'Build my week';
+
+  @override
+  String get planRebuild => 'Rebuild the week';
+
+  @override
+  String get planAddToList => 'Add to shopping list';
+
+  @override
+  String get planAdded => 'The week\'s ingredients were added to your list';
+
+  @override
+  String get planTotal => 'to buy this week';
+
+  @override
+  String get planTonight => 'Tonight';
+
+  @override
+  String get planCook => 'Cook';
+
+  @override
+  String get planSwap => 'Swap dish';
+
+  @override
+  String get planSkip => 'Skip this day';
+
+  @override
+  String get planUnskip => 'Bring this day back';
+
+  @override
+  String get planHide => 'Never suggest again';
+
+  @override
+  String get planEmptyDay => 'No dish fits the budget';
+
+  @override
+  String get planSkippedDay => 'Skipped';
+
+  @override
+  String get planSupermarket => 'Supermarket';
+
+  @override
+  String get planNoStore => 'Pick a location or area to price the week';
+
+  @override
   String get shoppingTitle => 'Shopping list';
 
   @override

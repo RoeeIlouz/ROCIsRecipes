@@ -380,6 +380,114 @@ abstract class AppLocalizations {
   /// **'Shopping'**
   String get navShopping;
 
+  /// No description provided for @navPlan.
+  ///
+  /// In en, this message translates to:
+  /// **'Menu'**
+  String get navPlan;
+
+  /// No description provided for @planTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly menu'**
+  String get planTitle;
+
+  /// No description provided for @planIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a supermarket, set a budget, and we build a week of meals that fits it.'**
+  String get planIntro;
+
+  /// No description provided for @planBuild.
+  ///
+  /// In en, this message translates to:
+  /// **'Build my week'**
+  String get planBuild;
+
+  /// No description provided for @planRebuild.
+  ///
+  /// In en, this message translates to:
+  /// **'Rebuild the week'**
+  String get planRebuild;
+
+  /// No description provided for @planAddToList.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to shopping list'**
+  String get planAddToList;
+
+  /// No description provided for @planAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'The week\'s ingredients were added to your list'**
+  String get planAdded;
+
+  /// No description provided for @planTotal.
+  ///
+  /// In en, this message translates to:
+  /// **'to buy this week'**
+  String get planTotal;
+
+  /// No description provided for @planTonight.
+  ///
+  /// In en, this message translates to:
+  /// **'Tonight'**
+  String get planTonight;
+
+  /// No description provided for @planCook.
+  ///
+  /// In en, this message translates to:
+  /// **'Cook'**
+  String get planCook;
+
+  /// No description provided for @planSwap.
+  ///
+  /// In en, this message translates to:
+  /// **'Swap dish'**
+  String get planSwap;
+
+  /// No description provided for @planSkip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip this day'**
+  String get planSkip;
+
+  /// No description provided for @planUnskip.
+  ///
+  /// In en, this message translates to:
+  /// **'Bring this day back'**
+  String get planUnskip;
+
+  /// No description provided for @planHide.
+  ///
+  /// In en, this message translates to:
+  /// **'Never suggest again'**
+  String get planHide;
+
+  /// No description provided for @planEmptyDay.
+  ///
+  /// In en, this message translates to:
+  /// **'No dish fits the budget'**
+  String get planEmptyDay;
+
+  /// No description provided for @planSkippedDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Skipped'**
+  String get planSkippedDay;
+
+  /// No description provided for @planSupermarket.
+  ///
+  /// In en, this message translates to:
+  /// **'Supermarket'**
+  String get planSupermarket;
+
+  /// No description provided for @planNoStore.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a location or area to price the week'**
+  String get planNoStore;
+
   /// No description provided for @shoppingTitle.
   ///
   /// In en, this message translates to:

@@ -58,6 +58,49 @@ class SettingsRepository extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// The weekly menu: one entry per day, a recipe id, [kSkippedDay] text, or null for no dish.
+  List<String?> get weekPlan => [
+    for (final e in ((_box.get('weekPlan') as List?) ?? const []))
+      (e as String).isEmpty ? null : e,
+  ];
+
+  Future<void> setWeekPlan(List<String?> plan) async {
+    await _box.put('weekPlan', [for (final e in plan) e ?? '']);
+    notifyListeners();
+  }
+
+  /// First day of the stored weekly menu.
+  DateTime? get planStart {
+    final raw = _box.get('planStart') as String?;
+    return raw == null ? null : DateTime.tryParse(raw);
+  }
+
+  Future<void> setPlanStart(DateTime day) async {
+    await _box.put('planStart', day.toIso8601String());
+    notifyListeners();
+  }
+
+  /// Supermarket chain the weekly menu is priced at (null = the nearest one with prices).
+  String? get planChainId => _box.get('planChain') as String?;
+
+  Future<void> setPlanChain(String? chainId) async {
+    if (chainId == null) {
+      await _box.delete('planChain');
+    } else {
+      await _box.put('planChain', chainId);
+    }
+    notifyListeners();
+  }
+
+  /// Dishes the user never wants the weekly menu to suggest.
+  Set<String> get hiddenRecipeIds =>
+      ((_box.get('hiddenRecipes') as List?) ?? const []).cast<String>().toSet();
+
+  Future<void> hideRecipe(String recipeId) async {
+    await _box.put('hiddenRecipes', [...hiddenRecipeIds, recipeId]);
+    notifyListeners();
+  }
+
   /// Weekly food budget in NIS, or null when the user has not set one.
   int? get weeklyBudget => _box.get('weeklyBudget') as int?;
 

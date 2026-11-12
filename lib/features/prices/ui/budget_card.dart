@@ -6,19 +6,20 @@ import 'package:rocis_recipes/features/prices/ui/price_summary.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
 import 'package:rocis_recipes/shared/ui/widgets/glass_container.dart';
 
+/// Asks for the weekly food budget and stores it (empty answer or "no budget" removes it).
+Future<void> editWeeklyBudget(BuildContext context, int? current) async {
+  final settings = context.read<SettingsRepository>();
+  final result = await showDialog<_BudgetEdit>(
+    context: context,
+    builder: (_) => _BudgetDialog(current: current),
+  );
+  if (result == null) return;
+  await settings.setWeeklyBudget(result.value);
+}
+
 /// How much of the weekly budget the shopping list uses at the cheapest chain, with a way to set it.
 class BudgetCard extends StatelessWidget {
   const BudgetCard({super.key});
-
-  Future<void> _edit(BuildContext context, int? current) async {
-    final settings = context.read<SettingsRepository>();
-    final result = await showDialog<_BudgetEdit>(
-      context: context,
-      builder: (_) => _BudgetDialog(current: current),
-    );
-    if (result == null) return;
-    await settings.setWeeklyBudget(result.value);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +35,7 @@ class BudgetCard extends StatelessWidget {
           alignment: AlignmentDirectional.centerStart,
           child: OutlinedButton.icon(
             key: const Key('budget_edit_button'),
-            onPressed: () => _edit(context, null),
+            onPressed: () => editWeeklyBudget(context, null),
             icon: const Icon(Icons.savings_outlined),
             label: Text(l10n.budgetSet),
           ),
@@ -67,7 +68,7 @@ class BudgetCard extends StatelessWidget {
                   key: const Key('budget_edit_button'),
                   tooltip: l10n.budgetEdit,
                   icon: const Icon(Icons.edit_outlined),
-                  onPressed: () => _edit(context, budget),
+                  onPressed: () => editWeeklyBudget(context, budget),
                 ),
               ],
             ),

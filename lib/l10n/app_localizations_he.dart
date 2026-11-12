@@ -157,6 +157,61 @@ class AppLocalizationsHe extends AppLocalizations {
   String get navShopping => 'קניות';
 
   @override
+  String get navPlan => 'תפריט';
+
+  @override
+  String get planTitle => 'תפריט שבועי';
+
+  @override
+  String get planIntro =>
+      'בחרו סופרמרקט, קבעו תקציב ואנחנו נבנה שבוע של ארוחות שמתאים לו.';
+
+  @override
+  String get planBuild => 'בנו לי שבוע';
+
+  @override
+  String get planRebuild => 'בנייה מחדש';
+
+  @override
+  String get planAddToList => 'הוסיפו לרשימת הקניות';
+
+  @override
+  String get planAdded => 'מצרכי השבוע נוספו לרשימה';
+
+  @override
+  String get planTotal => 'לקנייה השבוע';
+
+  @override
+  String get planTonight => 'הערב';
+
+  @override
+  String get planCook => 'לבשל';
+
+  @override
+  String get planSwap => 'החלפת מנה';
+
+  @override
+  String get planSkip => 'דלגו על היום';
+
+  @override
+  String get planUnskip => 'החזירו את היום';
+
+  @override
+  String get planHide => 'אל תציעו שוב';
+
+  @override
+  String get planEmptyDay => 'אין מנה שמתאימה לתקציב';
+
+  @override
+  String get planSkippedDay => 'דילגתם';
+
+  @override
+  String get planSupermarket => 'סופרמרקט';
+
+  @override
+  String get planNoStore => 'בחרו מיקום או אזור כדי לתמחר את השבוע';
+
+  @override
   String get shoppingTitle => 'רשימת קניות';
 
   @override
