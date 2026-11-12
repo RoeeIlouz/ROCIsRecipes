@@ -40,6 +40,8 @@ List<String> _required(Recipe r) => [
 /// time and appliances, are never repeated, and the same main protein two days in a row is avoided
 /// when there is a comparable alternative. A day with no dish that fits the budget is left null.
 ///
+/// Dishes that use any of [excludedIngredientIds] (even as an optional ingredient) are never chosen.
+///
 /// With [current] and [rebuildDays] only those days are chosen again (the others are kept and their
 /// ingredients count), which is how one dish is swapped. [seed] varies ties so the result is repeatable.
 List<String?> generateWeekPlan({
@@ -51,6 +53,7 @@ List<String?> generateWeekPlan({
   required PriceStore? store,
   double? budget,
   Set<String> excludedIds = const {},
+  Set<String> excludedIngredientIds = const {},
   List<String?>? current,
   Set<int>? rebuildDays,
   int days = 7,
@@ -71,7 +74,10 @@ List<String?> generateWeekPlan({
       if (kPlanMealTypes.contains(r.mealType) &&
           r.totalMinutes <= maxMinutes &&
           appliances.containsAll(r.appliances) &&
-          !excludedIds.contains(r.id))
+          !excludedIds.contains(r.id) &&
+          !r.ingredients.any(
+            (i) => excludedIngredientIds.contains(i.ingredientId),
+          ))
         r,
   ];
 

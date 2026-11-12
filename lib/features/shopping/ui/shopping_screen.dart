@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
@@ -64,6 +65,29 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
       appBar: AppBar(
         title: Text(l10n.shoppingTitle),
         actions: [
+          if (open.isNotEmpty)
+            IconButton(
+              key: const Key('copy_list_button'),
+              tooltip: l10n.listCopy,
+              icon: const Icon(Icons.copy_rounded),
+              onPressed: () async {
+                final text = [
+                  l10n.shoppingTitle,
+                  for (final i in open) '• ${_lineOf(l10n, i)}',
+                ].join('\n');
+                await Clipboard.setData(ClipboardData(text: text));
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                        l10n.listCopied,
+                        key: const Key('list_copied'),
+                      ),
+                    ),
+                  );
+                }
+              },
+            ),
           IconButton(
             key: const Key('stores_button'),
             tooltip: l10n.storesTooltip,
@@ -76,12 +100,7 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
               tooltip: l10n.sendToTasks,
               icon: const Icon(Icons.add_task_rounded),
               onPressed: () async {
-                final lines = [
-                  for (final i in open)
-                    i.quantity == null
-                        ? i.label
-                        : '${i.label} ${formatAmount(i.quantity!)}${i.unit == null ? '' : ' ${unitLabel(l10n, i.unit!, i.quantity!)}'}',
-                ];
+                final lines = [for (final i in open) _lineOf(l10n, i)];
                 final ok = await context.read<LaunchUrl>()(
                   buildTasksUri(l10n.shoppingTitle, lines),
                 );
@@ -178,3 +197,8 @@ class ShoppingItemTile extends StatelessWidget {
     );
   }
 }
+
+/// One list item as text: "name 2 cups", or just the name when it has no quantity.
+String _lineOf(AppLocalizations l10n, ShoppingItem i) => i.quantity == null
+    ? i.label
+    : '${i.label} ${formatAmount(i.quantity!)}${i.unit == null ? '' : ' ${unitLabel(l10n, i.unit!, i.quantity!)}'}';

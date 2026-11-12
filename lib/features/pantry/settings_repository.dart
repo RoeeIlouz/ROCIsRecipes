@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:hive_ce/hive.dart';
+import 'package:rocis_recipes/features/prices/location_provider.dart';
 import 'package:rocis_recipes/features/recipes/appliance.dart';
 
 class SettingsRepository extends ChangeNotifier {
@@ -89,6 +90,46 @@ class SettingsRepository extends ChangeNotifier {
     } else {
       await _box.put('planChain', chainId);
     }
+    notifyListeners();
+  }
+
+  /// The last position used to find stores, kept only on this device (and its area name, if picked).
+  ({UserLocation location, String? label})? get savedLocation {
+    final raw = _box.get('lastLocation');
+    if (raw is! Map) return null;
+    final lat = (raw['lat'] as num?)?.toDouble();
+    final lng = (raw['lng'] as num?)?.toDouble();
+    if (lat == null || lng == null) return null;
+    return (
+      location: UserLocation(lat: lat, lng: lng),
+      label: raw['label'] as String?,
+    );
+  }
+
+  Future<void> setSavedLocation(UserLocation? location, String? label) async {
+    if (location == null) {
+      await _box.delete('lastLocation');
+    } else {
+      await _box.put('lastLocation', {
+        'lat': location.lat,
+        'lng': location.lng,
+        'label': label,
+      });
+    }
+  }
+
+  /// Ingredients the weekly menu keeps out entirely (dishes that use them are not suggested).
+  Set<String> get excludedIngredientIds =>
+      ((_box.get('excludedIngredients') as List?) ?? const [])
+          .cast<String>()
+          .toSet();
+
+  Future<void> toggleExcludedIngredient(String ingredientId) async {
+    final ids = excludedIngredientIds;
+    ids.contains(ingredientId)
+        ? ids.remove(ingredientId)
+        : ids.add(ingredientId);
+    await _box.put('excludedIngredients', ids.toList());
     notifyListeners();
   }
 

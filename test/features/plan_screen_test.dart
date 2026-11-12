@@ -93,6 +93,29 @@ void main() {
     expect(find.byKey(const Key('plan_over_budget')), findsNothing);
   });
 
+  testWidgets('with no priced store the week shows an item count, not a '
+      'zero price', (tester) async {
+    _tall(tester);
+    final env = await TestEnv.create(
+      recipes: _recipes,
+      snapshot: PriceSnapshot(
+        generatedAt: DateTime.now(),
+        chains: const [
+          PriceChain(id: 'alpha', nameHe: 'אלפא', nameEn: 'Alpha'),
+        ],
+        stores: const [_store],
+      ),
+    );
+    await env.settings.setWeeklyBudget(100);
+    await tester.pumpWidget(env.wrapApp('/plan'));
+    await tester.pumpAndSettle();
+    await _build(tester);
+    expect(env.settings.weekPlan.whereType<String>(), isNotEmpty);
+    expect(find.byKey(const Key('plan_total')), findsNothing);
+    expect(find.byKey(const Key('plan_items_count')), findsOneWidget);
+    expect(find.byKey(const Key('plan_find_store')), findsOneWidget);
+  });
+
   testWidgets('the plan is remembered when the screen is opened again', (
     tester,
   ) async {
@@ -189,6 +212,40 @@ void main() {
     await tester.tap(find.byKey(const Key('nav_plan')));
     await tester.pumpAndSettle();
     expect(find.byType(PlanScreen), findsOneWidget);
+  });
+
+  testWidgets('avoided ingredients keep their dishes out of the week', (
+    tester,
+  ) async {
+    _tall(tester);
+    final env = await _env();
+    await tester.pumpWidget(env.wrapApp('/plan'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('plan_exclusions_button')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const Key('exclude_search')), 'עגבני');
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('exclude_pick_tomato')));
+    await tester.pumpAndSettle();
+    expect(env.settings.excludedIngredientIds, {'tomato'});
+    expect(find.byKey(const Key('exclude_chip_tomato')), findsOneWidget);
+    await tester.tap(find.byKey(const Key('exclude_done')));
+    await tester.pumpAndSettle();
+    await _build(tester);
+    const withTomato = {'c', 'f', 'g', 'h'};
+    for (final id in env.settings.weekPlan.whereType<String>()) {
+      expect(withTomato.contains(id), isFalse);
+    }
+    expect(env.settings.weekPlan.whereType<String>(), isNotEmpty);
+  });
+
+  test('avoided ingredients can be added and removed', () async {
+    final env = await TestEnv.create();
+    expect(env.settings.excludedIngredientIds, isEmpty);
+    await env.settings.toggleExcludedIngredient('tomato');
+    expect(env.settings.excludedIngredientIds, {'tomato'});
+    await env.settings.toggleExcludedIngredient('tomato');
+    expect(env.settings.excludedIngredientIds, isEmpty);
   });
 
   test('the plan, its start day and hidden dishes are stored', () async {

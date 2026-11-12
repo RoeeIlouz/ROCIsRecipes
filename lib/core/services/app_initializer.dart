@@ -103,7 +103,12 @@ class AppInitializer {
     return [
       ChangeNotifierProvider<PriceRepository>.value(value: prices),
       ChangeNotifierProvider<NearbyController>.value(
-        value: NearbyController(GeolocatorLocationProvider()),
+        value: NearbyController(
+          GeolocatorLocationProvider(),
+          initialLocation: settings.savedLocation?.location,
+          initialLabel: settings.savedLocation?.label,
+          onSaved: settings.setSavedLocation,
+        ),
       ),
       Provider<PriceService>.value(value: const PriceService()),
       Provider<PhotoSource>.value(value: ImagePickerPhotoSource()),

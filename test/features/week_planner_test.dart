@@ -52,6 +52,7 @@ List<String?> _plan(
   Set<Appliance> appliances = const {Appliance.stovetop},
   List<String?>? current,
   Set<int>? rebuild,
+  Set<String> excludedIngredients = const {},
   int seed = 0,
 }) => generateWeekPlan(
   recipes: recipes,
@@ -62,6 +63,7 @@ List<String?> _plan(
   store: _store,
   budget: budget,
   excludedIds: excluded,
+  excludedIngredientIds: excludedIngredients,
   current: current,
   rebuildDays: rebuild,
   days: days,
@@ -138,6 +140,32 @@ void main() {
       appliances: {Appliance.stovetop, Appliance.oven},
     );
     expect(withOven, ['oven_dish']);
+  });
+
+  test('dishes with an ingredient the user avoids are never planned', () {
+    final plan = _plan(all, days: 5, excludedIngredients: {'egg', 'onion'});
+    for (final id in plan.whereType<String>()) {
+      final recipe = all.firstWhere((r) => r.id == id);
+      final ids = recipe.ingredients.map((i) => i.ingredientId).toSet();
+      expect(ids.contains('egg') || ids.contains('onion'), isFalse);
+    }
+    expect(plan.whereType<String>(), isNotEmpty);
+  });
+
+  test('an avoided ingredient also rules out dishes that only list it as '
+      'optional', () {
+    final optional = Recipe(
+      id: 'opt',
+      titleHe: 'opt',
+      ingredients: const [
+        RecipeIngredient(ingredientId: 'rice'),
+        RecipeIngredient(ingredientId: 'onion', optional: true),
+      ],
+      steps: const [RecipeStep(textHe: 'x')],
+      totalMinutes: 10,
+    );
+    final plan = _plan([optional], days: 1, excludedIngredients: {'onion'});
+    expect(plan, [null]);
   });
 
   test('only lunch and dinner dishes are planned', () {

@@ -212,6 +212,31 @@ class AppLocalizationsHe extends AppLocalizations {
   String get planNoStore => 'בחרו מיקום או אזור כדי לתמחר את השבוע';
 
   @override
+  String planItemsToBuy(int count) {
+    return '$count מצרכים לקנייה';
+  }
+
+  @override
+  String get planExclusions => 'מצרכים להימנע מהם';
+
+  @override
+  String planExclusionsCount(int count) {
+    return 'מצרכים להימנע מהם ($count)';
+  }
+
+  @override
+  String get planExclusionsHint => 'חיפוש מצרך';
+
+  @override
+  String get planExclusionsDone => 'סיום';
+
+  @override
+  String get listCopy => 'העתקת הרשימה';
+
+  @override
+  String get listCopied => 'הרשימה הועתקה';
+
+  @override
   String get shoppingTitle => 'רשימת קניות';
 
   @override

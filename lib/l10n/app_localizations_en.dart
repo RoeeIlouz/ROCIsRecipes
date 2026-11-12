@@ -212,6 +212,31 @@ class AppLocalizationsEn extends AppLocalizations {
   String get planNoStore => 'Pick a location or area to price the week';
 
   @override
+  String planItemsToBuy(int count) {
+    return '$count items to buy';
+  }
+
+  @override
+  String get planExclusions => 'Ingredients to avoid';
+
+  @override
+  String planExclusionsCount(int count) {
+    return 'Ingredients to avoid ($count)';
+  }
+
+  @override
+  String get planExclusionsHint => 'Search an ingredient';
+
+  @override
+  String get planExclusionsDone => 'Done';
+
+  @override
+  String get listCopy => 'Copy the list';
+
+  @override
+  String get listCopied => 'The list was copied';
+
+  @override
   String get shoppingTitle => 'Shopping list';
 
   @override

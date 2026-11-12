@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
+import 'package:rocis_recipes/features/catalog/ingredient.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_label.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
@@ -72,6 +73,7 @@ class PlanScreen extends StatelessWidget {
         store: store,
         budget: budget?.toDouble(),
         excludedIds: settings.hiddenRecipeIds,
+        excludedIngredientIds: settings.excludedIngredientIds,
         current: base,
         rebuildDays: days,
         days: _days,
@@ -138,7 +140,13 @@ class PlanScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 if (!hasPlan) Text(l10n.planIntro),
-                if (hasPlan) ...[
+                if (hasPlan && store == null)
+                  Text(
+                    l10n.planItemsToBuy(summary.shoppingIds.length),
+                    key: const Key('plan_items_count'),
+                    style: theme.textTheme.titleLarge,
+                  ),
+                if (hasPlan && store != null) ...[
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.baseline,
                     textBaseline: TextBaseline.alphabetic,
@@ -161,7 +169,7 @@ class PlanScreen extends StatelessWidget {
                       style: theme.textTheme.bodySmall,
                     ),
                 ],
-                if (status != null) ...[
+                if (status != null && store != null) ...[
                   const SizedBox(height: 8),
                   LinearProgressIndicator(
                     value: status.fraction,
@@ -191,6 +199,23 @@ class PlanScreen extends StatelessWidget {
                   runSpacing: 4,
                   crossAxisAlignment: WrapCrossAlignment.center,
                   children: [
+                    TextButton.icon(
+                      key: const Key('plan_exclusions_button'),
+                      onPressed: () => showModalBottomSheet<void>(
+                        context: context,
+                        isScrollControlled: true,
+                        showDragHandle: true,
+                        builder: (_) => const _ExclusionsSheet(),
+                      ),
+                      icon: const Icon(Icons.block_rounded),
+                      label: Text(
+                        settings.excludedIngredientIds.isEmpty
+                            ? l10n.planExclusions
+                            : l10n.planExclusionsCount(
+                                settings.excludedIngredientIds.length,
+                              ),
+                      ),
+                    ),
                     TextButton.icon(
                       key: const Key('plan_set_budget'),
                       onPressed: () => editWeeklyBudget(context, budget),
@@ -432,6 +457,7 @@ class _DayCard extends StatelessWidget {
                       RecipePhotoView(
                         photo: r.photo,
                         filePath: r.imagePath,
+                        width: double.infinity,
                         height: 180,
                         borderRadius: BorderRadius.circular(20),
                       ),
@@ -485,6 +511,93 @@ class _DayCard extends StatelessWidget {
                   ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Pick ingredients the weekly menu should never use. Chips show what is excluded; delete one to allow it again.
+class _ExclusionsSheet extends StatefulWidget {
+  const _ExclusionsSheet();
+
+  @override
+  State<_ExclusionsSheet> createState() => _ExclusionsSheetState();
+}
+
+class _ExclusionsSheetState extends State<_ExclusionsSheet> {
+  final _query = TextEditingController();
+
+  @override
+  void dispose() {
+    _query.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final catalog = context.watch<IngredientCatalog>();
+    final settings = context.watch<SettingsRepository>();
+    final excluded = settings.excludedIngredientIds;
+    final text = _query.text.trim();
+    final matches = text.isEmpty
+        ? const <Ingredient>[]
+        : catalog.search(text, limit: 8);
+    return Padding(
+      padding: EdgeInsets.fromLTRB(
+        16,
+        0,
+        16,
+        MediaQuery.of(context).viewInsets.bottom + 16,
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            l10n.planExclusions,
+            style: Theme.of(context).textTheme.titleMedium,
+          ),
+          const SizedBox(height: 8),
+          if (excluded.isNotEmpty)
+            Wrap(
+              spacing: 8,
+              children: [
+                for (final id in excluded)
+                  InputChip(
+                    key: Key('exclude_chip_$id'),
+                    label: Text(ingredientLabel(context, catalog, id)),
+                    onDeleted: () => settings.toggleExcludedIngredient(id),
+                  ),
+              ],
+            ),
+          TextField(
+            key: const Key('exclude_search'),
+            controller: _query,
+            decoration: InputDecoration(hintText: l10n.planExclusionsHint),
+            onChanged: (_) => setState(() {}),
+          ),
+          for (final m in matches)
+            if (!excluded.contains(m.id))
+              ListTile(
+                key: Key('exclude_pick_${m.id}'),
+                dense: true,
+                title: Text(ingredientLabel(context, catalog, m.id)),
+                onTap: () {
+                  settings.toggleExcludedIngredient(m.id);
+                  _query.clear();
+                  setState(() {});
+                },
+              ),
+          Align(
+            alignment: AlignmentDirectional.centerEnd,
+            child: FilledButton(
+              key: const Key('exclude_done'),
+              onPressed: () => Navigator.of(context).pop(),
+              child: Text(l10n.planExclusionsDone),
+            ),
+          ),
+        ],
       ),
     );
   }

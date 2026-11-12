@@ -488,6 +488,48 @@ abstract class AppLocalizations {
   /// **'Pick a location or area to price the week'**
   String get planNoStore;
 
+  /// No description provided for @planItemsToBuy.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} items to buy'**
+  String planItemsToBuy(int count);
+
+  /// No description provided for @planExclusions.
+  ///
+  /// In en, this message translates to:
+  /// **'Ingredients to avoid'**
+  String get planExclusions;
+
+  /// No description provided for @planExclusionsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Ingredients to avoid ({count})'**
+  String planExclusionsCount(int count);
+
+  /// No description provided for @planExclusionsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search an ingredient'**
+  String get planExclusionsHint;
+
+  /// No description provided for @planExclusionsDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get planExclusionsDone;
+
+  /// No description provided for @listCopy.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy the list'**
+  String get listCopy;
+
+  /// No description provided for @listCopied.
+  ///
+  /// In en, this message translates to:
+  /// **'The list was copied'**
+  String get listCopied;
+
   /// No description provided for @shoppingTitle.
   ///
   /// In en, this message translates to:
