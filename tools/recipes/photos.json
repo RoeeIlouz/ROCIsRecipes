@@ -17,24 +17,6 @@
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baked_apple_02.JPG"
  },
- "rv2_avocado_egg_toast": {
-  "asset": "assets/recipes/photos/rv2_avocado_egg_toast.jpg",
-  "author": "Sarah Stierch",
-  "license": "CC BY 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Avocado_toast_at_the_girl_&_the_fig_-_Sarah_Stierch.jpg"
- },
- "rv2_avocado_tomato_salad": {
-  "asset": "assets/recipes/photos/rv2_avocado_tomato_salad.jpg",
-  "author": "Horacio Cambeiro",
-  "license": "CC BY-SA 3.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Argentine_avocado_salad_with_tomato_and_red_bell_pepper_in_a_glass_bowl.jpg"
- },
- "rv2_baked_beans_on_toast": {
-  "asset": "assets/recipes/photos/rv2_baked_beans_on_toast.jpg",
-  "author": "Andy Li",
-  "license": "CC0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beans_on_toast_-_Vios_2024-01-09.jpg"
- },
  "rv2_baked_feta_tomato_pasta": {
   "asset": "assets/recipes/photos/rv2_baked_feta_tomato_pasta.jpg",
   "author": "Delicious Adventures",
@@ -172,12 +154,6 @@
   "author": "Kolforn (Kolforn) I'd appreciate if you could mail me (Kolforn@gmail.com) if you",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:-2019-12-23_Brie_cheese_puff_pastry_pocket,_Trimingham.JPG"
- },
- "rv2_cheese_quesadilla": {
-  "asset": "assets/recipes/photos/rv2_cheese_quesadilla.jpg",
-  "author": "Photograph by Mike Peel (www.mikepeel.net).",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:At_Long_Island_2023_267.jpg"
  },
  "rv2_cheesy_potato_gratin": {
   "asset": "assets/recipes/photos/rv2_cheesy_potato_gratin.jpg",
@@ -335,12 +311,6 @@
   "license": "CC BY-SA 2.5",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bowl_of_chili.jpg"
  },
- "rv2_classic_grilled_cheese": {
-  "asset": "assets/recipes/photos/rv2_classic_grilled_cheese.jpg",
-  "author": "jeffreyw",
-  "license": "CC BY 2.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_cheese_sandwich_with_roasted_tomato_soup.jpg"
- },
  "rv2_couscous_vegetables": {
   "asset": "assets/recipes/photos/rv2_couscous_vegetables.jpg",
   "author": "HaJunkiyada",
@@ -365,23 +335,11 @@
   "license": "CC BY 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banana_bread_slices.jpg"
  },
- "rv2_egg_drop_soup_quick": {
-  "asset": "assets/recipes/photos/rv2_egg_drop_soup_quick.jpg",
-  "author": "Raimond Spekking",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Einlaufsuppe_im_Teller-0372.jpg"
- },
  "rv2_egg_potato_salad": {
   "asset": "assets/recipes/photos/rv2_egg_potato_salad.jpg",
   "author": "jules",
   "license": "CC BY 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Warm_potato_salad_with_ham.jpg"
- },
- "rv2_egg_salad_pita": {
-  "asset": "assets/recipes/photos/rv2_egg_salad_pita.jpg",
-  "author": "Gilabrand",
-  "license": "CC BY-SA 3.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sabich.jpg"
  },
  "rv2_eggplant_parmesan_light": {
   "asset": "assets/recipes/photos/rv2_eggplant_parmesan_light.jpg",
@@ -443,23 +401,11 @@
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:BroccoliPasta.jpg"
  },
- "rv2_garlic_cheese_bread": {
-  "asset": "assets/recipes/photos/rv2_garlic_cheese_bread.jpg",
-  "author": "Asecretfanfare",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_cream_cheese_garlic_bread.jpg"
- },
  "rv2_granola_homemade": {
   "asset": "assets/recipes/photos/rv2_granola_homemade.jpg",
   "author": "Karen and Brad Emerson",
   "license": "CC BY 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Homemade_granola_(12272245254).jpg"
- },
- "rv2_greek_salad_easy": {
-  "asset": "assets/recipes/photos/rv2_greek_salad_easy.jpg",
-  "author": "Paasikivi",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greek_salad_and_Tzatziki.jpg"
  },
  "rv2_honey_garlic_chicken_thighs": {
   "asset": "assets/recipes/photos/rv2_honey_garlic_chicken_thighs.jpg",
@@ -467,29 +413,11 @@
   "license": "CC BY-SA 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_wings_with_honey-garlic_sauce.jpg"
  },
- "rv2_honey_mint_fruit_salad": {
-  "asset": "assets/recipes/photos/rv2_honey_mint_fruit_salad.jpg",
-  "author": "Gaurav Dhwaj Khadka",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fruit_Salad_4.jpg"
- },
  "rv2_huevos_rancheros": {
   "asset": "assets/recipes/photos/rv2_huevos_rancheros.jpg",
   "author": "1000b",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huevos_rancheros.jpg"
- },
- "rv2_israeli_breakfast_plate": {
-  "asset": "assets/recipes/photos/rv2_israeli_breakfast_plate.jpg",
-  "author": "HaJunkiyada",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Israeli_Breakfast_in_San_Francisco.jpg"
- },
- "rv2_israeli_salad_egg": {
-  "asset": "assets/recipes/photos/rv2_israeli_salad_egg.jpg",
-  "author": "Gila Brand",
-  "license": "CC BY 2.5",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salad.jpg"
  },
  "rv2_kebab_pita": {
   "asset": "assets/recipes/photos/rv2_kebab_pita.jpg",
@@ -508,12 +436,6 @@
   "author": "Petar Milošević",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Postna_sarma_(vegetarian_sarma,_Cuisine_of_Serbia).jpg"
- },
- "rv2_lemon_cabbage_salad": {
-  "asset": "assets/recipes/photos/rv2_lemon_cabbage_salad.jpg",
-  "author": "Canbel",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malfouf_salad.jpg"
  },
  "rv2_lemon_chicken_orzo_ptitim": {
   "asset": "assets/recipes/photos/rv2_lemon_chicken_orzo_ptitim.jpg",
@@ -1001,12 +923,6 @@
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Allgäuer_Schnitzel_mit_Kräuterrösti.jpg"
  },
- "rv2_scrambled_eggs_toast": {
-  "asset": "assets/recipes/photos/rv2_scrambled_eggs_toast.jpg",
-  "author": "Andy Li",
-  "license": "CC0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scrambled_eggs_on_toast_-_Joe's_Cafe_2024-04-14.jpg"
- },
  "rv2_shakshuka": {
   "asset": "assets/recipes/photos/rv2_shakshuka.jpg",
   "author": "Calliopejen1",
@@ -1030,18 +946,6 @@
   "author": "Abhinaba Basu from Redmond, United States",
   "license": "CC BY 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shepherd's_pie_(22470901009).jpg"
- },
- "rv2_simple_congee": {
-  "asset": "assets/recipes/photos/rv2_simple_congee.jpg",
-  "author": "Daiju Azuma",
-  "license": "CC BY-SA 2.5",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_rice_congee.jpg"
- },
- "rv2_simple_guacamole": {
-  "asset": "assets/recipes/photos/rv2_simple_guacamole.jpg",
-  "author": "Nikodem Nijaki",
-  "license": "CC BY-SA 3.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guacamole_IMGP1271.jpg"
  },
  "rv2_simple_lemon_cake": {
   "asset": "assets/recipes/photos/rv2_simple_lemon_cake.jpg",
@@ -1133,12 +1037,6 @@
   "license": "CC0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_curry_with_tofu,_egg_fried_rice_-_Little_Thai_2024-07-21.jpg"
  },
- "rv2_tomato_bruschetta": {
-  "asset": "assets/recipes/photos/rv2_tomato_bruschetta.jpg",
-  "author": "Missvain",
-  "license": "CC BY 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruschetta_at_The_Bar_at_MacArthur_Place_-_Sarah_Stierch.jpg"
- },
  "rv2_tomato_egg_stirfry": {
   "asset": "assets/recipes/photos/rv2_tomato_egg_stirfry.jpg",
   "author": "Huangdan2060",
@@ -1150,12 +1048,6 @@
   "author": "Adesolive",
   "license": "CC0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuna_Salad_with_sweet_corn.jpg"
- },
- "rv2_tuna_melt_sandwich": {
-  "asset": "assets/recipes/photos/rv2_tuna_melt_sandwich.jpg",
-  "author": "kweez mcG from London, UK",
-  "license": "CC BY 2.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuna_melt_sandwich_with_fries.jpg"
  },
  "rv2_tuna_sandwich_pita": {
   "asset": "assets/recipes/photos/rv2_tuna_sandwich_pita.jpg",
@@ -1181,12 +1073,6 @@
   "license": "CC BY 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_patties_reprise_(85588440).jpg"
  },
- "rv2_two_ingredient_banana_pancakes": {
-  "asset": "assets/recipes/photos/rv2_two_ingredient_banana_pancakes.jpg",
-  "author": "Midori",
-  "license": "CC BY 3.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banana_pancakes_Gili_Trawangan.JPG"
- },
  "rv2_veg_basmati_pilaf": {
   "asset": "assets/recipes/photos/rv2_veg_basmati_pilaf.jpg",
   "author": "naotakem",
@@ -1204,12 +1090,6 @@
   "author": "Gillgaramond",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bean_soup_with_tomatoes_and_red_peppers.jpeg"
- },
- "rv2_yogurt_apple_honey_bowl": {
-  "asset": "assets/recipes/photos/rv2_yogurt_apple_honey_bowl.jpg",
-  "author": "JopkeB",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yoghurt_met_appelmoes_en_walnoten_2025.jpg"
  },
  "rv2_zaatar_chicken_thighs": {
   "asset": "assets/recipes/photos/rv2_zaatar_chicken_thighs.jpg",
