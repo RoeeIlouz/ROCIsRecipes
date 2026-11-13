@@ -1,0 +1,2396 @@
+[
+ {
+  "id": "rv3_x10_crispy_skin_thighs_pan_sauce",
+  "titleHe": "ירכי עוף עם עור פריך ורוטב לימון ושום",
+  "titleEn": "Crispy skin chicken thighs with pan sauce",
+  "photoQuery": "crispy chicken thighs",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 900,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 5,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "thyme",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.25,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מייבשים את הירכיים בנייר ומתבלים במלח, פלפל וטימין."
+   },
+   {
+    "textHe": "מניחים עם העור כלפי מטה במחבת קרה עם שמן ומדליקים אש בינונית."
+   },
+   {
+    "textHe": "צולים 12 דקות בלי להזיז עד שהעור זהוב ופריך.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "הופכים וצולים עוד 10 דקות עד שהעוף מבושל ומוציאים.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "משאירים כף שומן, מטגנים שום חצי דקה ומוסיפים חצי כוס מים עם אבקת מרק ומיץ לימון.",
+    "timerSeconds": 30
+   },
+   {
+    "textHe": "מבשלים 2 דקות, ממיסים חמאה ומגישים את הרוטב עם פטרוזיליה.",
+    "timerSeconds": 120
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_adobo_style",
+  "titleHe": "עוף אדובו בסויה, חומץ ושום",
+  "titleEn": "Chicken adobo style",
+  "photoQuery": "chicken adobo",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 50,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 5,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "vinegar",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 8,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "bay_leaf",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "brown_sugar",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים אורז בסיר צדדי.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "צורבים את העוף בשמן בסיר רחב 4 דקות מכל צד ומוציאים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים שום מעוך חצי דקה.",
+    "timerSeconds": 30
+   },
+   {
+    "textHe": "מוסיפים סויה, חומץ, סוכר חום, עלי דפנה, פלפל וחצי כוס מים."
+   },
+   {
+    "textHe": "מחזירים עוף, מכסים ומבשלים 25 דקות.",
+    "timerSeconds": 1500
+   },
+   {
+    "textHe": "חושפים ומבשלים 8 דקות עד שהרוטב מסמיך ומגישים על אורז.",
+    "timerSeconds": 480
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_paprikash_noodles",
+  "titleHe": "עוף פפריקש עם אטריות",
+  "titleEn": "Chicken paprikash with noodles",
+  "photoQuery": "chicken paprikash",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 60,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 900,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "sour_cream",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "noodles",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "צורבים עוף מתובל במלח בשמן 4 דקות מכל צד ומוציאים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מטגנים בצלים קצוצים בשמן 10 דקות עד שקופים וזהובים.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מורידים אש ומוסיפים פפריקה ורסק, מערבבים חצי דקה.",
+    "timerSeconds": 30
+   },
+   {
+    "textHe": "מוסיפים פלפל חתוך, עוף וכוס מים ומבשלים מכוסה 30 דקות.",
+    "timerSeconds": 1800
+   },
+   {
+    "textHe": "מבשלים אטריות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מערבבים שמנת חמוצה לרוטב ומגישים על האטריות."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_schnitzel_mushroom_cream",
+  "titleHe": "שניצל בציפוי פריך ברוטב שמנת ופטריות",
+  "titleEn": "Chicken schnitzel with mushroom cream sauce",
+  "photoQuery": "schnitzel mushroom sauce",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "schnitzel",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "mushroom",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cream",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מתבלים שניצלים, מגלגלים בקמח, ביצה ופירורי לחם."
+   },
+   {
+    "textHe": "מטגנים בשמן חם 3 דקות מכל צד ומנקזים על נייר.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "ממיסים חמאה ומטגנים בצל ופטריות פרוסות 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים שמנת ומעט מים ומבשלים 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מתבלים במלח ופלפל."
+   },
+   {
+    "textHe": "מגישים את השניצל עם הרוטב בצד כדי שיישאר פריך."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_moroccan_chicken_olives_lemon",
+  "titleHe": "עוף מרוקאי בזיתים ולימון",
+  "titleEn": "Moroccan chicken with olives and lemon",
+  "photoQuery": "moroccan chicken olives",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 70,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olives",
+    "quantity": 120,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "couscous",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מתבלים עוף בכורכום, ג'ינג'ר, פפריקה, מלח ופלפל."
+   },
+   {
+    "textHe": "צורבים בשמן בסיר 4 דקות מכל צד ומוציאים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מטגנים בצלים פרוסים ושום 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מחזירים עוף ומוסיפים כוס מים."
+   },
+   {
+    "textHe": "מבשלים מכוסה 30 דקות, ואז מוסיפים זיתים וחצי לימון פרוס ומבשלים 15 דקות.",
+    "timerSeconds": 2700
+   },
+   {
+    "textHe": "מגישים על קוסקוס עם מיץ לימון ופטרוזיליה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_garlic_soy_glazed_chicken",
+  "titleHe": "עוף מוקפץ בגלייז סויה ושום",
+  "titleEn": "Garlic soy glazed chicken",
+  "photoQuery": "garlic soy chicken",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 700,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 6,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 3,
+    "unit": "unit"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים אורז ומחתכים עוף לנתחים קטנים.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מטגנים בשמן חם 6 דקות עד זהוב מכל הצדדים.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מערבבים סויה, דבש, שום כתוש וג'ינג'ר."
+   },
+   {
+    "textHe": "יוצקים למחבת על אש בינונית."
+   },
+   {
+    "textHe": "מבשלים 3 דקות תוך ערבוב עד שהגלייז נדבק לעוף.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מגישים על אורז עם בצל ירוק."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_kung_pao_style_chicken",
+  "titleHe": "עוף קונג פאו בבוטנים וצ'ילי",
+  "titleEn": "Kung pao style chicken",
+  "photoQuery": "kung pao chicken",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 450,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "peanuts",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "chili",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "vinegar",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים עוף לקוביות ומערבבים עם עמילן וכף סויה.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מערבבים סויה, חומץ וסוכר לרוטב."
+   },
+   {
+    "textHe": "מטגנים עוף בשמן חם 4 דקות ומוציאים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מטגנים צ'ילי, שום ופלפל חתוך 2 דקות.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מחזירים עוף, מוסיפים רוטב ובוטנים, מבשלים דקה ומגישים על אורז.",
+    "timerSeconds": 60
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_orange_chicken_crispy",
+  "titleHe": "עוף פריך בתפוזים",
+  "titleEn": "Crispy orange chicken",
+  "photoQuery": "orange chicken",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "orange",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 5,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מערבבים עוף בקוביות עם ביצה ועמילן."
+   },
+   {
+    "textHe": "מטגנים בשמן חם בשתי מנות 4 דקות עד פריך ומנקזים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "בסיר קטן מבשלים מיץ שני תפוזים, סויה, דבש ושום 4 דקות עד סמיך.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מערבבים עוף ברוטב רק לפני ההגשה כדי לשמור על פריכות."
+   },
+   {
+    "textHe": "מגישים על אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_karaage",
+  "titleHe": "עוף מטוגן יפני (קארה-אגה)",
+  "titleEn": "Chicken karaage",
+  "photoQuery": "chicken karaage",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 700,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 5,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 6,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים ירכיים ללא עצם לקוביות גדולות."
+   },
+   {
+    "textHe": "מערבבים עם סויה, ג'ינג'ר וקצת שום ומשרים 20 דקות.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מגלגלים כל נתח בעמילן."
+   },
+   {
+    "textHe": "מטגנים בשמן חם בשתי מנות 5 דקות עד זהוב ופריך ומנקזים.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מגישים עם לימון ואורז."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_jerk_style_chicken",
+  "titleHe": "עוף בתיבול ג'ארק חריף-מתוק",
+  "titleEn": "Jerk style chicken",
+  "photoQuery": "jerk chicken",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 55,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "chili_flakes",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "thyme",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lime",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מערבבים את התבלינים עם שום כתוש, דבש, מיץ ליים ושמן."
+   },
+   {
+    "textHe": "מעסים את העוף ומשרים לפחות 30 דקות.",
+    "timerSeconds": 1800
+   },
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "צורבים את העוף במחבת על אש בינונית 6 דקות מכל צד.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מורידים אש, מכסים ומבשלים 12 דקות עד שמבושל.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מגישים עם אורז וליים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_tinga_tacos",
+  "titleHe": "טאקו עוף טינגה חריף",
+  "titleEn": "Chicken tinga tacos",
+  "photoQuery": "chicken tinga",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 45,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "harissa",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oregano",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "tortilla",
+    "quantity": 8,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lime",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים חזה עוף בקצת מים רותחים 15 דקות ומפרקים.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מטגנים בצל ושום בשמן 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים עגבניות מרוסקות, הריסה, כמון ואורגנו ומבשלים 10 דקות.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מערבבים את העוף המפורק ברוטב ומבשלים 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מתקנים תיבול עם ליים."
+   },
+   {
+    "textHe": "מחממים טורטיות וממלאים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_kdera_potato_turmeric",
+  "titleHe": "קדרת עוף ותפוחי אדמה בכורכום",
+  "titleEn": "Chicken and potato pot",
+  "photoQuery": "chicken potato pot",
+  "servings": 5,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 75,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1.2,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מתבלים עוף בכורכום, פפריקה, מלח ופלפל."
+   },
+   {
+    "textHe": "צורבים בשמן בסיר רחב 4 דקות מכל צד ומוציאים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מטגנים בצלים פרוסים 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים שום ומחזירים עוף."
+   },
+   {
+    "textHe": "מוסיפים כוס מים, מכסים ומבשלים על אש נמוכה 25 דקות.",
+    "timerSeconds": 1500
+   },
+   {
+    "textHe": "מוסיפים תפוחי אדמה בפלחים ומבשלים עוד 30 דקות.",
+    "timerSeconds": 1800
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_cashew_stirfry",
+  "titleHe": "מוקפץ עוף וקשיו",
+  "titleEn": "Chicken cashew stir fry",
+  "photoQuery": "cashew chicken",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 450,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cashews",
+    "quantity": 60,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים עוף דק ומבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "קולים קשיו במחבת יבשה 2 דקות ומוציאים.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מטגנים עוף בשמן חם 4 דקות ומוציאים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מטגנים בצל ופלפלים 3 דקות על אש חזקה.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים שום, סויה ודבש ומחזירים עוף."
+   },
+   {
+    "textHe": "מוסיפים קשיו ומגישים על אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_braised_mushrooms_onions",
+  "titleHe": "עוף בקדירה עם פטריות ובצל",
+  "titleEn": "Chicken braised with mushrooms and onions",
+  "photoQuery": "braised chicken mushrooms",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 70,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "mushroom",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "thyme",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מתבלים עוף במלח ופלפל וצורבים בשמן 4 דקות מכל צד ומוציאים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מטגנים בצלים 8 דקות ופטריות 6 דקות.",
+    "timerSeconds": 840
+   },
+   {
+    "textHe": "מוסיפים שום, רסק, טימין וקמח ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים כוס וחצי מים ומחזירים עוף."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 40 דקות.",
+    "timerSeconds": 2400
+   },
+   {
+    "textHe": "מגישים עם תפוחי אדמה מבושלים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_lemon_garlic_chicken_green_beans",
+  "titleHe": "עוף בשום ולימון עם שעועית ירוקה",
+  "titleEn": "Lemon garlic chicken with green beans",
+  "photoQuery": "lemon chicken green beans",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "green_beans",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 5,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oregano",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים חזה לפרוסות דקות ומתבלים באורגנו, מלח ופלפל."
+   },
+   {
+    "textHe": "מטגנים בשמן זית 3 דקות מכל צד ומוציאים.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "ממיסים חמאה ומטגנים שעועית ירוקה 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים שום ומטגנים חצי דקה.",
+    "timerSeconds": 30
+   },
+   {
+    "textHe": "מחזירים עוף ויוצקים מיץ לימון וכמה כפות מים."
+   },
+   {
+    "textHe": "מבשלים 2 דקות ומגישים.",
+    "timerSeconds": 120
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_cutlet_pepper_cream",
+  "titleHe": "שניצל עוף ברוטב פלפל ושמנת",
+  "titleEn": "Chicken cutlets with pepper cream sauce",
+  "photoQuery": "chicken pepper sauce",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cream",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים חזה לשניצלים דקים ומתבלים במלח."
+   },
+   {
+    "textHe": "מגלגלים בקמח ומנערים עודף."
+   },
+   {
+    "textHe": "צורבים בשמן וחמאה 3 דקות מכל צד ומוציאים.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים שום, הרבה פלפל גרוס, חצי כוס מים עם אבקת מרק ושמנת."
+   },
+   {
+    "textHe": "מבשלים 3 דקות עד רוטב סמיך.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מחזירים עוף ומגישים עם אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_pan_roasted_chicken_potatoes_lemon",
+  "titleHe": "עוף צלוי במחבת ותפוחי אדמה בלימון",
+  "titleEn": "Pan roasted chicken with lemon potatoes",
+  "photoQuery": "pan roasted chicken potatoes",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 60,
+  "appliances": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1.2,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 6,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "oregano",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-210 מעלות."
+   },
+   {
+    "textHe": "מתבלים עוף במלח, פלפל ואורגנו וצורבים בשמן זית במחבת בטוחה לתנור 4 דקות מכל צד.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים תפוחי אדמה בפלחים, שום וחצאי לימון סביב העוף."
+   },
+   {
+    "textHe": "מעבירים לתנור."
+   },
+   {
+    "textHe": "צולים 35 דקות ומהפכים תפוחי אדמה באמצע.",
+    "timerSeconds": 2100
+   },
+   {
+    "textHe": "סוחטים לימון צלוי על הכל ומגישים מהמחבת."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_fricassee_peas_cream",
+  "titleHe": "פריקסה עוף עם אפונה ושמנת",
+  "titleEn": "Chicken fricassee",
+  "photoQuery": "chicken fricassee",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 55,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "peas",
+    "quantity": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cream",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "צורבים עוף בחמאה 4 דקות מכל צד ומוציאים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מטגנים בצל וגזר חתוך 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מפזרים קמח ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים 2 כוסות מים עם אבקת מרק ומחזירים עוף."
+   },
+   {
+    "textHe": "מבשלים מכוסה 25 דקות.",
+    "timerSeconds": 1500
+   },
+   {
+    "textHe": "מוסיפים אפונה ושמנת ומבשלים 5 דקות ומגישים עם אורז.",
+    "timerSeconds": 300
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_turkey_cutlets_mushroom_sauce",
+  "titleHe": "שניצלי הודו ברוטב פטריות",
+  "titleEn": "Turkey cutlets with mushroom sauce",
+  "photoQuery": "turkey cutlets",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "turkey_breast",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "mushroom",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cream",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים הודו לפרוסות דקות ומתבלים."
+   },
+   {
+    "textHe": "מגלגלים בקמח וצורבים בשמן 3 דקות מכל צד ומוציאים.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "ממיסים חמאה ומטגנים פטריות פרוסות 7 דקות.",
+    "timerSeconds": 420
+   },
+   {
+    "textHe": "מוסיפים שום ומיד שמנת ומעט מים ומבשלים 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מחזירים את ההודו לרוטב לדקה."
+   },
+   {
+    "textHe": "מגישים עם אורז.",
+    "timerSeconds": 60
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_turkey_meatballs_lemon_dill",
+  "titleHe": "קציצות הודו ברוטב לימון ושמיר",
+  "titleEn": "Turkey meatballs in lemon dill sauce",
+  "photoQuery": "turkey meatballs lemon",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 45,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_turkey",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "dill",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים תפוחי אדמה.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מערבבים הודו, ביצה, פירורי לחם, בצל מגורד ושמיר קצוץ ויוצרים כדורים."
+   },
+   {
+    "textHe": "מטגנים בשמן 5 דקות עד שחומים.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מפזרים קמח, מוסיפים כוס וחצי מים עם אבקת מרק ומיץ לימון."
+   },
+   {
+    "textHe": "מבשלים מכוסה 15 דקות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מגישים עם תפוחי האדמה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_sweet_and_sour_chicken",
+  "titleHe": "עוף במתוק וחמוץ עם פלפלים",
+  "titleEn": "Sweet and sour chicken",
+  "photoQuery": "sweet and sour chicken",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "ketchup",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "vinegar",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "brown_sugar",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 5,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מערבבים עוף בקוביות עם ביצה ועמילן ומטגנים בשמן 4 דקות עד זהוב ומנקזים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מערבבים קטשופ, חומץ, סוכר חום, סויה וחצי כוס מים לרוטב."
+   },
+   {
+    "textHe": "מטגנים בצל ופלפלים 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים רוטב ומבשלים 2 דקות עד סמיך.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מערבבים עוף ומגישים על אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_tahini_sauce_rice",
+  "titleHe": "עוף ברוטב טחינה ואורז",
+  "titleEn": "Chicken in tahini sauce",
+  "photoQuery": "chicken tahini sauce",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 45,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 900,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "tahini",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מתבלים עוף בכמון, מלח ופלפל וצורבים בשמן 4 דקות מכל צד ומוציאים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מטגנים בצלים פרוסים 8 דקות ומוסיפים שום.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מחזירים עוף ומוסיפים חצי כוס מים, מכסים ומבשלים 20 דקות.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מערבבים טחינה, מיץ לימון וכמה כפות מהנוזל מהסיר לרוטב."
+   },
+   {
+    "textHe": "יוצקים על העוף, מחממים דקה ומגישים על אורז.",
+    "timerSeconds": 60
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_teriyaki_chicken_thighs_pan",
+  "titleHe": "ירכיים בטריאקי במחבת",
+  "titleEn": "Pan teriyaki chicken thighs",
+  "photoQuery": "teriyaki chicken thighs",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "sesame",
+    "quantity": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "צורבים ירכיים עם העור כלפי מטה בשמן 7 דקות עד זהוב ומהפכים עוד 5 דקות.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מוסיפים שום וג'ינג'ר."
+   },
+   {
+    "textHe": "מערבבים סויה, דבש, עמילן וחצי כוס מים ויוצקים למחבת."
+   },
+   {
+    "textHe": "מבשלים 6 דקות תוך הפיכה עד שהרוטב מסמיך ומצפה.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מפזרים שומשום ומגישים על אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_honey_harissa_chicken_pan",
+  "titleHe": "עוף פריך בגלייז דבש והריסה",
+  "titleEn": "Honey harissa glazed chicken",
+  "photoQuery": "honey harissa chicken",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "harissa",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחתכים תפוחי אדמה לקוביות ומטגנים בשמן 12 דקות עד זהוב ומוציאים.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מתבלים עוף במלח וצורבים 5 דקות מכל צד.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מערבבים הריסה, דבש, שום כתוש ומיץ לימון."
+   },
+   {
+    "textHe": "מורידים אש, יוצקים את הגלייז על העוף ומהפכים 4 דקות עד שמצפה.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מחזירים תפוחי אדמה למחבת."
+   },
+   {
+    "textHe": "מגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_honey_mustard_thighs_skillet",
+  "titleHe": "ירכיים בדבש וחרדל במחבת",
+  "titleEn": "Honey mustard chicken thighs skillet",
+  "photoQuery": "honey mustard chicken",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 45,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מתבלים עוף במלח ופלפל וצורבים בשמן 5 דקות מכל צד ומוציאים.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מטגנים בצל פרוס 5 דקות ומוסיפים שום.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מערבבים חרדל, דבש וחצי כוס מים."
+   },
+   {
+    "textHe": "מחזירים עוף, יוצקים את הרוטב ומכסים."
+   },
+   {
+    "textHe": "מבשלים 18 דקות על אש נמוכה.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מגישים עם אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_tikka_skewers_pan",
+  "titleHe": "שיפודי עוף טיקה במחבת גריל",
+  "titleEn": "Chicken tikka skewers",
+  "photoQuery": "chicken tikka skewers",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 700,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "yogurt",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "curry",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "cucumber",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מערבבים יוגורט, קארי, שום כתוש, לימון, שמן ומלח."
+   },
+   {
+    "textHe": "משרים עוף בקוביות 30 דקות ולכל היותר לילה.",
+    "timerSeconds": 1800
+   },
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "משחילים על שיפודים."
+   },
+   {
+    "textHe": "צולים במחבת גריל חמה 4 דקות מכל צד.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מגישים עם אורז ומלפפון."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_mushroom_pan_sauce",
+  "titleHe": "חזה עוף ברוטב פטריות ושום",
+  "titleEn": "Chicken breast with mushroom garlic sauce",
+  "photoQuery": "chicken mushroom sauce",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "mushroom",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "cream",
+    "quantity": 0.25,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "thyme",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים חזה לשניצלים דקים, מתבלים ומגלגלים בקמח."
+   },
+   {
+    "textHe": "צורבים בשמן 3 דקות מכל צד ומוציאים.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מטגנים פטריות פרוסות בחמאה 7 דקות.",
+    "timerSeconds": 420
+   },
+   {
+    "textHe": "מוסיפים שום וטימין חצי דקה.",
+    "timerSeconds": 30
+   },
+   {
+    "textHe": "מוסיפים שמנת וקצת מים ומבשלים 2 דקות.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מחזירים עוף ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x10_chicken_zucchini_tomato_skillet",
+  "titleHe": "עוף עם קישואים ועגבניות במחבת",
+  "titleEn": "Chicken zucchini tomato skillet",
+  "photoQuery": "chicken zucchini tomato",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "zucchini",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "oregano",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים עוף לקוביות ומתבלים."
+   },
+   {
+    "textHe": "מטגנים בשמן זית 5 דקות ומוציאים.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מטגנים בצל וקישואים בחצאי עיגולים 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים שום, אורגנו ועגבניות."
+   },
+   {
+    "textHe": "מחזירים עוף ומבשלים 12 דקות.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מגישים עם אורז."
+   }
+  ]
+ }
+]

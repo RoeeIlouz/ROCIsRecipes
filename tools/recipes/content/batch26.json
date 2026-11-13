@@ -1,0 +1,2310 @@
+[
+ {
+  "id": "rv3_x9_entrecote_pepper_sauce",
+  "titleHe": "אנטריקוט ברוטב פלפל שחור",
+  "titleEn": "Entrecote with black pepper sauce",
+  "photoQuery": "entrecote steak pepper sauce",
+  "servings": 2,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cream",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "pepper"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מוציאים את הסטייקים מהמקרר 20 דקות לפני, מייבשים בנייר ומתבלים בכמות נדיבה של מלח.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מחממים מחבת כבדה עם שמן עד עשן קל."
+   },
+   {
+    "textHe": "צורבים 3 דקות מכל צד לצלייה בינונית ומעבירים לצלחת.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "במחבת עצמה ממיסים חמאה ומטגנים בצל קצוץ ושום 2 דקות.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מוסיפים פלפל שחור גרוס גס, חצי כוס מים עם אבקת מרק ושמנת ומבשלים 3 דקות עד שהרוטב מסמיך.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "משהים את הבשר 5 דקות, פורסים ויוצקים את הרוטב מעל.",
+    "timerSeconds": 300
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_steak_mushroom_garlic_sauce",
+  "titleHe": "סטייק ברוטב פטריות ושום",
+  "titleEn": "Steak with mushroom garlic sauce",
+  "photoQuery": "steak mushroom sauce",
+  "servings": 2,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "mushroom",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cream",
+    "quantity": 0.25,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "thyme",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.25,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מתבלים את הבשר במלח ופלפל."
+   },
+   {
+    "textHe": "צורבים בשמן חם 3 דקות מכל צד ומעבירים לצלחת מכוסה.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "ממיסים חמאה באותה מחבת ומטגנים פטריות פרוסות 6 דקות בלי לערבב הרבה.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים שום וטימין ומטגנים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "יוצקים שמנת וכמה כפות מים ומבשלים 2 דקות.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מחזירים את הבשר עם הנוזלים, מפזרים פטרוזיליה ופורסים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_steak_chimichurri",
+  "titleHe": "סטייק עם צ'ימיצ'ורי פטרוזיליה",
+  "titleEn": "Pan steak with chimichurri",
+  "photoQuery": "steak chimichurri",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 1,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 5,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oregano",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "chili_flakes",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "קוצצים דק פטרוזיליה ושום."
+   },
+   {
+    "textHe": "מערבבים עם שמן זית, מיץ לימון, אורגנו, צ'ילי ומלח לצ'ימיצ'ורי ומניחים בצד.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מתבלים בשר במלח ופלפל."
+   },
+   {
+    "textHe": "צורבים במחבת חמה מאוד עם שמן 3 דקות מכל צד.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "משהים 5 דקות ופורסים נגד הסיבים.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מגישים עם הרוטב ירוק מעל."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_black_pepper_beef_stirfry",
+  "titleHe": "מוקפץ בקר בפלפל שחור ופלפלים",
+  "titleEn": "Black pepper beef stir fry",
+  "photoQuery": "black pepper beef",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים בשר דק מאוד נגד הסיבים ומערבבים עם עמילן ו-1 כף סויה.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מחממים שמן במחבת עד עשן ומטגנים את הבשר 2 דקות בשתי מנות ומוציאים.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מטגנים בצל ופלפלים פרוסים 3 דקות על אש גבוהה.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים שום, הרבה פלפל שחור וסויה."
+   },
+   {
+    "textHe": "מחזירים בשר ומטגנים דקה ומגישים על אורז.",
+    "timerSeconds": 60
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_mongolian_beef",
+  "titleHe": "בקר מונגולי",
+  "titleEn": "Mongolian beef",
+  "photoQuery": "mongolian beef",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 450,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "brown_sugar",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים בשר לרצועות דקות ומגלגלים בעמילן."
+   },
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מערבבים סויה, סוכר חום, שום, ג'ינג'ר וחצי כוס מים."
+   },
+   {
+    "textHe": "מטגנים בשר בשמן חם 2 דקות מכל צד עד פריך ומוציאים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "יוצקים את הרוטב למחבת ומבשלים 2 דקות עד שמסמיך.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מחזירים בשר, מוסיפים בצל ירוק ומגישים על אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_cheesesteak_skillet",
+  "titleHe": "צ'יזסטייק במחבת",
+  "titleEn": "Philly cheesesteak skillet",
+  "photoQuery": "philly cheesesteak",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "yellow_cheese",
+    "quantity": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "pita",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mayonnaise",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים בשר דק מאוד, בצלים ופלפל."
+   },
+   {
+    "textHe": "מטגנים בצל ופלפל בשמן 8 דקות עד שמתקרמלים ומוציאים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מטגנים את הבשר על אש חזקה 3 דקות עם מלח ופלפל.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מחזירים ירקות ומערבבים."
+   },
+   {
+    "textHe": "מפזרים גבינה, מכסים דקה עד שנמסה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מחממים פיתות, מורחים מיונז וממלאים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_beef_onion_tomato_braise",
+  "titleHe": "בקר בקדירה עם בצל ועגבניות",
+  "titleEn": "Beef braised with onions and tomatoes",
+  "photoQuery": "beef braise",
+  "servings": 5,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 150,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 900,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 5,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "bay_leaf",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 2,
+    "unit": "cup",
+    "optional": true
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים את הבשר לקוביות גדולות ומתבלים במלח ופלפל."
+   },
+   {
+    "textHe": "צורבים בשמן בסיר כבד בשתי מנות עד שחום מכל הצדדים ומוציאים.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מטגנים בצלים פרוסים 12 דקות עד שמתקרמלים.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מוסיפים שום, רסק ופפריקה ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מחזירים בשר ומוסיפים עגבניות, עלי דפנה וכוס מים."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש הכי נמוכה שעתיים עד שהבשר מתפרק, ומגישים עם אורז.",
+    "timerSeconds": 7200
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_swedish_meatballs_gravy",
+  "titleHe": "קציצות שוודיות ברוטב שמנת",
+  "titleEn": "Swedish meatballs with cream gravy",
+  "photoQuery": "swedish meatballs",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 45,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cream",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "nutmeg",
+    "quantity": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים תפוחי אדמה לפירה.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מערבבים בשר, ביצה, פירורי לחם, בצל מגורד, אגוז מוסקט ותבלינים ויוצרים כדורים קטנים."
+   },
+   {
+    "textHe": "מטגנים בחמאה 8 דקות ומסובבים עד שחומים ומוציאים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מפזרים קמח באותה מחבת, מוסיפים כוס מים עם אבקת מרק ומערבבים עד חלק."
+   },
+   {
+    "textHe": "מוסיפים שמנת ומבשלים 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מחזירים קציצות לרוטב ומגישים עם פירה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_ropa_vieja_style",
+  "titleHe": "בשר מפורק ברוטב עגבניות ופלפלים",
+  "titleEn": "Ropa vieja style shredded beef",
+  "photoQuery": "shredded beef",
+  "servings": 5,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 150,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oregano",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מתבלים בשר בכמון, אורגנו, מלח ופלפל וצורבים בשמן מכל הצדדים 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים בצל ופלפלים פרוסים ושום ומטגנים 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים עגבניות וכוס מים."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה שעתיים עד שהבשר מתפרק.",
+    "timerSeconds": 7200
+   },
+   {
+    "textHe": "מפרקים עם שני מזלגות ומערבבים ברוטב."
+   },
+   {
+    "textHe": "מגישים על אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_carne_asada_tacos",
+  "titleHe": "טאקו קרנה אסדה",
+  "titleEn": "Carne asada tacos",
+  "photoQuery": "carne asada tacos",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "lime",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "tortilla",
+    "quantity": 6,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cilantro",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מערבבים מיץ ליים, שום כתוש, כמון, פפריקה, שמן ומלח ומשרים את הבשר 20 דקות.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מחממים מחבת חזקה ללא שמן נוסף."
+   },
+   {
+    "textHe": "צורבים בשר 3 דקות מכל צד ומשהים 5 דקות.",
+    "timerSeconds": 660
+   },
+   {
+    "textHe": "פורסים דק."
+   },
+   {
+    "textHe": "קוצצים בצל וכוסברה."
+   },
+   {
+    "textHe": "מחממים טורטיות וממלאים בבשר, בצל וכוסברה עם ליים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_beef_potato_curry",
+  "titleHe": "קארי בקר ותפוחי אדמה",
+  "titleEn": "Beef and potato curry",
+  "photoQuery": "beef curry",
+  "servings": 5,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 120,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 700,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "curry",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "coconut_milk",
+    "quantity": 0.5,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "צורבים קוביות בשר בשמן 8 דקות ומוציאים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מטגנים בצל 8 דקות, מוסיפים שום וג'ינג'ר.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים קארי וממתינים חצי דקה."
+   },
+   {
+    "textHe": "מוסיפים עגבניות, בשר וכוס מים."
+   },
+   {
+    "textHe": "מבשלים מכוסה שעה.",
+    "timerSeconds": 3600
+   },
+   {
+    "textHe": "מוסיפים תפוחי אדמה וחלב קוקוס ומבשלים 25 דקות ומגישים עם אורז.",
+    "timerSeconds": 1500
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_breaded_beef_cutlets_gravy",
+  "titleHe": "שניצל בקר ברוטב חלב",
+  "titleEn": "Breaded beef cutlets with milk gravy",
+  "photoQuery": "chicken fried steak",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 6,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "milk",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מפלטים את הבשר לפרוסות דקות עם פטיש או קרש ומתבלים."
+   },
+   {
+    "textHe": "מגלגלים בקמח, ביצה ופירורי לחם."
+   },
+   {
+    "textHe": "מטגנים בשמן חם 3 דקות מכל צד עד זהוב ומוציאים.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "משאירים 2 כפות שמן, מפזרים 3 כפות קמח ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "יוצקים חלב בהדרגה ומערבבים 4 דקות עד רוטב סמיך, מתבלים בפלפל.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מגישים עם תפוחי אדמה מבושלים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_skillet_kebab_pita",
+  "titleHe": "שיפודי קבב במחבת עם טחינה",
+  "titleEn": "Skillet kebab skewers",
+  "photoQuery": "kebab skewers",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 1,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "pita",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tahini",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מגררים בצל ומסחטים נוזלים."
+   },
+   {
+    "textHe": "מערבבים בשר, בצל, פטרוזיליה קצוצה, כמון, פפריקה, ביצה ותבלינים ולשים היטב.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מחלקים לאצבעות על שיפודים."
+   },
+   {
+    "textHe": "מחממים מחבת עם שמן וצולים 3 דקות מכל צד.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מערבבים טחינה עם מים ומלח."
+   },
+   {
+    "textHe": "מגישים בפיתה עם עגבנייה וטחינה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_beef_green_bean_stirfry",
+  "titleHe": "מוקפץ בקר ושעועית ירוקה",
+  "titleEn": "Beef and green bean stir fry",
+  "photoQuery": "beef green beans",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "green_beans",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים בשר דק נגד הסיבים ומבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מטגנים שעועית ירוקה בשמן חם 4 דקות עד שמקבלת צבע ומוציאים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מטגנים את הבשר על אש חזקה 2 דקות.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מוסיפים שום וג'ינג'ר חצי דקה."
+   },
+   {
+    "textHe": "מחזירים שעועית ומוסיפים סויה ודבש."
+   },
+   {
+    "textHe": "מערבבים דקה ומגישים על אורז.",
+    "timerSeconds": 60
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_garlic_butter_steak_bites",
+  "titleHe": "קוביות סטייק בחמאת שום",
+  "titleEn": "Garlic butter steak bites",
+  "photoQuery": "steak bites",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 20,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 5,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.25,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים בשר לקוביות של 2 ס\"מ ומתבלים במלח ופלפל."
+   },
+   {
+    "textHe": "מחממים מחבת חזקה עם שמן."
+   },
+   {
+    "textHe": "צורבים קוביות בשכבה אחת 2 דקות מכל צד, בשתי מנות.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מוסיפים חמאה ושום ומערבבים 30 שניות.",
+    "timerSeconds": 30
+   },
+   {
+    "textHe": "מפזרים פטרוזיליה."
+   },
+   {
+    "textHe": "מגישים עם תפוחי אדמה מטוגנים או אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_beef_paprikash_noodles",
+  "titleHe": "בקר פפריקש עם אטריות",
+  "titleEn": "Beef paprikash with noodles",
+  "photoQuery": "beef paprikash",
+  "servings": 5,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 110,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 700,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "sour_cream",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "noodles",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצלים קצוצים בשמן 10 דקות עד זהוב.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מורידים אש, מוסיפים פפריקה ורסק ומערבבים 30 שניות.",
+    "timerSeconds": 30
+   },
+   {
+    "textHe": "מוסיפים בשר בקוביות, פלפל חתוך, מלח ופלפל."
+   },
+   {
+    "textHe": "מוסיפים כוס מים ומבשלים מכוסה שעה וחצי על אש נמוכה.",
+    "timerSeconds": 5400
+   },
+   {
+    "textHe": "מבשלים אטריות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מערבבים שמנת חמוצה לתבשיל ומגישים על האטריות."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_beef_rouladen_style",
+  "titleHe": "רולדות בקר במילוי חרדל וחמוצים",
+  "titleEn": "Stuffed beef rolls",
+  "photoQuery": "beef rolls",
+  "servings": 4,
+  "difficulty": "hard",
+  "mealType": "dinner",
+  "totalMinutes": 100,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "pickles",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים בשר לפרוסות דקות ומפלטים."
+   },
+   {
+    "textHe": "מורחים חרדל ומתבלים."
+   },
+   {
+    "textHe": "מניחים פרוסת מלפפון חמוץ וצלעות בצל וגוללים וסוגרים בקיסם."
+   },
+   {
+    "textHe": "צורבים בשמן מכל הצדדים 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים רסק, אבקת מרק ו-2 כוסות מים ומבשלים מכוסה שעה.",
+    "timerSeconds": 3600
+   },
+   {
+    "textHe": "מסמיכים את הרוטב עם קמח ומגישים עם תפוחי אדמה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_beef_barley_stew",
+  "titleHe": "תבשיל בקר ושעורה",
+  "titleEn": "Beef and barley stew",
+  "photoQuery": "beef barley stew",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 110,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "barley",
+    "quantity": 0.75,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "celery",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "צורבים קוביות בשר בשמן בסיר 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים בצל, גזר וסלרי ומטגנים 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים שום ורסק."
+   },
+   {
+    "textHe": "מוסיפים 7 כוסות מים ואבקת מרק ומבשלים 50 דקות.",
+    "timerSeconds": 3000
+   },
+   {
+    "textHe": "מוסיפים שעורה ומבשלים עוד 35 דקות עד רכה.",
+    "timerSeconds": 2100
+   },
+   {
+    "textHe": "מתקנים תיבול."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_beef_dates_cinnamon_tagine",
+  "titleHe": "תבשיל בקר בתמרים וקינמון",
+  "titleEn": "Beef with dates and cinnamon",
+  "photoQuery": "beef tagine dates",
+  "servings": 5,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 130,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "dates",
+    "quantity": 120,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "almonds",
+    "quantity": 30,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "couscous",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "צורבים בשר בשמן 8 דקות ומוציאים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מטגנים בצלים פרוסים 10 דקות.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מוסיפים כורכום וקינמון."
+   },
+   {
+    "textHe": "מחזירים בשר ומוסיפים מים לכיסוי ומבשלים שעה וחצי.",
+    "timerSeconds": 5400
+   },
+   {
+    "textHe": "מוסיפים תמרים ודבש ומבשלים 20 דקות.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מגישים על קוסקוס עם שקדים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_steak_sandwich_caramelized_onion",
+  "titleHe": "כריך סטייק עם בצל מקורמל",
+  "titleEn": "Steak sandwich with caramelized onions",
+  "photoQuery": "steak sandwich",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 350,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bread",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "mayonnaise",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lettuce",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצלים פרוסים בחמאה על אש נמוכה 15 דקות עד זהוב כהה.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מתבלים בשר ומטגנים בשמן חם 2 דקות מכל צד ומשהים 3 דקות.",
+    "timerSeconds": 420
+   },
+   {
+    "textHe": "פורסים דק."
+   },
+   {
+    "textHe": "מקלים לחם ומורחים מיונז וחרדל."
+   },
+   {
+    "textHe": "מניחים חסה, בשר ובצל."
+   },
+   {
+    "textHe": "סוגרים ומגישים חם."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_beef_eggplant_stew",
+  "titleHe": "תבשיל חצילים ובשר",
+  "titleEn": "Beef and eggplant stew",
+  "photoQuery": "eggplant beef stew",
+  "servings": 5,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 90,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "eggplant",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים חצילים לקוביות, מורחים במלח ומשהים 15 דקות ומייבשים.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מטגנים חצילים בשמן עד זהוב ומוציאים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "צורבים בשר בקוביות 6 דקות עם בצל קצוץ.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים שום, כמון ופפריקה ועגבניות ומבשלים מכוסה 40 דקות.",
+    "timerSeconds": 2400
+   },
+   {
+    "textHe": "מוסיפים את החצילים ומבשלים 10 דקות.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מגישים עם אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_salisbury_steak_mushroom",
+  "titleHe": "סליסברי סטייק ברוטב פטריות",
+  "titleEn": "Salisbury steak with mushroom gravy",
+  "photoQuery": "salisbury steak",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 45,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mushroom",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "ketchup",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מערבבים בשר, ביצה, פירורי לחם, קטשופ ותבלינים ומעצבים 4 קציצות סגלגלות."
+   },
+   {
+    "textHe": "צורבים בשמן 4 דקות מכל צד ומוציאים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מטגנים בצל ופטריות בחמאה 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מפזרים קמח ומוסיפים 1.5 כוסות מים עם אבקת מרק ומערבבים."
+   },
+   {
+    "textHe": "מחזירים קציצות ומבשלים מכוסה 12 דקות.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מגישים עם פירה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_beef_lo_mein",
+  "titleHe": "אטריות מוקפצות עם בקר וירקות",
+  "titleEn": "Beef lo mein",
+  "photoQuery": "beef lo mein",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 350,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "noodles",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cabbage",
+    "quantity": 0.25,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 3,
+    "unit": "unit"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים בשר דק ומבשלים אטריות 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מטגנים בשר בשמן חם 2 דקות ומוציאים.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מטגנים כרוב וגזר פרוסים בשמן 4 דקות.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מוסיפים שום וג'ינג'ר."
+   },
+   {
+    "textHe": "מחזירים בשר ומוסיפים אטריות וסויה."
+   },
+   {
+    "textHe": "מטגנים 2 דקות ומפזרים בצל ירוק.",
+    "timerSeconds": 120
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_patty_melt",
+  "titleHe": "פטי מלט עם בצל מקורמל",
+  "titleEn": "Patty melt",
+  "photoQuery": "patty melt",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bread",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "yellow_cheese",
+    "quantity": 4,
+    "unit": "slice"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצלים פרוסים בשמן על אש נמוכה 15 דקות עד זהוב.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מעצבים שתי קציצות שטוחות ומתבלים."
+   },
+   {
+    "textHe": "צורבים 3 דקות מכל צד.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מורחים חרדל על הלחם, מניחים גבינה, קציצה, בצל וגבינה."
+   },
+   {
+    "textHe": "סוגרים וממרחים חמאה מבחוץ."
+   },
+   {
+    "textHe": "צולים במחבת 3 דקות מכל צד עד שהלחם פריך והגבינה נמסה.",
+    "timerSeconds": 360
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_shawarma_spiced_steak_strips",
+  "titleHe": "רצועות סטייק בתיבול שווארמה",
+  "titleEn": "Shawarma spiced steak strips",
+  "photoQuery": "steak strips rice",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 450,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "baharat",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "tahini",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים בשר לרצועות דקות ובצל לטבעות."
+   },
+   {
+    "textHe": "מערבבים עם התבלינים, שמן ומלח."
+   },
+   {
+    "textHe": "מבשלים אורז.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מטגנים את הבצל 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים את הבשר ומטגנים על אש חזקה 4 דקות.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מגישים על אורז עם טחינה מהולה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_chili_garlic_beef_noodles",
+  "titleHe": "אטריות בקר בצ'ילי ושום",
+  "titleEn": "Chili garlic beef noodles",
+  "photoQuery": "chili garlic noodles beef",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 350,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "noodles",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "chili",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 5,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 3,
+    "unit": "unit"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים בשר דק ומבשלים אטריות.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מחממים שמן ומטגנים שום וצ'ילי פרוס 30 שניות.",
+    "timerSeconds": 30
+   },
+   {
+    "textHe": "מוסיפים בשר ומטגנים על אש חזקה 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים סויה ודבש."
+   },
+   {
+    "textHe": "מוסיפים אטריות ומערבבים."
+   },
+   {
+    "textHe": "מפזרים בצל ירוק."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x9_beef_stuffed_baked_potato_pan",
+  "titleHe": "בשר טחון ותפוחי אדמה בסגנון בורקס במחבת",
+  "titleEn": "Ground beef and potato skillet",
+  "photoQuery": "beef potato skillet",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.25,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים תפוחי אדמה לקוביות קטנות ומטגנים בשמן במחבת רחבה 12 דקות עד זהוב.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "דוחפים הצידה ומטגנים בצל 4 דקות.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מוסיפים בשר טחון ותבלינים ומפרקים 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מערבבים הכל יחד עם שום."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מפזרים פטרוזיליה ומגישים."
+   }
+  ]
+ }
+]

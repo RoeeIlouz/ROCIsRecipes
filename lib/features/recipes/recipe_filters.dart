@@ -1,3 +1,4 @@
+import 'package:rocis_recipes/core/text/hebrew_normalizer.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
 
 /// Protein filter choices, in display order. `vegetarian` means no meat or fish at all.
@@ -49,4 +50,24 @@ String recipeKind(Recipe recipe) {
     if (kinds.contains(k)) return k;
   }
   return 'vegetarian';
+}
+
+/// Whether [recipe] matches a search. Every word of [query] has to be found in the title (Hebrew or
+/// English) or in the name of one of its ingredients ([ingredientNames] gives all the names of one
+/// ingredient id, in every language). An empty search matches everything.
+bool matchesQuery(
+  Recipe recipe,
+  String query,
+  String Function(String ingredientId) ingredientNames,
+) {
+  final words = normalizeText(query).split(' ').where((w) => w.isNotEmpty);
+  if (words.isEmpty) return true;
+  final haystack = normalizeText(
+    [
+      recipe.titleHe,
+      recipe.titleEn ?? '',
+      for (final i in recipe.ingredients) ingredientNames(i.ingredientId),
+    ].join(' '),
+  );
+  return words.every(haystack.contains);
 }

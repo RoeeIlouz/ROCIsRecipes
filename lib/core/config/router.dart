@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
+import 'package:rocis_recipes/features/home/ui/home_screen.dart';
 import 'package:rocis_recipes/features/pantry/ui/pantry_screen.dart';
 import 'package:rocis_recipes/features/plan/ui/plan_screen.dart';
 import 'package:rocis_recipes/features/prices/ui/stores_screen.dart';
@@ -14,11 +15,19 @@ import 'package:rocis_recipes/shared/ui/app_shell.dart';
 GoRouter buildRouter({String initialLocation = '/'}) => GoRouter(
   initialLocation: initialLocation,
   routes: [
-    GoRoute(path: '/', redirect: (context, state) => '/pantry'),
+    GoRoute(path: '/', redirect: (context, state) => '/home'),
     StatefulShellRoute.indexedStack(
       builder: (context, state, navigationShell) =>
           AppShell(navigationShell: navigationShell),
       branches: [
+        StatefulShellBranch(
+          routes: [
+            GoRoute(
+              path: '/home',
+              builder: (context, state) => const HomeScreen(),
+            ),
+          ],
+        ),
         StatefulShellBranch(
           routes: [
             GoRoute(

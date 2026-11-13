@@ -1,7 +1,7 @@
 import 'package:rocis_recipes/features/recipes/appliance.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
 
-enum MatchMode { cookNow, almostThere }
+enum MatchMode { cookNow, almostThere, all }
 
 class RecipeMatch {
   const RecipeMatch({required this.recipe, required this.missingIngredientIds});
@@ -29,7 +29,8 @@ class RecipeMatcher {
   }) {
     final results = <RecipeMatch>[];
     for (final recipe in recipes) {
-      if (recipe.totalMinutes > maxMinutes) continue;
+      // Browsing every dish ignores the time limit; the other lists are about what to cook now.
+      if (mode != MatchMode.all && recipe.totalMinutes > maxMinutes) continue;
       if (!appliances.containsAll(recipe.appliances)) continue;
 
       final missing = <String>[];
@@ -44,6 +45,7 @@ class RecipeMatcher {
         MatchMode.cookNow => missing.isEmpty,
         MatchMode.almostThere =>
           missing.isNotEmpty && missing.length <= maxMissing,
+        MatchMode.all => true,
       };
       if (keep)
         results.add(RecipeMatch(recipe: recipe, missingIngredientIds: missing));

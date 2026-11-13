@@ -386,6 +386,168 @@ abstract class AppLocalizations {
   /// **'Menu'**
   String get navPlan;
 
+  /// No description provided for @navHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get navHome;
+
+  /// No description provided for @tabAllDishes.
+  ///
+  /// In en, this message translates to:
+  /// **'All dishes'**
+  String get tabAllDishes;
+
+  /// No description provided for @dishSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search a dish or ingredient'**
+  String get dishSearchHint;
+
+  /// No description provided for @homeGreetingMorning.
+  ///
+  /// In en, this message translates to:
+  /// **'Good morning'**
+  String get homeGreetingMorning;
+
+  /// No description provided for @homeGreetingAfternoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Good afternoon'**
+  String get homeGreetingAfternoon;
+
+  /// No description provided for @homeGreetingEvening.
+  ///
+  /// In en, this message translates to:
+  /// **'Good evening'**
+  String get homeGreetingEvening;
+
+  /// No description provided for @homeGreetingNight.
+  ///
+  /// In en, this message translates to:
+  /// **'Good night'**
+  String get homeGreetingNight;
+
+  /// No description provided for @homeSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'What are we cooking today?'**
+  String get homeSubtitle;
+
+  /// No description provided for @homeFromPlan.
+  ///
+  /// In en, this message translates to:
+  /// **'From your weekly menu'**
+  String get homeFromPlan;
+
+  /// No description provided for @homeCookNowHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready to cook with what you have'**
+  String get homeCookNowHint;
+
+  /// No description provided for @homeAlmostHint.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 ingredient to buy} other{{count} ingredients to buy}}'**
+  String homeAlmostHint(int count);
+
+  /// No description provided for @homeDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get homeDetails;
+
+  /// No description provided for @homeLetsCook.
+  ///
+  /// In en, this message translates to:
+  /// **'Let\'s cook'**
+  String get homeLetsCook;
+
+  /// No description provided for @homeEmptyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Let\'s start with your kitchen'**
+  String get homeEmptyTitle;
+
+  /// No description provided for @homeEmptyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Add what you have at home and we will suggest what to cook.'**
+  String get homeEmptyBody;
+
+  /// No description provided for @homeEmptyAction.
+  ///
+  /// In en, this message translates to:
+  /// **'My kitchen'**
+  String get homeEmptyAction;
+
+  /// No description provided for @homeActionPlan.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly menu'**
+  String get homeActionPlan;
+
+  /// No description provided for @homeActionShopping.
+  ///
+  /// In en, this message translates to:
+  /// **'Shopping list'**
+  String get homeActionShopping;
+
+  /// No description provided for @homeActionKitchen.
+  ///
+  /// In en, this message translates to:
+  /// **'My kitchen'**
+  String get homeActionKitchen;
+
+  /// No description provided for @homeActionStores.
+  ///
+  /// In en, this message translates to:
+  /// **'Stores near me'**
+  String get homeActionStores;
+
+  /// No description provided for @homeShelfCookNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Cook now'**
+  String get homeShelfCookNow;
+
+  /// No description provided for @homeShelfAlmost.
+  ///
+  /// In en, this message translates to:
+  /// **'Almost there'**
+  String get homeShelfAlmost;
+
+  /// No description provided for @homeShelfMealPrep.
+  ///
+  /// In en, this message translates to:
+  /// **'Meal prep for the week'**
+  String get homeShelfMealPrep;
+
+  /// No description provided for @homeShelfChicken.
+  ///
+  /// In en, this message translates to:
+  /// **'Chicken'**
+  String get homeShelfChicken;
+
+  /// No description provided for @homeShelfBeef.
+  ///
+  /// In en, this message translates to:
+  /// **'Beef and meat'**
+  String get homeShelfBeef;
+
+  /// No description provided for @homeShelfFavorites.
+  ///
+  /// In en, this message translates to:
+  /// **'Your favorites'**
+  String get homeShelfFavorites;
+
+  /// No description provided for @homeSeeAll.
+  ///
+  /// In en, this message translates to:
+  /// **'See all'**
+  String get homeSeeAll;
+
   /// No description provided for @planTitle.
   ///
   /// In en, this message translates to:

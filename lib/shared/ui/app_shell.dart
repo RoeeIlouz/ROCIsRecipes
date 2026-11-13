@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
 
-/// Bottom navigation shell: Pantry, Suggestions, Weekly menu, Shopping.
+/// Bottom navigation shell: Home, Pantry, Suggestions, Weekly menu, Shopping.
 class AppShell extends StatelessWidget {
   const AppShell({super.key, required this.navigationShell});
 
@@ -20,6 +20,11 @@ class AppShell extends StatelessWidget {
           initialLocation: i == navigationShell.currentIndex,
         ),
         destinations: [
+          NavigationDestination(
+            key: const Key('nav_home'),
+            icon: const Icon(Icons.home_rounded),
+            label: l10n.navHome,
+          ),
           NavigationDestination(
             key: const Key('nav_pantry'),
             icon: const Icon(Icons.kitchen_rounded),

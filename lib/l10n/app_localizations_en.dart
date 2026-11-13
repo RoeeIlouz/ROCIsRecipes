@@ -160,6 +160,96 @@ class AppLocalizationsEn extends AppLocalizations {
   String get navPlan => 'Menu';
 
   @override
+  String get navHome => 'Home';
+
+  @override
+  String get tabAllDishes => 'All dishes';
+
+  @override
+  String get dishSearchHint => 'Search a dish or ingredient';
+
+  @override
+  String get homeGreetingMorning => 'Good morning';
+
+  @override
+  String get homeGreetingAfternoon => 'Good afternoon';
+
+  @override
+  String get homeGreetingEvening => 'Good evening';
+
+  @override
+  String get homeGreetingNight => 'Good night';
+
+  @override
+  String get homeSubtitle => 'What are we cooking today?';
+
+  @override
+  String get homeFromPlan => 'From your weekly menu';
+
+  @override
+  String get homeCookNowHint => 'Ready to cook with what you have';
+
+  @override
+  String homeAlmostHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ingredients to buy',
+      one: '1 ingredient to buy',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeDetails => 'Details';
+
+  @override
+  String get homeLetsCook => 'Let\'s cook';
+
+  @override
+  String get homeEmptyTitle => 'Let\'s start with your kitchen';
+
+  @override
+  String get homeEmptyBody =>
+      'Add what you have at home and we will suggest what to cook.';
+
+  @override
+  String get homeEmptyAction => 'My kitchen';
+
+  @override
+  String get homeActionPlan => 'Weekly menu';
+
+  @override
+  String get homeActionShopping => 'Shopping list';
+
+  @override
+  String get homeActionKitchen => 'My kitchen';
+
+  @override
+  String get homeActionStores => 'Stores near me';
+
+  @override
+  String get homeShelfCookNow => 'Cook now';
+
+  @override
+  String get homeShelfAlmost => 'Almost there';
+
+  @override
+  String get homeShelfMealPrep => 'Meal prep for the week';
+
+  @override
+  String get homeShelfChicken => 'Chicken';
+
+  @override
+  String get homeShelfBeef => 'Beef and meat';
+
+  @override
+  String get homeShelfFavorites => 'Your favorites';
+
+  @override
+  String get homeSeeAll => 'See all';
+
+  @override
   String get planTitle => 'Weekly menu';
 
   @override

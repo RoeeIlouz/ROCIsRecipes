@@ -58,6 +58,7 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--refresh", action="store_true")
     parser.add_argument("--only")
+    parser.add_argument("--prefix", help="only recipes whose id starts with one of these comma-separated prefixes")
     parser.add_argument("--retry-nomatch", action="store_true", help="search again for recipes that found nothing before")
     args = parser.parse_args(argv)
 
@@ -74,6 +75,8 @@ def main(argv: list[str] | None = None) -> int:
     for recipe in recipes:
         rid = recipe["id"]
         if args.only and rid != args.only:
+            continue
+        if args.prefix and not rid.startswith(tuple(args.prefix.split(","))):
             continue
         if (rid in rejected or (rid in nomatch and not args.retry_nomatch)) and rid not in overrides:
             missing.append(rid)

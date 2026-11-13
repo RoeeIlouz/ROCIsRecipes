@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:rocis_recipes/features/ai/ai_ui.dart';
+import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/prices/recipe_cost.dart';
@@ -28,12 +29,26 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
   bool _mealPrep = false;
   bool _favoritesOnly = false;
   bool _inBudget = false;
+  final _search = TextEditingController();
+  String _query = '';
+
+  @override
+  void dispose() {
+    _search.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final settings = context.watch<SettingsRepository>();
     final favorites = settings.favoriteIds;
+    final catalog = context.watch<IngredientCatalog>();
+    String namesOf(String id) {
+      final i = catalog.byId(id);
+      return i == null ? id : '${i.nameHe} ${i.nameEn} ${i.synonyms.join(' ')}';
+    }
+
     final recipes = context
         .watch<RecipeRepository>()
         .all
@@ -45,7 +60,8 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
                 protein: _protein,
                 mealPrepOnly: _mealPrep,
               ) &&
-              (!_favoritesOnly || favorites.contains(r.id)),
+              (!_favoritesOnly || favorites.contains(r.id)) &&
+              matchesQuery(r, _query, namesOf),
         )
         .toList();
     final pantry = context.watch<PantryRepository>().ids;
@@ -84,7 +100,7 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
     }
 
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
         floatingActionButton: FloatingActionButton(
           key: const Key('add_recipe_fab'),
@@ -154,11 +170,40 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
                 key: const Key('tab_almost_there'),
                 text: l10n.tabAlmostThere,
               ),
+              Tab(key: const Key('tab_all'), text: l10n.tabAllDishes),
             ],
           ),
         ),
         body: Column(
           children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
+              child: TextField(
+                key: const Key('dish_search'),
+                controller: _search,
+                textInputAction: TextInputAction.search,
+                onChanged: (v) => setState(() => _query = v),
+                decoration: InputDecoration(
+                  hintText: l10n.dishSearchHint,
+                  prefixIcon: const Icon(Icons.search_rounded),
+                  suffixIcon: _query.isEmpty
+                      ? null
+                      : IconButton(
+                          icon: const Icon(Icons.close_rounded),
+                          onPressed: () {
+                            _search.clear();
+                            setState(() => _query = '');
+                          },
+                        ),
+                  isDense: true,
+                  filled: true,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(28),
+                    borderSide: BorderSide.none,
+                  ),
+                ),
+              ),
+            ),
             SizedBox(
               height: 52,
               child: ListView(
@@ -229,6 +274,7 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
                     matches: compute(MatchMode.almostThere),
                     labelOf: labelOf,
                   ),
+                  _MatchList(matches: compute(MatchMode.all), labelOf: labelOf),
                 ],
               ),
             ),

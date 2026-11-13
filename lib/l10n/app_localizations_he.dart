@@ -160,6 +160,95 @@ class AppLocalizationsHe extends AppLocalizations {
   String get navPlan => 'תפריט';
 
   @override
+  String get navHome => 'בית';
+
+  @override
+  String get tabAllDishes => 'כל המנות';
+
+  @override
+  String get dishSearchHint => 'חיפוש מנה או מצרך';
+
+  @override
+  String get homeGreetingMorning => 'בוקר טוב';
+
+  @override
+  String get homeGreetingAfternoon => 'צהריים טובים';
+
+  @override
+  String get homeGreetingEvening => 'ערב טוב';
+
+  @override
+  String get homeGreetingNight => 'לילה טוב';
+
+  @override
+  String get homeSubtitle => 'מה מבשלים היום?';
+
+  @override
+  String get homeFromPlan => 'מהתפריט השבועי שלכם';
+
+  @override
+  String get homeCookNowHint => 'אפשר לבשל עכשיו ממה שיש לכם';
+
+  @override
+  String homeAlmostHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'חסרים $count מצרכים',
+      one: 'חסר מצרך אחד',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeDetails => 'פרטים';
+
+  @override
+  String get homeLetsCook => 'בואו נבשל';
+
+  @override
+  String get homeEmptyTitle => 'בואו נתחיל במטבח שלכם';
+
+  @override
+  String get homeEmptyBody => 'הוסיפו מה יש לכם בבית ונציע מה לבשל.';
+
+  @override
+  String get homeEmptyAction => 'המטבח שלי';
+
+  @override
+  String get homeActionPlan => 'תפריט שבועי';
+
+  @override
+  String get homeActionShopping => 'רשימת קניות';
+
+  @override
+  String get homeActionKitchen => 'המטבח שלי';
+
+  @override
+  String get homeActionStores => 'חנויות לידי';
+
+  @override
+  String get homeShelfCookNow => 'אפשר לבשל עכשיו';
+
+  @override
+  String get homeShelfAlmost => 'כמעט מוכן';
+
+  @override
+  String get homeShelfMealPrep => 'הכנה מראש לשבוע';
+
+  @override
+  String get homeShelfChicken => 'עוף';
+
+  @override
+  String get homeShelfBeef => 'בקר ובשר';
+
+  @override
+  String get homeShelfFavorites => 'המועדפים שלכם';
+
+  @override
+  String get homeSeeAll => 'הכל';
+
+  @override
   String get planTitle => 'תפריט שבועי';
 
   @override
