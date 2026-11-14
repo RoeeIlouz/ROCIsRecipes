@@ -389,12 +389,6 @@
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fried_rice_with_chicken_and_egg.jpg"
  },
- "rv2_fried_rice_vegetables": {
-  "asset": "assets/recipes/photos/rv2_fried_rice_vegetables.jpg",
-  "author": "daSupremo",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fried_rice_with_chicken_and_egg.jpg"
- },
  "rv2_garlic_broccoli_pasta": {
   "asset": "assets/recipes/photos/rv2_garlic_broccoli_pasta.jpg",
   "author": "AnticoMu90",
@@ -455,12 +449,6 @@
   "license": "CC BY-SA 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lemon_Pasta_with_Peas_(11667881).jpg"
  },
- "rv2_lentil_soup": {
-  "asset": "assets/recipes/photos/rv2_lentil_soup.jpg",
-  "author": "Whoisjohngalt",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bowl_of_lentil_soup_with_green_and_red_lentils.jpg"
- },
  "rv2_lentil_soup_red": {
   "asset": "assets/recipes/photos/rv2_lentil_soup_red.jpg",
   "author": "Whoisjohngalt",
@@ -509,35 +497,11 @@
   "license": "CC BY 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cascabel_-_October_2022_-_Sarah_Stierch_05.jpg"
  },
- "rv2_mp_beef_pasta_bake_trays": {
-  "asset": "assets/recipes/photos/rv2_mp_beef_pasta_bake_trays.jpg",
-  "author": "Daderot",
-  "license": "CC0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ground_beef,_baked_tomatoes,_and_tomato_sauce_on_Taiwan_noodles_-_Massachusetts.jpg"
- },
- "rv2_mp_beef_stew_freezer": {
-  "asset": "assets/recipes/photos/rv2_mp_beef_stew_freezer.jpg",
-  "author": "3steph14",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_stew_2.jpg"
- },
- "rv2_mp_bolognese_freezer": {
-  "asset": "assets/recipes/photos/rv2_mp_bolognese_freezer.jpg",
-  "author": "Erikatrioschi",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ragu.jpg"
- },
  "rv2_mp_burrito_freezer": {
   "asset": "assets/recipes/photos/rv2_mp_burrito_freezer.jpg",
   "author": "Levi bernardo",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Burrito_chihuahuense_de_chile_verde.jpg"
- },
- "rv2_mp_chicken_soup_batch": {
-  "asset": "assets/recipes/photos/rv2_mp_chicken_soup_batch.jpg",
-  "author": "stu_spivack",
-  "license": "CC BY-SA 2.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_soup_with_kreplach.jpg"
  },
  "rv2_mp_chickpea_salad_jars": {
   "asset": "assets/recipes/photos/rv2_mp_chickpea_salad_jars.jpg",
@@ -569,24 +533,6 @@
   "license": "CC0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mac_and_cheese_-_Morelli_Zorelli_2024-08-29.jpg"
  },
- "rv2_mp_meatballs_freezer": {
-  "asset": "assets/recipes/photos/rv2_mp_meatballs_freezer.jpg",
-  "author": "jeffreyw",
-  "license": "CC BY 2.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spaghetti_and_meatballs_1.jpg"
- },
- "rv2_mp_minestrone_batch": {
-  "asset": "assets/recipes/photos/rv2_mp_minestrone_batch.jpg",
-  "author": "Katrin Morenz from Aachen, Deutschland",
-  "license": "CC BY-SA 2.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minestrone_soup.jpg"
- },
- "rv2_mp_pancake_batch_freezer": {
-  "asset": "assets/recipes/photos/rv2_mp_pancake_batch_freezer.jpg",
-  "author": "Mae Mu",
-  "license": "CC0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Foodiesfeed.com_pouring-honey-on-pancakes-with-walnuts.jpg"
- },
  "rv2_mp_pasta_salad_week": {
   "asset": "assets/recipes/photos/rv2_mp_pasta_salad_week.jpg",
   "author": "Brynn",
@@ -598,18 +544,6 @@
   "author": "Kunokuno",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Pesto_Pasta.jpg"
- },
- "rv2_mp_shakshuka_base_batch": {
-  "asset": "assets/recipes/photos/rv2_mp_shakshuka_base_batch.jpg",
-  "author": "Calliopejen1",
-  "license": "CC BY-SA 3.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shakshuka_by_Calliopejen1.jpg"
- },
- "rv2_mp_shnitzel_trays": {
-  "asset": "assets/recipes/photos/rv2_mp_shnitzel_trays.jpg",
-  "author": "Kritzolina",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Allgäuer_Schnitzel_mit_Kräuterrösti.jpg"
  },
  "rv2_mp_sweet_potato_chickpea_trays": {
   "asset": "assets/recipes/photos/rv2_mp_sweet_potato_chickpea_trays.jpg",
@@ -791,12 +725,6 @@
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taiwanese_food_Cold_Peanut_Noodles,_Sesame_Noodles,_white_Paocai.jpg"
  },
- "rv2_peanut_noodles": {
-  "asset": "assets/recipes/photos/rv2_peanut_noodles.jpg",
-  "author": "USDA",
-  "license": "Public domain",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Noodles_with_Peanut_Butter_Sauce.jpg"
- },
  "rv2_pita_lahmajun": {
   "asset": "assets/recipes/photos/rv2_pita_lahmajun.jpg",
   "author": "No machine-readable author provided. Rainer Zenz assumed (based on copyright cla",
@@ -887,12 +815,6 @@
   "license": "CC BY 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tostada_(5076307841)_(2).jpg"
  },
- "rv2_rice_cooker_chicken_rice": {
-  "asset": "assets/recipes/photos/rv2_rice_cooker_chicken_rice.jpg",
-  "author": "Bawani Sri Jayaveeran",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malaysian_Claypot_Chicken_Rice_via_Rice_Cooker.jpg"
- },
  "rv2_roasted_tomato_soup": {
   "asset": "assets/recipes/photos/rv2_roasted_tomato_soup.jpg",
   "author": "Kotivalo",
@@ -928,12 +850,6 @@
   "author": "Calliopejen1",
   "license": "CC BY-SA 3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shakshuka_by_Calliopejen1.jpg"
- },
- "rv2_shakshuka_feta": {
-  "asset": "assets/recipes/photos/rv2_shakshuka_feta.jpg",
-  "author": "Andy Li",
-  "license": "CC0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:SHAKSHUKA_&_FETA_-_The_Meeting_Place_2025-06-28.jpg"
  },
  "rv2_shakshuka_green": {
   "asset": "assets/recipes/photos/rv2_shakshuka_green.jpg",
@@ -1103,12 +1019,6 @@
   "license": "CC0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_birria_burrito_with_sauces_to_taste.jpg"
  },
- "rv3_beef_meat_sauce_potatoes": {
-  "asset": "assets/recipes/photos/rv3_beef_meat_sauce_potatoes.jpg",
-  "author": "Horacio Cambeiro",
-  "license": "CC BY-SA 3.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Argentine-Style_Mashed_Potatoes_with_Meat_Sauce.jpg"
- },
  "rv3_beef_stroganoff": {
   "asset": "assets/recipes/photos/rv3_beef_stroganoff.jpg",
   "author": "benketaro",
@@ -1120,12 +1030,6 @@
   "author": "Petar Milošević",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Postna_sarma_(vegetarian_sarma,_Cuisine_of_Serbia).jpg"
- },
- "rv3_beef_teriyaki_bowl": {
-  "asset": "assets/recipes/photos/rv3_beef_teriyaki_bowl.jpg",
-  "author": "CNEcija12345",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bowl_of_Teriyaki_chicken_and_beef_YakinikuCNE.jpg"
  },
  "rv3_chicken_baked_meatballs": {
   "asset": "assets/recipes/photos/rv3_chicken_baked_meatballs.jpg",
@@ -1211,12 +1115,6 @@
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Malai_Tikka.JPG"
  },
- "rv3_x10_garlic_soy_glazed_chicken": {
-  "asset": "assets/recipes/photos/rv3_x10_garlic_soy_glazed_chicken.jpg",
-  "author": "Ralff Nestor Nacor",
-  "license": "CC BY-SA 4.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soy_Garlic_Chicken_Meal,_Dec_2025.jpg"
- },
  "rv3_x10_jerk_style_chicken": {
   "asset": "assets/recipes/photos/rv3_x10_jerk_style_chicken.jpg",
   "author": "Unknown",
@@ -1301,12 +1199,6 @@
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2026-06-13_20_14_59_Meatballs,_pasta,_chicken_parmigiana_and_bread_in_Westampton_Township,_Burlington_County,_New_Jersey.jpg"
  },
- "rv3_x7_chicken_pot_rice_cumin": {
-  "asset": "assets/recipes/photos/rv3_x7_chicken_pot_rice_cumin.jpg",
-  "author": "Alpha from Melbourne, Australia",
-  "license": "CC BY-SA 2.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:BBQ_Chicken_Thigh_on_Rice_-_Ling_BBQ_AUD8_(3578075458).jpg"
- },
  "rv3_x7_chicken_tenders_honey_mustard": {
   "asset": "assets/recipes/photos/rv3_x7_chicken_tenders_honey_mustard.jpg",
   "author": "Andy Li",
@@ -1355,12 +1247,6 @@
   "license": "CC BY-SA 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dak-kkochi_3.jpg"
  },
- "rv3_x8_beef_bean_chili_wraps_freezer": {
-  "asset": "assets/recipes/photos/rv3_x8_beef_bean_chili_wraps_freezer.jpg",
-  "author": "jeffreyw",
-  "license": "CC BY 2.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Breakfast_burritos_1.jpg"
- },
  "rv3_x8_beef_chickpea_stew": {
   "asset": "assets/recipes/photos/rv3_x8_beef_chickpea_stew.jpg",
   "author": "E4024",
@@ -1402,12 +1288,6 @@
   "author": "Paul Downey from Berkhamsted, UK",
   "license": "CC BY 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grandma_Pollards_meat_and_potato_pies_(5815022642).jpg"
- },
- "rv3_x8_beef_potato_stew_freezer": {
-  "asset": "assets/recipes/photos/rv3_x8_beef_potato_stew_freezer.jpg",
-  "author": "Andrea Nguyen",
-  "license": "CC BY 2.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claypot_beef_stew_with_potatoes_and_mushrooms.jpg"
  },
  "rv3_x8_beef_quesadilla": {
   "asset": "assets/recipes/photos/rv3_x8_beef_quesadilla.jpg",

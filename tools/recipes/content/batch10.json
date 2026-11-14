@@ -551,7 +551,8 @@
    {
     "textHe": "מגישים עם אורז או לחם."
    }
-  ]
+  ],
+  "mealPrep": true
  },
  {
   "id": "rv2_simple_meatloaf",

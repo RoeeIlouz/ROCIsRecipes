@@ -94,7 +94,8 @@
    {
     "textHe": "מפזרים פטרוזיליה קצוצה ומגישים ישר מהמחבת עם פיתה או לחם טרי."
    }
-  ]
+  ],
+  "mealPrep": true
  },
  {
   "id": "rv2_sabich",
@@ -770,7 +771,8 @@
    {
     "textHe": "מניחים על נייר מטבח לספיגת שמן ומגישים עם לימון ופירה או אורז."
    }
-  ]
+  ],
+  "mealPrep": true
  },
  {
   "id": "rv2_chicken_soup_noodles",
@@ -863,7 +865,8 @@
    {
     "textHe": "מחזירים את העוף והירקות לסיר, מוסיפים שמיר קצוץ וטועמים. מגישים חם."
    }
-  ]
+  ],
+  "mealPrep": true
  },
  {
   "id": "rv2_kebab_pita",
@@ -1374,93 +1377,8 @@
    {
     "textHe": "מגישים עם אורז לבן או לחם לטבילה."
    }
-  ]
- },
- {
-  "id": "rv2_lentil_soup",
-  "titleHe": "מרק עדשים כתומות",
-  "titleEn": "Red lentil soup",
-  "photoQuery": "red lentil soup",
-  "servings": 4,
-  "difficulty": "easy",
-  "mealType": "dinner",
-  "totalMinutes": 40,
-  "appliances": [
-   "stovetop"
   ],
-  "ingredients": [
-   {
-    "ingredientId": "lentils",
-    "quantity": 1.5,
-    "unit": "cup"
-   },
-   {
-    "ingredientId": "onion",
-    "quantity": 1,
-    "unit": "unit"
-   },
-   {
-    "ingredientId": "carrot",
-    "quantity": 2,
-    "unit": "unit"
-   },
-   {
-    "ingredientId": "garlic",
-    "quantity": 3,
-    "unit": "clove"
-   },
-   {
-    "ingredientId": "cumin",
-    "quantity": 1,
-    "unit": "tsp"
-   },
-   {
-    "ingredientId": "turmeric",
-    "quantity": 0.5,
-    "unit": "tsp"
-   },
-   {
-    "ingredientId": "oil",
-    "quantity": 2,
-    "unit": "tbsp"
-   },
-   {
-    "ingredientId": "salt"
-   },
-   {
-    "ingredientId": "water",
-    "quantity": 1.5,
-    "unit": "l"
-   },
-   {
-    "ingredientId": "lemon",
-    "quantity": 1,
-    "unit": "unit",
-    "optional": true
-   }
-  ],
-  "steps": [
-   {
-    "textHe": "קוצצים בצל, מגרדים או חותכים גזר דק ופורסים שום."
-   },
-   {
-    "textHe": "מחממים שמן בסיר ומטגנים בצל וגזר 6 דקות על אש בינונית, עד שהבצל שקוף.",
-    "timerSeconds": 360
-   },
-   {
-    "textHe": "מוסיפים שום, כמון וכורכום ומערבבים חצי דקה עד שהריח עולה."
-   },
-   {
-    "textHe": "מוסיפים את העדשים השטופות, ליטר וחצי מים ו-2 כפיות מלח ומביאים לרתיחה."
-   },
-   {
-    "textHe": "מנמיכים אש ומבשלים 20 דקות בכיסוי חלקי, עד שהעדשים מתפרקות לגמרי.",
-    "timerSeconds": 1200
-   },
-   {
-    "textHe": "אם רוצים מרק חלק, טוחנים חלק מהמרק עם בלנדר מוט. מתקנים תיבול ומוסיפים מיץ לימון. מגישים עם לחם."
-   }
-  ]
+  "mealPrep": true
  },
  {
   "id": "rv2_ptitim_chicken",

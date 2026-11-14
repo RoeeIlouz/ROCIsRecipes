@@ -1,85 +1,1786 @@
 [
-{"id":"rv2_chicken_potatoes_oven","titleHe":"עוף ותפוחי אדמה בתנור","titleEn":"Roasted chicken and potatoes","photoQuery":"roast chicken and potatoes","servings":4,"difficulty":"easy","mealType":"dinner","totalMinutes":75,"appliances":["oven"],
- "ingredients":[{"ingredientId":"chicken","quantity":1.2,"unit":"kg"},{"ingredientId":"potato","quantity":800,"unit":"g"},{"ingredientId":"onion","quantity":2,"unit":"unit"},{"ingredientId":"garlic","quantity":4,"unit":"clove"},{"ingredientId":"paprika","quantity":2,"unit":"tsp"},{"ingredientId":"garlic_powder","quantity":1,"unit":"tsp"},{"ingredientId":"lemon","quantity":1,"unit":"unit"},{"ingredientId":"oil","quantity":4,"unit":"tbsp"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"מחממים תנור ל-200 מעלות."},{"textHe":"מקלפים את תפוחי האדמה וחותכים לפלחים עבים. פורסים בצלים לרבעים."},{"textHe":"מערבבים בקערה גדולה שלוש כפות שמן, פפריקה, אבקת שום, מיץ לימון, כפית וחצי מלח ופלפל."},{"textHe":"מתבלים בתערובת את נתחי העוף, ובנפרד את תפוחי האדמה והבצל, ומסדרים הכול בשכבה אחת בתבנית גדולה עם העוף בצד העור למעלה."},{"textHe":"מפזרים שיני שום שלמות בתבנית ואופים 35 דקות.","timerSeconds":2100},{"textHe":"מוציאים, מהפכים את תפוחי האדמה ומחזירים לתנור לעוד 25 עד 30 דקות, עד שהעור פריך וזהוב והעוף מבושל לגמרי (מיץ שקוף בדקירה)."},{"textHe":"מגישים ישר מהתבנית עם מיץ הבישול על תפוחי האדמה."}]},
-
-{"id":"rv2_chicken_teriyaki","titleHe":"עוף בסגנון טריאקי עם אורז","titleEn":"Chicken teriyaki with rice","photoQuery":"chicken teriyaki rice","servings":3,"difficulty":"easy","mealType":"dinner","totalMinutes":35,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"chicken_breast","quantity":500,"unit":"g"},{"ingredientId":"soy_sauce","quantity":4,"unit":"tbsp"},{"ingredientId":"honey","quantity":2,"unit":"tbsp"},{"ingredientId":"garlic","quantity":2,"unit":"clove"},{"ingredientId":"ginger","quantity":1,"unit":"tsp"},{"ingredientId":"cornstarch","quantity":1,"unit":"tsp"},{"ingredientId":"oil","quantity":1,"unit":"tbsp"},{"ingredientId":"rice","quantity":1.5,"unit":"cup"},{"ingredientId":"sesame","quantity":1,"unit":"tsp","optional":true},{"ingredientId":"green_onion","quantity":2,"unit":"unit","optional":true}],
- "steps":[{"textHe":"מבשלים את האורז לפי ההוראות.","timerSeconds":1080},{"textHe":"מערבבים רוטב: סויה, דבש, שום כתוש, ג'ינג'ר מגורד, עמילן תירס ושלוש כפות מים עד שהעמילן מתמוסס."},{"textHe":"חותכים את החזה לקוביות בגודל ביס."},{"textHe":"מחממים שמן במחבת על אש גבוהה ומטגנים את העוף 5 דקות עד שהוא זהוב מכל הצדדים.","timerSeconds":300},{"textHe":"מנמיכים אש, מערבבים שוב את הרוטב ויוצקים למחבת. מבשלים 2 דקות תוך ערבוב, עד שהרוטב מסמיך ומבריק ומצפה את העוף.","timerSeconds":120},{"textHe":"מגישים על האורז ומפזרים שומשום ובצל ירוק."}]},
-
-{"id":"rv2_chicken_shnitzel_baked","titleHe":"שניצל עוף אפוי בתנור","titleEn":"Oven-baked chicken schnitzel","photoQuery":"baked chicken cutlet","servings":3,"difficulty":"medium","mealType":"dinner","totalMinutes":40,"appliances":["oven"],
- "ingredients":[{"ingredientId":"chicken_breast","quantity":600,"unit":"g"},{"ingredientId":"egg","quantity":2,"unit":"unit"},{"ingredientId":"breadcrumbs","quantity":1.5,"unit":"cup"},{"ingredientId":"flour","quantity":0.5,"unit":"cup"},{"ingredientId":"paprika","quantity":1,"unit":"tsp"},{"ingredientId":"oil","quantity":3,"unit":"tbsp"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"מחממים תנור ל-220 מעלות ומרפדים תבנית בנייר אפייה."},{"textHe":"פורסים את החזה לפרוסות דקות ומקלפים בין ניילונים לעובי של חצי סנטימטר. מתבלים במלח ופלפל."},{"textHe":"מערבבים את פירורי הלחם עם פפריקה ושתי כפות שמן עד שהם לחים מעט: כך הם ייצבעו יפה בתנור בלי טיגון."},{"textHe":"מעבירים כל שניצל בקמח, אחר כך בביצה טרופה ולבסוף בפירורים, ולוחצים היטב."},{"textHe":"מסדרים על התבנית במרווחים ומזלפים מעט שמן."},{"textHe":"אופים 12 דקות, הופכים ואופים עוד 8 עד 10 דקות, עד לזהוב ופריך.","timerSeconds":1200},{"textHe":"מגישים מיד עם פירה או סלט."}]},
-
-{"id":"rv2_chicken_braised_roots","titleHe":"עוף מבושל בסיר עם ירקות שורש","titleEn":"Braised chicken with root vegetables","photoQuery":"braised chicken vegetables","servings":4,"difficulty":"easy","mealType":"dinner","totalMinutes":80,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"chicken","quantity":1.2,"unit":"kg"},{"ingredientId":"potato","quantity":3,"unit":"unit"},{"ingredientId":"carrot","quantity":3,"unit":"unit"},{"ingredientId":"sweet_potato","quantity":1,"unit":"unit"},{"ingredientId":"onion","quantity":2,"unit":"unit"},{"ingredientId":"garlic","quantity":4,"unit":"clove"},{"ingredientId":"paprika","quantity":1,"unit":"tsp"},{"ingredientId":"turmeric","quantity":0.5,"unit":"tsp"},{"ingredientId":"oil","quantity":3,"unit":"tbsp"},{"ingredientId":"water","quantity":1.5,"unit":"cup"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"מתבלים את העוף במלח, פלפל, פפריקה וכורכום."},{"textHe":"מחממים שמן בסיר רחב ומטגנים את העוף 4 דקות מכל צד עד שהוא זהוב. מוציאים לצלחת.","timerSeconds":480},{"textHe":"מטגנים בצלים פרוסים ושום באותו סיר 5 דקות עד שהם רכים.","timerSeconds":300},{"textHe":"מחזירים את העוף, מוסיפים את הגזר, תפוחי האדמה והבטטה חתוכים לנתחים גדולים וכוס וחצי מים חמים."},{"textHe":"מביאים לרתיחה, מנמיכים אש, מכסים ומבשלים 45 דקות עד שהעוף נפרד בקלות מהעצם והירקות רכים.","timerSeconds":2700},{"textHe":"מגלים את הסיר ומבשלים עוד 10 דקות כדי שהרוטב יסמיך מעט.","timerSeconds":600},{"textHe":"טועמים, מתקנים תיבול ומגישים עם הרוטב מעל."}]},
-
-{"id":"rv2_chicken_fajita","titleHe":"פאחיטה עוף בטורטייה","titleEn":"Chicken fajitas","photoQuery":"chicken fajitas","servings":3,"difficulty":"easy","mealType":"dinner","totalMinutes":30,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"chicken_breast","quantity":500,"unit":"g"},{"ingredientId":"bell_pepper","quantity":2,"unit":"unit"},{"ingredientId":"onion","quantity":1,"unit":"unit"},{"ingredientId":"cumin","quantity":1,"unit":"tsp"},{"ingredientId":"paprika","quantity":2,"unit":"tsp"},{"ingredientId":"garlic_powder","quantity":1,"unit":"tsp"},{"ingredientId":"lime","quantity":1,"unit":"unit"},{"ingredientId":"oil","quantity":3,"unit":"tbsp"},{"ingredientId":"tortilla","quantity":6,"unit":"unit"},{"ingredientId":"yogurt","quantity":4,"unit":"tbsp","optional":true},{"ingredientId":"salt"}],
- "steps":[{"textHe":"פורסים את החזה לרצועות דקות, ואת הפלפלים והבצל לרצועות."},{"textHe":"מערבבים כמון, פפריקה, אבקת שום, מלח ומיץ חצי ליים ומתבלים בתערובת את העוף."},{"textHe":"מחממים שתי כפות שמן במחבת גדולה על אש גבוהה ומטגנים את העוף 5 דקות עד שהוא מבושל. מוציאים.","timerSeconds":300},{"textHe":"באותה מחבת מטגנים את הפלפלים והבצל עם כף שמן 5 דקות על אש גבוהה, עד שהם רכים עם קצוות שחומים.","timerSeconds":300},{"textHe":"מחזירים את העוף ומערבבים דקה. מסחטים את שאר הליים."},{"textHe":"מחממים טורטיות במחבת יבשה חצי דקה לכל צד."},{"textHe":"ממלאים בעוף ובירקות, מוסיפים יוגורט ומגישים."}]},
-
-{"id":"rv2_chicken_mushroom_cream","titleHe":"חזה עוף ברוטב שמנת ופטריות","titleEn":"Chicken in mushroom cream sauce","photoQuery":"chicken mushroom cream sauce","servings":3,"difficulty":"medium","mealType":"dinner","totalMinutes":40,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"chicken_breast","quantity":600,"unit":"g"},{"ingredientId":"mushroom","quantity":250,"unit":"g"},{"ingredientId":"onion","quantity":1,"unit":"unit"},{"ingredientId":"garlic","quantity":2,"unit":"clove"},{"ingredientId":"cream","quantity":250,"unit":"ml"},{"ingredientId":"flour","quantity":2,"unit":"tbsp"},{"ingredientId":"oil","quantity":2,"unit":"tbsp"},{"ingredientId":"butter","quantity":1,"unit":"tbsp"},{"ingredientId":"salt"},{"ingredientId":"pepper"},{"ingredientId":"parsley","quantity":0.25,"unit":"bunch","optional":true}],
- "steps":[{"textHe":"פורסים את החזה לשניצלים דקים, מתבלים במלח ופלפל ומקמחים קלות."},{"textHe":"מטגנים את החזה בשמן חם 3 דקות מכל צד עד שהוא זהוב. מוציאים לצלחת.","timerSeconds":360},{"textHe":"ממיסים חמאה באותה מחבת ומטגנים בצל קצוץ 4 דקות. מוסיפים פטריות פרוסות ומטגנים עוד 6 דקות עד שהנוזלים מתאדים.","timerSeconds":600},{"textHe":"מוסיפים שום כתוש ועוד חצי דקה."},{"textHe":"יוצקים שמנת, מוסיפים כפית מלח ופלפל ומבשלים 3 דקות עד שהרוטב מסמיך מעט.","timerSeconds":180},{"textHe":"מחזירים את העוף למחבת ומחממים 3 דקות ברוטב על אש קטנה.","timerSeconds":180},{"textHe":"מפזרים פטרוזיליה ומגישים עם אורז או פירה."}]},
-
-{"id":"rv2_mediterranean_chicken_tray","titleHe":"תבנית עוף ים תיכונית עם ירקות","titleEn":"Mediterranean chicken tray bake","photoQuery":"mediterranean chicken tray bake","servings":4,"difficulty":"easy","mealType":"dinner","totalMinutes":60,"appliances":["oven"],
- "ingredients":[{"ingredientId":"chicken","quantity":1,"unit":"kg"},{"ingredientId":"zucchini","quantity":2,"unit":"unit"},{"ingredientId":"bell_pepper","quantity":2,"unit":"unit"},{"ingredientId":"cherry_tomato","quantity":250,"unit":"g"},{"ingredientId":"onion","quantity":1,"unit":"unit"},{"ingredientId":"olives","quantity":80,"unit":"g"},{"ingredientId":"olive_oil","quantity":4,"unit":"tbsp"},{"ingredientId":"oregano","quantity":2,"unit":"tsp"},{"ingredientId":"lemon","quantity":1,"unit":"unit"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"מחממים תנור ל-210 מעלות."},{"textHe":"חותכים קישואים, פלפלים ובצל לנתחים גדולים. משאירים את עגבניות השרי שלמות."},{"textHe":"מערבבים בקערה את הירקות עם שלוש כפות שמן זית, אורגנו, מלח ופלפל."},{"textHe":"מתבלים את העוף במלח, פלפל ושמן זית ומסדרים בתבנית גדולה עם הירקות מסביב."},{"textHe":"אופים 30 דקות.","timerSeconds":1800},{"textHe":"מוסיפים זיתים, מסחטים לימון על התבנית ואופים עוד 15 עד 20 דקות, עד שהעוף זהוב ומבושל והירקות צרובים בקצוות.","timerSeconds":1050},{"textHe":"מגישים ישר מהתבנית."}]},
-
-{"id":"rv2_turkey_meatballs_yogurt","titleHe":"קציצות הודו בתנור עם יוגורט","titleEn":"Baked turkey meatballs with yogurt sauce","photoQuery":"turkey meatballs","servings":4,"difficulty":"easy","mealType":"dinner","totalMinutes":40,"appliances":["oven"],
- "ingredients":[{"ingredientId":"ground_turkey","quantity":500,"unit":"g"},{"ingredientId":"onion","quantity":1,"unit":"unit"},{"ingredientId":"egg","quantity":1,"unit":"unit"},{"ingredientId":"breadcrumbs","quantity":0.5,"unit":"cup"},{"ingredientId":"parsley","quantity":0.5,"unit":"bunch"},{"ingredientId":"cumin","quantity":1,"unit":"tsp"},{"ingredientId":"yogurt","quantity":200,"unit":"g"},{"ingredientId":"garlic","quantity":1,"unit":"clove"},{"ingredientId":"lemon","quantity":0.5,"unit":"unit"},{"ingredientId":"oil","quantity":2,"unit":"tbsp"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"מחממים תנור ל-200 מעלות ומרפדים תבנית."},{"textHe":"מגרדים את הבצל ומערבבים עם הבשר, ביצה, פירורי לחם, פטרוזיליה קצוצה, כמון, כפית מלח ופלפל. בשר הודו רזה ולכן הפירורים והביצה חשובים לעסיסיות."},{"textHe":"יוצרים כדורים בגודל אגוז, כ-20 כדורים, ומסדרים על התבנית. מזלפים מעט שמן."},{"textHe":"אופים 18 עד 20 דקות עד שהקציצות זהובות ומבושלות במרכזן.","timerSeconds":1140},{"textHe":"מכינים רוטב: מערבבים יוגורט עם שום כתוש, מיץ לימון וקורט מלח."},{"textHe":"מגישים את הקציצות עם הרוטב, עם אורז או פיתה."}]},
-
-{"id":"rv2_beef_stew_potato","titleHe":"תבשיל בשר ותפוחי אדמה","titleEn":"Beef and potato stew","photoQuery":"beef stew","servings":5,"difficulty":"medium","mealType":"dinner","totalMinutes":150,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"beef","quantity":800,"unit":"g"},{"ingredientId":"potato","quantity":4,"unit":"unit"},{"ingredientId":"carrot","quantity":3,"unit":"unit"},{"ingredientId":"onion","quantity":2,"unit":"unit"},{"ingredientId":"garlic","quantity":4,"unit":"clove"},{"ingredientId":"tomato_paste","quantity":2,"unit":"tbsp"},{"ingredientId":"paprika","quantity":1,"unit":"tsp"},{"ingredientId":"bay_leaf","quantity":2,"unit":"unit"},{"ingredientId":"oil","quantity":3,"unit":"tbsp"},{"ingredientId":"water","quantity":3,"unit":"cup"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"חותכים את הבשר לקוביות של 3 סנטימטר ומתבלים במלח ופלפל."},{"textHe":"מחממים שמן בסיר כבד ומטגנים את הבשר בקבוצות, עד שהוא חום מכל הצדדים. מוציאים לצלחת.","timerSeconds":600},{"textHe":"מטגנים בצלים קצוצים בסיר 7 דקות. מוסיפים שום, רסק עגבניות ופפריקה ועוד דקה.","timerSeconds":480},{"textHe":"מחזירים את הבשר, מוסיפים 3 כוסות מים חמים ועלי דפנה. מביאים לרתיחה, מנמיכים, מכסים ומבשלים שעה וחצי על אש קטנה.","timerSeconds":5400},{"textHe":"מוסיפים גזר ותפוחי אדמה חתוכים לנתחים גדולים ומבשלים עוד 30 דקות עד שהירקות והבשר רכים.","timerSeconds":1800},{"textHe":"מגלים ומבשלים עוד 5 דקות כדי להסמיך מעט את הרוטב. מסירים את עלי הדפנה ומגישים חם."}]},
-
-{"id":"rv2_burger_homemade","titleHe":"המבורגר ביתי בלחמנייה","titleEn":"Homemade burger","photoQuery":"homemade hamburger","servings":3,"difficulty":"easy","mealType":"dinner","totalMinutes":30,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"ground_beef","quantity":500,"unit":"g"},{"ingredientId":"onion","quantity":1,"unit":"unit"},{"ingredientId":"bread","quantity":3,"unit":"unit"},{"ingredientId":"tomato","quantity":1,"unit":"unit"},{"ingredientId":"lettuce","quantity":3,"unit":"unit"},{"ingredientId":"pickles","quantity":3,"unit":"unit","optional":true},{"ingredientId":"yellow_cheese","quantity":3,"unit":"slice","optional":true},{"ingredientId":"ketchup","quantity":3,"unit":"tbsp","optional":true},{"ingredientId":"oil","quantity":1,"unit":"tbsp"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"מחלקים את הבשר ל-3 חלקים ויוצרים קציצות שטוחות ברוחב לחמנייה בעובי של שני סנטימטר. לא לשוטף ולא ללוש יותר מדי כדי שההמבורגר יישאר רך."},{"textHe":"יוצרים גומחה קטנה במרכז כל קציצה: כך היא לא תתנפח באמצע. מתבלים בנדיבות במלח ופלפל רגע לפני הצלייה."},{"textHe":"מחממים מחבת כבדה על אש גבוהה עם כף שמן ומטגנים 4 דקות מכל צד לבינוני, יותר זמן ליותר עשוי.","timerSeconds":480},{"textHe":"בדקה האחרונה מניחים פרוסת גבינה על כל המבורגר ומכסים עד שהיא נמסה.","timerSeconds":60},{"textHe":"פורסים בצל, עגבנייה ומלפפון חמוץ. קולים את הלחמניות חצי דקה במחבת."},{"textHe":"מרכיבים: לחמנייה, חסה, המבורגר, עגבנייה, בצל, חמוצים וקטשופ. מגישים עם צ'יפס או סלט."}]},
-
-{"id":"rv2_stuffed_peppers_rice","titleHe":"פלפלים ממולאים בבשר ואורז","titleEn":"Stuffed peppers with meat and rice","photoQuery":"stuffed peppers","servings":4,"difficulty":"medium","mealType":"dinner","totalMinutes":90,"appliances":["stovetop","oven"],
- "ingredients":[{"ingredientId":"bell_pepper","quantity":6,"unit":"unit"},{"ingredientId":"ground_beef","quantity":400,"unit":"g"},{"ingredientId":"rice","quantity":0.5,"unit":"cup"},{"ingredientId":"onion","quantity":1,"unit":"unit"},{"ingredientId":"parsley","quantity":0.5,"unit":"bunch"},{"ingredientId":"canned_tomatoes","quantity":400,"unit":"g"},{"ingredientId":"tomato_paste","quantity":1,"unit":"tbsp"},{"ingredientId":"cumin","quantity":1,"unit":"tsp"},{"ingredientId":"oil","quantity":2,"unit":"tbsp"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"מחממים תנור ל-190 מעלות. חותכים את כובעי הפלפלים ומוציאים את הגרעינים. שומרים את הכובעים."},{"textHe":"מגרדים את הבצל ומערבבים עם הבשר, האורז הנא (לא מבושל), פטרוזיליה קצוצה, כמון, כפית וחצי מלח ופלפל."},{"textHe":"ממלאים כל פלפל עד שלושה רבעים בלבד, כי האורז מתנפח, וסוגרים עם הכובע."},{"textHe":"מערבבים בתבנית עגבניות מרוסקות, רסק עגבניות, כוס מים, שמן וקורט מלח."},{"textHe":"מסדרים את הפלפלים זקופים בתבנית, מכסים בנייר כסף ואופים שעה.","timerSeconds":3600},{"textHe":"מסירים את הנייר ואופים עוד 15 דקות כדי שהרוטב יסמיך והפלפלים יזהיבו.","timerSeconds":900},{"textHe":"בודקים שהאורז רך, ומגישים עם הרוטב מהתבנית."}]},
-
-{"id":"rv2_chicken_schnitzel_sandwich","titleHe":"כריך שניצל עם סלט וטחינה","titleEn":"Schnitzel sandwich","photoQuery":"schnitzel sandwich","servings":2,"difficulty":"easy","mealType":"lunch","totalMinutes":20,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"schnitzel","quantity":4,"unit":"unit"},{"ingredientId":"pita","quantity":2,"unit":"unit"},{"ingredientId":"tomato","quantity":1,"unit":"unit"},{"ingredientId":"cucumber","quantity":1,"unit":"unit"},{"ingredientId":"tahini","quantity":2,"unit":"tbsp"},{"ingredientId":"oil","quantity":3,"unit":"tbsp"},{"ingredientId":"pickles","quantity":2,"unit":"unit","optional":true},{"ingredientId":"salt"}],
- "steps":[{"textHe":"קוצצים עגבנייה ומלפפון לקוביות קטנות ומערבבים עם קורט מלח."},{"textHe":"מערבבים טחינה עם שלוש כפות מים וטיפות לימון לרוטב זורם."},{"textHe":"מחממים שמן במחבת ומטגנים את השניצלים הקפואים לפי ההוראות, כ-4 דקות מכל צד, עד שהם זהובים ופריכים.","timerSeconds":480},{"textHe":"מניחים על נייר מטבח לניקוז שמן."},{"textHe":"מחממים פיתות, ממלאים בשניצל חתוך לרצועות, סלט וחמוצים."},{"textHe":"מזלפים טחינה ומגישים מיד."}]},
-
-{"id":"rv2_beef_kofta_tray","titleHe":"קבב בתבנית עם תפוחי אדמה ועגבניות","titleEn":"Kofta tray bake with potatoes and tomatoes","photoQuery":"kofta tray bake","servings":4,"difficulty":"medium","mealType":"dinner","totalMinutes":65,"appliances":["oven"],
- "ingredients":[{"ingredientId":"ground_beef","quantity":600,"unit":"g"},{"ingredientId":"potato","quantity":4,"unit":"unit"},{"ingredientId":"tomato","quantity":4,"unit":"unit"},{"ingredientId":"onion","quantity":2,"unit":"unit"},{"ingredientId":"parsley","quantity":0.5,"unit":"bunch"},{"ingredientId":"cumin","quantity":1,"unit":"tsp"},{"ingredientId":"paprika","quantity":1,"unit":"tsp"},{"ingredientId":"oil","quantity":3,"unit":"tbsp"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"מחממים תנור ל-200 מעלות."},{"textHe":"מקלפים תפוחי אדמה ופורסים לעיגולים בעובי חצי סנטימטר. פורסים עגבניות ובצל אחד לעיגולים."},{"textHe":"מערבבים את הבשר עם בצל מגורד, פטרוזיליה קצוצה, כמון, פפריקה וכפית מלח. יוצרים אצבעות קבב."},{"textHe":"מסדרים בתבנית את תפוחי האדמה, מלח ושמן, וסוגרים עם שכבת בצל. אופים 15 דקות.","timerSeconds":900},{"textHe":"מניחים מעל את הקבב וסביבו את העגבניות, ואופים עוד 30 דקות.","timerSeconds":1800},{"textHe":"מהפכים את הקבב באמצע ומוסיפים כף מים אם התבנית יבשה."},{"textHe":"מגישים ישר מהתבנית עם סלט וטחינה."}]},
-
-{"id":"rv2_chicken_rice_soup","titleHe":"מרק עוף ואורז מרגיע","titleEn":"Comforting chicken and rice soup","photoQuery":"chicken rice soup","servings":4,"difficulty":"easy","mealType":"dinner","totalMinutes":55,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"chicken_breast","quantity":400,"unit":"g"},{"ingredientId":"rice","quantity":0.5,"unit":"cup"},{"ingredientId":"carrot","quantity":2,"unit":"unit"},{"ingredientId":"celery","quantity":1,"unit":"unit","optional":true},{"ingredientId":"onion","quantity":1,"unit":"unit"},{"ingredientId":"garlic","quantity":2,"unit":"clove"},{"ingredientId":"oil","quantity":1,"unit":"tbsp"},{"ingredientId":"stock_powder","quantity":1,"unit":"tbsp"},{"ingredientId":"water","quantity":1.5,"unit":"l"},{"ingredientId":"parsley","quantity":0.25,"unit":"bunch"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"חותכים בצל וגזר לקוביות קטנות."},{"textHe":"מטגנים את הבצל והגזר בשמן 5 דקות, מוסיפים שום וסלרי חתוך ועוד דקה.","timerSeconds":360},{"textHe":"מוסיפים ליטר וחצי מים, אבקת מרק ואת החזה השלם ומביאים לרתיחה. מנמיכים ומבשלים 20 דקות.","timerSeconds":1200},{"textHe":"מוציאים את החזה, מפרקים בעזרת שני מזלגות ומחזירים לסיר."},{"textHe":"מוסיפים את האורז השטוף ומבשלים 15 דקות עד שהוא רך.","timerSeconds":900},{"textHe":"מתבלים במלח ופלפל, מפזרים פטרוזיליה קצוצה ומגישים חם."}]},
-
-{"id":"rv2_chicken_wings_air_fryer","titleHe":"כנפי עוף פריכות באייר פרייר","titleEn":"Crispy air fryer chicken wings","photoQuery":"crispy chicken wings","servings":3,"difficulty":"easy","mealType":"dinner","totalMinutes":35,"appliances":["airFryer"],
- "ingredients":[{"ingredientId":"chicken","quantity":800,"unit":"g"},{"ingredientId":"baking_powder","quantity":1,"unit":"tsp"},{"ingredientId":"paprika","quantity":2,"unit":"tsp"},{"ingredientId":"garlic_powder","quantity":1,"unit":"tsp"},{"ingredientId":"honey","quantity":2,"unit":"tbsp"},{"ingredientId":"soy_sauce","quantity":2,"unit":"tbsp"},{"ingredientId":"oil","quantity":1,"unit":"tbsp"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"מייבשים את הכנפיים היטב בנייר מטבח: ככל שהן יבשות יותר כך הן פריכות יותר."},{"textHe":"מערבבים בקערה את הכנפיים עם אבקת אפייה (הסוד לעור פריך), פפריקה, אבקת שום, כפית מלח, פלפל ושמן."},{"textHe":"מחממים את האייר פרייר ל-200 מעלות ומסדרים את הכנפיים בשכבה אחת בלי שיגעו זו בזו, בשתי קבוצות אם צריך."},{"textHe":"מטגנים 12 דקות, הופכים ומטגנים עוד 10 עד 12 דקות עד שהעור זהוב ופריך והעוף מבושל.","timerSeconds":1380},{"textHe":"בינתיים מחממים בסיר קטן דבש וסויה 2 דקות עד שהרוטב מסמיך מעט.","timerSeconds":120},{"textHe":"מערבבים את הכנפיים החמות עם הרוטב ומגישים מיד."}]},
-
-{"id":"rv2_shakshuka_meatballs","titleHe":"קציצות בשקשוקה","titleEn":"Meatballs in shakshuka","photoQuery":"meatballs shakshuka","servings":3,"difficulty":"medium","mealType":"dinner","totalMinutes":45,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"ground_beef","quantity":400,"unit":"g"},{"ingredientId":"canned_tomatoes","quantity":400,"unit":"g"},{"ingredientId":"onion","quantity":1,"unit":"unit"},{"ingredientId":"garlic","quantity":3,"unit":"clove"},{"ingredientId":"bell_pepper","quantity":1,"unit":"unit"},{"ingredientId":"egg","quantity":4,"unit":"unit"},{"ingredientId":"breadcrumbs","quantity":3,"unit":"tbsp"},{"ingredientId":"cumin","quantity":1,"unit":"tsp"},{"ingredientId":"paprika","quantity":1,"unit":"tsp"},{"ingredientId":"oil","quantity":3,"unit":"tbsp"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"מערבבים את הבשר עם חצי מהבצל המגורד, פירורי לחם, חצי כפית כמון, כפית מלח ופלפל. יוצרים 16 כדורים קטנים."},{"textHe":"מטגנים את הקציצות בשמן חם 2 דקות מכל צד, רק כדי לצבוע. מוציאים.","timerSeconds":240},{"textHe":"באותה מחבת מטגנים את שאר הבצל הקצוץ והפלפל 5 דקות, מוסיפים שום ועוד חצי דקה.","timerSeconds":330},{"textHe":"מוסיפים פפריקה, כמון, עגבניות מרוסקות וקורט מלח ומבשלים 8 דקות עד שהרוטב מסמיך.","timerSeconds":480},{"textHe":"מחזירים את הקציצות, יוצרים ביניהן גומחות ושוברים לתוכן את הביצים."},{"textHe":"מכסים ומבשלים 7 דקות על אש קטנה, עד שהחלבון מתייצב והחלמון רך.","timerSeconds":420},{"textHe":"מגישים עם פיתה."}]},
-
-{"id":"rv2_chicken_lemon_garlic_pan","titleHe":"שוקי עוף בלימון ושום במחבת","titleEn":"Lemon garlic chicken thighs","photoQuery":"lemon garlic chicken thighs","servings":3,"difficulty":"easy","mealType":"dinner","totalMinutes":45,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"chicken","quantity":900,"unit":"g"},{"ingredientId":"garlic","quantity":6,"unit":"clove"},{"ingredientId":"lemon","quantity":1,"unit":"unit"},{"ingredientId":"olive_oil","quantity":2,"unit":"tbsp"},{"ingredientId":"oregano","quantity":1,"unit":"tsp"},{"ingredientId":"water","quantity":0.5,"unit":"cup"},{"ingredientId":"salt"},{"ingredientId":"pepper"},{"ingredientId":"parsley","quantity":0.25,"unit":"bunch","optional":true}],
- "steps":[{"textHe":"מתבלים את השוקיים במלח, פלפל ואורגנו."},{"textHe":"מחממים שמן זית במחבת רחבה עם מכסה ומטגנים את העוף בצד העור 6 דקות, עד שהעור זהוב ופריך. מהפכים ומטגנים עוד 3 דקות.","timerSeconds":540},{"textHe":"מוסיפים שיני שום קלופות שלמות, מיץ לימון וחצי כוס מים."},{"textHe":"מכסים, מנמיכים אש ומבשלים 25 דקות עד שהעוף רך ומבושל.","timerSeconds":1500},{"textHe":"מגלים ומבשלים עוד 3 דקות על אש גבוהה כדי שהרוטב יסמיך לעסיסי ומבריק.","timerSeconds":180},{"textHe":"מפזרים פטרוזיליה ומגישים עם אורז או לחם."}]},
-
-{"id":"rv2_sloppy_joe_pita","titleHe":"פיתה במילוי בשר טחון מתובל","titleEn":"Spiced minced beef pita","photoQuery":"ground beef pita sandwich","servings":3,"difficulty":"easy","mealType":"dinner","totalMinutes":25,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"ground_beef","quantity":400,"unit":"g"},{"ingredientId":"onion","quantity":1,"unit":"unit"},{"ingredientId":"garlic","quantity":2,"unit":"clove"},{"ingredientId":"tomato_paste","quantity":1,"unit":"tbsp"},{"ingredientId":"cumin","quantity":1,"unit":"tsp"},{"ingredientId":"paprika","quantity":1,"unit":"tsp"},{"ingredientId":"pita","quantity":3,"unit":"unit"},{"ingredientId":"yogurt","quantity":4,"unit":"tbsp"},{"ingredientId":"tomato","quantity":1,"unit":"unit"},{"ingredientId":"oil","quantity":1,"unit":"tbsp"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"קוצצים את הבצל דק ואת השום."},{"textHe":"מחממים שמן במחבת ומטגנים את הבצל 5 דקות עד שהוא שקוף.","timerSeconds":300},{"textHe":"מוסיפים את הבשר על אש גבוהה ומפרקים אותו בכף. מטגנים 7 דקות עד שהוא משחים, בלי מים.","timerSeconds":420},{"textHe":"מוסיפים שום, כמון, פפריקה, רסק עגבניות, מלח ופלפל ומערבבים 2 דקות.","timerSeconds":120},{"textHe":"מוסיפים כמה כפות מים ומבשלים עוד דקה כדי שהתערובת תהיה לחה."},{"textHe":"ממלאים פיתות חמות בבשר, עגבנייה קצוצה ויוגורט ומגישים."}]},
-
-{"id":"rv2_chicken_vegetable_stirfry","titleHe":"עוף מוקפץ עם ירקות וסויה","titleEn":"Chicken and vegetable stir-fry","photoQuery":"chicken vegetable stir fry","servings":3,"difficulty":"easy","mealType":"dinner","totalMinutes":30,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"chicken_breast","quantity":500,"unit":"g"},{"ingredientId":"broccoli","quantity":1,"unit":"unit"},{"ingredientId":"carrot","quantity":1,"unit":"unit"},{"ingredientId":"bell_pepper","quantity":1,"unit":"unit"},{"ingredientId":"garlic","quantity":3,"unit":"clove"},{"ingredientId":"ginger","quantity":1,"unit":"tsp"},{"ingredientId":"soy_sauce","quantity":3,"unit":"tbsp"},{"ingredientId":"honey","quantity":1,"unit":"tsp"},{"ingredientId":"cornstarch","quantity":1,"unit":"tsp"},{"ingredientId":"oil","quantity":3,"unit":"tbsp"},{"ingredientId":"rice","quantity":1.5,"unit":"cup"}],
- "steps":[{"textHe":"מבשלים אורז לפי ההוראות.","timerSeconds":1080},{"textHe":"חותכים את החזה לרצועות דקות ומערבבים עם כף סויה וחצי כפית עמילן."},{"textHe":"מפרקים את הברוקולי לפרחים קטנים וחותכים גזר ופלפל לרצועות."},{"textHe":"מערבבים רוטב: שתי כפות סויה, דבש, חצי כפית עמילן, ג'ינג'ר ושלוש כפות מים."},{"textHe":"מחממים שתי כפות שמן בווק על אש גבוהה ומטגנים את העוף 4 דקות עד שהוא זהוב. מוציאים.","timerSeconds":240},{"textHe":"מקפיצים את הגזר והברוקולי 3 דקות, מוסיפים פלפל ושום ועוד 2 דקות.","timerSeconds":300},{"textHe":"מחזירים את העוף, יוצקים את הרוטב ומקפיצים דקה עד שהוא מסמיך ומצפה. מגישים על האורז."}]},
-
-{"id":"rv2_turkey_patties_rice","titleHe":"צלחת קציצות עוף עם אורז וירקות","titleEn":"Chicken patties with rice and vegetables","photoQuery":"chicken patties rice","servings":4,"difficulty":"medium","mealType":"dinner","totalMinutes":50,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"ground_turkey","quantity":500,"unit":"g"},{"ingredientId":"onion","quantity":1,"unit":"unit"},{"ingredientId":"egg","quantity":1,"unit":"unit"},{"ingredientId":"breadcrumbs","quantity":0.5,"unit":"cup"},{"ingredientId":"parsley","quantity":0.5,"unit":"bunch"},{"ingredientId":"paprika","quantity":1,"unit":"tsp"},{"ingredientId":"rice","quantity":1.5,"unit":"cup"},{"ingredientId":"carrot","quantity":2,"unit":"unit"},{"ingredientId":"oil","quantity":4,"unit":"tbsp"},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"מגרדים את הבצל ומערבבים עם הבשר, ביצה, פירורי לחם, פטרוזיליה קצוצה, פפריקה, כפית מלח ופלפל."},{"textHe":"יוצרים 12 קציצות שטוחות ומרטיבים ידיים כדי שלא יידבקו."},{"textHe":"מבשלים אורז לפי ההוראות, ובמקביל מבשלים גזר חתוך לעיגולים 8 דקות במים רותחים עד שהוא רך.","timerSeconds":1080},{"textHe":"מחממים שלוש כפות שמן במחבת ומטגנים את הקציצות 4 דקות מכל צד, עד שהן זהובות ומבושלות.","timerSeconds":480},{"textHe":"מניחים על נייר מטבח ומנקזים."},{"textHe":"מגישים צלחת עם אורז, גזר וקציצות."}]},
-
-{"id":"rv2_sausage_potato_pan","titleHe":"נקניקיות עם תפוחי אדמה ובצל במחבת","titleEn":"Sausage and potato skillet","photoQuery":"sausage potato skillet","servings":3,"difficulty":"easy","mealType":"dinner","totalMinutes":35,"appliances":["stovetop"],
- "ingredients":[{"ingredientId":"sausage","quantity":6,"unit":"unit"},{"ingredientId":"potato","quantity":4,"unit":"unit"},{"ingredientId":"onion","quantity":2,"unit":"unit"},{"ingredientId":"bell_pepper","quantity":1,"unit":"unit"},{"ingredientId":"paprika","quantity":1,"unit":"tsp"},{"ingredientId":"oil","quantity":3,"unit":"tbsp"},{"ingredientId":"mustard","quantity":1,"unit":"tbsp","optional":true},{"ingredientId":"salt"},{"ingredientId":"pepper"}],
- "steps":[{"textHe":"חותכים את תפוחי האדמה לקוביות של סנטימטר וחצי ומשרים במים 5 דקות. מייבשים היטב."},{"textHe":"מחממים שתי כפות שמן במחבת גדולה על אש בינונית-גבוהה ומטגנים את תפוחי האדמה 12 דקות, מערבבים לעיתים, עד שהם זהובים ופריכים.","timerSeconds":720},{"textHe":"מוסיפים בצל ופלפל פרוסים, פפריקה, מלח ופלפל ומטגנים עוד 6 דקות.","timerSeconds":360},{"textHe":"בינתיים חותכים את הנקניקיות לעיגולים ומטגנים בנפרד בכף שמן 5 דקות עד שהן חומות.","timerSeconds":300},{"textHe":"מערבבים הכול במחבת ומחממים 2 דקות."},{"textHe":"מגישים עם חרדל בצד."}]}
+ {
+  "id": "rv2_chicken_potatoes_oven",
+  "titleHe": "עוף ותפוחי אדמה בתנור",
+  "titleEn": "Roasted chicken and potatoes",
+  "photoQuery": "roast chicken and potatoes",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 75,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1.2,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "garlic_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "מקלפים את תפוחי האדמה וחותכים לפלחים עבים. פורסים בצלים לרבעים."
+   },
+   {
+    "textHe": "מערבבים בקערה גדולה שלוש כפות שמן, פפריקה, אבקת שום, מיץ לימון, כפית וחצי מלח ופלפל."
+   },
+   {
+    "textHe": "מתבלים בתערובת את נתחי העוף, ובנפרד את תפוחי האדמה והבצל, ומסדרים הכול בשכבה אחת בתבנית גדולה עם העוף בצד העור למעלה."
+   },
+   {
+    "textHe": "מפזרים שיני שום שלמות בתבנית ואופים 35 דקות.",
+    "timerSeconds": 2100
+   },
+   {
+    "textHe": "מוציאים, מהפכים את תפוחי האדמה ומחזירים לתנור לעוד 25 עד 30 דקות, עד שהעור פריך וזהוב והעוף מבושל לגמרי (מיץ שקוף בדקירה)."
+   },
+   {
+    "textHe": "מגישים ישר מהתבנית עם מיץ הבישול על תפוחי האדמה."
+   }
+  ]
+ },
+ {
+  "id": "rv2_chicken_teriyaki",
+  "titleHe": "עוף בסגנון טריאקי עם אורז",
+  "titleEn": "Chicken teriyaki with rice",
+  "photoQuery": "chicken teriyaki rice",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "sesame",
+    "quantity": 1,
+    "unit": "tsp",
+    "optional": true
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 2,
+    "unit": "unit",
+    "optional": true
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים את האורז לפי ההוראות.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מערבבים רוטב: סויה, דבש, שום כתוש, ג'ינג'ר מגורד, עמילן תירס ושלוש כפות מים עד שהעמילן מתמוסס."
+   },
+   {
+    "textHe": "חותכים את החזה לקוביות בגודל ביס."
+   },
+   {
+    "textHe": "מחממים שמן במחבת על אש גבוהה ומטגנים את העוף 5 דקות עד שהוא זהוב מכל הצדדים.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מנמיכים אש, מערבבים שוב את הרוטב ויוצקים למחבת. מבשלים 2 דקות תוך ערבוב, עד שהרוטב מסמיך ומבריק ומצפה את העוף.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מגישים על האורז ומפזרים שומשום ובצל ירוק."
+   }
+  ]
+ },
+ {
+  "id": "rv2_chicken_shnitzel_baked",
+  "titleHe": "שניצל עוף אפוי בתנור",
+  "titleEn": "Oven-baked chicken schnitzel",
+  "photoQuery": "baked chicken cutlet",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-220 מעלות ומרפדים תבנית בנייר אפייה."
+   },
+   {
+    "textHe": "פורסים את החזה לפרוסות דקות ומקלפים בין ניילונים לעובי של חצי סנטימטר. מתבלים במלח ופלפל."
+   },
+   {
+    "textHe": "מערבבים את פירורי הלחם עם פפריקה ושתי כפות שמן עד שהם לחים מעט: כך הם ייצבעו יפה בתנור בלי טיגון."
+   },
+   {
+    "textHe": "מעבירים כל שניצל בקמח, אחר כך בביצה טרופה ולבסוף בפירורים, ולוחצים היטב."
+   },
+   {
+    "textHe": "מסדרים על התבנית במרווחים ומזלפים מעט שמן."
+   },
+   {
+    "textHe": "אופים 12 דקות, הופכים ואופים עוד 8 עד 10 דקות, עד לזהוב ופריך.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מגישים מיד עם פירה או סלט."
+   }
+  ]
+ },
+ {
+  "id": "rv2_chicken_braised_roots",
+  "titleHe": "עוף מבושל בסיר עם ירקות שורש",
+  "titleEn": "Braised chicken with root vegetables",
+  "photoQuery": "braised chicken vegetables",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 80,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1.2,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "sweet_potato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "water",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מתבלים את העוף במלח, פלפל, פפריקה וכורכום."
+   },
+   {
+    "textHe": "מחממים שמן בסיר רחב ומטגנים את העוף 4 דקות מכל צד עד שהוא זהוב. מוציאים לצלחת.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מטגנים בצלים פרוסים ושום באותו סיר 5 דקות עד שהם רכים.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מחזירים את העוף, מוסיפים את הגזר, תפוחי האדמה והבטטה חתוכים לנתחים גדולים וכוס וחצי מים חמים."
+   },
+   {
+    "textHe": "מביאים לרתיחה, מנמיכים אש, מכסים ומבשלים 45 דקות עד שהעוף נפרד בקלות מהעצם והירקות רכים.",
+    "timerSeconds": 2700
+   },
+   {
+    "textHe": "מגלים את הסיר ומבשלים עוד 10 דקות כדי שהרוטב יסמיך מעט.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "טועמים, מתקנים תיבול ומגישים עם הרוטב מעל."
+   }
+  ]
+ },
+ {
+  "id": "rv2_chicken_fajita",
+  "titleHe": "פאחיטה עוף בטורטייה",
+  "titleEn": "Chicken fajitas",
+  "photoQuery": "chicken fajitas",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "garlic_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "lime",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "tortilla",
+    "quantity": 6,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "yogurt",
+    "quantity": 4,
+    "unit": "tbsp",
+    "optional": true
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים את החזה לרצועות דקות, ואת הפלפלים והבצל לרצועות."
+   },
+   {
+    "textHe": "מערבבים כמון, פפריקה, אבקת שום, מלח ומיץ חצי ליים ומתבלים בתערובת את העוף."
+   },
+   {
+    "textHe": "מחממים שתי כפות שמן במחבת גדולה על אש גבוהה ומטגנים את העוף 5 דקות עד שהוא מבושל. מוציאים.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "באותה מחבת מטגנים את הפלפלים והבצל עם כף שמן 5 דקות על אש גבוהה, עד שהם רכים עם קצוות שחומים.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מחזירים את העוף ומערבבים דקה. מסחטים את שאר הליים."
+   },
+   {
+    "textHe": "מחממים טורטיות במחבת יבשה חצי דקה לכל צד."
+   },
+   {
+    "textHe": "ממלאים בעוף ובירקות, מוסיפים יוגורט ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv2_chicken_mushroom_cream",
+  "titleHe": "חזה עוף ברוטב שמנת ופטריות",
+  "titleEn": "Chicken in mushroom cream sauce",
+  "photoQuery": "chicken mushroom cream sauce",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "mushroom",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "cream",
+    "quantity": 250,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "butter",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.25,
+    "unit": "bunch",
+    "optional": true
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים את החזה לשניצלים דקים, מתבלים במלח ופלפל ומקמחים קלות."
+   },
+   {
+    "textHe": "מטגנים את החזה בשמן חם 3 דקות מכל צד עד שהוא זהוב. מוציאים לצלחת.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "ממיסים חמאה באותה מחבת ומטגנים בצל קצוץ 4 דקות. מוסיפים פטריות פרוסות ומטגנים עוד 6 דקות עד שהנוזלים מתאדים.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מוסיפים שום כתוש ועוד חצי דקה."
+   },
+   {
+    "textHe": "יוצקים שמנת, מוסיפים כפית מלח ופלפל ומבשלים 3 דקות עד שהרוטב מסמיך מעט.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מחזירים את העוף למחבת ומחממים 3 דקות ברוטב על אש קטנה.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מפזרים פטרוזיליה ומגישים עם אורז או פירה."
+   }
+  ]
+ },
+ {
+  "id": "rv2_mediterranean_chicken_tray",
+  "titleHe": "תבנית עוף ים תיכונית עם ירקות",
+  "titleEn": "Mediterranean chicken tray bake",
+  "photoQuery": "mediterranean chicken tray bake",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 60,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "zucchini",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cherry_tomato",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olives",
+    "quantity": 80,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oregano",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-210 מעלות."
+   },
+   {
+    "textHe": "חותכים קישואים, פלפלים ובצל לנתחים גדולים. משאירים את עגבניות השרי שלמות."
+   },
+   {
+    "textHe": "מערבבים בקערה את הירקות עם שלוש כפות שמן זית, אורגנו, מלח ופלפל."
+   },
+   {
+    "textHe": "מתבלים את העוף במלח, פלפל ושמן זית ומסדרים בתבנית גדולה עם הירקות מסביב."
+   },
+   {
+    "textHe": "אופים 30 דקות.",
+    "timerSeconds": 1800
+   },
+   {
+    "textHe": "מוסיפים זיתים, מסחטים לימון על התבנית ואופים עוד 15 עד 20 דקות, עד שהעוף זהוב ומבושל והירקות צרובים בקצוות.",
+    "timerSeconds": 1050
+   },
+   {
+    "textHe": "מגישים ישר מהתבנית."
+   }
+  ]
+ },
+ {
+  "id": "rv2_turkey_meatballs_yogurt",
+  "titleHe": "קציצות הודו בתנור עם יוגורט",
+  "titleEn": "Baked turkey meatballs with yogurt sauce",
+  "photoQuery": "turkey meatballs",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_turkey",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "yogurt",
+    "quantity": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 1,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות ומרפדים תבנית."
+   },
+   {
+    "textHe": "מגרדים את הבצל ומערבבים עם הבשר, ביצה, פירורי לחם, פטרוזיליה קצוצה, כמון, כפית מלח ופלפל. בשר הודו רזה ולכן הפירורים והביצה חשובים לעסיסיות."
+   },
+   {
+    "textHe": "יוצרים כדורים בגודל אגוז, כ-20 כדורים, ומסדרים על התבנית. מזלפים מעט שמן."
+   },
+   {
+    "textHe": "אופים 18 עד 20 דקות עד שהקציצות זהובות ומבושלות במרכזן.",
+    "timerSeconds": 1140
+   },
+   {
+    "textHe": "מכינים רוטב: מערבבים יוגורט עם שום כתוש, מיץ לימון וקורט מלח."
+   },
+   {
+    "textHe": "מגישים את הקציצות עם הרוטב, עם אורז או פיתה."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv2_beef_stew_potato",
+  "titleHe": "תבשיל בשר ותפוחי אדמה",
+  "titleEn": "Beef and potato stew",
+  "photoQuery": "beef stew",
+  "servings": 5,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 150,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "bay_leaf",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "water",
+    "quantity": 3,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים את הבשר לקוביות של 3 סנטימטר ומתבלים במלח ופלפל."
+   },
+   {
+    "textHe": "מחממים שמן בסיר כבד ומטגנים את הבשר בקבוצות, עד שהוא חום מכל הצדדים. מוציאים לצלחת.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מטגנים בצלים קצוצים בסיר 7 דקות. מוסיפים שום, רסק עגבניות ופפריקה ועוד דקה.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מחזירים את הבשר, מוסיפים 3 כוסות מים חמים ועלי דפנה. מביאים לרתיחה, מנמיכים, מכסים ומבשלים שעה וחצי על אש קטנה.",
+    "timerSeconds": 5400
+   },
+   {
+    "textHe": "מוסיפים גזר ותפוחי אדמה חתוכים לנתחים גדולים ומבשלים עוד 30 דקות עד שהירקות והבשר רכים.",
+    "timerSeconds": 1800
+   },
+   {
+    "textHe": "מגלים ומבשלים עוד 5 דקות כדי להסמיך מעט את הרוטב. מסירים את עלי הדפנה ומגישים חם."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv2_burger_homemade",
+  "titleHe": "המבורגר ביתי בלחמנייה",
+  "titleEn": "Homemade burger",
+  "photoQuery": "homemade hamburger",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bread",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lettuce",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "pickles",
+    "quantity": 3,
+    "unit": "unit",
+    "optional": true
+   },
+   {
+    "ingredientId": "yellow_cheese",
+    "quantity": 3,
+    "unit": "slice",
+    "optional": true
+   },
+   {
+    "ingredientId": "ketchup",
+    "quantity": 3,
+    "unit": "tbsp",
+    "optional": true
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחלקים את הבשר ל-3 חלקים ויוצרים קציצות שטוחות ברוחב לחמנייה בעובי של שני סנטימטר. לא לשוטף ולא ללוש יותר מדי כדי שההמבורגר יישאר רך."
+   },
+   {
+    "textHe": "יוצרים גומחה קטנה במרכז כל קציצה: כך היא לא תתנפח באמצע. מתבלים בנדיבות במלח ופלפל רגע לפני הצלייה."
+   },
+   {
+    "textHe": "מחממים מחבת כבדה על אש גבוהה עם כף שמן ומטגנים 4 דקות מכל צד לבינוני, יותר זמן ליותר עשוי.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "בדקה האחרונה מניחים פרוסת גבינה על כל המבורגר ומכסים עד שהיא נמסה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "פורסים בצל, עגבנייה ומלפפון חמוץ. קולים את הלחמניות חצי דקה במחבת."
+   },
+   {
+    "textHe": "מרכיבים: לחמנייה, חסה, המבורגר, עגבנייה, בצל, חמוצים וקטשופ. מגישים עם צ'יפס או סלט."
+   }
+  ]
+ },
+ {
+  "id": "rv2_stuffed_peppers_rice",
+  "titleHe": "פלפלים ממולאים בבשר ואורז",
+  "titleEn": "Stuffed peppers with meat and rice",
+  "photoQuery": "stuffed peppers",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 90,
+  "appliances": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 6,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-190 מעלות. חותכים את כובעי הפלפלים ומוציאים את הגרעינים. שומרים את הכובעים."
+   },
+   {
+    "textHe": "מגרדים את הבצל ומערבבים עם הבשר, האורז הנא (לא מבושל), פטרוזיליה קצוצה, כמון, כפית וחצי מלח ופלפל."
+   },
+   {
+    "textHe": "ממלאים כל פלפל עד שלושה רבעים בלבד, כי האורז מתנפח, וסוגרים עם הכובע."
+   },
+   {
+    "textHe": "מערבבים בתבנית עגבניות מרוסקות, רסק עגבניות, כוס מים, שמן וקורט מלח."
+   },
+   {
+    "textHe": "מסדרים את הפלפלים זקופים בתבנית, מכסים בנייר כסף ואופים שעה.",
+    "timerSeconds": 3600
+   },
+   {
+    "textHe": "מסירים את הנייר ואופים עוד 15 דקות כדי שהרוטב יסמיך והפלפלים יזהיבו.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "בודקים שהאורז רך, ומגישים עם הרוטב מהתבנית."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv2_chicken_schnitzel_sandwich",
+  "titleHe": "כריך שניצל עם סלט וטחינה",
+  "titleEn": "Schnitzel sandwich",
+  "photoQuery": "schnitzel sandwich",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 20,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "schnitzel",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "pita",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cucumber",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tahini",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "pickles",
+    "quantity": 2,
+    "unit": "unit",
+    "optional": true
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "קוצצים עגבנייה ומלפפון לקוביות קטנות ומערבבים עם קורט מלח."
+   },
+   {
+    "textHe": "מערבבים טחינה עם שלוש כפות מים וטיפות לימון לרוטב זורם."
+   },
+   {
+    "textHe": "מחממים שמן במחבת ומטגנים את השניצלים הקפואים לפי ההוראות, כ-4 דקות מכל צד, עד שהם זהובים ופריכים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מניחים על נייר מטבח לניקוז שמן."
+   },
+   {
+    "textHe": "מחממים פיתות, ממלאים בשניצל חתוך לרצועות, סלט וחמוצים."
+   },
+   {
+    "textHe": "מזלפים טחינה ומגישים מיד."
+   }
+  ]
+ },
+ {
+  "id": "rv2_chicken_rice_soup",
+  "titleHe": "מרק עוף ואורז מרגיע",
+  "titleEn": "Comforting chicken and rice soup",
+  "photoQuery": "chicken rice soup",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 55,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "celery",
+    "quantity": 1,
+    "unit": "unit",
+    "optional": true
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "water",
+    "quantity": 1.5,
+    "unit": "l"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.25,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים בצל וגזר לקוביות קטנות."
+   },
+   {
+    "textHe": "מטגנים את הבצל והגזר בשמן 5 דקות, מוסיפים שום וסלרי חתוך ועוד דקה.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים ליטר וחצי מים, אבקת מרק ואת החזה השלם ומביאים לרתיחה. מנמיכים ומבשלים 20 דקות.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מוציאים את החזה, מפרקים בעזרת שני מזלגות ומחזירים לסיר."
+   },
+   {
+    "textHe": "מוסיפים את האורז השטוף ומבשלים 15 דקות עד שהוא רך.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מתבלים במלח ופלפל, מפזרים פטרוזיליה קצוצה ומגישים חם."
+   }
+  ]
+ },
+ {
+  "id": "rv2_chicken_wings_air_fryer",
+  "titleHe": "כנפי עוף פריכות באייר פרייר",
+  "titleEn": "Crispy air fryer chicken wings",
+  "photoQuery": "crispy chicken wings",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "airFryer"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "baking_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "garlic_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מייבשים את הכנפיים היטב בנייר מטבח: ככל שהן יבשות יותר כך הן פריכות יותר."
+   },
+   {
+    "textHe": "מערבבים בקערה את הכנפיים עם אבקת אפייה (הסוד לעור פריך), פפריקה, אבקת שום, כפית מלח, פלפל ושמן."
+   },
+   {
+    "textHe": "מחממים את האייר פרייר ל-200 מעלות ומסדרים את הכנפיים בשכבה אחת בלי שיגעו זו בזו, בשתי קבוצות אם צריך."
+   },
+   {
+    "textHe": "מטגנים 12 דקות, הופכים ומטגנים עוד 10 עד 12 דקות עד שהעור זהוב ופריך והעוף מבושל.",
+    "timerSeconds": 1380
+   },
+   {
+    "textHe": "בינתיים מחממים בסיר קטן דבש וסויה 2 דקות עד שהרוטב מסמיך מעט.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מערבבים את הכנפיים החמות עם הרוטב ומגישים מיד."
+   }
+  ]
+ },
+ {
+  "id": "rv2_shakshuka_meatballs",
+  "titleHe": "קציצות בשקשוקה",
+  "titleEn": "Meatballs in shakshuka",
+  "photoQuery": "meatballs shakshuka",
+  "servings": 3,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 45,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מערבבים את הבשר עם חצי מהבצל המגורד, פירורי לחם, חצי כפית כמון, כפית מלח ופלפל. יוצרים 16 כדורים קטנים."
+   },
+   {
+    "textHe": "מטגנים את הקציצות בשמן חם 2 דקות מכל צד, רק כדי לצבוע. מוציאים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "באותה מחבת מטגנים את שאר הבצל הקצוץ והפלפל 5 דקות, מוסיפים שום ועוד חצי דקה.",
+    "timerSeconds": 330
+   },
+   {
+    "textHe": "מוסיפים פפריקה, כמון, עגבניות מרוסקות וקורט מלח ומבשלים 8 דקות עד שהרוטב מסמיך.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מחזירים את הקציצות, יוצרים ביניהן גומחות ושוברים לתוכן את הביצים."
+   },
+   {
+    "textHe": "מכסים ומבשלים 7 דקות על אש קטנה, עד שהחלבון מתייצב והחלמון רך.",
+    "timerSeconds": 420
+   },
+   {
+    "textHe": "מגישים עם פיתה."
+   }
+  ]
+ },
+ {
+  "id": "rv2_chicken_lemon_garlic_pan",
+  "titleHe": "שוקי עוף בלימון ושום במחבת",
+  "titleEn": "Lemon garlic chicken thighs",
+  "photoQuery": "lemon garlic chicken thighs",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 45,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 900,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 6,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oregano",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "water",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.25,
+    "unit": "bunch",
+    "optional": true
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מתבלים את השוקיים במלח, פלפל ואורגנו."
+   },
+   {
+    "textHe": "מחממים שמן זית במחבת רחבה עם מכסה ומטגנים את העוף בצד העור 6 דקות, עד שהעור זהוב ופריך. מהפכים ומטגנים עוד 3 דקות.",
+    "timerSeconds": 540
+   },
+   {
+    "textHe": "מוסיפים שיני שום קלופות שלמות, מיץ לימון וחצי כוס מים."
+   },
+   {
+    "textHe": "מכסים, מנמיכים אש ומבשלים 25 דקות עד שהעוף רך ומבושל.",
+    "timerSeconds": 1500
+   },
+   {
+    "textHe": "מגלים ומבשלים עוד 3 דקות על אש גבוהה כדי שהרוטב יסמיך לעסיסי ומבריק.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מפזרים פטרוזיליה ומגישים עם אורז או לחם."
+   }
+  ]
+ },
+ {
+  "id": "rv2_sloppy_joe_pita",
+  "titleHe": "פיתה במילוי בשר טחון מתובל",
+  "titleEn": "Spiced minced beef pita",
+  "photoQuery": "ground beef pita sandwich",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "pita",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "yogurt",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "קוצצים את הבצל דק ואת השום."
+   },
+   {
+    "textHe": "מחממים שמן במחבת ומטגנים את הבצל 5 דקות עד שהוא שקוף.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים את הבשר על אש גבוהה ומפרקים אותו בכף. מטגנים 7 דקות עד שהוא משחים, בלי מים.",
+    "timerSeconds": 420
+   },
+   {
+    "textHe": "מוסיפים שום, כמון, פפריקה, רסק עגבניות, מלח ופלפל ומערבבים 2 דקות.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מוסיפים כמה כפות מים ומבשלים עוד דקה כדי שהתערובת תהיה לחה."
+   },
+   {
+    "textHe": "ממלאים פיתות חמות בבשר, עגבנייה קצוצה ויוגורט ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv2_chicken_vegetable_stirfry",
+  "titleHe": "עוף מוקפץ עם ירקות וסויה",
+  "titleEn": "Chicken and vegetable stir-fry",
+  "photoQuery": "chicken vegetable stir fry",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "broccoli",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים אורז לפי ההוראות.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "חותכים את החזה לרצועות דקות ומערבבים עם כף סויה וחצי כפית עמילן."
+   },
+   {
+    "textHe": "מפרקים את הברוקולי לפרחים קטנים וחותכים גזר ופלפל לרצועות."
+   },
+   {
+    "textHe": "מערבבים רוטב: שתי כפות סויה, דבש, חצי כפית עמילן, ג'ינג'ר ושלוש כפות מים."
+   },
+   {
+    "textHe": "מחממים שתי כפות שמן בווק על אש גבוהה ומטגנים את העוף 4 דקות עד שהוא זהוב. מוציאים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מקפיצים את הגזר והברוקולי 3 דקות, מוסיפים פלפל ושום ועוד 2 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מחזירים את העוף, יוצקים את הרוטב ומקפיצים דקה עד שהוא מסמיך ומצפה. מגישים על האורז."
+   }
+  ]
+ },
+ {
+  "id": "rv2_turkey_patties_rice",
+  "titleHe": "צלחת קציצות עוף עם אורז וירקות",
+  "titleEn": "Chicken patties with rice and vegetables",
+  "photoQuery": "chicken patties rice",
+  "servings": 4,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 50,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_turkey",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מגרדים את הבצל ומערבבים עם הבשר, ביצה, פירורי לחם, פטרוזיליה קצוצה, פפריקה, כפית מלח ופלפל."
+   },
+   {
+    "textHe": "יוצרים 12 קציצות שטוחות ומרטיבים ידיים כדי שלא יידבקו."
+   },
+   {
+    "textHe": "מבשלים אורז לפי ההוראות, ובמקביל מבשלים גזר חתוך לעיגולים 8 דקות במים רותחים עד שהוא רך.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מחממים שלוש כפות שמן במחבת ומטגנים את הקציצות 4 דקות מכל צד, עד שהן זהובות ומבושלות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מניחים על נייר מטבח ומנקזים."
+   },
+   {
+    "textHe": "מגישים צלחת עם אורז, גזר וקציצות."
+   }
+  ]
+ },
+ {
+  "id": "rv2_sausage_potato_pan",
+  "titleHe": "נקניקיות עם תפוחי אדמה ובצל במחבת",
+  "titleEn": "Sausage and potato skillet",
+  "photoQuery": "sausage potato skillet",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "sausage",
+    "quantity": 6,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 1,
+    "unit": "tbsp",
+    "optional": true
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים את תפוחי האדמה לקוביות של סנטימטר וחצי ומשרים במים 5 דקות. מייבשים היטב."
+   },
+   {
+    "textHe": "מחממים שתי כפות שמן במחבת גדולה על אש בינונית-גבוהה ומטגנים את תפוחי האדמה 12 דקות, מערבבים לעיתים, עד שהם זהובים ופריכים.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מוסיפים בצל ופלפל פרוסים, פפריקה, מלח ופלפל ומטגנים עוד 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "בינתיים חותכים את הנקניקיות לעיגולים ומטגנים בנפרד בכף שמן 5 דקות עד שהן חומות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מערבבים הכול במחבת ומחממים 2 דקות."
+   },
+   {
+    "textHe": "מגישים עם חרדל בצד."
+   }
+  ]
+ }
 ]

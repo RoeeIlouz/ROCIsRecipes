@@ -82,7 +82,8 @@
    {
     "textHe": "הופכים ומטגנים עוד דקה וחצי עד זהוב. מגישים עם דבש, פירות או ממרח שוקולד."
    }
-  ]
+  ],
+  "mealPrep": true
  },
  {
   "id": "rv2_french_toast_banana",
@@ -229,7 +230,8 @@
    {
     "textHe": "אוכלים קר, או מחממים 1 דקה במיקרוגל אם רוצים חם."
    }
-  ]
+  ],
+  "mealPrep": true
  },
  {
   "id": "rv2_egg_muffins_veg",
@@ -301,7 +303,8 @@
    {
     "textHe": "מצננים 3 דקות, משחררים בסכין ומגישים. אפשר לשמור במקרר 3 ימים ולחמם."
    }
-  ]
+  ],
+  "mealPrep": true
  },
  {
   "id": "rv2_banana_oat_pancakes",
@@ -375,7 +378,8 @@
    {
     "textHe": "מגישים עם דבש ופירות."
    }
-  ]
+  ],
+  "mealPrep": true
  },
  {
   "id": "rv2_baked_eggs_tomato_cups",
@@ -868,92 +872,6 @@
   ]
  },
  {
-  "id": "rv2_sheet_pan_sausage_veg",
-  "titleHe": "תבנית נקניקיות וירקות",
-  "titleEn": "Sheet-pan sausages and vegetables",
-  "photoQuery": "sheet pan sausage vegetables",
-  "servings": 3,
-  "difficulty": "easy",
-  "mealType": "dinner",
-  "totalMinutes": 40,
-  "appliances": [
-   "oven"
-  ],
-  "ingredients": [
-   {
-    "ingredientId": "sausage",
-    "quantity": 6,
-    "unit": "unit"
-   },
-   {
-    "ingredientId": "potato",
-    "quantity": 3,
-    "unit": "unit"
-   },
-   {
-    "ingredientId": "bell_pepper",
-    "quantity": 2,
-    "unit": "unit"
-   },
-   {
-    "ingredientId": "onion",
-    "quantity": 1,
-    "unit": "unit"
-   },
-   {
-    "ingredientId": "zucchini",
-    "quantity": 1,
-    "unit": "unit"
-   },
-   {
-    "ingredientId": "olive_oil",
-    "quantity": 3,
-    "unit": "tbsp"
-   },
-   {
-    "ingredientId": "paprika",
-    "quantity": 1,
-    "unit": "tsp"
-   },
-   {
-    "ingredientId": "oregano",
-    "quantity": 1,
-    "unit": "tsp"
-   },
-   {
-    "ingredientId": "salt"
-   },
-   {
-    "ingredientId": "pepper"
-   }
-  ],
-  "steps": [
-   {
-    "textHe": "מחממים תנור ל-220 מעלות."
-   },
-   {
-    "textHe": "חותכים תפוחי אדמה לקוביות קטנות של סנטימטר וחצי, ואת שאר הירקות לנתחים גדולים יותר."
-   },
-   {
-    "textHe": "מערבבים תפוחי אדמה עם שתי כפות שמן, מלח ופלפל ואופים על תבנית 15 דקות.",
-    "timerSeconds": 900
-   },
-   {
-    "textHe": "מערבבים את שאר הירקות עם כף שמן, פפריקה ואורגנו."
-   },
-   {
-    "textHe": "מוציאים את התבנית, מוסיפים את הירקות והנקניקיות ומערבבים."
-   },
-   {
-    "textHe": "אופים עוד 18 עד 20 דקות, מהפכים באמצע, עד שהכול זהוב.",
-    "timerSeconds": 1140
-   },
-   {
-    "textHe": "מגישים עם חרדל או קטשופ."
-   }
-  ]
- },
- {
   "id": "rv2_stuffed_baked_potatoes",
   "titleHe": "תפוחי אדמה אפויים במילוי גבינה וקוטג'",
   "titleEn": "Loaded baked potatoes",
@@ -1368,6 +1286,7 @@
     "textHe": "אופים 25 דקות עד שהפירה זהוב בקצוות. מצננים 5 דקות ומגישים.",
     "timerSeconds": 1500
    }
-  ]
+  ],
+  "mealPrep": true
  }
 ]
