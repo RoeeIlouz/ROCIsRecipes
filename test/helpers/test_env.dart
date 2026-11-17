@@ -228,6 +228,7 @@ class TestEnv {
     List<Recipe> recipes = const [],
     PriceSnapshot? snapshot,
     LocationProvider? location,
+    bool onboarded = true,
   }) async {
     Hive.init(Directory.systemTemp.path);
     final n = _counter++;
@@ -257,6 +258,7 @@ class TestEnv {
       ),
     );
     await env.recipes.seedIfEmpty(recipes);
+    if (onboarded) await env.settings.setOnboardingDone(true);
     return env;
   }
 

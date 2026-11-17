@@ -137,7 +137,11 @@ void sortTests() {
 
     test('cheapest puts the lowest cost to buy first, unknown cost last', () {
       final cost = {'a': 30.0, 'b': 5.0, 'c': null};
-      final r = sortMatches([a, b, c], SortMode.cheapest, (m) => cost[m.recipe.id]);
+      final r = sortMatches(
+        [a, b, c],
+        SortMode.cheapest,
+        (m) => cost[m.recipe.id],
+      );
       expect(r.map((m) => m.recipe.id), ['b', 'a', 'c']);
     });
   });

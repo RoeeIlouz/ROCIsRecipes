@@ -175,6 +175,71 @@ class AppLocalizationsHe extends AppLocalizations {
   String get sortCheapest => 'הכי זול לקנייה קודם';
 
   @override
+  String get onbWelcomeTitle => 'ארוחות לשבוע שלם, בתקציב שלך';
+
+  @override
+  String get onbWelcomeBody =>
+      'בוחרים תקציב ואנחנו בונים תפריט ורשימת קניות, מתומחרים לפי הסופר הקרוב אליך.';
+
+  @override
+  String get onbStart => 'מתחילים';
+
+  @override
+  String get onbSkip => 'דלג';
+
+  @override
+  String get onbBudgetTitle => 'מה התקציב השבועי לאוכל?';
+
+  @override
+  String get onbPeopleTitle => 'לכמה אנשים מבשלים?';
+
+  @override
+  String get onbNext => 'הבא';
+
+  @override
+  String get onbShopTitle => 'איפה קונים?';
+
+  @override
+  String get onbShopBody =>
+      'שיתוף מיקום חד פעמי כדי לתמחר את השבוע בסופר הקרוב. המיקום לא יוצא מהטלפון.';
+
+  @override
+  String get onbLocate => 'השתמש במיקום שלי';
+
+  @override
+  String get onbLocated => 'המיקום נשמר';
+
+  @override
+  String get onbFinish => 'בנה לי את השבוע';
+
+  @override
+  String perServing(String amount) {
+    return 'כ-$amount למנה';
+  }
+
+  @override
+  String get homeWeekTitle => 'השבוע שלך';
+
+  @override
+  String get homeWeekBuildTitle => 'מתכננים את השבוע בלחיצה אחת';
+
+  @override
+  String get homeWeekBuildBody => 'תפריט בתקציב שלך, עם רשימת קניות.';
+
+  @override
+  String get homeWeekBuildButton => 'בנה לי את השבוע';
+
+  @override
+  String homeWeekCount(int count) {
+    return '$count ארוחות ערב מתוכננות';
+  }
+
+  @override
+  String homeWeekSpent(String spent, String budget) {
+    return '$spent מתוך $budget';
+  }
+
+  @override
   String get tabAllDishes => 'כל המנות';
 
   @override

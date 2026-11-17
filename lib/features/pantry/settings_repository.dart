@@ -163,6 +163,23 @@ class SettingsRepository extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Whether the first-run setup was finished or skipped.
+  bool get onboardingDone => (_box.get('onboardingDone') as bool?) ?? false;
+
+  Future<void> setOnboardingDone(bool value) async {
+    await _box.put('onboardingDone', value);
+    notifyListeners();
+  }
+
+  /// How many people the user cooks for (1 to 8). Prices per serving and the planner use it.
+  int get householdSize =>
+      ((_box.get('householdSize') as int?) ?? 1).clamp(1, 8);
+
+  Future<void> setHouseholdSize(int value) async {
+    await _box.put('householdSize', value.clamp(1, 8));
+    notifyListeners();
+  }
+
   /// Ids of the dishes the user marked with a heart.
   Set<String> get favoriteIds =>
       ((_box.get('favorites') as List?) ?? const []).cast<String>().toSet();

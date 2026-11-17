@@ -7,13 +7,15 @@ import 'package:rocis_recipes/features/ai/ai_ui.dart';
 import 'package:rocis_recipes/features/home/tonight.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
+import 'package:rocis_recipes/features/plan/plan_builder.dart';
 import 'package:rocis_recipes/features/plan/week_planner.dart';
+import 'package:rocis_recipes/features/prices/budget.dart';
+import 'package:rocis_recipes/features/prices/ui/price_summary.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
 import 'package:rocis_recipes/features/recipes/recipe_filters.dart';
 import 'package:rocis_recipes/features/recipes/recipe_matcher.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_card.dart';
-import 'package:rocis_recipes/features/recipes/ui/recipe_format.dart';
 import 'package:rocis_recipes/features/recipes/ui/recipe_photo.dart';
 import 'package:rocis_recipes/l10n/app_localizations.dart';
 
@@ -128,6 +130,8 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
+          const _WeekCard(),
+          const SizedBox(height: 16),
           if (tonight != null)
             _Hero(tonight: tonight)
           else
@@ -162,6 +166,163 @@ class HomeScreen extends StatelessWidget {
             recipes: favorites,
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// The week at a glance: how many dinners are planned and how much of the budget the shopping uses,
+/// or a one-tap way to build the menu when there is none yet.
+class _WeekCard extends StatelessWidget {
+  const _WeekCard();
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final theme = Theme.of(context);
+    final settings = context.watch<SettingsRepository>();
+    final recipes = context.watch<RecipeRepository>().all;
+    final plan = settings.weekPlan;
+    final byId = {for (final r in recipes) r.id: r};
+    final planned = plan
+        .where((id) => id != null && byId.containsKey(id))
+        .length;
+
+    if (planned == 0) {
+      return Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Card(
+          key: const Key('home_week_build_card'),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              children: [
+                const Text('🗓️', style: TextStyle(fontSize: 36)),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        l10n.homeWeekBuildTitle,
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      Text(
+                        l10n.homeWeekBuildBody,
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          color: theme.colorScheme.onSurfaceVariant,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      FilledButton(
+                        key: const Key('home_week_build'),
+                        onPressed: recipes.isEmpty
+                            ? null
+                            : () async {
+                                final router = GoRouter.of(context);
+                                await buildWeekPlanNow(context);
+                                router.go('/plan');
+                              },
+                        child: Text(l10n.homeWeekBuildButton),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+
+    final view = PriceViewData.of(context);
+    final store = pickPlanStore(view.resolved, settings.planChainId);
+    final summary = summarizePlan(
+      plan,
+      recipes,
+      pantryIds: context.watch<PantryRepository>().ids,
+      stapleIds: settings.stapleIds,
+      store: store,
+    );
+    final budget = settings.weeklyBudget;
+    final money = currencyFormat(context);
+    final status = budget == null
+        ? null
+        : BudgetStatus(budget: budget.toDouble(), spent: summary.total);
+    final color = status != null && status.isOver
+        ? theme.colorScheme.error
+        : theme.colorScheme.primary;
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Card(
+        key: const Key('home_week_card'),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: () => context.go('/plan'),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    const Text('🗓️', style: TextStyle(fontSize: 28)),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            l10n.homeWeekTitle,
+                            style: theme.textTheme.titleMedium?.copyWith(
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          Text(
+                            l10n.homeWeekCount(planned),
+                            key: const Key('home_week_count'),
+                            style: theme.textTheme.bodyMedium?.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const Icon(Icons.chevron_right_rounded),
+                  ],
+                ),
+                if (status != null) ...[
+                  const SizedBox(height: 12),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: LinearProgressIndicator(
+                      key: const Key('home_week_bar'),
+                      value: status.fraction,
+                      minHeight: 10,
+                      color: color,
+                      backgroundColor:
+                          theme.colorScheme.surfaceContainerHighest,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    l10n.homeWeekSpent(
+                      money.format(status.spent),
+                      money.format(status.budget),
+                    ),
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      color: color,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

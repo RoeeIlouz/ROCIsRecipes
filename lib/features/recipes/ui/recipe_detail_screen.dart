@@ -5,6 +5,8 @@ import 'package:rocis_recipes/features/catalog/ingredient_catalog.dart';
 import 'package:rocis_recipes/features/catalog/ingredient_label.dart';
 import 'package:rocis_recipes/features/pantry/pantry_repository.dart';
 import 'package:rocis_recipes/features/pantry/settings_repository.dart';
+import 'package:rocis_recipes/features/prices/recipe_cost.dart';
+import 'package:rocis_recipes/features/prices/ui/price_summary.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
 import 'package:rocis_recipes/features/recipes/recipe_filters.dart';
 import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
@@ -68,6 +70,11 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
       ...context.watch<SettingsRepository>().stapleIds,
     };
     final servings = (_servings ?? recipe.servings).clamp(1, 24);
+    final cost = estimateRecipeCost(
+      recipe,
+      PriceViewData.of(context).resolved,
+      stapleIds: context.watch<SettingsRepository>().stapleIds,
+    );
     final factor = servings / recipe.servings;
     RecipeIngredient scaled(RecipeIngredient i) => RecipeIngredient(
       ingredientId: i.ingredientId,
@@ -212,6 +219,16 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
                   ),
                 ),
               ),
+              if (cost != null)
+                Chip(
+                  key: const Key('detail_serving_cost'),
+                  avatar: const Icon(Icons.payments_outlined, size: 18),
+                  label: Text(
+                    l10n.perServing(
+                      currencyFormat(context).format(cost.perServing),
+                    ),
+                  ),
+                ),
               Chip(
                 avatar: const Icon(Icons.signal_cellular_alt_rounded, size: 18),
                 label: Text(difficultyLabel(l10n, recipe.difficulty)),

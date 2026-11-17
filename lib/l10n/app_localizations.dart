@@ -416,6 +416,120 @@ abstract class AppLocalizations {
   /// **'Cheapest to buy first'**
   String get sortCheapest;
 
+  /// No description provided for @onbWelcomeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Dinner for the whole week, on your budget'**
+  String get onbWelcomeTitle;
+
+  /// No description provided for @onbWelcomeBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a budget and we build the menu and the shopping list, priced at your nearest supermarket.'**
+  String get onbWelcomeBody;
+
+  /// No description provided for @onbStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Let\'s start'**
+  String get onbStart;
+
+  /// No description provided for @onbSkip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get onbSkip;
+
+  /// No description provided for @onbBudgetTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'What is your weekly food budget?'**
+  String get onbBudgetTitle;
+
+  /// No description provided for @onbPeopleTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How many people do you cook for?'**
+  String get onbPeopleTitle;
+
+  /// No description provided for @onbNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get onbNext;
+
+  /// No description provided for @onbShopTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Where do you shop?'**
+  String get onbShopTitle;
+
+  /// No description provided for @onbShopBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your location once to price the week at the nearest supermarket. It never leaves your phone.'**
+  String get onbShopBody;
+
+  /// No description provided for @onbLocate.
+  ///
+  /// In en, this message translates to:
+  /// **'Use my location'**
+  String get onbLocate;
+
+  /// No description provided for @onbLocated.
+  ///
+  /// In en, this message translates to:
+  /// **'Location saved'**
+  String get onbLocated;
+
+  /// No description provided for @onbFinish.
+  ///
+  /// In en, this message translates to:
+  /// **'Build my week'**
+  String get onbFinish;
+
+  /// No description provided for @perServing.
+  ///
+  /// In en, this message translates to:
+  /// **'about {amount} per serving'**
+  String perServing(String amount);
+
+  /// No description provided for @homeWeekTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your week'**
+  String get homeWeekTitle;
+
+  /// No description provided for @homeWeekBuildTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan your week in one tap'**
+  String get homeWeekBuildTitle;
+
+  /// No description provided for @homeWeekBuildBody.
+  ///
+  /// In en, this message translates to:
+  /// **'A menu within your budget, with the shopping list.'**
+  String get homeWeekBuildBody;
+
+  /// No description provided for @homeWeekBuildButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Build my week'**
+  String get homeWeekBuildButton;
+
+  /// No description provided for @homeWeekCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} dinners planned'**
+  String homeWeekCount(int count);
+
+  /// No description provided for @homeWeekSpent.
+  ///
+  /// In en, this message translates to:
+  /// **'{spent} of {budget}'**
+  String homeWeekSpent(String spent, String budget);
+
   /// No description provided for @tabAllDishes.
   ///
   /// In en, this message translates to:

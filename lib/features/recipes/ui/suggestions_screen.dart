@@ -100,6 +100,15 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
       );
     }
 
+    String? servingOf(RecipeMatch m) {
+      final c = estimateRecipeCost(
+        m.recipe,
+        prices.resolved,
+        stapleIds: settings.stapleIds,
+      );
+      return c == null ? null : l10n.perServing(money.format(c.perServing));
+    }
+
     String? labelOf(RecipeMatch m) {
       if (m.missingIngredientIds.isEmpty) return null;
       final cost = costOf(m);
@@ -300,12 +309,18 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
                   _MatchList(
                     matches: compute(MatchMode.cookNow),
                     labelOf: labelOf,
+                    servingOf: servingOf,
                   ),
                   _MatchList(
                     matches: compute(MatchMode.almostThere),
                     labelOf: labelOf,
+                    servingOf: servingOf,
                   ),
-                  _MatchList(matches: compute(MatchMode.all), labelOf: labelOf),
+                  _MatchList(
+                    matches: compute(MatchMode.all),
+                    labelOf: labelOf,
+                    servingOf: servingOf,
+                  ),
                 ],
               ),
             ),
@@ -337,10 +352,15 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
 }
 
 class _MatchList extends StatelessWidget {
-  const _MatchList({required this.matches, required this.labelOf});
+  const _MatchList({
+    required this.matches,
+    required this.labelOf,
+    required this.servingOf,
+  });
 
   final List<RecipeMatch> matches;
   final String? Function(RecipeMatch) labelOf;
+  final String? Function(RecipeMatch) servingOf;
 
   @override
   Widget build(BuildContext context) {
@@ -365,6 +385,7 @@ class _MatchList extends StatelessWidget {
           recipe: m.recipe,
           missingCount: m.missingIngredientIds.length,
           buyCostLabel: labelOf(m),
+          servingLabel: servingOf(m),
           onTap: () => context.push('/recipe/${m.recipe.id}'),
         );
       },

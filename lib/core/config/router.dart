@@ -1,4 +1,7 @@
 import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
+import 'package:rocis_recipes/features/onboarding/onboarding_screen.dart';
+import 'package:rocis_recipes/features/pantry/settings_repository.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
 import 'package:rocis_recipes/features/home/ui/home_screen.dart';
 import 'package:rocis_recipes/features/pantry/ui/pantry_screen.dart';
@@ -14,7 +17,17 @@ import 'package:rocis_recipes/shared/ui/app_shell.dart';
 
 GoRouter buildRouter({String initialLocation = '/'}) => GoRouter(
   initialLocation: initialLocation,
+  // The first run goes through the setup once; it can be skipped.
+  redirect: (context, state) {
+    final done = context.read<SettingsRepository>().onboardingDone;
+    if (!done && state.matchedLocation != '/onboarding') return '/onboarding';
+    return null;
+  },
   routes: [
+    GoRoute(
+      path: '/onboarding',
+      builder: (context, state) => const OnboardingScreen(),
+    ),
     GoRoute(path: '/', redirect: (context, state) => '/home'),
     StatefulShellRoute.indexedStack(
       builder: (context, state, navigationShell) =>

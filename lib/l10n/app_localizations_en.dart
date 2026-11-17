@@ -175,6 +175,72 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sortCheapest => 'Cheapest to buy first';
 
   @override
+  String get onbWelcomeTitle => 'Dinner for the whole week, on your budget';
+
+  @override
+  String get onbWelcomeBody =>
+      'Pick a budget and we build the menu and the shopping list, priced at your nearest supermarket.';
+
+  @override
+  String get onbStart => 'Let\'s start';
+
+  @override
+  String get onbSkip => 'Skip';
+
+  @override
+  String get onbBudgetTitle => 'What is your weekly food budget?';
+
+  @override
+  String get onbPeopleTitle => 'How many people do you cook for?';
+
+  @override
+  String get onbNext => 'Next';
+
+  @override
+  String get onbShopTitle => 'Where do you shop?';
+
+  @override
+  String get onbShopBody =>
+      'Share your location once to price the week at the nearest supermarket. It never leaves your phone.';
+
+  @override
+  String get onbLocate => 'Use my location';
+
+  @override
+  String get onbLocated => 'Location saved';
+
+  @override
+  String get onbFinish => 'Build my week';
+
+  @override
+  String perServing(String amount) {
+    return 'about $amount per serving';
+  }
+
+  @override
+  String get homeWeekTitle => 'Your week';
+
+  @override
+  String get homeWeekBuildTitle => 'Plan your week in one tap';
+
+  @override
+  String get homeWeekBuildBody =>
+      'A menu within your budget, with the shopping list.';
+
+  @override
+  String get homeWeekBuildButton => 'Build my week';
+
+  @override
+  String homeWeekCount(int count) {
+    return '$count dinners planned';
+  }
+
+  @override
+  String homeWeekSpent(String spent, String budget) {
+    return '$spent of $budget';
+  }
+
+  @override
   String get tabAllDishes => 'All dishes';
 
   @override

@@ -85,7 +85,8 @@ List<RecipeMatch> sortMatches(
 ) {
   if (mode == SortMode.bestMatch) return matches;
   final indexed = [for (var i = 0; i < matches.length; i++) (i, matches[i])];
-  int byIndex((int, RecipeMatch) a, (int, RecipeMatch) b) => a.$1.compareTo(b.$1);
+  int byIndex((int, RecipeMatch) a, (int, RecipeMatch) b) =>
+      a.$1.compareTo(b.$1);
   indexed.sort((a, b) {
     final c = switch (mode) {
       SortMode.quickest => a.$2.recipe.totalMinutes.compareTo(

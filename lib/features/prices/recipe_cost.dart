@@ -1,4 +1,5 @@
 import 'package:rocis_recipes/features/prices/store_resolver.dart';
+import 'package:rocis_recipes/features/recipes/recipe.dart';
 
 /// Estimated price of the ingredients still to buy for a dish.
 class BuyCost {
@@ -46,4 +47,40 @@ BuyCost? estimateBuyCost(
     }
   }
   return best!.unpriced == ids.length ? null : best;
+}
+
+/// What a whole dish costs to make from scratch, and what one serving of it costs.
+class RecipeCost {
+  const RecipeCost({
+    required this.total,
+    required this.perServing,
+    required this.unpriced,
+  });
+
+  final double total;
+  final double perServing;
+
+  /// Needed ingredients with no known price (not part of [total]).
+  final int unpriced;
+}
+
+/// Price of everything [recipe] needs (optional ingredients and [stapleIds] left out) at the best of
+/// the [resolved] branches, divided by its servings. Null when no price is known.
+RecipeCost? estimateRecipeCost(
+  Recipe recipe,
+  List<ResolvedStore> resolved, {
+  required Set<String> stapleIds,
+}) {
+  final ids = {
+    for (final i in recipe.ingredients)
+      if (!i.optional && !stapleIds.contains(i.ingredientId)) i.ingredientId,
+  };
+  final cost = estimateBuyCost(ids, resolved);
+  if (cost == null) return null;
+  final servings = recipe.servings < 1 ? 1 : recipe.servings;
+  return RecipeCost(
+    total: cost.total,
+    perServing: double.parse((cost.total / servings).toStringAsFixed(2)),
+    unpriced: cost.unpriced,
+  );
 }

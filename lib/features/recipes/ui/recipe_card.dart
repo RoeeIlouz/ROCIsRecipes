@@ -21,6 +21,7 @@ class RecipeCard extends StatelessWidget {
     required this.recipe,
     required this.missingCount,
     this.buyCostLabel,
+    this.servingLabel,
     this.onTap,
   });
 
@@ -29,6 +30,9 @@ class RecipeCard extends StatelessWidget {
 
   /// Estimated price of what is still to buy ("about 14 to buy"), when known.
   final String? buyCostLabel;
+
+  /// What one serving costs to make from scratch ("about 7 per serving"), when known.
+  final String? servingLabel;
   final VoidCallback? onTap;
 
   @override
@@ -95,7 +99,9 @@ class RecipeCard extends StatelessWidget {
                             ),
                         ],
                       ),
-                      if (missingCount > 0 || buyCostLabel != null) ...[
+                      if (missingCount > 0 ||
+                          buyCostLabel != null ||
+                          servingLabel != null) ...[
                         const SizedBox(height: 6),
                         Wrap(
                           spacing: 12,
@@ -105,6 +111,15 @@ class RecipeCard extends StatelessWidget {
                                 l10n.missingCount(missingCount),
                                 style: TextStyle(
                                   color: theme.colorScheme.error,
+                                ),
+                              ),
+                            if (servingLabel != null)
+                              Text(
+                                servingLabel!,
+                                key: Key('serving_cost_${recipe.id}'),
+                                style: theme.textTheme.bodyMedium?.copyWith(
+                                  color: theme.colorScheme.secondary,
+                                  fontWeight: FontWeight.w700,
                                 ),
                               ),
                             if (buyCostLabel != null)
