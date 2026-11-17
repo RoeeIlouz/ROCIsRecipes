@@ -29,6 +29,7 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
   bool _mealPrep = false;
   bool _favoritesOnly = false;
   bool _inBudget = false;
+  SortMode _sort = SortMode.bestMatch;
   final _search = TextEditingController();
   String _query = '';
 
@@ -86,11 +87,17 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
         maxMinutes: settings.maxMinutes,
         mode: mode,
       );
-      if (!_inBudget || left == null) return matches;
-      return [
-        for (final m in matches)
-          if ((costOf(m)?.total ?? 0) <= left) m,
-      ];
+      final shown = !_inBudget || left == null
+          ? matches
+          : [
+              for (final m in matches)
+                if ((costOf(m)?.total ?? 0) <= left) m,
+            ];
+      return sortMatches(
+        shown,
+        _sort,
+        (m) => m.missingIngredientIds.isEmpty ? 0 : costOf(m)?.total,
+      );
     }
 
     String? labelOf(RecipeMatch m) {
@@ -118,6 +125,30 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
               icon: const Icon(Icons.favorite_border),
               selectedIcon: const Icon(Icons.favorite),
               onPressed: () => setState(() => _favoritesOnly = !_favoritesOnly),
+            ),
+            PopupMenuButton<SortMode>(
+              key: const Key('sort_button'),
+              tooltip: l10n.sortTooltip,
+              icon: const Icon(Icons.sort_rounded),
+              initialValue: _sort,
+              onSelected: (v) => setState(() => _sort = v),
+              itemBuilder: (_) => [
+                PopupMenuItem(
+                  key: const Key('sort_best'),
+                  value: SortMode.bestMatch,
+                  child: Text(l10n.sortBest),
+                ),
+                PopupMenuItem(
+                  key: const Key('sort_quickest'),
+                  value: SortMode.quickest,
+                  child: Text(l10n.sortQuickest),
+                ),
+                PopupMenuItem(
+                  key: const Key('sort_cheapest'),
+                  value: SortMode.cheapest,
+                  child: Text(l10n.sortCheapest),
+                ),
+              ],
             ),
             IconButton(
               key: const Key('ai_invent_button'),

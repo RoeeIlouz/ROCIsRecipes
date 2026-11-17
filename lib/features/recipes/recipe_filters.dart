@@ -1,5 +1,6 @@
 import 'package:rocis_recipes/core/text/hebrew_normalizer.dart';
 import 'package:rocis_recipes/features/recipes/recipe.dart';
+import 'package:rocis_recipes/features/recipes/recipe_matcher.dart';
 
 /// Protein filter choices, in display order. `vegetarian` means no meat or fish at all.
 const List<String> kProteinKinds = ['chicken', 'beef', 'fish', 'vegetarian'];
@@ -70,4 +71,37 @@ bool matchesQuery(
     ].join(' '),
   );
   return words.every(haystack.contains);
+}
+
+/// How a list of matches is ordered. [bestMatch] is the matcher's own order (fewest missing first).
+enum SortMode { bestMatch, quickest, cheapest }
+
+/// Returns [matches] ordered by [mode]. [costOf] gives what a match costs to buy, or null when it
+/// is unknown; unknown costs go last. Ties keep the matcher's order.
+List<RecipeMatch> sortMatches(
+  List<RecipeMatch> matches,
+  SortMode mode,
+  double? Function(RecipeMatch) costOf,
+) {
+  if (mode == SortMode.bestMatch) return matches;
+  final indexed = [for (var i = 0; i < matches.length; i++) (i, matches[i])];
+  int byIndex((int, RecipeMatch) a, (int, RecipeMatch) b) => a.$1.compareTo(b.$1);
+  indexed.sort((a, b) {
+    final c = switch (mode) {
+      SortMode.quickest => a.$2.recipe.totalMinutes.compareTo(
+        b.$2.recipe.totalMinutes,
+      ),
+      SortMode.cheapest => _cmpCost(costOf(a.$2), costOf(b.$2)),
+      SortMode.bestMatch => 0,
+    };
+    return c != 0 ? c : byIndex(a, b);
+  });
+  return [for (final e in indexed) e.$2];
+}
+
+int _cmpCost(double? a, double? b) {
+  if (a == null && b == null) return 0;
+  if (a == null) return 1;
+  if (b == null) return -1;
+  return a.compareTo(b);
 }

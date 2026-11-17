@@ -163,6 +163,18 @@ class AppLocalizationsHe extends AppLocalizations {
   String get navHome => 'בית';
 
   @override
+  String get sortTooltip => 'מיון';
+
+  @override
+  String get sortBest => 'התאמה טובה ביותר';
+
+  @override
+  String get sortQuickest => 'הכי מהיר קודם';
+
+  @override
+  String get sortCheapest => 'הכי זול לקנייה קודם';
+
+  @override
   String get tabAllDishes => 'כל המנות';
 
   @override

@@ -1,165 +1,2147 @@
 [
-{"id": "salt", "nameHe": "מלח", "nameEn": "Salt", "synonyms": ["מלח שולחן"], "isStaple": true, "category": "pantry"},
-{"id": "pepper", "nameHe": "פלפל שחור", "nameEn": "Black pepper", "synonyms": ["פלפל טחון"], "isStaple": true, "category": "pantry"},
-{"id": "oil", "nameHe": "שמן", "nameEn": "Oil", "synonyms": ["שמן קנולה", "שמן צמחי", "שמן חמניות"], "isStaple": true, "category": "pantry"},
-{"id": "water", "nameHe": "מים", "nameEn": "Water", "synonyms": [], "isStaple": true, "category": "pantry"},
-{"id": "tomato", "nameHe": "עגבנייה", "nameEn": "Tomato", "synonyms": ["עגבניה", "עגבניות", "עגבניות שרי"], "category": "produce"},
-{"id": "cucumber", "nameHe": "מלפפון", "nameEn": "Cucumber", "synonyms": ["מלפפונים"], "category": "produce"},
-{"id": "onion", "nameHe": "בצל", "nameEn": "Onion", "synonyms": ["בצלים", "בצל יבש"], "category": "produce"},
-{"id": "garlic", "nameHe": "שום", "nameEn": "Garlic", "synonyms": ["שן שום", "שיני שום"], "category": "produce"},
-{"id": "potato", "nameHe": "תפוח אדמה", "nameEn": "Potato", "synonyms": ["תפוחי אדמה", "תפוא", "תפוד"], "category": "produce"},
-{"id": "sweet_potato", "nameHe": "בטטה", "nameEn": "Sweet potato", "synonyms": ["בטטות"], "category": "produce"},
-{"id": "carrot", "nameHe": "גזר", "nameEn": "Carrot", "synonyms": ["גזרים"], "category": "produce"},
-{"id": "bell_pepper", "nameHe": "פלפל מתוק", "nameEn": "Bell pepper", "synonyms": ["פלפלים", "פלפל אדום", "פלפל צהוב", "פלפל ירוק", "פלפל צבעוני"], "category": "produce"},
-{"id": "chili", "nameHe": "פלפל חריף", "nameEn": "Chili pepper", "synonyms": ["צילי", "חריף", "פלפלים חריפים"], "category": "produce"},
-{"id": "zucchini", "nameHe": "קישוא", "nameEn": "Zucchini", "synonyms": ["קישואים"], "category": "produce"},
-{"id": "eggplant", "nameHe": "חציל", "nameEn": "Eggplant", "synonyms": ["חצילים"], "category": "produce"},
-{"id": "cabbage", "nameHe": "כרוב", "nameEn": "Cabbage", "synonyms": ["כרוב לבן", "כרוב אדום"], "category": "produce"},
-{"id": "lettuce", "nameHe": "חסה", "nameEn": "Lettuce", "synonyms": ["חסות"], "category": "produce"},
-{"id": "spinach", "nameHe": "תרד", "nameEn": "Spinach", "synonyms": ["עלי תרד"], "category": "produce"},
-{"id": "broccoli", "nameHe": "ברוקולי", "nameEn": "Broccoli", "synonyms": [], "category": "produce"},
-{"id": "cauliflower", "nameHe": "כרובית", "nameEn": "Cauliflower", "synonyms": [], "category": "produce"},
-{"id": "mushroom", "nameHe": "פטריות", "nameEn": "Mushrooms", "synonyms": ["פטרייה", "שמפיניון", "שמפיניונים"], "category": "produce"},
-{"id": "corn", "nameHe": "תירס", "nameEn": "Corn", "synonyms": ["קלח תירס"], "category": "produce"},
-{"id": "avocado", "nameHe": "אבוקדו", "nameEn": "Avocado", "synonyms": ["אבוקדואים"], "category": "produce"},
-{"id": "lemon", "nameHe": "לימון", "nameEn": "Lemon", "synonyms": ["לימונים", "מיץ לימון"], "category": "produce"},
-{"id": "lime", "nameHe": "ליים", "nameEn": "Lime", "synonyms": [], "category": "produce"},
-{"id": "apple", "nameHe": "תפוח", "nameEn": "Apple", "synonyms": ["תפוחים", "תפוח עץ"], "category": "produce"},
-{"id": "banana", "nameHe": "בננה", "nameEn": "Banana", "synonyms": ["בננות"], "category": "produce"},
-{"id": "orange", "nameHe": "תפוז", "nameEn": "Orange", "synonyms": ["תפוזים"], "category": "produce"},
-{"id": "parsley", "nameHe": "פטרוזיליה", "nameEn": "Parsley", "synonyms": [], "category": "produce"},
-{"id": "cilantro", "nameHe": "כוסברה", "nameEn": "Cilantro", "synonyms": ["קוריאנדר"], "category": "produce"},
-{"id": "dill", "nameHe": "שמיר", "nameEn": "Dill", "synonyms": [], "category": "produce"},
-{"id": "mint", "nameHe": "נענע", "nameEn": "Mint", "synonyms": ["נענע טרייה"], "category": "produce"},
-{"id": "basil", "nameHe": "בזיליקום", "nameEn": "Basil", "synonyms": [], "category": "produce"},
-{"id": "green_onion", "nameHe": "בצל ירוק", "nameEn": "Green onion", "synonyms": ["בצל לבן", "סקאליון"], "category": "produce"},
-{"id": "ginger", "nameHe": "גינגר", "nameEn": "Ginger", "synonyms": ["זנגביל"], "category": "produce"},
-{"id": "pumpkin", "nameHe": "דלעת", "nameEn": "Pumpkin", "synonyms": [], "category": "produce"},
-{"id": "beet", "nameHe": "סלק", "nameEn": "Beet", "synonyms": ["סלקים"], "category": "produce"},
-{"id": "celery", "nameHe": "סלרי", "nameEn": "Celery", "synonyms": ["סלרי ירוק"], "category": "produce"},
-{"id": "peas", "nameHe": "אפונה", "nameEn": "Peas", "synonyms": ["אפונה ירוקה"], "category": "produce"},
-{"id": "green_beans", "nameHe": "שעועית ירוקה", "nameEn": "Green beans", "synonyms": ["שעועית"], "category": "produce"},
-{"id": "tomato_paste", "nameHe": "רסק עגבניות", "nameEn": "Tomato paste", "synonyms": ["רסק"], "category": "pantry"},
-{"id": "canned_tomatoes", "nameHe": "עגבניות מרוסקות", "nameEn": "Canned tomatoes", "synonyms": ["שימורי עגבניות", "עגבניות מקופסה"], "category": "pantry"},
-{"id": "tahini", "nameHe": "טחינה", "nameEn": "Tahini", "synonyms": ["טחינה גולמית"], "category": "pantry"},
-{"id": "egg", "nameHe": "ביצה", "nameEn": "Egg", "synonyms": ["ביצים"], "category": "dairy"},
-{"id": "milk", "nameHe": "חלב", "nameEn": "Milk", "synonyms": ["חלב 3%"], "category": "dairy"},
-{"id": "butter", "nameHe": "חמאה", "nameEn": "Butter", "synonyms": ["מרגרינה"], "category": "dairy"},
-{"id": "yogurt", "nameHe": "יוגורט", "nameEn": "Yogurt", "synonyms": ["יוגורט טבעי"], "category": "dairy"},
-{"id": "sour_cream", "nameHe": "שמנת חמוצה", "nameEn": "Sour cream", "synonyms": [], "category": "dairy"},
-{"id": "cream", "nameHe": "שמנת מתוקה", "nameEn": "Cream", "synonyms": ["שמנת", "שמנת לבישול"], "category": "dairy"},
-{"id": "white_cheese", "nameHe": "גבינה לבנה", "nameEn": "White cheese", "synonyms": ["גבינה לבנה 5%"], "category": "dairy"},
-{"id": "cottage", "nameHe": "קוטג", "nameEn": "Cottage cheese", "synonyms": ["גבינת קוטג"], "category": "dairy"},
-{"id": "yellow_cheese", "nameHe": "גבינה צהובה", "nameEn": "Yellow cheese", "synonyms": ["גבינה קשה", "גאודה", "עמק"], "category": "dairy"},
-{"id": "mozzarella", "nameHe": "מוצרלה", "nameEn": "Mozzarella", "synonyms": ["גבינת מוצרלה"], "category": "dairy"},
-{"id": "feta", "nameHe": "גבינה בולגרית", "nameEn": "Feta", "synonyms": ["בולגרית", "פטה"], "category": "dairy"},
-{"id": "parmesan", "nameHe": "פרמזן", "nameEn": "Parmesan", "synonyms": ["גבינת פרמזן"], "category": "dairy"},
-{"id": "labneh", "nameHe": "לבנה", "nameEn": "Labneh", "synonyms": ["לאבנה"], "category": "dairy"},
-{"id": "cream_cheese", "nameHe": "גבינת שמנת", "nameEn": "Cream cheese", "synonyms": ["גבינת שמנת לממרח"], "category": "dairy"},
-{"id": "rice", "nameHe": "אורז", "nameEn": "Rice", "synonyms": ["אורז לבן", "אורז בסמטי", "אורז יסמין"], "category": "grains"},
-{"id": "pasta", "nameHe": "פסטה", "nameEn": "Pasta", "synonyms": ["ספגטי", "פנה", "פסטה יבשה"], "category": "grains"},
-{"id": "bread", "nameHe": "לחם", "nameEn": "Bread", "synonyms": ["לחם פרוס", "פרוסות לחם"], "category": "grains"},
-{"id": "pita", "nameHe": "פיתה", "nameEn": "Pita", "synonyms": ["פיתות"], "category": "grains"},
-{"id": "tortilla", "nameHe": "טורטייה", "nameEn": "Tortilla", "synonyms": ["טורטיות", "לאפה"], "category": "grains"},
-{"id": "flour", "nameHe": "קמח", "nameEn": "Flour", "synonyms": ["קמח לבן", "קמח רגיל"], "category": "grains"},
-{"id": "couscous", "nameHe": "קוסקוס", "nameEn": "Couscous", "synonyms": ["קוסקוס פרלים"], "category": "grains"},
-{"id": "oats", "nameHe": "שיבולת שועל", "nameEn": "Oats", "synonyms": ["קוואקר", "דגנים"], "category": "grains"},
-{"id": "bulgur", "nameHe": "בורגול", "nameEn": "Bulgur", "synonyms": ["בורגול גס"], "category": "grains"},
-{"id": "noodles", "nameHe": "אטריות", "nameEn": "Noodles", "synonyms": ["אטריות אורז", "אטריות ביצים"], "category": "grains"},
-{"id": "breadcrumbs", "nameHe": "פירורי לחם", "nameEn": "Breadcrumbs", "synonyms": ["פירורי פנקו", "פנקו"], "category": "grains"},
-{"id": "semolina", "nameHe": "סולת", "nameEn": "Semolina", "synonyms": [], "category": "grains"},
-{"id": "quinoa", "nameHe": "קינואה", "nameEn": "Quinoa", "synonyms": [], "category": "grains"},
-{"id": "chickpeas", "nameHe": "גרגירי חומוס", "nameEn": "Chickpeas", "synonyms": ["חומוס", "חומוס מקופסה"], "category": "grains"},
-{"id": "lentils", "nameHe": "עדשים", "nameEn": "Lentils", "synonyms": ["עדשים כתומות", "עדשים ירוקות", "עדשים שחורות"], "category": "grains"},
-{"id": "black_beans", "nameHe": "שעועית שחורה", "nameEn": "Black beans", "synonyms": [], "category": "grains"},
-{"id": "white_beans", "nameHe": "שעועית לבנה", "nameEn": "White beans", "synonyms": ["שעועית יבשה"], "category": "grains"},
-{"id": "canned_corn", "nameHe": "שימורי תירס", "nameEn": "Canned corn", "synonyms": ["תירס מקופסה", "תירס שימורים"], "category": "grains"},
-{"id": "tuna", "nameHe": "טונה", "nameEn": "Tuna", "synonyms": ["שימורי טונה", "טונה בקופסה"], "category": "meat"},
-{"id": "chicken_breast", "nameHe": "חזה עוף", "nameEn": "Chicken breast", "synonyms": ["חזה עוף טרי", "פילה עוף"], "category": "meat"},
-{"id": "chicken", "nameHe": "עוף", "nameEn": "Chicken", "synonyms": ["שוקי עוף", "כרעיים", "עוף שלם"], "category": "meat"},
-{"id": "ground_beef", "nameHe": "בשר טחון", "nameEn": "Ground beef", "synonyms": ["בקר טחון"], "category": "meat"},
-{"id": "beef", "nameHe": "בשר בקר", "nameEn": "Beef", "synonyms": ["בשר", "סטייק"], "category": "meat"},
-{"id": "schnitzel", "nameHe": "שניצל", "nameEn": "Schnitzel", "synonyms": ["שניצלים", "שניצל קפוא"], "category": "meat"},
-{"id": "sausage", "nameHe": "נקניקיות", "nameEn": "Sausage", "synonyms": ["נקניקייה", "נקניק"], "category": "meat"},
-{"id": "salmon", "nameHe": "סלמון", "nameEn": "Salmon", "synonyms": ["פילה סלמון"], "category": "meat"},
-{"id": "tofu", "nameHe": "טופו", "nameEn": "Tofu", "synonyms": [], "category": "meat"},
-{"id": "sugar", "nameHe": "סוכר", "nameEn": "Sugar", "synonyms": ["סוכר לבן"], "category": "pantry"},
-{"id": "brown_sugar", "nameHe": "סוכר חום", "nameEn": "Brown sugar", "synonyms": [], "category": "pantry"},
-{"id": "honey", "nameHe": "דבש", "nameEn": "Honey", "synonyms": [], "category": "pantry"},
-{"id": "vinegar", "nameHe": "חומץ", "nameEn": "Vinegar", "synonyms": ["חומץ בלסמי", "חומץ תפוחים"], "category": "pantry"},
-{"id": "soy_sauce", "nameHe": "רוטב סויה", "nameEn": "Soy sauce", "synonyms": ["סויה"], "category": "pantry"},
-{"id": "ketchup", "nameHe": "קטשופ", "nameEn": "Ketchup", "synonyms": [], "category": "pantry"},
-{"id": "mayonnaise", "nameHe": "מיונז", "nameEn": "Mayonnaise", "synonyms": ["מיונית"], "category": "pantry"},
-{"id": "mustard", "nameHe": "חרדל", "nameEn": "Mustard", "synonyms": [], "category": "pantry"},
-{"id": "olive_oil", "nameHe": "שמן זית", "nameEn": "Olive oil", "synonyms": ["שמן זית כתית"], "category": "pantry"},
-{"id": "baking_powder", "nameHe": "אבקת אפייה", "nameEn": "Baking powder", "synonyms": ["אבקת אפיה"], "category": "pantry"},
-{"id": "baking_soda", "nameHe": "סודה לשתייה", "nameEn": "Baking soda", "synonyms": ["סודה לשתיה", "בקינג סודה"], "category": "pantry"},
-{"id": "vanilla", "nameHe": "וניל", "nameEn": "Vanilla", "synonyms": ["סוכר וניל", "תמצית וניל"], "category": "pantry"},
-{"id": "cocoa", "nameHe": "קקאו", "nameEn": "Cocoa", "synonyms": ["אבקת קקאו"], "category": "pantry"},
-{"id": "chocolate", "nameHe": "שוקולד", "nameEn": "Chocolate", "synonyms": ["שוקולד מריר", "שוקולד חלב", "שבבי שוקולד"], "category": "pantry"},
-{"id": "peanut_butter", "nameHe": "חמאת בוטנים", "nameEn": "Peanut butter", "synonyms": ["חמאת בוטנים"], "category": "pantry"},
-{"id": "jam", "nameHe": "ריבה", "nameEn": "Jam", "synonyms": ["ריבת תות", "ריבת פירות"], "category": "pantry"},
-{"id": "pesto", "nameHe": "פסטו", "nameEn": "Pesto", "synonyms": ["רוטב פסטו"], "category": "pantry"},
-{"id": "coconut_milk", "nameHe": "חלב קוקוס", "nameEn": "Coconut milk", "synonyms": ["קרם קוקוס"], "category": "pantry"},
-{"id": "cumin", "nameHe": "כמון", "nameEn": "Cumin", "synonyms": [], "category": "spices"},
-{"id": "paprika", "nameHe": "פפריקה", "nameEn": "Paprika", "synonyms": ["פפריקה מתוקה", "פפריקה חריפה"], "category": "spices"},
-{"id": "turmeric", "nameHe": "כורכום", "nameEn": "Turmeric", "synonyms": [], "category": "spices"},
-{"id": "cinnamon", "nameHe": "קינמון", "nameEn": "Cinnamon", "synonyms": ["קינמון טחון"], "category": "spices"},
-{"id": "oregano", "nameHe": "אורגנו", "nameEn": "Oregano", "synonyms": [], "category": "spices"},
-{"id": "thyme", "nameHe": "תימין", "nameEn": "Thyme", "synonyms": ["טימין"], "category": "spices"},
-{"id": "garlic_powder", "nameHe": "אבקת שום", "nameEn": "Garlic powder", "synonyms": [], "category": "spices"},
-{"id": "onion_powder", "nameHe": "אבקת בצל", "nameEn": "Onion powder", "synonyms": [], "category": "spices"},
-{"id": "curry", "nameHe": "קארי", "nameEn": "Curry", "synonyms": ["תבלין קארי", "אבקת קארי"], "category": "spices"},
-{"id": "chili_flakes", "nameHe": "פתיתי צילי", "nameEn": "Chili flakes", "synonyms": ["פלפל חריף יבש"], "category": "spices"},
-{"id": "zaatar", "nameHe": "זעתר", "nameEn": "Za'atar", "synonyms": ["זעתר טחון"], "category": "spices"},
-{"id": "cardamom", "nameHe": "הל", "nameEn": "Cardamom", "synonyms": ["הל טחון"], "category": "spices"},
-{"id": "nutmeg", "nameHe": "אגוז מוסקט", "nameEn": "Nutmeg", "synonyms": [], "category": "spices"},
-{"id": "bay_leaf", "nameHe": "עלי דפנה", "nameEn": "Bay leaf", "synonyms": ["דפנה"], "category": "spices"},
-{"id": "sumac", "nameHe": "סומק", "nameEn": "Sumac", "synonyms": [], "category": "spices"},
-{"id": "hawaij", "nameHe": "חוויאג", "nameEn": "Hawaij", "synonyms": ["תבלין לקפה", "תבלין למרק"], "category": "spices"},
-{"id": "almonds", "nameHe": "שקדים", "nameEn": "Almonds", "synonyms": ["שקד", "שקדים פרוסים"], "category": "snacks"},
-{"id": "walnuts", "nameHe": "אגוזי מלך", "nameEn": "Walnuts", "synonyms": ["אגוזים"], "category": "snacks"},
-{"id": "peanuts", "nameHe": "בוטנים", "nameEn": "Peanuts", "synonyms": ["בוטן"], "category": "snacks"},
-{"id": "sesame", "nameHe": "שומשום", "nameEn": "Sesame", "synonyms": ["שומשום לבן", "שומשום שחור"], "category": "snacks"},
-{"id": "sunflower_seeds", "nameHe": "גרעינים", "nameEn": "Sunflower seeds", "synonyms": ["גרעיני חמניות"], "category": "snacks"},
-{"id": "raisins", "nameHe": "צימוקים", "nameEn": "Raisins", "synonyms": [], "category": "snacks"},
-{"id": "olives", "nameHe": "זיתים", "nameEn": "Olives", "synonyms": ["זית", "זיתים ירוקים", "זיתים שחורים"], "category": "snacks"},
-{"id": "pickles", "nameHe": "מלפפונים חמוצים", "nameEn": "Pickles", "synonyms": ["חמוצים", "מלפפון חמוץ"], "category": "snacks"},
-{"id": "coffee", "nameHe": "קפה", "nameEn": "Coffee", "synonyms": ["קפה נמס", "קפה טחון", "נס קפה"], "category": "snacks"},
-{"id": "tea", "nameHe": "תה", "nameEn": "Tea", "synonyms": ["שקיקי תה", "תה ירוק"], "category": "snacks"},
-{"id": "frozen_vegetables", "nameHe": "ירקות קפואים", "nameEn": "Frozen vegetables", "synonyms": ["תערובת ירקות קפואה"], "category": "pantry"},
-{"id": "stock_powder", "nameHe": "אבקת מרק", "nameEn": "Stock powder", "synonyms": ["אבקת מרק עוף", "אבקת מרק ירקות", "קוביות מרק"], "category": "pantry"},
-{"id": "leek", "nameHe": "כרישה", "nameEn": "Leek", "synonyms": ["כרישות"], "isStaple": false, "category": "produce"},
-{"id": "radish", "nameHe": "צנונית", "nameEn": "Radish", "synonyms": ["צנוניות", "צנון"], "isStaple": false, "category": "produce"},
-{"id": "kohlrabi", "nameHe": "קולורבי", "nameEn": "Kohlrabi", "synonyms": [], "isStaple": false, "category": "produce"},
-{"id": "arugula", "nameHe": "רוקט", "nameEn": "Arugula", "synonyms": ["עלי רוקט", "ארוגולה"], "isStaple": false, "category": "produce"},
-{"id": "pomegranate", "nameHe": "רימון", "nameEn": "Pomegranate", "synonyms": ["רימונים", "גרגירי רימון"], "isStaple": false, "category": "produce"},
-{"id": "cherry_tomato", "nameHe": "עגבניות שרי", "nameEn": "Cherry tomatoes", "synonyms": ["שרי", "עגבניית שרי"], "isStaple": false, "category": "produce"},
-{"id": "ground_turkey", "nameHe": "הודו טחון", "nameEn": "Ground turkey", "synonyms": ["טחון הודו", "בשר הודו טחון"], "isStaple": false, "category": "meat"},
-{"id": "turkey_breast", "nameHe": "חזה הודו", "nameEn": "Turkey breast", "synonyms": ["פילה הודו", "שניצל הודו"], "isStaple": false, "category": "meat"},
-{"id": "white_fish", "nameHe": "פילה דג לבן", "nameEn": "White fish fillet", "synonyms": ["דג לבן", "פילה דג", "מוסר", "נסיכת הנילוס", "דג"], "isStaple": false, "category": "meat"},
-{"id": "sardines", "nameHe": "סרדינים", "nameEn": "Sardines", "synonyms": ["סרדין", "שימורי סרדינים"], "isStaple": false, "category": "meat"},
-{"id": "halloumi", "nameHe": "חלומי", "nameEn": "Halloumi", "synonyms": ["גבינת חלומי"], "isStaple": false, "category": "dairy"},
-{"id": "ricotta", "nameHe": "ריקוטה", "nameEn": "Ricotta", "synonyms": ["גבינת ריקוטה"], "isStaple": false, "category": "dairy"},
-{"id": "lasagna_sheets", "nameHe": "עלי לזניה", "nameEn": "Lasagna sheets", "synonyms": ["לזניה", "פסטה ללזניה"], "isStaple": false, "category": "grains"},
-{"id": "barley", "nameHe": "שעורה", "nameEn": "Barley", "synonyms": ["פנינת שעורה", "גריסי פנינה"], "isStaple": false, "category": "grains"},
-{"id": "freekeh", "nameHe": "פריקה", "nameEn": "Freekeh", "synonyms": ["פריקי"], "isStaple": false, "category": "grains"},
-{"id": "puff_pastry", "nameHe": "בצק עלים", "nameEn": "Puff pastry", "synonyms": ["בצק עלים קפוא"], "isStaple": false, "category": "grains"},
-{"id": "pizza_dough", "nameHe": "בצק פיצה", "nameEn": "Pizza dough", "synonyms": ["בצק לפיצה"], "isStaple": false, "category": "grains"},
-{"id": "tomato_sauce", "nameHe": "רוטב עגבניות", "nameEn": "Tomato sauce", "synonyms": ["רוטב פסטה", "רוטב לפסטה", "רוטב עגבניות מוכן"], "isStaple": false, "category": "pantry"},
-{"id": "silan", "nameHe": "סילאן", "nameEn": "Date syrup (silan)", "synonyms": ["דבש תמרים", "סירופ תמרים"], "isStaple": false, "category": "pantry"},
-{"id": "cornstarch", "nameHe": "עמילן תירס", "nameEn": "Cornstarch", "synonyms": ["קורנפלור", "עמילן"], "isStaple": false, "category": "pantry"},
-{"id": "yeast", "nameHe": "שמרים", "nameEn": "Yeast", "synonyms": ["שמרים יבשים", "שמרים טריים"], "isStaple": false, "category": "pantry"},
-{"id": "powdered_sugar", "nameHe": "אבקת סוכר", "nameEn": "Powdered sugar", "synonyms": ["סוכר אבקה", "סוכר מרוסק"], "isStaple": false, "category": "pantry"},
-{"id": "harissa", "nameHe": "חריסה", "nameEn": "Harissa", "synonyms": ["רוטב חריף", "הריסה"], "isStaple": false, "category": "pantry"},
-{"id": "hummus", "nameHe": "חומוס מוכן", "nameEn": "Prepared hummus", "synonyms": ["חומוס", "ממרח חומוס"], "isStaple": false, "category": "pantry"},
-{"id": "pomegranate_molasses", "nameHe": "דבשת רימונים", "nameEn": "Pomegranate molasses", "synonyms": ["דבס רימונים", "מולסה רימונים"], "isStaple": false, "category": "pantry"},
-{"id": "matbucha", "nameHe": "מטבוחה", "nameEn": "Matbucha", "synonyms": ["סלט מטבוחה", "מטבוחה מוכנה"], "isStaple": false, "category": "pantry"},
-{"id": "baharat", "nameHe": "בהרט", "nameEn": "Baharat", "synonyms": ["תבלין בהרט", "שבעה תבלינים"], "isStaple": false, "category": "spices"},
-{"id": "pine_nuts", "nameHe": "צנוברים", "nameEn": "Pine nuts", "synonyms": ["צנובר"], "isStaple": false, "category": "snacks"},
-{"id": "pistachios", "nameHe": "פיסטוקים", "nameEn": "Pistachios", "synonyms": ["פיסטוק"], "isStaple": false, "category": "snacks"},
-{"id": "cashews", "nameHe": "קשיו", "nameEn": "Cashews", "synonyms": ["אגוזי קשיו"], "isStaple": false, "category": "snacks"},
-{"id": "dates", "nameHe": "תמרים", "nameEn": "Dates", "synonyms": ["תמר", "תמרי מג'הול"], "isStaple": false, "category": "snacks"},
-{"id": "coconut_flakes", "nameHe": "קוקוס", "nameEn": "Coconut flakes", "synonyms": ["קוקוס טחון", "פתיתי קוקוס"], "isStaple": false, "category": "snacks"},
-{"id": "ptitim", "nameHe": "פתיתים", "nameEn": "Ptitim (Israeli couscous)", "synonyms": ["פתיתי אפרופו", "פתיתי אורז", "קוסקוס פתיתים"], "isStaple": false, "category": "grains"}
+  {
+    "id": "salt",
+    "nameHe": "מלח",
+    "nameEn": "Salt",
+    "synonyms": [
+      "מלח שולחן"
+    ],
+    "isStaple": true,
+    "category": "pantry"
+  },
+  {
+    "id": "pepper",
+    "nameHe": "פלפל שחור",
+    "nameEn": "Black pepper",
+    "synonyms": [
+      "פלפל טחון"
+    ],
+    "isStaple": true,
+    "category": "pantry"
+  },
+  {
+    "id": "oil",
+    "nameHe": "שמן",
+    "nameEn": "Oil",
+    "synonyms": [
+      "שמן קנולה",
+      "שמן צמחי",
+      "שמן חמניות"
+    ],
+    "isStaple": true,
+    "category": "pantry"
+  },
+  {
+    "id": "water",
+    "nameHe": "מים",
+    "nameEn": "Water",
+    "synonyms": [],
+    "isStaple": true,
+    "category": "pantry"
+  },
+  {
+    "id": "tomato",
+    "nameHe": "עגבנייה",
+    "nameEn": "Tomato",
+    "synonyms": [
+      "עגבניה",
+      "עגבניות",
+      "עגבניות שרי"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "cucumber",
+    "nameHe": "מלפפון",
+    "nameEn": "Cucumber",
+    "synonyms": [
+      "מלפפונים"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "onion",
+    "nameHe": "בצל",
+    "nameEn": "Onion",
+    "synonyms": [
+      "בצלים",
+      "בצל יבש"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "garlic",
+    "nameHe": "שום",
+    "nameEn": "Garlic",
+    "synonyms": [
+      "שן שום",
+      "שיני שום"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "potato",
+    "nameHe": "תפוח אדמה",
+    "nameEn": "Potato",
+    "synonyms": [
+      "תפוחי אדמה",
+      "תפוא",
+      "תפוד"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "sweet_potato",
+    "nameHe": "בטטה",
+    "nameEn": "Sweet potato",
+    "synonyms": [
+      "בטטות"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "carrot",
+    "nameHe": "גזר",
+    "nameEn": "Carrot",
+    "synonyms": [
+      "גזרים"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "bell_pepper",
+    "nameHe": "פלפל מתוק",
+    "nameEn": "Bell pepper",
+    "synonyms": [
+      "פלפלים",
+      "פלפל אדום",
+      "פלפל צהוב",
+      "פלפל ירוק",
+      "פלפל צבעוני"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "chili",
+    "nameHe": "פלפל חריף",
+    "nameEn": "Chili pepper",
+    "synonyms": [
+      "צילי",
+      "חריף",
+      "פלפלים חריפים"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "zucchini",
+    "nameHe": "קישוא",
+    "nameEn": "Zucchini",
+    "synonyms": [
+      "קישואים"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "eggplant",
+    "nameHe": "חציל",
+    "nameEn": "Eggplant",
+    "synonyms": [
+      "חצילים"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "cabbage",
+    "nameHe": "כרוב",
+    "nameEn": "Cabbage",
+    "synonyms": [
+      "כרוב לבן",
+      "כרוב אדום"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "lettuce",
+    "nameHe": "חסה",
+    "nameEn": "Lettuce",
+    "synonyms": [
+      "חסות"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "spinach",
+    "nameHe": "תרד",
+    "nameEn": "Spinach",
+    "synonyms": [
+      "עלי תרד"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "broccoli",
+    "nameHe": "ברוקולי",
+    "nameEn": "Broccoli",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "cauliflower",
+    "nameHe": "כרובית",
+    "nameEn": "Cauliflower",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "mushroom",
+    "nameHe": "פטריות",
+    "nameEn": "Mushrooms",
+    "synonyms": [
+      "פטרייה",
+      "שמפיניון",
+      "שמפיניונים"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "corn",
+    "nameHe": "תירס",
+    "nameEn": "Corn",
+    "synonyms": [
+      "קלח תירס"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "avocado",
+    "nameHe": "אבוקדו",
+    "nameEn": "Avocado",
+    "synonyms": [
+      "אבוקדואים"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "lemon",
+    "nameHe": "לימון",
+    "nameEn": "Lemon",
+    "synonyms": [
+      "לימונים",
+      "מיץ לימון"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "lime",
+    "nameHe": "ליים",
+    "nameEn": "Lime",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "apple",
+    "nameHe": "תפוח",
+    "nameEn": "Apple",
+    "synonyms": [
+      "תפוחים",
+      "תפוח עץ"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "banana",
+    "nameHe": "בננה",
+    "nameEn": "Banana",
+    "synonyms": [
+      "בננות"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "orange",
+    "nameHe": "תפוז",
+    "nameEn": "Orange",
+    "synonyms": [
+      "תפוזים"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "parsley",
+    "nameHe": "פטרוזיליה",
+    "nameEn": "Parsley",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "cilantro",
+    "nameHe": "כוסברה",
+    "nameEn": "Cilantro",
+    "synonyms": [
+      "קוריאנדר"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "dill",
+    "nameHe": "שמיר",
+    "nameEn": "Dill",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "mint",
+    "nameHe": "נענע",
+    "nameEn": "Mint",
+    "synonyms": [
+      "נענע טרייה"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "basil",
+    "nameHe": "בזיליקום",
+    "nameEn": "Basil",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "green_onion",
+    "nameHe": "בצל ירוק",
+    "nameEn": "Green onion",
+    "synonyms": [
+      "בצל לבן",
+      "סקאליון"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "ginger",
+    "nameHe": "גינגר",
+    "nameEn": "Ginger",
+    "synonyms": [
+      "זנגביל"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "pumpkin",
+    "nameHe": "דלעת",
+    "nameEn": "Pumpkin",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "beet",
+    "nameHe": "סלק",
+    "nameEn": "Beet",
+    "synonyms": [
+      "סלקים"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "celery",
+    "nameHe": "סלרי",
+    "nameEn": "Celery",
+    "synonyms": [
+      "סלרי ירוק"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "peas",
+    "nameHe": "אפונה",
+    "nameEn": "Peas",
+    "synonyms": [
+      "אפונה ירוקה"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "green_beans",
+    "nameHe": "שעועית ירוקה",
+    "nameEn": "Green beans",
+    "synonyms": [
+      "שעועית"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "tomato_paste",
+    "nameHe": "רסק עגבניות",
+    "nameEn": "Tomato paste",
+    "synonyms": [
+      "רסק"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "canned_tomatoes",
+    "nameHe": "עגבניות מרוסקות",
+    "nameEn": "Canned tomatoes",
+    "synonyms": [
+      "שימורי עגבניות",
+      "עגבניות מקופסה"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "tahini",
+    "nameHe": "טחינה",
+    "nameEn": "Tahini",
+    "synonyms": [
+      "טחינה גולמית"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "egg",
+    "nameHe": "ביצה",
+    "nameEn": "Egg",
+    "synonyms": [
+      "ביצים"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "milk",
+    "nameHe": "חלב",
+    "nameEn": "Milk",
+    "synonyms": [
+      "חלב 3%"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "butter",
+    "nameHe": "חמאה",
+    "nameEn": "Butter",
+    "synonyms": [
+      "מרגרינה"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "yogurt",
+    "nameHe": "יוגורט",
+    "nameEn": "Yogurt",
+    "synonyms": [
+      "יוגורט טבעי"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "sour_cream",
+    "nameHe": "שמנת חמוצה",
+    "nameEn": "Sour cream",
+    "synonyms": [],
+    "category": "dairy"
+  },
+  {
+    "id": "cream",
+    "nameHe": "שמנת מתוקה",
+    "nameEn": "Cream",
+    "synonyms": [
+      "שמנת",
+      "שמנת לבישול"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "white_cheese",
+    "nameHe": "גבינה לבנה",
+    "nameEn": "White cheese",
+    "synonyms": [
+      "גבינה לבנה 5%"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "cottage",
+    "nameHe": "קוטג",
+    "nameEn": "Cottage cheese",
+    "synonyms": [
+      "גבינת קוטג"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "yellow_cheese",
+    "nameHe": "גבינה צהובה",
+    "nameEn": "Yellow cheese",
+    "synonyms": [
+      "גבינה קשה",
+      "גאודה",
+      "עמק"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "mozzarella",
+    "nameHe": "מוצרלה",
+    "nameEn": "Mozzarella",
+    "synonyms": [
+      "גבינת מוצרלה"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "feta",
+    "nameHe": "גבינה בולגרית",
+    "nameEn": "Feta",
+    "synonyms": [
+      "בולגרית",
+      "פטה"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "parmesan",
+    "nameHe": "פרמזן",
+    "nameEn": "Parmesan",
+    "synonyms": [
+      "גבינת פרמזן"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "labneh",
+    "nameHe": "לבנה",
+    "nameEn": "Labneh",
+    "synonyms": [
+      "לאבנה"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "cream_cheese",
+    "nameHe": "גבינת שמנת",
+    "nameEn": "Cream cheese",
+    "synonyms": [
+      "גבינת שמנת לממרח"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "rice",
+    "nameHe": "אורז",
+    "nameEn": "Rice",
+    "synonyms": [
+      "אורז לבן",
+      "אורז בסמטי",
+      "אורז יסמין"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "pasta",
+    "nameHe": "פסטה",
+    "nameEn": "Pasta",
+    "synonyms": [
+      "ספגטי",
+      "פנה",
+      "פסטה יבשה"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "bread",
+    "nameHe": "לחם",
+    "nameEn": "Bread",
+    "synonyms": [
+      "לחם פרוס",
+      "פרוסות לחם"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "pita",
+    "nameHe": "פיתה",
+    "nameEn": "Pita",
+    "synonyms": [
+      "פיתות"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "tortilla",
+    "nameHe": "טורטייה",
+    "nameEn": "Tortilla",
+    "synonyms": [
+      "טורטיות",
+      "לאפה"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "flour",
+    "nameHe": "קמח",
+    "nameEn": "Flour",
+    "synonyms": [
+      "קמח לבן",
+      "קמח רגיל"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "couscous",
+    "nameHe": "קוסקוס",
+    "nameEn": "Couscous",
+    "synonyms": [
+      "קוסקוס פרלים"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "oats",
+    "nameHe": "שיבולת שועל",
+    "nameEn": "Oats",
+    "synonyms": [
+      "קוואקר",
+      "דגנים"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "bulgur",
+    "nameHe": "בורגול",
+    "nameEn": "Bulgur",
+    "synonyms": [
+      "בורגול גס"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "noodles",
+    "nameHe": "אטריות",
+    "nameEn": "Noodles",
+    "synonyms": [
+      "אטריות אורז",
+      "אטריות ביצים"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "breadcrumbs",
+    "nameHe": "פירורי לחם",
+    "nameEn": "Breadcrumbs",
+    "synonyms": [
+      "פירורי פנקו",
+      "פנקו"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "semolina",
+    "nameHe": "סולת",
+    "nameEn": "Semolina",
+    "synonyms": [],
+    "category": "grains"
+  },
+  {
+    "id": "quinoa",
+    "nameHe": "קינואה",
+    "nameEn": "Quinoa",
+    "synonyms": [],
+    "category": "grains"
+  },
+  {
+    "id": "chickpeas",
+    "nameHe": "גרגירי חומוס",
+    "nameEn": "Chickpeas",
+    "synonyms": [
+      "חומוס",
+      "חומוס מקופסה"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "lentils",
+    "nameHe": "עדשים",
+    "nameEn": "Lentils",
+    "synonyms": [
+      "עדשים כתומות",
+      "עדשים ירוקות",
+      "עדשים שחורות"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "black_beans",
+    "nameHe": "שעועית שחורה",
+    "nameEn": "Black beans",
+    "synonyms": [],
+    "category": "grains"
+  },
+  {
+    "id": "white_beans",
+    "nameHe": "שעועית לבנה",
+    "nameEn": "White beans",
+    "synonyms": [
+      "שעועית יבשה"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "canned_corn",
+    "nameHe": "שימורי תירס",
+    "nameEn": "Canned corn",
+    "synonyms": [
+      "תירס מקופסה",
+      "תירס שימורים"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "tuna",
+    "nameHe": "טונה",
+    "nameEn": "Tuna",
+    "synonyms": [
+      "שימורי טונה",
+      "טונה בקופסה"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "chicken_breast",
+    "nameHe": "חזה עוף",
+    "nameEn": "Chicken breast",
+    "synonyms": [
+      "חזה עוף טרי",
+      "פילה עוף"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "chicken",
+    "nameHe": "עוף",
+    "nameEn": "Chicken",
+    "synonyms": [
+      "שוקי עוף",
+      "כרעיים",
+      "עוף שלם"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "ground_beef",
+    "nameHe": "בשר טחון",
+    "nameEn": "Ground beef",
+    "synonyms": [
+      "בקר טחון"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "beef",
+    "nameHe": "בשר בקר",
+    "nameEn": "Beef",
+    "synonyms": [
+      "בשר",
+      "סטייק"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "schnitzel",
+    "nameHe": "שניצל",
+    "nameEn": "Schnitzel",
+    "synonyms": [
+      "שניצלים",
+      "שניצל קפוא"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "sausage",
+    "nameHe": "נקניקיות",
+    "nameEn": "Sausage",
+    "synonyms": [
+      "נקניקייה",
+      "נקניק"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "salmon",
+    "nameHe": "סלמון",
+    "nameEn": "Salmon",
+    "synonyms": [
+      "פילה סלמון"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "tofu",
+    "nameHe": "טופו",
+    "nameEn": "Tofu",
+    "synonyms": [],
+    "category": "meat"
+  },
+  {
+    "id": "sugar",
+    "nameHe": "סוכר",
+    "nameEn": "Sugar",
+    "synonyms": [
+      "סוכר לבן"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "brown_sugar",
+    "nameHe": "סוכר חום",
+    "nameEn": "Brown sugar",
+    "synonyms": [],
+    "category": "pantry"
+  },
+  {
+    "id": "honey",
+    "nameHe": "דבש",
+    "nameEn": "Honey",
+    "synonyms": [],
+    "category": "pantry"
+  },
+  {
+    "id": "vinegar",
+    "nameHe": "חומץ",
+    "nameEn": "Vinegar",
+    "synonyms": [
+      "חומץ בלסמי",
+      "חומץ תפוחים"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "soy_sauce",
+    "nameHe": "רוטב סויה",
+    "nameEn": "Soy sauce",
+    "synonyms": [
+      "סויה"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "ketchup",
+    "nameHe": "קטשופ",
+    "nameEn": "Ketchup",
+    "synonyms": [],
+    "category": "pantry"
+  },
+  {
+    "id": "mayonnaise",
+    "nameHe": "מיונז",
+    "nameEn": "Mayonnaise",
+    "synonyms": [
+      "מיונית"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "mustard",
+    "nameHe": "חרדל",
+    "nameEn": "Mustard",
+    "synonyms": [],
+    "category": "pantry"
+  },
+  {
+    "id": "olive_oil",
+    "nameHe": "שמן זית",
+    "nameEn": "Olive oil",
+    "synonyms": [
+      "שמן זית כתית"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "baking_powder",
+    "nameHe": "אבקת אפייה",
+    "nameEn": "Baking powder",
+    "synonyms": [
+      "אבקת אפיה"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "baking_soda",
+    "nameHe": "סודה לשתייה",
+    "nameEn": "Baking soda",
+    "synonyms": [
+      "סודה לשתיה",
+      "בקינג סודה"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "vanilla",
+    "nameHe": "וניל",
+    "nameEn": "Vanilla",
+    "synonyms": [
+      "סוכר וניל",
+      "תמצית וניל"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "cocoa",
+    "nameHe": "קקאו",
+    "nameEn": "Cocoa",
+    "synonyms": [
+      "אבקת קקאו"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "chocolate",
+    "nameHe": "שוקולד",
+    "nameEn": "Chocolate",
+    "synonyms": [
+      "שוקולד מריר",
+      "שוקולד חלב",
+      "שבבי שוקולד"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "peanut_butter",
+    "nameHe": "חמאת בוטנים",
+    "nameEn": "Peanut butter",
+    "synonyms": [
+      "חמאת בוטנים"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "jam",
+    "nameHe": "ריבה",
+    "nameEn": "Jam",
+    "synonyms": [
+      "ריבת תות",
+      "ריבת פירות"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "pesto",
+    "nameHe": "פסטו",
+    "nameEn": "Pesto",
+    "synonyms": [
+      "רוטב פסטו"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "coconut_milk",
+    "nameHe": "חלב קוקוס",
+    "nameEn": "Coconut milk",
+    "synonyms": [
+      "קרם קוקוס"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "cumin",
+    "nameHe": "כמון",
+    "nameEn": "Cumin",
+    "synonyms": [],
+    "category": "spices"
+  },
+  {
+    "id": "paprika",
+    "nameHe": "פפריקה",
+    "nameEn": "Paprika",
+    "synonyms": [
+      "פפריקה מתוקה",
+      "פפריקה חריפה"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "turmeric",
+    "nameHe": "כורכום",
+    "nameEn": "Turmeric",
+    "synonyms": [],
+    "category": "spices"
+  },
+  {
+    "id": "cinnamon",
+    "nameHe": "קינמון",
+    "nameEn": "Cinnamon",
+    "synonyms": [
+      "קינמון טחון"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "oregano",
+    "nameHe": "אורגנו",
+    "nameEn": "Oregano",
+    "synonyms": [],
+    "category": "spices"
+  },
+  {
+    "id": "thyme",
+    "nameHe": "תימין",
+    "nameEn": "Thyme",
+    "synonyms": [
+      "טימין"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "garlic_powder",
+    "nameHe": "אבקת שום",
+    "nameEn": "Garlic powder",
+    "synonyms": [],
+    "category": "spices"
+  },
+  {
+    "id": "onion_powder",
+    "nameHe": "אבקת בצל",
+    "nameEn": "Onion powder",
+    "synonyms": [],
+    "category": "spices"
+  },
+  {
+    "id": "curry",
+    "nameHe": "קארי",
+    "nameEn": "Curry",
+    "synonyms": [
+      "תבלין קארי",
+      "אבקת קארי"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "chili_flakes",
+    "nameHe": "פתיתי צילי",
+    "nameEn": "Chili flakes",
+    "synonyms": [
+      "פלפל חריף יבש"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "zaatar",
+    "nameHe": "זעתר",
+    "nameEn": "Za'atar",
+    "synonyms": [
+      "זעתר טחון"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "cardamom",
+    "nameHe": "הל",
+    "nameEn": "Cardamom",
+    "synonyms": [
+      "הל טחון"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "nutmeg",
+    "nameHe": "אגוז מוסקט",
+    "nameEn": "Nutmeg",
+    "synonyms": [],
+    "category": "spices"
+  },
+  {
+    "id": "bay_leaf",
+    "nameHe": "עלי דפנה",
+    "nameEn": "Bay leaf",
+    "synonyms": [
+      "דפנה"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "sumac",
+    "nameHe": "סומק",
+    "nameEn": "Sumac",
+    "synonyms": [],
+    "category": "spices"
+  },
+  {
+    "id": "hawaij",
+    "nameHe": "חוויאג",
+    "nameEn": "Hawaij",
+    "synonyms": [
+      "תבלין לקפה",
+      "תבלין למרק"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "almonds",
+    "nameHe": "שקדים",
+    "nameEn": "Almonds",
+    "synonyms": [
+      "שקד",
+      "שקדים פרוסים"
+    ],
+    "category": "snacks"
+  },
+  {
+    "id": "walnuts",
+    "nameHe": "אגוזי מלך",
+    "nameEn": "Walnuts",
+    "synonyms": [
+      "אגוזים"
+    ],
+    "category": "snacks"
+  },
+  {
+    "id": "peanuts",
+    "nameHe": "בוטנים",
+    "nameEn": "Peanuts",
+    "synonyms": [
+      "בוטן"
+    ],
+    "category": "snacks"
+  },
+  {
+    "id": "sesame",
+    "nameHe": "שומשום",
+    "nameEn": "Sesame",
+    "synonyms": [
+      "שומשום לבן",
+      "שומשום שחור"
+    ],
+    "category": "snacks"
+  },
+  {
+    "id": "sunflower_seeds",
+    "nameHe": "גרעינים",
+    "nameEn": "Sunflower seeds",
+    "synonyms": [
+      "גרעיני חמניות"
+    ],
+    "category": "snacks"
+  },
+  {
+    "id": "raisins",
+    "nameHe": "צימוקים",
+    "nameEn": "Raisins",
+    "synonyms": [],
+    "category": "snacks"
+  },
+  {
+    "id": "olives",
+    "nameHe": "זיתים",
+    "nameEn": "Olives",
+    "synonyms": [
+      "זית",
+      "זיתים ירוקים",
+      "זיתים שחורים"
+    ],
+    "category": "snacks"
+  },
+  {
+    "id": "pickles",
+    "nameHe": "מלפפונים חמוצים",
+    "nameEn": "Pickles",
+    "synonyms": [
+      "חמוצים",
+      "מלפפון חמוץ"
+    ],
+    "category": "snacks"
+  },
+  {
+    "id": "coffee",
+    "nameHe": "קפה",
+    "nameEn": "Coffee",
+    "synonyms": [
+      "קפה נמס",
+      "קפה טחון",
+      "נס קפה"
+    ],
+    "category": "snacks"
+  },
+  {
+    "id": "tea",
+    "nameHe": "תה",
+    "nameEn": "Tea",
+    "synonyms": [
+      "שקיקי תה",
+      "תה ירוק"
+    ],
+    "category": "snacks"
+  },
+  {
+    "id": "frozen_vegetables",
+    "nameHe": "ירקות קפואים",
+    "nameEn": "Frozen vegetables",
+    "synonyms": [
+      "תערובת ירקות קפואה"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "stock_powder",
+    "nameHe": "אבקת מרק",
+    "nameEn": "Stock powder",
+    "synonyms": [
+      "אבקת מרק עוף",
+      "אבקת מרק ירקות",
+      "קוביות מרק"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "leek",
+    "nameHe": "כרישה",
+    "nameEn": "Leek",
+    "synonyms": [
+      "כרישות"
+    ],
+    "isStaple": false,
+    "category": "produce"
+  },
+  {
+    "id": "radish",
+    "nameHe": "צנונית",
+    "nameEn": "Radish",
+    "synonyms": [
+      "צנוניות",
+      "צנון"
+    ],
+    "isStaple": false,
+    "category": "produce"
+  },
+  {
+    "id": "kohlrabi",
+    "nameHe": "קולורבי",
+    "nameEn": "Kohlrabi",
+    "synonyms": [],
+    "isStaple": false,
+    "category": "produce"
+  },
+  {
+    "id": "arugula",
+    "nameHe": "רוקט",
+    "nameEn": "Arugula",
+    "synonyms": [
+      "עלי רוקט",
+      "ארוגולה"
+    ],
+    "isStaple": false,
+    "category": "produce"
+  },
+  {
+    "id": "pomegranate",
+    "nameHe": "רימון",
+    "nameEn": "Pomegranate",
+    "synonyms": [
+      "רימונים",
+      "גרגירי רימון"
+    ],
+    "isStaple": false,
+    "category": "produce"
+  },
+  {
+    "id": "cherry_tomato",
+    "nameHe": "עגבניות שרי",
+    "nameEn": "Cherry tomatoes",
+    "synonyms": [
+      "שרי",
+      "עגבניית שרי"
+    ],
+    "isStaple": false,
+    "category": "produce"
+  },
+  {
+    "id": "ground_turkey",
+    "nameHe": "הודו טחון",
+    "nameEn": "Ground turkey",
+    "synonyms": [
+      "טחון הודו",
+      "בשר הודו טחון"
+    ],
+    "isStaple": false,
+    "category": "meat"
+  },
+  {
+    "id": "turkey_breast",
+    "nameHe": "חזה הודו",
+    "nameEn": "Turkey breast",
+    "synonyms": [
+      "פילה הודו",
+      "שניצל הודו"
+    ],
+    "isStaple": false,
+    "category": "meat"
+  },
+  {
+    "id": "white_fish",
+    "nameHe": "פילה דג לבן",
+    "nameEn": "White fish fillet",
+    "synonyms": [
+      "דג לבן",
+      "פילה דג",
+      "מוסר",
+      "נסיכת הנילוס",
+      "דג"
+    ],
+    "isStaple": false,
+    "category": "meat"
+  },
+  {
+    "id": "sardines",
+    "nameHe": "סרדינים",
+    "nameEn": "Sardines",
+    "synonyms": [
+      "סרדין",
+      "שימורי סרדינים"
+    ],
+    "isStaple": false,
+    "category": "meat"
+  },
+  {
+    "id": "halloumi",
+    "nameHe": "חלומי",
+    "nameEn": "Halloumi",
+    "synonyms": [
+      "גבינת חלומי"
+    ],
+    "isStaple": false,
+    "category": "dairy"
+  },
+  {
+    "id": "ricotta",
+    "nameHe": "ריקוטה",
+    "nameEn": "Ricotta",
+    "synonyms": [
+      "גבינת ריקוטה"
+    ],
+    "isStaple": false,
+    "category": "dairy"
+  },
+  {
+    "id": "lasagna_sheets",
+    "nameHe": "עלי לזניה",
+    "nameEn": "Lasagna sheets",
+    "synonyms": [
+      "לזניה",
+      "פסטה ללזניה"
+    ],
+    "isStaple": false,
+    "category": "grains"
+  },
+  {
+    "id": "barley",
+    "nameHe": "שעורה",
+    "nameEn": "Barley",
+    "synonyms": [
+      "פנינת שעורה",
+      "גריסי פנינה"
+    ],
+    "isStaple": false,
+    "category": "grains"
+  },
+  {
+    "id": "freekeh",
+    "nameHe": "פריקה",
+    "nameEn": "Freekeh",
+    "synonyms": [
+      "פריקי"
+    ],
+    "isStaple": false,
+    "category": "grains"
+  },
+  {
+    "id": "puff_pastry",
+    "nameHe": "בצק עלים",
+    "nameEn": "Puff pastry",
+    "synonyms": [
+      "בצק עלים קפוא"
+    ],
+    "isStaple": false,
+    "category": "grains"
+  },
+  {
+    "id": "pizza_dough",
+    "nameHe": "בצק פיצה",
+    "nameEn": "Pizza dough",
+    "synonyms": [
+      "בצק לפיצה"
+    ],
+    "isStaple": false,
+    "category": "grains"
+  },
+  {
+    "id": "tomato_sauce",
+    "nameHe": "רוטב עגבניות",
+    "nameEn": "Tomato sauce",
+    "synonyms": [
+      "רוטב פסטה",
+      "רוטב לפסטה",
+      "רוטב עגבניות מוכן"
+    ],
+    "isStaple": false,
+    "category": "pantry"
+  },
+  {
+    "id": "silan",
+    "nameHe": "סילאן",
+    "nameEn": "Date syrup (silan)",
+    "synonyms": [
+      "דבש תמרים",
+      "סירופ תמרים"
+    ],
+    "isStaple": false,
+    "category": "pantry"
+  },
+  {
+    "id": "cornstarch",
+    "nameHe": "עמילן תירס",
+    "nameEn": "Cornstarch",
+    "synonyms": [
+      "קורנפלור",
+      "עמילן"
+    ],
+    "isStaple": false,
+    "category": "pantry"
+  },
+  {
+    "id": "yeast",
+    "nameHe": "שמרים",
+    "nameEn": "Yeast",
+    "synonyms": [
+      "שמרים יבשים",
+      "שמרים טריים"
+    ],
+    "isStaple": false,
+    "category": "pantry"
+  },
+  {
+    "id": "powdered_sugar",
+    "nameHe": "אבקת סוכר",
+    "nameEn": "Powdered sugar",
+    "synonyms": [
+      "סוכר אבקה",
+      "סוכר מרוסק"
+    ],
+    "isStaple": false,
+    "category": "pantry"
+  },
+  {
+    "id": "harissa",
+    "nameHe": "חריסה",
+    "nameEn": "Harissa",
+    "synonyms": [
+      "רוטב חריף",
+      "הריסה"
+    ],
+    "isStaple": false,
+    "category": "pantry"
+  },
+  {
+    "id": "hummus",
+    "nameHe": "חומוס מוכן",
+    "nameEn": "Prepared hummus",
+    "synonyms": [
+      "חומוס",
+      "ממרח חומוס"
+    ],
+    "isStaple": false,
+    "category": "pantry"
+  },
+  {
+    "id": "pomegranate_molasses",
+    "nameHe": "דבשת רימונים",
+    "nameEn": "Pomegranate molasses",
+    "synonyms": [
+      "דבס רימונים",
+      "מולסה רימונים"
+    ],
+    "isStaple": false,
+    "category": "pantry"
+  },
+  {
+    "id": "matbucha",
+    "nameHe": "מטבוחה",
+    "nameEn": "Matbucha",
+    "synonyms": [
+      "סלט מטבוחה",
+      "מטבוחה מוכנה"
+    ],
+    "isStaple": false,
+    "category": "pantry"
+  },
+  {
+    "id": "baharat",
+    "nameHe": "בהרט",
+    "nameEn": "Baharat",
+    "synonyms": [
+      "תבלין בהרט",
+      "שבעה תבלינים"
+    ],
+    "isStaple": false,
+    "category": "spices"
+  },
+  {
+    "id": "pine_nuts",
+    "nameHe": "צנוברים",
+    "nameEn": "Pine nuts",
+    "synonyms": [
+      "צנובר"
+    ],
+    "isStaple": false,
+    "category": "snacks"
+  },
+  {
+    "id": "pistachios",
+    "nameHe": "פיסטוקים",
+    "nameEn": "Pistachios",
+    "synonyms": [
+      "פיסטוק"
+    ],
+    "isStaple": false,
+    "category": "snacks"
+  },
+  {
+    "id": "cashews",
+    "nameHe": "קשיו",
+    "nameEn": "Cashews",
+    "synonyms": [
+      "אגוזי קשיו"
+    ],
+    "isStaple": false,
+    "category": "snacks"
+  },
+  {
+    "id": "dates",
+    "nameHe": "תמרים",
+    "nameEn": "Dates",
+    "synonyms": [
+      "תמר",
+      "תמרי מג'הול"
+    ],
+    "isStaple": false,
+    "category": "snacks"
+  },
+  {
+    "id": "coconut_flakes",
+    "nameHe": "קוקוס",
+    "nameEn": "Coconut flakes",
+    "synonyms": [
+      "קוקוס טחון",
+      "פתיתי קוקוס"
+    ],
+    "isStaple": false,
+    "category": "snacks"
+  },
+  {
+    "id": "ptitim",
+    "nameHe": "פתיתים",
+    "nameEn": "Ptitim (Israeli couscous)",
+    "synonyms": [
+      "פתיתי אפרופו",
+      "פתיתי אורז",
+      "קוסקוס פתיתים"
+    ],
+    "isStaple": false,
+    "category": "grains"
+  },
+  {
+    "id": "red_onion",
+    "nameHe": "בצל סגול",
+    "nameEn": "Red onion",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "mango",
+    "nameHe": "מנגו",
+    "nameEn": "Mango",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "strawberry",
+    "nameHe": "תות",
+    "nameEn": "Strawberry",
+    "synonyms": [
+      "תותים"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "grapes",
+    "nameHe": "ענבים",
+    "nameEn": "Grapes",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "watermelon",
+    "nameHe": "אבטיח",
+    "nameEn": "Watermelon",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "peach",
+    "nameHe": "אפרסק",
+    "nameEn": "Peach",
+    "synonyms": [
+      "נקטרינה"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "pear",
+    "nameHe": "אגס",
+    "nameEn": "Pear",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "pineapple",
+    "nameHe": "אננס",
+    "nameEn": "Pineapple",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "kiwi",
+    "nameHe": "קיווי",
+    "nameEn": "Kiwi",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "okra",
+    "nameHe": "במיה",
+    "nameEn": "Okra",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "swiss_chard",
+    "nameHe": "תרד עלים",
+    "nameEn": "Swiss chard",
+    "synonyms": [
+      "מנגולד",
+      "סלק עלים"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "fennel",
+    "nameHe": "שומר",
+    "nameEn": "Fennel",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "artichoke_hearts",
+    "nameHe": "ארטישוק (שימורי ליבות)",
+    "nameEn": "Artichoke hearts",
+    "synonyms": [
+      "ליבות ארטישוק"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "sun_dried_tomatoes",
+    "nameHe": "עגבניות מיובשות",
+    "nameEn": "Sun-dried tomatoes",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "roasted_peppers",
+    "nameHe": "פלפלים קלויים",
+    "nameEn": "Roasted peppers",
+    "synonyms": [
+      "פלפל קלוי"
+    ],
+    "category": "produce"
+  },
+  {
+    "id": "capers",
+    "nameHe": "צלפים",
+    "nameEn": "Capers",
+    "synonyms": [],
+    "category": "produce"
+  },
+  {
+    "id": "lamb",
+    "nameHe": "בשר כבש",
+    "nameEn": "Lamb",
+    "synonyms": [
+      "כבש",
+      "צלעות כבש"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "steak",
+    "nameHe": "אנטריקוט",
+    "nameEn": "Steak",
+    "synonyms": [
+      "סטייק",
+      "אנטריקוט"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "beef_ribs",
+    "nameHe": "צלעות בקר",
+    "nameEn": "Beef ribs",
+    "synonyms": [
+      "צלעות",
+      "אסאדו"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "chicken_wings",
+    "nameHe": "כנפיים",
+    "nameEn": "Chicken wings",
+    "synonyms": [
+      "כנפי עוף"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "chicken_liver",
+    "nameHe": "כבד עוף",
+    "nameEn": "Chicken liver",
+    "synonyms": [
+      "כבדי עוף"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "bacon",
+    "nameHe": "בייקון",
+    "nameEn": "Bacon",
+    "synonyms": [
+      "בקון"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "hot_dogs",
+    "nameHe": "נקניקי הוט דוג",
+    "nameEn": "Hot dogs",
+    "synonyms": [
+      "הוט דוג",
+      "נקניקיות הוט דוג"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "salami",
+    "nameHe": "סלמי",
+    "nameEn": "Salami",
+    "synonyms": [
+      "פסטרמה"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "shrimp",
+    "nameHe": "שרימפס",
+    "nameEn": "Shrimp",
+    "synonyms": [
+      "חסילונים"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "smoked_salmon",
+    "nameHe": "סלמון מעושן",
+    "nameEn": "Smoked salmon",
+    "synonyms": [
+      "לוקס"
+    ],
+    "category": "meat"
+  },
+  {
+    "id": "goat_cheese",
+    "nameHe": "גבינת עיזים",
+    "nameEn": "Goat cheese",
+    "synonyms": [],
+    "category": "dairy"
+  },
+  {
+    "id": "mascarpone",
+    "nameHe": "מסקרפונה",
+    "nameEn": "Mascarpone",
+    "synonyms": [],
+    "category": "dairy"
+  },
+  {
+    "id": "condensed_milk",
+    "nameHe": "חלב מרוכז ממותק",
+    "nameEn": "Condensed milk",
+    "synonyms": [
+      "חלב מרוכז"
+    ],
+    "category": "dairy"
+  },
+  {
+    "id": "brown_rice",
+    "nameHe": "אורז מלא",
+    "nameEn": "Brown rice",
+    "synonyms": [],
+    "category": "grains"
+  },
+  {
+    "id": "rice_noodles",
+    "nameHe": "אטריות אורז",
+    "nameEn": "Rice noodles",
+    "synonyms": [],
+    "category": "grains"
+  },
+  {
+    "id": "instant_noodles",
+    "nameHe": "אטריות מהירות",
+    "nameEn": "Instant noodles",
+    "synonyms": [
+      "מרק עוף בכוסית",
+      "אטריות קוואקר"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "gnocchi",
+    "nameHe": "ניוקי",
+    "nameEn": "Gnocchi",
+    "synonyms": [],
+    "category": "grains"
+  },
+  {
+    "id": "polenta",
+    "nameHe": "פולנטה",
+    "nameEn": "Polenta",
+    "synonyms": [
+      "קורנמיל"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "panko",
+    "nameHe": "פנקו",
+    "nameEn": "Panko breadcrumbs",
+    "synonyms": [
+      "פירורי לחם יפניים"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "baguette",
+    "nameHe": "באגט",
+    "nameEn": "Baguette",
+    "synonyms": [
+      "לחמניה",
+      "לחמניות"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "bagel",
+    "nameHe": "בייגל",
+    "nameEn": "Bagel",
+    "synonyms": [
+      "בייגלה"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "red_lentils",
+    "nameHe": "עדשים אדומות",
+    "nameEn": "Red lentils",
+    "synonyms": [
+      "עדשים כתומות"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "kidney_beans",
+    "nameHe": "שעועית אדומה",
+    "nameEn": "Kidney beans",
+    "synonyms": [
+      "שעועית כליה"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "split_peas",
+    "nameHe": "אפונה יבשה",
+    "nameEn": "Split peas",
+    "synonyms": [],
+    "category": "grains"
+  },
+  {
+    "id": "granola",
+    "nameHe": "גרנולה",
+    "nameEn": "Granola",
+    "synonyms": [],
+    "category": "grains"
+  },
+  {
+    "id": "cereal",
+    "nameHe": "דגני בוקר",
+    "nameEn": "Cereal",
+    "synonyms": [
+      "קורנפלקס",
+      "דגנים"
+    ],
+    "category": "grains"
+  },
+  {
+    "id": "rice_paper_wraps",
+    "nameHe": "דפי אורז",
+    "nameEn": "Rice paper wraps",
+    "synonyms": [],
+    "category": "grains"
+  },
+  {
+    "id": "sriracha",
+    "nameHe": "סריראצ'ה",
+    "nameEn": "Sriracha",
+    "synonyms": [
+      "רוטב חריף",
+      "טבסקו"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "teriyaki_sauce",
+    "nameHe": "רוטב טריאקי",
+    "nameEn": "Teriyaki sauce",
+    "synonyms": [],
+    "category": "pantry"
+  },
+  {
+    "id": "bbq_sauce",
+    "nameHe": "רוטב ברביקיו",
+    "nameEn": "BBQ sauce",
+    "synonyms": [
+      "ברביקיו"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "worcestershire",
+    "nameHe": "רוטב ווסטרשייר",
+    "nameEn": "Worcestershire sauce",
+    "synonyms": [
+      "וורצסטר"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "sweet_chili_sauce",
+    "nameHe": "רוטב צ'ילי מתוק",
+    "nameEn": "Sweet chili sauce",
+    "synonyms": [],
+    "category": "pantry"
+  },
+  {
+    "id": "balsamic",
+    "nameHe": "חומץ בלסמי",
+    "nameEn": "Balsamic vinegar",
+    "synonyms": [
+      "בלסמי"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "sesame_oil",
+    "nameHe": "שמן שומשום",
+    "nameEn": "Sesame oil",
+    "synonyms": [],
+    "category": "pantry"
+  },
+  {
+    "id": "coconut_oil",
+    "nameHe": "שמן קוקוס",
+    "nameEn": "Coconut oil",
+    "synonyms": [],
+    "category": "pantry"
+  },
+  {
+    "id": "maple_syrup",
+    "nameHe": "סירופ מייפל",
+    "nameEn": "Maple syrup",
+    "synonyms": [
+      "מייפל"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "chocolate_spread",
+    "nameHe": "שוקולד ממרח",
+    "nameEn": "Chocolate spread",
+    "synonyms": [
+      "נוטלה",
+      "ממרח שוקולד"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "chocolate_chips",
+    "nameHe": "שוקולד צ'יפס",
+    "nameEn": "Chocolate chips",
+    "synonyms": [
+      "צ'יפס שוקולד"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "tomato_juice",
+    "nameHe": "מיץ עגבניות",
+    "nameEn": "Tomato juice",
+    "synonyms": [],
+    "category": "pantry"
+  },
+  {
+    "id": "canned_pineapple",
+    "nameHe": "אננס משומר",
+    "nameEn": "Canned pineapple",
+    "synonyms": [],
+    "category": "pantry"
+  },
+  {
+    "id": "applesauce",
+    "nameHe": "מחית תפוחים",
+    "nameEn": "Applesauce",
+    "synonyms": [],
+    "category": "pantry"
+  },
+  {
+    "id": "chia",
+    "nameHe": "צ'יה",
+    "nameEn": "Chia seeds",
+    "synonyms": [
+      "זרעי צ'יה"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "flaxseed",
+    "nameHe": "זרעי פשתן",
+    "nameEn": "Flaxseed",
+    "synonyms": [
+      "פשתן"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "protein_powder",
+    "nameHe": "אבקת חלבון",
+    "nameEn": "Protein powder",
+    "synonyms": [],
+    "category": "pantry"
+  },
+  {
+    "id": "crackers",
+    "nameHe": "קרקרים",
+    "nameEn": "Crackers",
+    "synonyms": [],
+    "category": "pantry"
+  },
+  {
+    "id": "halva",
+    "nameHe": "חלווה",
+    "nameEn": "Halva",
+    "synonyms": [
+      "חלבה"
+    ],
+    "category": "pantry"
+  },
+  {
+    "id": "smoked_paprika",
+    "nameHe": "פפריקה מעושנת",
+    "nameEn": "Smoked paprika",
+    "synonyms": [],
+    "category": "spices"
+  },
+  {
+    "id": "italian_seasoning",
+    "nameHe": "תבלין איטלקי",
+    "nameEn": "Italian seasoning",
+    "synonyms": [
+      "עשבי תיבול מיובשים"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "rosemary",
+    "nameHe": "רוזמרין",
+    "nameEn": "Rosemary",
+    "synonyms": [],
+    "category": "spices"
+  },
+  {
+    "id": "sage",
+    "nameHe": "מרווה",
+    "nameEn": "Sage",
+    "synonyms": [],
+    "category": "spices"
+  },
+  {
+    "id": "garam_masala",
+    "nameHe": "גרם מסאלה",
+    "nameEn": "Garam masala",
+    "synonyms": [],
+    "category": "spices"
+  },
+  {
+    "id": "chili_powder",
+    "nameHe": "אבקת צ'ילי",
+    "nameEn": "Chili powder",
+    "synonyms": [
+      "צ'ילי טחון",
+      "קאיין"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "shawarma_spice",
+    "nameHe": "תבלין שווארמה",
+    "nameEn": "Shawarma spice",
+    "synonyms": [
+      "תבלין לשווארמה"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "chicken_spice",
+    "nameHe": "תבלין לעוף",
+    "nameEn": "Chicken spice",
+    "synonyms": [],
+    "category": "spices"
+  },
+  {
+    "id": "cloves",
+    "nameHe": "ציפורן",
+    "nameEn": "Cloves",
+    "synonyms": [
+      "ציפורני תבלין"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "allspice",
+    "nameHe": "פלפל אנגלי",
+    "nameEn": "Allspice",
+    "synonyms": [
+      "אלספייס"
+    ],
+    "category": "spices"
+  },
+  {
+    "id": "ras_el_hanout",
+    "nameHe": "ראס אל חנות",
+    "nameEn": "Ras el hanout",
+    "synonyms": [],
+    "category": "spices"
+  }
 ]

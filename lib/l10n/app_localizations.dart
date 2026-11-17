@@ -392,6 +392,30 @@ abstract class AppLocalizations {
   /// **'Home'**
   String get navHome;
 
+  /// No description provided for @sortTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort'**
+  String get sortTooltip;
+
+  /// No description provided for @sortBest.
+  ///
+  /// In en, this message translates to:
+  /// **'Best match'**
+  String get sortBest;
+
+  /// No description provided for @sortQuickest.
+  ///
+  /// In en, this message translates to:
+  /// **'Quickest first'**
+  String get sortQuickest;
+
+  /// No description provided for @sortCheapest.
+  ///
+  /// In en, this message translates to:
+  /// **'Cheapest to buy first'**
+  String get sortCheapest;
+
   /// No description provided for @tabAllDishes.
   ///
   /// In en, this message translates to:

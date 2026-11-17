@@ -163,6 +163,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get navHome => 'Home';
 
   @override
+  String get sortTooltip => 'Sort';
+
+  @override
+  String get sortBest => 'Best match';
+
+  @override
+  String get sortQuickest => 'Quickest first';
+
+  @override
+  String get sortCheapest => 'Cheapest to buy first';
+
+  @override
   String get tabAllDishes => 'All dishes';
 
   @override

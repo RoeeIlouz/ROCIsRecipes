@@ -24,6 +24,7 @@ String _names(String id) => switch (id) {
 };
 
 void main() {
+  sortTests();
   final omelette = _r('o', 'חביתה מושלמת', [
     'egg',
     'milk',
@@ -104,5 +105,40 @@ void main() {
     await tester.enterText(find.byKey(const Key('dish_search')), '');
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('recipe_card_s')), findsOneWidget);
+  });
+}
+
+RecipeMatch _m(String id, int minutes, List<String> missing) => RecipeMatch(
+  recipe: Recipe(
+    id: id,
+    titleHe: id,
+    ingredients: const [],
+    steps: const [RecipeStep(textHe: 'x')],
+    totalMinutes: minutes,
+  ),
+  missingIngredientIds: missing,
+);
+
+void sortTests() {
+  group('sortMatches', () {
+    final a = _m('a', 40, ['x']);
+    final b = _m('b', 10, ['x', 'y']);
+    final c = _m('c', 25, []);
+
+    test('best match keeps the matcher order', () {
+      final r = sortMatches([a, b, c], SortMode.bestMatch, (m) => 0);
+      expect(r.map((m) => m.recipe.id), ['a', 'b', 'c']);
+    });
+
+    test('quickest puts the shortest dish first', () {
+      final r = sortMatches([a, b, c], SortMode.quickest, (m) => 0);
+      expect(r.map((m) => m.recipe.id), ['b', 'c', 'a']);
+    });
+
+    test('cheapest puts the lowest cost to buy first, unknown cost last', () {
+      final cost = {'a': 30.0, 'b': 5.0, 'c': null};
+      final r = sortMatches([a, b, c], SortMode.cheapest, (m) => cost[m.recipe.id]);
+      expect(r.map((m) => m.recipe.id), ['b', 'a', 'c']);
+    });
   });
 }
