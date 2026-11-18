@@ -1157,6 +1157,288 @@
   "license": "CC BY 3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teriyaki_chicken_thighs.jpg"
  },
+ "rv3_x12_arayes": {
+  "asset": "assets/recipes/photos/rv3_x12_arayes.jpg",
+  "author": "Laliv g",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arayes_(3).jpg"
+ },
+ "rv3_x12_barley_soup": {
+  "asset": "assets/recipes/photos/rv3_x12_barley_soup.jpg",
+  "author": "heymrleej",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_&_barley_soup_@_Louis'_Basque_Corner,_Reno.jpg"
+ },
+ "rv3_x12_beet_kubbeh_soup": {
+  "asset": "assets/recipes/photos/rv3_x12_beet_kubbeh_soup.jpg",
+  "author": "Maor X",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Kubbeh_soup_with_pita,_pickled_cucumbers_and_hummus.jpg"
+ },
+ "rv3_x12_carrot_rice": {
+  "asset": "assets/recipes/photos/rv3_x12_carrot_rice.jpg",
+  "author": "Halima Waziri",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carrots_fried_rice.jpg"
+ },
+ "rv3_x12_cauliflower_gratin": {
+  "asset": "assets/recipes/photos/rv3_x12_cauliflower_gratin.jpg",
+  "author": "Vegan Feast Catering",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cauliflower_Au_Gratin_(4527747147).jpg"
+ },
+ "rv3_x12_celery_soup": {
+  "asset": "assets/recipes/photos/rv3_x12_celery_soup.jpg",
+  "author": "Derick Schaefer",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cream_of_celery_soup.jpg"
+ },
+ "rv3_x12_chard_pie": {
+  "asset": "assets/recipes/photos/rv3_x12_chard_pie.jpg",
+  "author": "Tonidimitrov",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Зелник_со_блитва.jpg"
+ },
+ "rv3_x12_chicken_breast_strips_pan": {
+  "asset": "assets/recipes/photos/rv3_x12_chicken_breast_strips_pan.jpg",
+  "author": "Andy / Andrew Fogg from near Cambridge, UK",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_breasts_in_lemon_sauce_(71127747).jpg"
+ },
+ "rv3_x12_chicken_thighs_oven": {
+  "asset": "assets/recipes/photos/rv3_x12_chicken_thighs_oven.jpg",
+  "author": "Willis Lam",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roast_Chicken_Legs_and_Thighs_(31196736704).jpg"
+ },
+ "rv3_x12_chili_honey_thighs": {
+  "asset": "assets/recipes/photos/rv3_x12_chili_honey_thighs.jpg",
+  "author": "AnneMolina",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inbound5858567579502036033.jpg"
+ },
+ "rv3_x12_chraime": {
+  "asset": "assets/recipes/photos/rv3_x12_chraime.jpg",
+  "author": "Bar.levy141",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:צלחת_חריימה.png"
+ },
+ "rv3_x12_cottage_latkes": {
+  "asset": "assets/recipes/photos/rv3_x12_cottage_latkes.jpg",
+  "author": "Juerg Vollmer from Zürich, Switzerland ; cut by Off-shell",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Syrniki.jpg"
+ },
+ "rv3_x12_couscous_vegetable_soup": {
+  "asset": "assets/recipes/photos/rv3_x12_couscous_vegetable_soup.jpg",
+  "author": "HaJunkiyada",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Algerian_couscous_with_vegetable_soup_and_chicken.jpg"
+ },
+ "rv3_x12_drumsticks_pot": {
+  "asset": "assets/recipes/photos/rv3_x12_drumsticks_pot.jpg",
+  "author": "E4024",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_stew_(Turkey).jpg"
+ },
+ "rv3_x12_egg_in_a_hole": {
+  "asset": "assets/recipes/photos/rv3_x12_egg_in_a_hole.jpg",
+  "author": "Jonathunder",
+  "license": "CC BY-SA 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:EggToast.jpg"
+ },
+ "rv3_x12_entrecote_stir_fry": {
+  "asset": "assets/recipes/photos/rv3_x12_entrecote_stir_fry.jpg",
+  "author": "jeffreyw",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_and_Pea_Pod_Stir_Fry_(4423896316).jpg"
+ },
+ "rv3_x12_fried_eggplant": {
+  "asset": "assets/recipes/photos/rv3_x12_fried_eggplant.jpg",
+  "author": "HaJunkiyada",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Fried_Eggplant_Slices.jpg"
+ },
+ "rv3_x12_fried_fish": {
+  "asset": "assets/recipes/photos/rv3_x12_fried_fish.jpg",
+  "author": "Ceeseven",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fried_Fish_Fillet_with_Mayonnaise.jpg"
+ },
+ "rv3_x12_goulash": {
+  "asset": "assets/recipes/photos/rv3_x12_goulash.jpg",
+  "author": "Hu Totya",
+  "license": "CC BY-SA 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hungarian_goulash_soup.jpg"
+ },
+ "rv3_x12_greek_salad": {
+  "asset": "assets/recipes/photos/rv3_x12_greek_salad.jpg",
+  "author": "Paasikivi",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greek_salad_and_Tzatziki.jpg"
+ },
+ "rv3_x12_ground_beef_noodles": {
+  "asset": "assets/recipes/photos/rv3_x12_ground_beef_noodles.jpg",
+  "author": "Andy Li",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pan_Fry_Beef_Rice_Noodles_-_Stir_Fry_by_CK.jpg"
+ },
+ "rv3_x12_ground_beef_puff_pie": {
+  "asset": "assets/recipes/photos/rv3_x12_ground_beef_puff_pie.jpg",
+  "author": "Moonsun1981",
+  "license": "CC BY-SA 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puff_pastry_pies_Пирожки_из_слоеного_теста_(e-citizen_Az).jpg"
+ },
+ "rv3_x12_halloumi_salad": {
+  "asset": "assets/recipes/photos/rv3_x12_halloumi_salad.jpg",
+  "author": "Andy Li",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Halloumi_&_Crispy_Chickpeas_Salad_-_No.16_2025-08-24.jpg"
+ },
+ "rv3_x12_harira": {
+  "asset": "assets/recipes/photos/rv3_x12_harira.jpg",
+  "author": "Miansari66",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harira..JPG"
+ },
+ "rv3_x12_jerusalem_kugel": {
+  "asset": "assets/recipes/photos/rv3_x12_jerusalem_kugel.jpg",
+  "author": "Peteravivangel",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kugel-Yerushalmi03.jpg"
+ },
+ "rv3_x12_leek_beef_patties": {
+  "asset": "assets/recipes/photos/rv3_x12_leek_beef_patties.jpg",
+  "author": "Andy / Andrew Fogg from near Cambridge, UK",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_patties_again_(111422187).jpg"
+ },
+ "rv3_x12_mac_and_cheese": {
+  "asset": "assets/recipes/photos/rv3_x12_mac_and_cheese.jpg",
+  "author": "Andy Li",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mac_and_cheese_-_Morelli_Zorelli_2024-08-29.jpg"
+ },
+ "rv3_x12_onion_rings": {
+  "asset": "assets/recipes/photos/rv3_x12_onion_rings.jpg",
+  "author": "Andy Li",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onion_Rings_-_Gourmet_Burger_Kitchen_2023-10-03.jpg"
+ },
+ "rv3_x12_onion_soup": {
+  "asset": "assets/recipes/photos/rv3_x12_onion_soup.jpg",
+  "author": "Springnuts",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-03-26_Onion_soup.jpg"
+ },
+ "rv3_x12_orange_soup": {
+  "asset": "assets/recipes/photos/rv3_x12_orange_soup.jpg",
+  "author": "Vegan Feast Catering",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cream_of_Carrot_Soup_(4129540261).jpg"
+ },
+ "rv3_x12_oriental_oven_chicken": {
+  "asset": "assets/recipes/photos/rv3_x12_oriental_oven_chicken.jpg",
+  "author": "Jameswasswa",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whole_spiced_chicken_(roasted).jpg"
+ },
+ "rv3_x12_pasta_cheese_sauce": {
+  "asset": "assets/recipes/photos/rv3_x12_pasta_cheese_sauce.jpg",
+  "author": "Abraham",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230124_pasta_with_cheese_sauce_Panewniki.jpg"
+ },
+ "rv3_x12_pasta_rose": {
+  "asset": "assets/recipes/photos/rv3_x12_pasta_rose.jpg",
+  "author": "Ginny from USA",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomato_cream_sauce_on_pasta_and_chicken.jpg"
+ },
+ "rv3_x12_potato_gratin": {
+  "asset": "assets/recipes/photos/rv3_x12_potato_gratin.jpg",
+  "author": "Dreamyshade",
+  "license": "CC BY-SA 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Potato_gratin_on_stove.jpg"
+ },
+ "rv3_x12_potato_wedges": {
+  "asset": "assets/recipes/photos/rv3_x12_potato_wedges.jpg",
+  "author": "Moheen Reeyad",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Potato_wedges_(164510).jpg"
+ },
+ "rv3_x12_quick_plov": {
+  "asset": "assets/recipes/photos/rv3_x12_quick_plov.jpg",
+  "author": "مانفی",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baghala_polo.jpg"
+ },
+ "rv3_x12_quinoa_patties": {
+  "asset": "assets/recipes/photos/rv3_x12_quinoa_patties.jpg",
+  "author": "Viktorija N. Ivanov",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Киноа_ќофте.jpg"
+ },
+ "rv3_x12_red_rice": {
+  "asset": "assets/recipes/photos/rv3_x12_red_rice.jpg",
+  "author": "Upendra Kanda",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomato_Rice_up-close_(1862224148).jpg"
+ },
+ "rv3_x12_rice_chicken_peas_stew": {
+  "asset": "assets/recipes/photos/rv3_x12_rice_chicken_peas_stew.jpg",
+  "author": "Petar Milošević",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parboiled_rice_with_chicken,_peppers,_cucurbita,_peas_and_tomato.jpg"
+ },
+ "rv3_x12_roasted_cauliflower": {
+  "asset": "assets/recipes/photos/rv3_x12_roasted_cauliflower.jpg",
+  "author": "Andy Li",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vegetarian_Moussaka_and_Roasted_Cauliflower_-_Foodilic_2025-10-13.jpg"
+ },
+ "rv3_x12_salad_nicoise": {
+  "asset": "assets/recipes/photos/rv3_x12_salad_nicoise.jpg",
+  "author": "Daderot",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salad_Nicoise_-_San_Francisco,_CA.jpg"
+ },
+ "rv3_x12_salmon_chili_soy": {
+  "asset": "assets/recipes/photos/rv3_x12_salmon_chili_soy.jpg",
+  "author": "HarshLight",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sesame_Soy_Glazed_Skuna_Bay_Salmon.jpg"
+ },
+ "rv3_x12_salmon_mustard_honey": {
+  "asset": "assets/recipes/photos/rv3_x12_salmon_mustard_honey.jpg",
+  "author": "Tiia Monto",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baked_salmon_2.jpg"
+ },
+ "rv3_x12_silan_thighs_sweet_potato": {
+  "asset": "assets/recipes/photos/rv3_x12_silan_thighs_sweet_potato.jpg",
+  "author": "Andy Li",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Halal_Roast_Chicken_Leg_+_Roasted_Sweet_Potato_-_Foodilic_2024-03-25.jpg"
+ },
+ "rv3_x12_sweet_sour_meatballs": {
+  "asset": "assets/recipes/photos/rv3_x12_sweet_sour_meatballs.jpg",
+  "author": "Unknown",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sweet_and_sour_meatball1.jpg"
+ },
+ "rv3_x12_zucchini_fritters": {
+  "asset": "assets/recipes/photos/rv3_x12_zucchini_fritters.jpg",
+  "author": "Nicole Bratt from Seattle, WA, USA",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zucchini_&_feta_fritters_(7804257920).jpg"
+ },
+ "rv3_x12_zucchini_green_bean_stew": {
+  "asset": "assets/recipes/photos/rv3_x12_zucchini_green_bean_stew.jpg",
+  "author": "gran",
+  "license": "CC BY 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Green_beans_in_tomato_sauce.jpg"
+ },
  "rv3_x7_chicken_bulgur_tomato": {
   "asset": "assets/recipes/photos/rv3_x7_chicken_bulgur_tomato.jpg",
   "author": "E4024",
