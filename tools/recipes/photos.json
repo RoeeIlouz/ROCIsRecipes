@@ -1439,6 +1439,174 @@
   "license": "CC BY 3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Green_beans_in_tomato_sauce.jpg"
  },
+ "rv3_x13_arancini": {
+  "asset": "assets/recipes/photos/rv3_x13_arancini.jpg",
+  "author": "No machine-readable author provided. Gmelfi assumed (based on copyright claims).",
+  "license": "Public domain",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arancini_002.jpg"
+ },
+ "rv3_x13_baked_tofu": {
+  "asset": "assets/recipes/photos/rv3_x13_baked_tofu.jpg",
+  "author": "Miscellaneous contributor",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baked_Tofu_with_Potatoes_and_Broccoli.jpg"
+ },
+ "rv3_x13_coated_chicken_cubes": {
+  "asset": "assets/recipes/photos/rv3_x13_coated_chicken_cubes.jpg",
+  "author": "Mx. Granger",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Impossible_chicken_nuggets_2.jpg"
+ },
+ "rv3_x13_eggplant_rolls": {
+  "asset": "assets/recipes/photos/rv3_x13_eggplant_rolls.jpg",
+  "author": "Jennifer",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eggplant_rollatini.jpg"
+ },
+ "rv3_x13_fish_schnitzel": {
+  "asset": "assets/recipes/photos/rv3_x13_fish_schnitzel.jpg",
+  "author": "Aerous",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fish_fillet_in_aluminum_tray.jpg"
+ },
+ "rv3_x13_garlic_lemon_broccoli": {
+  "asset": "assets/recipes/photos/rv3_x13_garlic_lemon_broccoli.jpg",
+  "author": "T.Tseng",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pad_Pak_Kanaa_ผัดผักขะน้า,_chinese_broccoli_sautéed_garlic_and_bird_eye_chile.jpg"
+ },
+ "rv3_x13_herb_fish_fillet": {
+  "asset": "assets/recipes/photos/rv3_x13_herb_fish_fillet.jpg",
+  "author": "Benreis",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brachsenfilet_Katoffelsalat_Sonne_Bischberg.jpg"
+ },
+ "rv3_x13_indian_rice": {
+  "asset": "assets/recipes/photos/rv3_x13_indian_rice.jpg",
+  "author": "Alpha",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turkish_Pilaf_Rice_-_degustation_-_Ottoman_Cuisine_(3061206332).jpg"
+ },
+ "rv3_x13_individual_cheese_quiche": {
+  "asset": "assets/recipes/photos/rv3_x13_individual_cheese_quiche.jpg",
+  "author": "Karen and Brad Emerson",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crepe-crusted_mini_quiches_(8553921148).jpg"
+ },
+ "rv3_x13_mexican_rice": {
+  "asset": "assets/recipes/photos/rv3_x13_mexican_rice.jpg",
+  "author": "Maryam S.",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mexican_rice_and_beans.jpg"
+ },
+ "rv3_x13_mushroom_onion_stew": {
+  "asset": "assets/recipes/photos/rv3_x13_mushroom_onion_stew.jpg",
+  "author": "MadMona",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Селско_месо_во_грне.jpg"
+ },
+ "rv3_x13_oven_asado": {
+  "asset": "assets/recipes/photos/rv3_x13_oven_asado.jpg",
+  "author": "Maxd2",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asado_a.jpg"
+ },
+ "rv3_x13_oven_chili_wings": {
+  "asset": "assets/recipes/photos/rv3_x13_oven_chili_wings.jpg",
+  "author": "Paul Lowry",
+  "license": "CC BY 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Wings-_It's_been_a_while._Baton_Rouge_LA_2026.jpg"
+ },
+ "rv3_x13_oven_corn": {
+  "asset": "assets/recipes/photos/rv3_x13_oven_corn.jpg",
+  "author": "Dragne Marius marius_dragne",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_Corn_(Unsplash).jpg"
+ },
+ "rv3_x13_pan_thigh_steaks": {
+  "asset": "assets/recipes/photos/rv3_x13_pan_thigh_steaks.jpg",
+  "author": "HaJunkiyada",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Grilled_chicken_thighs_with_ptitim_and_Israeli_salad.jpg"
+ },
+ "rv3_x13_pasta_veg_stir_fry": {
+  "asset": "assets/recipes/photos/rv3_x13_pasta_veg_stir_fry.jpg",
+  "author": "Ibrahim Husain Meraj",
+  "license": "CC BY-SA 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Homemade_Japchae,_Dhaka_02.jpg"
+ },
+ "rv3_x13_pumpkin_stew": {
+  "asset": "assets/recipes/photos/rv3_x13_pumpkin_stew.jpg",
+  "author": "pelican from Tokyo, Japan",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pumpkin_and_Mushroom_Stew_(1856575055).jpg"
+ },
+ "rv3_x13_roasted_carrots": {
+  "asset": "assets/recipes/photos/rv3_x13_roasted_carrots.jpg",
+  "author": "Daderot",
+  "license": "CC0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roasted_baby_carrots_-_San_Francisco,_CA.jpg"
+ },
+ "rv3_x13_salmon_skewers": {
+  "asset": "assets/recipes/photos/rv3_x13_salmon_skewers.jpg",
+  "author": "rjp from London, UK",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salmon_kebabs.jpg"
+ },
+ "rv3_x13_shepherds_pie": {
+  "asset": "assets/recipes/photos/rv3_x13_shepherds_pie.jpg",
+  "author": "Abhinaba Basu from Redmond, United States",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shepherd's_pie_(22470901009).jpg"
+ },
+ "rv3_x13_spicy_tomato_spaghetti": {
+  "asset": "assets/recipes/photos/rv3_x13_spicy_tomato_spaghetti.jpg",
+  "author": "Petar Milošević",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Penne_Arrabbiata.jpg"
+ },
+ "rv3_x13_spinach_fritters": {
+  "asset": "assets/recipes/photos/rv3_x13_spinach_fritters.jpg",
+  "author": "Red-back spider",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Actual_spinach_fritters.jpg"
+ },
+ "rv3_x13_sweet_potato_mash": {
+  "asset": "assets/recipes/photos/rv3_x13_sweet_potato_mash.jpg",
+  "author": "Missvain",
+  "license": "CC BY 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whole_Foods_mashed_sweet_potatoes_-_November_2023_-_Sarah_Stierch.jpg"
+ },
+ "rv3_x13_teriyaki_cashew_thighs": {
+  "asset": "assets/recipes/photos/rv3_x13_teriyaki_cashew_thighs.jpg",
+  "author": "Simon Law from Montréal, QC, Canada",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cashewchickenphoto.jpg"
+ },
+ "rv3_x13_tzimmes": {
+  "asset": "assets/recipes/photos/rv3_x13_tzimmes.jpg",
+  "author": "J Doll",
+  "license": "CC BY 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sweet_Potato_Pear_Tzimmes_(140491615).jpeg"
+ },
+ "rv3_x13_white_beans_potatoes": {
+  "asset": "assets/recipes/photos/rv3_x13_white_beans_potatoes.jpg",
+  "author": "E4024",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Etli_kuru_fasulye.jpg"
+ },
+ "rv3_x13_winter_vegetable_soup": {
+  "asset": "assets/recipes/photos/rv3_x13_winter_vegetable_soup.jpg",
+  "author": "Horacio Cambeiro",
+  "license": "CC BY-SA 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Traditional_Vegetable_Soup_from_Argentina.jpg"
+ },
+ "rv3_x13_zucchini_tomato_bake": {
+  "asset": "assets/recipes/photos/rv3_x13_zucchini_tomato_bake.jpg",
+  "author": "Arnaud 25",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tian_provençal_de_légumes.jpg"
+ },
  "rv3_x7_chicken_bulgur_tomato": {
   "asset": "assets/recipes/photos/rv3_x7_chicken_bulgur_tomato.jpg",
   "author": "E4024",

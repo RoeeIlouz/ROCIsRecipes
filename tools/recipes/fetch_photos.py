@@ -30,7 +30,7 @@ from build_recipes import merge_batches
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 PHOTO_DIR = ROOT / "assets" / "recipes" / "photos"
-PAUSE_SECONDS = 2.5
+PAUSE_SECONDS = 6  # Wikimedia throttles faster bulk downloads (HTTP 429)
 
 
 def _load(path: Path) -> dict:
