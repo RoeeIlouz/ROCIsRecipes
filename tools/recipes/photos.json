@@ -1631,6 +1631,12 @@
   "license": "CC BY-SA 3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Insalata_Caprese_(from_Poznan).JPG"
  },
+ "rv3_x14_cauliflower_mash": {
+  "asset": "assets/recipes/photos/rv3_x14_cauliflower_mash.jpg",
+  "author": "DC Central Kitchen",
+  "license": "CC BY 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mashed_Cauliflower-627.jpg"
+ },
  "rv3_x14_cauliflower_mushroom_stir_fry": {
   "asset": "assets/recipes/photos/rv3_x14_cauliflower_mushroom_stir_fry.jpg",
   "author": "Tbatb",
@@ -1684,6 +1690,12 @@
   "author": "Mihail Verbal",
   "license": "CC BY 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Мезе_со_пржени_јадења_и_полнети_парчиња_модар_патлиџан._Mакедонски_начин.jpg"
+ },
+ "rv3_x14_crispy_garlic_potatoes": {
+  "asset": "assets/recipes/photos/rv3_x14_crispy_garlic_potatoes.jpg",
+  "author": "白洛嘉",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roasted_potatoes_with_rosemary_and_gralic_and_black_pepper.jpg"
  },
  "rv3_x14_cucumber_dill_salad": {
   "asset": "assets/recipes/photos/rv3_x14_cucumber_dill_salad.jpg",
@@ -1763,6 +1775,12 @@
   "license": "CC BY 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mushroom_and_leek_quiche.jpg"
  },
+ "rv3_x14_mushroom_rice": {
+  "asset": "assets/recipes/photos/rv3_x14_mushroom_rice.jpg",
+  "author": "Subashinideviv",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mushroom_pulao.jpg"
+ },
  "rv3_x14_oatmeal_porridge": {
   "asset": "assets/recipes/photos/rv3_x14_oatmeal_porridge.jpg",
   "author": "Shisma",
@@ -1811,6 +1829,12 @@
   "license": "CC BY 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quinoa_with_carrots_and_mushrooms_-_Quinoa_con_champiñones_y_zanahoria_(7067485755).jpg"
  },
+ "rv3_x14_red_cabbage_apple_salad": {
+  "asset": "assets/recipes/photos/rv3_x14_red_cabbage_apple_salad.jpg",
+  "author": "Cajsa Lilliehook from Portland",
+  "license": "CC BY-SA 2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apples,_Cabbage_and_Radish_Salad_(8493359771).jpg"
+ },
  "rv3_x14_silan_chicken_livers": {
   "asset": "assets/recipes/photos/rv3_x14_silan_chicken_livers.jpg",
   "author": "Joe Foodie",
@@ -1822,6 +1846,12 @@
   "author": "Mariuszjbie",
   "license": "CC BY-SA 4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pickled_mushrooms....jpg"
+ },
+ "rv3_x14_spicy_ptitim": {
+  "asset": "assets/recipes/photos/rv3_x14_spicy_ptitim.jpg",
+  "author": "Nsaum75",
+  "license": "CC BY-SA 3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Israeli_couscous.jpg"
  },
  "rv3_x14_sweet_potato_wedges": {
   "asset": "assets/recipes/photos/rv3_x14_sweet_potato_wedges.jpg",
@@ -1877,6 +1907,12 @@
   "license": "CC BY 3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hähnchenleber_in_Rotweinsauce_mit_roten_Zwiebeln_und_Apfelspalten_dazu_Kartoffelröstis.JPG"
  },
+ "rv3_x15_lubiya_tomato": {
+  "asset": "assets/recipes/photos/rv3_x15_lubiya_tomato.jpg",
+  "author": "Namitakhaire",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_eyed_Peas_Curry_and_Pulav.JPG"
+ },
  "rv3_x15_osso_buco": {
   "asset": "assets/recipes/photos/rv3_x15_osso_buco.jpg",
   "author": "Mogens Engelund",
@@ -1894,6 +1930,12 @@
   "author": "Alpha",
   "license": "CC BY-SA 2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spanakopita.jpg"
+ },
+ "rv3_x15_turnip_soup": {
+  "asset": "assets/recipes/photos/rv3_x15_turnip_soup.jpg",
+  "author": "Kentin",
+  "license": "CC BY-SA 4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miso_soup_of_japanese_turnip_(kabu)_2014.jpg"
  },
  "rv3_x15_veal_stew_peas": {
   "asset": "assets/recipes/photos/rv3_x15_veal_stew_peas.jpg",
