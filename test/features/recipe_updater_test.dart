@@ -109,17 +109,54 @@ void main() {
     expect(env.settings.starterVersion, 8);
   });
 
-  test('a pack with an invalid recipe is refused as a whole', () async {
+  test(
+    'a recipe with an ingredient this build does not know is skipped, the rest install',
+    () async {
+      final env = await TestEnv.create();
+      await env.settings.setStarterVersion(8);
+      final later = _json('later', ing: 'not_an_ingredient_yet');
+      final pack = _Pack([_json('good'), later]);
+      env.packs
+        ..manifest = pack.manifest
+        ..bytes = pack.bytes;
+      final result = await env.recipeUpdater.update();
+      expect(result.status, RecipeUpdateStatus.updated);
+      expect(env.recipes.all.map((r) => r.id), ['good']);
+      expect(env.settings.starterVersion, 20);
+    },
+  );
+
+  test('a pack where no recipe fits this build is refused', () async {
     final env = await TestEnv.create();
     await env.settings.setStarterVersion(8);
-    final bad = _json('bad', ing: 'not_an_ingredient');
-    final pack = _Pack([_json('good'), bad]);
+    final pack = _Pack([_json('later', ing: 'not_an_ingredient_yet')]);
+    env.packs
+      ..manifest = pack.manifest
+      ..bytes = pack.bytes;
+    final result = await env.recipeUpdater.update();
+    expect(result.status, RecipeUpdateStatus.failed);
+    expect(env.settings.starterVersion, 8);
+  });
+
+  test('a pack with a broken recipe is still refused as a whole', () async {
+    final env = await TestEnv.create();
+    await env.settings.setStarterVersion(8);
+    final broken = _json('broken')
+      ..['ingredients'] = [
+        {'ingredientId': 'milk'},
+      ];
+    final pack = _Pack([_json('good'), broken]);
     env.packs
       ..manifest = pack.manifest
       ..bytes = pack.bytes;
     final result = await env.recipeUpdater.update();
     expect(result.status, RecipeUpdateStatus.failed);
     expect(env.recipes.all, isEmpty);
+  });
+
+  test('current builds read the v2 pack, which has every recipe', () {
+    expect(kRecipeManifestUrl.path, endsWith('/recipes_v2_manifest.json'));
+    expect(kRecipePackUrl.path, endsWith('/recipes_v2.json.gz'));
   });
 
   test('a pack with too few steps is refused', () async {

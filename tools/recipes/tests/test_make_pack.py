@@ -11,8 +11,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from make_pack import build_pack, read_version  # noqa: E402
 
 
-def _recipe(id_):
-    return {"id": id_, "titleHe": "מתכון", "ingredients": [], "steps": [], "totalMinutes": 5}
+def _recipe(id_, *ingredients):
+    return {"id": id_, "titleHe": "מתכון", "ingredients": [{"ingredientId": i} for i in ingredients], "steps": [],
+            "totalMinutes": 5}
 
 
 class MakePackTest(unittest.TestCase):
@@ -38,7 +39,7 @@ class MakePackTest(unittest.TestCase):
     def test_manifest_describes_the_published_bytes(self):
         with tempfile.TemporaryDirectory() as tmp:
             recipes, dart, out = self._files(tmp, [_recipe("a"), _recipe("b")], version="9")
-            manifest = build_pack(recipes, dart, out)
+            manifest = build_pack(recipes, dart, out)["recipes"]
             pack = (Path(out) / "recipes.json.gz").read_bytes()
             self.assertEqual(manifest["version"], 9)
             self.assertEqual(manifest["count"], 2)
@@ -53,8 +54,8 @@ class MakePackTest(unittest.TestCase):
     def test_the_same_recipes_always_give_the_same_bytes(self):
         with tempfile.TemporaryDirectory() as tmp:
             recipes, dart, out = self._files(tmp, [_recipe("a")])
-            first = build_pack(recipes, dart, out)["sha256"]
-            second = build_pack(recipes, dart, out)["sha256"]
+            first = build_pack(recipes, dart, out)["recipes_v2"]["sha256"]
+            second = build_pack(recipes, dart, out)["recipes_v2"]["sha256"]
             self.assertEqual(first, second)
 
     def test_an_empty_or_duplicated_pack_is_never_published(self):
@@ -66,6 +67,32 @@ class MakePackTest(unittest.TestCase):
             recipes, dart, out = self._files(tmp, [_recipe("a"), _recipe("a")])
             with self.assertRaises(ValueError):
                 build_pack(recipes, dart, out)
+
+    def test_old_builds_get_only_recipes_whose_ingredients_they_know(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            recipes, dart, out = self._files(
+                tmp, [_recipe("old", "salt", "onion"), _recipe("new", "onion", "veal"), _recipe("bare")], version="18"
+            )
+            v1 = Path(tmp) / "v1.json"
+            v1.write_text(json.dumps(["salt", "onion"]), encoding="utf-8")
+            manifests = build_pack(recipes, dart, out, str(v1))
+
+            def ids(name):
+                return [r["id"] for r in json.loads(gzip.decompress((Path(out) / name).read_bytes()).decode("utf-8"))]
+
+            self.assertEqual(ids("recipes.json.gz"), ["old", "bare"])
+            self.assertEqual(ids("recipes_v2.json.gz"), ["old", "new", "bare"])
+            self.assertEqual(manifests["recipes"]["count"], 2)
+            self.assertEqual(manifests["recipes_v2"]["count"], 3)
+            self.assertEqual(manifests["recipes"]["version"], manifests["recipes_v2"]["version"])
+            v2_manifest = json.loads((Path(out) / "recipes_v2_manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(v2_manifest, manifests["recipes_v2"])
+
+    def test_the_real_v1_list_matches_ids_in_the_catalog(self):
+        root = Path(__file__).resolve().parents[3]
+        v1 = set(json.loads((root / "tools" / "recipes" / "pack_v1_ingredients.json").read_text(encoding="utf-8")))
+        catalog = {i["id"] for i in json.loads((root / "assets" / "data" / "ingredients.json").read_text(encoding="utf-8"))}
+        self.assertEqual(v1 - catalog, set())
 
 
 if __name__ == "__main__":

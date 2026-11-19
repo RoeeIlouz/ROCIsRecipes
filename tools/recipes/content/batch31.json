@@ -1,0 +1,6025 @@
+[
+ {
+  "id": "rv3_x14_oven_beef_casserole",
+  "titleHe": "קדירת בשר וירקות שורש בתנור",
+  "titleEn": "Oven beef and root vegetable casserole",
+  "photoQuery": "beef casserole",
+  "servings": 6,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 200,
+  "appliances": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "bay_leaf",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-160 מעלות. חותכים את הבשר לקוביות של 4 ס\"מ ומתבלים במלח ופלפל."
+   },
+   {
+    "textHe": "מחממים 3 כפות שמן בסיר שמתאים לתנור וצורבים את הבשר בשתי מנות על אש גבוהה, 4 דקות לכל מנה, עד שהוא משחים מכל הצדדים. מוציאים לצלחת.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מנמיכים לאש בינונית ומטגנים בצל פרוס 8 דקות עד שהוא רך וזהוב.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים שום, פפריקה ורסק עגבניות ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מחזירים את הבשר, מוסיפים אבקת מרק, עלי דפנה ומים עד שכמעט מכסים, ומביאים לרתיחה."
+   },
+   {
+    "textHe": "מכסים ומעבירים לתנור ל-90 דקות.",
+    "timerSeconds": 5400
+   },
+   {
+    "textHe": "מוסיפים גזר ותפוחי אדמה בחתיכות גדולות, מכסים ומחזירים לתנור לעוד שעה עד שהבשר מתפרק והירקות רכים.",
+    "timerSeconds": 3600
+   },
+   {
+    "textHe": "טועמים, מתקנים תיבול ומגישים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_chicken_breast_onions",
+  "titleHe": "חזה עוף עם בצל מקורמל",
+  "titleEn": "Chicken breast with caramelized onions",
+  "photoQuery": "chicken breast onions",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "silan",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים את הבצל לטבעות דקות וחותכים את חזה העוף לרצועות. מתבלים את העוף בפפריקה, מלח ופלפל."
+   },
+   {
+    "textHe": "מחממים 3 כפות שמן במחבת רחבה ומטגנים את הבצל על אש בינונית-נמוכה 20 דקות, מערבבים מדי פעם, עד שהוא חום ומתוק.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מוסיפים שום ומערבבים דקה, ומעבירים את הבצל לצלחת.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מגבירים לאש גבוהה, מוסיפים כף שמן ומטגנים את רצועות העוף 5 דקות עד שהן זהובות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מחזירים את הבצל, מוסיפים סילאן, סויה ורבע כוס מים."
+   },
+   {
+    "textHe": "מבשלים על אש בינונית 3 דקות עד שהרוטב מצפה את העוף.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מגישים עם אורז או פירה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_marinated_thighs_oven",
+  "titleHe": "פרגיות במרינדת לימון ושום בתנור",
+  "titleEn": "Lemon-garlic marinated chicken thighs",
+  "photoQuery": "baked chicken thighs",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 60,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 5,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "thyme",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מערבבים בקערה מיץ וגרידה של לימון, שום כתוש, שמן זית, חרדל, דבש, פפריקה, טימין, מלח ופלפל."
+   },
+   {
+    "textHe": "מוסיפים את הפרגיות ומערבבים שהמרינדה תצפה אותן היטב."
+   },
+   {
+    "textHe": "משרים במקרר לפחות 30 דקות, ואפשר עד לילה.",
+    "timerSeconds": 1800
+   },
+   {
+    "textHe": "מחממים תנור ל-200 מעלות ומסדרים את הפרגיות בתבנית בשכבה אחת עם המרינדה."
+   },
+   {
+    "textHe": "אופים 35 דקות עד שהפרגיות שחומות ועשויות, ובאמצע מזלפים עליהן מהנוזלים שבתבנית.",
+    "timerSeconds": 2100
+   },
+   {
+    "textHe": "מנוחה של 5 דקות לפני ההגשה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_cold_chicken_salad",
+  "titleHe": "סלט עוף קר",
+  "titleEn": "Cold chicken salad",
+  "photoQuery": "chicken salad",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "celery",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "pickles",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mayonnaise",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bay_leaf",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מניחים את חזה העוף בסיר, מכסים במים, מוסיפים עלה דפנה וכפית מלח."
+   },
+   {
+    "textHe": "מביאים לרתיחה ומבשלים על אש נמוכה 15 דקות עד שהעוף עשוי.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מוציאים ומצננים 10 דקות, ואז מפרקים את העוף לחתיכות קטנות.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "קוצצים דק סלרי, מלפפונים חמוצים ובצל ירוק."
+   },
+   {
+    "textHe": "מערבבים מיונז, חרדל, מיץ לימון, מלח ופלפל."
+   },
+   {
+    "textHe": "מאחדים את העוף, הירקות והרוטב, ומקררים לפחות חצי שעה לפני ההגשה. מגישים בכריך או על חסה."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_chicken_potato_tray",
+  "titleHe": "חזה עוף ותפוחי אדמה בתבנית",
+  "titleEn": "Chicken breast and potato tray bake",
+  "photoQuery": "chicken and potatoes baked",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 55,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "rosemary",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-210 מעלות."
+   },
+   {
+    "textHe": "חותכים את תפוחי האדמה לפלחים ואת הבצל לרבעים, ומערבבים בתבנית עם 2 כפות שמן זית, פפריקה, רוזמרין, מלח ופלפל."
+   },
+   {
+    "textHe": "אופים 20 דקות עד שתפוחי האדמה מתחילים להזהיב.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "בינתיים חותכים את חזה העוף לנתחים גדולים ומערבבים עם שום, מיץ לימון, שאר שמן הזית, מלח ופלפל."
+   },
+   {
+    "textHe": "מוציאים את התבנית, מסדרים את העוף בין תפוחי האדמה."
+   },
+   {
+    "textHe": "מחזירים לתנור ל-20 דקות עד שהעוף עשוי ותפוחי האדמה פריכים.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מגישים מיד."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_ptitim_thighs",
+  "titleHe": "פתיתים עם פרגיות",
+  "titleEn": "Ptitim with chicken thighs",
+  "photoQuery": "chicken couscous",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "ptitim",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים את הפרגיות לקוביות ומתבלים בפפריקה, כורכום, מלח ופלפל."
+   },
+   {
+    "textHe": "מחממים 2 כפות שמן בסיר רחב וצורבים את העוף על אש גבוהה 6 דקות עד שהוא משחים.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים בצל קצוץ וגזר מגורד ומטגנים על אש בינונית 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים את הפתיתים ורסק העגבניות ומערבבים 2 דקות עד שהפתיתים מזהיבים מעט.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מוסיפים 3 כוסות מים רותחים ואבקת מרק ומערבבים."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 12 דקות עד שהנוזלים נספגים, ומשאירים מכוסה 5 דקות מחוץ לאש.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מפרידים במזלג ומגישים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_pasta_thighs",
+  "titleHe": "פסטה עם פרגיות ועגבניות שרי",
+  "titleEn": "Pasta with chicken thighs and cherry tomatoes",
+  "photoQuery": "chicken pasta tomatoes",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "pasta",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "chicken",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cherry_tomato",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "basil",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "chili_flakes",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מרתיחים סיר גדול של מים עם כף מלח על אש גבוהה, מוסיפים את הפסטה ומבשלים לפי הזמן שעל האריזה (בדרך כלל 9-11 דקות) עד שהיא רכה אך עדיין נגיסה. שומרים חצי כוס ממי הבישול ומסננים.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "חותכים את הפרגיות לרצועות ומתבלים במלח ופלפל."
+   },
+   {
+    "textHe": "מחממים כף שמן במחבת גדולה וצורבים את העוף על אש גבוהה 7 דקות עד שהוא זהוב ועשוי.",
+    "timerSeconds": 420
+   },
+   {
+    "textHe": "מנמיכים לאש בינונית, מוסיפים שמן זית, שום פרוס, צ'ילי ועגבניות שרי חצויות ומבשלים 5 דקות עד שהעגבניות מתרככות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים את הפסטה ומעט ממי הבישול ומערבבים דקה על האש.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מפזרים בזיליקום קרוע ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_spicy_chicken_pieces",
+  "titleHe": "עוף בתיבול פיקנטי בתנור",
+  "titleEn": "Spicy roasted chicken pieces",
+  "photoQuery": "spicy roast chicken",
+  "servings": 5,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 70,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1.5,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "harissa",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "מערבבים חריף, שום כתוש, שמן זית, פפריקה, כמון, מיץ לימון, מלח ופלפל."
+   },
+   {
+    "textHe": "מורחים את התערובת על חלקי העוף, גם מתחת לעור."
+   },
+   {
+    "textHe": "מרפדים תבנית בבצל פרוס לטבעות ומסדרים מעליו את העוף כשהעור כלפי מעלה."
+   },
+   {
+    "textHe": "אופים 55 דקות עד שהעור פריך ושחום. אם הוא משחים מהר מדי, מכסים בנייר כסף.",
+    "timerSeconds": 3300
+   },
+   {
+    "textHe": "מגישים עם הבצל הרך שבתחתית התבנית."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_silan_soy_drumsticks",
+  "titleHe": "שוקיים בסילאן וסויה",
+  "titleEn": "Silan and soy chicken drumsticks",
+  "photoQuery": "glazed chicken drumsticks",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 60,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1.2,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "silan",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "sesame",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "מערבבים סילאן, סויה, שום כתוש, ג'ינג'ר מגורד, כף שמן ופלפל."
+   },
+   {
+    "textHe": "מסדרים את השוקיים בתבנית ויוצקים עליהם את הרוטב, מגלגלים שיתצפו."
+   },
+   {
+    "textHe": "אופים 25 דקות.",
+    "timerSeconds": 1500
+   },
+   {
+    "textHe": "הופכים את השוקיים, מזלפים עליהם מהרוטב ואופים עוד 20 דקות עד שהם מבריקים ושחומים.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מפזרים שומשום ובצל ירוק קצוץ ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_silan_chicken_livers",
+  "titleHe": "כבד עוף בסילאן",
+  "titleEn": "Chicken livers in silan",
+  "photoQuery": "chicken livers onions",
+  "servings": 3,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_liver",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "silan",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "balsamic",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "שוטפים את הכבדים, מייבשים בנייר סופג ומנקים קרומים."
+   },
+   {
+    "textHe": "מחממים 3 כפות שמן במחבת ומטגנים בצל פרוס על אש בינונית 10 דקות עד שהוא זהוב.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "דוחקים את הבצל לשולי המחבת ומגבירים לאש גבוהה."
+   },
+   {
+    "textHe": "מוסיפים את הכבדים בשכבה אחת וצורבים 2 דקות לכל צד, עד שהם שחומים מבחוץ וורודים מעט בפנים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מוסיפים סילאן וחומץ בלסמי ומערבבים דקה עד שהרוטב מצפה הכול.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מתבלים במלח ופלפל רק בסוף, ומגישים עם פירה או אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_ground_beef_green_beans",
+  "titleHe": "בשר טחון עם שעועית ירוקה",
+  "titleEn": "Ground beef with green beans",
+  "photoQuery": "ground beef green beans",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_beef",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "green_beans",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "קוטמים את קצות השעועית וחותכים לחתיכות של 4 ס\"מ."
+   },
+   {
+    "textHe": "מטגנים בצל קצוץ בשתי כפות שמן על אש בינונית 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים את הבשר והשום ומטגנים על אש גבוהה 6 דקות, מפוררים עד שהבשר משחים.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים רסק עגבניות, פפריקה, כמון, מלח ופלפל ומערבבים."
+   },
+   {
+    "textHe": "מוסיפים את השעועית וכוס מים."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 15 דקות עד שהשעועית רכה.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מגישים עם אורז לבן."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_chicken_corn_rice",
+  "titleHe": "אורז עם חזה עוף ותירס",
+  "titleEn": "Rice with chicken breast and corn",
+  "photoQuery": "chicken corn rice",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "canned_corn",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים את העוף לקוביות קטנות ומתבלים בפפריקה, מלח ופלפל. מסננים את התירס."
+   },
+   {
+    "textHe": "מחממים 2 כפות שמן בסיר ומטגנים את העוף על אש גבוהה 5 דקות עד שהוא מזהיב.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים בצל קצוץ ומטגנים 4 דקות על אש בינונית.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מוסיפים אורז שטוף וכורכום ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים 3 כוסות מים רותחים, אבקת מרק ואת התירס."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 18 דקות, ואז משאירים מכוסה 10 דקות מחוץ לאש.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מפרידים במזלג ומגישים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_thigh_skewers_oven",
+  "titleHe": "שיפודי פרגיות בתנור",
+  "titleEn": "Oven chicken thigh skewers",
+  "photoQuery": "chicken skewers",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 50,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 800,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "משרים שיפודי עץ במים חצי שעה כדי שלא יישרפו."
+   },
+   {
+    "textHe": "חותכים את הפרגיות, הבצל והפלפלים לקוביות של 3 ס\"מ."
+   },
+   {
+    "textHe": "מערבבים את העוף עם שמן זית, שום כתוש, פפריקה, כמון, מיץ לימון, מלח ופלפל, ומשרים 20 דקות."
+   },
+   {
+    "textHe": "משחילים לסירוגין עוף, בצל ופלפל. מחממים תנור ל-220 מעלות במצב גריל טורבו."
+   },
+   {
+    "textHe": "מסדרים את השיפודים על רשת מעל תבנית וצולים 12 דקות.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "הופכים וצולים עוד 10 דקות עד שהעוף שחום ועשוי.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מגישים עם פיתה, טחינה וסלט."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_pulled_asado",
+  "titleHe": "אסאדו מפורק בפיתה",
+  "titleEn": "Pulled asado in pita",
+  "photoQuery": "pulled beef sandwich",
+  "servings": 6,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 280,
+  "appliances": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beef_ribs",
+    "quantity": 1.5,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bbq_sauce",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "silan",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "smoked_paprika",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "pita",
+    "quantity": 6,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-150 מעלות. משפשפים את האסאדו בפפריקה מעושנת, מלח ופלפל."
+   },
+   {
+    "textHe": "צורבים את הנתחים בכף שמן במחבת על אש גבוהה 3 דקות לכל צד.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מסדרים בתבנית עמוקה על מצע בצל פרוס ושיני שום, ומוסיפים כוס מים."
+   },
+   {
+    "textHe": "מכסים היטב בנייר כסף ואופים 4 שעות, עד שהבשר נופרד מהעצם בקלות.",
+    "timerSeconds": 14400
+   },
+   {
+    "textHe": "מוציאים את הבשר, מסירים עצמות ושומן ומפרקים בשתי מזלגות."
+   },
+   {
+    "textHe": "מערבבים את הבשר עם רוטב ברביקיו, סילאן והבצל הרך מהתבנית, ומחממים במחבת על אש בינונית 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "ממלאים פיתות חמות ומגישים עם חמוצים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_ketchup_drumsticks",
+  "titleHe": "שוקיים בקטשופ",
+  "titleEn": "Ketchup-glazed chicken drumsticks",
+  "photoQuery": "chicken drumsticks sauce",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 60,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1.2,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "ketchup",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "onion_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "מערבבים קטשופ, דבש, סויה, שום כתוש, אבקת בצל, פפריקה, כף שמן ופלפל."
+   },
+   {
+    "textHe": "מתבלים את השוקיים במעט מלח ומסדרים בתבנית."
+   },
+   {
+    "textHe": "מורחים עליהם את הרוטב מכל הצדדים."
+   },
+   {
+    "textHe": "אופים 45 דקות, ובאמצע הופכים ומזלפים מהרוטב, עד שהשוקיים שחומות ומבריקות.",
+    "timerSeconds": 2700
+   },
+   {
+    "textHe": "מגישים עם צ'יפס או אורז. ילדים במיוחד אוהבים את זה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_turkey_bulgur_patties",
+  "titleHe": "קציצות בורגול והודו",
+  "titleEn": "Turkey and bulgur patties",
+  "photoQuery": "meat patties",
+  "servings": 5,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 50,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ground_turkey",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bulgur",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "baharat",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "משרים את הבורגול בכוס מים רותחים 15 דקות, ואז סוחטים היטב.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מגררים את הבצל וסוחטים ממנו את הנוזלים."
+   },
+   {
+    "textHe": "מערבבים הודו טחון, בורגול, בצל, פטרוזיליה קצוצה, ביצה, כמון, בהרט, מלח ופלפל."
+   },
+   {
+    "textHe": "יוצרים בידיים רטובות קציצות שטוחות בגודל כף ידיים קטנה."
+   },
+   {
+    "textHe": "מטגנים בשמן בגובה חצי ס\"מ על אש בינונית 4 דקות לכל צד עד שהקציצות שחומות ועשויות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מעבירים לנייר סופג ומגישים עם טחינה וסלט."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_chopped_liver",
+  "titleHe": "כבד קצוץ",
+  "titleEn": "Chopped chicken liver",
+  "photoQuery": "chopped liver",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_liver",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים את הביצים במים רותחים 10 דקות, מצננים וקולפים.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מחממים 4 כפות שמן ומטגנים בצל פרוס על אש בינונית 15 דקות עד שהוא חום עמוק.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מייבשים את הכבדים בנייר סופג ומנקים קרומים."
+   },
+   {
+    "textHe": "מוסיפים את הכבדים למחבת ומטגנים על אש גבוהה 3 דקות לכל צד, עד שאין בהם ורוד.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "קוצצים יחד את הכבדים, הבצל והביצים בסכין או במעבד מזון בפולסים קצרים, עד למרקם גס."
+   },
+   {
+    "textHe": "מתבלים היטב במלח ופלפל, מקררים ומגישים עם לחם או מצה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_chicken_cabbage",
+  "titleHe": "עוף עם כרוב",
+  "titleEn": "Braised chicken with cabbage",
+  "photoQuery": "chicken with cabbage",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 60,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "cabbage",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מתבלים את חלקי העוף בפפריקה, מלח ופלפל. פורסים את הכרוב לרצועות."
+   },
+   {
+    "textHe": "מחממים 2 כפות שמן בסיר רחב וצורבים את העוף על אש גבוהה 4 דקות לכל צד. מוציאים לצלחת.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מטגנים באותו סיר בצל וגזר פרוסים על אש בינונית 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים את הכרוב והשום ומטגנים 8 דקות עד שהכרוב מתרכך.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים רסק עגבניות וכוס מים, ומחזירים את העוף מעל הכרוב."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 35 דקות עד שהעוף רך.",
+    "timerSeconds": 2100
+   },
+   {
+    "textHe": "טועמים, מתקנים תיבול ומגישים עם אורז או פירה."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_maple_mustard_breast",
+  "titleHe": "חזה עוף במייפל וחרדל",
+  "titleEn": "Maple-mustard chicken breast",
+  "photoQuery": "maple mustard chicken",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 700,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "maple_syrup",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "thyme",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "משטחים את החזות לעובי אחיד בעזרת פטיש בשר או תחתית סיר."
+   },
+   {
+    "textHe": "מערבבים מייפל, חרדל, שום כתוש, שמן זית וטימין."
+   },
+   {
+    "textHe": "מתבלים את העוף במלח ופלפל, מסדרים בתבנית ומורחים עליו את הרוטב."
+   },
+   {
+    "textHe": "אופים 18 דקות עד שהעוף עשוי ולבן לכל עובייו.",
+    "timerSeconds": 1080
+   },
+   {
+    "textHe": "מנוחה של 5 דקות, פורסים ומגישים עם הרוטב שבתבנית.",
+    "timerSeconds": 300
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_pineapple_chicken",
+  "titleHe": "חזה עוף באננס",
+  "titleEn": "Sweet and sour pineapple chicken",
+  "photoQuery": "pineapple chicken",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "canned_pineapple",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "ketchup",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "vinegar",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים את העוף, הפלפל והבצל לקוביות. מסננים את האננס ושומרים חצי כוס מהסירופ."
+   },
+   {
+    "textHe": "מערבבים את הסירופ עם סויה, קטשופ, חומץ, קורנפלור ורבע כוס מים."
+   },
+   {
+    "textHe": "מחממים 2 כפות שמן במחבת על אש גבוהה ומטגנים את העוף 5 דקות עד שהוא זהוב.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים בצל ופלפל ומקפיצים 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים את האננס ואת הרוטב ומבשלים 2 דקות, מערבבים, עד שהרוטב מסמיך ומבריק.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מגישים עם אורז לבן."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_chicken_noodles",
+  "titleHe": "נודלס עם חזה עוף וירקות",
+  "titleEn": "Noodles with chicken breast and vegetables",
+  "photoQuery": "chicken noodles",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "noodles",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "chicken_breast",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cabbage",
+    "quantity": 0.25,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "sweet_chili_sauce",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "sesame_oil",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים את הנודלס במים רותחים לפי הוראות האריזה (בדרך כלל 4 דקות), מסננים ושוטפים במים קרים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "פורסים את העוף לרצועות דקות ואת הירקות לרצועות."
+   },
+   {
+    "textHe": "מחממים 2 כפות שמן בווק על אש גבוהה ומקפיצים את העוף 4 דקות עד שהוא עשוי.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מוסיפים גזר, פלפל, כרוב ושום ומקפיצים 3 דקות. הירקות צריכים להישאר פריכים.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים את הנודלס, הסויה ורוטב הצ'ילי המתוק ומקפיצים 2 דקות.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מזלפים שמן שומשום ומגישים מיד."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_fish_fillet_oven",
+  "titleHe": "פילה דג לבן בתנור עם עגבניות",
+  "titleEn": "Baked white fish with tomatoes",
+  "photoQuery": "baked fish fillet",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "white_fish",
+    "quantity": 700,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cherry_tomato",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "מסדרים את הפילה בתבנית משומנת ומתבלים במלח, פלפל ופפריקה."
+   },
+   {
+    "textHe": "מפזרים מסביב עגבניות שרי חצויות ושום פרוס."
+   },
+   {
+    "textHe": "מזלפים שמן זית ומיץ לימון."
+   },
+   {
+    "textHe": "אופים 15 דקות עד שהדג לבן ומתפרק במזלג.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מפזרים פטרוזיליה קצוצה ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_tuna_bolognese",
+  "titleHe": "בולונז טונה",
+  "titleEn": "Tuna bolognese pasta",
+  "photoQuery": "tuna pasta tomato",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "pasta",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "tuna",
+    "quantity": 2,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oregano",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מרתיחים סיר גדול של מים עם כף מלח על אש גבוהה, מוסיפים את הפסטה ומבשלים לפי הזמן שעל האריזה (בדרך כלל 9-11 דקות) עד שהיא רכה אך עדיין נגיסה. שומרים חצי כוס ממי הבישול ומסננים.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מחממים שמן זית במחבת ומטגנים בצל קצוץ דק על אש בינונית 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים שום ורסק עגבניות ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים עגבניות מרוסקות ואורגנו ומבשלים על אש נמוכה 10 דקות.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מוסיפים את הטונה המסוננת, מפוררים אותה ברוטב ומבשלים 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מערבבים עם הפסטה ומעט ממי הבישול, מתבלים במלח ופלפל ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_fish_vegetable_stew",
+  "titleHe": "פילה דג מבושל בירקות",
+  "titleEn": "White fish stewed with vegetables",
+  "photoQuery": "fish stew vegetables",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 40,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "white_fish",
+    "quantity": 700,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cilantro",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים את הגזר ותפוחי האדמה לפרוסות דקות, ואת הבצל, הפלפל והעגבניות לרצועות."
+   },
+   {
+    "textHe": "מחממים 3 כפות שמן בסיר רחב ומטגנים בצל ופלפל על אש בינונית 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים שום, פפריקה, כורכום, גזר, תפוחי אדמה ועגבניות, וכוס מים."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 15 דקות עד שתפוחי האדמה כמעט רכים.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מתבלים את הדג במלח ופלפל ומניחים את הנתחים מעל הירקות."
+   },
+   {
+    "textHe": "מכסים ומבשלים עוד 10 דקות עד שהדג עשוי.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מפזרים כוסברה קצוצה ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_fish_peppers",
+  "titleHe": "פילה דג עם פלפלים",
+  "titleEn": "Fish fillet with sweet peppers",
+  "photoQuery": "fish with peppers",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "white_fish",
+    "quantity": 600,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים את הפלפלים, אדומים וצהובים, לרצועות."
+   },
+   {
+    "textHe": "מחממים שמן זית במחבת רחבה ומטגנים את הפלפלים על אש בינונית 8 דקות עד שהם רכים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים שום פרוס ופפריקה ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים חצי כוס מים ומיץ לימון."
+   },
+   {
+    "textHe": "מתבלים את הדג במלח ופלפל ומניחים אותו מעל הפלפלים."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 10 דקות עד שהדג עשוי.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מפזרים פטרוזיליה ומגישים עם לחם לניגוב הרוטב."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_lemon_garlic_salmon",
+  "titleHe": "סלמון בתנור במרינדת לימון ושום",
+  "titleEn": "Lemon-garlic baked salmon",
+  "photoQuery": "baked salmon lemon",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 30,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "salmon",
+    "quantity": 700,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "dill",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מערבבים גרידה ומיץ של לימון, שום כתוש, שמן זית, חרדל, חצי מהשמיר הקצוץ, מלח ופלפל."
+   },
+   {
+    "textHe": "מורחים את המרינדה על הסלמון."
+   },
+   {
+    "textHe": "משרים במקרר 15 דקות. בינתיים מחממים תנור ל-200 מעלות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מניחים את הסלמון בתבנית מרופדת בנייר אפייה."
+   },
+   {
+    "textHe": "אופים 14 דקות, עד שהסלמון ורוד בהיר ומתפרק בקלות.",
+    "timerSeconds": 840
+   },
+   {
+    "textHe": "מפזרים את שאר השמיר ומגישים עם פלחי לימון."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_mushroom_pie",
+  "titleHe": "פשטידת פטריות",
+  "titleEn": "Mushroom pie",
+  "photoQuery": "mushroom quiche",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 55,
+  "appliances": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "mushroom",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "sour_cream",
+    "quantity": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "yellow_cheese",
+    "quantity": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-180 מעלות ומשמנים תבנית בקוטר 26 ס\"מ."
+   },
+   {
+    "textHe": "מטגנים בצל קצוץ בשתי כפות שמן על אש בינונית 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים פטריות פרוסות ומטגנים על אש גבוהה 8 דקות עד שהנוזלים מתאדים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "טורפים ביצים עם שמנת חמוצה, קמח, מלח ופלפל, ומוסיפים שני שליש מהגבינה."
+   },
+   {
+    "textHe": "מערבבים את הפטריות לתוך התערובת, יוצקים לתבנית ומפזרים מעל את שאר הגבינה."
+   },
+   {
+    "textHe": "אופים 35 דקות עד שהפשטידה יציבה וזהובה.",
+    "timerSeconds": 2100
+   },
+   {
+    "textHe": "מצננים 10 דקות לפני החיתוך."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_broccoli_pie",
+  "titleHe": "פשטידת ברוקולי",
+  "titleEn": "Broccoli pie",
+  "photoQuery": "broccoli quiche",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 50,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "broccoli",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cottage",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "yellow_cheese",
+    "quantity": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "onion_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-180 מעלות ומשמנים תבנית."
+   },
+   {
+    "textHe": "מאדים או מבשלים את הברוקולי במים רותחים 4 דקות, מסננים היטב וקוצצים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "טורפים ביצים עם קוטג', קמח, אבקת בצל, מלח ופלפל."
+   },
+   {
+    "textHe": "מוסיפים את הברוקולי ושני שליש מהגבינה הצהובה ומערבבים."
+   },
+   {
+    "textHe": "יוצקים לתבנית ומפזרים מעל את שאר הגבינה."
+   },
+   {
+    "textHe": "אופים 35 דקות עד שהפשטידה זהובה ויציבה במרכז.",
+    "timerSeconds": 2100
+   },
+   {
+    "textHe": "מצננים מעט וחותכים לריבועים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_zucchini_pie",
+  "titleHe": "פשטידת קישואים",
+  "titleEn": "Zucchini pie",
+  "photoQuery": "zucchini quiche",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 55,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "zucchini",
+    "quantity": 5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "feta",
+    "quantity": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "yellow_cheese",
+    "quantity": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "dill",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "baking_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-180 מעלות ומשמנים תבנית."
+   },
+   {
+    "textHe": "מגררים את הקישואים בפומפייה גסה, ממליחים קלות ומניחים במסננת 10 דקות."
+   },
+   {
+    "textHe": "סוחטים את הקישואים היטב בידיים כדי להוציא את הנוזלים."
+   },
+   {
+    "textHe": "מערבבים ביצים, פטה מפוררת, חצי מהגבינה הצהובה, קמח, אבקת אפייה, שמיר קצוץ ופלפל, ומוסיפים את הקישואים."
+   },
+   {
+    "textHe": "יוצקים לתבנית ומפזרים את שאר הגבינה."
+   },
+   {
+    "textHe": "אופים 40 דקות עד שהפשטידה זהובה.",
+    "timerSeconds": 2400
+   },
+   {
+    "textHe": "מצננים 10 דקות לפני החיתוך."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_mushroom_sweet_potato_quiche",
+  "titleHe": "קיש פטריות ובטטה",
+  "titleEn": "Mushroom and sweet potato quiche",
+  "photoQuery": "mushroom quiche pastry",
+  "servings": 6,
+  "difficulty": "medium",
+  "mealType": "dinner",
+  "totalMinutes": 70,
+  "appliances": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "puff_pastry",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "sweet_potato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mushroom",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cream",
+    "quantity": 250,
+    "unit": "ml"
+   },
+   {
+    "ingredientId": "yellow_cheese",
+    "quantity": 100,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "thyme",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-190 מעלות. מרפדים תבנית קיש בבצק העלים ודוקרים במזלג."
+   },
+   {
+    "textHe": "אופים את הבצק לבד 12 דקות עד שהוא מתחיל להזהיב.",
+    "timerSeconds": 720
+   },
+   {
+    "textHe": "מבשלים את הבטטה קלופה וחתוכה לקוביות קטנות במים רותחים 8 דקות, ומסננים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מטגנים בצל ופטריות פרוסים בכף שמן על אש גבוהה 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "טורפים ביצים עם שמנת, טימין, מלח ופלפל."
+   },
+   {
+    "textHe": "מפזרים על הבצק את הבטטה, הפטריות והגבינה, ויוצקים מעל את תערובת הביצים."
+   },
+   {
+    "textHe": "אופים 30 דקות עד שהמלית יציבה.",
+    "timerSeconds": 1800
+   },
+   {
+    "textHe": "מצננים 10 דקות לפני ההגשה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_baked_veg_patties",
+  "titleHe": "קציצות ירק אפויות",
+  "titleEn": "Baked vegetable patties",
+  "photoQuery": "vegetable patties",
+  "servings": 5,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 45,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "potato",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "zucchini",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות ומרפדים תבנית בנייר אפייה."
+   },
+   {
+    "textHe": "מגררים את תפוחי האדמה, הגזר, הקישוא והבצל בפומפייה גסה."
+   },
+   {
+    "textHe": "סוחטים היטב את הירקות המגוררים במגבת נקייה."
+   },
+   {
+    "textHe": "מערבבים עם ביצים, פירורי לחם, פטרוזיליה קצוצה, מלח ופלפל."
+   },
+   {
+    "textHe": "יוצרים קציצות שטוחות, מסדרים בתבנית ומברישים בשמן זית."
+   },
+   {
+    "textHe": "אופים 15 דקות, הופכים ואופים עוד 12 דקות עד שהקציצות זהובות.",
+    "timerSeconds": 1620
+   },
+   {
+    "textHe": "מגישים עם יוגורט או טחינה."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_lentil_patties",
+  "titleHe": "קציצות עדשים",
+  "titleEn": "Lentil patties",
+  "photoQuery": "lentil patties",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 50,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "lentils",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים את העדשים בשלוש כוסות מים על אש בינונית 25 דקות עד שהן רכות, ומסננים היטב.",
+    "timerSeconds": 1500
+   },
+   {
+    "textHe": "מטגנים בצל קצוץ וגזר מגורד בכף שמן על אש בינונית 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מועכים את העדשים במזלג, משאירים מעט מרקם."
+   },
+   {
+    "textHe": "מערבבים עדשים, ירקות מטוגנים, שום, ביצה, פירורי לחם, כמון, פטרוזיליה, מלח ופלפל."
+   },
+   {
+    "textHe": "יוצרים קציצות שטוחות בידיים רטובות."
+   },
+   {
+    "textHe": "מטגנים בשמן בגובה חצי ס\"מ על אש בינונית 3 דקות לכל צד עד שהן זהובות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מגישים בפיתה עם טחינה וירקות."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_chinese_veg_stir_fry",
+  "titleHe": "מוקפץ ירקות סיני",
+  "titleEn": "Chinese-style vegetable stir-fry",
+  "photoQuery": "vegetable stir fry",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "broccoli",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mushroom",
+    "quantity": 200,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "cabbage",
+    "quantity": 0.25,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "sesame",
+    "quantity": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים את הברוקולי לפרחים ואת שאר הירקות לרצועות."
+   },
+   {
+    "textHe": "מערבבים סויה, דבש, קורנפלור ורבע כוס מים."
+   },
+   {
+    "textHe": "מחממים 2 כפות שמן בווק על אש גבוהה ומקפיצים גזר וברוקולי 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים פלפל, פטריות וכרוב ומקפיצים 3 דקות נוספות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים שום וג'ינג'ר, ואחרי חצי דקה את הרוטב. מקפיצים 2 דקות עד שהרוטב מסמיך.",
+    "timerSeconds": 150
+   },
+   {
+    "textHe": "מפזרים שומשום ומגישים עם אורז או נודלס."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_vegetarian_goulash",
+  "titleHe": "גולש צמחוני",
+  "titleEn": "Vegetarian goulash",
+  "photoQuery": "vegetable goulash",
+  "servings": 5,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 50,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "potato",
+    "quantity": 5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצל קצוץ בשלוש כפות שמן בסיר על אש בינונית 8 דקות עד שהוא זהוב.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים פלפלים וגזר חתוכים ומטגנים 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מנמיכים לאש נמוכה, מוסיפים שום, פפריקה, כמון ורסק עגבניות ומערבבים דקה, בלי לשרוף את הפפריקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים תפוחי אדמה בקוביות גדולות, אבקת מרק ומים עד שכמעט מכסים."
+   },
+   {
+    "textHe": "מביאים לרתיחה, מכסים ומבשלים על אש נמוכה 30 דקות עד שתפוחי האדמה רכים והרוטב מסמיך.",
+    "timerSeconds": 1800
+   },
+   {
+    "textHe": "מתבלים במלח ופלפל ומגישים עם לחם."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_indian_vegetable_stew",
+  "titleHe": "תבשיל הודי צמחוני",
+  "titleEn": "Indian-style vegetable and chickpea stew",
+  "photoQuery": "vegetable curry",
+  "servings": 5,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 45,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "cauliflower",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "chickpeas",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "ginger",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garam_masala",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "canned_tomatoes",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "coconut_milk",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "cilantro",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצל קצוץ בשתי כפות שמן על אש בינונית 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים שום, ג'ינג'ר, גראם מסאלה וכורכום ומערבבים דקה עד שהתבלינים ריחניים.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים תפוחי אדמה בקוביות, פרחי כרובית, עגבניות מרוסקות וחצי כוס מים."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 15 דקות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מוסיפים חלב קוקוס וגרגרי חומוס מסוננים ומבשלים 10 דקות בלי מכסה.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מתבלים במלח ופלפל, מפזרים כוסברה ומגישים עם אורז."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_spinach_bean_noodle_soup",
+  "titleHe": "מרק תרד, שעועית ואטריות",
+  "titleEn": "Spinach, bean and noodle soup",
+  "photoQuery": "bean noodle soup",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 45,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "spinach",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "white_beans",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "noodles",
+    "quantity": 150,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "celery",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1.5,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצל, גזר וסלרי קצוצים בשלוש כפות שמן על אש בינונית 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים שום ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים 2 ליטר מים, אבקת מרק ושעועית מסוננת."
+   },
+   {
+    "textHe": "מביאים לרתיחה ומבשלים על אש נמוכה 15 דקות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מוסיפים את האטריות שבורות ומבשלים 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים את התרד ומבשלים 2 דקות עד שהוא נובל.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מוסיפים מיץ לימון, מתבלים ומגישים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_clear_vegetable_broth",
+  "titleHe": "מרק ירקות צח",
+  "titleEn": "Clear vegetable broth",
+  "photoQuery": "vegetable broth",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 75,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "carrot",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "celery",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "zucchini",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "leek",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 1,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "dill",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "שוטפים היטב את כל הירקות. חוצים את הבצל וחותכים את שאר הירקות לחתיכות גדולות."
+   },
+   {
+    "textHe": "מכניסים לסיר גדול את כל הירקות, השום והעשבים, ומכסים ב-3 ליטר מים קרים."
+   },
+   {
+    "textHe": "מביאים לרתיחה על אש גבוהה ומסירים את הקצף.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מנמיכים לאש נמוכה ומבשלים חצי מכוסה שעה.",
+    "timerSeconds": 3600
+   },
+   {
+    "textHe": "מסננים דרך מסננת דקה. את הגזר אפשר לפרוס ולהחזיר למרק."
+   },
+   {
+    "textHe": "מתבלים במלח ופלפל. מגישים כמרק צח, או שומרים כציר לתבשילים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_pearl_barley_stew",
+  "titleHe": "תבשיל גריסי פנינה וירקות",
+  "titleEn": "Pearl barley and vegetable stew",
+  "photoQuery": "barley stew",
+  "servings": 5,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 60,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "barley",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "celery",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mushroom",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "thyme",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "שוטפים את הגריסים במסננת עד שהמים צלולים."
+   },
+   {
+    "textHe": "מטגנים בצל, גזר וסלרי קצוצים בשלוש כפות שמן על אש בינונית 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים פטריות פרוסות ושום ומטגנים 5 דקות על אש גבוהה.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים גריסים, רסק עגבניות, טימין, אבקת מרק ו-1.5 ליטר מים."
+   },
+   {
+    "textHe": "מביאים לרתיחה, מכסים ומבשלים על אש נמוכה 40 דקות, מערבבים מדי פעם, עד שהגריסים רכים והתבשיל סמיך.",
+    "timerSeconds": 2400
+   },
+   {
+    "textHe": "מתבלים במלח ופלפל ומגישים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_caprese_salad",
+  "titleHe": "סלט קפרזה",
+  "titleEn": "Caprese salad",
+  "photoQuery": "caprese salad",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 10,
+  "appliances": [],
+  "ingredients": [
+   {
+    "ingredientId": "tomato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mozzarella",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "basil",
+    "quantity": 1,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "balsamic",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "בוחרים עגבניות בשלות ומוצקות ומוציאים את המוצרלה מהמקרר רבע שעה מראש."
+   },
+   {
+    "textHe": "פורסים את העגבניות לפרוסות בעובי חצי ס\"מ."
+   },
+   {
+    "textHe": "פורסים את המוצרלה לפרוסות באותו עובי."
+   },
+   {
+    "textHe": "מסדרים על צלחת לסירוגין פרוסת עגבנייה, פרוסת מוצרלה ועלה בזיליקום."
+   },
+   {
+    "textHe": "מזלפים שמן זית ומעט בלסמי."
+   },
+   {
+    "textHe": "מפזרים מלח גס ופלפל שחור גרוס ומגישים מיד."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_oatmeal_porridge",
+  "titleHe": "דייסת שיבולת שועל",
+  "titleEn": "Oatmeal porridge",
+  "photoQuery": "oatmeal porridge",
+  "servings": 2,
+  "difficulty": "easy",
+  "mealType": "breakfast",
+  "totalMinutes": 10,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "oats",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "milk",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "banana",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "walnuts",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מכניסים לסיר קטן שיבולת שועל, חלב וקורט מלח."
+   },
+   {
+    "textHe": "מביאים לרתיחה עדינה על אש בינונית, מערבבים.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מנמיכים לאש נמוכה ומבשלים 5 דקות, מערבבים כל הזמן, עד שהדייסה סמיכה וקרמית.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מערבבים פנימה דבש וקינמון. אם סמיך מדי, מוסיפים מעט חלב."
+   },
+   {
+    "textHe": "מחלקים לשתי קערות."
+   },
+   {
+    "textHe": "מסדרים מעל פרוסות בננה ואגוזי מלך קצוצים ומגישים חם."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_moroccan_carrot_salad",
+  "titleHe": "סלט גזר מרוקאי חריף",
+  "titleEn": "Spicy Moroccan carrot salad",
+  "photoQuery": "moroccan carrot salad",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "carrot",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 4,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "harissa",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "cilantro",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "קולפים את הגזר ופורסים לעיגולים בעובי חצי ס\"מ."
+   },
+   {
+    "textHe": "מבשלים במים רותחים עם מלח 8 דקות על אש בינונית, עד שהגזר רך אבל לא מתפרק.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מסננים ומצננים מעט."
+   },
+   {
+    "textHe": "מערבבים שמן זית, שום כתוש, כמון, פפריקה, חריף, מיץ לימון וכפית מלח."
+   },
+   {
+    "textHe": "יוצקים על הגזר החמים ומערבבים בעדינות."
+   },
+   {
+    "textHe": "מוסיפים כוסברה קצוצה ומקררים לפחות שעה לפני ההגשה. הסלט משתבח למחרת."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_peas_carrots_sauce",
+  "titleHe": "אפונה וגזר ברוטב",
+  "titleEn": "Peas and carrots in tomato sauce",
+  "photoQuery": "peas and carrots",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "peas",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "dill",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "קולפים את הגזר וחותכים לקוביות קטנות."
+   },
+   {
+    "textHe": "מטגנים בצל קצוץ בשתי כפות שמן על אש בינונית 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים גזר, שום, כורכום ורסק עגבניות ומערבבים 2 דקות.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מוסיפים כוס וחצי מים, מלח ופלפל."
+   },
+   {
+    "textHe": "מבשלים מכוסה על אש נמוכה 10 דקות.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מוסיפים את האפונה ומבשלים עוד 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים שמיר קצוץ ומגישים עם אורז לבן."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_oven_antipasti",
+  "titleHe": "אנטיפסטי בתנור",
+  "titleEn": "Oven-roasted antipasti vegetables",
+  "photoQuery": "roasted vegetables antipasti",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 60,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "eggplant",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "zucchini",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "red_onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mushroom",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "balsamic",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "thyme",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-220 מעלות."
+   },
+   {
+    "textHe": "חותכים את כל הירקות לנתחים גדולים, ומשאירים את שיני השום בקליפתן."
+   },
+   {
+    "textHe": "מערבבים בשתי תבניות עם שמן זית, טימין, מלח ופלפל, בשכבה אחת."
+   },
+   {
+    "textHe": "צולים 25 דקות.",
+    "timerSeconds": 1500
+   },
+   {
+    "textHe": "מערבבים וצולים עוד 20 דקות עד שהירקות רכים ושחומים בשוליים.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מזלפים בלסמי, מצננים ושומרים בצנצנת עם השמן. מגישים עם לחם טרי."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_bulgur_pomegranate_salad",
+  "titleHe": "סלט בורגול ורימונים",
+  "titleEn": "Bulgur and pomegranate salad",
+  "photoQuery": "bulgur salad",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 30,
+  "appliances": [],
+  "ingredients": [
+   {
+    "ingredientId": "bulgur",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "pomegranate",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 1,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "mint",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cucumber",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "pomegranate_molasses",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "משרים את הבורגול בכוס וחצי מים רותחים עם קורט מלח, מכוסה, 20 דקות.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מפרידים את הבורגול במזלג ומצננים."
+   },
+   {
+    "textHe": "מוציאים את גרגרי הרימון."
+   },
+   {
+    "textHe": "קוצצים דק פטרוזיליה, נענע ובצל ירוק, וחותכים את המלפפונים לקוביות קטנות."
+   },
+   {
+    "textHe": "מערבבים שמן זית, מיץ לימון, סילאן רימונים, מלח ופלפל."
+   },
+   {
+    "textHe": "מאחדים הכול ומגישים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_lettuce_apple_walnut_salad",
+  "titleHe": "סלט חסה, תפוחים ואגוזים",
+  "titleEn": "Lettuce, apple and walnut salad",
+  "photoQuery": "apple walnut salad",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 15,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "lettuce",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "apple",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "walnuts",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "red_onion",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "mustard",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "קולים את האגוזים במחבת יבשה על אש בינונית 4 דקות, מנערים, עד שהם ריחניים.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "שוטפים ומייבשים את החסה וקורעים לחתיכות."
+   },
+   {
+    "textHe": "פורסים את התפוחים דק ומזלפים עליהם מעט לימון כדי שלא ישחירו."
+   },
+   {
+    "textHe": "פורסים את הבצל הסגול לטבעות דקות."
+   },
+   {
+    "textHe": "מערבבים שמן זית, דבש, חרדל, מיץ לימון, מלח ופלפל."
+   },
+   {
+    "textHe": "מערבבים את הסלט עם הרוטב רגע לפני ההגשה ומפזרים מעל את האגוזים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_mushrooms_tahini",
+  "titleHe": "פטריות מוקרמות בטחינה",
+  "titleEn": "Mushrooms in creamy tahini",
+  "photoQuery": "mushrooms tahini",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 20,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "mushroom",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "tahini",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים את הפטריות ואת הבצל."
+   },
+   {
+    "textHe": "מחממים 2 כפות שמן במחבת ומטגנים את הבצל על אש בינונית 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מגבירים לאש גבוהה, מוסיפים את הפטריות ומטגנים 8 דקות עד שהן משחימות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מערבבים טחינה גולמית עם מיץ לימון וחצי כוס מים לרוטב חלק."
+   },
+   {
+    "textHe": "מנמיכים לאש נמוכה, מוסיפים שום ואת הטחינה ומבשלים 2 דקות, מערבבים, עד שהרוטב סמיך.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מתבלים במלח ופלפל, מפזרים פטרוזיליה ומגישים עם פיתה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_oven_fries",
+  "titleHe": "צ'יפס בתנור",
+  "titleEn": "Oven fries",
+  "photoQuery": "oven baked fries",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 50,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "potato",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "garlic_powder",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-220 מעלות ומרפדים שתי תבניות בנייר אפייה."
+   },
+   {
+    "textHe": "חותכים את תפוחי האדמה לאצבעות בעובי סנטימטר."
+   },
+   {
+    "textHe": "משרים במים קרים 15 דקות כדי להוציא עמילן, ומייבשים היטב במגבת.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מערבבים עם שמן זית, קורנפלור, פפריקה ואבקת שום."
+   },
+   {
+    "textHe": "מפזרים בתבניות בשכבה אחת ובמרווחים."
+   },
+   {
+    "textHe": "אופים 20 דקות, הופכים ואופים עוד 15 דקות עד שהצ'יפס זהוב ופריך.",
+    "timerSeconds": 2100
+   },
+   {
+    "textHe": "ממליחים מיד ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_quinoa_carrots",
+  "titleHe": "קינואה עם גזר וכמון",
+  "titleEn": "Quinoa with carrots and cumin",
+  "photoQuery": "quinoa carrots",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "quinoa",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "raisins",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "שוטפים את הקינואה היטב במסננת."
+   },
+   {
+    "textHe": "מטגנים בצל קצוץ וגזר מגורד בשתי כפות שמן על אש בינונית 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים כמון ואת הקינואה ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים שתי כוסות מים רותחים, צימוקים וחצי כפית מלח."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 15 דקות עד שהמים נספגים.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "משאירים מכוסה 5 דקות, מפרידים במזלג, מוסיפים פטרוזיליה ומגישים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_cucumber_dill_salad",
+  "titleHe": "סלט מלפפונים ושמיר",
+  "titleEn": "Cucumber and dill salad",
+  "photoQuery": "cucumber dill salad",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 10,
+  "appliances": [],
+  "ingredients": [
+   {
+    "ingredientId": "cucumber",
+    "quantity": 6,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "dill",
+    "quantity": 1,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "red_onion",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "vinegar",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים את המלפפונים לפרוסות דקות מאוד."
+   },
+   {
+    "textHe": "מפזרים עליהם חצי כפית מלח ומניחים 10 דקות במסננת כדי שישחררו נוזלים."
+   },
+   {
+    "textHe": "פורסים את הבצל הסגול דק וקוצצים את השמיר."
+   },
+   {
+    "textHe": "מערבבים חומץ, סוכר ושמן זית."
+   },
+   {
+    "textHe": "סוחטים קלות את המלפפונים ומערבבים עם הבצל, השמיר והרוטב."
+   },
+   {
+    "textHe": "מתבלים בפלפל ומקררים רבע שעה לפני ההגשה."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_garlic_rice",
+  "titleHe": "אורז עם שום",
+  "titleEn": "Garlic rice",
+  "photoQuery": "garlic rice",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 8,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "שוטפים את האורז עד שהמים צלולים."
+   },
+   {
+    "textHe": "קוצצים דק את השום."
+   },
+   {
+    "textHe": "מחממים 3 כפות שמן בסיר על אש בינונית-נמוכה ומטגנים את השום 2 דקות עד שהוא זהוב בהיר. לא לשרוף.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מוסיפים את האורז ומערבבים דקה שיתצפה בשמן.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים 2.25 כוסות מים רותחים וכפית מלח."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 15 דקות, ואז משאירים מכוסה 10 דקות מחוץ לאש.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מפרידים במזלג, מערבבים פטרוזיליה קצוצה ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_spicy_mushroom_salad",
+  "titleHe": "סלט פטריות פיקנטי",
+  "titleEn": "Spicy mushroom salad",
+  "photoQuery": "marinated mushrooms",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 20,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "mushroom",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "chili",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "vinegar",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חוצים או רובעים את הפטריות, לפי הגודל."
+   },
+   {
+    "textHe": "מחממים 2 כפות שמן זית במחבת ומטגנים את הפטריות על אש גבוהה 7 דקות עד שהן משחימות.",
+    "timerSeconds": 420
+   },
+   {
+    "textHe": "מוסיפים שום וצ'ילי קצוצים ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מעבירים לקערה ומוסיפים חומץ, שאר שמן הזית, פפריקה, מלח ופלפל."
+   },
+   {
+    "textHe": "מערבבים פטרוזיליה קצוצה."
+   },
+   {
+    "textHe": "מקררים לפחות חצי שעה ומגישים קר."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_beet_carrot_salad",
+  "titleHe": "סלט סלק וגזר",
+  "titleEn": "Beet and carrot salad",
+  "photoQuery": "beet carrot salad",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 15,
+  "appliances": [],
+  "ingredients": [
+   {
+    "ingredientId": "beet",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "apple",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "walnuts",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "קולפים את הסלק, הגזר והתפוח. כדאי ללבוש כפפות בגלל הסלק."
+   },
+   {
+    "textHe": "מגררים את שלושתם בפומפייה גסה."
+   },
+   {
+    "textHe": "מערבבים מיץ לימון, שמן זית, דבש וקורט מלח."
+   },
+   {
+    "textHe": "יוצקים את הרוטב על הירקות ומערבבים."
+   },
+   {
+    "textHe": "קוצצים גס את האגוזים."
+   },
+   {
+    "textHe": "מפזרים את האגוזים מעל ומגישים. הסלט נשמר יומיים במקרר."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_green_beans_broccoli",
+  "titleHe": "שעועית ירוקה וברוקולי בשום",
+  "titleEn": "Garlicky green beans and broccoli",
+  "photoQuery": "green beans broccoli",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 20,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "green_beans",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "broccoli",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "sesame",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "קוטמים את קצות השעועית ומפרקים את הברוקולי לפרחים."
+   },
+   {
+    "textHe": "מרתיחים סיר מים עם מלח ומבשלים את הירקות 3 דקות.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מסננים ומעבירים מיד לקערת מים קרים כדי לשמור על הצבע."
+   },
+   {
+    "textHe": "מחממים שמן זית במחבת ומטגנים שום פרוס על אש בינונית דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים את הירקות המסוננים ומקפיצים 3 דקות על אש גבוהה.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים מיץ לימון, מלח ופלפל, מפזרים שומשום ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_crispy_baked_eggplant",
+  "titleHe": "חצילים אפויים בציפוי פריך",
+  "titleEn": "Crispy baked eggplant slices",
+  "photoQuery": "breaded eggplant",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 45,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "eggplant",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "garlic_powder",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-210 מעלות ומרפדים תבנית בנייר אפייה."
+   },
+   {
+    "textHe": "פורסים את החצילים לעיגולים בעובי סנטימטר ומפזרים עליהם מלח."
+   },
+   {
+    "textHe": "משאירים 15 דקות ומייבשים בנייר סופג.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מערבבים פירורי לחם עם פפריקה ואבקת שום. מעבירים כל פרוסה בקמח, בביצה טרופה ובפירורים."
+   },
+   {
+    "textHe": "מסדרים בתבנית ומזלפים שמן זית."
+   },
+   {
+    "textHe": "אופים 15 דקות, הופכים ואופים עוד 12 דקות עד שהפרוסות זהובות.",
+    "timerSeconds": 1620
+   },
+   {
+    "textHe": "מגישים עם טחינה או רוטב עגבניות."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_mushrooms_peas",
+  "titleHe": "פטריות עם אפונה",
+  "titleEn": "Mushrooms with peas",
+  "photoQuery": "mushrooms and peas",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "mushroom",
+    "quantity": 400,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "peas",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "thyme",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים את הפטריות וקוצצים את הבצל."
+   },
+   {
+    "textHe": "מטגנים את הבצל בשתי כפות שמן על אש בינונית 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מגבירים לאש גבוהה, מוסיפים את הפטריות ומטגנים 7 דקות.",
+    "timerSeconds": 420
+   },
+   {
+    "textHe": "מוסיפים שום, טימין ואת האפונה."
+   },
+   {
+    "textHe": "מוסיפים רבע כוס מים וסויה ומבשלים 6 דקות על אש בינונית.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מתבלים במלח ופלפל ומגישים כתוספת."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_mushroom_rice",
+  "titleHe": "אורז עם פטריות",
+  "titleEn": "Rice with mushrooms",
+  "photoQuery": "mushroom rice",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "mushroom",
+    "quantity": 300,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "שוטפים את האורז עד שהמים צלולים."
+   },
+   {
+    "textHe": "מטגנים בצל קצוץ בשלוש כפות שמן על אש בינונית 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים פטריות פרוסות ושום ומטגנים על אש גבוהה 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים את האורז ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים 2.25 כוסות מים רותחים, סויה ואבקת מרק."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 15 דקות, ואז משאירים מכוסה 10 דקות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מפרידים במזלג ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_rice_chickpeas",
+  "titleHe": "אורז עם חומוס",
+  "titleEn": "Rice with chickpeas",
+  "photoQuery": "rice with chickpeas",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "chickpeas",
+    "quantity": 1,
+    "unit": "can"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cinnamon",
+    "quantity": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "שוטפים את האורז ומסננים את גרגרי החומוס."
+   },
+   {
+    "textHe": "מטגנים בצל קצוץ בשלוש כפות שמן על אש בינונית 8 דקות עד שהוא זהוב.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים כמון, כורכום וקינמון ומערבבים חצי דקה.",
+    "timerSeconds": 30
+   },
+   {
+    "textHe": "מוסיפים את האורז והחומוס ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים 2.25 כוסות מים רותחים וכפית מלח."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 15 דקות, ואז משאירים מכוסה 10 דקות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מפרידים במזלג ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_mashed_potato_croquettes",
+  "titleHe": "כדורי פירה (קרוקטים)",
+  "titleEn": "Mashed potato croquettes",
+  "photoQuery": "potato croquettes",
+  "servings": 5,
+  "difficulty": "medium",
+  "mealType": "snack",
+  "totalMinutes": 60,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "potato",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "egg",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "flour",
+    "quantity": 0.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "breadcrumbs",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "nutmeg",
+    "quantity": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מבשלים תפוחי אדמה קלופים וחתוכים במים רותחים עם מלח 20 דקות עד שהם רכים.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מסננים היטב ומועכים לפירה חלק. מצננים לגמרי."
+   },
+   {
+    "textHe": "מערבבים לפירה ביצה אחת, בצל ירוק קצוץ, מוסקט, מלח ופלפל."
+   },
+   {
+    "textHe": "יוצרים גלילים או כדורים בגודל אגוז."
+   },
+   {
+    "textHe": "מעבירים כל כדור בקמח, בשתי הביצים הנותרות טרופות ובפירורי לחם."
+   },
+   {
+    "textHe": "מטגנים בשמן עמוק על אש בינונית 3 דקות עד שהקרוקטים זהובים מכל הצדדים.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מעבירים לנייר סופג ומגישים חם."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_zucchini_carrot_stew",
+  "titleHe": "קישואים מבושלים עם גזר",
+  "titleEn": "Stewed zucchini and carrots",
+  "photoQuery": "stewed zucchini",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 35,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "zucchini",
+    "quantity": 5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "dill",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים את הקישואים לחצאי עיגולים עבים ואת הגזר לעיגולים דקים."
+   },
+   {
+    "textHe": "מטגנים בצל קצוץ בשתי כפות שמן על אש בינונית 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים גזר ומטגנים 4 דקות.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מוסיפים קישואים, שום, כורכום ורסק עגבניות, וחצי כוס מים."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 20 דקות עד שהירקות רכים מאוד.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מתבלים, מפזרים שמיר ומגישים עם אורז."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_kohlrabi_salad",
+  "titleHe": "סלט קולורבי ולימון",
+  "titleEn": "Kohlrabi lemon salad",
+  "photoQuery": "kohlrabi salad",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 15,
+  "appliances": [],
+  "ingredients": [
+   {
+    "ingredientId": "kohlrabi",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "קולפים את הקולורבי והגזר."
+   },
+   {
+    "textHe": "חותכים את הקולורבי לגפרורים דקים או מגררים בפומפייה גסה."
+   },
+   {
+    "textHe": "מגררים את הגזר."
+   },
+   {
+    "textHe": "קוצצים את הפטרוזיליה."
+   },
+   {
+    "textHe": "מערבבים מיץ לימון, שמן זית, סוכר, מלח ופלפל."
+   },
+   {
+    "textHe": "מאחדים הכול ומגישים. טעים במיוחד ליד מנות בשר."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_eggplant_peppers_tomatoes",
+  "titleHe": "חצילים עם עגבניות ופלפלים",
+  "titleEn": "Eggplant with tomatoes and peppers",
+  "photoQuery": "eggplant tomato stew",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 45,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "eggplant",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "bell_pepper",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 5,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "sugar",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "חותכים את החצילים לקוביות, ממליחים ומניחים 15 דקות במסננת. מייבשים."
+   },
+   {
+    "textHe": "מחממים שמן זית במחבת רחבה ומטגנים את החצילים על אש בינונית-גבוהה 8 דקות עד שהם מזהיבים.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים פלפלים ברצועות ושום פרוס ומטגנים 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים עגבניות קצוצות, פפריקה, סוכר, מלח ופלפל."
+   },
+   {
+    "textHe": "מבשלים על אש נמוכה 20 דקות, מערבבים מדי פעם, עד שהרוטב סמיך.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מפזרים פטרוזיליה ומגישים חם או בטמפרטורת החדר."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_red_cabbage_apple_salad",
+  "titleHe": "סלט כרוב סגול, תפוחים וגזר",
+  "titleEn": "Red cabbage, apple and carrot salad",
+  "photoQuery": "red cabbage salad",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 20,
+  "appliances": [],
+  "ingredients": [
+   {
+    "ingredientId": "cabbage",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "apple",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "vinegar",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "sunflower_seeds",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים את הכרוב הסגול לרצועות דקות מאוד."
+   },
+   {
+    "textHe": "מעסים את הכרוב עם חצי כפית מלח דקה עד שהוא מתרכך מעט."
+   },
+   {
+    "textHe": "מגררים את הגזר וחותכים את התפוחים לגפרורים."
+   },
+   {
+    "textHe": "מערבבים חומץ, שמן זית, דבש ופלפל."
+   },
+   {
+    "textHe": "מאחדים את הירקות עם הרוטב."
+   },
+   {
+    "textHe": "מפזרים גרעיני חמנייה ומגישים. הסלט נשמר יומיים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_cabbage_potato_stew",
+  "titleHe": "תבשיל כרוב ותפוחי אדמה",
+  "titleEn": "Cabbage and potato stew",
+  "photoQuery": "cabbage potato stew",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "dinner",
+  "totalMinutes": 45,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "cabbage",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 4,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "carrot",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 2,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "פורסים את הכרוב לרצועות וחותכים את תפוחי האדמה לקוביות."
+   },
+   {
+    "textHe": "מטגנים בצל וגזר קצוצים בשלוש כפות שמן על אש בינונית 6 דקות.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים את הכרוב ומטגנים 8 דקות, מערבבים, עד שהוא מצטמק.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מוסיפים תפוחי אדמה, רסק עגבניות, פפריקה, כמון ושתי כוסות מים."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 25 דקות עד שתפוחי האדמה רכים.",
+    "timerSeconds": 1500
+   },
+   {
+    "textHe": "מתבלים במלח ופלפל ומגישים."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_yellow_rice",
+  "titleHe": "אורז צהוב",
+  "titleEn": "Yellow turmeric rice",
+  "photoQuery": "yellow rice",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 30,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "rice",
+    "quantity": 1.5,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "turmeric",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cumin",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "שוטפים את האורז עד שהמים צלולים."
+   },
+   {
+    "textHe": "מטגנים בצל קצוץ דק בשתי כפות שמן על אש בינונית 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים כורכום וכמון ומערבבים חצי דקה.",
+    "timerSeconds": 30
+   },
+   {
+    "textHe": "מוסיפים את האורז ומערבבים דקה עד שכל הגרגרים צהובים.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים 2.25 כוסות מים רותחים ואבקת מרק."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 15 דקות, ואז משאירים מכוסה 10 דקות מחוץ לאש.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מפרידים במזלג ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_sweet_potato_wedges",
+  "titleHe": "אצבעות בטטה",
+  "titleEn": "Sweet potato wedges",
+  "photoQuery": "sweet potato wedges",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 40,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "sweet_potato",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "smoked_paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "garlic_powder",
+    "quantity": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "cornstarch",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-220 מעלות ומרפדים תבנית בנייר אפייה."
+   },
+   {
+    "textHe": "חותכים את הבטטות לאצבעות עבות, עם או בלי קליפה."
+   },
+   {
+    "textHe": "מערבבים עם קורנפלור, ואז עם שמן זית, פפריקה מעושנת ואבקת שום."
+   },
+   {
+    "textHe": "מפזרים בשכבה אחת עם רווחים, כדי שייצלו ולא יתאדו."
+   },
+   {
+    "textHe": "אופים 15 דקות, הופכים ואופים עוד 12 דקות עד שהקצוות משחימים.",
+    "timerSeconds": 1620
+   },
+   {
+    "textHe": "ממליחים ומגישים מיד."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_crispy_garlic_potatoes",
+  "titleHe": "תפוחי אדמה פריכים בשום",
+  "titleEn": "Crispy garlic potatoes",
+  "photoQuery": "crispy roast potatoes",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 60,
+  "appliances": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "potato",
+    "quantity": 1,
+    "unit": "kg"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 6,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 4,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "rosemary",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-220 מעלות."
+   },
+   {
+    "textHe": "חותכים תפוחי אדמה לקוביות גדולות ומבשלים במים רותחים עם מלח 8 דקות.",
+    "timerSeconds": 480
+   },
+   {
+    "textHe": "מסננים ומנערים בסיר כדי לחספס את השוליים, זה הסוד לפריכות."
+   },
+   {
+    "textHe": "מעבירים לתבנית, מערבבים עם שמן זית, רוזמרין, מלח ופלפל."
+   },
+   {
+    "textHe": "אופים 25 דקות.",
+    "timerSeconds": 1500
+   },
+   {
+    "textHe": "מוסיפים שום כתוש, מערבבים ואופים עוד 10 דקות עד שהקוביות זהובות ופריכות.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "מפזרים פטרוזיליה ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_oven_green_beans",
+  "titleHe": "שעועית ירוקה בתנור",
+  "titleEn": "Roasted green beans",
+  "photoQuery": "roasted green beans",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 25,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "green_beans",
+    "quantity": 500,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "chili_flakes",
+    "quantity": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "almonds",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-220 מעלות."
+   },
+   {
+    "textHe": "קוטמים את קצות השעועית."
+   },
+   {
+    "textHe": "מערבבים בתבנית עם שמן זית, שום פרוס, צ'ילי, מלח ופלפל."
+   },
+   {
+    "textHe": "מפזרים בשכבה אחת."
+   },
+   {
+    "textHe": "צולים 15 דקות, מערבבים באמצע, עד שהשעועית מתרככת ומשחימה בנקודות.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מזלפים מיץ לימון, מפזרים שקדים קצוצים ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_green_tahini",
+  "titleHe": "טחינה ירוקה",
+  "titleEn": "Green herb tahini",
+  "photoQuery": "green tahini",
+  "servings": 6,
+  "difficulty": "easy",
+  "mealType": "snack",
+  "totalMinutes": 10,
+  "appliances": [
+   "blender"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "tahini",
+    "quantity": 1,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "parsley",
+    "quantity": 1,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "cilantro",
+    "quantity": 0.5,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "שוטפים ומייבשים את העשבים ומורידים את הגבעולים העבים."
+   },
+   {
+    "textHe": "מכניסים לבלנדר פטרוזיליה, כוסברה, שום, מיץ לימון וחצי כוס מים קרים."
+   },
+   {
+    "textHe": "טוחנים עד שהעשבים קצוצים דק."
+   },
+   {
+    "textHe": "מוסיפים את הטחינה הגולמית וכפית מלח."
+   },
+   {
+    "textHe": "טוחנים שוב ומוסיפים מים בהדרגה עד למרקם סמיך וחלק."
+   },
+   {
+    "textHe": "טועמים ומתקנים מלח ולימון. נשמר 4 ימים במקרר."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_roasted_beet_sweet_potato",
+  "titleHe": "סלק, בטטה ובצל בתנור",
+  "titleEn": "Roasted beets, sweet potato and onion",
+  "photoQuery": "roasted beets sweet potato",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 55,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "beet",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "sweet_potato",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "red_onion",
+    "quantity": 2,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "silan",
+    "quantity": 1,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "thyme",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-200 מעלות."
+   },
+   {
+    "textHe": "קולפים את הסלק והבטטה וחותכים לקוביות של 3 ס\"מ. חותכים את הבצל לפלחים."
+   },
+   {
+    "textHe": "מערבבים בתבנית עם שמן זית, טימין, מלח ופלפל, ומפזרים בשכבה אחת."
+   },
+   {
+    "textHe": "אופים 25 דקות.",
+    "timerSeconds": 1500
+   },
+   {
+    "textHe": "מערבבים, מזלפים סילאן ואופים עוד 20 דקות עד שהירקות רכים ומקורמלים.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מגישים חם, או בטמפרטורת החדר כסלט."
+   }
+  ],
+  "mealPrep": true
+ },
+ {
+  "id": "rv3_x14_cauliflower_mushroom_stir_fry",
+  "titleHe": "כרובית מוקפצת עם פטריות",
+  "titleEn": "Stir-fried cauliflower with mushrooms",
+  "photoQuery": "stir fried cauliflower",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "cauliflower",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mushroom",
+    "quantity": 250,
+    "unit": "g"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "soy_sauce",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "honey",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "green_onion",
+    "quantity": 3,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "sesame",
+    "quantity": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מפרקים את הכרובית לפרחים קטנים ופורסים את הפטריות."
+   },
+   {
+    "textHe": "מחממים 3 כפות שמן בווק על אש גבוהה ומקפיצים את הכרובית 6 דקות עד שהיא משחימה בשוליים.",
+    "timerSeconds": 360
+   },
+   {
+    "textHe": "מוסיפים את הפטריות ומקפיצים 4 דקות.",
+    "timerSeconds": 240
+   },
+   {
+    "textHe": "מוסיפים שום ומערבבים חצי דקה."
+   },
+   {
+    "textHe": "מוסיפים סויה, דבש ו-3 כפות מים, מכסים ומבשלים 2 דקות עד שהכרובית רכה אך נגיסה.",
+    "timerSeconds": 120
+   },
+   {
+    "textHe": "מפזרים בצל ירוק ושומשום ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_cauliflower_mash",
+  "titleHe": "פירה כרובית",
+  "titleEn": "Cauliflower mash",
+  "photoQuery": "cauliflower mash",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "cauliflower",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "potato",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "nutmeg",
+    "quantity": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מפרקים את הכרובית לפרחים וקולפים וחותכים את תפוח האדמה."
+   },
+   {
+    "textHe": "מבשלים יחד עם השום במים רותחים עם מלח 15 דקות עד שהכול רך מאוד.",
+    "timerSeconds": 900
+   },
+   {
+    "textHe": "מסננים היטב ומשאירים בסיר דקה כדי שהאדים יתאדו."
+   },
+   {
+    "textHe": "מועכים במועך או בבלנדר מוט עם שמן זית."
+   },
+   {
+    "textHe": "מתבלים במוסקט, מלח ופלפל."
+   },
+   {
+    "textHe": "מגישים חם במקום פירה רגיל."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_oven_zucchini",
+  "titleHe": "זוקיני בתנור",
+  "titleEn": "Roasted zucchini",
+  "photoQuery": "roasted zucchini",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 30,
+  "appliances": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "zucchini",
+    "quantity": 5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "olive_oil",
+    "quantity": 3,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 3,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "oregano",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "lemon",
+    "quantity": 0.5,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "mint",
+    "quantity": 0.25,
+    "unit": "bunch"
+   },
+   {
+    "ingredientId": "salt"
+   },
+   {
+    "ingredientId": "pepper"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מחממים תנור ל-220 מעלות."
+   },
+   {
+    "textHe": "חוצים את הקישואים לאורך ואז לחצאים."
+   },
+   {
+    "textHe": "מערבבים עם שמן זית, שום כתוש, אורגנו, מלח ופלפל."
+   },
+   {
+    "textHe": "מסדרים בתבנית כשהצד החתוך כלפי מעלה."
+   },
+   {
+    "textHe": "צולים 20 דקות עד שהקישואים רכים ושחומים.",
+    "timerSeconds": 1200
+   },
+   {
+    "textHe": "מזלפים לימון, מפזרים נענע קצוצה ומגישים."
+   }
+  ]
+ },
+ {
+  "id": "rv3_x14_spicy_ptitim",
+  "titleHe": "פתיתים פיקנטיים",
+  "titleEn": "Spicy ptitim",
+  "photoQuery": "spicy couscous",
+  "servings": 4,
+  "difficulty": "easy",
+  "mealType": "lunch",
+  "totalMinutes": 25,
+  "appliances": [
+   "stovetop"
+  ],
+  "ingredients": [
+   {
+    "ingredientId": "ptitim",
+    "quantity": 2,
+    "unit": "cup"
+   },
+   {
+    "ingredientId": "onion",
+    "quantity": 1,
+    "unit": "unit"
+   },
+   {
+    "ingredientId": "garlic",
+    "quantity": 2,
+    "unit": "clove"
+   },
+   {
+    "ingredientId": "tomato_paste",
+    "quantity": 2,
+    "unit": "tbsp"
+   },
+   {
+    "ingredientId": "harissa",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "paprika",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "stock_powder",
+    "quantity": 1,
+    "unit": "tsp"
+   },
+   {
+    "ingredientId": "oil"
+   },
+   {
+    "ingredientId": "water"
+   },
+   {
+    "ingredientId": "salt"
+   }
+  ],
+  "steps": [
+   {
+    "textHe": "מטגנים בצל קצוץ בשתי כפות שמן על אש בינונית 5 דקות.",
+    "timerSeconds": 300
+   },
+   {
+    "textHe": "מוסיפים את הפתיתים ומערבבים 3 דקות עד שהם מזהיבים.",
+    "timerSeconds": 180
+   },
+   {
+    "textHe": "מוסיפים שום, רסק עגבניות, חריף ופפריקה ומערבבים דקה.",
+    "timerSeconds": 60
+   },
+   {
+    "textHe": "מוסיפים 3 כוסות מים רותחים ואבקת מרק."
+   },
+   {
+    "textHe": "מכסים ומבשלים על אש נמוכה 10 דקות עד שהנוזלים נספגים.",
+    "timerSeconds": 600
+   },
+   {
+    "textHe": "משאירים מכוסה 5 דקות, מערבבים ומגישים."
+   }
+  ]
+ }
+]

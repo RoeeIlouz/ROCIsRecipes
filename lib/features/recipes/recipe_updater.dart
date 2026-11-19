@@ -9,11 +9,13 @@ import 'package:rocis_recipes/features/recipes/recipe_repository.dart';
 import 'package:rocis_recipes/features/recipes/starter_recipe_loader.dart';
 
 /// Where new recipe packs are published (the `data` branch of the project repo, next to the prices).
+/// The v2 pack holds every recipe; builds before it read `recipes.json.gz`, which leaves out recipes
+/// with ingredients those builds do not know (they rejected a whole pack over one unknown id).
 final Uri kRecipeManifestUrl = Uri.parse(
-  'https://raw.githubusercontent.com/RoeeIlouz/ROCIsRecipes/data/recipes_manifest.json',
+  'https://raw.githubusercontent.com/RoeeIlouz/ROCIsRecipes/data/recipes_v2_manifest.json',
 );
 final Uri kRecipePackUrl = Uri.parse(
-  'https://raw.githubusercontent.com/RoeeIlouz/ROCIsRecipes/data/recipes.json.gz',
+  'https://raw.githubusercontent.com/RoeeIlouz/ROCIsRecipes/data/recipes_v2.json.gz',
 );
 
 /// How often the app looks for new recipes by itself.
@@ -68,7 +70,9 @@ class RecipeUpdateResult {
 
 /// Downloads a newer recipe pack and swaps it in. A pack is applied only when it is newer than the one
 /// in use, matches its checksum and passes the same strict validation as the bundled recipes; any
-/// problem leaves the recipes exactly as they were. The user's own recipes are never touched.
+/// problem leaves the recipes exactly as they were. A recipe that uses an ingredient this build does
+/// not know yet is skipped (it arrives with the app update that adds the ingredient) and the rest are
+/// installed. The user's own recipes are never touched.
 class RecipeUpdater {
   RecipeUpdater({
     required this.source,
@@ -103,8 +107,14 @@ class RecipeUpdater {
 
       final text = utf8.decode(gzip.decode(bytes));
       if (StarterRecipeLoader.validateJson(text).isNotEmpty) return failed;
-      final pack = StarterRecipeLoader.parse(text);
-      if (pack.isEmpty || pack.length != manifest['count']) return failed;
+      final all = StarterRecipeLoader.parse(text);
+      if (all.isEmpty || all.length != manifest['count']) return failed;
+      final pack = [
+        for (final r in all)
+          if (r.ingredients.every((i) => catalog.byId(i.ingredientId) != null))
+            r,
+      ];
+      if (pack.isEmpty) return failed;
       if (StarterRecipeLoader.validate(
         pack,
         catalog,

@@ -33,7 +33,7 @@ void main() {
 
   test('starter collection has a sensible number of recipes', () async {
     final (recipes, _) = await loadReal();
-    expect(recipes.length, inInclusiveRange(100, 800));
+    expect(recipes.length, inInclusiveRange(100, 1500));
   });
 
   test('at least 90 percent have Hebrew titles', () async {

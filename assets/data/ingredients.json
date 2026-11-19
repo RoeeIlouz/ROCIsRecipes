@@ -2143,5 +2143,130 @@
     "nameEn": "Ras el hanout",
     "synonyms": [],
     "category": "spices"
+  },
+  {
+    "id": "filo_dough",
+    "nameHe": "בצק פילו",
+    "nameEn": "Filo dough",
+    "synonyms": [
+      "דפי פילו",
+      "פילו"
+    ],
+    "isStaple": false,
+    "category": "grains"
+  },
+  {
+    "id": "black_eyed_peas",
+    "nameHe": "לוביה",
+    "nameEn": "Black-eyed peas",
+    "synonyms": [
+      "לוביה יבשה",
+      "שעועית לוביה"
+    ],
+    "isStaple": false,
+    "category": "grains"
+  },
+  {
+    "id": "mung_beans",
+    "nameHe": "מש",
+    "nameEn": "Mung beans",
+    "synonyms": [
+      "שעועית מש",
+      "מאש"
+    ],
+    "isStaple": false,
+    "category": "grains"
+  },
+  {
+    "id": "jerusalem_artichoke",
+    "nameHe": "ארטישוק ירושלמי",
+    "nameEn": "Jerusalem artichoke",
+    "synonyms": [
+      "ארטישוק ירושלים",
+      "טופינמבור"
+    ],
+    "isStaple": false,
+    "category": "produce"
+  },
+  {
+    "id": "chestnuts",
+    "nameHe": "ערמונים",
+    "nameEn": "Chestnuts",
+    "synonyms": [
+      "ערמון",
+      "ערמונים קלויים"
+    ],
+    "isStaple": false,
+    "category": "snacks"
+  },
+  {
+    "id": "buckwheat",
+    "nameHe": "כוסמת",
+    "nameEn": "Buckwheat",
+    "synonyms": [
+      "כוסמת קלויה"
+    ],
+    "isStaple": false,
+    "category": "grains"
+  },
+  {
+    "id": "white_wine",
+    "nameHe": "יין לבן",
+    "nameEn": "White wine",
+    "synonyms": [
+      "יין לבן יבש"
+    ],
+    "isStaple": false,
+    "category": "pantry"
+  },
+  {
+    "id": "red_wine",
+    "nameHe": "יין אדום",
+    "nameEn": "Red wine",
+    "synonyms": [
+      "יין אדום יבש"
+    ],
+    "isStaple": false,
+    "category": "pantry"
+  },
+  {
+    "id": "veal",
+    "nameHe": "בשר עגל",
+    "nameEn": "Veal",
+    "synonyms": [
+      "עגל",
+      "אוסובוקו",
+      "שוק עגל"
+    ],
+    "isStaple": false,
+    "category": "meat"
+  },
+  {
+    "id": "turnip",
+    "nameHe": "לפת",
+    "nameEn": "Turnip",
+    "synonyms": [
+      "לפתות"
+    ],
+    "isStaple": false,
+    "category": "produce"
+  },
+  {
+    "id": "brussels_sprouts",
+    "nameHe": "כרוב ניצנים",
+    "nameEn": "Brussels sprouts",
+    "synonyms": [
+      "כרובי ניצנים"
+    ],
+    "isStaple": false,
+    "category": "produce"
+  },
+  {
+    "id": "wax_beans",
+    "nameHe": "שעועית צהובה",
+    "nameEn": "Wax beans",
+    "synonyms": [],
+    "isStaple": false,
+    "category": "produce"
   }
 ]

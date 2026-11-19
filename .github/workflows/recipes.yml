@@ -10,6 +10,7 @@ on:
       - assets/recipes/starter_he.json
       - lib/features/recipes/starter_recipe_loader.dart
       - tools/recipes/make_pack.py
+      - tools/recipes/pack_v1_ingredients.json
       - .github/workflows/recipes.yml
   workflow_dispatch:
 
@@ -60,19 +61,23 @@ jobs:
             git -C data-branch init -b data
             git -C data-branch remote add origin "$remote"
           fi
-          cp out/recipes.json.gz data-branch/
-          # Keep the old manifest's date when the pack bytes did not change.
-          if [ -f data-branch/recipes_manifest.json ] && \
-             python -c "import json,sys; a=json.load(open('data-branch/recipes_manifest.json')); b=json.load(open('out/recipes_manifest.json')); sys.exit(0 if (a['sha256'],a['version'])==(b['sha256'],b['version']) else 1)"; then
-            echo "Recipe pack unchanged."
-          else
-            cp out/recipes_manifest.json data-branch/
-          fi
+          # Two packs: recipes.* for older app builds (only ingredients they know), recipes_v2.* for current ones.
+          for name in recipes recipes_v2; do
+            cp "out/${name}.json.gz" data-branch/
+            # Keep the old manifest's date when the pack bytes did not change.
+            if [ -f "data-branch/${name}_manifest.json" ] && \
+               python -c "import json,sys; a=json.load(open(sys.argv[1])); b=json.load(open(sys.argv[2])); sys.exit(0 if (a['sha256'],a['version'])==(b['sha256'],b['version']) else 1)" \
+                 "data-branch/${name}_manifest.json" "out/${name}_manifest.json"; then
+              echo "Pack ${name} unchanged."
+            else
+              cp "out/${name}_manifest.json" data-branch/
+            fi
+          done
           cd data-branch
-          git add recipes.json.gz recipes_manifest.json
+          git add recipes.json.gz recipes_manifest.json recipes_v2.json.gz recipes_v2_manifest.json
           if git diff --cached --quiet; then
             echo "Nothing to publish."
           else
-            git commit -m "Recipe pack v$(python -c "import json; print(json.load(open('recipes_manifest.json'))['version'])")"
+            git commit -m "Recipe pack v$(python -c "import json; print(json.load(open('recipes_v2_manifest.json'))['version'])")"
             git push origin data
           fi
